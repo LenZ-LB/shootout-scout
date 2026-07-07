@@ -124,6 +124,8 @@
   .section-toggle summary::after{content:'+'; font-size:18px; color:var(--ink-muted);}
   .section-toggle[open] summary::after{content:'\2013';}
   .section-body{padding:14px 16px;}
+  .alltime-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+  @media (max-width:760px){ .alltime-grid{grid-template-columns:1fr;} }
   .note{color:var(--ink-muted); font-size:12px; padding:0 16px 14px;}
 </style>
 </head>
@@ -161,9 +163,8 @@
 
   <details class="section-toggle">
     <summary>All-time NHL shootout history</summary>
-    <div class="section-body">
-      <p class="note" style="padding:0 0 10px;">Populates once the historical backfill has been run.</p>
-      <div id="allTimeBody" class="no-data">No backfill data loaded yet.</div>
+    <div class="section-body" id="allTimeBody">
+      <p class="note" style="padding:0 0 10px;">Loading\u2026</p>
     </div>
   </details>
 
@@ -224,6 +225,7 @@ const SAMPLE_MINOR = [
 ];
 
 let PLAYERS = SAMPLE_PLAYERS, GOALIES = SAMPLE_GOALIES, MINOR = SAMPLE_MINOR;
+let ALLTIME = null;
 let usingLive = false;
 
 async function loadData(){
@@ -237,11 +239,16 @@ async function loadData(){
         const mRes = await fetch('data/minor.json');
         if(mRes.ok) MINOR = await mRes.json();
       }catch(e){}
+      try{
+        const aRes = await fetch('data/alltime.json');
+        if(aRes.ok) ALLTIME = await aRes.json();
+      }catch(e){}
     }
   }catch(e){ /* fall back to sample */ }
   updateBanner();
   populateTeamSelects();
   renderAll();
+  renderAllTime();
 }
 
 function updateBanner(){
@@ -365,6 +372,56 @@ function renderMinor(){
       <td>${m.name}</td><td style="text-align:right">${m.team}</td>
       <td>${fmtGA(m.career)}</td><td>${fmtPct(m.career)}</td><td>${fmtGA(m.cur)}</td>
     </tr>`).join('')}</tbody>`;
+}
+
+function leaderboardTable(title, rows, cols){
+  if(!rows || !rows.length){
+    return `<div><h4 style="font-family:'Oswald';font-size:13px;letter-spacing:0.4px;margin:0 0 8px;color:var(--ink-muted);">${title}</h4>
+      <div class="no-data">No qualifying data yet.</div></div>`;
+  }
+  return `<div>
+    <h4 style="font-family:'Oswald';font-size:13px;letter-spacing:0.4px;margin:0 0 8px;color:var(--ink-muted);">${title}</h4>
+    <table>
+      <thead><tr><th>#</th><th>Name</th><th>Team</th>${cols.map(c => `<th>${c.label}</th>`).join('')}</tr></thead>
+      <tbody>
+        ${rows.map((r,i) => `<tr>
+          <td style="text-align:right">${i+1}</td>
+          <td>${r.name}</td>
+          <td style="text-align:right">${r.team}</td>
+          ${cols.map(c => `<td>${c.fmt(r)}</td>`).join('')}
+        </tr>`).join('')}
+      </tbody>
+    </table>
+  </div>`;
+}
+
+function renderAllTime(){
+  const el = document.getElementById('allTimeBody');
+  if(!ALLTIME){
+    el.innerHTML = `<p class="note" style="padding:0;">No backfill data loaded yet \u2014 run the historical backfill workflow, then re-export.</p>`;
+    return;
+  }
+  const minAtt = ALLTIME.min_attempts_threshold, minFaced = ALLTIME.min_faced_threshold;
+  el.innerHTML = `
+    <div class="alltime-grid">      ${leaderboardTable('Most Career Shootout Goals', ALLTIME.top_goals, [
+        {label:'G/Att', fmt:r => `${r.goals}/${r.att}`},
+        {label:'Pct', fmt:r => fmtPct([r.goals, r.att])},
+      ])}
+      ${leaderboardTable(`Best Career Shooting Pct (min ${minAtt} att)`, ALLTIME.top_shooting_pct, [
+        {label:'G/Att', fmt:r => `${r.goals}/${r.att}`},
+        {label:'Pct', fmt:r => fmtPct([r.goals, r.att])},
+      ])}
+      ${leaderboardTable(`Best Career Save Pct (min ${minFaced} faced)`, ALLTIME.top_goalie_save_pct, [
+        {label:'Sv/Faced', fmt:r => `${r.stopped}/${r.faced}`},
+        {label:'Pct', fmt:r => fmtPct([r.stopped, r.faced])},
+      ])}
+      ${leaderboardTable('Most Career Shots Faced', ALLTIME.most_shots_faced, [
+        {label:'Sv/Faced', fmt:r => `${r.stopped}/${r.faced}`},
+        {label:'Pct', fmt:r => fmtPct([r.stopped, r.faced])},
+      ])}
+    </div>
+    <p class="note" style="padding:12px 0 0;">Spans every season loaded via the backfill workflow so far \u2014 not limited to the two teams selected above.</p>
+  `;
 }
 
 function buildSearchIndex(){

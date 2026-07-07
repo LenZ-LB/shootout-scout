@@ -192,7 +192,37 @@ def _extract_shootout_attempts(pbp_json):
     return attempts
 
 
-def fetch_game(game_id, season, game_date, debug=False):
+def _upsert_names_from_pbp(conn, pbp_json):
+    """
+    Grabs player names/positions out of the play-by-play's roster list and
+    stores them even if a player never shows up in a current-roster pull —
+    this is what lets retired players show up by name in the all-time
+    leaderboards instead of just a numeric ID. Uses INSERT OR IGNORE so it
+    never overwrites a name/team already set by --update-rosters (which is
+    the more authoritative, current source for active players).
+    """
+    for p in pbp_json.get("rosterSpots", []):
+        pid = p.get("playerId")
+        if not pid:
+            continue
+        try:
+            name = f"{p['firstName']['default']} {p['lastName']['default']}"
+        except (KeyError, TypeError):
+            continue
+        pos = p.get("positionCode", "")
+        if pos == "G":
+            conn.execute(
+                "INSERT OR IGNORE INTO goalies (goalie_id, full_name, team_abbrev, active) VALUES (?, ?, '', 0)",
+                (pid, name),
+            )
+        else:
+            conn.execute(
+                "INSERT OR IGNORE INTO players (player_id, full_name, team_abbrev, position, active) VALUES (?, ?, '', ?, 0)",
+                (pid, name, pos),
+            )
+
+
+def fetch_game(game_id, season, game_date, conn=None, debug=False):
     url = f"{BASE}/gamecenter/{game_id}/play-by-play"
     try:
         resp = requests.get(url, timeout=15)
@@ -203,6 +233,9 @@ def fetch_game(game_id, season, game_date, debug=False):
         return []
     if debug:
         print(f"  fetched game {game_id}")
+    if conn is not None:
+        _upsert_names_from_pbp(conn, data)
+        conn.commit()
     attempts = _extract_shootout_attempts(data)
     for a in attempts:
         a["game_id"] = game_id
@@ -238,7 +271,7 @@ def update_today(debug=False):
             game_id = g["id"]
             season = str(g.get("season"))
             game_date = day.get("date", today)
-            attempts = fetch_game(game_id, season, game_date, debug=debug)
+            attempts = fetch_game(game_id, season, game_date, conn=conn, debug=debug)
             if attempts:
                 store_attempts(conn, attempts)
                 print(f"  game {game_id}: stored {len(attempts)} shootout attempts")
@@ -287,7 +320,7 @@ def backfill(start_year, end_year, debug=False):
                     last_period = outcome.get("lastPeriodType")
                     if last_period is not None and last_period != "SO":
                         continue  # confirmed no shootout, skip the expensive call
-                    attempts = fetch_game(g["id"], season, day.get("date"), debug=debug)
+                    attempts = fetch_game(g["id"], season, day.get("date"), conn=conn, debug=debug)
                     if attempts:
                         store_attempts(conn, attempts)
                         print(f"  {day.get('date')} game {g['id']}: {len(attempts)} attempts")
@@ -365,6 +398,93 @@ def export_json(out_dir="data"):
         json.dump(goalies_out, f, indent=2)
     conn.close()
     print(f"Exported {len(players_out)} players, {len(goalies_out)} goalies to {out_dir}/")
+    export_alltime(out_dir=out_dir)
+
+
+def export_alltime(out_dir="data", top_n=25, min_attempts=15, min_faced=20):
+    """
+    League-wide leaderboards across every logged season, independent of
+    the two team dropdowns on the page. Uses LEFT JOIN + COALESCE so a
+    shooter/goalie with attempts logged but no name on file yet (shouldn't
+    happen once _upsert_names_from_pbp has run, but just in case) still
+    shows up as 'Player #12345' instead of silently vanishing.
+    """
+    import os, json
+    os.makedirs(out_dir, exist_ok=True)
+    conn = get_conn()
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+
+    cur.execute("""
+        SELECT sa.shooter_id,
+               COALESCE(p.full_name, 'Player #' || sa.shooter_id) AS name,
+               COALESCE(NULLIF(p.team_abbrev, ''), '\u2014') AS team,
+               SUM(CASE WHEN sa.result='goal' THEN 1 ELSE 0 END) AS goals,
+               COUNT(*) AS att
+        FROM shootout_attempts sa
+        LEFT JOIN players p ON p.player_id = sa.shooter_id
+        GROUP BY sa.shooter_id
+        ORDER BY goals DESC
+        LIMIT ?
+    """, (top_n,))
+    top_goals = [dict(r) for r in cur.fetchall()]
+
+    cur.execute("""
+        SELECT sa.shooter_id,
+               COALESCE(p.full_name, 'Player #' || sa.shooter_id) AS name,
+               COALESCE(NULLIF(p.team_abbrev, ''), '\u2014') AS team,
+               SUM(CASE WHEN sa.result='goal' THEN 1 ELSE 0 END) AS goals,
+               COUNT(*) AS att
+        FROM shootout_attempts sa
+        LEFT JOIN players p ON p.player_id = sa.shooter_id
+        GROUP BY sa.shooter_id
+        HAVING att >= ?
+        ORDER BY (CAST(goals AS FLOAT) / att) DESC
+        LIMIT ?
+    """, (min_attempts, top_n))
+    top_pct = [dict(r) for r in cur.fetchall()]
+
+    cur.execute("""
+        SELECT sa.goalie_id,
+               COALESCE(g.full_name, 'Goalie #' || sa.goalie_id) AS name,
+               COALESCE(NULLIF(g.team_abbrev, ''), '\u2014') AS team,
+               SUM(CASE WHEN sa.result='miss' THEN 1 ELSE 0 END) AS stopped,
+               COUNT(*) AS faced
+        FROM shootout_attempts sa
+        LEFT JOIN goalies g ON g.goalie_id = sa.goalie_id
+        GROUP BY sa.goalie_id
+        HAVING faced >= ?
+        ORDER BY (CAST(stopped AS FLOAT) / faced) DESC
+        LIMIT ?
+    """, (min_faced, top_n))
+    top_goalie_pct = [dict(r) for r in cur.fetchall()]
+
+    cur.execute("""
+        SELECT sa.goalie_id,
+               COALESCE(g.full_name, 'Goalie #' || sa.goalie_id) AS name,
+               COALESCE(NULLIF(g.team_abbrev, ''), '\u2014') AS team,
+               SUM(CASE WHEN sa.result='miss' THEN 1 ELSE 0 END) AS stopped,
+               COUNT(*) AS faced
+        FROM shootout_attempts sa
+        LEFT JOIN goalies g ON g.goalie_id = sa.goalie_id
+        GROUP BY sa.goalie_id
+        ORDER BY faced DESC
+        LIMIT ?
+    """, (top_n,))
+    most_faced = [dict(r) for r in cur.fetchall()]
+
+    out = {
+        "top_goals": top_goals,
+        "top_shooting_pct": top_pct,
+        "top_goalie_save_pct": top_goalie_pct,
+        "most_shots_faced": most_faced,
+        "min_attempts_threshold": min_attempts,
+        "min_faced_threshold": min_faced,
+    }
+    with open(os.path.join(out_dir, "alltime.json"), "w") as f:
+        json.dump(out, f, indent=2)
+    conn.close()
+    print(f"Exported all-time leaderboards to {out_dir}/alltime.json")
 
 
 if __name__ == "__main__":
