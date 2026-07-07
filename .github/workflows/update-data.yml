@@ -1,0 +1,48 @@
+name: Update Shootout Data
+
+# Manual only, for now — click "Run workflow" on the Actions tab after a game
+# (or whenever you want fresh numbers). A schedule trigger can be added later
+# with a couple lines under `on:` once you're ready to automate it.
+on:
+  workflow_dispatch:
+    inputs:
+      run_full_update:
+        description: "Also refresh rosters (slower, do this once a day / after trades)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install requests
+
+      - name: Init database (safe to re-run, no-op if it exists)
+        run: python nhl_shootout_pipeline.py --init-db
+
+      - name: Refresh rosters
+        if: ${{ github.event.inputs.run_full_update == 'true' }}
+        run: python nhl_shootout_pipeline.py --update-rosters
+
+      - name: Pull today's completed games
+        run: python nhl_shootout_pipeline.py --update-today
+
+      - name: Export JSON for the page
+        run: python nhl_shootout_pipeline.py --export-json
+
+      - name: Commit updated data
+        run: |
+          git config user.name "shootout-scout-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/*.json shootout.db
+          git diff --cached --quiet || git commit -m "Update shootout data ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          git push

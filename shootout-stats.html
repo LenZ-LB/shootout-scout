@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edmonton Oilers Shootout Scout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A1220; --panel:#101B30; --panel-elev:#182541; --line:#233355;
+    --ink:#EDF2F8; --ink-muted:#7E93B0; --ink-dim:#4E6182;
+    --goal:#E64B3F; --save:#4FA3D1; --hot:#F5B942; --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:radial-gradient(ellipse at top, #0E1830 0%, var(--bg) 55%);
+    color:var(--ink); font-family:'Inter',sans-serif; min-height:100vh; padding:20px;
+  }
+  .status-banner{
+    max-width:1280px;margin:0 auto 16px; font-size:12.5px; padding:8px 14px; border-radius:8px;
+    display:flex; align-items:center; gap:8px;
+  }
+  .status-banner.sample{background:#3A2E12;border:1px solid #6B5420;color:#F0C972;}
+  .status-banner.live{background:#12301E;border:1px solid #245A38;color:#7FE0A8;}
+  .wrap{max-width:1280px;margin:0 auto;}
+
+  .scoreboard{
+    background:linear-gradient(180deg,var(--panel-elev),var(--panel));
+    border:1px solid var(--line); border-radius:var(--radius); padding:16px 22px;
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px;
+    margin-bottom:14px;
+  }
+  .matchup-title{
+    font-family:'Oswald',sans-serif; font-weight:600; letter-spacing:0.5px; font-size:26px;
+    display:flex; align-items:baseline; gap:10px;
+  }
+  .matchup-title .vs{color:var(--ink-muted); font-size:16px; font-weight:500;}
+
+  .search-box{position:relative; width:280px;}
+  .search-box input{
+    width:100%; padding:10px 14px; border-radius:8px;
+    background:var(--bg); border:1px solid var(--line); color:var(--ink);
+    font-family:'Inter'; font-size:13.5px;
+  }
+  .search-box input:focus{outline:2px solid var(--save); outline-offset:1px;}
+  .search-box input::placeholder{color:var(--ink-dim);}
+  .search-results{
+    position:absolute; top:calc(100% + 6px); left:0; right:0;
+    background:var(--panel-elev); border:1px solid var(--line); border-radius:8px;
+    max-height:280px; overflow-y:auto; z-index:20; display:none;
+  }
+  .search-results.show{display:block;}
+  .search-result-row{
+    padding:9px 12px; font-size:13px; cursor:pointer;
+    display:flex; justify-content:space-between; border-bottom:1px solid var(--line);
+  }
+  .search-result-row:last-child{border-bottom:none;}
+  .search-result-row:hover{background:var(--bg);}
+  .search-result-row .team-tag{color:var(--ink-muted); font-family:'IBM Plex Mono'; font-size:11px;}
+
+  /* Team selector bar */
+  .selector-bar{
+    display:flex; align-items:center; gap:12px; margin-bottom:18px; flex-wrap:wrap;
+  }
+  .team-select{
+    background:var(--panel); border:1px solid var(--line); color:var(--ink);
+    padding:10px 14px; border-radius:8px; font-family:'Oswald'; font-size:14px;
+    letter-spacing:0.4px; min-width:220px;
+  }
+  .team-select:focus{outline:2px solid var(--save); outline-offset:1px;}
+  .selector-bar .vs-label{color:var(--ink-muted); font-family:'Oswald'; font-size:14px;}
+
+  .legend{display:flex; gap:18px; font-size:12px; color:var(--ink-muted); margin-bottom:14px; flex-wrap:wrap;}
+  .legend span{display:flex; align-items:center; gap:6px;}
+
+  .panels{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:860px){ .panels{grid-template-columns:1fr;} }
+
+  .team-panel{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;}
+  .team-header{
+    padding:12px 16px; border-bottom:1px solid var(--line);
+    font-family:'Oswald'; letter-spacing:0.6px; font-size:15px; font-weight:600;
+    display:flex; justify-content:space-between; align-items:center; background:var(--panel-elev);
+  }
+  .team-header .opp-goalie{font-size:11px; font-family:'IBM Plex Mono'; color:var(--ink-muted); font-weight:400; letter-spacing:0;}
+
+  table{width:100%; border-collapse:collapse; font-size:12.5px;}
+  thead th{
+    position:sticky; top:0; text-align:right; font-family:'IBM Plex Mono'; font-weight:600; font-size:10.5px;
+    color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.4px;
+    padding:8px 10px; border-bottom:1px solid var(--line);
+  }
+  thead th:first-child{text-align:left;}
+  tbody td{padding:8px 10px; border-bottom:1px solid #16223B; text-align:right; white-space:nowrap;}
+  tbody td:first-child{text-align:left; white-space:normal;}
+  tbody tr:hover{background:#131F38;}
+  .player-name{font-weight:500;}
+  .pct{font-family:'IBM Plex Mono'; font-weight:600;}
+  .pct.hot{color:var(--hot);}
+  .pct.cold{color:var(--ink-dim);}
+  .no-data{color:var(--ink-dim); font-style:italic;}
+  .vsg-col{background:#1B2846;}
+  .empty-panel{padding:26px 16px; color:var(--ink-muted); font-size:13px; text-align:center;}
+
+  .goalie-row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;}
+  @media (max-width:860px){ .goalie-row{grid-template-columns:1fr;} }
+  .goalie-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:14px 18px; display:flex; justify-content:space-between; align-items:center; gap:12px;
+  }
+  .goalie-card h3{margin:0 0 4px; font-family:'Oswald'; font-size:16px; font-weight:600;}
+  .goalie-card .record{color:var(--ink-muted); font-size:12px;}
+  .goalie-stat{text-align:right;}
+  .goalie-stat .big{font-family:'IBM Plex Mono'; font-size:22px; font-weight:600; color:var(--save);}
+  .goalie-stat .lbl{font-size:10.5px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.4px;}
+
+  .section-toggle{margin-top:20px; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;}
+  .section-toggle summary{
+    padding:12px 16px; cursor:pointer; font-family:'Oswald'; font-size:14px; letter-spacing:0.4px;
+    display:flex; justify-content:space-between; align-items:center; list-style:none; background:var(--panel-elev);
+  }
+  .section-toggle summary::-webkit-details-marker{display:none;}
+  .section-toggle summary::after{content:'+'; font-size:18px; color:var(--ink-muted);}
+  .section-toggle[open] summary::after{content:'\2013';}
+  .section-body{padding:14px 16px;}
+  .note{color:var(--ink-muted); font-size:12px; padding:0 16px 14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="status-banner sample" id="statusBanner">Loading data…</div>
+
+  <div class="scoreboard">
+    <div class="matchup-title">Edmonton Oilers <span class="vs">Shootout Scout</span></div>
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="Search any player or goalie…" autocomplete="off">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <div class="selector-bar">
+    <select id="teamASelect" class="team-select"></select>
+    <span class="vs-label">vs</span>
+    <select id="teamBSelect" class="team-select"></select>
+  </div>
+
+  <div class="legend">
+    <span style="color:var(--hot)">&#9679;</span> &ge;40% career shooting
+  </div>
+
+  <div class="panels" id="panels"></div>
+  <div class="goalie-row" id="goalieRow"></div>
+
+  <details class="section-toggle">
+    <summary>Junior / AHL shootout log (manually tracked)</summary>
+    <div class="section-body"><table id="minorTable"></table></div>
+    <div class="note">Not available from NHL.com — this stays a manually logged table fed from your own tracking/Instat.</div>
+  </details>
+
+  <details class="section-toggle">
+    <summary>All-time NHL shootout history</summary>
+    <div class="section-body">
+      <p class="note" style="padding:0 0 10px;">Populates once the historical backfill has been run.</p>
+      <div id="allTimeBody" class="no-data">No backfill data loaded yet.</div>
+    </div>
+  </details>
+
+</div>
+
+<script>
+const TEAMS = [
+  ["ANA","Anaheim Ducks"],["BOS","Boston Bruins"],["BUF","Buffalo Sabres"],["CGY","Calgary Flames"],
+  ["CAR","Carolina Hurricanes"],["CHI","Chicago Blackhawks"],["COL","Colorado Avalanche"],["CBJ","Columbus Blue Jackets"],
+  ["DAL","Dallas Stars"],["DET","Detroit Red Wings"],["EDM","Edmonton Oilers"],["FLA","Florida Panthers"],
+  ["LAK","Los Angeles Kings"],["MIN","Minnesota Wild"],["MTL","Montreal Canadiens"],["NSH","Nashville Predators"],
+  ["NJD","New Jersey Devils"],["NYI","New York Islanders"],["NYR","New York Rangers"],["OTT","Ottawa Senators"],
+  ["PHI","Philadelphia Flyers"],["PIT","Pittsburgh Penguins"],["SJS","San Jose Sharks"],["SEA","Seattle Kraken"],
+  ["STL","St. Louis Blues"],["TBL","Tampa Bay Lightning"],["TOR","Toronto Maple Leafs"],["UTA","Utah Mammoth"],
+  ["VAN","Vancouver Canucks"],["VGK","Vegas Golden Knights"],["WSH","Washington Capitals"],["WPG","Winnipeg Jets"]
+];
+
+// ---- Fallback sample data (from your GM22 template) — used only if data/*.json isn't found yet ----
+const SAMPLE_PLAYERS = [
+  {name:"Ryan Nugent-Hopkins", team:"EDM", career:[15,45], seasons:{"20222023":[2,4],"20232024":[2,3],"20242025":[0,1],"20252026":[0,2]}, vs_goalie:{"Charlie Lindgren":[0,1]}},
+  {name:"Connor McDavid",      team:"EDM", career:[15,35], seasons:{"20222023":[1,4],"20232024":[2,3],"20242025":[0,1],"20252026":[0,2]}, vs_goalie:{}},
+  {name:"Leon Draisaitl",      team:"EDM", career:[12,32], seasons:{"20222023":[0,4],"20232024":[1,2],"20242025":[0,0],"20252026":[1,6]}, vs_goalie:{"Charlie Lindgren":[2,2]}},
+  {name:"Adam Henrique",       team:"EDM", career:[4,23],  seasons:{"20222023":[1,2],"20232024":[0,0],"20242025":[0,0],"20252026":[1,2]}, vs_goalie:{}},
+  {name:"Kasperi Kapanen",     team:"EDM", career:[0,6],   seasons:{}, vs_goalie:{"Charlie Lindgren":[0,1]}},
+  {name:"Andrew Mangiapane",   team:"EDM", career:[0,4],   seasons:{}, vs_goalie:{}},
+  {name:"Jack Roslovic",       team:"EDM", career:[0,3],   seasons:{}, vs_goalie:{}},
+  {name:"Mattias Janmark",     team:"EDM", career:[0,2],   seasons:{}, vs_goalie:{}},
+  {name:"Trent Frederic",      team:"EDM", career:[0,2],   seasons:{"20252026":[0,1]}, vs_goalie:{}},
+  {name:"Zach Hyman",          team:"EDM", career:[0,1],   seasons:{"20252026":[0,1]}, vs_goalie:{}},
+  {name:"Vasily Podkolzin",    team:"EDM", career:[0,1],   seasons:{}, vs_goalie:{}},
+  {name:"Evan Bouchard",       team:"EDM", career:[0,1],   seasons:{}, vs_goalie:{"Charlie Lindgren":[0,1]}},
+  {name:"Mattias Ekholm",      team:"EDM", career:[0,1],   seasons:{}, vs_goalie:{}},
+  {name:"Alex Ovechkin",       team:"WSH", career:[37,127], seasons:{"20222023":[0,3],"20232024":[0,7],"20242025":[0,1],"20252026":[0,11]}, vs_goalie:{"Stuart Skinner":[0,2]}},
+  {name:"Anthony Beauvillier", team:"WSH", career:[7,24],   seasons:{"20222023":[0,2],"20232024":[0,0],"20242025":[1,1],"20252026":[1,3]}, vs_goalie:{"Stuart Skinner":[0,2]}},
+  {name:"Pierre-Luc Dubois",   team:"WSH", career:[10,23],  seasons:{"20222023":[1,1],"20232024":[2,4],"20242025":[2,5],"20252026":[5,10]}, vs_goalie:{}},
+  {name:"Dylan Strome",        team:"WSH", career:[4,18],   seasons:{"20222023":[0,2],"20232024":[2,6],"20242025":[1,5],"20252026":[3,13]}, vs_goalie:{"Stuart Skinner":[1,2]}},
+  {name:"John Carlson",        team:"WSH", career:[4,15],   seasons:{"20222023":[0,1],"20232024":[1,3],"20242025":[0,3],"20252026":[1,7]}, vs_goalie:{}},
+  {name:"Sonny Milano",        team:"WSH", career:[1,7],    seasons:{"20232024":[1,3],"20242025":[0,0],"20252026":[1,3]}, vs_goalie:{}},
+  {name:"Connor McMichael",    team:"WSH", career:[0,5],    seasons:{"20232024":[0,3],"20252026":[0,3]}, vs_goalie:{"Stuart Skinner":[0,2]}},
+  {name:"Jakob Chychrun",      team:"WSH", career:[1,4],    seasons:{"20222023":[0,1],"20242025":[0,1],"20252026":[0,2]}, vs_goalie:{}},
+  {name:"Nic Dowd",            team:"WSH", career:[0,2],    seasons:{}, vs_goalie:{}},
+  {name:"Trevor van Riemsdyk", team:"WSH", career:[0,2],    seasons:{}, vs_goalie:{}},
+  {name:"Aliaksei Protas",     team:"WSH", career:[0,1],    seasons:{"20242025":[0,1],"20252026":[0,1]}, vs_goalie:{}},
+  {name:"Tom Wilson",          team:"WSH", career:[0,1],    seasons:{}, vs_goalie:{}},
+  {name:"Rasmus Sandin",       team:"WSH", career:[0,1],    seasons:{"20252026":[0,1]}, vs_goalie:{}},
+];
+const SAMPLE_GOALIES = [
+  {name:"Stuart Skinner", team:"EDM", stopped:16, faced:29, record:"3 W \u2013 6 L in career shootouts"},
+  {name:"Calvin Pickard", team:"EDM", stopped:19, faced:25, record:"6 W \u2013 2 L in career shootouts"},
+  {name:"Charlie Lindgren", team:"WSH", stopped:37, faced:54, record:"5 W \u2013 9 L in career shootouts"},
+  {name:"Logan Thompson",   team:"WSH", stopped:39, faced:52, record:"5 W \u2013 8 L in career shootouts"},
+];
+const SAMPLE_MINOR = [
+  {name:"D. Tomasek", team:"AHL", career:[8,19], cur:[8,18]},
+  {name:"I. Howard",  team:"AHL", career:[5,6],  cur:[5,6]},
+  {name:"M. Savoie",  team:"AHL", career:[3,8],  cur:[3,8]},
+  {name:"A. Regula",  team:"AHL", career:[0,2],  cur:[0,2]},
+];
+
+let PLAYERS = SAMPLE_PLAYERS, GOALIES = SAMPLE_GOALIES, MINOR = SAMPLE_MINOR;
+let usingLive = false;
+
+async function loadData(){
+  try{
+    const [pRes, gRes] = await Promise.all([fetch('data/players.json'), fetch('data/goalies.json')]);
+    if(pRes.ok && gRes.ok){
+      PLAYERS = await pRes.json();
+      GOALIES = await gRes.json();
+      usingLive = true;
+      try{
+        const mRes = await fetch('data/minor.json');
+        if(mRes.ok) MINOR = await mRes.json();
+      }catch(e){}
+    }
+  }catch(e){ /* fall back to sample */ }
+  updateBanner();
+  populateTeamSelects();
+  renderAll();
+}
+
+function updateBanner(){
+  const el = document.getElementById('statusBanner');
+  if(usingLive){
+    el.className = 'status-banner live';
+    el.textContent = 'Live data \u2014 reading from data/players.json and data/goalies.json';
+  } else {
+    el.className = 'status-banner sample';
+    el.textContent = '\u26A0 No live data found yet \u2014 showing sample data (EDM vs WSH from your template). Run the pipeline export to populate data/*.json.';
+  }
+}
+
+function populateTeamSelects(){
+  const teamsWithData = new Set(PLAYERS.map(p => p.team).concat(GOALIES.map(g => g.team)));
+  const aSel = document.getElementById('teamASelect');
+  const bSel = document.getElementById('teamBSelect');
+  const opts = TEAMS.map(([abbr,name]) => {
+    const has = teamsWithData.has(abbr);
+    return `<option value="${abbr}">${abbr} \u2013 ${name}${has ? '' : ' (no data yet)'}</option>`;
+  }).join('');
+  aSel.innerHTML = opts;
+  bSel.innerHTML = opts;
+  aSel.value = teamsWithData.has('EDM') ? 'EDM' : TEAMS[0][0];
+  bSel.value = teamsWithData.has('WSH') ? 'WSH' : TEAMS[1][0];
+  aSel.addEventListener('change', renderAll);
+  bSel.addEventListener('change', renderAll);
+}
+
+function pct(pair){
+  if(!pair) return null;
+  const [g,a] = pair;
+  return a>0 ? g/a : 0;
+}
+function fmtPct(pair){
+  const p = pct(pair);
+  if(p===null) return '<span class="no-data">\u2014</span>';
+  const cls = p>=0.40 ? 'hot' : (p===0 ? 'cold' : '');
+  return `<span class="pct ${cls}">${(p*100).toFixed(0)}%</span>`;
+}
+function fmtGA(pair){
+  if(!pair || pair[1]===0) return '<span class="no-data">\u2014</span>';
+  return `${pair[0]}/${pair[1]}`;
+}
+function last3(seasons){
+  const keys = Object.keys(seasons || {}).sort().reverse().slice(0,3);
+  if(!keys.length) return null;
+  let g=0,a=0;
+  keys.forEach(k => { g += seasons[k][0]; a += seasons[k][1]; });
+  return [g,a];
+}
+function currentSeason(seasons){
+  const keys = Object.keys(seasons || {}).sort().reverse();
+  return keys.length ? seasons[keys[0]] : null;
+}
+
+function renderPanels(teamA, teamB){
+  const panelsEl = document.getElementById('panels');
+  const pairs = [[teamA, teamB], [teamB, teamA]];
+  panelsEl.innerHTML = pairs.map(([team, opp]) => {
+    const players = PLAYERS.filter(p => p.team === team);
+    const oppGoalies = GOALIES.filter(g => g.team === opp);
+    const oppLabel = oppGoalies.length ? oppGoalies.map(g => g.name.split(' ').pop()).join(' / ') : opp;
+    if(!players.length){
+      return `<div class="team-panel">
+        <div class="team-header"><span>${team} SHOOTERS</span></div>
+        <div class="empty-panel">No shootout data loaded for ${team} yet.</div>
+      </div>`;
+    }
+    return `<div class="team-panel">
+      <div class="team-header">
+        <span>${team} SHOOTERS</span>
+        <span class="opp-goalie">vs ${oppLabel}</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th><th>Career</th><th>Career Pct</th><th>Last 3 Szn</th><th>Current Szn</th>
+            <th class="vsg-col">vs ${oppLabel}</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${players.map(p => {
+            let vsOpp = null;
+            oppGoalies.forEach(g => { if(p.vs_goalie && p.vs_goalie[g.name]) vsOpp = p.vs_goalie[g.name]; });
+            return `<tr>
+              <td><span class="player-name">${p.name}</span></td>
+              <td>${fmtGA(p.career)}</td>
+              <td>${fmtPct(p.career)}</td>
+              <td>${fmtGA(last3(p.seasons))}</td>
+              <td>${fmtGA(currentSeason(p.seasons))}</td>
+              <td class="vsg-col">${fmtGA(vsOpp)}</td>
+            </tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>`;
+  }).join('');
+}
+
+function renderGoalies(teamA, teamB){
+  const el = document.getElementById('goalieRow');
+  const list = GOALIES.filter(g => g.team === teamA || g.team === teamB);
+  if(!list.length){ el.innerHTML = '<div class="empty-panel">No goalie data loaded for these teams yet.</div>'; return; }
+  el.innerHTML = list.map(g => {
+    const svPct = g.faced ? ((g.stopped/g.faced)*100).toFixed(1) : '\u2014';
+    return `<div class="goalie-card">
+      <div><h3>${g.name}</h3><div class="record">${g.record || ''}</div></div>
+      <div class="goalie-stat">
+        <div class="big">${svPct}%</div>
+        <div class="lbl">${g.stopped} of ${g.faced} SO shots stopped</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderMinor(){
+  const el = document.getElementById('minorTable');
+  el.innerHTML = `<thead><tr><th>Player</th><th>League</th><th>Career</th><th>Career Pct</th><th>Current</th></tr></thead>
+    <tbody>${MINOR.map(m => `<tr>
+      <td>${m.name}</td><td style="text-align:right">${m.team}</td>
+      <td>${fmtGA(m.career)}</td><td>${fmtPct(m.career)}</td><td>${fmtGA(m.cur)}</td>
+    </tr>`).join('')}</tbody>`;
+}
+
+function buildSearchIndex(){
+  const idx = PLAYERS.map(p => ({name:p.name, team:p.team, pct:pct(p.career)}));
+  GOALIES.forEach(g => idx.push({name:g.name, team:g.team, pct:null, goalie:true}));
+  return idx;
+}
+
+function renderAll(){
+  const teamA = document.getElementById('teamASelect').value;
+  const teamB = document.getElementById('teamBSelect').value;
+  renderPanels(teamA, teamB);
+  renderGoalies(teamA, teamB);
+  renderMinor();
+  window._searchIndex = buildSearchIndex();
+}
+
+const input = document.getElementById('searchInput');
+const results = document.getElementById('searchResults');
+input.addEventListener('input', () => {
+  const q = input.value.trim().toLowerCase();
+  if(!q){ results.classList.remove('show'); return; }
+  const matches = (window._searchIndex || []).filter(x => x.name.toLowerCase().includes(q)).slice(0,8);
+  results.innerHTML = matches.length
+    ? matches.map(m => `<div class="search-result-row">
+        <span>${m.name}${m.goalie ? ' (G)' : ''}</span>
+        <span class="team-tag">${m.team}${m.pct!==null ? ' \u00b7 '+(m.pct*100).toFixed(0)+'%' : ''}</span>
+      </div>`).join('')
+    : `<div class="search-result-row"><span class="no-data">No matches loaded</span></div>`;
+  results.classList.add('show');
+});
+document.addEventListener('click', (e) => { if(!e.target.closest('.search-box')) results.classList.remove('show'); });
+
+loadData();
+</script>
+</body>
+</html>
