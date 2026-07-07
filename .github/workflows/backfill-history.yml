@@ -1,19 +1,16 @@
 name: Backfill Shootout History
 
-# Run this a few times with different year ranges to build up full history
-# without risking a timeout — e.g. first 2023-2026, then 2019-2023, then
-# 2015-2019, then 2005-2015. Each run appends to the existing database.
 on:
   workflow_dispatch:
     inputs:
-      start_year:
-        description: "Start year (e.g. 2023 means the 2023-24 season)"
+      start_season:
+        description: "Start season (8-digit, e.g. 20052006)"
         type: string
-        default: "2023"
-      end_year:
-        description: "End year, exclusive (e.g. 2026 covers up through 2025-26)"
+        default: "20052006"
+      end_season:
+        description: "End season (8-digit, e.g. 20252026)"
         type: string
-        default: "2026"
+        default: "20252026"
 
 permissions:
   contents: write
@@ -34,8 +31,8 @@ jobs:
       - name: Init database (safe to re-run)
         run: python nhl_shootout_pipeline.py --init-db
 
-      - name: Backfill ${{ github.event.inputs.start_year }} to ${{ github.event.inputs.end_year }}
-        run: python nhl_shootout_pipeline.py --backfill ${{ github.event.inputs.start_year }} ${{ github.event.inputs.end_year }} --debug
+      - name: Backfill ${{ github.event.inputs.start_season }} to ${{ github.event.inputs.end_season }}
+        run: python nhl_shootout_pipeline.py --backfill ${{ github.event.inputs.start_season }} ${{ github.event.inputs.end_season }} --debug
 
       - name: Export JSON for the page
         run: python nhl_shootout_pipeline.py --export-json
@@ -46,7 +43,7 @@ jobs:
           ls -la shootout.db 2>&1 || echo "shootout.db missing"
           echo "--- data/ ---"
           ls -la data/ 2>&1 || echo "data/ missing"
-          echo "--- players.json preview ---"
+          echo "--- players.json preview (first 500 chars) ---"
           head -c 500 data/players.json 2>&1 || echo "players.json missing"
 
       - name: Commit updated data
@@ -55,5 +52,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           mkdir -p data
           git add -A data shootout.db
-          git diff --cached --quiet || git commit -m "Backfill ${{ github.event.inputs.start_year }}-${{ github.event.inputs.end_year }}"
+          git diff --cached --quiet || git commit -m "Backfill ${{ github.event.inputs.start_season }}-${{ github.event.inputs.end_season }}"
           git push

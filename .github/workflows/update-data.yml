@@ -1,13 +1,10 @@
 name: Update Shootout Data
 
-# Manual only, for now — click "Run workflow" on the Actions tab after a game
-# (or whenever you want fresh numbers). A schedule trigger can be added later
-# with a couple lines under `on:` once you're ready to automate it.
 on:
   workflow_dispatch:
     inputs:
       run_full_update:
-        description: "Also refresh rosters (slower, do this once a day / after trades)"
+        description: "Also refresh rosters (do after trades/call-ups)"
         type: boolean
         default: false
 
@@ -26,15 +23,15 @@ jobs:
 
       - run: pip install requests
 
-      - name: Init database (safe to re-run, no-op if it exists)
+      - name: Init database (safe to re-run)
         run: python nhl_shootout_pipeline.py --init-db
 
       - name: Refresh rosters
         if: ${{ github.event.inputs.run_full_update == 'true' }}
         run: python nhl_shootout_pipeline.py --update-rosters
 
-      - name: Pull today's completed games
-        run: python nhl_shootout_pipeline.py --update-today
+      - name: Pull current season shootout stats
+        run: python nhl_shootout_pipeline.py --backfill 20252026 20252026 --debug
 
       - name: Export JSON for the page
         run: python nhl_shootout_pipeline.py --export-json
