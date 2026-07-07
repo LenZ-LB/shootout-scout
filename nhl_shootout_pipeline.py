@@ -247,11 +247,19 @@ def update_today(debug=False):
 
 def backfill(start_year, end_year, debug=False):
     """
-    Historical load since the shootout began (2005-06). This walks the
-    schedule week by week for each season and pulls play-by-play for every
-    completed game — it's slow (NHL has ~1,300 games/season) and polite
-    sleeps are intentional. Expect this to take a while; run it once,
-    overnight, not in a loop.
+    Historical load since the shootout began (2005-06). Walks the schedule
+    week by week for each season and pulls play-by-play ONLY for games that
+    actually went to a shootout (skipped otherwise) — the schedule response
+    includes a gameOutcome.lastPeriodType field ('REG'/'OT'/'SO') we can
+    check first, which avoids the expensive play-by-play call for the ~80%
+    of games that never reach a shootout. If that field is ever missing for
+    a game, we fetch anyway rather than risk silently skipping real data.
+
+    Call this in small year-range chunks (2-3 seasons at a time), not the
+    full 2005-2026 range in one go — a single run only commits at the end,
+    so a timeout or rate-limit partway through a huge range loses that
+    run's progress. Chunking lets you re-run safely and build up history
+    over a few sessions.
     """
     conn = get_conn()
     for year in range(start_year, end_year):
@@ -275,6 +283,10 @@ def backfill(start_year, end_year, debug=False):
                         continue
                     if g.get("gameType") != 2:  # regular season only, no shootouts in playoffs
                         continue
+                    outcome = g.get("gameOutcome") or {}
+                    last_period = outcome.get("lastPeriodType")
+                    if last_period is not None and last_period != "SO":
+                        continue  # confirmed no shootout, skip the expensive call
                     attempts = fetch_game(g["id"], season, day.get("date"), debug=debug)
                     if attempts:
                         store_attempts(conn, attempts)
