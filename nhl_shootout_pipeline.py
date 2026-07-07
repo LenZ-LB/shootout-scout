@@ -367,7 +367,7 @@ def export_json(out_dir="data"):
     print(f"Exported {len(players_out)} players, {len(goalies_out)} goalies to {out_dir}/")
 
 
-
+if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--init-db", action="store_true")
     ap.add_argument("--update-rosters", action="store_true")
