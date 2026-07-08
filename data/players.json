@@ -95,9 +95,13 @@
       ]
     },
     "vs_goalie": {
-      "Marc-Andre Fleury": [
+      "Ukko-Pekka Luukkonen": [
         0,
-        2
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
+        1
       ]
     }
   },
@@ -197,7 +201,15 @@
       ]
     },
     "vs_goalie": {
+      "Mackenzie Blackwood": [
+        1,
+        1
+      ],
       "Dustin Wolf": [
+        0,
+        1
+      ],
+      "Nico Daws": [
         0,
         2
       ],
@@ -209,13 +221,25 @@
         0,
         1
       ],
+      "Spencer Knight": [
+        0,
+        2
+      ],
+      "Andrei Vasilevskiy": [
+        0,
+        3
+      ],
+      "Ville Husso": [
+        0,
+        1
+      ],
       "Elvis Merzlikins": [
         0,
         1
       ],
-      "Mackenzie Blackwood": [
-        2,
-        2
+      "Connor Hellebuyck": [
+        1,
+        1
       ]
     }
   },
@@ -314,7 +338,16 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Cam Talbot": [
+        0,
+        1
+      ],
+      "Juuse Saros": [
+        0,
+        3
+      ]
+    }
   },
   {
     "id": 8475692,
@@ -392,20 +425,28 @@
       ]
     },
     "vs_goalie": {
-      "Jacob Markstrom": [
-        0,
-        1
-      ],
-      "Charlie Lindgren": [
-        0,
-        1
-      ],
       "Mackenzie Blackwood": [
         1,
         1
       ],
       "Joey Daccord": [
         1,
+        1
+      ],
+      "Jacob Markstrom": [
+        0,
+        1
+      ],
+      "Spencer Knight": [
+        0,
+        1
+      ],
+      "Dan Vladar": [
+        0,
+        1
+      ],
+      "Colten Ellis": [
+        0,
         1
       ]
     }
@@ -486,12 +527,24 @@
       ]
     },
     "vs_goalie": {
-      "Jordan Binnington": [
+      "Jet Greaves": [
+        0,
+        4
+      ],
+      "Sergei Bobrovsky": [
         0,
         1
       ],
-      "Marc-Andre Fleury": [
-        1,
+      "Adin Hill": [
+        0,
+        1
+      ],
+      "Linus Ullmark": [
+        0,
+        1
+      ],
+      "Kevin Lankinen": [
+        0,
         1
       ]
     }
@@ -588,13 +641,13 @@
       ]
     },
     "vs_goalie": {
-      "Nico Daws": [
+      "Dustin Wolf": [
         0,
-        1
+        2
       ],
       "Ilya Sorokin": [
         0,
-        1
+        2
       ]
     }
   },
@@ -678,16 +731,28 @@
       ]
     },
     "vs_goalie": {
-      "David Rittich": [
-        0,
-        1
-      ],
       "Mackenzie Blackwood": [
         2,
         2
       ],
       "Andrei Vasilevskiy": [
-        1,
+        3,
+        3
+      ],
+      "David Rittich": [
+        0,
+        1
+      ],
+      "Scott Wedgewood": [
+        0,
+        3
+      ],
+      "Colten Ellis": [
+        2,
+        2
+      ],
+      "Tristan Jarry": [
+        0,
         1
       ]
     }
@@ -784,13 +849,13 @@
       ]
     },
     "vs_goalie": {
-      "Dustin Wolf": [
-        0,
-        2
-      ],
       "Mackenzie Blackwood": [
-        2,
-        2
+        1,
+        1
+      ],
+      "Elvis Merzlikins": [
+        0,
+        1
       ]
     }
   },
@@ -861,7 +926,20 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Kevin Lankinen": [
+        1,
+        1
+      ],
+      "Scott Wedgewood": [
+        0,
+        1
+      ],
+      "Connor Hellebuyck": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8476459,
@@ -934,7 +1012,12 @@
         0
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Daniil Tarasov": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8475794,
@@ -1011,7 +1094,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Devin Cooley": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8474564,
@@ -1102,7 +1190,23 @@
         1
       ],
       "Arvid Soderblom": [
-        2,
+        1,
+        1
+      ],
+      "Nikita Tolopilo": [
+        0,
+        2
+      ],
+      "Darcy Kuemper": [
+        0,
+        3
+      ],
+      "Scott Wedgewood": [
+        0,
+        2
+      ],
+      "David Rittich": [
+        0,
         2
       ]
     }
@@ -1167,21 +1271,17 @@
       ]
     },
     "vs_goalie": {
-      "Tristan Jarry": [
-        1,
-        3
-      ],
       "Jacob Markstrom": [
-        1,
-        1
-      ],
-      "Joey Daccord": [
         2,
         2
       ],
+      "Tristan Jarry": [
+        0,
+        3
+      ],
       "Samuel Ersson": [
-        1,
-        1
+        2,
+        2
       ]
     }
   },
@@ -1270,8 +1370,28 @@
         1
       ],
       "Arvid Soderblom": [
+        3,
+        3
+      ],
+      "Anton Forsberg": [
+        0,
+        1
+      ],
+      "Nikita Tolopilo": [
+        0,
+        2
+      ],
+      "Darcy Kuemper": [
+        1,
+        2
+      ],
+      "Connor Hellebuyck": [
         2,
         2
+      ],
+      "Scott Wedgewood": [
+        3,
+        3
       ]
     }
   },
@@ -1357,6 +1477,10 @@
     "vs_goalie": {
       "Alexandar Georgiev": [
         0,
+        1
+      ],
+      "Jakub Dobes": [
+        0,
         2
       ]
     }
@@ -1426,6 +1550,18 @@
     },
     "vs_goalie": {
       "Daniil Tarasov": [
+        2,
+        2
+      ],
+      "Jet Greaves": [
+        2,
+        2
+      ],
+      "Samuel Ersson": [
+        1,
+        1
+      ],
+      "Stuart Skinner": [
         1,
         1
       ]
@@ -1499,21 +1635,33 @@
       ]
     },
     "vs_goalie": {
-      "Samuel Montembeault": [
-        2,
-        2
-      ],
       "Leevi Meril\u00e4inen": [
         0,
         1
       ],
-      "Dan Vladar": [
-        0,
+      "Akira Schmid": [
+        1,
         1
       ],
-      "Akira Schmid": [
-        2,
+      "Dan Vladar": [
+        0,
         2
+      ],
+      "John Gibson": [
+        4,
+        4
+      ],
+      "Matt Murray": [
+        1,
+        1
+      ],
+      "Jeremy Swayman": [
+        1,
+        1
+      ],
+      "Arturs Silovs": [
+        1,
+        1
       ]
     }
   },
@@ -1587,6 +1735,22 @@
     "vs_goalie": {
       "Karel Vejmelka": [
         1,
+        1
+      ],
+      "Anton Forsberg": [
+        0,
+        2
+      ],
+      "Nikita Tolopilo": [
+        0,
+        1
+      ],
+      "Connor Hellebuyck": [
+        0,
+        1
+      ],
+      "Darcy Kuemper": [
+        0,
         1
       ]
     }
@@ -1670,7 +1834,12 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Brandon Bussi": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8477492,
@@ -1736,19 +1905,35 @@
       ]
     },
     "vs_goalie": {
-      "Spencer Knight": [
-        2,
-        2
-      ],
-      "Adin Hill": [
-        0,
-        1
-      ],
       "Filip Gustavsson": [
         0,
         1
       ],
+      "Adin Hill": [
+        0,
+        2
+      ],
+      "Spencer Knight": [
+        1,
+        1
+      ],
       "Akira Schmid": [
+        0,
+        1
+      ],
+      "Samuel Montembeault": [
+        0,
+        1
+      ],
+      "Jake Oettinger": [
+        0,
+        3
+      ],
+      "Connor Ingram": [
+        3,
+        3
+      ],
+      "Jesper Wallstedt": [
         0,
         1
       ]
@@ -1821,6 +2006,14 @@
       "Spencer Martin": [
         1,
         1
+      ],
+      "Pyotr Kochetkov": [
+        0,
+        2
+      ],
+      "Matt Murray": [
+        0,
+        1
       ]
     }
   },
@@ -1886,6 +2079,22 @@
     "vs_goalie": {
       "Lukas Dostal": [
         0,
+        2
+      ],
+      "Joel Hofer": [
+        0,
+        1
+      ],
+      "Arturs Silovs": [
+        1,
+        1
+      ],
+      "Arvid Soderblom": [
+        1,
+        1
+      ],
+      "Ilya Sorokin": [
+        0,
         1
       ]
     }
@@ -1949,6 +2158,18 @@
       "Daniil Tarasov": [
         0,
         1
+      ],
+      "Dustin Wolf": [
+        1,
+        1
+      ],
+      "Samuel Ersson": [
+        0,
+        1
+      ],
+      "Jet Greaves": [
+        0,
+        2
       ]
     }
   },
@@ -2101,17 +2322,17 @@
       ]
     },
     "vs_goalie": {
-      "Kevin Lankinen": [
+      "Jonas Johansson": [
         0,
         1
       ],
-      "Jonas Johansson": [
+      "Kevin Lankinen": [
         0,
         1
       ],
       "Sergei Bobrovsky": [
         0,
-        2
+        3
       ]
     }
   },
@@ -2167,11 +2388,47 @@
       ]
     },
     "vs_goalie": {
+      "Jordan Binnington": [
+        0,
+        3
+      ],
+      "Lukas Dostal": [
+        0,
+        2
+      ],
       "Jake Oettinger": [
         1,
         1
       ],
-      "Lukas Dostal": [
+      "Adin Hill": [
+        1,
+        1
+      ],
+      "Dustin Wolf": [
+        0,
+        1
+      ],
+      "Samuel Ersson": [
+        0,
+        1
+      ],
+      "Cam Talbot": [
+        0,
+        1
+      ],
+      "Juuse Saros": [
+        2,
+        3
+      ],
+      "Ville Husso": [
+        0,
+        1
+      ],
+      "Joel Hofer": [
+        4,
+        4
+      ],
+      "Jesper Wallstedt": [
         0,
         1
       ]
@@ -2245,9 +2502,9 @@
       ]
     },
     "vs_goalie": {
-      "Spencer Knight": [
+      "Mackenzie Blackwood": [
         0,
-        2
+        3
       ],
       "Dustin Wolf": [
         1,
@@ -2259,14 +2516,34 @@
       ],
       "Sergei Bobrovsky": [
         0,
-        2
+        1
       ],
       "Ilya Sorokin": [
         0,
         1
       ],
-      "Mackenzie Blackwood": [
+      "Spencer Knight": [
         0,
+        3
+      ],
+      "Dan Vladar": [
+        0,
+        2
+      ],
+      "Andrei Vasilevskiy": [
+        0,
+        2
+      ],
+      "Jakub Dobes": [
+        1,
+        1
+      ],
+      "Elvis Merzlikins": [
+        0,
+        2
+      ],
+      "Connor Hellebuyck": [
+        1,
         1
       ]
     }
@@ -2331,12 +2608,24 @@
         0,
         1
       ],
+      "Jordan Binnington": [
+        2,
+        2
+      ],
       "Ukko-Pekka Luukkonen": [
         0,
         1
       ],
-      "Ivan Fedotov": [
-        3,
+      "Ilya Sorokin": [
+        0,
+        4
+      ],
+      "Joey Daccord": [
+        0,
+        2
+      ],
+      "Spencer Knight": [
+        0,
         3
       ]
     }
@@ -2413,9 +2702,21 @@
       ]
     },
     "vs_goalie": {
-      "Alex Lyon": [
+      "Casey DeSmith": [
         0,
-        2
+        1
+      ],
+      "Scott Wedgewood": [
+        1,
+        1
+      ],
+      "Dustin Wolf": [
+        0,
+        1
+      ],
+      "Anton Forsberg": [
+        0,
+        1
       ]
     }
   },
@@ -2479,17 +2780,37 @@
       ]
     },
     "vs_goalie": {
+      "Jordan Binnington": [
+        3,
+        3
+      ],
       "Jake Oettinger": [
+        1,
+        1
+      ],
+      "Jesper Wallstedt": [
+        0,
+        4
+      ],
+      "Cam Talbot": [
+        0,
+        3
+      ],
+      "Juuse Saros": [
         2,
         2
       ],
-      "Jordan Binnington": [
-        2,
-        2
+      "Ville Husso": [
+        0,
+        1
       ],
       "Lukas Dostal": [
         0,
-        2
+        4
+      ],
+      "Joel Hofer": [
+        0,
+        1
       ]
     }
   },
@@ -2545,16 +2866,20 @@
       ]
     },
     "vs_goalie": {
-      "Casey DeSmith": [
-        0,
+      "Samuel Ersson": [
+        1,
         1
       ],
-      "Samuel Ersson": [
-        2,
+      "Lukas Dostal": [
+        0,
         2
       ],
       "James Reimer": [
         0,
+        3
+      ],
+      "Jacob Fowler": [
+        1,
         1
       ]
     }
@@ -2610,7 +2935,28 @@
         7
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Cayden Primeau": [
+        0,
+        2
+      ],
+      "Spencer Knight": [
+        0,
+        1
+      ],
+      "Carter Hart": [
+        0,
+        1
+      ],
+      "Joey Daccord": [
+        0,
+        2
+      ],
+      "Jonas Johansson": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8475151,
@@ -2692,10 +3038,6 @@
         0,
         1
       ],
-      "Dustin Wolf": [
-        0,
-        1
-      ],
       "Cayden Primeau": [
         1,
         1
@@ -2704,9 +3046,9 @@
         0,
         1
       ],
-      "Alex Nedeljkovic": [
+      "Dustin Wolf": [
         0,
-        1
+        2
       ]
     }
   },
@@ -2778,13 +3120,13 @@
       ]
     },
     "vs_goalie": {
-      "Lukas Dostal": [
-        0,
-        1
-      ],
       "Filip Gustavsson": [
         0,
-        1
+        2
+      ],
+      "Lukas Dostal": [
+        0,
+        3
       ]
     }
   },
@@ -2852,17 +3194,29 @@
         0,
         2
       ],
+      "Samuel Ersson": [
+        0,
+        3
+      ],
+      "Alex Nedeljkovic": [
+        3,
+        3
+      ],
       "Dustin Wolf": [
         0,
         1
       ],
-      "Cayden Primeau": [
-        0,
-        1
+      "Spencer Knight": [
+        2,
+        2
       ],
-      "Alex Nedeljkovic": [
+      "Joey Daccord": [
         1,
         1
+      ],
+      "Jeremy Swayman": [
+        0,
+        3
       ]
     }
   },
@@ -2928,6 +3282,10 @@
     "vs_goalie": {
       "Leevi Meril\u00e4inen": [
         0,
+        1
+      ],
+      "Andrei Vasilevskiy": [
+        0,
         2
       ]
     }
@@ -2986,9 +3344,25 @@
     "vs_goalie": {
       "Alexandar Georgiev": [
         0,
-        2
+        3
       ],
       "Karel Vejmelka": [
+        3,
+        3
+      ],
+      "Jakub Dobes": [
+        1,
+        1
+      ],
+      "Dan Vladar": [
+        0,
+        2
+      ],
+      "Jacob Markstrom": [
+        0,
+        1
+      ],
+      "Nikita Tolopilo": [
         1,
         1
       ]
@@ -3038,7 +3412,23 @@
       ]
     },
     "vs_goalie": {
+      "Dustin Wolf": [
+        1,
+        1
+      ],
       "Samuel Ersson": [
+        0,
+        3
+      ],
+      "Jordan Binnington": [
+        0,
+        1
+      ],
+      "Spencer Knight": [
+        0,
+        1
+      ],
+      "Joey Daccord": [
         0,
         1
       ]
@@ -3124,15 +3514,11 @@
       ]
     },
     "vs_goalie": {
-      "Arvid Soderblom": [
-        1,
-        1
-      ],
       "Darcy Kuemper": [
         0,
         2
       ],
-      "Philipp Grubauer": [
+      "Eric Comrie": [
         0,
         2
       ],
@@ -3140,7 +3526,11 @@
         1,
         1
       ],
-      "Eric Comrie": [
+      "Yaroslav Askarov": [
+        0,
+        1
+      ],
+      "Kevin Lankinen": [
         0,
         1
       ]
@@ -3226,9 +3616,17 @@
       ]
     },
     "vs_goalie": {
-      "Alex Nedeljkovic": [
-        0,
+      "Stuart Skinner": [
+        1,
         1
+      ],
+      "Casey DeSmith": [
+        1,
+        1
+      ],
+      "Lukas Dostal": [
+        3,
+        3
       ]
     }
   },
@@ -3389,10 +3787,6 @@
       ]
     },
     "vs_goalie": {
-      "Tristan Jarry": [
-        3,
-        4
-      ],
       "Jacob Markstrom": [
         0,
         1
@@ -3401,7 +3795,7 @@
         1,
         1
       ],
-      "Samuel Ersson": [
+      "Joonas Korpisalo": [
         0,
         1
       ]
@@ -3461,11 +3855,31 @@
     "vs_goalie": {
       "Alexandar Georgiev": [
         0,
-        2
+        3
       ],
       "Karel Vejmelka": [
         1,
         1
+      ],
+      "Anton Forsberg": [
+        0,
+        1
+      ],
+      "Ilya Sorokin": [
+        0,
+        1
+      ],
+      "Joey Daccord": [
+        2,
+        2
+      ],
+      "Scott Wedgewood": [
+        1,
+        1
+      ],
+      "Jake Allen": [
+        0,
+        4
       ]
     }
   },
@@ -3517,21 +3931,49 @@
       ]
     },
     "vs_goalie": {
-      "Philipp Grubauer": [
-        0,
-        2
-      ],
       "Dustin Wolf": [
         0,
-        1
-      ],
-      "Jacob Markstrom": [
-        1,
-        1
+        3
       ],
       "Samuel Ersson": [
         1,
         1
+      ],
+      "Jacob Markstrom": [
+        2,
+        2
+      ],
+      "Elvis Merzlikins": [
+        0,
+        1
+      ],
+      "Philipp Grubauer": [
+        0,
+        1
+      ],
+      "Juuse Saros": [
+        1,
+        1
+      ],
+      "Jordan Binnington": [
+        1,
+        1
+      ],
+      "Spencer Knight": [
+        0,
+        1
+      ],
+      "Yaroslav Askarov": [
+        1,
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
+        1
+      ],
+      "Joey Daccord": [
+        0,
+        4
       ]
     }
   },
@@ -3575,16 +4017,44 @@
       ]
     },
     "vs_goalie": {
-      "David Rittich": [
-        0,
-        1
-      ],
       "Mackenzie Blackwood": [
-        2,
-        2
+        1,
+        1
       ],
       "Andrei Vasilevskiy": [
         1,
+        1
+      ],
+      "David Rittich": [
+        0,
+        2
+      ],
+      "Samuel Montembeault": [
+        2,
+        2
+      ],
+      "Sergei Bobrovsky": [
+        0,
+        1
+      ],
+      "Scott Wedgewood": [
+        1,
+        4
+      ],
+      "Colten Ellis": [
+        1,
+        1
+      ],
+      "Stuart Skinner": [
+        1,
+        1
+      ],
+      "Adin Hill": [
+        3,
+        3
+      ],
+      "Tristan Jarry": [
+        0,
         1
       ]
     }
@@ -3671,7 +4141,7 @@
     "vs_goalie": {
       "Ivan Fedotov": [
         0,
-        1
+        3
       ]
     }
   },
@@ -3750,7 +4220,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jesper Wallstedt": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8476468,
@@ -3823,6 +4298,18 @@
       "Samuel Ersson": [
         0,
         1
+      ],
+      "Philipp Grubauer": [
+        1,
+        1
+      ],
+      "Stuart Skinner": [
+        0,
+        2
+      ],
+      "Eric Comrie": [
+        0,
+        4
       ]
     }
   },
@@ -3889,7 +4376,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Darcy Kuemper": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8477946,
@@ -3948,12 +4440,24 @@
     },
     "vs_goalie": {
       "Stuart Skinner": [
-        1,
-        1
+        3,
+        3
       ],
       "James Reimer": [
-        2,
+        3,
+        3
+      ],
+      "Jet Greaves": [
+        0,
         2
+      ],
+      "Alex Nedeljkovic": [
+        0,
+        2
+      ],
+      "Charlie Lindgren": [
+        0,
+        1
       ]
     }
   },
@@ -4016,6 +4520,14 @@
       "Alex Lyon": [
         0,
         1
+      ],
+      "Casey DeSmith": [
+        0,
+        1
+      ],
+      "Dustin Wolf": [
+        0,
+        1
       ]
     }
   },
@@ -4059,15 +4571,39 @@
       ]
     },
     "vs_goalie": {
+      "Arvid Soderblom": [
+        0,
+        3
+      ],
+      "Semyon Varlamov": [
+        0,
+        1
+      ],
       "Mackenzie Blackwood": [
         0,
         2
       ],
-      "Semyon Varlamov": [
+      "Jake Oettinger": [
+        0,
+        1
+      ],
+      "Lukas Dostal": [
+        0,
+        1
+      ],
+      "Jet Greaves": [
+        0,
+        1
+      ],
+      "Jake Allen": [
         0,
         2
       ],
-      "Jake Oettinger": [
+      "Dan Vladar": [
+        0,
+        2
+      ],
+      "Eric Comrie": [
         0,
         1
       ]
@@ -4130,8 +4666,32 @@
     },
     "vs_goalie": {
       "Alexandar Georgiev": [
+        3,
+        3
+      ],
+      "Karel Vejmelka": [
+        0,
+        1
+      ],
+      "Jakub Dobes": [
+        0,
+        2
+      ],
+      "Dan Vladar": [
         2,
         2
+      ],
+      "Alex Lyon": [
+        0,
+        1
+      ],
+      "Jacob Markstrom": [
+        0,
+        1
+      ],
+      "Nikita Tolopilo": [
+        1,
+        1
       ]
     }
   },
@@ -4207,11 +4767,19 @@
       ]
     },
     "vs_goalie": {
+      "Joel Hofer": [
+        0,
+        1
+      ],
       "Spencer Knight": [
         0,
-        2
+        1
       ],
-      "Ivan Fedotov": [
+      "Daniil Tarasov": [
+        0,
+        1
+      ],
+      "Juuse Saros": [
         0,
         3
       ]
@@ -4269,13 +4837,21 @@
       ]
     },
     "vs_goalie": {
-      "Lukas Dostal": [
-        0,
-        1
-      ],
       "Logan Thompson": [
         1,
         1
+      ],
+      "Filip Gustavsson": [
+        0,
+        1
+      ],
+      "Juuse Saros": [
+        0,
+        1
+      ],
+      "Lukas Dostal": [
+        0,
+        2
       ]
     }
   },
@@ -4336,15 +4912,31 @@
     },
     "vs_goalie": {
       "Adin Hill": [
-        0,
-        2
+        1,
+        3
       ],
       "Jakub Dobes": [
         0,
         1
       ],
-      "Andrei Vasilevskiy": [
+      "Sergei Bobrovsky": [
         0,
+        1
+      ],
+      "Colten Ellis": [
+        0,
+        4
+      ],
+      "Arvid Soderblom": [
+        0,
+        1
+      ],
+      "Stuart Skinner": [
+        0,
+        2
+      ],
+      "Tristan Jarry": [
+        1,
         1
       ]
     }
@@ -4397,13 +4989,25 @@
       ]
     },
     "vs_goalie": {
+      "Spencer Knight": [
+        0,
+        4
+      ],
+      "Alex Nedeljkovic": [
+        0,
+        3
+      ],
       "Filip Gustavsson": [
         1,
         1
       ],
       "Thatcher Demko": [
-        2,
-        2
+        1,
+        1
+      ],
+      "Anthony Stolarz": [
+        3,
+        3
       ]
     }
   },
@@ -4443,21 +5047,37 @@
       ]
     },
     "vs_goalie": {
-      "Mackenzie Blackwood": [
-        2,
-        2
+      "Jake Oettinger": [
+        0,
+        3
       ],
-      "Semyon Varlamov": [
+      "Jonas Johansson": [
         0,
         1
       ],
-      "Jake Oettinger": [
-        0,
+      "Jet Greaves": [
+        1,
+        1
+      ],
+      "Dennis Hildeby": [
+        1,
+        1
+      ],
+      "Daniil Tarasov": [
+        2,
         2
       ],
-      "Lukas Dostal": [
-        3,
-        3
+      "Jake Allen": [
+        2,
+        2
+      ],
+      "Eric Comrie": [
+        2,
+        2
+      ],
+      "Arturs Silovs": [
+        2,
+        2
       ]
     }
   },
@@ -4509,20 +5129,36 @@
       ]
     },
     "vs_goalie": {
-      "Jordan Binnington": [
+      "Scott Wedgewood": [
         0,
         1
       ],
       "Connor Hellebuyck": [
         0,
-        1
-      ],
-      "Scott Wedgewood": [
-        0,
-        1
+        2
       ],
       "Darcy Kuemper": [
         1,
+        1
+      ],
+      "David Rittich": [
+        0,
+        1
+      ],
+      "Frederik Andersen": [
+        0,
+        1
+      ],
+      "Logan Thompson": [
+        0,
+        1
+      ],
+      "Kevin Lankinen": [
+        0,
+        1
+      ],
+      "Carter Hart": [
+        0,
         1
       ]
     }
@@ -4583,31 +5219,39 @@
         1,
         1
       ],
-      "Kevin Lankinen": [
-        1,
+      "Daniil Tarasov": [
+        0,
         1
       ],
       "Jonas Johansson": [
         0,
         1
       ],
-      "Sergei Bobrovsky": [
+      "Kevin Lankinen": [
+        3,
+        3
+      ],
+      "Connor Hellebuyck": [
         0,
-        1
+        3
       ],
       "Andrei Vasilevskiy": [
         1,
         1
       ],
-      "Connor Hellebuyck": [
-        0,
-        2
-      ],
-      "Ilya Samsonov": [
+      "Sergei Bobrovsky": [
         0,
         1
       ],
-      "Daniil Tarasov": [
+      "Brandon Bussi": [
+        0,
+        4
+      ],
+      "Pyotr Kochetkov": [
+        0,
+        1
+      ],
+      "Igor Shesterkin": [
         0,
         1
       ]
@@ -4658,12 +5302,36 @@
     },
     "vs_goalie": {
       "Elvis Merzlikins": [
-        1,
-        2
+        2,
+        3
       ],
       "Charlie Lindgren": [
         0,
         1
+      ],
+      "Spencer Knight": [
+        2,
+        2
+      ],
+      "Jesper Wallstedt": [
+        0,
+        2
+      ],
+      "Logan Thompson": [
+        0,
+        1
+      ],
+      "Samuel Ersson": [
+        0,
+        1
+      ],
+      "Sergei Bobrovsky": [
+        0,
+        1
+      ],
+      "Stuart Skinner": [
+        2,
+        2
       ]
     }
   },
@@ -4703,12 +5371,40 @@
       ]
     },
     "vs_goalie": {
-      "Alexandar Georgiev": [
+      "David Rittich": [
+        1,
+        1
+      ],
+      "Ilya Sorokin": [
+        1,
+        1
+      ],
+      "Brandon Bussi": [
         0,
+        1
+      ],
+      "Stuart Skinner": [
+        1,
+        1
+      ],
+      "Anthony Stolarz": [
+        2,
         2
       ],
-      "Linus Ullmark": [
+      "Jordan Binnington": [
+        1,
+        1
+      ],
+      "Pyotr Kochetkov": [
+        0,
+        1
+      ],
+      "Samuel Montembeault": [
         2,
+        2
+      ],
+      "Jet Greaves": [
+        0,
         2
       ]
     }
@@ -4809,7 +5505,28 @@
         8
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Joey Daccord": [
+        0,
+        3
+      ],
+      "Darcy Kuemper": [
+        0,
+        2
+      ],
+      "Spencer Knight": [
+        2,
+        2
+      ],
+      "Frederik Andersen": [
+        0,
+        1
+      ],
+      "Dan Vladar": [
+        0,
+        3
+      ]
+    }
   },
   {
     "id": 8475754,
@@ -4875,17 +5592,25 @@
       ]
     },
     "vs_goalie": {
+      "Cayden Primeau": [
+        0,
+        2
+      ],
+      "Spencer Knight": [
+        0,
+        4
+      ],
+      "Akira Schmid": [
+        0,
+        3
+      ],
       "Samuel Montembeault": [
         1,
         1
       ],
-      "Cayden Primeau": [
+      "Lukas Dostal": [
         0,
-        1
-      ],
-      "Akira Schmid": [
-        0,
-        1
+        3
       ]
     }
   },
@@ -4946,8 +5671,28 @@
         1
       ],
       "Lukas Dostal": [
+        3,
+        3
+      ],
+      "James Reimer": [
+        0,
+        2
+      ],
+      "Joel Hofer": [
+        0,
+        1
+      ],
+      "Arvid Soderblom": [
+        0,
+        1
+      ],
+      "Jeremy Swayman": [
         2,
         2
+      ],
+      "Ilya Sorokin": [
+        0,
+        1
       ]
     }
   },
@@ -5003,25 +5748,41 @@
       ]
     },
     "vs_goalie": {
-      "Dan Vladar": [
+      "Vitek Vanecek": [
         0,
         1
       ],
-      "Charlie Lindgren": [
-        1,
-        1
-      ],
-      "Adin Hill": [
-        1,
-        1
-      ],
-      "Jonas Johansson": [
-        1,
+      "Dan Vladar": [
+        0,
         1
       ],
       "Sebastian Cossa": [
         1,
         1
+      ],
+      "Adin Hill": [
+        2,
+        2
+      ],
+      "Jonas Johansson": [
+        2,
+        2
+      ],
+      "Jake Oettinger": [
+        0,
+        1
+      ],
+      "Charlie Lindgren": [
+        0,
+        1
+      ],
+      "Filip Gustavsson": [
+        0,
+        2
+      ],
+      "Joseph Woll": [
+        3,
+        3
       ]
     }
   },
@@ -5089,28 +5850,28 @@
       ]
     },
     "vs_goalie": {
+      "Samuel Montembeault": [
+        0,
+        3
+      ],
       "Jordan Binnington": [
         1,
         1
       ],
-      "Connor Hellebuyck": [
-        0,
-        1
-      ],
-      "Samuel Montembeault": [
-        0,
-        1
-      ],
       "Scott Wedgewood": [
-        2,
-        2
-      ],
-      "Darcy Kuemper": [
-        2,
-        2
+        3,
+        3
       ],
       "Juuse Saros": [
         1,
+        1
+      ],
+      "David Rittich": [
+        0,
+        1
+      ],
+      "Carter Hart": [
+        0,
         1
       ]
     }
@@ -5173,15 +5934,15 @@
     "vs_goalie": {
       "Alexandar Georgiev": [
         0,
-        1
+        2
+      ],
+      "Scott Wedgewood": [
+        0,
+        3
       ],
       "Dustin Wolf": [
         0,
         1
-      ],
-      "Scott Wedgewood": [
-        0,
-        2
       ]
     }
   },
@@ -5238,11 +5999,15 @@
     },
     "vs_goalie": {
       "Nico Daws": [
-        2,
-        2
-      ],
-      "Mackenzie Blackwood": [
         1,
+        1
+      ],
+      "Jake Allen": [
+        0,
+        1
+      ],
+      "Ukko-Pekka Luukkonen": [
+        0,
         1
       ]
     }
@@ -5299,21 +6064,17 @@
       ]
     },
     "vs_goalie": {
-      "Lukas Dostal": [
-        0,
-        1
-      ],
-      "Logan Thompson": [
-        0,
-        1
-      ],
-      "Joseph Woll": [
-        2,
-        2
-      ],
       "Filip Gustavsson": [
         0,
-        1
+        2
+      ],
+      "Juuse Saros": [
+        0,
+        2
+      ],
+      "Joseph Woll": [
+        3,
+        3
       ]
     }
   },
@@ -5365,23 +6126,31 @@
       ]
     },
     "vs_goalie": {
+      "Charlie Lindgren": [
+        0,
+        2
+      ],
       "Dan Vladar": [
         0,
         1
       ],
-      "Charlie Lindgren": [
+      "Sebastian Cossa": [
         0,
         1
       ],
       "Adin Hill": [
         0,
-        2
+        3
       ],
       "Jonas Johansson": [
         0,
         1
       ],
-      "Sebastian Cossa": [
+      "David Rittich": [
+        0,
+        1
+      ],
+      "Joseph Woll": [
         0,
         1
       ]
@@ -5435,21 +6204,29 @@
       ]
     },
     "vs_goalie": {
+      "Andrei Vasilevskiy": [
+        0,
+        3
+      ],
       "Jaxson Stauber": [
         0,
-        1
+        3
       ],
       "Linus Ullmark": [
         1,
         1
       ],
-      "Samuel Montembeault": [
-        0,
-        2
+      "Darcy Kuemper": [
+        1,
+        1
       ],
-      "Andrei Vasilevskiy": [
+      "Arturs Silovs": [
         0,
-        2
+        1
+      ],
+      "Logan Thompson": [
+        1,
+        1
       ]
     }
   },
@@ -5506,6 +6283,14 @@
     },
     "vs_goalie": {
       "Samuel Ersson": [
+        0,
+        2
+      ],
+      "Joonas Korpisalo": [
+        0,
+        1
+      ],
+      "Joey Daccord": [
         0,
         1
       ]
@@ -5565,7 +6350,7 @@
     "vs_goalie": {
       "Elvis Merzlikins": [
         0,
-        3
+        1
       ]
     }
   },
@@ -5622,6 +6407,14 @@
     },
     "vs_goalie": {
       "Samuel Ersson": [
+        0,
+        1
+      ],
+      "Spencer Knight": [
+        2,
+        2
+      ],
+      "Yaroslav Askarov": [
         0,
         2
       ]
@@ -5760,13 +6553,33 @@
       ]
     },
     "vs_goalie": {
+      "Joel Hofer": [
+        2,
+        2
+      ],
       "Ivan Fedotov": [
+        0,
+        2
+      ],
+      "Spencer Knight": [
+        2,
+        2
+      ],
+      "Daniil Tarasov": [
         0,
         1
       ],
-      "Joel Hofer": [
-        1,
-        1
+      "Dustin Wolf": [
+        0,
+        2
+      ],
+      "Jakub Dobes": [
+        0,
+        4
+      ],
+      "Dylan Garand": [
+        3,
+        3
       ]
     }
   },
@@ -5814,21 +6627,25 @@
       ]
     },
     "vs_goalie": {
-      "Dustin Wolf": [
-        1,
+      "Samuel Ersson": [
+        0,
         1
       ],
       "Jacob Markstrom": [
         0,
+        2
+      ],
+      "Spencer Knight": [
+        0,
         1
       ],
-      "Samuel Ersson": [
+      "Jeremy Swayman": [
         0,
-        2
+        1
       ],
-      "Elvis Merzlikins": [
+      "Joey Daccord": [
         0,
-        2
+        1
       ]
     }
   },
@@ -5894,7 +6711,7 @@
     "vs_goalie": {
       "Alex Nedeljkovic": [
         0,
-        1
+        2
       ]
     }
   },
@@ -5948,6 +6765,22 @@
     "vs_goalie": {
       "Karel Vejmelka": [
         0,
+        3
+      ],
+      "Sergei Bobrovsky": [
+        0,
+        1
+      ],
+      "Adin Hill": [
+        0,
+        2
+      ],
+      "David Rittich": [
+        4,
+        4
+      ],
+      "Kevin Lankinen": [
+        0,
         1
       ]
     }
@@ -6000,15 +6833,23 @@
       ]
     },
     "vs_goalie": {
-      "Ukko-Pekka Luukkonen": [
-        2,
-        2
-      ],
-      "Marc-Andre Fleury": [
-        0,
+      "Frederik Andersen": [
+        1,
         1
       ],
       "Linus Ullmark": [
+        0,
+        1
+      ],
+      "Ukko-Pekka Luukkonen": [
+        1,
+        1
+      ],
+      "Marc-Andre Fleury": [
+        0,
+        2
+      ],
+      "Adin Hill": [
         0,
         1
       ]
@@ -6065,6 +6906,22 @@
       "Adin Hill": [
         0,
         1
+      ],
+      "Cam Talbot": [
+        2,
+        2
+      ],
+      "Sergei Bobrovsky": [
+        0,
+        1
+      ],
+      "Ilya Sorokin": [
+        0,
+        1
+      ],
+      "Logan Thompson": [
+        0,
+        1
       ]
     }
   },
@@ -6100,29 +6957,45 @@
       ]
     },
     "vs_goalie": {
-      "Jacob Markstrom": [
-        0,
+      "Mackenzie Blackwood": [
+        2,
         2
-      ],
-      "Charlie Lindgren": [
-        1,
-        1
       ],
       "Dan Vladar": [
         0,
-        1
-      ],
-      "Mackenzie Blackwood": [
-        1,
-        1
+        4
       ],
       "Joey Daccord": [
         0,
         1
       ],
+      "Jacob Markstrom": [
+        0,
+        1
+      ],
       "Karel Vejmelka": [
+        3,
+        3
+      ],
+      "Charlie Lindgren": [
         2,
         2
+      ],
+      "Darcy Kuemper": [
+        2,
+        5
+      ],
+      "Yaroslav Askarov": [
+        0,
+        1
+      ],
+      "Colten Ellis": [
+        2,
+        2
+      ],
+      "Scott Wedgewood": [
+        3,
+        3
       ]
     }
   },
@@ -6316,16 +7189,16 @@
       ]
     },
     "vs_goalie": {
+      "Marc-Andre Fleury": [
+        1,
+        1
+      ],
+      "Samuel Ersson": [
+        0,
+        1
+      ],
       "Kevin Lankinen": [
         0,
-        1
-      ],
-      "Sergei Bobrovsky": [
-        0,
-        1
-      ],
-      "Marc-Andre Fleury": [
-        2,
         2
       ]
     }
@@ -6382,24 +7255,32 @@
       ]
     },
     "vs_goalie": {
-      "Karel Vejmelka": [
-        0,
-        1
-      ],
-      "Ukko-Pekka Luukkonen": [
-        0,
-        1
-      ],
-      "Marc-Andre Fleury": [
-        0,
-        1
-      ],
       "Frederik Andersen": [
         0,
-        2
+        1
       ],
       "Linus Ullmark": [
         2,
+        2
+      ],
+      "Ukko-Pekka Luukkonen": [
+        0,
+        4
+      ],
+      "Marc-Andre Fleury": [
+        0,
+        2
+      ],
+      "Spencer Knight": [
+        1,
+        1
+      ],
+      "John Gibson": [
+        1,
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
         2
       ]
     }
@@ -6451,7 +7332,20 @@
         4
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jeremy Swayman": [
+        0,
+        1
+      ],
+      "Darcy Kuemper": [
+        0,
+        1
+      ],
+      "Alex Nedeljkovic": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8479385,
@@ -6497,17 +7391,17 @@
       ]
     },
     "vs_goalie": {
-      "Arvid Soderblom": [
+      "Philipp Grubauer": [
         0,
         2
       ],
       "Yaroslav Askarov": [
         0,
-        2
-      ],
-      "Philipp Grubauer": [
-        0,
         1
+      ],
+      "Darcy Kuemper": [
+        0,
+        2
       ]
     }
   },
@@ -6562,6 +7456,30 @@
       "Petr Mrazek": [
         1,
         1
+      ],
+      "Adin Hill": [
+        2,
+        2
+      ],
+      "Juuse Saros": [
+        0,
+        2
+      ],
+      "Dustin Wolf": [
+        0,
+        1
+      ],
+      "Joel Hofer": [
+        1,
+        1
+      ],
+      "Jesper Wallstedt": [
+        0,
+        3
+      ],
+      "Yaroslav Askarov": [
+        0,
+        3
       ]
     }
   },
@@ -6633,17 +7551,21 @@
       ]
     },
     "vs_goalie": {
-      "Jake Oettinger": [
-        2,
-        2
-      ],
-      "Jordan Binnington": [
-        0,
-        1
-      ],
       "Alex Nedeljkovic": [
         1,
         1
+      ],
+      "Jake Oettinger": [
+        1,
+        1
+      ],
+      "Darcy Kuemper": [
+        0,
+        1
+      ],
+      "Scott Wedgewood": [
+        2,
+        2
       ]
     }
   },
@@ -6709,6 +7631,10 @@
     "vs_goalie": {
       "Elvis Merzlikins": [
         0,
+        2
+      ],
+      "Samuel Ersson": [
+        0,
         1
       ]
     }
@@ -6749,12 +7675,24 @@
         1,
         1
       ],
-      "Joey Daccord": [
-        0,
-        3
-      ],
       "James Reimer": [
         1,
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
+        2
+      ],
+      "Darcy Kuemper": [
+        1,
+        1
+      ],
+      "Charlie Lindgren": [
+        1,
+        1
+      ],
+      "Elvis Merzlikins": [
+        0,
         1
       ]
     }
@@ -6791,19 +7729,35 @@
       ]
     },
     "vs_goalie": {
-      "Tristan Jarry": [
-        2,
-        3
-      ],
-      "Jacob Markstrom": [
-        1,
-        1
-      ],
       "Ukko-Pekka Luukkonen": [
         1,
         1
       ],
+      "Tristan Jarry": [
+        0,
+        1
+      ],
       "Samuel Ersson": [
+        0,
+        1
+      ],
+      "Casey DeSmith": [
+        0,
+        1
+      ],
+      "Lukas Dostal": [
+        1,
+        1
+      ],
+      "Connor Hellebuyck": [
+        1,
+        1
+      ],
+      "Joonas Korpisalo": [
+        2,
+        2
+      ],
+      "Brandon Bussi": [
         0,
         1
       ]
@@ -6888,12 +7842,7 @@
         0
       ]
     },
-    "vs_goalie": {
-      "Dustin Wolf": [
-        0,
-        1
-      ]
-    }
+    "vs_goalie": {}
   },
   {
     "id": 8476455,
@@ -7058,16 +8007,20 @@
     },
     "vs_goalie": {
       "Jeremy Swayman": [
-        1,
-        1
-      ],
-      "Lukas Dostal": [
-        0,
-        1
+        2,
+        2
       ],
       "Logan Thompson": [
         0,
         1
+      ],
+      "Stuart Skinner": [
+        0,
+        2
+      ],
+      "Akira Schmid": [
+        0,
+        3
       ]
     }
   },
@@ -7219,10 +8172,6 @@
       "Lukas Dostal": [
         0,
         1
-      ],
-      "Anthony Stolarz": [
-        1,
-        1
       ]
     }
   },
@@ -7274,13 +8223,29 @@
       ]
     },
     "vs_goalie": {
-      "Elvis Merzlikins": [
-        0,
-        2
-      ],
       "Filip Gustavsson": [
         0,
         1
+      ],
+      "Frederik Andersen": [
+        0,
+        2
+      ],
+      "Jake Oettinger": [
+        2,
+        3
+      ],
+      "Lukas Dostal": [
+        0,
+        1
+      ],
+      "Carter Hart": [
+        3,
+        3
+      ],
+      "Jesper Wallstedt": [
+        0,
+        2
       ]
     }
   },
@@ -7328,11 +8293,11 @@
         0,
         1
       ],
-      "Jordan Binnington": [
-        1,
-        1
+      "Adin Hill": [
+        0,
+        2
       ],
-      "Cam Talbot": [
+      "Thatcher Demko": [
         0,
         1
       ]
@@ -7358,7 +8323,11 @@
       ]
     },
     "vs_goalie": {
-      "Kevin Lankinen": [
+      "Daniil Tarasov": [
+        0,
+        1
+      ],
+      "Ilya Samsonov": [
         0,
         1
       ],
@@ -7366,15 +8335,43 @@
         0,
         1
       ],
-      "Jonas Johansson": [
+      "Kevin Lankinen": [
+        0,
+        3
+      ],
+      "Connor Hellebuyck": [
         1,
         1
       ],
-      "Ilya Samsonov": [
+      "Ilya Sorokin": [
+        2,
+        2
+      ],
+      "Brandon Bussi": [
+        0,
+        2
+      ],
+      "Stuart Skinner": [
+        0,
+        2
+      ],
+      "Darcy Kuemper": [
+        3,
+        3
+      ],
+      "Anthony Stolarz": [
+        1,
+        1
+      ],
+      "Jordan Binnington": [
         0,
         1
       ],
-      "Daniil Tarasov": [
+      "Pyotr Kochetkov": [
+        0,
+        3
+      ],
+      "Jesper Wallstedt": [
         0,
         1
       ]
@@ -7447,7 +8444,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Joey Daccord": [
+        0,
+        2
+      ],
+      "Jake Allen": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8480014,
@@ -7488,7 +8494,24 @@
         4
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Ivan Fedotov": [
+        0,
+        2
+      ],
+      "Juuse Saros": [
+        0,
+        1
+      ],
+      "Dustin Wolf": [
+        1,
+        1
+      ],
+      "Jakub Dobes": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8480028,
@@ -7531,14 +8554,26 @@
     },
     "vs_goalie": {
       "Kevin Lankinen": [
-        2,
+        3,
         3
       ],
-      "Scott Wedgewood": [
+      "Ilya Samsonov": [
+        2,
+        2
+      ],
+      "Linus Ullmark": [
         0,
         1
       ],
-      "Sergei Bobrovsky": [
+      "Joel Hofer": [
+        0,
+        1
+      ],
+      "Casey DeSmith": [
+        2,
+        2
+      ],
+      "Connor Hellebuyck": [
         0,
         1
       ]
@@ -7594,6 +8629,14 @@
       ],
       "Logan Thompson": [
         0,
+        3
+      ],
+      "Devin Cooley": [
+        3,
+        3
+      ],
+      "Stuart Skinner": [
+        2,
         2
       ]
     }
@@ -7641,10 +8684,6 @@
       "Spencer Knight": [
         0,
         1
-      ],
-      "Alex Nedeljkovic": [
-        0,
-        2
       ]
     }
   },
@@ -7708,21 +8747,29 @@
       ]
     },
     "vs_goalie": {
-      "Nico Daws": [
-        0,
-        1
-      ],
-      "Sergei Bobrovsky": [
-        0,
-        2
-      ],
-      "Elvis Merzlikins": [
-        0,
-        1
-      ],
       "Mackenzie Blackwood": [
         0,
         2
+      ],
+      "Dustin Wolf": [
+        2,
+        2
+      ],
+      "Sergei Bobrovsky": [
+        0,
+        1
+      ],
+      "Elvis Merzlikins": [
+        2,
+        5
+      ],
+      "Jake Allen": [
+        0,
+        2
+      ],
+      "Jake Oettinger": [
+        0,
+        1
       ]
     }
   },
@@ -7795,8 +8842,8 @@
     },
     "vs_goalie": {
       "Alex Nedeljkovic": [
-        1,
-        1
+        2,
+        2
       ]
     }
   },
@@ -7836,15 +8883,15 @@
       ]
     },
     "vs_goalie": {
-      "Ukko-Pekka Luukkonen": [
-        0,
-        2
-      ],
       "Kevin Lankinen": [
         0,
         1
       ],
-      "Semyon Varlamov": [
+      "Filip Gustavsson": [
+        0,
+        3
+      ],
+      "Ukko-Pekka Luukkonen": [
         0,
         1
       ],
@@ -7852,13 +8899,17 @@
         0,
         1
       ],
-      "Filip Gustavsson": [
+      "Semyon Varlamov": [
         0,
         1
       ],
       "Scott Wedgewood": [
         1,
         1
+      ],
+      "Darcy Kuemper": [
+        2,
+        2
       ]
     }
   },
@@ -7947,8 +8998,36 @@
       ]
     },
     "vs_goalie": {
+      "Igor Shesterkin": [
+        0,
+        1
+      ],
+      "Ivan Fedotov": [
+        1,
+        1
+      ],
       "Kevin Lankinen": [
         0,
+        1
+      ],
+      "John Gibson": [
+        0,
+        1
+      ],
+      "Matt Murray": [
+        1,
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
+        2
+      ],
+      "Arturs Silovs": [
+        2,
+        2
+      ],
+      "Cam Talbot": [
+        1,
         1
       ]
     }
@@ -7985,17 +9064,49 @@
       ]
     },
     "vs_goalie": {
-      "Ukko-Pekka Luukkonen": [
+      "Alexandar Georgiev": [
         0,
-        1
+        2
+      ],
+      "Ivan Fedotov": [
+        0,
+        2
       ],
       "Jordan Binnington": [
         0,
-        1
+        2
       ],
       "Scott Wedgewood": [
         0,
+        3
+      ],
+      "Dustin Wolf": [
+        0,
         1
+      ],
+      "Ukko-Pekka Luukkonen": [
+        0,
+        2
+      ],
+      "Anton Forsberg": [
+        3,
+        3
+      ],
+      "Ilya Sorokin": [
+        0,
+        1
+      ],
+      "Linus Ullmark": [
+        0,
+        2
+      ],
+      "Logan Thompson": [
+        0,
+        3
+      ],
+      "Jake Allen": [
+        0,
+        3
       ]
     }
   },
@@ -8031,15 +9142,11 @@
       ]
     },
     "vs_goalie": {
-      "Ilya Sorokin": [
-        0,
-        2
-      ],
       "Igor Shesterkin": [
         0,
         1
       ],
-      "Tristan Jarry": [
+      "Ivan Fedotov": [
         1,
         1
       ],
@@ -8047,9 +9154,17 @@
         1,
         1
       ],
-      "Ivan Fedotov": [
+      "Tristan Jarry": [
         1,
         1
+      ],
+      "Arturs Silovs": [
+        1,
+        1
+      ],
+      "Dan Vladar": [
+        0,
+        3
       ]
     }
   },
@@ -8107,7 +9222,11 @@
     "vs_goalie": {
       "Mackenzie Blackwood": [
         0,
-        1
+        2
+      ],
+      "Brandon Bussi": [
+        0,
+        2
       ]
     }
   },
@@ -8141,25 +9260,29 @@
       ],
       "Igor Shesterkin": [
         0,
-        1
+        3
       ],
-      "Spencer Martin": [
+      "Ivan Fedotov": [
         0,
         1
       ],
       "Tristan Jarry": [
         0,
-        1
-      ],
-      "Pyotr Kochetkov": [
-        3,
         3
       ],
-      "Kevin Lankinen": [
+      "Jakub Dobes": [
+        0,
+        3
+      ],
+      "John Gibson": [
         0,
         1
       ],
-      "Ivan Fedotov": [
+      "Jeremy Swayman": [
+        0,
+        3
+      ],
+      "Cam Talbot": [
         0,
         1
       ]
@@ -8245,13 +9368,17 @@
       ]
     },
     "vs_goalie": {
-      "Ukko-Pekka Luukkonen": [
-        0,
-        1
-      ],
       "Frederik Andersen": [
         0,
-        1
+        3
+      ],
+      "Linus Ullmark": [
+        0,
+        2
+      ],
+      "Ukko-Pekka Luukkonen": [
+        0,
+        2
       ]
     }
   },
@@ -8378,7 +9505,7 @@
     "vs_goalie": {
       "Jordan Binnington": [
         0,
-        2
+        1
       ]
     }
   },
@@ -8426,11 +9553,15 @@
       ]
     },
     "vs_goalie": {
-      "Ukko-Pekka Luukkonen": [
-        1,
+      "Jordan Binnington": [
+        0,
         1
       ],
-      "Scott Wedgewood": [
+      "Dustin Wolf": [
+        0,
+        1
+      ],
+      "Jake Oettinger": [
         0,
         1
       ]
@@ -8489,8 +9620,12 @@
         1
       ],
       "Philipp Grubauer": [
-        1,
-        1
+        2,
+        2
+      ],
+      "Eric Comrie": [
+        0,
+        2
       ]
     }
   },
@@ -8527,8 +9662,8 @@
     },
     "vs_goalie": {
       "Spencer Knight": [
-        1,
-        1
+        2,
+        2
       ],
       "Alex Nedeljkovic": [
         1,
@@ -8541,6 +9676,22 @@
       "Thatcher Demko": [
         0,
         1
+      ],
+      "Logan Thompson": [
+        0,
+        2
+      ],
+      "Arturs Silovs": [
+        1,
+        1
+      ],
+      "Anthony Stolarz": [
+        1,
+        1
+      ],
+      "Carter Hart": [
+        0,
+        3
       ]
     }
   },
@@ -8578,6 +9729,10 @@
     "vs_goalie": {
       "Vitek Vanecek": [
         0,
+        1
+      ],
+      "Charlie Lindgren": [
+        0,
         2
       ],
       "Adin Hill": [
@@ -8585,6 +9740,18 @@
         1
       ],
       "Jonas Johansson": [
+        2,
+        2
+      ],
+      "Jake Oettinger": [
+        3,
+        3
+      ],
+      "David Rittich": [
+        1,
+        1
+      ],
+      "Joseph Woll": [
         1,
         1
       ]
@@ -8618,7 +9785,7 @@
       ]
     },
     "vs_goalie": {
-      "Ukko-Pekka Luukkonen": [
+      "Filip Gustavsson": [
         0,
         1
       ],
@@ -8626,9 +9793,13 @@
         0,
         1
       ],
-      "Filip Gustavsson": [
-        0,
+      "Semyon Varlamov": [
+        1,
         1
+      ],
+      "Jesper Wallstedt": [
+        0,
+        2
       ]
     }
   },
@@ -8723,6 +9894,10 @@
       "Jordan Binnington": [
         0,
         1
+      ],
+      "Logan Thompson": [
+        2,
+        2
       ]
     }
   },
@@ -8908,15 +10083,27 @@
       ]
     },
     "vs_goalie": {
-      "Samuel Montembeault": [
-        0,
-        2
-      ],
       "Adin Hill": [
         1,
         1
       ],
+      "Samuel Montembeault": [
+        0,
+        2
+      ],
       "Dan Vladar": [
+        0,
+        2
+      ],
+      "Jake Oettinger": [
+        5,
+        5
+      ],
+      "Frederik Andersen": [
+        0,
+        1
+      ],
+      "Carter Hart": [
         0,
         1
       ]
@@ -9038,6 +10225,14 @@
       "Ukko-Pekka Luukkonen": [
         0,
         1
+      ],
+      "Lukas Dostal": [
+        0,
+        1
+      ],
+      "Brandon Bussi": [
+        2,
+        2
       ]
     }
   },
@@ -9070,12 +10265,28 @@
     },
     "vs_goalie": {
       "Cayden Primeau": [
-        1,
-        1
+        2,
+        2
       ],
       "Samuel Ersson": [
+        4,
+        6
+      ],
+      "Alex Lyon": [
         0,
         1
+      ],
+      "Carter Hart": [
+        0,
+        4
+      ],
+      "Joey Daccord": [
+        0,
+        2
+      ],
+      "Jeremy Swayman": [
+        0,
+        4
       ]
     }
   },
@@ -9112,8 +10323,32 @@
     },
     "vs_goalie": {
       "Alexandar Georgiev": [
-        1,
-        1
+        2,
+        2
+      ],
+      "Andrei Vasilevskiy": [
+        0,
+        3
+      ],
+      "Jaxson Stauber": [
+        3,
+        3
+      ],
+      "Samuel Montembeault": [
+        0,
+        2
+      ],
+      "Daniil Tarasov": [
+        2,
+        2
+      ],
+      "Darcy Kuemper": [
+        5,
+        5
+      ],
+      "Devin Cooley": [
+        2,
+        2
       ]
     }
   },
@@ -9264,7 +10499,7 @@
     "vs_goalie": {
       "Spencer Martin": [
         0,
-        2
+        1
       ],
       "Pyotr Kochetkov": [
         0,
@@ -9326,9 +10561,9 @@
     "vs_goalie": {
       "Arvid Soderblom": [
         0,
-        1
+        2
       ],
-      "Eric Comrie": [
+      "Philipp Grubauer": [
         0,
         1
       ]
@@ -9377,7 +10612,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Devin Cooley": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8478462,
@@ -9465,9 +10705,29 @@
       ]
     },
     "vs_goalie": {
-      "Elvis Merzlikins": [
+      "Jesper Wallstedt": [
         0,
         1
+      ],
+      "Logan Thompson": [
+        2,
+        2
+      ],
+      "Trent Miner": [
+        1,
+        1
+      ],
+      "Samuel Ersson": [
+        0,
+        1
+      ],
+      "Stuart Skinner": [
+        0,
+        1
+      ],
+      "Dan Vladar": [
+        0,
+        3
       ]
     }
   },
@@ -9603,7 +10863,20 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Sergei Bobrovsky": [
+        2,
+        2
+      ],
+      "Jet Greaves": [
+        1,
+        1
+      ],
+      "Logan Thompson": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8482475,
@@ -9636,7 +10909,28 @@
         7
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Dan Vladar": [
+        0,
+        4
+      ],
+      "Frederik Andersen": [
+        0,
+        2
+      ],
+      "Linus Ullmark": [
+        1,
+        1
+      ],
+      "Elvis Merzlikins": [
+        1,
+        1
+      ],
+      "Connor Hellebuyck": [
+        0,
+        3
+      ]
+    }
   },
   {
     "id": 8482665,
@@ -9670,13 +10964,21 @@
       ]
     },
     "vs_goalie": {
+      "Cam Talbot": [
+        0,
+        2
+      ],
       "Kevin Lankinen": [
         0,
+        2
+      ],
+      "Adin Hill": [
+        1,
         1
       ],
-      "Jordan Binnington": [
-        0,
-        3
+      "Thatcher Demko": [
+        2,
+        2
       ]
     }
   },
@@ -9704,17 +11006,25 @@
       ]
     },
     "vs_goalie": {
-      "Alexandar Georgiev": [
-        0,
-        2
-      ],
       "David Rittich": [
-        1,
-        1
+        2,
+        2
       ],
       "Andrei Vasilevskiy": [
         0,
+        1
+      ],
+      "Daniil Tarasov": [
+        0,
         2
+      ],
+      "Darcy Kuemper": [
+        0,
+        1
+      ],
+      "Arturs Silovs": [
+        1,
+        1
       ]
     }
   },
@@ -9838,7 +11148,12 @@
         0
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Samuel Ersson": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8478397,
@@ -9894,15 +11209,19 @@
     "vs_goalie": {
       "Kevin Lankinen": [
         0,
-        2
-      ],
-      "Alex Nedeljkovic": [
-        1,
         1
       ],
       "Filip Gustavsson": [
-        2,
-        2
+        1,
+        1
+      ],
+      "Stuart Skinner": [
+        0,
+        1
+      ],
+      "Connor Hellebuyck": [
+        0,
+        1
       ]
     }
   },
@@ -9964,7 +11283,7 @@
       ],
       "Thatcher Demko": [
         0,
-        2
+        1
       ]
     }
   },
@@ -10003,7 +11322,16 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Dan Vladar": [
+        0,
+        1
+      ],
+      "Carter Hart": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8480064,
@@ -10083,24 +11411,20 @@
       ]
     },
     "vs_goalie": {
-      "Arvid Soderblom": [
-        0,
-        1
-      ],
-      "Yaroslav Askarov": [
-        2,
-        2
-      ],
       "Darcy Kuemper": [
         1,
-        1
+        2
       ],
       "Philipp Grubauer": [
         1,
         1
       ],
-      "Adin Hill": [
+      "Yaroslav Askarov": [
         1,
+        1
+      ],
+      "Devin Cooley": [
+        0,
         1
       ]
     }
@@ -10134,8 +11458,8 @@
     },
     "vs_goalie": {
       "Mackenzie Blackwood": [
-        1,
-        1
+        2,
+        2
       ],
       "Andrei Vasilevskiy": [
         0,
@@ -10144,6 +11468,18 @@
       "Samuel Montembeault": [
         0,
         1
+      ],
+      "Arvid Soderblom": [
+        0,
+        1
+      ],
+      "Devin Cooley": [
+        0,
+        1
+      ],
+      "Scott Wedgewood": [
+        4,
+        4
       ]
     }
   },
@@ -10175,10 +11511,6 @@
         0,
         1
       ],
-      "Connor Hellebuyck": [
-        1,
-        1
-      ],
       "Scott Wedgewood": [
         0,
         2
@@ -10186,6 +11518,18 @@
       "Juuse Saros": [
         0,
         1
+      ],
+      "Darcy Kuemper": [
+        2,
+        2
+      ],
+      "Jesper Wallstedt": [
+        0,
+        2
+      ],
+      "Andrei Vasilevskiy": [
+        0,
+        3
       ]
     }
   },
@@ -10337,7 +11681,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Darcy Kuemper": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8476432,
@@ -10577,7 +11926,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Leevi Meril\u00e4inen": [
+        0,
+        3
+      ]
+    }
   },
   {
     "id": 8479325,
@@ -10626,7 +11980,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Sergei Bobrovsky": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8480015,
@@ -10668,25 +12027,25 @@
       ]
     },
     "vs_goalie": {
-      "Vitek Vanecek": [
+      "Ilya Samsonov": [
         0,
+        1
+      ],
+      "Jonas Johansson": [
+        2,
         2
       ],
       "Marcus Hogberg": [
         0,
-        1
+        3
       ],
-      "Sergei Bobrovsky": [
+      "Andrei Vasilevskiy": [
         1,
         1
       ],
-      "Andrei Vasilevskiy": [
+      "Sergei Bobrovsky": [
         2,
         2
-      ],
-      "Ilya Samsonov": [
-        0,
-        1
       ]
     }
   },
@@ -10729,7 +12088,16 @@
         4
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Eric Comrie": [
+        0,
+        1
+      ],
+      "Arturs Silovs": [
+        0,
+        4
+      ]
+    }
   },
   {
     "id": 8481553,
@@ -10759,11 +12127,23 @@
       ]
     },
     "vs_goalie": {
+      "Jonas Johansson": [
+        0,
+        1
+      ],
       "Marcus Hogberg": [
-        2,
+        1,
+        1
+      ],
+      "Sergei Bobrovsky": [
+        0,
         2
       ],
-      "Jonas Johansson": [
+      "Ilya Sorokin": [
+        0,
+        1
+      ],
+      "Pyotr Kochetkov": [
         0,
         1
       ]
@@ -10791,19 +12171,31 @@
     "vs_goalie": {
       "Samuel Ersson": [
         0,
-        2
-      ],
-      "Jordan Binnington": [
-        0,
-        2
-      ],
-      "Anthony Stolarz": [
-        0,
         1
       ],
       "Alex Nedeljkovic": [
         0,
         1
+      ],
+      "Lukas Dostal": [
+        0,
+        1
+      ],
+      "Anthony Stolarz": [
+        0,
+        2
+      ],
+      "Jordan Binnington": [
+        0,
+        1
+      ],
+      "Kevin Lankinen": [
+        1,
+        1
+      ],
+      "Jesper Wallstedt": [
+        3,
+        3
       ]
     }
   },
@@ -10943,7 +12335,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Juuse Saros": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8480002,
@@ -11059,9 +12456,9 @@
       ]
     },
     "vs_goalie": {
-      "Kevin Lankinen": [
-        0,
-        2
+      "Brandon Bussi": [
+        1,
+        1
       ]
     }
   },
@@ -11089,11 +12486,31 @@
       ]
     },
     "vs_goalie": {
+      "Charlie Lindgren": [
+        0,
+        1
+      ],
       "Elvis Merzlikins": [
         0,
         1
       ],
-      "Charlie Lindgren": [
+      "Spencer Knight": [
+        0,
+        1
+      ],
+      "Samuel Ersson": [
+        1,
+        1
+      ],
+      "Sergei Bobrovsky": [
+        1,
+        1
+      ],
+      "Stuart Skinner": [
+        1,
+        1
+      ],
+      "Dan Vladar": [
         0,
         1
       ]
@@ -11123,9 +12540,9 @@
         0,
         2
       ],
-      "Jake Oettinger": [
+      "Alex Nedeljkovic": [
         0,
-        2
+        1
       ],
       "Lukas Dostal": [
         0,
@@ -11133,15 +12550,19 @@
       ],
       "Anthony Stolarz": [
         0,
+        2
+      ],
+      "Jake Oettinger": [
+        0,
         1
       ],
       "Joseph Woll": [
         1,
         1
       ],
-      "Alex Nedeljkovic": [
+      "Anton Forsberg": [
         0,
-        2
+        1
       ]
     }
   },
@@ -11212,7 +12633,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Samuel Montembeault": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8475179,
@@ -11423,6 +12849,10 @@
       "Jordan Binnington": [
         1,
         1
+      ],
+      "David Rittich": [
+        0,
+        2
       ]
     }
   },
@@ -11481,7 +12911,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Joey Daccord": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8480797,
@@ -11602,6 +13037,14 @@
     },
     "vs_goalie": {
       "Alex Nedeljkovic": [
+        2,
+        2
+      ],
+      "Kevin Lankinen": [
+        0,
+        1
+      ],
+      "Jesper Wallstedt": [
         1,
         1
       ]
@@ -11799,8 +13242,8 @@
     },
     "vs_goalie": {
       "Mackenzie Blackwood": [
-        2,
-        2
+        3,
+        3
       ]
     }
   },
@@ -11839,7 +13282,20 @@
         4
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jake Allen": [
+        0,
+        2
+      ],
+      "Spencer Knight": [
+        0,
+        1
+      ],
+      "Ukko-Pekka Luukkonen": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8482175,
@@ -11873,15 +13329,15 @@
       ]
     },
     "vs_goalie": {
-      "Dan Vladar": [
-        1,
-        1
-      ],
       "Vitek Vanecek": [
         0,
-        1
+        2
       ],
       "Charlie Lindgren": [
+        2,
+        2
+      ],
+      "Dan Vladar": [
         1,
         1
       ],
@@ -11922,6 +13378,14 @@
       "Ivan Fedotov": [
         0,
         1
+      ],
+      "Jacob Fowler": [
+        2,
+        2
+      ],
+      "Arturs Silovs": [
+        2,
+        2
       ]
     }
   },
@@ -11950,7 +13414,15 @@
     },
     "vs_goalie": {
       "Samuel Montembeault": [
-        1,
+        2,
+        2
+      ],
+      "Jesper Wallstedt": [
+        0,
+        1
+      ],
+      "Kevin Lankinen": [
+        0,
         1
       ]
     }
@@ -12087,7 +13559,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jakub Dobes": [
+        0,
+        2
+      ],
+      "Joey Daccord": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8477940,
@@ -12257,7 +13738,7 @@
     "vs_goalie": {
       "Dan Vladar": [
         0,
-        1
+        3
       ]
     }
   },
@@ -12315,7 +13796,7 @@
     "vs_goalie": {
       "Ukko-Pekka Luukkonen": [
         0,
-        1
+        3
       ]
     }
   },
@@ -12498,7 +13979,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Juuse Saros": [
+        0,
+        4
+      ]
+    }
   },
   {
     "id": 8482146,
@@ -12527,7 +14013,16 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Anton Forsberg": [
+        0,
+        2
+      ],
+      "Darcy Kuemper": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8482730,
@@ -12556,7 +14051,20 @@
         6
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jesper Wallstedt": [
+        1,
+        1
+      ],
+      "Dustin Wolf": [
+        0,
+        2
+      ],
+      "Lukas Dostal": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8483515,
@@ -12587,6 +14095,10 @@
     },
     "vs_goalie": {
       "Semyon Varlamov": [
+        0,
+        2
+      ],
+      "Jake Allen": [
         0,
         1
       ]
@@ -12659,7 +14171,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Samuel Montembeault": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8475314,
@@ -12854,7 +14371,16 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Frederik Andersen": [
+        0,
+        1
+      ],
+      "Logan Thompson": [
+        2,
+        2
+      ]
+    }
   },
   {
     "id": 8477451,
@@ -12973,7 +14499,12 @@
         0
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jordan Binnington": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8478874,
@@ -13107,7 +14638,7 @@
     "vs_goalie": {
       "Adin Hill": [
         0,
-        2
+        1
       ]
     }
   },
@@ -13176,6 +14707,14 @@
       "Semyon Varlamov": [
         1,
         1
+      ],
+      "Alex Lyon": [
+        0,
+        1
+      ],
+      "Carter Hart": [
+        1,
+        1
       ]
     }
   },
@@ -13202,7 +14741,24 @@
         5
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Juuse Saros": [
+        0,
+        1
+      ],
+      "Yaroslav Askarov": [
+        0,
+        2
+      ],
+      "Jeremy Swayman": [
+        2,
+        2
+      ],
+      "Joey Daccord": [
+        1,
+        4
+      ]
+    }
   },
   {
     "id": 8483516,
@@ -13224,7 +14780,15 @@
       ]
     },
     "vs_goalie": {
-      "Philipp Grubauer": [
+      "Kevin Lankinen": [
+        0,
+        1
+      ],
+      "Darcy Kuemper": [
+        0,
+        1
+      ],
+      "Devin Cooley": [
         0,
         2
       ]
@@ -13245,7 +14809,20 @@
         5
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "David Rittich": [
+        0,
+        1
+      ],
+      "Frederik Andersen": [
+        0,
+        1
+      ],
+      "Jake Oettinger": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8484186,
@@ -13266,7 +14843,16 @@
         5
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Spencer Knight": [
+        0,
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8484984,
@@ -13287,7 +14873,24 @@
         5
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jonas Johansson": [
+        0,
+        1
+      ],
+      "Lukas Dostal": [
+        1,
+        1
+      ],
+      "Jet Greaves": [
+        0,
+        3
+      ],
+      "Jake Allen": [
+        2,
+        2
+      ]
+    }
   },
   {
     "id": 8474574,
@@ -13685,12 +15288,7 @@
         0
       ]
     },
-    "vs_goalie": {
-      "Semyon Varlamov": [
-        0,
-        1
-      ]
-    }
+    "vs_goalie": {}
   },
   {
     "id": 8477476,
@@ -13744,9 +15342,9 @@
       ]
     },
     "vs_goalie": {
-      "Spencer Knight": [
-        1,
-        1
+      "Frederik Andersen": [
+        0,
+        2
       ]
     }
   },
@@ -13993,7 +15591,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Scott Wedgewood": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8478460,
@@ -14046,7 +15649,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "John Gibson": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8479323,
@@ -14218,7 +15826,20 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Cam Talbot": [
+        0,
+        1
+      ],
+      "Kevin Lankinen": [
+        0,
+        1
+      ],
+      "Logan Thompson": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8479996,
@@ -14259,7 +15880,16 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Nico Daws": [
+        0,
+        2
+      ],
+      "Jakub Dobes": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8480839,
@@ -14347,8 +15977,8 @@
     },
     "vs_goalie": {
       "Cayden Primeau": [
-        1,
-        1
+        2,
+        2
       ]
     }
   },
@@ -14387,7 +16017,12 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Philipp Grubauer": [
+        3,
+        3
+      ]
+    }
   },
   {
     "id": 8482074,
@@ -14415,7 +16050,7 @@
     "vs_goalie": {
       "Alex Nedeljkovic": [
         0,
-        2
+        1
       ]
     }
   },
@@ -14480,13 +16115,21 @@
       ]
     },
     "vs_goalie": {
+      "Filip Gustavsson": [
+        0,
+        1
+      ],
       "Ilya Samsonov": [
         0,
         1
       ],
-      "Filip Gustavsson": [
+      "Stuart Skinner": [
         0,
-        1
+        2
+      ],
+      "Casey DeSmith": [
+        0,
+        4
       ]
     }
   },
@@ -14505,7 +16148,24 @@
         4
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Samuel Montembeault": [
+        0,
+        1
+      ],
+      "Darcy Kuemper": [
+        2,
+        2
+      ],
+      "Scott Wedgewood": [
+        0,
+        1
+      ],
+      "Devin Cooley": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8484860,
@@ -14522,7 +16182,20 @@
         4
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Darcy Kuemper": [
+        0,
+        2
+      ],
+      "Joel Hofer": [
+        1,
+        1
+      ],
+      "Lukas Dostal": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8475200,
@@ -14855,7 +16528,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Juuse Saros": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8476826,
@@ -15022,7 +16700,12 @@
         0
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Arvid Soderblom": [
+        2,
+        2
+      ]
+    }
   },
   {
     "id": 8476981,
@@ -15574,7 +17257,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Kevin Lankinen": [
+        0,
+        2
+      ],
+      "Logan Thompson": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8480800,
@@ -15656,7 +17348,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Spencer Knight": [
+        0,
+        1
+      ],
+      "Dan Vladar": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8480829,
@@ -15782,7 +17483,7 @@
     "vs_goalie": {
       "Jordan Binnington": [
         0,
-        2
+        3
       ]
     }
   },
@@ -15816,9 +17517,9 @@
     "vs_goalie": {
       "Arvid Soderblom": [
         0,
-        1
+        3
       ],
-      "Adin Hill": [
+      "Samuel Ersson": [
         0,
         2
       ]
@@ -15855,7 +17556,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Darcy Kuemper": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8482110,
@@ -15925,6 +17631,10 @@
       "Alexandar Georgiev": [
         0,
         1
+      ],
+      "Scott Wedgewood": [
+        0,
+        2
       ]
     }
   },
@@ -15951,7 +17661,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Petr Mrazek": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8482177,
@@ -15976,7 +17691,16 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Sergei Bobrovsky": [
+        0,
+        2
+      ],
+      "Kevin Lankinen": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8482775,
@@ -15997,7 +17721,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Semyon Varlamov": [
+        2,
+        2
+      ]
+    }
   },
   {
     "id": 8483445,
@@ -16025,6 +17754,10 @@
     "vs_goalie": {
       "Linus Ullmark": [
         0,
+        3
+      ],
+      "Samuel Montembeault": [
+        1,
         1
       ]
     }
@@ -16053,7 +17786,7 @@
       ]
     },
     "vs_goalie": {
-      "Semyon Varlamov": [
+      "Lukas Dostal": [
         0,
         1
       ]
@@ -16082,7 +17815,12 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Andrei Vasilevskiy": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8484197,
@@ -16103,7 +17841,16 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Frederik Andersen": [
+        3,
+        3
+      ],
+      "Logan Thompson": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8474716,
@@ -16857,7 +18604,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jakub Dobes": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8480748,
@@ -16902,7 +18654,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jordan Binnington": [
+        0,
+        2
+      ],
+      "Jeremy Swayman": [
+        0,
+        4
+      ]
+    }
   },
   {
     "id": 8480849,
@@ -16968,7 +18729,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Yaroslav Askarov": [
+        1,
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8481582,
@@ -17045,7 +18815,7 @@
     "vs_goalie": {
       "Semyon Varlamov": [
         0,
-        1
+        3
       ]
     }
   },
@@ -17083,7 +18853,11 @@
     "vs_goalie": {
       "Karel Vejmelka": [
         0,
-        1
+        2
+      ],
+      "Jeremy Swayman": [
+        0,
+        2
       ]
     }
   },
@@ -17143,7 +18917,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Logan Thompson": [
+        0,
+        1
+      ],
+      "Andrei Vasilevskiy": [
+        3,
+        3
+      ]
+    }
   },
   {
     "id": 8482259,
@@ -17172,7 +18955,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Sergei Bobrovsky": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8482684,
@@ -17202,10 +18990,6 @@
       ]
     },
     "vs_goalie": {
-      "Alex Nedeljkovic": [
-        0,
-        1
-      ],
       "Thatcher Demko": [
         0,
         1
@@ -17263,11 +19047,11 @@
     "vs_goalie": {
       "Arvid Soderblom": [
         0,
-        1
+        2
       ],
       "Philipp Grubauer": [
         0,
-        1
+        2
       ]
     }
   },
@@ -17290,7 +19074,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Samuel Ersson": [
+        0,
+        3
+      ]
+    }
   },
   {
     "id": 8483500,
@@ -17341,10 +19130,6 @@
       ]
     },
     "vs_goalie": {
-      "Jordan Binnington": [
-        0,
-        1
-      ],
       "Cam Talbot": [
         0,
         1
@@ -17395,7 +19180,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jesper Wallstedt": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8484958,
@@ -17417,9 +19207,13 @@
       ]
     },
     "vs_goalie": {
-      "Samuel Ersson": [
+      "Cayden Primeau": [
         0,
         2
+      ],
+      "Samuel Ersson": [
+        0,
+        1
       ]
     }
   },
@@ -17438,7 +19232,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Frederik Andersen": [
+        1,
+        1
+      ],
+      "Linus Ullmark": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8474567,
@@ -18751,12 +20554,7 @@
         0
       ]
     },
-    "vs_goalie": {
-      "Arvid Soderblom": [
-        0,
-        2
-      ]
-    }
+    "vs_goalie": {}
   },
   {
     "id": 8477998,
@@ -18805,7 +20603,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Juuse Saros": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8478038,
@@ -19239,7 +21042,7 @@
     "vs_goalie": {
       "Charlie Lindgren": [
         0,
-        1
+        2
       ]
     }
   },
@@ -19258,7 +21061,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Arvid Soderblom": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8480803,
@@ -19299,7 +21107,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Dustin Wolf": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8480813,
@@ -19493,7 +21306,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Charlie Lindgren": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8481535,
@@ -19646,7 +21464,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Logan Thompson": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8482100,
@@ -19684,7 +21507,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Darcy Kuemper": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8482149,
@@ -19747,7 +21575,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Logan Thompson": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8482659,
@@ -19772,7 +21605,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jake Oettinger": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8482699,
@@ -19867,7 +21705,7 @@
     "vs_goalie": {
       "Ukko-Pekka Luukkonen": [
         0,
-        2
+        1
       ]
     }
   },
@@ -19894,12 +21732,7 @@
         0
       ]
     },
-    "vs_goalie": {
-      "Semyon Varlamov": [
-        0,
-        1
-      ]
-    }
+    "vs_goalie": {}
   },
   {
     "id": 8483431,
@@ -19924,12 +21757,7 @@
         0
       ]
     },
-    "vs_goalie": {
-      "Joseph Woll": [
-        0,
-        1
-      ]
-    }
+    "vs_goalie": {}
   },
   {
     "id": 8483495,
@@ -19954,7 +21782,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Logan Thompson": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8483512,
@@ -19979,7 +21812,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Dustin Wolf": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8483752,
@@ -20017,7 +21855,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Darcy Kuemper": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8484241,
@@ -20055,7 +21898,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Adin Hill": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8473533,
@@ -31720,6 +33568,10 @@
       ],
       "James Reimer": [
         0,
+        1
+      ],
+      "Jet Greaves": [
+        2,
         2
       ]
     }
@@ -31900,7 +33752,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jesper Wallstedt": [
+        0,
+        2
+      ],
+      "Juuse Saros": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8470610,
@@ -32156,13 +34017,9 @@
       ]
     },
     "vs_goalie": {
-      "Jeremy Swayman": [
-        0,
-        1
-      ],
       "Logan Thompson": [
         0,
-        2
+        3
       ]
     }
   },
@@ -35150,8 +37007,8 @@
     },
     "vs_goalie": {
       "Arvid Soderblom": [
-        2,
-        2
+        3,
+        3
       ]
     }
   },
@@ -35735,7 +37592,16 @@
         4
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Darcy Kuemper": [
+        0,
+        2
+      ],
+      "Colten Ellis": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8471707,
@@ -36983,7 +38849,7 @@
     "vs_goalie": {
       "Jordan Binnington": [
         0,
-        1
+        2
       ]
     }
   },
@@ -37769,7 +39635,7 @@
     "vs_goalie": {
       "Alex Nedeljkovic": [
         0,
-        1
+        3
       ]
     }
   },
@@ -38336,7 +40202,16 @@
         3
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jet Greaves": [
+        0,
+        1
+      ],
+      "Alex Nedeljkovic": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8467545,
@@ -39755,6 +41630,14 @@
       "Jakub Dobes": [
         0,
         1
+      ],
+      "Alex Lyon": [
+        0,
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
+        2
       ]
     }
   },
@@ -40243,17 +42126,21 @@
       ]
     },
     "vs_goalie": {
+      "Arvid Soderblom": [
+        0,
+        2
+      ],
       "Mackenzie Blackwood": [
         1,
         1
       ],
       "Jake Oettinger": [
         0,
-        1
+        3
       ],
       "Lukas Dostal": [
-        1,
-        1
+        3,
+        3
       ]
     }
   },
@@ -40980,7 +42867,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Scott Wedgewood": [
+        0,
+        2
+      ]
+    }
   },
   {
     "id": 8468704,
@@ -41893,7 +43785,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Jeremy Swayman": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8474613,
@@ -45263,6 +47160,10 @@
     "vs_goalie": {
       "Nico Daws": [
         0,
+        1
+      ],
+      "Jakub Dobes": [
+        1,
         1
       ]
     }
@@ -48654,6 +50555,10 @@
       "Alex Nedeljkovic": [
         1,
         1
+      ],
+      "Igor Shesterkin": [
+        0,
+        1
       ]
     }
   },
@@ -49829,7 +51734,16 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Brandon Bussi": [
+        0,
+        2
+      ],
+      "Spencer Knight": [
+        1,
+        1
+      ]
+    }
   },
   {
     "id": 8476934,
@@ -49882,12 +51796,7 @@
         1
       ]
     },
-    "vs_goalie": {
-      "Jaxson Stauber": [
-        0,
-        1
-      ]
-    }
+    "vs_goalie": {}
   },
   {
     "id": 8480009,
@@ -49940,6 +51849,14 @@
       "Sergei Bobrovsky": [
         0,
         1
+      ],
+      "Jet Greaves": [
+        1,
+        1
+      ],
+      "Kevin Lankinen": [
+        0,
+        2
       ]
     }
   },
@@ -51636,7 +53553,12 @@
         2
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Cam Talbot": [
+        0,
+        4
+      ]
+    }
   },
   {
     "id": 8466266,
@@ -52653,13 +54575,21 @@
       ]
     },
     "vs_goalie": {
-      "Semyon Varlamov": [
+      "Filip Gustavsson": [
+        3,
+        3
+      ],
+      "Alex Nedeljkovic": [
         1,
         1
       ],
-      "Alex Nedeljkovic": [
-        2,
-        2
+      "Ukko-Pekka Luukkonen": [
+        0,
+        1
+      ],
+      "Stuart Skinner": [
+        0,
+        1
       ]
     }
   },
@@ -54014,7 +55944,7 @@
     "vs_goalie": {
       "Jordan Binnington": [
         0,
-        1
+        2
       ]
     }
   },
@@ -59301,7 +61231,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Darcy Kuemper": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8479543,
@@ -63296,7 +65231,7 @@
       ],
       "Elvis Merzlikins": [
         0,
-        2
+        1
       ]
     }
   },
@@ -72177,7 +74112,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Dan Vladar": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8482749,
@@ -72223,7 +74163,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Alex Lyon": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8483455,
@@ -72240,7 +74185,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Dustin Wolf": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8484158,
@@ -72257,7 +74207,12 @@
         1
       ]
     },
-    "vs_goalie": {}
+    "vs_goalie": {
+      "Alex Lyon": [
+        0,
+        1
+      ]
+    }
   },
   {
     "id": 8485493,
