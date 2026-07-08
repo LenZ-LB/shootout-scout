@@ -15,10 +15,24 @@
       "att": 0
     },
     {
+      "player_id": 8470144,
+      "name": "Frans Nielsen",
+      "team": "NYI",
+      "goals": 49,
+      "att": 0
+    },
+    {
       "player_id": 8471698,
       "name": "T.J. Oshie",
       "team": "STL",
       "goals": 49,
+      "att": 0
+    },
+    {
+      "player_id": 8471675,
+      "name": "Sidney Crosby",
+      "team": "PIT",
+      "goals": 48,
       "att": 0
     },
     {
@@ -29,16 +43,16 @@
       "att": 0
     },
     {
-      "player_id": 8471675,
-      "name": "Sidney Crosby",
-      "team": "PIT",
-      "goals": 47,
+      "player_id": 8468085,
+      "name": "Radim Vrbata",
+      "team": "CAR,CHI",
+      "goals": 45,
       "att": 0
     },
     {
-      "player_id": 8470144,
-      "name": "Frans Nielsen",
-      "team": "NYI",
+      "player_id": 8470610,
+      "name": "Zach Parise",
+      "team": "NJD",
       "goals": 44,
       "att": 0
     },
@@ -57,6 +71,13 @@
       "att": 0
     },
     {
+      "player_id": 8467514,
+      "name": "Pavel Datsyuk",
+      "team": "DET",
+      "goals": 40,
+      "att": 0
+    },
+    {
       "player_id": 8475692,
       "name": "Mats Zuccarello",
       "team": "NYR",
@@ -68,13 +89,6 @@
       "name": "Brad Boyes",
       "team": "BOS",
       "goals": 39,
-      "att": 0
-    },
-    {
-      "player_id": 8467514,
-      "name": "Pavel Datsyuk",
-      "team": "DET",
-      "goals": 38,
       "att": 0
     },
     {
@@ -92,13 +106,6 @@
       "att": 0
     },
     {
-      "player_id": 8470610,
-      "name": "Zach Parise",
-      "team": "NJD",
-      "goals": 36,
-      "att": 0
-    },
-    {
       "player_id": 8475168,
       "name": "Matt Duchene",
       "team": "COL",
@@ -113,13 +120,6 @@
       "att": 0
     },
     {
-      "player_id": 8468085,
-      "name": "Radim Vrbata",
-      "team": "CAR,CHI",
-      "goals": 33,
-      "att": 0
-    },
-    {
       "player_id": 8474053,
       "name": "Logan Couture",
       "team": "SJS",
@@ -131,6 +131,27 @@
       "name": "Aleksander Barkov",
       "team": "FLA",
       "goals": 33,
+      "att": 0
+    },
+    {
+      "player_id": 8470041,
+      "name": "Rick Nash",
+      "team": "CBJ",
+      "goals": 32,
+      "att": 0
+    },
+    {
+      "player_id": 8467389,
+      "name": "Brad Richards",
+      "team": "TBL",
+      "goals": 31,
+      "att": 0
+    },
+    {
+      "player_id": 8473512,
+      "name": "Claude Giroux",
+      "team": "PHI",
+      "goals": 31,
       "att": 0
     },
     {
@@ -152,27 +173,6 @@
       "name": "Jason Spezza",
       "team": "OTT",
       "goals": 30,
-      "att": 0
-    },
-    {
-      "player_id": 8474068,
-      "name": "Kyle Turris",
-      "team": "PHX",
-      "goals": 30,
-      "att": 0
-    },
-    {
-      "player_id": 8470041,
-      "name": "Rick Nash",
-      "team": "CBJ",
-      "goals": 29,
-      "att": 0
-    },
-    {
-      "player_id": 8470299,
-      "name": "Erik Christensen",
-      "team": "PIT",
-      "goals": 29,
       "att": 0
     }
   ],
