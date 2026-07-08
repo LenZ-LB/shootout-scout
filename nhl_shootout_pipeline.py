@@ -560,7 +560,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
             shooter_id = d.get("shootingPlayerId") or d.get("scoringPlayerId")
             goalie_id  = d.get("goalieInNetId")
             type_key   = play.get("typeDescKey", "")
-            if shooter_id and goalie_id and type_key in ("shot-on-goal", "goal", "missed-shot"):
+            if shooter_id and goalie_id and type_key in ("shot-on-goal", "goal", "missed-shot", "failed-shot-attempt"):
                 scored = 1 if type_key == "goal" else 0
                 pairs.append((shooter_id, goalie_id, scored))
         return pairs
