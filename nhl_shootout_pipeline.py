@@ -533,9 +533,12 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
 
     def get_so_goalie_map(game_id):
         """
-        Returns {teamId: goalieId} for each team's goalie during the SO period
-        by reading rosterSpots + SO play events from play-by-play.
-        Falls back to rosterSpots position=G if SO plays are sparse.
+        Returns {teamAbbrev: goalieId} for BOTH teams in a game.
+        Strategy:
+        1. Primary: rosterSpots — every goalie dressed for the game is listed
+           here with their teamId, giving us both goalies regardless of whether
+           they faced shots. Filter to players who actually appeared in SO plays.
+        2. Fallback: goalieInNetId from SO play details if rosterSpots is sparse.
         """
         try:
             resp = requests.get(f"{pbp_base}/gamecenter/{game_id}/play-by-play", timeout=15)
@@ -546,38 +549,62 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
                 print(f"    [warn] PBP failed game {game_id}: {e}")
             return {}
 
-        # Build teamId -> abbrev map from the boxscore fields
         home_team = pbp.get("homeTeam", {})
         away_team = pbp.get("awayTeam", {})
-        team_abbrev = {
-            home_team.get("id"): home_team.get("abbrev", ""),
-            away_team.get("id"): away_team.get("abbrev", ""),
-        }
+        # teamId -> abbrev
+        team_abbrev = {}
+        if home_team.get("id"):
+            team_abbrev[home_team["id"]] = home_team.get("abbrev", "")
+        if away_team.get("id"):
+            team_abbrev[away_team["id"]] = away_team.get("abbrev", "")
 
-        # Find goalies in net during SO plays
-        goalie_map = {}  # teamAbbrev -> goalieId
+        # Find which playerIds appeared in SO plays as goalieInNetId
+        so_goalie_ids = set()
+        so_shooter_team_ids = set()
         for play in pbp.get("plays", []):
             if play.get("periodDescriptor", {}).get("periodType") != "SO":
                 continue
             details = play.get("details", {})
             gid = details.get("goalieInNetId")
-            tid = details.get("eventOwnerTeamId")  # shooting team
-            if gid and tid:
-                # The goalie belongs to the NON-shooting team
-                for team_id, abbrev in team_abbrev.items():
-                    if team_id != tid and abbrev:
-                        goalie_map[abbrev] = gid
+            if gid:
+                so_goalie_ids.add(gid)
+            tid = details.get("eventOwnerTeamId")
+            if tid:
+                so_shooter_team_ids.add(tid)
 
-        # If we didn't find goalies from plays, try rosterSpots
-        if not goalie_map:
-            for spot in pbp.get("rosterSpots", []):
-                if spot.get("positionCode") == "G":
-                    tid = spot.get("teamId")
-                    abbrev = team_abbrev.get(tid, "")
-                    if abbrev and abbrev not in goalie_map:
-                        goalie_map[abbrev] = spot.get("playerId")
+        # Map teamAbbrev -> goalieId using rosterSpots
+        # A goalie belongs to the team on their rosterSpot
+        goalie_map = {}
+        for spot in pbp.get("rosterSpots", []):
+            if spot.get("positionCode") != "G":
+                continue
+            pid = spot.get("playerId")
+            tid = spot.get("teamId")
+            abbrev = team_abbrev.get(tid, "")
+            if not abbrev:
+                continue
+            # Prefer the goalie who actually appeared in SO plays
+            if pid in so_goalie_ids:
+                goalie_map[abbrev] = pid
+            elif abbrev not in goalie_map:
+                # Fallback: use any goalie on this team
+                goalie_map[abbrev] = pid
 
-        return goalie_map  # {teamAbbrev -> goalieId}
+        # If rosterSpots gave nothing, fall back to inferring from SO plays directly
+        if not goalie_map and so_goalie_ids:
+            for play in pbp.get("plays", []):
+                if play.get("periodDescriptor", {}).get("periodType") != "SO":
+                    continue
+                details = play.get("details", {})
+                gid = details.get("goalieInNetId")
+                shooter_tid = details.get("eventOwnerTeamId")
+                if gid and shooter_tid:
+                    # Goalie is on the NON-shooting team
+                    for team_id, abbrev in team_abbrev.items():
+                        if team_id != shooter_tid and abbrev:
+                            goalie_map[abbrev] = gid
+
+        return goalie_map
 
     # Build goalie name lookup from active_rosters + skater_shootout history
     goalie_names = {}
