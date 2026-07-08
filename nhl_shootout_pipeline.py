@@ -646,7 +646,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
     print(f"vs-goalie splits complete — {total} total shooter-goalie pairs.")
 
 
-
+if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="NHL Shootout Stats Pipeline v2")
     ap.add_argument("--init-db", action="store_true")
     ap.add_argument("--backfill", nargs=2, metavar=("START_SEASON", "END_SEASON"),
