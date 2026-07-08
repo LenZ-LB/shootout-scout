@@ -34,6 +34,9 @@ jobs:
       - name: Init database (migrates schema if needed)
         run: python nhl_shootout_pipeline.py --init-db
 
+      - name: Diagnose game-level API field names
+        run: python diagnose_splits.py
+
       - name: Build vs-goalie splits ${{ github.event.inputs.start_season }} to ${{ github.event.inputs.end_season }}
         run: python nhl_shootout_pipeline.py --build-splits ${{ github.event.inputs.start_season }} ${{ github.event.inputs.end_season }} --debug
 
