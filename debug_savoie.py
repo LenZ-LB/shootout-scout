@@ -24,7 +24,13 @@ while True:
            f"?isAggregate=false&isGame=true"
            f"&cayenneExp=seasonId=20252026%20and%20gameTypeId=2"
            f"&start={start}&limit=100")
+    import time
+    time.sleep(1)
     resp = requests.get(url, timeout=20)
+    print(f"  HTTP {resp.status_code} start={start} len={len(resp.text)}")
+    if resp.status_code != 200 or not resp.text.strip():
+        print(f"  Bad response, stopping: {resp.text[:200]}")
+        break
     data = resp.json()
     rows = data.get("data", [])
     all_rows.extend(rows)
