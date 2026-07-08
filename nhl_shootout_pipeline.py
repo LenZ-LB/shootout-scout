@@ -542,6 +542,8 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
         """
         Returns list of (shooter_id, goalie_id, scored) from SO period plays.
         Pure shootingPlayerId -> goalieInNetId mapping. No team logic.
+        For older seasons where goalieInNetId is null on missed-shots,
+        infers the goalie from other plays in the same game for that team.
         """
         try:
             resp = requests.get(f"{pbp_base}/gamecenter/{game_id}/play-by-play", timeout=15)
@@ -552,15 +554,53 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
                 print(f"    [warn] PBP failed game {game_id}: {e}")
             return []
 
-        pairs = []
+        home_id = pbp.get("homeTeam", {}).get("id")
+        away_id = pbp.get("awayTeam", {}).get("id")
+
+        # First pass: collect all SO plays and build team->goalie map from known plays
+        so_plays = []
+        team_goalie = {}  # eventOwnerTeamId -> goalie they faced (the OTHER team's goalie)
         for play in pbp.get("plays", []):
             if play.get("periodDescriptor", {}).get("periodType") != "SO":
                 continue
             d = play.get("details", {})
+            type_key   = play.get("typeDescKey", "")
             shooter_id = d.get("shootingPlayerId") or d.get("scoringPlayerId")
             goalie_id  = d.get("goalieInNetId")
-            type_key   = play.get("typeDescKey", "")
-            if shooter_id and goalie_id and type_key in ("shot-on-goal", "goal", "missed-shot", "failed-shot-attempt"):
+            owner_tid  = d.get("eventOwnerTeamId")
+            if type_key not in ("shot-on-goal", "goal", "missed-shot", "failed-shot-attempt"):
+                continue
+            if not shooter_id:
+                continue
+            so_plays.append((shooter_id, goalie_id, type_key, owner_tid))
+            # If goalie is known, record which goalie this team faces
+            if goalie_id and owner_tid:
+                team_goalie[owner_tid] = goalie_id
+
+        # If team_goalie is still incomplete, try rosterSpots as fallback
+        if len(team_goalie) < 2:
+            team_abbrev = {
+                home_id: pbp.get("homeTeam", {}).get("abbrev", ""),
+                away_id: pbp.get("awayTeam", {}).get("abbrev", ""),
+            }
+            so_goalie_ids = {g for _, g, _, _ in so_plays if g}
+            for spot in pbp.get("rosterSpots", []):
+                if spot.get("positionCode") != "G":
+                    continue
+                pid = spot.get("playerId")
+                tid = spot.get("teamId")
+                if pid in so_goalie_ids:
+                    # This goalie faced shots — their opponents are the other team
+                    other_tid = away_id if tid == home_id else home_id
+                    if other_tid and other_tid not in team_goalie:
+                        team_goalie[other_tid] = pid
+
+        # Second pass: build pairs, filling null goalies from team_goalie map
+        pairs = []
+        for shooter_id, goalie_id, type_key, owner_tid in so_plays:
+            if not goalie_id and owner_tid:
+                goalie_id = team_goalie.get(owner_tid)
+            if shooter_id and goalie_id:
                 scored = 1 if type_key == "goal" else 0
                 pairs.append((shooter_id, goalie_id, scored))
         return pairs
