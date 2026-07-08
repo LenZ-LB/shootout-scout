@@ -115,8 +115,8 @@ def init_db():
 def _fetch_shootout_stats(season, report_type, retries=3):
     """
     Pulls from the NHL stats API /skater/shootout or /goalie/shootout endpoint.
-    Uses requests directly (same API nhl-api-py wraps) to keep the workflow
-    dependency to just 'requests' rather than adding nhl-api-py to the Action.
+    gameTypeId=2 = regular season only (1=preseason, 3=playoffs, 4=ASG).
+    isAggregate=false + isGame=false = season-level totals, not game-by-game rows.
     Handles pagination — the API caps at 100 rows per page.
     """
     base = "https://api.nhle.com/stats/rest/en"
@@ -299,7 +299,7 @@ def export_json(out_dir="data"):
             players_map[pid] = {
                 "id": pid,
                 "name": row["full_name"],
-                "team": row["team_abbrev"] or "",
+                "team": "",
                 "career": [0, 0],
                 "seasons": {},
                 "vs_goalie": {},
@@ -308,9 +308,9 @@ def export_json(out_dir="data"):
         p["career"][0] += row["goals"]
         p["career"][1] += row["attempts"]
         p["seasons"][row["season"]] = [row["goals"], row["attempts"]]
-        # keep most recent team
+        # Keep most recent team — take first from comma-separated list (e.g. "BOS,MIN" -> "BOS")
         if row["team_abbrev"]:
-            p["team"] = row["team_abbrev"]
+            p["team"] = row["team_abbrev"].split(",")[0].strip()
 
     # attach vs_goalie splits
     for row in conn.execute("""
@@ -346,7 +346,7 @@ def export_json(out_dir="data"):
         g["wins"]   += row["wins"]
         g["losses"] += row["losses"]
         if row["team_abbrev"]:
-            g["team"] = row["team_abbrev"]
+            g["team"] = row["team_abbrev"].split(",")[0].strip()
 
     for g in goalies_map.values():
         g["record"] = f"{g['wins']} W \u2013 {g['losses']} L in career shootouts"

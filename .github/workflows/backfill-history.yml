@@ -28,14 +28,14 @@ jobs:
 
       - run: pip install requests
 
-      - name: Diagnose API field names
-        run: python diagnose_api.py
-
-      - name: Init database (safe to re-run)
+      - name: Init database (migrates schema if needed)
         run: python nhl_shootout_pipeline.py --init-db
 
       - name: Backfill ${{ github.event.inputs.start_season }} to ${{ github.event.inputs.end_season }}
         run: python nhl_shootout_pipeline.py --backfill ${{ github.event.inputs.start_season }} ${{ github.event.inputs.end_season }} --debug
+
+      - name: Update current rosters (sets correct team assignments)
+        run: python nhl_shootout_pipeline.py --update-rosters
 
       - name: Export JSON for the page
         run: python nhl_shootout_pipeline.py --export-json
@@ -46,8 +46,8 @@ jobs:
           ls -la shootout.db 2>&1 || echo "shootout.db missing"
           echo "--- data/ ---"
           ls -la data/ 2>&1 || echo "data/ missing"
-          echo "--- players.json preview (first 500 chars) ---"
-          head -c 500 data/players.json 2>&1 || echo "players.json missing"
+          echo "--- players.json preview (first 800 chars) ---"
+          head -c 800 data/players.json 2>&1 || echo "players.json missing"
 
       - name: Commit updated data
         run: |

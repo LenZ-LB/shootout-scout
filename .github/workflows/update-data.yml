@@ -6,7 +6,7 @@ on:
       run_full_update:
         description: "Also refresh rosters (do after trades/call-ups)"
         type: boolean
-        default: false
+        default: true
 
 permissions:
   contents: write
@@ -23,27 +23,25 @@ jobs:
 
       - run: pip install requests
 
-      - name: Init database (safe to re-run)
+      - name: Init database (migrates schema if needed)
         run: python nhl_shootout_pipeline.py --init-db
+
+      - name: Pull current season shootout stats
+        run: python nhl_shootout_pipeline.py --backfill 20252026 20252026 --debug
 
       - name: Refresh rosters
         if: ${{ github.event.inputs.run_full_update == 'true' }}
         run: python nhl_shootout_pipeline.py --update-rosters
-
-      - name: Pull current season shootout stats
-        run: python nhl_shootout_pipeline.py --backfill 20252026 20252026 --debug
 
       - name: Export JSON for the page
         run: python nhl_shootout_pipeline.py --export-json
 
       - name: Show what was generated (debug)
         run: |
-          echo "--- shootout.db ---"
-          ls -la shootout.db 2>&1 || echo "shootout.db missing"
           echo "--- data/ ---"
           ls -la data/ 2>&1 || echo "data/ missing"
           echo "--- players.json preview ---"
-          head -c 500 data/players.json 2>&1 || echo "players.json missing"
+          head -c 800 data/players.json 2>&1 || echo "players.json missing"
 
       - name: Commit updated data
         run: |
