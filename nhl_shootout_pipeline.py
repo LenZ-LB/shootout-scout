@@ -55,6 +55,8 @@ CREATE TABLE IF NOT EXISTS goalie_shootout (
     season      TEXT NOT NULL,
     saves       INTEGER DEFAULT 0,
     shots_against INTEGER DEFAULT 0,
+    wins        INTEGER DEFAULT 0,
+    losses      INTEGER DEFAULT 0,
     PRIMARY KEY (goalie_id, season)
 );
 
@@ -193,7 +195,7 @@ def backfill(start_season, end_season, debug=False):
                 r.get("teamAbbrevs", ""),
                 season,
                 r.get("shootoutGoals", 0),
-                r.get("shootoutAttempts", 0),
+                r.get("shootoutShots", 0),
             ))
         if debug:
             print(f"    {len(skater_rows)} skaters")
@@ -206,14 +208,18 @@ def backfill(start_season, end_season, debug=False):
                 continue
             shots = r.get("shootoutShotsAgainst", 0)
             saves = r.get("shootoutSaves", 0)
+            wins = r.get("shootoutWins", 0)
+            losses = r.get("shootoutLosses", 0)
             conn.execute("""
-                INSERT INTO goalie_shootout (goalie_id, full_name, team_abbrev, season, saves, shots_against)
-                VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO goalie_shootout (goalie_id, full_name, team_abbrev, season, saves, shots_against, wins, losses)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(goalie_id, season) DO UPDATE SET
                     full_name=excluded.full_name,
                     team_abbrev=excluded.team_abbrev,
                     saves=excluded.saves,
-                    shots_against=excluded.shots_against
+                    shots_against=excluded.shots_against,
+                    wins=excluded.wins,
+                    losses=excluded.losses
             """, (
                 gid,
                 r.get("goalieFullName", f"Goalie #{gid}"),
@@ -221,6 +227,8 @@ def backfill(start_season, end_season, debug=False):
                 season,
                 saves,
                 shots,
+                wins,
+                losses,
             ))
         if debug:
             print(f"    {len(goalie_rows)} goalies")
@@ -311,7 +319,7 @@ def export_json(out_dir="data"):
     # --- Goalies ---
     goalies_map = {}
     for row in conn.execute("""
-        SELECT goalie_id, full_name, team_abbrev, season, saves, shots_against
+        SELECT goalie_id, full_name, team_abbrev, season, saves, shots_against, wins, losses
         FROM goalie_shootout ORDER BY season
     """):
         gid = row["goalie_id"]
@@ -322,13 +330,19 @@ def export_json(out_dir="data"):
                 "team": row["team_abbrev"] or "",
                 "stopped": 0,
                 "faced": 0,
-                "record": None,
+                "wins": 0,
+                "losses": 0,
             }
         g = goalies_map[gid]
         g["stopped"] += row["saves"]
         g["faced"] += row["shots_against"]
+        g["wins"]   += row["wins"]
+        g["losses"] += row["losses"]
         if row["team_abbrev"]:
             g["team"] = row["team_abbrev"]
+
+    for g in goalies_map.values():
+        g["record"] = f"{g['wins']} W \u2013 {g['losses']} L in career shootouts"
 
     goalies_out = [g for g in goalies_map.values() if g["faced"] > 0]
 
