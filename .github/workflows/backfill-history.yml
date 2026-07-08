@@ -28,6 +28,9 @@ jobs:
 
       - run: pip install requests
 
+      - name: Diagnose API field names
+        run: python diagnose_api.py
+
       - name: Init database (safe to re-run)
         run: python nhl_shootout_pipeline.py --init-db
 
