@@ -477,11 +477,103 @@ def export_alltime(out_dir="data", top_n=25, min_attempts=15, min_faced=20, conn
     print(f"Exported all-time leaderboards to {out_dir}/alltime.json")
 
 
-if __name__ == "__main__":
+def build_vs_goalie_splits(start_season, end_season, debug=False):
+    """
+    Builds shooter vs goalie splits by fetching game-level shootout data
+    (isGame=true) which includes both shooterPlayerId and goaliePlayerId
+    per attempt. Much more reliable than play-by-play parsing.
+    Clears and rebuilds vs_goalie_splits for the given season range.
+    """
+    conn = get_conn()
+    conn.row_factory = sqlite3.Row
+
+    try:
+        s_idx = SEASONS.index(start_season)
+        e_idx = SEASONS.index(end_season)
+    except ValueError:
+        s_idx, e_idx = 0, len(SEASONS) - 1
+
+    target_seasons = SEASONS[s_idx:e_idx + 1]
+    print(f"Building vs-goalie splits for {len(target_seasons)} seasons...")
+    # Clear existing splits for these seasons to avoid double-counting on re-runs
+    conn.execute("DELETE FROM vs_goalie_splits")
+    conn.commit()
+
+    base = "https://api.nhle.com/stats/rest/en"
+    for season in target_seasons:
+        print(f"  Season {season}...")
+        start = 0
+        limit = 100
+        season_splits = {}  # (shooter_id, goalie_id) -> [goals, att, goalie_name]
+
+        while True:
+            url = (
+                f"{base}/skater/shootout"
+                f"?isAggregate=false&isGame=true"
+                f"&cayenneExp=seasonId={season}%20and%20gameTypeId=2"
+                f"&start={start}&limit={limit}"
+            )
+            try:
+                resp = requests.get(url, timeout=20)
+                resp.raise_for_status()
+                data = resp.json()
+            except Exception as e:
+                print(f"    [warn] game-level fetch failed {season}: {e}")
+                break
+
+            rows = data.get("data", [])
+            if debug and start == 0:
+                if rows:
+                    print(f"    Game-level fields: {list(rows[0].keys())}")
+
+            for r in rows:
+                sid = r.get("playerId")
+                gid = r.get("goaliePlayerId") or r.get("opponentGoaliePlayerId")
+                gname = r.get("goalieFullName") or r.get("opponentGoalieFullName") or ""
+                goals = r.get("shootoutGoals", 0)
+                shots = r.get("shootoutShots", 0)
+                if not sid or not gid or shots == 0:
+                    continue
+                key = (sid, gid)
+                if key not in season_splits:
+                    season_splits[key] = [0, 0, gname]
+                season_splits[key][0] += goals
+                season_splits[key][1] += shots
+                if gname:
+                    season_splits[key][2] = gname
+
+            total = data.get("total", 0)
+            start += limit
+            if start >= total:
+                break
+            time.sleep(0.2)
+
+        # Upsert into vs_goalie_splits
+        for (sid, gid), (goals, att, gname) in season_splits.items():
+            conn.execute("""
+                INSERT INTO vs_goalie_splits (player_id, goalie_id, goalie_name, goals, attempts)
+                VALUES (?, ?, ?, ?, ?)
+                ON CONFLICT(player_id, goalie_id) DO UPDATE SET
+                    goalie_name=excluded.goalie_name,
+                    goals=goals+excluded.goals,
+                    attempts=attempts+excluded.attempts
+            """, (sid, gid, gname, goals, att))
+        conn.commit()
+        if debug:
+            print(f"    {len(season_splits)} shooter-goalie pairs stored")
+        time.sleep(0.4)
+
+    conn.close()
+    print("vs-goalie splits complete.")
+
+
+
     ap = argparse.ArgumentParser(description="NHL Shootout Stats Pipeline v2")
     ap.add_argument("--init-db", action="store_true")
     ap.add_argument("--backfill", nargs=2, metavar=("START_SEASON", "END_SEASON"),
                     help="e.g. --backfill 20052006 20252026")
+    ap.add_argument("--build-splits", nargs=2, metavar=("START_SEASON", "END_SEASON"),
+                    help="Build vs-goalie splits e.g. --build-splits 20052006 20252026")
     ap.add_argument("--update-rosters", action="store_true")
     ap.add_argument("--export-json", action="store_true")
     ap.add_argument("--debug", action="store_true")
@@ -491,9 +583,11 @@ if __name__ == "__main__":
         init_db()
     if args.backfill:
         backfill(args.backfill[0], args.backfill[1], debug=args.debug)
+    if args.build_splits:
+        build_vs_goalie_splits(args.build_splits[0], args.build_splits[1], debug=args.debug)
     if args.update_rosters:
         update_rosters()
     if args.export_json:
         export_json()
-    if not any([args.init_db, args.backfill, args.update_rosters, args.export_json]):
+    if not any([args.init_db, args.backfill, args.build_splits, args.update_rosters, args.export_json]):
         print(__doc__)

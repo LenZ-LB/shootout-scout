@@ -248,6 +248,7 @@ async function loadData(){
   }catch(e){ /* fall back to sample */ }
   updateBanner();
   populateTeamSelects();
+  CURRENT_SEASON = detectCurrentSeason(PLAYERS);
   renderAll();
   renderAllTime();
 }
@@ -305,6 +306,22 @@ function currentSeason(seasons){
   const keys = Object.keys(seasons || {}).sort().reverse();
   return keys.length ? seasons[keys[0]] : null;
 }
+// Determine the most recent season that actually has data across all loaded players
+function detectCurrentSeason(players){
+  const counts = {};
+  players.forEach(p => {
+    Object.keys(p.seasons || {}).forEach(k => {
+      const att = (p.seasons[k] || [0,0])[1];
+      if(att > 0) counts[k] = (counts[k] || 0) + att;
+    });
+  });
+  const keys = Object.keys(counts).sort().reverse();
+  if(!keys.length) return null;
+  const best = keys[0];
+  // Format nicely: "20242025" -> "2024-25"
+  return { key: best, label: best.slice(0,4) + '\u2013' + best.slice(6) };
+}
+let CURRENT_SEASON = null;
 
 function renderPanels(teamA, teamB){
   const panelsEl = document.getElementById('panels');
@@ -312,13 +329,25 @@ function renderPanels(teamA, teamB){
   panelsEl.innerHTML = pairs.map(([team, opp]) => {
     const players = PLAYERS.filter(p => p.team === team && p.active);
     const oppGoalies = GOALIES.filter(g => g.team === opp && g.active);
-    const oppLabel = oppGoalies.length ? oppGoalies.map(g => g.name.split(' ').pop()).join(' / ') : opp;
+    const curLabel = CURRENT_SEASON ? CURRENT_SEASON.label : 'Current';
+    const curKey   = CURRENT_SEASON ? CURRENT_SEASON.key   : null;
+
     if(!players.length){
       return `<div class="team-panel">
         <div class="team-header"><span>${team} SHOOTERS</span></div>
         <div class="empty-panel">No shootout data loaded for ${team} yet.</div>
       </div>`;
     }
+
+    // One column header per opposing goalie (last name only to keep it tight)
+    const goalieHeaders = oppGoalies.length
+      ? oppGoalies.map(g => `<th class="vsg-col">vs ${g.name.split(' ').pop()}</th>`).join('')
+      : `<th class="vsg-col">vs ${opp} G</th>`;
+
+    const oppLabel = oppGoalies.length
+      ? oppGoalies.map(g => g.name.split(' ').pop()).join(' / ')
+      : opp;
+
     return `<div class="team-panel">
       <div class="team-header">
         <span>${team} SHOOTERS</span>
@@ -327,21 +356,27 @@ function renderPanels(teamA, teamB){
       <table>
         <thead>
           <tr>
-            <th>Player</th><th>Career</th><th>Career Pct</th><th>Last 3 Szn</th><th>Current Szn</th>
-            <th class="vsg-col">vs ${oppLabel}</th>
+            <th>Player</th><th>Career</th><th>Career %</th><th>Last 3 Szn</th><th>${curLabel}</th>
+            ${goalieHeaders}
           </tr>
         </thead>
         <tbody>
           ${players.map(p => {
-            let vsOpp = null;
-            oppGoalies.forEach(g => { if(p.vs_goalie && p.vs_goalie[g.name]) vsOpp = p.vs_goalie[g.name]; });
+            const curSzn = curKey ? (p.seasons[curKey] || null) : currentSeason(p.seasons);
+            // One cell per opposing goalie
+            const goalieCells = oppGoalies.length
+              ? oppGoalies.map(g => {
+                  const split = (p.vs_goalie && p.vs_goalie[g.name]) ? p.vs_goalie[g.name] : null;
+                  return `<td class="vsg-col">${fmtGA(split)}</td>`;
+                }).join('')
+              : `<td class="vsg-col"><span class="no-data">\u2014</span></td>`;
             return `<tr>
               <td><span class="player-name">${p.name}</span></td>
               <td>${fmtGA(p.career)}</td>
               <td>${fmtPct(p.career)}</td>
               <td>${fmtGA(last3(p.seasons))}</td>
-              <td>${fmtGA(currentSeason(p.seasons))}</td>
-              <td class="vsg-col">${fmtGA(vsOpp)}</td>
+              <td>${fmtGA(curSzn)}</td>
+              ${goalieCells}
             </tr>`;
           }).join('')}
         </tbody>

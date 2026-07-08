@@ -1,0 +1,57 @@
+name: Build vs-Goalie Splits
+
+# Run this once after a full backfill to populate the per-goalie split columns.
+# Slower than the main backfill (fetches game-level data) so kept separate.
+# Re-running is safe — it clears and rebuilds the splits table from scratch.
+on:
+  workflow_dispatch:
+    inputs:
+      start_season:
+        description: "Start season (8-digit, e.g. 20052006)"
+        type: string
+        default: "20052006"
+      end_season:
+        description: "End season (8-digit, e.g. 20252026)"
+        type: string
+        default: "20252026"
+
+permissions:
+  contents: write
+
+jobs:
+  build-splits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install requests
+
+      - name: Init database (migrates schema if needed)
+        run: python nhl_shootout_pipeline.py --init-db
+
+      - name: Build vs-goalie splits ${{ github.event.inputs.start_season }} to ${{ github.event.inputs.end_season }}
+        run: python nhl_shootout_pipeline.py --build-splits ${{ github.event.inputs.start_season }} ${{ github.event.inputs.end_season }} --debug
+
+      - name: Export JSON for the page
+        run: python nhl_shootout_pipeline.py --export-json
+
+      - name: Show what was generated (debug)
+        run: |
+          echo "--- data/ ---"
+          ls -la data/ 2>&1 || echo "data/ missing"
+          echo "--- players.json preview ---"
+          head -c 800 data/players.json 2>&1 || echo "players.json missing"
+
+      - name: Commit updated data
+        run: |
+          git config user.name "shootout-scout-bot"
+          git config user.email "actions@users.noreply.github.com"
+          mkdir -p data
+          git add -A data shootout.db
+          git diff --cached --quiet || git commit -m "Build vs-goalie splits ${{ github.event.inputs.start_season }}-${{ github.event.inputs.end_season }}"
+          git push
