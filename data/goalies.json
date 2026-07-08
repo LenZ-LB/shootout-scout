@@ -5,7 +5,9 @@
     "team": "STL",
     "stopped": 13,
     "faced": 20,
-    "record": null
+    "wins": 2,
+    "losses": 4,
+    "record": "2 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8468481,
@@ -13,7 +15,9 @@
     "team": "NYI",
     "stopped": 92,
     "faced": 126,
-    "record": null
+    "wins": 19,
+    "losses": 11,
+    "record": "19 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8467959,
@@ -21,7 +25,9 @@
     "team": "PIT",
     "stopped": 4,
     "faced": 10,
-    "record": null
+    "wins": 0,
+    "losses": 3,
+    "record": "0 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8448382,
@@ -29,7 +35,9 @@
     "team": "TOR",
     "stopped": 32,
     "faced": 43,
-    "record": null
+    "wins": 7,
+    "losses": 4,
+    "record": "7 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8467486,
@@ -37,7 +45,9 @@
     "team": "EDM,OTT",
     "stopped": 18,
     "faced": 24,
-    "record": null
+    "wins": 5,
+    "losses": 2,
+    "record": "5 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8458568,
@@ -45,7 +55,9 @@
     "team": "DET",
     "stopped": 41,
     "faced": 67,
-    "record": null
+    "wins": 10,
+    "losses": 10,
+    "record": "10 W \u2013 10 L in career shootouts"
   },
   {
     "id": 8447687,
@@ -53,7 +65,9 @@
     "team": "DET",
     "stopped": 27,
     "faced": 44,
-    "record": null
+    "wins": 6,
+    "losses": 11,
+    "record": "6 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8468550,
@@ -61,7 +75,9 @@
     "team": "PHX,BUF",
     "stopped": 34,
     "faced": 45,
-    "record": null
+    "wins": 5,
+    "losses": 4,
+    "record": "5 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8445769,
@@ -69,7 +85,9 @@
     "team": "LAK",
     "stopped": 17,
     "faced": 33,
-    "record": null
+    "wins": 4,
+    "losses": 5,
+    "record": "4 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8460516,
@@ -77,7 +95,9 @@
     "team": "LAK",
     "stopped": 3,
     "faced": 6,
-    "record": null
+    "wins": 1,
+    "losses": 1,
+    "record": "1 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8470140,
@@ -85,7 +105,9 @@
     "team": "DAL",
     "stopped": 180,
     "faced": 254,
-    "record": null
+    "wins": 42,
+    "losses": 30,
+    "record": "42 W \u2013 30 L in career shootouts"
   },
   {
     "id": 8467913,
@@ -93,7 +115,9 @@
     "team": "OTT",
     "stopped": 60,
     "faced": 93,
-    "record": null
+    "wins": 10,
+    "losses": 17,
+    "record": "10 W \u2013 17 L in career shootouts"
   },
   {
     "id": 8462102,
@@ -101,7 +125,9 @@
     "team": "LAK",
     "stopped": 13,
     "faced": 20,
-    "record": null
+    "wins": 2,
+    "losses": 4,
+    "record": "2 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8459432,
@@ -109,7 +135,9 @@
     "team": "BUF",
     "stopped": 18,
     "faced": 27,
-    "record": null
+    "wins": 2,
+    "losses": 4,
+    "record": "2 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8466156,
@@ -117,7 +145,9 @@
     "team": "BUF,VAN",
     "stopped": 0,
     "faced": 1,
-    "record": null
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8460705,
@@ -125,7 +155,9 @@
     "team": "TBL",
     "stopped": 140,
     "faced": 219,
-    "record": null
+    "wins": 30,
+    "losses": 32,
+    "record": "30 W \u2013 32 L in career shootouts"
   },
   {
     "id": 8462255,
@@ -133,7 +165,9 @@
     "team": "EDM",
     "stopped": 9,
     "faced": 19,
-    "record": null
+    "wins": 1,
+    "losses": 4,
+    "record": "1 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8462152,
@@ -141,7 +175,9 @@
     "team": "WPG",
     "stopped": 76,
     "faced": 109,
-    "record": null
+    "wins": 18,
+    "losses": 16,
+    "record": "18 W \u2013 16 L in career shootouts"
   },
   {
     "id": 8462161,
@@ -149,7 +185,9 @@
     "team": "PIT",
     "stopped": 42,
     "faced": 55,
-    "record": null
+    "wins": 7,
+    "losses": 9,
+    "record": "7 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8467364,
@@ -157,7 +195,9 @@
     "team": "CGY,PHX",
     "stopped": 3,
     "faced": 3,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8468037,
@@ -165,7 +205,9 @@
     "team": "CBJ",
     "stopped": 7,
     "faced": 8,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8469152,
@@ -173,7 +215,9 @@
     "team": "DET",
     "stopped": 29,
     "faced": 55,
-    "record": null
+    "wins": 8,
+    "losses": 11,
+    "record": "8 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8458562,
@@ -181,7 +225,9 @@
     "team": "CGY",
     "stopped": 9,
     "faced": 15,
-    "record": null
+    "wins": 0,
+    "losses": 2,
+    "record": "0 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8470594,
@@ -189,7 +235,9 @@
     "team": "MIN",
     "stopped": 262,
     "faced": 362,
-    "record": null
+    "wins": 66,
+    "losses": 42,
+    "record": "66 W \u2013 42 L in career shootouts"
   },
   {
     "id": 8470584,
@@ -197,7 +245,9 @@
     "team": "MIN",
     "stopped": 19,
     "faced": 24,
-    "record": null
+    "wins": 6,
+    "losses": 1,
+    "record": "6 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8460703,
@@ -205,7 +255,9 @@
     "team": "FLA,DAL",
     "stopped": 170,
     "faced": 234,
-    "record": null
+    "wins": 36,
+    "losses": 30,
+    "record": "36 W \u2013 30 L in career shootouts"
   },
   {
     "id": 8459308,
@@ -213,7 +265,9 @@
     "team": "CAR",
     "stopped": 62,
     "faced": 88,
-    "record": null
+    "wins": 14,
+    "losses": 11,
+    "record": "14 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8469482,
@@ -221,7 +275,9 @@
     "team": "CHI",
     "stopped": 2,
     "faced": 4,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8459463,
@@ -229,7 +285,9 @@
     "team": "NJD",
     "stopped": 13,
     "faced": 22,
-    "record": null
+    "wins": 5,
+    "losses": 2,
+    "record": "5 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8459140,
@@ -237,7 +295,9 @@
     "team": "EDM",
     "stopped": 86,
     "faced": 138,
-    "record": null
+    "wins": 14,
+    "losses": 24,
+    "record": "14 W \u2013 24 L in career shootouts"
   },
   {
     "id": 8468741,
@@ -245,7 +305,9 @@
     "team": "STL",
     "stopped": 1,
     "faced": 3,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8464999,
@@ -253,7 +315,9 @@
     "team": "TBL",
     "stopped": 82,
     "faced": 109,
-    "record": null
+    "wins": 21,
+    "losses": 12,
+    "record": "21 W \u2013 12 L in career shootouts"
   },
   {
     "id": 8469675,
@@ -261,7 +325,9 @@
     "team": "EDM",
     "stopped": 44,
     "faced": 63,
-    "record": null
+    "wins": 11,
+    "losses": 6,
+    "record": "11 W \u2013 6 L in career shootouts"
   },
   {
     "id": 8466290,
@@ -269,7 +335,9 @@
     "team": "MTL",
     "stopped": 20,
     "faced": 28,
-    "record": null
+    "wins": 4,
+    "losses": 3,
+    "record": "4 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8462052,
@@ -277,7 +345,9 @@
     "team": "PHI",
     "stopped": 22,
     "faced": 40,
-    "record": null
+    "wins": 5,
+    "losses": 8,
+    "record": "5 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8467950,
@@ -285,7 +355,9 @@
     "team": "BUF",
     "stopped": 154,
     "faced": 231,
-    "record": null
+    "wins": 34,
+    "losses": 32,
+    "record": "34 W \u2013 32 L in career shootouts"
   },
   {
     "id": 8460535,
@@ -293,7 +365,9 @@
     "team": "FLA",
     "stopped": 91,
     "faced": 134,
-    "record": null
+    "wins": 22,
+    "losses": 17,
+    "record": "22 W \u2013 17 L in career shootouts"
   },
   {
     "id": 8460704,
@@ -301,7 +375,9 @@
     "team": "NJD",
     "stopped": 97,
     "faced": 129,
-    "record": null
+    "wins": 25,
+    "losses": 11,
+    "record": "25 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8462047,
@@ -309,7 +385,9 @@
     "team": "NYR",
     "stopped": 41,
     "faced": 76,
-    "record": null
+    "wins": 10,
+    "losses": 17,
+    "record": "10 W \u2013 17 L in career shootouts"
   },
   {
     "id": 8458988,
@@ -317,7 +395,9 @@
     "team": "BOS",
     "stopped": 46,
     "faced": 63,
-    "record": null
+    "wins": 12,
+    "losses": 5,
+    "record": "12 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8469658,
@@ -325,7 +405,9 @@
     "team": "CHI",
     "stopped": 57,
     "faced": 91,
-    "record": null
+    "wins": 12,
+    "losses": 14,
+    "record": "12 W \u2013 14 L in career shootouts"
   },
   {
     "id": 8470645,
@@ -333,7 +415,9 @@
     "team": "CHI",
     "stopped": 141,
     "faced": 197,
-    "record": null
+    "wins": 34,
+    "losses": 24,
+    "record": "34 W \u2013 24 L in career shootouts"
   },
   {
     "id": 8471915,
@@ -341,7 +425,9 @@
     "team": "COL",
     "stopped": 7,
     "faced": 7,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8462044,
@@ -349,7 +435,9 @@
     "team": "COL",
     "stopped": 93,
     "faced": 155,
-    "record": null
+    "wins": 21,
+    "losses": 29,
+    "record": "21 W \u2013 29 L in career shootouts"
   },
   {
     "id": 8445386,
@@ -357,7 +445,9 @@
     "team": "FLA",
     "stopped": 24,
     "faced": 39,
-    "record": null
+    "wins": 3,
+    "losses": 9,
+    "record": "3 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8468166,
@@ -365,7 +455,9 @@
     "team": "CBJ",
     "stopped": 28,
     "faced": 50,
-    "record": null
+    "wins": 5,
+    "losses": 11,
+    "record": "5 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8468646,
@@ -373,7 +465,9 @@
     "team": "SJS",
     "stopped": 3,
     "faced": 4,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8456137,
@@ -381,7 +475,9 @@
     "team": "NYI",
     "stopped": 6,
     "faced": 12,
-    "record": null
+    "wins": 1,
+    "losses": 3,
+    "record": "1 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8460715,
@@ -389,7 +485,9 @@
     "team": "CAR",
     "stopped": 14,
     "faced": 22,
-    "record": null
+    "wins": 5,
+    "losses": 2,
+    "record": "5 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8467511,
@@ -397,7 +495,9 @@
     "team": "SJS",
     "stopped": 68,
     "faced": 95,
-    "record": null
+    "wins": 12,
+    "losses": 15,
+    "record": "12 W \u2013 15 L in career shootouts"
   },
   {
     "id": 8468685,
@@ -405,7 +505,9 @@
     "team": "NYR",
     "stopped": 293,
     "faced": 406,
-    "record": null
+    "wins": 61,
+    "losses": 50,
+    "record": "61 W \u2013 50 L in career shootouts"
   },
   {
     "id": 8470263,
@@ -413,7 +515,9 @@
     "team": "PHX",
     "stopped": 2,
     "faced": 3,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8470320,
@@ -421,7 +525,9 @@
     "team": "CHI",
     "stopped": 124,
     "faced": 193,
-    "record": null
+    "wins": 20,
+    "losses": 41,
+    "record": "20 W \u2013 41 L in career shootouts"
   },
   {
     "id": 8462055,
@@ -429,7 +535,9 @@
     "team": "TBL",
     "stopped": 35,
     "faced": 41,
-    "record": null
+    "wins": 8,
+    "losses": 2,
+    "record": "8 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8448535,
@@ -437,7 +545,9 @@
     "team": "WSH",
     "stopped": 60,
     "faced": 95,
-    "record": null
+    "wins": 7,
+    "losses": 14,
+    "record": "7 W \u2013 14 L in career shootouts"
   },
   {
     "id": 8465093,
@@ -445,7 +555,9 @@
     "team": "PHI",
     "stopped": 4,
     "faced": 10,
-    "record": null
+    "wins": 1,
+    "losses": 3,
+    "record": "1 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8469479,
@@ -453,7 +565,9 @@
     "team": "STL",
     "stopped": 7,
     "faced": 10,
-    "record": null
+    "wins": 2,
+    "losses": 1,
+    "record": "2 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8470216,
@@ -461,7 +575,9 @@
     "team": "MIN",
     "stopped": 52,
     "faced": 73,
-    "record": null
+    "wins": 14,
+    "losses": 10,
+    "record": "14 W \u2013 10 L in career shootouts"
   },
   {
     "id": 8460612,
@@ -469,7 +585,9 @@
     "team": "CHI",
     "stopped": 138,
     "faced": 202,
-    "record": null
+    "wins": 30,
+    "losses": 24,
+    "record": "30 W \u2013 24 L in career shootouts"
   },
   {
     "id": 8462117,
@@ -477,7 +595,9 @@
     "team": "TOR,CGY",
     "stopped": 33,
     "faced": 63,
-    "record": null
+    "wins": 7,
+    "losses": 13,
+    "record": "7 W \u2013 13 L in career shootouts"
   },
   {
     "id": 8469548,
@@ -485,7 +605,9 @@
     "team": "PHI",
     "stopped": 52,
     "faced": 88,
-    "record": null
+    "wins": 7,
+    "losses": 19,
+    "record": "7 W \u2013 19 L in career shootouts"
   },
   {
     "id": 8458615,
@@ -493,7 +615,9 @@
     "team": "ATL",
     "stopped": 1,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8466141,
@@ -501,7 +625,9 @@
     "team": "FLA",
     "stopped": 269,
     "faced": 402,
-    "record": null
+    "wins": 52,
+    "losses": 58,
+    "record": "52 W \u2013 58 L in career shootouts"
   },
   {
     "id": 8469461,
@@ -509,7 +635,9 @@
     "team": "OTT",
     "stopped": 44,
     "faced": 69,
-    "record": null
+    "wins": 11,
+    "losses": 9,
+    "record": "11 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8460806,
@@ -517,7 +645,9 @@
     "team": "TBL",
     "stopped": 125,
     "faced": 183,
-    "record": null
+    "wins": 23,
+    "losses": 25,
+    "record": "23 W \u2013 25 L in career shootouts"
   },
   {
     "id": 8466339,
@@ -525,7 +655,9 @@
     "team": "NJD",
     "stopped": 61,
     "faced": 99,
-    "record": null
+    "wins": 11,
+    "losses": 16,
+    "record": "11 W \u2013 16 L in career shootouts"
   },
   {
     "id": 8469514,
@@ -533,7 +665,9 @@
     "team": "TBL",
     "stopped": 101,
     "faced": 161,
-    "record": null
+    "wins": 20,
+    "losses": 26,
+    "record": "20 W \u2013 26 L in career shootouts"
   },
   {
     "id": 8468011,
@@ -541,7 +675,9 @@
     "team": "ANA",
     "stopped": 249,
     "faced": 351,
-    "record": null
+    "wins": 60,
+    "losses": 40,
+    "record": "60 W \u2013 40 L in career shootouts"
   },
   {
     "id": 8469529,
@@ -549,7 +685,9 @@
     "team": "ATL",
     "stopped": 4,
     "faced": 8,
-    "record": null
+    "wins": 0,
+    "losses": 2,
+    "record": "0 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8467391,
@@ -557,7 +695,9 @@
     "team": "ANA",
     "stopped": 47,
     "faced": 82,
-    "record": null
+    "wins": 13,
+    "losses": 11,
+    "record": "13 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8460712,
@@ -565,7 +705,9 @@
     "team": "WSH",
     "stopped": 108,
     "faced": 163,
-    "record": null
+    "wins": 21,
+    "losses": 27,
+    "record": "21 W \u2013 27 L in career shootouts"
   },
   {
     "id": 8467453,
@@ -573,7 +715,9 @@
     "team": "DAL",
     "stopped": 42,
     "faced": 66,
-    "record": null
+    "wins": 9,
+    "losses": 9,
+    "record": "9 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8459579,
@@ -581,7 +725,9 @@
     "team": "BUF",
     "stopped": 27,
     "faced": 45,
-    "record": null
+    "wins": 5,
+    "losses": 8,
+    "record": "5 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8462147,
@@ -589,7 +735,9 @@
     "team": "CGY",
     "stopped": 112,
     "faced": 185,
-    "record": null
+    "wins": 23,
+    "losses": 37,
+    "record": "23 W \u2013 37 L in career shootouts"
   },
   {
     "id": 8455710,
@@ -597,7 +745,9 @@
     "team": "NJD",
     "stopped": 169,
     "faced": 244,
-    "record": null
+    "wins": 42,
+    "losses": 30,
+    "record": "42 W \u2013 30 L in career shootouts"
   },
   {
     "id": 8473404,
@@ -605,7 +755,9 @@
     "team": "MIN",
     "stopped": 106,
     "faced": 188,
-    "record": null
+    "wins": 23,
+    "losses": 34,
+    "record": "23 W \u2013 34 L in career shootouts"
   },
   {
     "id": 8470090,
@@ -613,7 +765,9 @@
     "team": "CBJ",
     "stopped": 21,
     "faced": 34,
-    "record": null
+    "wins": 3,
+    "losses": 8,
+    "record": "3 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8469608,
@@ -621,7 +775,9 @@
     "team": "EDM",
     "stopped": 137,
     "faced": 222,
-    "record": null
+    "wins": 30,
+    "losses": 39,
+    "record": "30 W \u2013 39 L in career shootouts"
   },
   {
     "id": 8467430,
@@ -629,7 +785,9 @@
     "team": "PIT",
     "stopped": 36,
     "faced": 49,
-    "record": null
+    "wins": 7,
+    "losses": 4,
+    "record": "7 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8465161,
@@ -637,7 +795,9 @@
     "team": "NYR",
     "stopped": 19,
     "faced": 27,
-    "record": null
+    "wins": 4,
+    "losses": 4,
+    "record": "4 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8470860,
@@ -645,7 +805,9 @@
     "team": "VAN",
     "stopped": 168,
     "faced": 245,
-    "record": null
+    "wins": 33,
+    "losses": 37,
+    "record": "33 W \u2013 37 L in career shootouts"
   },
   {
     "id": 8460696,
@@ -653,7 +815,9 @@
     "team": "WSH",
     "stopped": 1,
     "faced": 3,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8469732,
@@ -661,7 +825,9 @@
     "team": "CGY",
     "stopped": 30,
     "faced": 47,
-    "record": null
+    "wins": 6,
+    "losses": 8,
+    "record": "6 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8468524,
@@ -669,7 +835,9 @@
     "team": "ANA",
     "stopped": 126,
     "faced": 204,
-    "record": null
+    "wins": 24,
+    "losses": 33,
+    "record": "24 W \u2013 33 L in career shootouts"
   },
   {
     "id": 8466303,
@@ -677,7 +845,9 @@
     "team": "TBL,DAL",
     "stopped": 32,
     "faced": 37,
-    "record": null
+    "wins": 7,
+    "losses": 1,
+    "record": "7 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8470264,
@@ -685,7 +855,9 @@
     "team": "LAK",
     "stopped": 4,
     "faced": 5,
-    "record": null
+    "wins": 1,
+    "losses": 1,
+    "record": "1 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8471403,
@@ -693,7 +865,9 @@
     "team": "CGY",
     "stopped": 35,
     "faced": 55,
-    "record": null
+    "wins": 7,
+    "losses": 8,
+    "record": "7 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8473975,
@@ -701,7 +875,9 @@
     "team": "LAK",
     "stopped": 29,
     "faced": 46,
-    "record": null
+    "wins": 3,
+    "losses": 7,
+    "record": "3 W \u2013 7 L in career shootouts"
   },
   {
     "id": 8468540,
@@ -709,7 +885,9 @@
     "team": "FLA",
     "stopped": 47,
     "faced": 68,
-    "record": null
+    "wins": 10,
+    "losses": 10,
+    "record": "10 W \u2013 10 L in career shootouts"
   },
   {
     "id": 8471679,
@@ -717,7 +895,9 @@
     "team": "MTL",
     "stopped": 165,
     "faced": 230,
-    "record": null
+    "wins": 34,
+    "losses": 32,
+    "record": "34 W \u2013 32 L in career shootouts"
   },
   {
     "id": 8473972,
@@ -725,7 +905,9 @@
     "team": "CGY",
     "stopped": 137,
     "faced": 201,
-    "record": null
+    "wins": 22,
+    "losses": 25,
+    "record": "22 W \u2013 25 L in career shootouts"
   },
   {
     "id": 8471239,
@@ -733,7 +915,9 @@
     "team": "NJD",
     "stopped": 96,
     "faced": 151,
-    "record": null
+    "wins": 15,
+    "losses": 29,
+    "record": "15 W \u2013 29 L in career shootouts"
   },
   {
     "id": 8473461,
@@ -741,7 +925,9 @@
     "team": "PHI",
     "stopped": 150,
     "faced": 229,
-    "record": null
+    "wins": 24,
+    "losses": 41,
+    "record": "24 W \u2013 41 L in career shootouts"
   },
   {
     "id": 8471734,
@@ -749,7 +935,9 @@
     "team": "NYR",
     "stopped": 233,
     "faced": 342,
-    "record": null
+    "wins": 51,
+    "losses": 46,
+    "record": "51 W \u2013 46 L in career shootouts"
   },
   {
     "id": 8468038,
@@ -757,7 +945,9 @@
     "team": "CAR,PHI",
     "stopped": 7,
     "faced": 10,
-    "record": null
+    "wins": 3,
+    "losses": 1,
+    "record": "3 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8470074,
@@ -765,7 +955,9 @@
     "team": "EDM",
     "stopped": 29,
     "faced": 40,
-    "record": null
+    "wins": 5,
+    "losses": 3,
+    "record": "5 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8471469,
@@ -773,7 +965,9 @@
     "team": "NSH",
     "stopped": 212,
     "faced": 291,
-    "record": null
+    "wins": 43,
+    "losses": 37,
+    "record": "43 W \u2013 37 L in career shootouts"
   },
   {
     "id": 8474488,
@@ -781,7 +975,9 @@
     "team": "DAL",
     "stopped": 1,
     "faced": 3,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8470880,
@@ -789,7 +985,9 @@
     "team": "TBL",
     "stopped": 146,
     "faced": 217,
-    "record": null
+    "wins": 29,
+    "losses": 31,
+    "record": "29 W \u2013 31 L in career shootouts"
   },
   {
     "id": 8471750,
@@ -797,7 +995,9 @@
     "team": "DAL",
     "stopped": 110,
     "faced": 160,
-    "record": null
+    "wins": 21,
+    "losses": 21,
+    "record": "21 W \u2013 21 L in career shootouts"
   },
   {
     "id": 8471186,
@@ -805,7 +1005,9 @@
     "team": "NJD",
     "stopped": 2,
     "faced": 8,
-    "record": null
+    "wins": 0,
+    "losses": 3,
+    "record": "0 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8471302,
@@ -813,7 +1015,9 @@
     "team": "TOR",
     "stopped": 0,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8473434,
@@ -821,7 +1025,9 @@
     "team": "CGY",
     "stopped": 30,
     "faced": 43,
-    "record": null
+    "wins": 6,
+    "losses": 8,
+    "record": "6 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8471715,
@@ -829,7 +1035,9 @@
     "team": "NYR",
     "stopped": 106,
     "faced": 166,
-    "record": null
+    "wins": 22,
+    "losses": 26,
+    "record": "22 W \u2013 26 L in career shootouts"
   },
   {
     "id": 8471306,
@@ -837,7 +1045,9 @@
     "team": "STL",
     "stopped": 103,
     "faced": 140,
-    "record": null
+    "wins": 19,
+    "losses": 15,
+    "record": "19 W \u2013 15 L in career shootouts"
   },
   {
     "id": 8474550,
@@ -845,7 +1055,9 @@
     "team": "MTL",
     "stopped": 178,
     "faced": 245,
-    "record": null
+    "wins": 38,
+    "losses": 30,
+    "record": "38 W \u2013 30 L in career shootouts"
   },
   {
     "id": 8473541,
@@ -853,7 +1065,9 @@
     "team": "NJD",
     "stopped": 86,
     "faced": 138,
-    "record": null
+    "wins": 16,
+    "losses": 20,
+    "record": "16 W \u2013 20 L in career shootouts"
   },
   {
     "id": 8470657,
@@ -861,7 +1075,9 @@
     "team": "DET",
     "stopped": 163,
     "faced": 234,
-    "record": null
+    "wins": 29,
+    "losses": 37,
+    "record": "29 W \u2013 37 L in career shootouts"
   },
   {
     "id": 8473575,
@@ -869,7 +1085,9 @@
     "team": "NYI",
     "stopped": 156,
     "faced": 214,
-    "record": null
+    "wins": 35,
+    "losses": 24,
+    "record": "35 W \u2013 24 L in career shootouts"
   },
   {
     "id": 8471695,
@@ -877,7 +1095,9 @@
     "team": "BOS",
     "stopped": 172,
     "faced": 238,
-    "record": null
+    "wins": 26,
+    "losses": 34,
+    "record": "26 W \u2013 34 L in career shootouts"
   },
   {
     "id": 8475361,
@@ -885,7 +1105,9 @@
     "team": "BOS",
     "stopped": 41,
     "faced": 58,
-    "record": null
+    "wins": 10,
+    "losses": 9,
+    "record": "10 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8471227,
@@ -893,7 +1115,9 @@
     "team": "SJS,COL",
     "stopped": 112,
     "faced": 173,
-    "record": null
+    "wins": 21,
+    "losses": 26,
+    "record": "21 W \u2013 26 L in career shootouts"
   },
   {
     "id": 8470147,
@@ -901,7 +1125,9 @@
     "team": "TBL",
     "stopped": 30,
     "faced": 51,
-    "record": null
+    "wins": 8,
+    "losses": 8,
+    "record": "8 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8473607,
@@ -909,7 +1135,9 @@
     "team": "PHI",
     "stopped": 71,
     "faced": 105,
-    "record": null
+    "wins": 15,
+    "losses": 16,
+    "record": "15 W \u2013 16 L in career shootouts"
   },
   {
     "id": 8475683,
@@ -917,7 +1145,9 @@
     "team": "FLA",
     "stopped": 161,
     "faced": 225,
-    "record": null
+    "wins": 39,
+    "losses": 26,
+    "record": "39 W \u2013 26 L in career shootouts"
   },
   {
     "id": 8471219,
@@ -925,7 +1155,9 @@
     "team": "MTL,EDM",
     "stopped": 32,
     "faced": 56,
-    "record": null
+    "wins": 5,
+    "losses": 10,
+    "record": "5 W \u2013 10 L in career shootouts"
   },
   {
     "id": 8473503,
@@ -933,7 +1165,9 @@
     "team": "ANA,BUF",
     "stopped": 143,
     "faced": 207,
-    "record": null
+    "wins": 30,
+    "losses": 30,
+    "record": "30 W \u2013 30 L in career shootouts"
   },
   {
     "id": 8473523,
@@ -941,7 +1175,9 @@
     "team": "TOR",
     "stopped": 55,
     "faced": 73,
-    "record": null
+    "wins": 11,
+    "losses": 6,
+    "record": "11 W \u2013 6 L in career shootouts"
   },
   {
     "id": 8474651,
@@ -949,7 +1185,9 @@
     "team": "DAL",
     "stopped": 130,
     "faced": 190,
-    "record": null
+    "wins": 29,
+    "losses": 18,
+    "record": "29 W \u2013 18 L in career shootouts"
   },
   {
     "id": 8471251,
@@ -957,7 +1195,9 @@
     "team": "WSH",
     "stopped": 7,
     "faced": 18,
-    "record": null
+    "wins": 2,
+    "losses": 5,
+    "record": "2 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8474855,
@@ -965,7 +1205,9 @@
     "team": "NYI",
     "stopped": 2,
     "faced": 6,
-    "record": null
+    "wins": 1,
+    "losses": 1,
+    "record": "1 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8475431,
@@ -973,7 +1215,9 @@
     "team": "CGY",
     "stopped": 6,
     "faced": 11,
-    "record": null
+    "wins": 1,
+    "losses": 3,
+    "record": "1 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8474690,
@@ -981,7 +1225,9 @@
     "team": "NYI",
     "stopped": 13,
     "faced": 19,
-    "record": null
+    "wins": 3,
+    "losses": 3,
+    "record": "3 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8475156,
@@ -989,7 +1235,9 @@
     "team": "EDM",
     "stopped": 34,
     "faced": 41,
-    "record": null
+    "wins": 7,
+    "losses": 4,
+    "record": "7 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8473614,
@@ -997,7 +1245,9 @@
     "team": "EDM",
     "stopped": 5,
     "faced": 8,
-    "record": null
+    "wins": 0,
+    "losses": 2,
+    "record": "0 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8473414,
@@ -1005,7 +1255,9 @@
     "team": "CGY",
     "stopped": 2,
     "faced": 6,
-    "record": null
+    "wins": 0,
+    "losses": 2,
+    "record": "0 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8474593,
@@ -1013,7 +1265,9 @@
     "team": "NJD",
     "stopped": 124,
     "faced": 177,
-    "record": null
+    "wins": 19,
+    "losses": 26,
+    "record": "19 W \u2013 26 L in career shootouts"
   },
   {
     "id": 8475252,
@@ -1021,7 +1275,9 @@
     "team": "MIN",
     "stopped": 3,
     "faced": 5,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8475681,
@@ -1029,7 +1285,9 @@
     "team": "MTL",
     "stopped": 46,
     "faced": 63,
-    "record": null
+    "wins": 5,
+    "losses": 8,
+    "record": "5 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8474765,
@@ -1037,7 +1295,9 @@
     "team": "DAL,BUF",
     "stopped": 21,
     "faced": 27,
-    "record": null
+    "wins": 5,
+    "losses": 3,
+    "record": "5 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8475215,
@@ -1045,7 +1305,9 @@
     "team": "VGK",
     "stopped": 67,
     "faced": 123,
-    "record": null
+    "wins": 13,
+    "losses": 26,
+    "record": "13 W \u2013 26 L in career shootouts"
   },
   {
     "id": 8476839,
@@ -1053,7 +1315,9 @@
     "team": "EDM",
     "stopped": 38,
     "faced": 54,
-    "record": null
+    "wins": 9,
+    "losses": 5,
+    "record": "9 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8471418,
@@ -1061,7 +1325,9 @@
     "team": "DAL",
     "stopped": 60,
     "faced": 78,
-    "record": null
+    "wins": 9,
+    "losses": 11,
+    "record": "9 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8474596,
@@ -1069,7 +1335,9 @@
     "team": "NJD",
     "stopped": 91,
     "faced": 124,
-    "record": null
+    "wins": 20,
+    "losses": 12,
+    "record": "20 W \u2013 12 L in career shootouts"
   },
   {
     "id": 8475831,
@@ -1077,7 +1345,9 @@
     "team": "SEA",
     "stopped": 65,
     "faced": 97,
-    "record": null
+    "wins": 12,
+    "losses": 14,
+    "record": "12 W \u2013 14 L in career shootouts"
   },
   {
     "id": 8475303,
@@ -1085,7 +1355,9 @@
     "team": "BUF",
     "stopped": 1,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8475195,
@@ -1093,7 +1365,9 @@
     "team": "OTT",
     "stopped": 28,
     "faced": 43,
-    "record": null
+    "wins": 8,
+    "losses": 4,
+    "record": "8 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8474636,
@@ -1101,7 +1375,9 @@
     "team": "TOR,COL",
     "stopped": 19,
     "faced": 29,
-    "record": null
+    "wins": 5,
+    "losses": 4,
+    "record": "5 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8473499,
@@ -1109,7 +1385,9 @@
     "team": "ANA",
     "stopped": 25,
     "faced": 34,
-    "record": null
+    "wins": 7,
+    "losses": 0,
+    "record": "7 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8474889,
@@ -1117,7 +1395,9 @@
     "team": "SEA",
     "stopped": 90,
     "faced": 118,
-    "record": null
+    "wins": 19,
+    "losses": 10,
+    "record": "19 W \u2013 10 L in career shootouts"
   },
   {
     "id": 8475883,
@@ -1125,7 +1405,9 @@
     "team": "CAR",
     "stopped": 125,
     "faced": 186,
-    "record": null
+    "wins": 23,
+    "losses": 27,
+    "record": "23 W \u2013 27 L in career shootouts"
   },
   {
     "id": 8476319,
@@ -1133,7 +1415,9 @@
     "team": "BUF",
     "stopped": 7,
     "faced": 9,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8471774,
@@ -1141,7 +1425,9 @@
     "team": "CHI",
     "stopped": 43,
     "faced": 64,
-    "record": null
+    "wins": 8,
+    "losses": 10,
+    "record": "8 W \u2013 10 L in career shootouts"
   },
   {
     "id": 8476763,
@@ -1149,7 +1435,9 @@
     "team": "PHI",
     "stopped": 1,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8475622,
@@ -1157,7 +1445,9 @@
     "team": "BUF",
     "stopped": 45,
     "faced": 72,
-    "record": null
+    "wins": 11,
+    "losses": 9,
+    "record": "11 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8473553,
@@ -1165,7 +1455,9 @@
     "team": "PIT",
     "stopped": 2,
     "faced": 6,
-    "record": null
+    "wins": 1,
+    "losses": 2,
+    "record": "1 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8475660,
@@ -1173,7 +1465,9 @@
     "team": "DET",
     "stopped": 87,
     "faced": 135,
-    "record": null
+    "wins": 25,
+    "losses": 16,
+    "record": "25 W \u2013 16 L in career shootouts"
   },
   {
     "id": 8475663,
@@ -1181,7 +1475,9 @@
     "team": "CAR",
     "stopped": 35,
     "faced": 44,
-    "record": null
+    "wins": 8,
+    "losses": 5,
+    "record": "8 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8476992,
@@ -1189,7 +1485,9 @@
     "team": "NSH",
     "stopped": 5,
     "faced": 10,
-    "record": null
+    "wins": 0,
+    "losses": 3,
+    "record": "0 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8477293,
@@ -1197,7 +1495,9 @@
     "team": "CAR",
     "stopped": 37,
     "faced": 64,
-    "record": null
+    "wins": 4,
+    "losses": 14,
+    "record": "4 W \u2013 14 L in career shootouts"
   },
   {
     "id": 8474682,
@@ -1205,7 +1505,9 @@
     "team": "BUF",
     "stopped": 21,
     "faced": 37,
-    "record": null
+    "wins": 5,
+    "losses": 5,
+    "record": "5 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8475311,
@@ -1213,7 +1515,9 @@
     "team": "LAK",
     "stopped": 101,
     "faced": 160,
-    "record": null
+    "wins": 20,
+    "losses": 25,
+    "record": "20 W \u2013 25 L in career shootouts"
   },
   {
     "id": 8474152,
@@ -1221,7 +1525,9 @@
     "team": "CAR",
     "stopped": 22,
     "faced": 32,
-    "record": null
+    "wins": 6,
+    "losses": 6,
+    "record": "6 W \u2013 6 L in career shootouts"
   },
   {
     "id": 8477202,
@@ -1229,7 +1535,9 @@
     "team": "MTL,NJD",
     "stopped": 28,
     "faced": 41,
-    "record": null
+    "wins": 3,
+    "losses": 5,
+    "record": "3 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8476234,
@@ -1237,7 +1545,9 @@
     "team": "NJD",
     "stopped": 31,
     "faced": 45,
-    "record": null
+    "wins": 7,
+    "losses": 7,
+    "record": "7 W \u2013 7 L in career shootouts"
   },
   {
     "id": 8476844,
@@ -1245,7 +1555,9 @@
     "team": "BOS",
     "stopped": 8,
     "faced": 9,
-    "record": null
+    "wins": 1,
+    "losses": 1,
+    "record": "1 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8475852,
@@ -1253,7 +1565,9 @@
     "team": "CHI,DET",
     "stopped": 90,
     "faced": 116,
-    "record": null
+    "wins": 20,
+    "losses": 7,
+    "record": "20 W \u2013 7 L in career shootouts"
   },
   {
     "id": 8475717,
@@ -1261,7 +1575,9 @@
     "team": "DET",
     "stopped": 19,
     "faced": 25,
-    "record": null
+    "wins": 6,
+    "losses": 2,
+    "record": "6 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8476434,
@@ -1269,7 +1585,9 @@
     "team": "DET",
     "stopped": 76,
     "faced": 124,
-    "record": null
+    "wins": 18,
+    "losses": 18,
+    "record": "18 W \u2013 18 L in career shootouts"
   },
   {
     "id": 8467972,
@@ -1277,7 +1595,9 @@
     "team": "PHI",
     "stopped": 2,
     "faced": 2,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8476343,
@@ -1285,7 +1605,9 @@
     "team": "TOR",
     "stopped": 9,
     "faced": 11,
-    "record": null
+    "wins": 2,
+    "losses": 1,
+    "record": "2 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8475299,
@@ -1293,7 +1615,9 @@
     "team": "CGY",
     "stopped": 2,
     "faced": 5,
-    "record": null
+    "wins": 0,
+    "losses": 2,
+    "record": "0 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8476914,
@@ -1301,7 +1625,9 @@
     "team": "BOS",
     "stopped": 40,
     "faced": 59,
-    "record": null
+    "wins": 9,
+    "losses": 8,
+    "record": "9 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8475234,
@@ -1309,7 +1635,9 @@
     "team": "NYI",
     "stopped": 2,
     "faced": 3,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8476999,
@@ -1317,7 +1645,9 @@
     "team": "OTT",
     "stopped": 64,
     "faced": 80,
-    "record": null
+    "wins": 15,
+    "losses": 8,
+    "record": "15 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8476341,
@@ -1325,7 +1655,9 @@
     "team": "LAK",
     "stopped": 33,
     "faced": 45,
-    "record": null
+    "wins": 10,
+    "losses": 4,
+    "record": "10 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8476883,
@@ -1333,7 +1665,9 @@
     "team": "TBL",
     "stopped": 98,
     "faced": 129,
-    "record": null
+    "wins": 26,
+    "losses": 9,
+    "record": "26 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8476945,
@@ -1341,7 +1675,9 @@
     "team": "WPG",
     "stopped": 61,
     "faced": 95,
-    "record": null
+    "wins": 15,
+    "losses": 15,
+    "record": "15 W \u2013 15 L in career shootouts"
   },
   {
     "id": 8476316,
@@ -1349,7 +1685,9 @@
     "team": "WPG",
     "stopped": 21,
     "faced": 37,
-    "record": null
+    "wins": 3,
+    "losses": 7,
+    "record": "3 W \u2013 7 L in career shootouts"
   },
   {
     "id": 8475839,
@@ -1357,7 +1695,9 @@
     "team": "NJD,VAN",
     "stopped": 28,
     "faced": 34,
-    "record": null
+    "wins": 6,
+    "losses": 2,
+    "record": "6 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8477237,
@@ -1365,7 +1705,9 @@
     "team": "OTT",
     "stopped": 35,
     "faced": 53,
-    "record": null
+    "wins": 7,
+    "losses": 7,
+    "record": "7 W \u2013 7 L in career shootouts"
   },
   {
     "id": 8476899,
@@ -1373,7 +1715,9 @@
     "team": "SEA",
     "stopped": 38,
     "faced": 55,
-    "record": null
+    "wins": 10,
+    "losses": 8,
+    "record": "10 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8474092,
@@ -1381,7 +1725,9 @@
     "team": "COL",
     "stopped": 1,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8477424,
@@ -1389,7 +1735,9 @@
     "team": "NSH",
     "stopped": 105,
     "faced": 136,
-    "record": null
+    "wins": 24,
+    "losses": 12,
+    "record": "24 W \u2013 12 L in career shootouts"
   },
   {
     "id": 8477225,
@@ -1397,7 +1745,9 @@
     "team": "DET",
     "stopped": 2,
     "faced": 3,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8476932,
@@ -1405,7 +1755,9 @@
     "team": "TOR",
     "stopped": 22,
     "faced": 41,
-    "record": null
+    "wins": 5,
+    "losses": 7,
+    "record": "5 W \u2013 7 L in career shootouts"
   },
   {
     "id": 8476509,
@@ -1413,7 +1765,9 @@
     "team": "VGK",
     "stopped": 2,
     "faced": 3,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8477180,
@@ -1421,7 +1775,9 @@
     "team": "SJS",
     "stopped": 8,
     "faced": 11,
-    "record": null
+    "wins": 1,
+    "losses": 3,
+    "record": "1 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8477465,
@@ -1429,7 +1785,9 @@
     "team": "PIT,EDM",
     "stopped": 42,
     "faced": 67,
-    "record": null
+    "wins": 7,
+    "losses": 11,
+    "record": "7 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8479312,
@@ -1437,7 +1795,9 @@
     "team": "BUF",
     "stopped": 14,
     "faced": 17,
-    "record": null
+    "wins": 4,
+    "losses": 2,
+    "record": "4 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8479292,
@@ -1445,7 +1805,9 @@
     "team": "WSH",
     "stopped": 38,
     "faced": 57,
-    "record": null
+    "wins": 6,
+    "losses": 9,
+    "record": "6 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8476876,
@@ -1453,7 +1815,9 @@
     "team": "CHI",
     "stopped": 21,
     "faced": 22,
-    "record": null
+    "wins": 6,
+    "losses": 0,
+    "record": "6 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8476444,
@@ -1461,7 +1825,9 @@
     "team": "NYI",
     "stopped": 1,
     "faced": 3,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8475789,
@@ -1469,7 +1835,9 @@
     "team": "EDM",
     "stopped": 20,
     "faced": 32,
-    "record": null
+    "wins": 3,
+    "losses": 5,
+    "record": "3 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8478499,
@@ -1477,7 +1845,9 @@
     "team": "VGK",
     "stopped": 35,
     "faced": 54,
-    "record": null
+    "wins": 6,
+    "losses": 8,
+    "record": "6 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8479496,
@@ -1485,7 +1855,9 @@
     "team": "NYI",
     "stopped": 52,
     "faced": 76,
-    "record": null
+    "wins": 12,
+    "losses": 11,
+    "record": "12 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8479394,
@@ -1493,7 +1865,9 @@
     "team": "VGK",
     "stopped": 57,
     "faced": 83,
-    "record": null
+    "wins": 8,
+    "losses": 16,
+    "record": "8 W \u2013 16 L in career shootouts"
   },
   {
     "id": 8477831,
@@ -1501,7 +1875,9 @@
     "team": "LAK",
     "stopped": 27,
     "faced": 39,
-    "record": null
+    "wins": 6,
+    "losses": 3,
+    "record": "6 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8477361,
@@ -1509,7 +1885,9 @@
     "team": "LAK",
     "stopped": 9,
     "faced": 10,
-    "record": null
+    "wins": 3,
+    "losses": 1,
+    "record": "3 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8479193,
@@ -1517,7 +1895,9 @@
     "team": "DAL",
     "stopped": 28,
     "faced": 46,
-    "record": null
+    "wins": 4,
+    "losses": 10,
+    "record": "4 W \u2013 10 L in career shootouts"
   },
   {
     "id": 8476412,
@@ -1525,7 +1905,9 @@
     "team": "STL",
     "stopped": 84,
     "faced": 116,
-    "record": null
+    "wins": 19,
+    "losses": 13,
+    "record": "19 W \u2013 13 L in career shootouts"
   },
   {
     "id": 8480382,
@@ -1533,7 +1915,9 @@
     "team": "COL,SJS",
     "stopped": 65,
     "faced": 88,
-    "record": null
+    "wins": 16,
+    "losses": 8,
+    "record": "16 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8475277,
@@ -1541,7 +1925,9 @@
     "team": "TBL",
     "stopped": 2,
     "faced": 3,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8478470,
@@ -1549,7 +1935,9 @@
     "team": "MTL",
     "stopped": 49,
     "faced": 76,
-    "record": null
+    "wins": 6,
+    "losses": 13,
+    "record": "6 W \u2013 13 L in career shootouts"
   },
   {
     "id": 8477967,
@@ -1557,7 +1945,9 @@
     "team": "VAN",
     "stopped": 45,
     "faced": 56,
-    "record": null
+    "wins": 11,
+    "losses": 6,
+    "record": "11 W \u2013 6 L in career shootouts"
   },
   {
     "id": 8478406,
@@ -1565,7 +1955,9 @@
     "team": "SJS,COL",
     "stopped": 61,
     "faced": 100,
-    "record": null
+    "wins": 7,
+    "losses": 18,
+    "record": "7 W \u2013 18 L in career shootouts"
   },
   {
     "id": 8477992,
@@ -1573,7 +1965,9 @@
     "team": "TBL",
     "stopped": 7,
     "faced": 20,
-    "record": null
+    "wins": 1,
+    "losses": 6,
+    "record": "1 W \u2013 6 L in career shootouts"
   },
   {
     "id": 8478492,
@@ -1581,7 +1975,9 @@
     "team": "VGK",
     "stopped": 30,
     "faced": 47,
-    "record": null
+    "wins": 8,
+    "losses": 7,
+    "record": "8 W \u2013 7 L in career shootouts"
   },
   {
     "id": 8480925,
@@ -1589,7 +1985,9 @@
     "team": "COL",
     "stopped": 12,
     "faced": 12,
-    "record": null
+    "wins": 4,
+    "losses": 0,
+    "record": "4 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8477405,
@@ -1597,7 +1995,9 @@
     "team": "NYI",
     "stopped": 12,
     "faced": 19,
-    "record": null
+    "wins": 1,
+    "losses": 5,
+    "record": "1 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8478039,
@@ -1605,7 +2005,9 @@
     "team": "SJS,NJD",
     "stopped": 10,
     "faced": 20,
-    "record": null
+    "wins": 2,
+    "losses": 7,
+    "record": "2 W \u2013 7 L in career shootouts"
   },
   {
     "id": 8478007,
@@ -1613,7 +2015,9 @@
     "team": "CBJ",
     "stopped": 68,
     "faced": 91,
-    "record": null
+    "wins": 16,
+    "losses": 9,
+    "record": "16 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8478009,
@@ -1621,7 +2025,9 @@
     "team": "NYI",
     "stopped": 49,
     "faced": 76,
-    "record": null
+    "wins": 9,
+    "losses": 16,
+    "record": "9 W \u2013 16 L in career shootouts"
   },
   {
     "id": 8476904,
@@ -1629,7 +2035,9 @@
     "team": "FLA",
     "stopped": 3,
     "faced": 4,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8479979,
@@ -1637,7 +2045,9 @@
     "team": "DAL",
     "stopped": 70,
     "faced": 97,
-    "record": null
+    "wins": 17,
+    "losses": 11,
+    "record": "17 W \u2013 11 L in career shootouts"
   },
   {
     "id": 8475920,
@@ -1645,7 +2055,9 @@
     "team": "BUF",
     "stopped": 3,
     "faced": 3,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8475809,
@@ -1653,7 +2065,9 @@
     "team": "COL",
     "stopped": 42,
     "faced": 68,
-    "record": null
+    "wins": 9,
+    "losses": 12,
+    "record": "9 W \u2013 12 L in career shootouts"
   },
   {
     "id": 8480280,
@@ -1661,7 +2075,9 @@
     "team": "BOS",
     "stopped": 62,
     "faced": 77,
-    "record": null
+    "wins": 10,
+    "losses": 8,
+    "record": "10 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8477968,
@@ -1669,7 +2085,9 @@
     "team": "SJS",
     "stopped": 36,
     "faced": 56,
-    "record": null
+    "wins": 4,
+    "losses": 8,
+    "record": "4 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8479406,
@@ -1677,7 +2095,9 @@
     "team": "MIN",
     "stopped": 45,
     "faced": 67,
-    "record": null
+    "wins": 10,
+    "losses": 9,
+    "record": "10 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8478048,
@@ -1685,7 +2105,9 @@
     "team": "NYR",
     "stopped": 62,
     "faced": 84,
-    "record": null
+    "wins": 14,
+    "losses": 8,
+    "record": "14 W \u2013 8 L in career shootouts"
   },
   {
     "id": 8477970,
@@ -1693,7 +2115,9 @@
     "team": "SJS,FLA",
     "stopped": 31,
     "faced": 41,
-    "record": null
+    "wins": 6,
+    "losses": 5,
+    "record": "6 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8480947,
@@ -1701,7 +2125,9 @@
     "team": "VAN",
     "stopped": 53,
     "faced": 60,
-    "record": null
+    "wins": 11,
+    "losses": 4,
+    "record": "11 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8480045,
@@ -1709,7 +2135,9 @@
     "team": "BUF",
     "stopped": 27,
     "faced": 38,
-    "record": null
+    "wins": 8,
+    "losses": 4,
+    "record": "8 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8480420,
@@ -1717,7 +2145,9 @@
     "team": "VAN",
     "stopped": 7,
     "faced": 9,
-    "record": null
+    "wins": 2,
+    "losses": 1,
+    "record": "2 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8478872,
@@ -1725,7 +2155,9 @@
     "team": "UTA",
     "stopped": 15,
     "faced": 22,
-    "record": null
+    "wins": 3,
+    "losses": 5,
+    "record": "3 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8482076,
@@ -1733,7 +2165,9 @@
     "team": "NJD",
     "stopped": 8,
     "faced": 12,
-    "record": null
+    "wins": 2,
+    "losses": 1,
+    "record": "2 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8480051,
@@ -1741,7 +2175,9 @@
     "team": "MTL",
     "stopped": 26,
     "faced": 37,
-    "record": null
+    "wins": 3,
+    "losses": 5,
+    "record": "3 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8478902,
@@ -1749,7 +2185,9 @@
     "team": "TOR",
     "stopped": 6,
     "faced": 7,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8477484,
@@ -1757,7 +2195,9 @@
     "team": "CAR",
     "stopped": 16,
     "faced": 22,
-    "record": null
+    "wins": 2,
+    "losses": 4,
+    "record": "2 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8480843,
@@ -1765,7 +2205,9 @@
     "team": "ANA",
     "stopped": 27,
     "faced": 34,
-    "record": null
+    "wins": 10,
+    "losses": 2,
+    "record": "10 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8478024,
@@ -1773,7 +2215,9 @@
     "team": "ANA",
     "stopped": 20,
     "faced": 29,
-    "record": null
+    "wins": 5,
+    "losses": 4,
+    "record": "5 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8477457,
@@ -1781,7 +2225,9 @@
     "team": "WSH",
     "stopped": 1,
     "faced": 3,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8479973,
@@ -1789,7 +2235,9 @@
     "team": "EDM,PIT",
     "stopped": 21,
     "faced": 39,
-    "record": null
+    "wins": 4,
+    "losses": 9,
+    "record": "4 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8478435,
@@ -1797,7 +2245,9 @@
     "team": "PHI",
     "stopped": 38,
     "faced": 51,
-    "record": null
+    "wins": 8,
+    "losses": 7,
+    "record": "8 W \u2013 7 L in career shootouts"
   },
   {
     "id": 8481031,
@@ -1805,7 +2255,9 @@
     "team": "COL",
     "stopped": 3,
     "faced": 5,
-    "record": null
+    "wins": 0,
+    "losses": 2,
+    "record": "0 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8477480,
@@ -1813,7 +2265,9 @@
     "team": "WPG",
     "stopped": 15,
     "faced": 20,
-    "record": null
+    "wins": 3,
+    "losses": 3,
+    "record": "3 W \u2013 3 L in career shootouts"
   },
   {
     "id": 8480313,
@@ -1821,7 +2275,9 @@
     "team": "WSH",
     "stopped": 55,
     "faced": 75,
-    "record": null
+    "wins": 6,
+    "losses": 12,
+    "record": "6 W \u2013 12 L in career shootouts"
   },
   {
     "id": 8481519,
@@ -1829,7 +2285,9 @@
     "team": "CHI",
     "stopped": 32,
     "faced": 51,
-    "record": null
+    "wins": 5,
+    "losses": 9,
+    "record": "5 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8482821,
@@ -1837,7 +2295,9 @@
     "team": "CHI",
     "stopped": 16,
     "faced": 31,
-    "record": null
+    "wins": 2,
+    "losses": 5,
+    "record": "2 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8480981,
@@ -1845,7 +2305,9 @@
     "team": "STL",
     "stopped": 7,
     "faced": 13,
-    "record": null
+    "wins": 0,
+    "losses": 4,
+    "record": "0 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8482221,
@@ -1853,7 +2315,9 @@
     "team": "BUF",
     "stopped": 7,
     "faced": 12,
-    "record": null
+    "wins": 2,
+    "losses": 1,
+    "record": "2 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8480193,
@@ -1861,7 +2325,9 @@
     "team": "FLA",
     "stopped": 15,
     "faced": 22,
-    "record": null
+    "wins": 3,
+    "losses": 4,
+    "record": "3 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8476433,
@@ -1869,7 +2335,9 @@
     "team": "OTT,DET",
     "stopped": 4,
     "faced": 6,
-    "record": null
+    "wins": 1,
+    "losses": 1,
+    "record": "1 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8481611,
@@ -1877,7 +2345,9 @@
     "team": "CAR",
     "stopped": 17,
     "faced": 24,
-    "record": null
+    "wins": 2,
+    "losses": 5,
+    "record": "2 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8481033,
@@ -1885,7 +2355,9 @@
     "team": "VGK",
     "stopped": 10,
     "faced": 16,
-    "record": null
+    "wins": 1,
+    "losses": 4,
+    "record": "1 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8481668,
@@ -1893,7 +2365,9 @@
     "team": "PIT",
     "stopped": 12,
     "faced": 25,
-    "record": null
+    "wins": 3,
+    "losses": 6,
+    "record": "3 W \u2013 6 L in career shootouts"
   },
   {
     "id": 8480867,
@@ -1901,7 +2375,9 @@
     "team": "OTT",
     "stopped": 2,
     "faced": 2,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8478916,
@@ -1909,7 +2385,9 @@
     "team": "SEA",
     "stopped": 26,
     "faced": 43,
-    "record": null
+    "wins": 3,
+    "losses": 9,
+    "record": "3 W \u2013 9 L in career shootouts"
   },
   {
     "id": 8481544,
@@ -1917,7 +2395,9 @@
     "team": "OTT",
     "stopped": 5,
     "faced": 9,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8478971,
@@ -1925,7 +2405,9 @@
     "team": "EDM",
     "stopped": 17,
     "faced": 29,
-    "record": null
+    "wins": 3,
+    "losses": 5,
+    "record": "3 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8480238,
@@ -1933,7 +2415,9 @@
     "team": "VGK",
     "stopped": 2,
     "faced": 2,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8479361,
@@ -1941,7 +2425,9 @@
     "team": "TOR",
     "stopped": 16,
     "faced": 23,
-    "record": null
+    "wins": 5,
+    "losses": 2,
+    "record": "5 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8477035,
@@ -1949,7 +2435,9 @@
     "team": "TBL",
     "stopped": 1,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8481035,
@@ -1957,7 +2445,9 @@
     "team": "PHI",
     "stopped": 47,
     "faced": 61,
-    "record": null
+    "wins": 13,
+    "losses": 5,
+    "record": "13 W \u2013 5 L in career shootouts"
   },
   {
     "id": 8482137,
@@ -1965,7 +2455,9 @@
     "team": "SJS",
     "stopped": 13,
     "faced": 16,
-    "record": null
+    "wins": 3,
+    "losses": 2,
+    "record": "3 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8480992,
@@ -1973,7 +2465,9 @@
     "team": "SJS",
     "stopped": 5,
     "faced": 7,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8482411,
@@ -1981,7 +2475,9 @@
     "team": "WSH",
     "stopped": 0,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8482487,
@@ -1989,7 +2485,9 @@
     "team": "MTL",
     "stopped": 14,
     "faced": 21,
-    "record": null
+    "wins": 5,
+    "losses": 2,
+    "record": "5 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8481692,
@@ -1997,7 +2495,9 @@
     "team": "CGY",
     "stopped": 23,
     "faced": 30,
-    "record": null
+    "wins": 5,
+    "losses": 2,
+    "record": "5 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8478905,
@@ -2005,7 +2505,9 @@
     "team": "PHI",
     "stopped": 7,
     "faced": 10,
-    "record": null
+    "wins": 2,
+    "losses": 2,
+    "record": "2 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8482657,
@@ -2013,7 +2515,9 @@
     "team": "DET",
     "stopped": 2,
     "faced": 3,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8483530,
@@ -2021,7 +2525,9 @@
     "team": "UTA",
     "stopped": 2,
     "faced": 3,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8482447,
@@ -2029,7 +2535,9 @@
     "team": "OTT",
     "stopped": 3,
     "faced": 3,
-    "record": null
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8483710,
@@ -2037,7 +2545,9 @@
     "team": "TOR",
     "stopped": 0,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8483548,
@@ -2045,7 +2555,9 @@
     "team": "CAR",
     "stopped": 11,
     "faced": 14,
-    "record": null
+    "wins": 2,
+    "losses": 2,
+    "record": "2 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8482982,
@@ -2053,7 +2565,9 @@
     "team": "CBJ",
     "stopped": 13,
     "faced": 21,
-    "record": null
+    "wins": 4,
+    "losses": 2,
+    "record": "4 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8481551,
@@ -2061,7 +2575,9 @@
     "team": "BUF",
     "stopped": 3,
     "faced": 8,
-    "record": null
+    "wins": 1,
+    "losses": 1,
+    "record": "1 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8481529,
@@ -2069,7 +2585,9 @@
     "team": "COL",
     "stopped": 2,
     "faced": 3,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8484268,
@@ -2077,7 +2595,9 @@
     "team": "VAN",
     "stopped": 3,
     "faced": 5,
-    "record": null
+    "wins": 1,
+    "losses": 1,
+    "record": "1 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8482445,
@@ -2085,7 +2605,9 @@
     "team": "CGY",
     "stopped": 6,
     "faced": 11,
-    "record": null
+    "wins": 2,
+    "losses": 2,
+    "record": "2 W \u2013 2 L in career shootouts"
   },
   {
     "id": 8482193,
@@ -2093,7 +2615,9 @@
     "team": "NYR",
     "stopped": 0,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   },
   {
     "id": 8482661,
@@ -2101,7 +2625,9 @@
     "team": "MIN",
     "stopped": 19,
     "faced": 27,
-    "record": null
+    "wins": 4,
+    "losses": 4,
+    "record": "4 W \u2013 4 L in career shootouts"
   },
   {
     "id": 8484170,
@@ -2109,6 +2635,8 @@
     "team": "MTL",
     "stopped": 0,
     "faced": 2,
-    "record": null
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts"
   }
 ]
