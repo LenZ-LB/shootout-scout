@@ -479,10 +479,16 @@ def export_alltime(out_dir="data", top_n=25, min_attempts=15, min_faced=20, conn
 
 def build_vs_goalie_splits(start_season, end_season, debug=False):
     """
-    Builds shooter vs goalie splits by fetching game-level shootout data
-    (isGame=true) which includes both shooterPlayerId and goaliePlayerId
-    per attempt. Much more reliable than play-by-play parsing.
-    Clears and rebuilds vs_goalie_splits for the given season range.
+    Builds shooter vs goalie splits by fetching game-level skater AND goalie
+    shootout data, then joining on gameId + team to pair each shooter with
+    the goalie they faced in that game.
+
+    Skater row:  playerId, gameId, opponentTeamAbbrev, shootoutGoals, shootoutShots
+    Goalie row:  playerId, gameId, teamAbbrev, goalieFullName
+    Join:        skater.gameId == goalie.gameId
+                 AND skater.opponentTeamAbbrev == goalie.teamAbbrev
+
+    Clears and rebuilds vs_goalie_splits for the full season range.
     """
     conn = get_conn()
     conn.row_factory = sqlite3.Row
@@ -495,60 +501,69 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
 
     target_seasons = SEASONS[s_idx:e_idx + 1]
     print(f"Building vs-goalie splits for {len(target_seasons)} seasons...")
-    # Clear existing splits for these seasons to avoid double-counting on re-runs
     conn.execute("DELETE FROM vs_goalie_splits")
     conn.commit()
 
     base = "https://api.nhle.com/stats/rest/en"
-    for season in target_seasons:
-        print(f"  Season {season}...")
-        start = 0
-        limit = 100
-        season_splits = {}  # (shooter_id, goalie_id) -> [goals, att, goalie_name]
 
+    def fetch_all(endpoint, season):
+        rows, start, limit = [], 0, 100
         while True:
-            url = (
-                f"{base}/skater/shootout"
-                f"?isAggregate=false&isGame=true"
-                f"&cayenneExp=seasonId={season}%20and%20gameTypeId=2"
-                f"&start={start}&limit={limit}"
-            )
-            try:
-                resp = requests.get(url, timeout=20)
-                resp.raise_for_status()
-                data = resp.json()
-            except Exception as e:
-                print(f"    [warn] game-level fetch failed {season}: {e}")
-                break
-
-            rows = data.get("data", [])
-            if debug and start == 0:
-                if rows:
-                    print(f"    Game-level fields: {list(rows[0].keys())}")
-
-            for r in rows:
-                sid = r.get("playerId")
-                gid = r.get("goaliePlayerId") or r.get("opponentGoaliePlayerId")
-                gname = r.get("goalieFullName") or r.get("opponentGoalieFullName") or ""
-                goals = r.get("shootoutGoals", 0)
-                shots = r.get("shootoutShots", 0)
-                if not sid or not gid or shots == 0:
-                    continue
-                key = (sid, gid)
-                if key not in season_splits:
-                    season_splits[key] = [0, 0, gname]
-                season_splits[key][0] += goals
-                season_splits[key][1] += shots
-                if gname:
-                    season_splits[key][2] = gname
-
+            url = (f"{base}/{endpoint}/shootout"
+                   f"?isAggregate=false&isGame=true"
+                   f"&cayenneExp=seasonId={season}%20and%20gameTypeId=2"
+                   f"&start={start}&limit={limit}")
+            for attempt in range(3):
+                try:
+                    resp = requests.get(url, timeout=20)
+                    resp.raise_for_status()
+                    data = resp.json()
+                    break
+                except Exception as e:
+                    if attempt == 2:
+                        print(f"  [warn] {endpoint} fetch failed season {season}: {e}")
+                        return rows
+                    time.sleep(1.5 * (attempt + 1))
+            rows.extend(data.get("data", []))
             total = data.get("total", 0)
             start += limit
             if start >= total:
                 break
             time.sleep(0.2)
+        return rows
 
-        # Upsert into vs_goalie_splits
+    for season in target_seasons:
+        print(f"  Season {season}...")
+
+        # Build goalie lookup: (gameId, teamAbbrev) -> (goalieId, goalieName)
+        goalie_rows = fetch_all("goalie", season)
+        goalie_map = {}
+        for r in goalie_rows:
+            key = (r["gameId"], r["teamAbbrev"])
+            goalie_map[key] = (r["playerId"], r["goalieFullName"])
+        if debug:
+            print(f"    {len(goalie_rows)} goalie game rows, {len(goalie_map)} unique game-team keys")
+
+        # Fetch skater rows and join to goalie
+        skater_rows = fetch_all("skater", season)
+        season_splits = {}  # (shooter_id, goalie_id) -> [goals, att, goalie_name]
+
+        for r in skater_rows:
+            shots = r.get("shootoutShots", 0)
+            if shots == 0:
+                continue
+            gkey = (r["gameId"], r["opponentTeamAbbrev"])
+            goalie = goalie_map.get(gkey)
+            if not goalie:
+                continue  # game had no goalie row (shouldn't happen but safe)
+            sid = r["playerId"]
+            gid, gname = goalie
+            key = (sid, gid)
+            if key not in season_splits:
+                season_splits[key] = [0, 0, gname]
+            season_splits[key][0] += r.get("shootoutGoals", 0)
+            season_splits[key][1] += shots
+
         for (sid, gid), (goals, att, gname) in season_splits.items():
             conn.execute("""
                 INSERT INTO vs_goalie_splits (player_id, goalie_id, goalie_name, goals, attempts)
@@ -563,8 +578,9 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
             print(f"    {len(season_splits)} shooter-goalie pairs stored")
         time.sleep(0.4)
 
+    total = conn.execute("SELECT COUNT(*) FROM vs_goalie_splits").fetchone()[0]
     conn.close()
-    print("vs-goalie splits complete.")
+    print(f"vs-goalie splits complete — {total} total shooter-goalie pairs.")
 
 
 

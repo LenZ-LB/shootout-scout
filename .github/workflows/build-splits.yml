@@ -1,8 +1,5 @@
 name: Build vs-Goalie Splits
 
-# Run this once after a full backfill to populate the per-goalie split columns.
-# Slower than the main backfill (fetches game-level data) so kept separate.
-# Re-running is safe — it clears and rebuilds the splits table from scratch.
 on:
   workflow_dispatch:
     inputs:
@@ -34,12 +31,6 @@ jobs:
       - name: Init database (migrates schema if needed)
         run: python nhl_shootout_pipeline.py --init-db
 
-      - name: Diagnose game-level API field names
-        run: python diagnose_splits.py
-
-      - name: Diagnose game-level goalie API field names
-        run: python diagnose_splits2.py
-
       - name: Build vs-goalie splits ${{ github.event.inputs.start_season }} to ${{ github.event.inputs.end_season }}
         run: python nhl_shootout_pipeline.py --build-splits ${{ github.event.inputs.start_season }} ${{ github.event.inputs.end_season }} --debug
 
@@ -48,8 +39,8 @@ jobs:
 
       - name: Show what was generated (debug)
         run: |
-          echo "--- data/ ---"
-          ls -la data/ 2>&1 || echo "data/ missing"
+          echo "--- vs_goalie_splits count ---"
+          python3 -c "import sqlite3; conn=sqlite3.connect('shootout.db'); print(conn.execute('SELECT COUNT(*) FROM vs_goalie_splits').fetchone()[0], 'pairs')"
           echo "--- players.json preview ---"
           head -c 800 data/players.json 2>&1 || echo "players.json missing"
 
