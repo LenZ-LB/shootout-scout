@@ -101,6 +101,13 @@ def get_conn():
 def init_db():
     conn = get_conn()
     conn.executescript(SCHEMA)
+    # Migrate existing databases that predate the wins/losses columns
+    for col in ("wins", "losses"):
+        try:
+            conn.execute(f"ALTER TABLE goalie_shootout ADD COLUMN {col} INTEGER DEFAULT 0")
+            print(f"  Migrated: added {col} column to goalie_shootout")
+        except sqlite3.OperationalError:
+            pass  # column already exists, fine
     conn.commit()
     conn.close()
     print(f"Initialized {DB_PATH}")
