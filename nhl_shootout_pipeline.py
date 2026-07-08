@@ -501,36 +501,40 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
     pbp_base   = "https://api-web.nhle.com/v1"
 
     def get_shootout_game_ids(season):
-        """Get unique gameIds where at least one player took a shootout shot."""
+        """
+        Get gameIds for all regular season games that went to a shootout,
+        using the NHL schedule API (lastPeriodType == 'SO').
+        Much more reliable than the skater stats endpoint which returns
+        rows for all dressed players regardless of shootout participation.
+        """
         game_ids = set()
-        start, limit = 0, 100
-        while True:
-            url = (f"{stats_base}/skater/shootout"
-                   f"?isAggregate=false&isGame=true"
-                   f"&cayenneExp=seasonId={season}%20and%20gameTypeId=2"
-                   f"&sort=shootoutShots&direction=DESC"
-                   f"&start={start}&limit={limit}")
-            for attempt in range(3):
-                try:
-                    resp = requests.get(url, timeout=20)
-                    resp.raise_for_status()
-                    data = resp.json()
-                    break
-                except Exception as e:
-                    if attempt == 2:
-                        print(f"  [warn] game list fetch failed {season}: {e}")
-                        return game_ids
-                    time.sleep(1.5 * (attempt + 1))
-            batch = data.get("data", [])
-            for r in batch:
-                if r.get("shootoutShots", 0) > 0:
-                    game_ids.add(r["gameId"])
-            # Stop when we hit zero-shot rows
-            if not batch or batch[-1].get("shootoutShots", 0) == 0:
-                break
-            start += limit
-            if start >= data.get("total", 0):
-                break
+        # Season year e.g. 20252026 -> start Oct year1, end Jun year2
+        year1 = int(season[:4])
+        year2 = int(season[4:])
+        from datetime import date, timedelta
+        cursor = date(year1, 10, 1)
+        end    = date(year2, 6, 30)
+        base_sched = "https://api-web.nhle.com/v1"
+        while cursor <= end:
+            url = f"{base_sched}/schedule/{cursor.isoformat()}"
+            try:
+                resp = requests.get(url, timeout=15)
+                resp.raise_for_status()
+                data = resp.json()
+            except Exception as e:
+                print(f"  [warn] schedule fetch failed {cursor}: {e}")
+                cursor += timedelta(days=7)
+                continue
+            for day in data.get("gameWeek", []):
+                for g in day.get("games", []):
+                    if g.get("gameType") != 2:
+                        continue
+                    if g.get("gameState") not in ("OFF", "FINAL"):
+                        continue
+                    outcome = g.get("gameOutcome") or {}
+                    if outcome.get("lastPeriodType") == "SO":
+                        game_ids.add(g["id"])
+            cursor += timedelta(days=7)
             time.sleep(0.2)
         return game_ids
 
