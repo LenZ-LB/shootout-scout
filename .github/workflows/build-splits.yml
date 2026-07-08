@@ -28,17 +28,14 @@ jobs:
 
       - run: pip install requests
 
-      - name: Debug join logic
-        run: python debug_splits.py
+      - name: Debug PBP goalie extraction
+        run: python debug_pbp.py
 
       - name: Init database (migrates schema if needed)
         run: python nhl_shootout_pipeline.py --init-db
 
       - name: Build vs-goalie splits ${{ github.event.inputs.start_season }} to ${{ github.event.inputs.end_season }}
         run: python nhl_shootout_pipeline.py --build-splits ${{ github.event.inputs.start_season }} ${{ github.event.inputs.end_season }} --debug
-
-      - name: Export JSON for the page
-        run: python nhl_shootout_pipeline.py --export-json
 
       - name: Show what was generated
         run: |
