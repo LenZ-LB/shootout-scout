@@ -6,11 +6,11 @@ on:
       start_season:
         description: "Start season (8-digit, e.g. 20052006)"
         type: string
-        default: "20242025"
+        default: "20252026"
       end_season:
         description: "End season (8-digit, e.g. 20252026)"
         type: string
-        default: "20242025"
+        default: "20252026"
 
 permissions:
   contents: write
@@ -27,6 +27,9 @@ jobs:
           python-version: "3.11"
 
       - run: pip install requests
+
+      - name: Debug EDM shooter and goalie extraction
+        run: python debug_savoie.py
 
       - name: Init database (migrates schema if needed)
         run: python nhl_shootout_pipeline.py --init-db
