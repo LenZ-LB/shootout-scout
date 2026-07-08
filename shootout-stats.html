@@ -329,6 +329,7 @@ function renderPanels(teamA, teamB){
   panelsEl.innerHTML = pairs.map(([team, opp]) => {
     const players = PLAYERS.filter(p => p.team === team && p.active);
     const oppGoalies = GOALIES.filter(g => g.team === opp && g.active);
+    console.log(`[debug] team=${team} opp=${opp} players=${players.length} oppGoalies=${oppGoalies.length}`, oppGoalies.map(g=>g.name+'/'+g.team));
     const curLabel = CURRENT_SEASON ? CURRENT_SEASON.label : 'Current';
     const curKey   = CURRENT_SEASON ? CURRENT_SEASON.key   : null;
 
