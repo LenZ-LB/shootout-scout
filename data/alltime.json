@@ -141,6 +141,13 @@
       "att": 0
     },
     {
+      "player_id": 8475794,
+      "name": "Tyler Seguin",
+      "team": "BOS",
+      "goals": 32,
+      "att": 0
+    },
+    {
       "player_id": 8467389,
       "name": "Brad Richards",
       "team": "TBL",
@@ -165,13 +172,6 @@
       "player_id": 8469454,
       "name": "Ilya Kovalchuk",
       "team": "ATL",
-      "goals": 30,
-      "att": 0
-    },
-    {
-      "player_id": 8469455,
-      "name": "Jason Spezza",
-      "team": "OTT",
       "goals": 30,
       "att": 0
     }
