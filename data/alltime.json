@@ -5,7 +5,7 @@
       "name": "Patrick Kane",
       "team": "CHI",
       "goals": 55,
-      "att": 133
+      "att": 135
     },
     {
       "player_id": 8473604,
@@ -61,7 +61,7 @@
       "name": "Anze Kopitar",
       "team": "LAK",
       "goals": 43,
-      "att": 120
+      "att": 123
     },
     {
       "player_id": 8469459,
@@ -75,7 +75,7 @@
       "name": "Pavel Datsyuk",
       "team": "DET",
       "goals": 40,
-      "att": 76
+      "att": 98
     },
     {
       "player_id": 8475692,
@@ -117,7 +117,7 @@
       "name": "Corey Perry",
       "team": "ANA",
       "goals": 34,
-      "att": 102
+      "att": 109
     },
     {
       "player_id": 8474053,
@@ -166,7 +166,7 @@
       "name": "Mika Zibanejad",
       "team": "OTT",
       "goals": 31,
-      "att": 69
+      "att": 76
     },
     {
       "player_id": 8469454,
@@ -178,13 +178,6 @@
   ],
   "top_shooting_pct": [
     {
-      "player_id": 8475204,
-      "name": "Brandon Pirri",
-      "team": "CHI",
-      "goals": 11,
-      "att": 16
-    },
-    {
       "player_id": 8482097,
       "name": "Jack Quinn",
       "team": "BUF",
@@ -192,18 +185,11 @@
       "att": 15
     },
     {
-      "player_id": 8480027,
-      "name": "Jason Robertson",
-      "team": "DAL",
-      "goals": 22,
-      "att": 36
-    },
-    {
-      "player_id": 8471976,
-      "name": "David Desharnais",
-      "team": "MTL",
-      "goals": 17,
-      "att": 28
+      "player_id": 8480893,
+      "name": "Kirill Marchenko",
+      "team": "CBJ",
+      "goals": 10,
+      "att": 17
     },
     {
       "player_id": 8481533,
@@ -211,6 +197,13 @@
       "team": "ANA",
       "goals": 20,
       "att": 34
+    },
+    {
+      "player_id": 8482660,
+      "name": "Kent Johnson",
+      "team": "CBJ",
+      "goals": 10,
+      "att": 17
     },
     {
       "player_id": 8456887,
@@ -241,6 +234,13 @@
       "att": 52
     },
     {
+      "player_id": 8480027,
+      "name": "Jason Robertson",
+      "team": "DAL",
+      "goals": 22,
+      "att": 40
+    },
+    {
       "player_id": 8475185,
       "name": "Jacob Josefson",
       "team": "NJD",
@@ -255,39 +255,11 @@
       "att": 17
     },
     {
-      "player_id": 8476483,
-      "name": "Rickard Rakell",
-      "team": "ANA",
-      "goals": 19,
-      "att": 36
-    },
-    {
       "player_id": 8470299,
       "name": "Erik Christensen",
       "team": "PIT",
       "goals": 29,
       "att": 55
-    },
-    {
-      "player_id": 8467514,
-      "name": "Pavel Datsyuk",
-      "team": "DET",
-      "goals": 40,
-      "att": 76
-    },
-    {
-      "player_id": 8467502,
-      "name": "Ales Kotalik",
-      "team": "BUF",
-      "goals": 22,
-      "att": 42
-    },
-    {
-      "player_id": 8470741,
-      "name": "Nigel Dawes",
-      "team": "NYR",
-      "goals": 11,
-      "att": 21
     },
     {
       "player_id": 8481557,
@@ -297,11 +269,11 @@
       "att": 25
     },
     {
-      "player_id": 8470597,
-      "name": "Nikolay Zherdev",
-      "team": "CBJ",
-      "goals": 14,
-      "att": 27
+      "player_id": 8467502,
+      "name": "Ales Kotalik",
+      "team": "BUF",
+      "goals": 22,
+      "att": 44
     },
     {
       "player_id": 8476462,
@@ -332,16 +304,16 @@
       "att": 68
     },
     {
-      "player_id": 8477447,
-      "name": "Shea Theodore",
-      "team": "ANA",
-      "goals": 12,
-      "att": 25
-    },
-    {
       "player_id": 8467423,
       "name": "Shawn Horcoff",
       "team": "EDM",
+      "goals": 11,
+      "att": 23
+    },
+    {
+      "player_id": 8475204,
+      "name": "Brandon Pirri",
+      "team": "CHI",
       "goals": 11,
       "att": 23
     },
@@ -351,6 +323,34 @@
       "team": "OTT",
       "goals": 10,
       "att": 21
+    },
+    {
+      "player_id": 8471698,
+      "name": "T.J. Oshie",
+      "team": "STL",
+      "goals": 49,
+      "att": 104
+    },
+    {
+      "player_id": 8473604,
+      "name": "Jonathan Toews",
+      "team": "CHI",
+      "goals": 52,
+      "att": 112
+    },
+    {
+      "player_id": 8470144,
+      "name": "Frans Nielsen",
+      "team": "NYI",
+      "goals": 49,
+      "att": 106
+    },
+    {
+      "player_id": 8459426,
+      "name": "Paul Kariya",
+      "team": "NSH",
+      "goals": 12,
+      "att": 26
     }
   ],
   "top_goalie_save_pct": [

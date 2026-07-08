@@ -42,7 +42,7 @@
   {
     "id": 8467486,
     "name": "Mike Morrison",
-    "team": "EDM,OTT",
+    "team": "EDM",
     "stopped": 18,
     "faced": 24,
     "wins": 5,
@@ -72,7 +72,7 @@
   {
     "id": 8468550,
     "name": "Mikael Tellqvist",
-    "team": "PHX,BUF",
+    "team": "PHX",
     "stopped": 34,
     "faced": 45,
     "wins": 5,
@@ -142,7 +142,7 @@
   {
     "id": 8466156,
     "name": "Mika Noronen",
-    "team": "BUF,VAN",
+    "team": "BUF",
     "stopped": 0,
     "faced": 1,
     "wins": 0,
@@ -192,7 +192,7 @@
   {
     "id": 8467364,
     "name": "Philippe Sauve",
-    "team": "CGY,PHX",
+    "team": "CGY",
     "stopped": 3,
     "faced": 3,
     "wins": 1,
@@ -252,7 +252,7 @@
   {
     "id": 8460703,
     "name": "Tim Thomas",
-    "team": "FLA,DAL",
+    "team": "FLA",
     "stopped": 170,
     "faced": 234,
     "wins": 36,
@@ -592,7 +592,7 @@
   {
     "id": 8462117,
     "name": "Vesa Toskala",
-    "team": "TOR,CGY",
+    "team": "TOR",
     "stopped": 33,
     "faced": 63,
     "wins": 7,
@@ -842,7 +842,7 @@
   {
     "id": 8466303,
     "name": "Johan Holmqvist",
-    "team": "TBL,DAL",
+    "team": "TBL",
     "stopped": 32,
     "faced": 37,
     "wins": 7,
@@ -942,7 +942,7 @@
   {
     "id": 8468038,
     "name": "Michael Leighton",
-    "team": "CAR,PHI",
+    "team": "CAR",
     "stopped": 7,
     "faced": 10,
     "wins": 3,
@@ -1112,7 +1112,7 @@
   {
     "id": 8471227,
     "name": "Devan Dubnyk",
-    "team": "SJS,COL",
+    "team": "SJS",
     "stopped": 112,
     "faced": 173,
     "wins": 21,
@@ -1142,7 +1142,7 @@
   {
     "id": 8475683,
     "name": "Sergei Bobrovsky",
-    "team": "FLA",
+    "team": "TOR",
     "stopped": 161,
     "faced": 225,
     "wins": 39,
@@ -1152,7 +1152,7 @@
   {
     "id": 8471219,
     "name": "Al Montoya",
-    "team": "MTL,EDM",
+    "team": "MTL",
     "stopped": 32,
     "faced": 56,
     "wins": 5,
@@ -1162,7 +1162,7 @@
   {
     "id": 8473503,
     "name": "James Reimer",
-    "team": "ANA,BUF",
+    "team": "ANA",
     "stopped": 143,
     "faced": 207,
     "wins": 30,
@@ -1262,7 +1262,7 @@
   {
     "id": 8474593,
     "name": "Jacob Markstrom",
-    "team": "NJD",
+    "team": "FLA",
     "stopped": 124,
     "faced": 177,
     "wins": 19,
@@ -1292,7 +1292,7 @@
   {
     "id": 8474765,
     "name": "Anders Lindback",
-    "team": "DAL,BUF",
+    "team": "DAL",
     "stopped": 21,
     "faced": 27,
     "wins": 5,
@@ -1372,7 +1372,7 @@
   {
     "id": 8474636,
     "name": "Michael Hutchinson",
-    "team": "TOR,COL",
+    "team": "TOR",
     "stopped": 19,
     "faced": 29,
     "wins": 5,
@@ -1402,7 +1402,7 @@
   {
     "id": 8475883,
     "name": "Frederik Andersen",
-    "team": "CAR",
+    "team": "EDM",
     "stopped": 125,
     "faced": 186,
     "wins": 23,
@@ -1532,7 +1532,7 @@
   {
     "id": 8477202,
     "name": "Andrew Hammond",
-    "team": "MTL,NJD",
+    "team": "MTL",
     "stopped": 28,
     "faced": 41,
     "wins": 3,
@@ -1562,7 +1562,7 @@
   {
     "id": 8475852,
     "name": "Petr Mrazek",
-    "team": "CHI,DET",
+    "team": "CHI",
     "stopped": 90,
     "faced": 116,
     "wins": 20,
@@ -1622,7 +1622,7 @@
   {
     "id": 8476914,
     "name": "Joonas Korpisalo",
-    "team": "BOS",
+    "team": "NYR",
     "stopped": 40,
     "faced": 59,
     "wins": 9,
@@ -1692,7 +1692,7 @@
   {
     "id": 8475839,
     "name": "Louis Domingue",
-    "team": "NJD,VAN",
+    "team": "NJD",
     "stopped": 28,
     "faced": 34,
     "wins": 6,
@@ -1782,7 +1782,7 @@
   {
     "id": 8477465,
     "name": "Tristan Jarry",
-    "team": "PIT,EDM",
+    "team": "EDM",
     "stopped": 42,
     "faced": 67,
     "wins": 7,
@@ -1852,7 +1852,7 @@
   {
     "id": 8479496,
     "name": "David Rittich",
-    "team": "NYI",
+    "team": "NJD",
     "stopped": 52,
     "faced": 76,
     "wins": 12,
@@ -1912,7 +1912,7 @@
   {
     "id": 8480382,
     "name": "Alexandar Georgiev",
-    "team": "COL,SJS",
+    "team": "COL",
     "stopped": 65,
     "faced": 88,
     "wins": 16,
@@ -1952,7 +1952,7 @@
   {
     "id": 8478406,
     "name": "Mackenzie Blackwood",
-    "team": "SJS,COL",
+    "team": "SJS",
     "stopped": 61,
     "faced": 100,
     "wins": 7,
@@ -2002,7 +2002,7 @@
   {
     "id": 8478039,
     "name": "Kaapo Kahkonen",
-    "team": "SJS,NJD",
+    "team": "SJS",
     "stopped": 10,
     "faced": 20,
     "wins": 2,
@@ -2112,7 +2112,7 @@
   {
     "id": 8477970,
     "name": "Vitek Vanecek",
-    "team": "SJS,FLA",
+    "team": "SJS",
     "stopped": 31,
     "faced": 41,
     "wins": 6,
@@ -2232,7 +2232,7 @@
   {
     "id": 8479973,
     "name": "Stuart Skinner",
-    "team": "EDM,PIT",
+    "team": "WPG",
     "stopped": 21,
     "faced": 39,
     "wins": 4,
@@ -2262,7 +2262,7 @@
   {
     "id": 8477480,
     "name": "Eric Comrie",
-    "team": "WPG",
+    "team": "SJS",
     "stopped": 15,
     "faced": 20,
     "wins": 3,
@@ -2322,7 +2322,7 @@
   {
     "id": 8480193,
     "name": "Daniil Tarasov",
-    "team": "FLA",
+    "team": "DET",
     "stopped": 15,
     "faced": 22,
     "wins": 3,
@@ -2332,7 +2332,7 @@
   {
     "id": 8476433,
     "name": "Magnus Hellberg",
-    "team": "OTT,DET",
+    "team": "OTT",
     "stopped": 4,
     "faced": 6,
     "wins": 1,
@@ -2352,7 +2352,7 @@
   {
     "id": 8481033,
     "name": "Akira Schmid",
-    "team": "VGK",
+    "team": "FLA",
     "stopped": 10,
     "faced": 16,
     "wins": 1,
@@ -2422,7 +2422,7 @@
   {
     "id": 8479361,
     "name": "Joseph Woll",
-    "team": "TOR",
+    "team": "PHI",
     "stopped": 16,
     "faced": 23,
     "wins": 5,
@@ -2442,7 +2442,7 @@
   {
     "id": 8481035,
     "name": "Samuel Ersson",
-    "team": "PHI",
+    "team": "OTT",
     "stopped": 47,
     "faced": 61,
     "wins": 13,
