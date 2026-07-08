@@ -531,82 +531,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
             time.sleep(0.2)
         return rows
 
-    def get_so_goalie_map(game_id):
-        """
-        Returns {teamAbbrev: goalieId} for BOTH teams in a game.
-        Strategy:
-        1. Primary: rosterSpots — every goalie dressed for the game is listed
-           here with their teamId, giving us both goalies regardless of whether
-           they faced shots. Filter to players who actually appeared in SO plays.
-        2. Fallback: goalieInNetId from SO play details if rosterSpots is sparse.
-        """
-        try:
-            resp = requests.get(f"{pbp_base}/gamecenter/{game_id}/play-by-play", timeout=15)
-            resp.raise_for_status()
-            pbp = resp.json()
-        except Exception as e:
-            if debug:
-                print(f"    [warn] PBP failed game {game_id}: {e}")
-            return {}
-
-        home_team = pbp.get("homeTeam", {})
-        away_team = pbp.get("awayTeam", {})
-        # teamId -> abbrev
-        team_abbrev = {}
-        if home_team.get("id"):
-            team_abbrev[home_team["id"]] = home_team.get("abbrev", "")
-        if away_team.get("id"):
-            team_abbrev[away_team["id"]] = away_team.get("abbrev", "")
-
-        # Find which playerIds appeared in SO plays as goalieInNetId
-        so_goalie_ids = set()
-        so_shooter_team_ids = set()
-        for play in pbp.get("plays", []):
-            if play.get("periodDescriptor", {}).get("periodType") != "SO":
-                continue
-            details = play.get("details", {})
-            gid = details.get("goalieInNetId")
-            if gid:
-                so_goalie_ids.add(gid)
-            tid = details.get("eventOwnerTeamId")
-            if tid:
-                so_shooter_team_ids.add(tid)
-
-        # Map teamAbbrev -> goalieId using rosterSpots
-        # A goalie belongs to the team on their rosterSpot
-        goalie_map = {}
-        for spot in pbp.get("rosterSpots", []):
-            if spot.get("positionCode") != "G":
-                continue
-            pid = spot.get("playerId")
-            tid = spot.get("teamId")
-            abbrev = team_abbrev.get(tid, "")
-            if not abbrev:
-                continue
-            # Prefer the goalie who actually appeared in SO plays
-            if pid in so_goalie_ids:
-                goalie_map[abbrev] = pid
-            elif abbrev not in goalie_map:
-                # Fallback: use any goalie on this team
-                goalie_map[abbrev] = pid
-
-        # If rosterSpots gave nothing, fall back to inferring from SO plays directly
-        if not goalie_map and so_goalie_ids:
-            for play in pbp.get("plays", []):
-                if play.get("periodDescriptor", {}).get("periodType") != "SO":
-                    continue
-                details = play.get("details", {})
-                gid = details.get("goalieInNetId")
-                shooter_tid = details.get("eventOwnerTeamId")
-                if gid and shooter_tid:
-                    # Goalie is on the NON-shooting team
-                    for team_id, abbrev in team_abbrev.items():
-                        if team_id != shooter_tid and abbrev:
-                            goalie_map[abbrev] = gid
-
-        return goalie_map
-
-    # Build goalie name lookup from active_rosters + skater_shootout history
+    # Build goalie name lookup from goalie_shootout history + active_rosters
     goalie_names = {}
     for row in conn.execute("SELECT goalie_id, full_name FROM goalie_shootout GROUP BY goalie_id"):
         goalie_names[row["goalie_id"]] = row["full_name"]
@@ -619,11 +544,18 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
         print(f"  Season {season}...")
         skater_rows = fetch_skater_game_rows(season)
 
-        # Group by gameId so we only fetch each game's PBP once
-        games = {}
+        # Deduplicate by (playerId, gameId) — API sometimes returns duplicate rows
+        # for the same player+game. Keep the row with the most shots (most complete).
+        deduped = {}
         for r in skater_rows:
-            shots = r.get("shootoutShots", 0)
-            if shots == 0:
+            key = (r["playerId"], r["gameId"])
+            if key not in deduped or r.get("shootoutShots", 0) > deduped[key].get("shootoutShots", 0):
+                deduped[key] = r
+
+        # Group by gameId, only including rows where player actually shot
+        games = {}
+        for r in deduped.values():
+            if r.get("shootoutShots", 0) == 0:
                 continue
             gid = r["gameId"]
             if gid not in games:
@@ -631,21 +563,71 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
             games[gid].append(r)
 
         if debug:
-            print(f"    {len(skater_rows)} skater rows across {len(games)} games")
+            dupes = len(skater_rows) - len(deduped)
+            print(f"    {len(skater_rows)} raw rows, {dupes} dupes removed, {len(games)} games with shots")
 
         matched, unmatched = 0, 0
         for game_id, shooters in games.items():
-            goalie_map = get_so_goalie_map(game_id)  # {teamAbbrev -> goalieId}
+            # Fetch PBP once per game
+            pbp = None
+            try:
+                resp = requests.get(f"{pbp_base}/gamecenter/{game_id}/play-by-play", timeout=15)
+                resp.raise_for_status()
+                pbp = resp.json()
+            except Exception as e:
+                if debug:
+                    print(f"    [warn] PBP failed game {game_id}: {e}")
             time.sleep(0.15)
 
+            # Build direct shooter->goalie map from PBP SO plays
+            pbp_shooter_goalie = {}
+            goalie_map = {}
+            if pbp:
+                home_team = pbp.get("homeTeam", {})
+                away_team = pbp.get("awayTeam", {})
+                team_abbrev = {}
+                if home_team.get("id"):
+                    team_abbrev[home_team["id"]] = home_team.get("abbrev", "")
+                if away_team.get("id"):
+                    team_abbrev[away_team["id"]] = away_team.get("abbrev", "")
+
+                so_goalie_ids = set()
+                for play in pbp.get("plays", []):
+                    if play.get("periodDescriptor", {}).get("periodType") != "SO":
+                        continue
+                    d = play.get("details", {})
+                    shooter_id = d.get("shootingPlayerId") or d.get("scoringPlayerId")
+                    goalie_id  = d.get("goalieInNetId")
+                    if shooter_id and goalie_id:
+                        pbp_shooter_goalie[shooter_id] = goalie_id
+                        so_goalie_ids.add(goalie_id)
+
+                # Build teamAbbrev->goalieId from rosterSpots as fallback
+                for spot in pbp.get("rosterSpots", []):
+                    if spot.get("positionCode") != "G":
+                        continue
+                    pid = spot.get("playerId")
+                    tid = spot.get("teamId")
+                    abbrev = team_abbrev.get(tid, "")
+                    if not abbrev:
+                        continue
+                    if pid in so_goalie_ids:
+                        goalie_map[abbrev] = pid
+                    elif abbrev not in goalie_map:
+                        goalie_map[abbrev] = pid
+
             for r in shooters:
-                opp = r.get("opponentTeamAbbrev", "")
-                goalie_id = goalie_map.get(opp)
+                sid = r["playerId"]
+                # Prefer direct PBP shooter->goalie mapping (handles trades correctly)
+                goalie_id = pbp_shooter_goalie.get(sid)
+                if not goalie_id:
+                    # Fall back to team-based join
+                    opp = r.get("opponentTeamAbbrev", "")
+                    goalie_id = goalie_map.get(opp)
                 if not goalie_id:
                     unmatched += 1
                     continue
                 matched += 1
-                sid = r["playerId"]
                 gname = goalie_names.get(goalie_id, f"Goalie #{goalie_id}")
                 skey = (sid, goalie_id)
                 if skey not in all_splits:
