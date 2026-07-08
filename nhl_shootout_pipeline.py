@@ -479,12 +479,9 @@ def export_alltime(out_dir="data", top_n=25, min_attempts=15, min_faced=20, conn
 
 def build_vs_goalie_splits(start_season, end_season, debug=False):
     """
-    Builds shooter vs goalie splits using two sources:
-    1. Game-level skater stats API to get every shooter's gameId + result
-    2. Play-by-play API (SO period only) to identify which goalie faced each shooter
-
-    Only fetches PBP for games confirmed to have had a shootout, keeping
-    the number of API calls manageable.
+    Builds shooter vs goalie splits purely from play-by-play SO period data.
+    Maps shootingPlayerId -> goalieInNetId directly — no team logic needed.
+    Game list sourced from skater stats API to find which games had shootouts.
     """
     conn = get_conn()
     conn.row_factory = sqlite3.Row
@@ -503,13 +500,15 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
     stats_base = "https://api.nhle.com/stats/rest/en"
     pbp_base   = "https://api-web.nhle.com/v1"
 
-    def fetch_skater_game_rows(season):
-        """All game-level skater shootout rows for a season."""
-        rows, start, limit = [], 0, 100
+    def get_shootout_game_ids(season):
+        """Get unique gameIds where at least one player took a shootout shot."""
+        game_ids = set()
+        start, limit = 0, 100
         while True:
             url = (f"{stats_base}/skater/shootout"
                    f"?isAggregate=false&isGame=true"
                    f"&cayenneExp=seasonId={season}%20and%20gameTypeId=2"
+                   f"&sort=shootoutShots&direction=DESC"
                    f"&start={start}&limit={limit}")
             for attempt in range(3):
                 try:
@@ -519,19 +518,50 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
                     break
                 except Exception as e:
                     if attempt == 2:
-                        print(f"  [warn] skater fetch failed {season} start={start}: {e}")
-                        return rows
+                        print(f"  [warn] game list fetch failed {season}: {e}")
+                        return game_ids
                     time.sleep(1.5 * (attempt + 1))
             batch = data.get("data", [])
-            rows.extend(batch)
-            total = data.get("total", 0)
+            for r in batch:
+                if r.get("shootoutShots", 0) > 0:
+                    game_ids.add(r["gameId"])
+            # Stop when we hit zero-shot rows
+            if not batch or batch[-1].get("shootoutShots", 0) == 0:
+                break
             start += limit
-            if start >= total or not batch:
+            if start >= data.get("total", 0):
                 break
             time.sleep(0.2)
-        return rows
+        return game_ids
 
-    # Build goalie name lookup from goalie_shootout history + active_rosters
+    def get_splits_from_pbp(game_id):
+        """
+        Returns list of (shooter_id, goalie_id, scored) from SO period plays.
+        Pure shootingPlayerId -> goalieInNetId mapping. No team logic.
+        """
+        try:
+            resp = requests.get(f"{pbp_base}/gamecenter/{game_id}/play-by-play", timeout=15)
+            resp.raise_for_status()
+            pbp = resp.json()
+        except Exception as e:
+            if debug:
+                print(f"    [warn] PBP failed game {game_id}: {e}")
+            return []
+
+        pairs = []
+        for play in pbp.get("plays", []):
+            if play.get("periodDescriptor", {}).get("periodType") != "SO":
+                continue
+            d = play.get("details", {})
+            shooter_id = d.get("shootingPlayerId") or d.get("scoringPlayerId")
+            goalie_id  = d.get("goalieInNetId")
+            type_key   = play.get("typeDescKey", "")
+            if shooter_id and goalie_id and type_key in ("shot-on-goal", "goal", "missed-shot"):
+                scored = 1 if type_key == "goal" else 0
+                pairs.append((shooter_id, goalie_id, scored))
+        return pairs
+
+    # Build goalie name lookup
     goalie_names = {}
     for row in conn.execute("SELECT goalie_id, full_name FROM goalie_shootout GROUP BY goalie_id"):
         goalie_names[row["goalie_id"]] = row["full_name"]
@@ -542,102 +572,22 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
 
     for season in target_seasons:
         print(f"  Season {season}...")
-        skater_rows = fetch_skater_game_rows(season)
+        game_ids = get_shootout_game_ids(season)
+        print(f"    {len(game_ids)} shootout games found")
 
-        # Deduplicate by (playerId, gameId) — API sometimes returns duplicate rows
-        # for the same player+game. Keep the row with the most shots (most complete).
-        deduped = {}
-        for r in skater_rows:
-            key = (r["playerId"], r["gameId"])
-            if key not in deduped or r.get("shootoutShots", 0) > deduped[key].get("shootoutShots", 0):
-                deduped[key] = r
-
-        # Group by gameId, only including rows where player actually shot
-        games = {}
-        for r in deduped.values():
-            if r.get("shootoutShots", 0) == 0:
-                continue
-            gid = r["gameId"]
-            if gid not in games:
-                games[gid] = []
-            games[gid].append(r)
-
-        if debug:
-            dupes = len(skater_rows) - len(deduped)
-            print(f"    {len(skater_rows)} raw rows, {dupes} dupes removed, {len(games)} games with shots")
-
-        matched, unmatched = 0, 0
-        for game_id, shooters in games.items():
-            # Fetch PBP once per game
-            pbp = None
-            try:
-                resp = requests.get(f"{pbp_base}/gamecenter/{game_id}/play-by-play", timeout=15)
-                resp.raise_for_status()
-                pbp = resp.json()
-            except Exception as e:
-                if debug:
-                    print(f"    [warn] PBP failed game {game_id}: {e}")
+        for game_id in sorted(game_ids):
+            pairs = get_splits_from_pbp(game_id)
+            for shooter_id, goalie_id, scored in pairs:
+                gname = goalie_names.get(goalie_id, f"Goalie #{goalie_id}")
+                key = (shooter_id, goalie_id)
+                if key not in all_splits:
+                    all_splits[key] = [0, 0, gname]
+                all_splits[key][0] += scored
+                all_splits[key][1] += 1
             time.sleep(0.15)
 
-            # Build direct shooter->goalie map from PBP SO plays
-            pbp_shooter_goalie = {}
-            goalie_map = {}
-            if pbp:
-                home_team = pbp.get("homeTeam", {})
-                away_team = pbp.get("awayTeam", {})
-                team_abbrev = {}
-                if home_team.get("id"):
-                    team_abbrev[home_team["id"]] = home_team.get("abbrev", "")
-                if away_team.get("id"):
-                    team_abbrev[away_team["id"]] = away_team.get("abbrev", "")
-
-                so_goalie_ids = set()
-                for play in pbp.get("plays", []):
-                    if play.get("periodDescriptor", {}).get("periodType") != "SO":
-                        continue
-                    d = play.get("details", {})
-                    shooter_id = d.get("shootingPlayerId") or d.get("scoringPlayerId")
-                    goalie_id  = d.get("goalieInNetId")
-                    if shooter_id and goalie_id:
-                        pbp_shooter_goalie[shooter_id] = goalie_id
-                        so_goalie_ids.add(goalie_id)
-
-                # Build teamAbbrev->goalieId from rosterSpots as fallback
-                for spot in pbp.get("rosterSpots", []):
-                    if spot.get("positionCode") != "G":
-                        continue
-                    pid = spot.get("playerId")
-                    tid = spot.get("teamId")
-                    abbrev = team_abbrev.get(tid, "")
-                    if not abbrev:
-                        continue
-                    if pid in so_goalie_ids:
-                        goalie_map[abbrev] = pid
-                    elif abbrev not in goalie_map:
-                        goalie_map[abbrev] = pid
-
-            for r in shooters:
-                sid = r["playerId"]
-                # Prefer direct PBP shooter->goalie mapping (handles trades correctly)
-                goalie_id = pbp_shooter_goalie.get(sid)
-                if not goalie_id:
-                    # Fall back to team-based join
-                    opp = r.get("opponentTeamAbbrev", "")
-                    goalie_id = goalie_map.get(opp)
-                if not goalie_id:
-                    unmatched += 1
-                    continue
-                matched += 1
-                gname = goalie_names.get(goalie_id, f"Goalie #{goalie_id}")
-                skey = (sid, goalie_id)
-                if skey not in all_splits:
-                    all_splits[skey] = [0, 0, gname]
-                all_splits[skey][0] += r.get("shootoutGoals", 0)
-                all_splits[skey][1] += r.get("shootoutShots", 0)
-
         if debug:
-            print(f"    matched={matched} unmatched={unmatched}")
-        time.sleep(0.3)
+            print(f"    Running total: {len(all_splits)} shooter-goalie pairs so far")
 
     for (sid, gid), (goals, att, gname) in all_splits.items():
         conn.execute("""
@@ -653,6 +603,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
     total = conn.execute("SELECT COUNT(*) FROM vs_goalie_splits").fetchone()[0]
     conn.close()
     print(f"vs-goalie splits complete — {total} total shooter-goalie pairs.")
+
 
 
 if __name__ == "__main__":
