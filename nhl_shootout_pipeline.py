@@ -325,20 +325,35 @@ def export_json(out_dir="data"):
         }
 
     # --- Players ---
+    # Start from active_rosters so every current NHL skater appears in their
+    # team panel even with zero career shootout attempts
     players_map = {}
+    for pid, ar in active.items():
+        if ar["is_goalie"]:
+            continue
+        players_map[pid] = {
+            "id": pid,
+            "name": ar["name"],
+            "team": ar["team"],
+            "active": True,
+            "career": [0, 0],
+            "seasons": {},
+            "vs_goalie": {},
+        }
+
+    # Layer in historical shootout stats for everyone (active or not)
     for row in conn.execute("""
         SELECT player_id, full_name, team_abbrev, season, goals, attempts
         FROM skater_shootout ORDER BY season
     """):
         pid = row["player_id"]
         if pid not in players_map:
-            # Use active_rosters name/team if available, else fall back to stats data
-            ar = active.get(pid)
+            # Not on current roster — still include for history/search/all-time
             players_map[pid] = {
                 "id": pid,
-                "name": ar["name"] if ar else row["full_name"],
-                "team": ar["team"] if ar else "",  # blank = not on current roster
-                "active": pid in active and not active[pid]["is_goalie"],
+                "name": row["full_name"],
+                "team": "",   # blank = not on current roster, won't show in team panels
+                "active": False,
                 "career": [0, 0],
                 "seasons": {},
                 "vs_goalie": {},
@@ -356,23 +371,37 @@ def export_json(out_dir="data"):
         if pid in players_map:
             players_map[pid]["vs_goalie"][row["goalie_name"]] = [row["goals"], row["attempts"]]
 
-    players_out = [p for p in players_map.values() if p["career"][1] > 0]
-    players_out.sort(key=lambda p: p["career"][1], reverse=True)
+    players_out = [p for p in players_map.values() if p["active"] or p["career"][1] > 0]
+    players_out.sort(key=lambda p: (not p["active"], -p["career"][1]))
 
     # --- Goalies ---
+    # Same pattern — seed from active_rosters first
     goalies_map = {}
+    for pid, ar in active.items():
+        if not ar["is_goalie"]:
+            continue
+        goalies_map[pid] = {
+            "id": pid,
+            "name": ar["name"],
+            "team": ar["team"],
+            "active": True,
+            "stopped": 0,
+            "faced": 0,
+            "wins": 0,
+            "losses": 0,
+        }
+
     for row in conn.execute("""
         SELECT goalie_id, full_name, team_abbrev, season, saves, shots_against, wins, losses
         FROM goalie_shootout ORDER BY season
     """):
         gid = row["goalie_id"]
         if gid not in goalies_map:
-            ar = active.get(gid)
             goalies_map[gid] = {
                 "id": gid,
-                "name": ar["name"] if ar else row["full_name"],
-                "team": ar["team"] if ar else "",
-                "active": gid in active and active[gid]["is_goalie"],
+                "name": row["full_name"],
+                "team": "",
+                "active": False,
                 "stopped": 0,
                 "faced": 0,
                 "wins": 0,
@@ -387,7 +416,7 @@ def export_json(out_dir="data"):
     for g in goalies_map.values():
         g["record"] = f"{g['wins']} W \u2013 {g['losses']} L in career shootouts"
 
-    goalies_out = [g for g in goalies_map.values() if g["faced"] > 0]
+    goalies_out = [g for g in goalies_map.values() if g["active"] or g["faced"] > 0]
 
     with open(os.path.join(out_dir, "players.json"), "w") as f:
         json.dump(players_out, f, indent=2)
