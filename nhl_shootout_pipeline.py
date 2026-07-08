@@ -479,13 +479,12 @@ def export_alltime(out_dir="data", top_n=25, min_attempts=15, min_faced=20, conn
 
 def build_vs_goalie_splits(start_season, end_season, debug=False):
     """
-    Builds shooter vs goalie splits by joining game-level skater and goalie
-    shootout data on gameId + team.
+    Builds shooter vs goalie splits using two sources:
+    1. Game-level skater stats API to get every shooter's gameId + result
+    2. Play-by-play API (SO period only) to identify which goalie faced each shooter
 
-    Strategy: fetch ALL goalie game rows across all seasons first into a
-    complete lookup, then process skater rows season by season and join.
-    This avoids the issue where the goalie endpoint returns fewer rows than
-    expected per season.
+    Only fetches PBP for games confirmed to have had a shootout, keeping
+    the number of API calls manageable.
     """
     conn = get_conn()
     conn.row_factory = sqlite3.Row
@@ -501,14 +500,15 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
     conn.execute("DELETE FROM vs_goalie_splits")
     conn.commit()
 
-    base = "https://api.nhle.com/stats/rest/en"
+    stats_base = "https://api.nhle.com/stats/rest/en"
+    pbp_base   = "https://api-web.nhle.com/v1"
 
-    def fetch_all_pages(endpoint, season, is_game=True):
+    def fetch_skater_game_rows(season):
+        """All game-level skater shootout rows for a season."""
         rows, start, limit = [], 0, 100
-        game_param = "true" if is_game else "false"
         while True:
-            url = (f"{base}/{endpoint}/shootout"
-                   f"?isAggregate=false&isGame={game_param}"
+            url = (f"{stats_base}/skater/shootout"
+                   f"?isAggregate=false&isGame=true"
                    f"&cayenneExp=seasonId={season}%20and%20gameTypeId=2"
                    f"&start={start}&limit={limit}")
             for attempt in range(3):
@@ -519,7 +519,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
                     break
                 except Exception as e:
                     if attempt == 2:
-                        print(f"  [warn] {endpoint} fetch failed {season} start={start}: {e}")
+                        print(f"  [warn] skater fetch failed {season} start={start}: {e}")
                         return rows
                     time.sleep(1.5 * (attempt + 1))
             batch = data.get("data", [])
@@ -531,47 +531,105 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
             time.sleep(0.2)
         return rows
 
-    # Step 1: Build complete goalie map across ALL target seasons
-    print("  Fetching goalie game rows across all seasons...")
-    goalie_map = {}  # (gameId, teamAbbrev) -> (goalieId, goalieName)
-    for season in target_seasons:
-        goalie_rows = fetch_all_pages("goalie", season, is_game=True)
-        for r in goalie_rows:
-            key = (r["gameId"], r["teamAbbrev"])
-            goalie_map[key] = (r["playerId"], r["goalieFullName"])
-        if debug:
-            print(f"    {season}: {len(goalie_rows)} goalie rows (map now {len(goalie_map)} keys)")
-        time.sleep(0.3)
-    print(f"  Goalie map built: {len(goalie_map)} unique game-team pairs")
+    def get_so_goalie_map(game_id):
+        """
+        Returns {teamId: goalieId} for each team's goalie during the SO period
+        by reading rosterSpots + SO play events from play-by-play.
+        Falls back to rosterSpots position=G if SO plays are sparse.
+        """
+        try:
+            resp = requests.get(f"{pbp_base}/gamecenter/{game_id}/play-by-play", timeout=15)
+            resp.raise_for_status()
+            pbp = resp.json()
+        except Exception as e:
+            if debug:
+                print(f"    [warn] PBP failed game {game_id}: {e}")
+            return {}
 
-    # Step 2: Process skater rows season by season, joining against goalie map
+        # Build teamId -> abbrev map from the boxscore fields
+        home_team = pbp.get("homeTeam", {})
+        away_team = pbp.get("awayTeam", {})
+        team_abbrev = {
+            home_team.get("id"): home_team.get("abbrev", ""),
+            away_team.get("id"): away_team.get("abbrev", ""),
+        }
+
+        # Find goalies in net during SO plays
+        goalie_map = {}  # teamAbbrev -> goalieId
+        for play in pbp.get("plays", []):
+            if play.get("periodDescriptor", {}).get("periodType") != "SO":
+                continue
+            details = play.get("details", {})
+            gid = details.get("goalieInNetId")
+            tid = details.get("eventOwnerTeamId")  # shooting team
+            if gid and tid:
+                # The goalie belongs to the NON-shooting team
+                for team_id, abbrev in team_abbrev.items():
+                    if team_id != tid and abbrev:
+                        goalie_map[abbrev] = gid
+
+        # If we didn't find goalies from plays, try rosterSpots
+        if not goalie_map:
+            for spot in pbp.get("rosterSpots", []):
+                if spot.get("positionCode") == "G":
+                    tid = spot.get("teamId")
+                    abbrev = team_abbrev.get(tid, "")
+                    if abbrev and abbrev not in goalie_map:
+                        goalie_map[abbrev] = spot.get("playerId")
+
+        return goalie_map  # {teamAbbrev -> goalieId}
+
+    # Build goalie name lookup from active_rosters + skater_shootout history
+    goalie_names = {}
+    for row in conn.execute("SELECT goalie_id, full_name FROM goalie_shootout GROUP BY goalie_id"):
+        goalie_names[row["goalie_id"]] = row["full_name"]
+    for row in conn.execute("SELECT player_id, full_name FROM active_rosters WHERE is_goalie=1"):
+        goalie_names[row["player_id"]] = row["full_name"]
+
     all_splits = {}  # (shooter_id, goalie_id) -> [goals, att, goalie_name]
+
     for season in target_seasons:
-        print(f"  Processing skaters: season {season}...")
-        skater_rows = fetch_all_pages("skater", season, is_game=True)
-        matched, unmatched = 0, 0
+        print(f"  Season {season}...")
+        skater_rows = fetch_skater_game_rows(season)
+
+        # Group by gameId so we only fetch each game's PBP once
+        games = {}
         for r in skater_rows:
             shots = r.get("shootoutShots", 0)
             if shots == 0:
                 continue
-            key = (r["gameId"], r.get("opponentTeamAbbrev", ""))
-            goalie = goalie_map.get(key)
-            if not goalie:
-                unmatched += 1
-                continue
-            matched += 1
-            sid = r["playerId"]
-            gid, gname = goalie
-            skey = (sid, gid)
-            if skey not in all_splits:
-                all_splits[skey] = [0, 0, gname]
-            all_splits[skey][0] += r.get("shootoutGoals", 0)
-            all_splits[skey][1] += shots
+            gid = r["gameId"]
+            if gid not in games:
+                games[gid] = []
+            games[gid].append(r)
+
         if debug:
-            print(f"    {matched} matched, {unmatched} unmatched")
+            print(f"    {len(skater_rows)} skater rows across {len(games)} games")
+
+        matched, unmatched = 0, 0
+        for game_id, shooters in games.items():
+            goalie_map = get_so_goalie_map(game_id)  # {teamAbbrev -> goalieId}
+            time.sleep(0.15)
+
+            for r in shooters:
+                opp = r.get("opponentTeamAbbrev", "")
+                goalie_id = goalie_map.get(opp)
+                if not goalie_id:
+                    unmatched += 1
+                    continue
+                matched += 1
+                sid = r["playerId"]
+                gname = goalie_names.get(goalie_id, f"Goalie #{goalie_id}")
+                skey = (sid, goalie_id)
+                if skey not in all_splits:
+                    all_splits[skey] = [0, 0, gname]
+                all_splits[skey][0] += r.get("shootoutGoals", 0)
+                all_splits[skey][1] += r.get("shootoutShots", 0)
+
+        if debug:
+            print(f"    matched={matched} unmatched={unmatched}")
         time.sleep(0.3)
 
-    # Step 3: Write to db
     for (sid, gid), (goals, att, gname) in all_splits.items():
         conn.execute("""
             INSERT INTO vs_goalie_splits (player_id, goalie_id, goalie_name, goals, attempts)
