@@ -1,1298 +1,1322 @@
 [
   {
-    "id": 8445386,
-    "name": "Ed Belfour",
-    "team": "",
-    "stopped": 24,
-    "faced": 39,
-    "record": null
-  },
-  {
-    "id": 8445769,
-    "name": "Sean Burke",
-    "team": "",
-    "stopped": 17,
-    "faced": 33,
-    "record": null
-  },
-  {
-    "id": 8447687,
-    "name": "Dominik Hasek",
-    "team": "",
-    "stopped": 27,
-    "faced": 44,
-    "record": null
-  },
-  {
-    "id": 8448382,
-    "name": "Curtis Joseph",
-    "team": "",
-    "stopped": 32,
-    "faced": 43,
-    "record": null
-  },
-  {
-    "id": 8448535,
-    "name": "Olie Kolzig",
-    "team": "",
-    "stopped": 60,
-    "faced": 95,
-    "record": null
-  },
-  {
-    "id": 8455710,
-    "name": "Martin Brodeur",
-    "team": "",
-    "stopped": 146,
-    "faced": 221,
-    "record": null
-  },
-  {
-    "id": 8456137,
-    "name": "Mike Dunham",
-    "team": "",
-    "stopped": 6,
-    "faced": 12,
-    "record": null
-  },
-  {
-    "id": 8458562,
-    "name": "Jamie McLennan",
-    "team": "",
-    "stopped": 9,
-    "faced": 15,
-    "record": null
-  },
-  {
-    "id": 8458568,
-    "name": "Chris Osgood",
-    "team": "",
-    "stopped": 40,
-    "faced": 66,
-    "record": null
-  },
-  {
-    "id": 8458615,
-    "name": "Steve Shields",
-    "team": "",
-    "stopped": 1,
-    "faced": 2,
-    "record": null
-  },
-  {
-    "id": 8458988,
-    "name": "Manny Fernandez",
-    "team": "",
-    "stopped": 45,
-    "faced": 62,
-    "record": null
-  },
-  {
-    "id": 8459140,
-    "name": "Nikolai Khabibulin",
-    "team": "",
-    "stopped": 78,
-    "faced": 130,
-    "record": null
-  },
-  {
-    "id": 8459308,
-    "name": "Manny Legace",
-    "team": "",
-    "stopped": 60,
-    "faced": 86,
-    "record": null
-  },
-  {
-    "id": 8459432,
-    "name": "Jocelyn Thibault",
-    "team": "",
-    "stopped": 18,
-    "faced": 27,
-    "record": null
-  },
-  {
-    "id": 8459463,
-    "name": "Kevin Weekes",
-    "team": "",
-    "stopped": 13,
-    "faced": 22,
-    "record": null
-  },
-  {
-    "id": 8459579,
-    "name": "Patrick Lalime",
-    "team": "",
-    "stopped": 23,
-    "faced": 41,
-    "record": null
-  },
-  {
-    "id": 8460516,
-    "name": "Dan Cloutier",
-    "team": "",
-    "stopped": 3,
-    "faced": 6,
-    "record": null
-  },
-  {
-    "id": 8460535,
-    "name": "Jose Theodore",
-    "team": "",
-    "stopped": 83,
-    "faced": 126,
-    "record": null
-  },
-  {
-    "id": 8460612,
-    "name": "Marty Turco",
-    "team": "",
-    "stopped": 126,
-    "faced": 187,
-    "record": null
-  },
-  {
-    "id": 8460696,
-    "name": "Frederic Cassivi",
-    "team": "",
-    "stopped": 1,
-    "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8460703,
-    "name": "Tim Thomas",
-    "team": "",
-    "stopped": 155,
-    "faced": 219,
-    "record": null
-  },
-  {
-    "id": 8460704,
-    "name": "Johan Hedberg",
-    "team": "",
-    "stopped": 78,
-    "faced": 110,
-    "record": null
-  },
-  {
-    "id": 8460705,
-    "name": "Evgeni Nabokov",
-    "team": "",
-    "stopped": 114,
-    "faced": 191,
-    "record": null
-  },
-  {
-    "id": 8460712,
-    "name": "Tomas Vokoun",
-    "team": "",
-    "stopped": 98,
-    "faced": 152,
-    "record": null
-  },
-  {
-    "id": 8460715,
-    "name": "John Grahame",
-    "team": "",
-    "stopped": 14,
-    "faced": 22,
-    "record": null
-  },
-  {
-    "id": 8460806,
-    "name": "Dwayne Roloson",
-    "team": "",
-    "stopped": 114,
-    "faced": 170,
-    "record": null
-  },
-  {
-    "id": 8462044,
-    "name": "Jean-Sebastien Giguere",
-    "team": "",
-    "stopped": 88,
-    "faced": 150,
-    "record": null
-  },
-  {
-    "id": 8462047,
-    "name": "Martin Biron",
-    "team": "",
-    "stopped": 37,
-    "faced": 72,
-    "record": null
-  },
-  {
-    "id": 8462052,
-    "name": "Brian Boucher",
-    "team": "",
-    "stopped": 21,
-    "faced": 39,
-    "record": null
-  },
-  {
-    "id": 8462055,
-    "name": "Marc Denis",
-    "team": "",
-    "stopped": 35,
-    "faced": 41,
-    "record": null
-  },
-  {
-    "id": 8462102,
-    "name": "Jean-Sebastien Aubin",
-    "team": "",
+    "id": 8470084,
+    "name": "Hannu Toivonen",
+    "team": "STL",
     "stopped": 13,
     "faced": 20,
-    "record": null
-  },
-  {
-    "id": 8462117,
-    "name": "Vesa Toskala",
-    "team": "",
-    "stopped": 33,
-    "faced": 62,
-    "record": null
-  },
-  {
-    "id": 8462147,
-    "name": "Miikka Kiprusoff",
-    "team": "",
-    "stopped": 89,
-    "faced": 160,
-    "record": null
-  },
-  {
-    "id": 8462152,
-    "name": "Chris Mason",
-    "team": "",
-    "stopped": 65,
-    "faced": 97,
-    "record": null
-  },
-  {
-    "id": 8462161,
-    "name": "Brent Johnson",
-    "team": "",
-    "stopped": 35,
-    "faced": 48,
-    "record": null
-  },
-  {
-    "id": 8462255,
-    "name": "Jussi Markkanen",
-    "team": "",
-    "stopped": 10,
-    "faced": 19,
-    "record": null
-  },
-  {
-    "id": 8464999,
-    "name": "Mathieu Garon",
-    "team": "",
-    "stopped": 73,
-    "faced": 100,
-    "record": null
-  },
-  {
-    "id": 8465093,
-    "name": "Robert Esche",
-    "team": "",
-    "stopped": 4,
-    "faced": 10,
-    "record": null
-  },
-  {
-    "id": 8465161,
-    "name": "Steve Valiquette",
-    "team": "",
-    "stopped": 19,
-    "faced": 27,
-    "record": null
-  },
-  {
-    "id": 8466141,
-    "name": "Roberto Luongo",
-    "team": "",
-    "stopped": 231,
-    "faced": 364,
-    "record": null
-  },
-  {
-    "id": 8466156,
-    "name": "Mika Noronen",
-    "team": "",
-    "stopped": 0,
-    "faced": 1,
-    "record": null
-  },
-  {
-    "id": 8466290,
-    "name": "David Aebischer",
-    "team": "",
-    "stopped": 20,
-    "faced": 28,
-    "record": null
-  },
-  {
-    "id": 8466303,
-    "name": "Johan Holmqvist",
-    "team": "",
-    "stopped": 32,
-    "faced": 37,
-    "record": null
-  },
-  {
-    "id": 8466339,
-    "name": "Scott Clemmensen",
-    "team": "",
-    "stopped": 43,
-    "faced": 81,
-    "record": null
-  },
-  {
-    "id": 8467364,
-    "name": "Philippe Sauve",
-    "team": "",
-    "stopped": 3,
-    "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8467391,
-    "name": "Jason LaBarbera",
-    "team": "",
-    "stopped": 39,
-    "faced": 74,
-    "record": null
-  },
-  {
-    "id": 8467430,
-    "name": "Dany Sabourin",
-    "team": "",
-    "stopped": 36,
-    "faced": 49,
-    "record": null
-  },
-  {
-    "id": 8467453,
-    "name": "Andrew Raycroft",
-    "team": "",
-    "stopped": 42,
-    "faced": 65,
-    "record": null
-  },
-  {
-    "id": 8467486,
-    "name": "Mike Morrison",
-    "team": "",
-    "stopped": 18,
-    "faced": 24,
-    "record": null
-  },
-  {
-    "id": 8467511,
-    "name": "Antero Niittymaki",
-    "team": "",
-    "stopped": 63,
-    "faced": 90,
-    "record": null
-  },
-  {
-    "id": 8467913,
-    "name": "Alex Auld",
-    "team": "",
-    "stopped": 54,
-    "faced": 87,
-    "record": null
-  },
-  {
-    "id": 8467950,
-    "name": "Craig Anderson",
-    "team": "",
-    "stopped": 111,
-    "faced": 187,
-    "record": null
-  },
-  {
-    "id": 8467959,
-    "name": "Sebastien Caron",
-    "team": "",
-    "stopped": 4,
-    "faced": 11,
-    "record": null
-  },
-  {
-    "id": 8467972,
-    "name": "Rob Zepp",
-    "team": "",
-    "stopped": 2,
-    "faced": 2,
-    "record": null
-  },
-  {
-    "id": 8468011,
-    "name": "Ryan Miller",
-    "team": "",
-    "stopped": 218,
-    "faced": 320,
-    "record": null
-  },
-  {
-    "id": 8468037,
-    "name": "Martin Prusek",
-    "team": "",
-    "stopped": 7,
-    "faced": 8,
-    "record": null
-  },
-  {
-    "id": 8468038,
-    "name": "Michael Leighton",
-    "team": "",
-    "stopped": 5,
-    "faced": 8,
-    "record": null
-  },
-  {
-    "id": 8468166,
-    "name": "Curtis Sanford",
-    "team": "",
-    "stopped": 26,
-    "faced": 48,
     "record": null
   },
   {
     "id": 8468481,
     "name": "Rick DiPietro",
-    "team": "",
-    "stopped": 89,
-    "faced": 123,
+    "team": "NYI",
+    "stopped": 92,
+    "faced": 126,
     "record": null
   },
   {
-    "id": 8468524,
-    "name": "Ilya Bryzgalov",
-    "team": "",
-    "stopped": 103,
-    "faced": 180,
-    "record": null
-  },
-  {
-    "id": 8468540,
-    "name": "Dan Ellis",
-    "team": "",
-    "stopped": 41,
-    "faced": 62,
-    "record": null
-  },
-  {
-    "id": 8468550,
-    "name": "Mikael Tellqvist",
-    "team": "",
-    "stopped": 34,
-    "faced": 45,
-    "record": null
-  },
-  {
-    "id": 8468646,
-    "name": "Nolan Schaefer",
-    "team": "",
-    "stopped": 3,
-    "faced": 4,
-    "record": null
-  },
-  {
-    "id": 8468685,
-    "name": "Henrik Lundqvist",
-    "team": "",
-    "stopped": 258,
-    "faced": 370,
-    "record": null
-  },
-  {
-    "id": 8468741,
-    "name": "Reinhard Divis",
-    "team": "",
-    "stopped": 1,
-    "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8469152,
-    "name": "Ty Conklin",
-    "team": "",
-    "stopped": 26,
-    "faced": 51,
-    "record": null
-  },
-  {
-    "id": 8469461,
-    "name": "Pascal Leclaire",
-    "team": "",
-    "stopped": 42,
-    "faced": 67,
-    "record": null
-  },
-  {
-    "id": 8469479,
-    "name": "Jason Bacashihua",
-    "team": "",
-    "stopped": 7,
+    "id": 8467959,
+    "name": "Sebastien Caron",
+    "team": "PIT",
+    "stopped": 4,
     "faced": 10,
     "record": null
   },
   {
-    "id": 8469482,
-    "name": "Adam Munro",
-    "team": "",
-    "stopped": 2,
-    "faced": 4,
+    "id": 8448382,
+    "name": "Curtis Joseph",
+    "team": "TOR",
+    "stopped": 32,
+    "faced": 43,
     "record": null
   },
   {
-    "id": 8469514,
-    "name": "Peter Budaj",
-    "team": "",
-    "stopped": 91,
-    "faced": 150,
+    "id": 8467486,
+    "name": "Mike Morrison",
+    "team": "EDM,OTT",
+    "stopped": 18,
+    "faced": 24,
     "record": null
   },
   {
-    "id": 8469529,
-    "name": "Michael Garnett",
-    "team": "",
-    "stopped": 4,
-    "faced": 8,
+    "id": 8458568,
+    "name": "Chris Osgood",
+    "team": "DET",
+    "stopped": 41,
+    "faced": 67,
     "record": null
   },
   {
-    "id": 8469548,
-    "name": "Ray Emery",
-    "team": "",
-    "stopped": 45,
-    "faced": 81,
-    "record": null
-  },
-  {
-    "id": 8469608,
-    "name": "Mike Smith",
-    "team": "",
-    "stopped": 100,
-    "faced": 184,
-    "record": null
-  },
-  {
-    "id": 8469658,
-    "name": "Cristobal Huet",
-    "team": "",
-    "stopped": 48,
-    "faced": 81,
-    "record": null
-  },
-  {
-    "id": 8469675,
-    "name": "Martin Gerber",
-    "team": "",
-    "stopped": 43,
-    "faced": 62,
-    "record": null
-  },
-  {
-    "id": 8469732,
-    "name": "Joey MacDonald",
-    "team": "",
+    "id": 8447687,
+    "name": "Dominik Hasek",
+    "team": "DET",
     "stopped": 27,
     "faced": 44,
     "record": null
   },
   {
-    "id": 8470074,
-    "name": "Jeff Deslauriers",
-    "team": "",
+    "id": 8468550,
+    "name": "Mikael Tellqvist",
+    "team": "PHX,BUF",
+    "stopped": 34,
+    "faced": 45,
+    "record": null
+  },
+  {
+    "id": 8445769,
+    "name": "Sean Burke",
+    "team": "LAK",
     "stopped": 17,
-    "faced": 27,
+    "faced": 33,
     "record": null
   },
   {
-    "id": 8470084,
-    "name": "Hannu Toivonen",
-    "team": "",
-    "stopped": 13,
-    "faced": 20,
-    "record": null
-  },
-  {
-    "id": 8470090,
-    "name": "Fredrik Norrena",
-    "team": "",
-    "stopped": 21,
-    "faced": 34,
+    "id": 8460516,
+    "name": "Dan Cloutier",
+    "team": "LAK",
+    "stopped": 3,
+    "faced": 6,
     "record": null
   },
   {
     "id": 8470140,
     "name": "Kari Lehtonen",
-    "team": "",
-    "stopped": 152,
-    "faced": 226,
+    "team": "DAL",
+    "stopped": 180,
+    "faced": 254,
     "record": null
   },
   {
-    "id": 8470147,
-    "name": "Curtis McElhinney",
-    "team": "",
-    "stopped": 25,
-    "faced": 46,
+    "id": 8467913,
+    "name": "Alex Auld",
+    "team": "OTT",
+    "stopped": 60,
+    "faced": 93,
     "record": null
   },
   {
-    "id": 8470216,
-    "name": "Josh Harding",
-    "team": "",
-    "stopped": 37,
-    "faced": 58,
+    "id": 8462102,
+    "name": "Jean-Sebastien Aubin",
+    "team": "LAK",
+    "stopped": 13,
+    "faced": 20,
     "record": null
   },
   {
-    "id": 8470263,
-    "name": "David Leneveu",
-    "team": "",
-    "stopped": 2,
+    "id": 8459432,
+    "name": "Jocelyn Thibault",
+    "team": "BUF",
+    "stopped": 18,
+    "faced": 27,
+    "record": null
+  },
+  {
+    "id": 8466156,
+    "name": "Mika Noronen",
+    "team": "BUF,VAN",
+    "stopped": 0,
+    "faced": 1,
+    "record": null
+  },
+  {
+    "id": 8460705,
+    "name": "Evgeni Nabokov",
+    "team": "TBL",
+    "stopped": 140,
+    "faced": 219,
+    "record": null
+  },
+  {
+    "id": 8462255,
+    "name": "Jussi Markkanen",
+    "team": "EDM",
+    "stopped": 9,
+    "faced": 19,
+    "record": null
+  },
+  {
+    "id": 8462152,
+    "name": "Chris Mason",
+    "team": "WPG",
+    "stopped": 76,
+    "faced": 109,
+    "record": null
+  },
+  {
+    "id": 8462161,
+    "name": "Brent Johnson",
+    "team": "PIT",
+    "stopped": 42,
+    "faced": 55,
+    "record": null
+  },
+  {
+    "id": 8467364,
+    "name": "Philippe Sauve",
+    "team": "CGY,PHX",
+    "stopped": 3,
     "faced": 3,
     "record": null
   },
   {
-    "id": 8470264,
-    "name": "Barry Brust",
-    "team": "",
-    "stopped": 4,
-    "faced": 5,
+    "id": 8468037,
+    "name": "Martin Prusek",
+    "team": "CBJ",
+    "stopped": 7,
+    "faced": 8,
     "record": null
   },
   {
-    "id": 8470320,
-    "name": "Cam Ward",
-    "team": "",
-    "stopped": 96,
-    "faced": 163,
+    "id": 8469152,
+    "name": "Ty Conklin",
+    "team": "DET",
+    "stopped": 29,
+    "faced": 55,
     "record": null
   },
   {
-    "id": 8470584,
-    "name": "Wade Dubielewicz",
-    "team": "",
-    "stopped": 19,
-    "faced": 24,
+    "id": 8458562,
+    "name": "Jamie McLennan",
+    "team": "CGY",
+    "stopped": 9,
+    "faced": 15,
     "record": null
   },
   {
     "id": 8470594,
     "name": "Marc-Andre Fleury",
-    "team": "",
-    "stopped": 212,
-    "faced": 312,
+    "team": "MIN",
+    "stopped": 262,
+    "faced": 362,
+    "record": null
+  },
+  {
+    "id": 8470584,
+    "name": "Wade Dubielewicz",
+    "team": "MIN",
+    "stopped": 19,
+    "faced": 24,
+    "record": null
+  },
+  {
+    "id": 8460703,
+    "name": "Tim Thomas",
+    "team": "FLA,DAL",
+    "stopped": 170,
+    "faced": 234,
+    "record": null
+  },
+  {
+    "id": 8459308,
+    "name": "Manny Legace",
+    "team": "CAR",
+    "stopped": 62,
+    "faced": 88,
+    "record": null
+  },
+  {
+    "id": 8469482,
+    "name": "Adam Munro",
+    "team": "CHI",
+    "stopped": 2,
+    "faced": 4,
+    "record": null
+  },
+  {
+    "id": 8459463,
+    "name": "Kevin Weekes",
+    "team": "NJD",
+    "stopped": 13,
+    "faced": 22,
+    "record": null
+  },
+  {
+    "id": 8459140,
+    "name": "Nikolai Khabibulin",
+    "team": "EDM",
+    "stopped": 86,
+    "faced": 138,
+    "record": null
+  },
+  {
+    "id": 8468741,
+    "name": "Reinhard Divis",
+    "team": "STL",
+    "stopped": 1,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8464999,
+    "name": "Mathieu Garon",
+    "team": "TBL",
+    "stopped": 82,
+    "faced": 109,
+    "record": null
+  },
+  {
+    "id": 8469675,
+    "name": "Martin Gerber",
+    "team": "EDM",
+    "stopped": 44,
+    "faced": 63,
+    "record": null
+  },
+  {
+    "id": 8466290,
+    "name": "David Aebischer",
+    "team": "MTL",
+    "stopped": 20,
+    "faced": 28,
+    "record": null
+  },
+  {
+    "id": 8462052,
+    "name": "Brian Boucher",
+    "team": "PHI",
+    "stopped": 22,
+    "faced": 40,
+    "record": null
+  },
+  {
+    "id": 8467950,
+    "name": "Craig Anderson",
+    "team": "BUF",
+    "stopped": 154,
+    "faced": 231,
+    "record": null
+  },
+  {
+    "id": 8460535,
+    "name": "Jose Theodore",
+    "team": "FLA",
+    "stopped": 91,
+    "faced": 134,
+    "record": null
+  },
+  {
+    "id": 8460704,
+    "name": "Johan Hedberg",
+    "team": "NJD",
+    "stopped": 97,
+    "faced": 129,
+    "record": null
+  },
+  {
+    "id": 8462047,
+    "name": "Martin Biron",
+    "team": "NYR",
+    "stopped": 41,
+    "faced": 76,
+    "record": null
+  },
+  {
+    "id": 8458988,
+    "name": "Manny Fernandez",
+    "team": "BOS",
+    "stopped": 46,
+    "faced": 63,
+    "record": null
+  },
+  {
+    "id": 8469658,
+    "name": "Cristobal Huet",
+    "team": "CHI",
+    "stopped": 57,
+    "faced": 91,
     "record": null
   },
   {
     "id": 8470645,
     "name": "Corey Crawford",
-    "team": "",
-    "stopped": 111,
-    "faced": 167,
-    "record": null
-  },
-  {
-    "id": 8470657,
-    "name": "Jimmy Howard",
-    "team": "",
-    "stopped": 121,
-    "faced": 190,
-    "record": null
-  },
-  {
-    "id": 8470860,
-    "name": "Jaroslav Halak",
-    "team": "",
-    "stopped": 128,
-    "faced": 204,
-    "record": null
-  },
-  {
-    "id": 8470880,
-    "name": "Brian Elliott",
-    "team": "",
-    "stopped": 119,
-    "faced": 190,
-    "record": null
-  },
-  {
-    "id": 8471186,
-    "name": "Yann Danis",
-    "team": "",
-    "stopped": 2,
-    "faced": 8,
-    "record": null
-  },
-  {
-    "id": 8471219,
-    "name": "Al Montoya",
-    "team": "",
-    "stopped": 24,
-    "faced": 48,
-    "record": null
-  },
-  {
-    "id": 8471227,
-    "name": "Devan Dubnyk",
-    "team": "",
-    "stopped": 83,
-    "faced": 144,
-    "record": null
-  },
-  {
-    "id": 8471239,
-    "name": "Cory Schneider",
-    "team": "",
-    "stopped": 72,
-    "faced": 127,
-    "record": null
-  },
-  {
-    "id": 8471251,
-    "name": "Justin Peters",
-    "team": "",
-    "stopped": 6,
-    "faced": 17,
-    "record": null
-  },
-  {
-    "id": 8471302,
-    "name": "Justin Pogge",
-    "team": "",
-    "stopped": 0,
-    "faced": 2,
-    "record": null
-  },
-  {
-    "id": 8471306,
-    "name": "Thomas Greiss",
-    "team": "",
-    "stopped": 82,
-    "faced": 119,
-    "record": null
-  },
-  {
-    "id": 8471403,
-    "name": "Karri Ramo",
-    "team": "",
-    "stopped": 32,
-    "faced": 52,
-    "record": null
-  },
-  {
-    "id": 8471418,
-    "name": "Anton Khudobin",
-    "team": "",
-    "stopped": 42,
-    "faced": 60,
-    "record": null
-  },
-  {
-    "id": 8471469,
-    "name": "Pekka Rinne",
-    "team": "",
-    "stopped": 165,
-    "faced": 244,
-    "record": null
-  },
-  {
-    "id": 8471679,
-    "name": "Carey Price",
-    "team": "",
-    "stopped": 145,
-    "faced": 210,
-    "record": null
-  },
-  {
-    "id": 8471695,
-    "name": "Tuukka Rask",
-    "team": "",
-    "stopped": 151,
-    "faced": 217,
-    "record": null
-  },
-  {
-    "id": 8471715,
-    "name": "Ondrej Pavelec",
-    "team": "",
-    "stopped": 77,
-    "faced": 137,
-    "record": null
-  },
-  {
-    "id": 8471734,
-    "name": "Jonathan Quick",
-    "team": "",
-    "stopped": 175,
-    "faced": 284,
-    "record": null
-  },
-  {
-    "id": 8471750,
-    "name": "Ben Bishop",
-    "team": "",
-    "stopped": 90,
-    "faced": 140,
-    "record": null
-  },
-  {
-    "id": 8471774,
-    "name": "Alex Stalock",
-    "team": "",
-    "stopped": 32,
-    "faced": 53,
+    "team": "CHI",
+    "stopped": 141,
+    "faced": 197,
     "record": null
   },
   {
     "id": 8471915,
     "name": "Vitaly Kolesnik",
-    "team": "",
+    "team": "COL",
     "stopped": 7,
     "faced": 7,
     "record": null
   },
   {
-    "id": 8473404,
-    "name": "Niklas Backstrom",
-    "team": "",
-    "stopped": 83,
-    "faced": 164,
+    "id": 8462044,
+    "name": "Jean-Sebastien Giguere",
+    "team": "COL",
+    "stopped": 93,
+    "faced": 155,
     "record": null
   },
   {
-    "id": 8473414,
-    "name": "Leland Irving",
-    "team": "",
+    "id": 8445386,
+    "name": "Ed Belfour",
+    "team": "FLA",
+    "stopped": 24,
+    "faced": 39,
+    "record": null
+  },
+  {
+    "id": 8468166,
+    "name": "Curtis Sanford",
+    "team": "CBJ",
+    "stopped": 28,
+    "faced": 50,
+    "record": null
+  },
+  {
+    "id": 8468646,
+    "name": "Nolan Schaefer",
+    "team": "SJS",
+    "stopped": 3,
+    "faced": 4,
+    "record": null
+  },
+  {
+    "id": 8456137,
+    "name": "Mike Dunham",
+    "team": "NYI",
+    "stopped": 6,
+    "faced": 12,
+    "record": null
+  },
+  {
+    "id": 8460715,
+    "name": "John Grahame",
+    "team": "CAR",
+    "stopped": 14,
+    "faced": 22,
+    "record": null
+  },
+  {
+    "id": 8467511,
+    "name": "Antero Niittymaki",
+    "team": "SJS",
+    "stopped": 68,
+    "faced": 95,
+    "record": null
+  },
+  {
+    "id": 8468685,
+    "name": "Henrik Lundqvist",
+    "team": "NYR",
+    "stopped": 293,
+    "faced": 406,
+    "record": null
+  },
+  {
+    "id": 8470263,
+    "name": "David Leneveu",
+    "team": "PHX",
+    "stopped": 2,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8470320,
+    "name": "Cam Ward",
+    "team": "CHI",
+    "stopped": 124,
+    "faced": 193,
+    "record": null
+  },
+  {
+    "id": 8462055,
+    "name": "Marc Denis",
+    "team": "TBL",
+    "stopped": 35,
+    "faced": 41,
+    "record": null
+  },
+  {
+    "id": 8448535,
+    "name": "Olie Kolzig",
+    "team": "WSH",
+    "stopped": 60,
+    "faced": 95,
+    "record": null
+  },
+  {
+    "id": 8465093,
+    "name": "Robert Esche",
+    "team": "PHI",
+    "stopped": 4,
+    "faced": 10,
+    "record": null
+  },
+  {
+    "id": 8469479,
+    "name": "Jason Bacashihua",
+    "team": "STL",
+    "stopped": 7,
+    "faced": 10,
+    "record": null
+  },
+  {
+    "id": 8470216,
+    "name": "Josh Harding",
+    "team": "MIN",
+    "stopped": 52,
+    "faced": 73,
+    "record": null
+  },
+  {
+    "id": 8460612,
+    "name": "Marty Turco",
+    "team": "CHI",
+    "stopped": 138,
+    "faced": 202,
+    "record": null
+  },
+  {
+    "id": 8462117,
+    "name": "Vesa Toskala",
+    "team": "TOR,CGY",
+    "stopped": 33,
+    "faced": 63,
+    "record": null
+  },
+  {
+    "id": 8469548,
+    "name": "Ray Emery",
+    "team": "PHI",
+    "stopped": 52,
+    "faced": 88,
+    "record": null
+  },
+  {
+    "id": 8458615,
+    "name": "Steve Shields",
+    "team": "ATL",
     "stopped": 1,
+    "faced": 2,
+    "record": null
+  },
+  {
+    "id": 8466141,
+    "name": "Roberto Luongo",
+    "team": "FLA",
+    "stopped": 269,
+    "faced": 402,
+    "record": null
+  },
+  {
+    "id": 8469461,
+    "name": "Pascal Leclaire",
+    "team": "OTT",
+    "stopped": 44,
+    "faced": 69,
+    "record": null
+  },
+  {
+    "id": 8460806,
+    "name": "Dwayne Roloson",
+    "team": "TBL",
+    "stopped": 125,
+    "faced": 183,
+    "record": null
+  },
+  {
+    "id": 8466339,
+    "name": "Scott Clemmensen",
+    "team": "NJD",
+    "stopped": 61,
+    "faced": 99,
+    "record": null
+  },
+  {
+    "id": 8469514,
+    "name": "Peter Budaj",
+    "team": "TBL",
+    "stopped": 101,
+    "faced": 161,
+    "record": null
+  },
+  {
+    "id": 8468011,
+    "name": "Ryan Miller",
+    "team": "ANA",
+    "stopped": 249,
+    "faced": 351,
+    "record": null
+  },
+  {
+    "id": 8469529,
+    "name": "Michael Garnett",
+    "team": "ATL",
+    "stopped": 4,
+    "faced": 8,
+    "record": null
+  },
+  {
+    "id": 8467391,
+    "name": "Jason LaBarbera",
+    "team": "ANA",
+    "stopped": 47,
+    "faced": 82,
+    "record": null
+  },
+  {
+    "id": 8460712,
+    "name": "Tomas Vokoun",
+    "team": "WSH",
+    "stopped": 108,
+    "faced": 163,
+    "record": null
+  },
+  {
+    "id": 8467453,
+    "name": "Andrew Raycroft",
+    "team": "DAL",
+    "stopped": 42,
+    "faced": 66,
+    "record": null
+  },
+  {
+    "id": 8459579,
+    "name": "Patrick Lalime",
+    "team": "BUF",
+    "stopped": 27,
+    "faced": 45,
+    "record": null
+  },
+  {
+    "id": 8462147,
+    "name": "Miikka Kiprusoff",
+    "team": "CGY",
+    "stopped": 112,
+    "faced": 185,
+    "record": null
+  },
+  {
+    "id": 8455710,
+    "name": "Martin Brodeur",
+    "team": "NJD",
+    "stopped": 169,
+    "faced": 244,
+    "record": null
+  },
+  {
+    "id": 8473404,
+    "name": "Niklas Backstrom",
+    "team": "MIN",
+    "stopped": 106,
+    "faced": 188,
+    "record": null
+  },
+  {
+    "id": 8470090,
+    "name": "Fredrik Norrena",
+    "team": "CBJ",
+    "stopped": 21,
+    "faced": 34,
+    "record": null
+  },
+  {
+    "id": 8469608,
+    "name": "Mike Smith",
+    "team": "EDM",
+    "stopped": 137,
+    "faced": 222,
+    "record": null
+  },
+  {
+    "id": 8467430,
+    "name": "Dany Sabourin",
+    "team": "PIT",
+    "stopped": 36,
+    "faced": 49,
+    "record": null
+  },
+  {
+    "id": 8465161,
+    "name": "Steve Valiquette",
+    "team": "NYR",
+    "stopped": 19,
+    "faced": 27,
+    "record": null
+  },
+  {
+    "id": 8470860,
+    "name": "Jaroslav Halak",
+    "team": "VAN",
+    "stopped": 168,
+    "faced": 245,
+    "record": null
+  },
+  {
+    "id": 8460696,
+    "name": "Frederic Cassivi",
+    "team": "WSH",
+    "stopped": 1,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8469732,
+    "name": "Joey MacDonald",
+    "team": "CGY",
+    "stopped": 30,
+    "faced": 47,
+    "record": null
+  },
+  {
+    "id": 8468524,
+    "name": "Ilya Bryzgalov",
+    "team": "ANA",
+    "stopped": 126,
+    "faced": 204,
+    "record": null
+  },
+  {
+    "id": 8466303,
+    "name": "Johan Holmqvist",
+    "team": "TBL,DAL",
+    "stopped": 32,
+    "faced": 37,
+    "record": null
+  },
+  {
+    "id": 8470264,
+    "name": "Barry Brust",
+    "team": "LAK",
+    "stopped": 4,
     "faced": 5,
     "record": null
   },
   {
-    "id": 8473434,
-    "name": "Chad Johnson",
-    "team": "",
-    "stopped": 25,
-    "faced": 38,
+    "id": 8471403,
+    "name": "Karri Ramo",
+    "team": "CGY",
+    "stopped": 35,
+    "faced": 55,
+    "record": null
+  },
+  {
+    "id": 8473975,
+    "name": "Erik Ersberg",
+    "team": "LAK",
+    "stopped": 29,
+    "faced": 46,
+    "record": null
+  },
+  {
+    "id": 8468540,
+    "name": "Dan Ellis",
+    "team": "FLA",
+    "stopped": 47,
+    "faced": 68,
+    "record": null
+  },
+  {
+    "id": 8471679,
+    "name": "Carey Price",
+    "team": "MTL",
+    "stopped": 165,
+    "faced": 230,
+    "record": null
+  },
+  {
+    "id": 8473972,
+    "name": "Jonas Hiller",
+    "team": "CGY",
+    "stopped": 137,
+    "faced": 201,
+    "record": null
+  },
+  {
+    "id": 8471239,
+    "name": "Cory Schneider",
+    "team": "NJD",
+    "stopped": 96,
+    "faced": 151,
     "record": null
   },
   {
     "id": 8473461,
     "name": "Steve Mason",
-    "team": "",
-    "stopped": 111,
-    "faced": 188,
+    "team": "PHI",
+    "stopped": 150,
+    "faced": 229,
     "record": null
   },
   {
-    "id": 8473499,
-    "name": "Reto Berra",
-    "team": "",
-    "stopped": 20,
-    "faced": 29,
+    "id": 8471734,
+    "name": "Jonathan Quick",
+    "team": "NYR",
+    "stopped": 233,
+    "faced": 342,
     "record": null
   },
   {
-    "id": 8473503,
-    "name": "James Reimer",
-    "team": "",
-    "stopped": 113,
-    "faced": 177,
+    "id": 8468038,
+    "name": "Michael Leighton",
+    "team": "CAR,PHI",
+    "stopped": 7,
+    "faced": 10,
     "record": null
   },
   {
-    "id": 8473523,
-    "name": "Jhonas Enroth",
-    "team": "",
-    "stopped": 43,
-    "faced": 61,
+    "id": 8470074,
+    "name": "Jeff Deslauriers",
+    "team": "EDM",
+    "stopped": 29,
+    "faced": 40,
+    "record": null
+  },
+  {
+    "id": 8471469,
+    "name": "Pekka Rinne",
+    "team": "NSH",
+    "stopped": 212,
+    "faced": 291,
+    "record": null
+  },
+  {
+    "id": 8474488,
+    "name": "Matt Climie",
+    "team": "DAL",
+    "stopped": 1,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8470880,
+    "name": "Brian Elliott",
+    "team": "TBL",
+    "stopped": 146,
+    "faced": 217,
+    "record": null
+  },
+  {
+    "id": 8471750,
+    "name": "Ben Bishop",
+    "team": "DAL",
+    "stopped": 110,
+    "faced": 160,
+    "record": null
+  },
+  {
+    "id": 8471186,
+    "name": "Yann Danis",
+    "team": "NJD",
+    "stopped": 2,
+    "faced": 8,
+    "record": null
+  },
+  {
+    "id": 8471302,
+    "name": "Justin Pogge",
+    "team": "TOR",
+    "stopped": 0,
+    "faced": 2,
+    "record": null
+  },
+  {
+    "id": 8473434,
+    "name": "Chad Johnson",
+    "team": "CGY",
+    "stopped": 30,
+    "faced": 43,
+    "record": null
+  },
+  {
+    "id": 8471715,
+    "name": "Ondrej Pavelec",
+    "team": "NYR",
+    "stopped": 106,
+    "faced": 166,
+    "record": null
+  },
+  {
+    "id": 8471306,
+    "name": "Thomas Greiss",
+    "team": "STL",
+    "stopped": 103,
+    "faced": 140,
+    "record": null
+  },
+  {
+    "id": 8474550,
+    "name": "Antti Niemi",
+    "team": "MTL",
+    "stopped": 178,
+    "faced": 245,
     "record": null
   },
   {
     "id": 8473541,
     "name": "Jonathan Bernier",
-    "team": "",
-    "stopped": 59,
-    "faced": 111,
+    "team": "NJD",
+    "stopped": 86,
+    "faced": 138,
     "record": null
   },
   {
-    "id": 8473553,
-    "name": "Jeff Zatkoff",
-    "team": "",
-    "stopped": 2,
-    "faced": 6,
+    "id": 8470657,
+    "name": "Jimmy Howard",
+    "team": "DET",
+    "stopped": 163,
+    "faced": 234,
     "record": null
   },
   {
     "id": 8473575,
     "name": "Semyon Varlamov",
     "team": "NYI",
-    "stopped": 128,
-    "faced": 185,
+    "stopped": 156,
+    "faced": 214,
+    "record": null
+  },
+  {
+    "id": 8471695,
+    "name": "Tuukka Rask",
+    "team": "BOS",
+    "stopped": 172,
+    "faced": 238,
+    "record": null
+  },
+  {
+    "id": 8475361,
+    "name": "Jonas Gustavsson",
+    "team": "BOS",
+    "stopped": 41,
+    "faced": 58,
+    "record": null
+  },
+  {
+    "id": 8471227,
+    "name": "Devan Dubnyk",
+    "team": "SJS,COL",
+    "stopped": 112,
+    "faced": 173,
+    "record": null
+  },
+  {
+    "id": 8470147,
+    "name": "Curtis McElhinney",
+    "team": "TBL",
+    "stopped": 30,
+    "faced": 51,
     "record": null
   },
   {
     "id": 8473607,
     "name": "Michal Neuvirth",
-    "team": "",
-    "stopped": 52,
-    "faced": 86,
+    "team": "PHI",
+    "stopped": 71,
+    "faced": 105,
+    "record": null
+  },
+  {
+    "id": 8475683,
+    "name": "Sergei Bobrovsky",
+    "team": "FLA",
+    "stopped": 161,
+    "faced": 225,
+    "record": null
+  },
+  {
+    "id": 8471219,
+    "name": "Al Montoya",
+    "team": "MTL,EDM",
+    "stopped": 32,
+    "faced": 56,
+    "record": null
+  },
+  {
+    "id": 8473503,
+    "name": "James Reimer",
+    "team": "ANA,BUF",
+    "stopped": 143,
+    "faced": 207,
+    "record": null
+  },
+  {
+    "id": 8473523,
+    "name": "Jhonas Enroth",
+    "team": "TOR",
+    "stopped": 55,
+    "faced": 73,
+    "record": null
+  },
+  {
+    "id": 8474651,
+    "name": "Braden Holtby",
+    "team": "DAL",
+    "stopped": 130,
+    "faced": 190,
+    "record": null
+  },
+  {
+    "id": 8471251,
+    "name": "Justin Peters",
+    "team": "WSH",
+    "stopped": 7,
+    "faced": 18,
+    "record": null
+  },
+  {
+    "id": 8474855,
+    "name": "Nathan Lawson",
+    "team": "NYI",
+    "stopped": 2,
+    "faced": 6,
+    "record": null
+  },
+  {
+    "id": 8475431,
+    "name": "Henrik Karlsson",
+    "team": "CGY",
+    "stopped": 6,
+    "faced": 11,
+    "record": null
+  },
+  {
+    "id": 8474690,
+    "name": "Kevin Poulin",
+    "team": "NYI",
+    "stopped": 13,
+    "faced": 19,
+    "record": null
+  },
+  {
+    "id": 8475156,
+    "name": "Mikko Koskinen",
+    "team": "EDM",
+    "stopped": 34,
+    "faced": 41,
     "record": null
   },
   {
     "id": 8473614,
     "name": "Richard Bachman",
-    "team": "",
-    "stopped": 3,
+    "team": "EDM",
+    "stopped": 5,
+    "faced": 8,
+    "record": null
+  },
+  {
+    "id": 8473414,
+    "name": "Leland Irving",
+    "team": "CGY",
+    "stopped": 2,
     "faced": 6,
-    "record": null
-  },
-  {
-    "id": 8473972,
-    "name": "Jonas Hiller",
-    "team": "",
-    "stopped": 114,
-    "faced": 178,
-    "record": null
-  },
-  {
-    "id": 8473975,
-    "name": "Erik Ersberg",
-    "team": "",
-    "stopped": 25,
-    "faced": 42,
-    "record": null
-  },
-  {
-    "id": 8474092,
-    "name": "Jeremy Smith",
-    "team": "",
-    "stopped": 1,
-    "faced": 2,
-    "record": null
-  },
-  {
-    "id": 8474152,
-    "name": "Scott Darling",
-    "team": "",
-    "stopped": 19,
-    "faced": 29,
-    "record": null
-  },
-  {
-    "id": 8474488,
-    "name": "Matt Climie",
-    "team": "",
-    "stopped": 1,
-    "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8474550,
-    "name": "Antti Niemi",
-    "team": "",
-    "stopped": 129,
-    "faced": 196,
     "record": null
   },
   {
     "id": 8474593,
     "name": "Jacob Markstrom",
-    "team": "FLA",
-    "stopped": 113,
-    "faced": 166,
+    "team": "NJD",
+    "stopped": 124,
+    "faced": 177,
+    "record": null
+  },
+  {
+    "id": 8475252,
+    "name": "Matt Hackett",
+    "team": "MIN",
+    "stopped": 3,
+    "faced": 5,
+    "record": null
+  },
+  {
+    "id": 8475681,
+    "name": "Ben Scrivens",
+    "team": "MTL",
+    "stopped": 46,
+    "faced": 63,
+    "record": null
+  },
+  {
+    "id": 8474765,
+    "name": "Anders Lindback",
+    "team": "DAL,BUF",
+    "stopped": 21,
+    "faced": 27,
+    "record": null
+  },
+  {
+    "id": 8475215,
+    "name": "Robin Lehner",
+    "team": "VGK",
+    "stopped": 67,
+    "faced": 123,
+    "record": null
+  },
+  {
+    "id": 8476839,
+    "name": "Viktor Fasth",
+    "team": "EDM",
+    "stopped": 38,
+    "faced": 54,
+    "record": null
+  },
+  {
+    "id": 8471418,
+    "name": "Anton Khudobin",
+    "team": "DAL",
+    "stopped": 60,
+    "faced": 78,
     "record": null
   },
   {
     "id": 8474596,
     "name": "Jake Allen",
     "team": "NJD",
-    "stopped": 78,
-    "faced": 111,
-    "record": null
-  },
-  {
-    "id": 8474636,
-    "name": "Michael Hutchinson",
-    "team": "",
-    "stopped": 13,
-    "faced": 23,
-    "record": null
-  },
-  {
-    "id": 8474651,
-    "name": "Braden Holtby",
-    "team": "",
-    "stopped": 102,
-    "faced": 162,
-    "record": null
-  },
-  {
-    "id": 8474682,
-    "name": "Dustin Tokarski",
-    "team": "",
-    "stopped": 12,
-    "faced": 28,
-    "record": null
-  },
-  {
-    "id": 8474690,
-    "name": "Kevin Poulin",
-    "team": "",
-    "stopped": 9,
-    "faced": 15,
-    "record": null
-  },
-  {
-    "id": 8474765,
-    "name": "Anders Lindback",
-    "team": "",
-    "stopped": 14,
-    "faced": 20,
-    "record": null
-  },
-  {
-    "id": 8474855,
-    "name": "Nathan Lawson",
-    "team": "",
-    "stopped": 2,
-    "faced": 6,
-    "record": null
-  },
-  {
-    "id": 8474889,
-    "name": "Martin Jones",
-    "team": "",
-    "stopped": 78,
-    "faced": 106,
-    "record": null
-  },
-  {
-    "id": 8475156,
-    "name": "Mikko Koskinen",
-    "team": "",
-    "stopped": 24,
-    "faced": 31,
-    "record": null
-  },
-  {
-    "id": 8475195,
-    "name": "Anders Nilsson",
-    "team": "",
-    "stopped": 20,
-    "faced": 35,
-    "record": null
-  },
-  {
-    "id": 8475215,
-    "name": "Robin Lehner",
-    "team": "",
-    "stopped": 49,
-    "faced": 105,
-    "record": null
-  },
-  {
-    "id": 8475234,
-    "name": "J-F Berube",
-    "team": "",
-    "stopped": 2,
-    "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8475252,
-    "name": "Matt Hackett",
-    "team": "",
-    "stopped": 2,
-    "faced": 4,
-    "record": null
-  },
-  {
-    "id": 8475277,
-    "name": "Edward Pasquale",
-    "team": "",
-    "stopped": 2,
-    "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8475299,
-    "name": "Joni Ortio",
-    "team": "",
-    "stopped": 1,
-    "faced": 4,
-    "record": null
-  },
-  {
-    "id": 8475303,
-    "name": "Connor Knapp",
-    "team": "",
-    "stopped": 1,
-    "faced": 2,
-    "record": null
-  },
-  {
-    "id": 8475311,
-    "name": "Darcy Kuemper",
-    "team": "LAK",
-    "stopped": 97,
-    "faced": 156,
-    "record": null
-  },
-  {
-    "id": 8475361,
-    "name": "Jonas Gustavsson",
-    "team": "",
-    "stopped": 30,
-    "faced": 47,
-    "record": null
-  },
-  {
-    "id": 8475431,
-    "name": "Henrik Karlsson",
-    "team": "",
-    "stopped": 4,
-    "faced": 9,
-    "record": null
-  },
-  {
-    "id": 8475622,
-    "name": "Carter Hutton",
-    "team": "",
-    "stopped": 36,
-    "faced": 63,
-    "record": null
-  },
-  {
-    "id": 8475660,
-    "name": "Cam Talbot",
-    "team": "",
-    "stopped": 71,
-    "faced": 119,
-    "record": null
-  },
-  {
-    "id": 8475663,
-    "name": "Eddie Lack",
-    "team": "",
-    "stopped": 30,
-    "faced": 39,
-    "record": null
-  },
-  {
-    "id": 8475681,
-    "name": "Ben Scrivens",
-    "team": "",
-    "stopped": 33,
-    "faced": 50,
-    "record": null
-  },
-  {
-    "id": 8475683,
-    "name": "Sergei Bobrovsky",
-    "team": "TOR",
-    "stopped": 133,
-    "faced": 197,
-    "record": null
-  },
-  {
-    "id": 8475717,
-    "name": "Calvin Pickard",
-    "team": "",
-    "stopped": 17,
-    "faced": 23,
-    "record": null
-  },
-  {
-    "id": 8475789,
-    "name": "Jack Campbell",
-    "team": "",
-    "stopped": 19,
-    "faced": 31,
-    "record": null
-  },
-  {
-    "id": 8475809,
-    "name": "Scott Wedgewood",
-    "team": "COL",
-    "stopped": 42,
-    "faced": 68,
+    "stopped": 91,
+    "faced": 124,
     "record": null
   },
   {
     "id": 8475831,
     "name": "Philipp Grubauer",
     "team": "SEA",
-    "stopped": 55,
-    "faced": 87,
+    "stopped": 65,
+    "faced": 97,
     "record": null
   },
   {
-    "id": 8475839,
-    "name": "Louis Domingue",
-    "team": "",
-    "stopped": 21,
-    "faced": 27,
+    "id": 8475303,
+    "name": "Connor Knapp",
+    "team": "BUF",
+    "stopped": 1,
+    "faced": 2,
     "record": null
   },
   {
-    "id": 8475852,
-    "name": "Petr Mrazek",
-    "team": "",
-    "stopped": 70,
-    "faced": 96,
+    "id": 8475195,
+    "name": "Anders Nilsson",
+    "team": "OTT",
+    "stopped": 28,
+    "faced": 43,
+    "record": null
+  },
+  {
+    "id": 8474636,
+    "name": "Michael Hutchinson",
+    "team": "TOR,COL",
+    "stopped": 19,
+    "faced": 29,
+    "record": null
+  },
+  {
+    "id": 8473499,
+    "name": "Reto Berra",
+    "team": "ANA",
+    "stopped": 25,
+    "faced": 34,
+    "record": null
+  },
+  {
+    "id": 8474889,
+    "name": "Martin Jones",
+    "team": "SEA",
+    "stopped": 90,
+    "faced": 118,
     "record": null
   },
   {
     "id": 8475883,
     "name": "Frederik Andersen",
-    "team": "EDM",
-    "stopped": 102,
-    "faced": 163,
-    "record": null
-  },
-  {
-    "id": 8475920,
-    "name": "Michael Houser",
-    "team": "",
-    "stopped": 3,
-    "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8476234,
-    "name": "Keith Kinkaid",
-    "team": "",
-    "stopped": 26,
-    "faced": 40,
-    "record": null
-  },
-  {
-    "id": 8476316,
-    "name": "Laurent Brossoit",
-    "team": "",
-    "stopped": 18,
-    "faced": 34,
+    "team": "CAR",
+    "stopped": 125,
+    "faced": 186,
     "record": null
   },
   {
     "id": 8476319,
     "name": "Nathan Lieuwen",
-    "team": "",
+    "team": "BUF",
+    "stopped": 7,
+    "faced": 9,
+    "record": null
+  },
+  {
+    "id": 8471774,
+    "name": "Alex Stalock",
+    "team": "CHI",
+    "stopped": 43,
+    "faced": 64,
+    "record": null
+  },
+  {
+    "id": 8476763,
+    "name": "Calvin Heeter",
+    "team": "PHI",
+    "stopped": 1,
+    "faced": 2,
+    "record": null
+  },
+  {
+    "id": 8475622,
+    "name": "Carter Hutton",
+    "team": "BUF",
+    "stopped": 45,
+    "faced": 72,
+    "record": null
+  },
+  {
+    "id": 8473553,
+    "name": "Jeff Zatkoff",
+    "team": "PIT",
+    "stopped": 2,
+    "faced": 6,
+    "record": null
+  },
+  {
+    "id": 8475660,
+    "name": "Cam Talbot",
+    "team": "DET",
+    "stopped": 87,
+    "faced": 135,
+    "record": null
+  },
+  {
+    "id": 8475663,
+    "name": "Eddie Lack",
+    "team": "CAR",
+    "stopped": 35,
+    "faced": 44,
+    "record": null
+  },
+  {
+    "id": 8476992,
+    "name": "Marek Mazanec",
+    "team": "NSH",
     "stopped": 5,
-    "faced": 7,
+    "faced": 10,
+    "record": null
+  },
+  {
+    "id": 8477293,
+    "name": "Antti Raanta",
+    "team": "CAR",
+    "stopped": 37,
+    "faced": 64,
+    "record": null
+  },
+  {
+    "id": 8474682,
+    "name": "Dustin Tokarski",
+    "team": "BUF",
+    "stopped": 21,
+    "faced": 37,
+    "record": null
+  },
+  {
+    "id": 8475311,
+    "name": "Darcy Kuemper",
+    "team": "LAK",
+    "stopped": 101,
+    "faced": 160,
+    "record": null
+  },
+  {
+    "id": 8474152,
+    "name": "Scott Darling",
+    "team": "CAR",
+    "stopped": 22,
+    "faced": 32,
+    "record": null
+  },
+  {
+    "id": 8477202,
+    "name": "Andrew Hammond",
+    "team": "MTL,NJD",
+    "stopped": 28,
+    "faced": 41,
+    "record": null
+  },
+  {
+    "id": 8476234,
+    "name": "Keith Kinkaid",
+    "team": "NJD",
+    "stopped": 31,
+    "faced": 45,
+    "record": null
+  },
+  {
+    "id": 8476844,
+    "name": "Niklas Svedberg",
+    "team": "BOS",
+    "stopped": 8,
+    "faced": 9,
+    "record": null
+  },
+  {
+    "id": 8475852,
+    "name": "Petr Mrazek",
+    "team": "CHI,DET",
+    "stopped": 90,
+    "faced": 116,
+    "record": null
+  },
+  {
+    "id": 8475717,
+    "name": "Calvin Pickard",
+    "team": "DET",
+    "stopped": 19,
+    "faced": 25,
+    "record": null
+  },
+  {
+    "id": 8476434,
+    "name": "John Gibson",
+    "team": "DET",
+    "stopped": 76,
+    "faced": 124,
+    "record": null
+  },
+  {
+    "id": 8467972,
+    "name": "Rob Zepp",
+    "team": "PHI",
+    "stopped": 2,
+    "faced": 2,
+    "record": null
+  },
+  {
+    "id": 8476343,
+    "name": "Garret Sparks",
+    "team": "TOR",
+    "stopped": 9,
+    "faced": 11,
+    "record": null
+  },
+  {
+    "id": 8475299,
+    "name": "Joni Ortio",
+    "team": "CGY",
+    "stopped": 2,
+    "faced": 5,
+    "record": null
+  },
+  {
+    "id": 8476914,
+    "name": "Joonas Korpisalo",
+    "team": "BOS",
+    "stopped": 40,
+    "faced": 59,
+    "record": null
+  },
+  {
+    "id": 8475234,
+    "name": "J-F Berube",
+    "team": "NYI",
+    "stopped": 2,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8476999,
+    "name": "Linus Ullmark",
+    "team": "OTT",
+    "stopped": 64,
+    "faced": 80,
     "record": null
   },
   {
@@ -1304,283 +1328,243 @@
     "record": null
   },
   {
-    "id": 8476343,
-    "name": "Garret Sparks",
-    "team": "",
-    "stopped": 8,
-    "faced": 10,
-    "record": null
-  },
-  {
-    "id": 8476412,
-    "name": "Jordan Binnington",
-    "team": "STL",
-    "stopped": 79,
-    "faced": 111,
-    "record": null
-  },
-  {
-    "id": 8476433,
-    "name": "Magnus Hellberg",
-    "team": "",
-    "stopped": 4,
-    "faced": 6,
-    "record": null
-  },
-  {
-    "id": 8476434,
-    "name": "John Gibson",
-    "team": "DET",
-    "stopped": 61,
-    "faced": 109,
-    "record": null
-  },
-  {
-    "id": 8476444,
-    "name": "Christopher Gibson",
-    "team": "",
-    "stopped": 1,
-    "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8476509,
-    "name": "Maxime Lagace",
-    "team": "",
-    "stopped": 2,
-    "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8476763,
-    "name": "Calvin Heeter",
-    "team": "",
-    "stopped": 1,
-    "faced": 2,
-    "record": null
-  },
-  {
-    "id": 8476839,
-    "name": "Viktor Fasth",
-    "team": "",
-    "stopped": 29,
-    "faced": 45,
-    "record": null
-  },
-  {
-    "id": 8476844,
-    "name": "Niklas Svedberg",
-    "team": "",
-    "stopped": 6,
-    "faced": 7,
-    "record": null
-  },
-  {
-    "id": 8476876,
-    "name": "Malcolm Subban",
-    "team": "",
-    "stopped": 15,
-    "faced": 16,
-    "record": null
-  },
-  {
     "id": 8476883,
     "name": "Andrei Vasilevskiy",
     "team": "TBL",
-    "stopped": 91,
-    "faced": 122,
-    "record": null
-  },
-  {
-    "id": 8476899,
-    "name": "Matt Murray",
-    "team": "",
-    "stopped": 34,
-    "faced": 51,
-    "record": null
-  },
-  {
-    "id": 8476904,
-    "name": "Chris Driedger",
-    "team": "",
-    "stopped": 3,
-    "faced": 4,
-    "record": null
-  },
-  {
-    "id": 8476914,
-    "name": "Joonas Korpisalo",
-    "team": "NYR",
-    "stopped": 33,
-    "faced": 52,
-    "record": null
-  },
-  {
-    "id": 8476932,
-    "name": "Anthony Stolarz",
-    "team": "TOR",
-    "stopped": 16,
-    "faced": 35,
+    "stopped": 98,
+    "faced": 129,
     "record": null
   },
   {
     "id": 8476945,
     "name": "Connor Hellebuyck",
     "team": "WPG",
-    "stopped": 45,
-    "faced": 79,
-    "record": null
-  },
-  {
-    "id": 8476992,
-    "name": "Marek Mazanec",
-    "team": "",
-    "stopped": 5,
-    "faced": 10,
-    "record": null
-  },
-  {
-    "id": 8476999,
-    "name": "Linus Ullmark",
-    "team": "OTT",
     "stopped": 61,
-    "faced": 78,
+    "faced": 95,
     "record": null
   },
   {
-    "id": 8477035,
-    "name": "Matt Tomkins",
-    "team": "",
-    "stopped": 1,
-    "faced": 2,
+    "id": 8476316,
+    "name": "Laurent Brossoit",
+    "team": "WPG",
+    "stopped": 21,
+    "faced": 37,
     "record": null
   },
   {
-    "id": 8477180,
-    "name": "Aaron Dell",
-    "team": "",
-    "stopped": 3,
-    "faced": 6,
-    "record": null
-  },
-  {
-    "id": 8477202,
-    "name": "Andrew Hammond",
-    "team": "",
-    "stopped": 25,
-    "faced": 38,
-    "record": null
-  },
-  {
-    "id": 8477225,
-    "name": "Jared Coreau",
-    "team": "",
-    "stopped": 1,
-    "faced": 2,
+    "id": 8475839,
+    "name": "Louis Domingue",
+    "team": "NJD,VAN",
+    "stopped": 28,
+    "faced": 34,
     "record": null
   },
   {
     "id": 8477237,
     "name": "Mike Condon",
-    "team": "",
-    "stopped": 24,
-    "faced": 42,
+    "team": "OTT",
+    "stopped": 35,
+    "faced": 53,
     "record": null
   },
   {
-    "id": 8477293,
-    "name": "Antti Raanta",
-    "team": "",
-    "stopped": 33,
-    "faced": 60,
+    "id": 8476899,
+    "name": "Matt Murray",
+    "team": "SEA",
+    "stopped": 38,
+    "faced": 55,
     "record": null
   },
   {
-    "id": 8477361,
-    "name": "Cal Petersen",
-    "team": "",
-    "stopped": 9,
-    "faced": 10,
-    "record": null
-  },
-  {
-    "id": 8477405,
-    "name": "Marcus Hogberg",
-    "team": "",
-    "stopped": 10,
-    "faced": 17,
+    "id": 8474092,
+    "name": "Jeremy Smith",
+    "team": "COL",
+    "stopped": 1,
+    "faced": 2,
     "record": null
   },
   {
     "id": 8477424,
     "name": "Juuse Saros",
     "team": "NSH",
-    "stopped": 96,
-    "faced": 127,
+    "stopped": 105,
+    "faced": 136,
     "record": null
   },
   {
-    "id": 8477457,
-    "name": "Zach Fucale",
-    "team": "",
-    "stopped": 1,
+    "id": 8477225,
+    "name": "Jared Coreau",
+    "team": "DET",
+    "stopped": 2,
     "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8476932,
+    "name": "Anthony Stolarz",
+    "team": "TOR",
+    "stopped": 22,
+    "faced": 41,
+    "record": null
+  },
+  {
+    "id": 8476509,
+    "name": "Maxime Lagace",
+    "team": "VGK",
+    "stopped": 2,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8477180,
+    "name": "Aaron Dell",
+    "team": "SJS",
+    "stopped": 8,
+    "faced": 11,
     "record": null
   },
   {
     "id": 8477465,
     "name": "Tristan Jarry",
-    "team": "EDM",
-    "stopped": 34,
-    "faced": 59,
+    "team": "PIT,EDM",
+    "stopped": 42,
+    "faced": 67,
     "record": null
   },
   {
-    "id": 8477480,
-    "name": "Eric Comrie",
-    "team": "SJS",
-    "stopped": 15,
-    "faced": 20,
+    "id": 8479312,
+    "name": "Alex Lyon",
+    "team": "BUF",
+    "stopped": 14,
+    "faced": 17,
     "record": null
   },
   {
-    "id": 8477484,
-    "name": "Spencer Martin",
-    "team": "",
-    "stopped": 16,
+    "id": 8479292,
+    "name": "Charlie Lindgren",
+    "team": "WSH",
+    "stopped": 38,
+    "faced": 57,
+    "record": null
+  },
+  {
+    "id": 8476876,
+    "name": "Malcolm Subban",
+    "team": "CHI",
+    "stopped": 21,
     "faced": 22,
+    "record": null
+  },
+  {
+    "id": 8476444,
+    "name": "Christopher Gibson",
+    "team": "NYI",
+    "stopped": 1,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8475789,
+    "name": "Jack Campbell",
+    "team": "EDM",
+    "stopped": 20,
+    "faced": 32,
+    "record": null
+  },
+  {
+    "id": 8478499,
+    "name": "Adin Hill",
+    "team": "VGK",
+    "stopped": 35,
+    "faced": 54,
+    "record": null
+  },
+  {
+    "id": 8479496,
+    "name": "David Rittich",
+    "team": "NYI",
+    "stopped": 52,
+    "faced": 76,
+    "record": null
+  },
+  {
+    "id": 8479394,
+    "name": "Carter Hart",
+    "team": "VGK",
+    "stopped": 57,
+    "faced": 83,
     "record": null
   },
   {
     "id": 8477831,
     "name": "Pheonix Copley",
-    "team": "",
-    "stopped": 25,
-    "faced": 37,
+    "team": "LAK",
+    "stopped": 27,
+    "faced": 39,
+    "record": null
+  },
+  {
+    "id": 8477361,
+    "name": "Calvin Petersen",
+    "team": "LAK",
+    "stopped": 9,
+    "faced": 10,
+    "record": null
+  },
+  {
+    "id": 8479193,
+    "name": "Casey DeSmith",
+    "team": "DAL",
+    "stopped": 28,
+    "faced": 46,
+    "record": null
+  },
+  {
+    "id": 8476412,
+    "name": "Jordan Binnington",
+    "team": "STL",
+    "stopped": 84,
+    "faced": 116,
+    "record": null
+  },
+  {
+    "id": 8480382,
+    "name": "Alexandar Georgiev",
+    "team": "COL,SJS",
+    "stopped": 65,
+    "faced": 88,
+    "record": null
+  },
+  {
+    "id": 8475277,
+    "name": "Edward Pasquale",
+    "team": "TBL",
+    "stopped": 2,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8478470,
+    "name": "Samuel Montembeault",
+    "team": "MTL",
+    "stopped": 49,
+    "faced": 76,
     "record": null
   },
   {
     "id": 8477967,
     "name": "Thatcher Demko",
     "team": "VAN",
-    "stopped": 41,
-    "faced": 52,
-    "record": null
-  },
-  {
-    "id": 8477968,
-    "name": "Alex Nedeljkovic",
-    "team": "SJS",
-    "stopped": 36,
+    "stopped": 45,
     "faced": 56,
     "record": null
   },
   {
-    "id": 8477970,
-    "name": "Vitek Vanecek",
-    "team": "NYI",
-    "stopped": 30,
-    "faced": 40,
+    "id": 8478406,
+    "name": "Mackenzie Blackwood",
+    "team": "SJS,COL",
+    "stopped": 61,
+    "faced": 100,
     "record": null
   },
   {
@@ -1592,11 +1576,43 @@
     "record": null
   },
   {
+    "id": 8478492,
+    "name": "Ilya Samsonov",
+    "team": "VGK",
+    "stopped": 30,
+    "faced": 47,
+    "record": null
+  },
+  {
+    "id": 8480925,
+    "name": "Pavel Francouz",
+    "team": "COL",
+    "stopped": 12,
+    "faced": 12,
+    "record": null
+  },
+  {
+    "id": 8477405,
+    "name": "Marcus Hogberg",
+    "team": "NYI",
+    "stopped": 12,
+    "faced": 19,
+    "record": null
+  },
+  {
+    "id": 8478039,
+    "name": "Kaapo Kahkonen",
+    "team": "SJS,NJD",
+    "stopped": 10,
+    "faced": 20,
+    "record": null
+  },
+  {
     "id": 8478007,
     "name": "Elvis Merzlikins",
     "team": "CBJ",
-    "stopped": 64,
-    "faced": 87,
+    "stopped": 68,
+    "faced": 91,
     "record": null
   },
   {
@@ -1608,179 +1624,83 @@
     "record": null
   },
   {
-    "id": 8478024,
-    "name": "Ville Husso",
-    "team": "ANA",
-    "stopped": 20,
-    "faced": 29,
-    "record": null
-  },
-  {
-    "id": 8478039,
-    "name": "Kaapo Kahkonen",
-    "team": "",
-    "stopped": 10,
-    "faced": 20,
-    "record": null
-  },
-  {
-    "id": 8478048,
-    "name": "Igor Shesterkin",
-    "team": "NYR",
-    "stopped": 61,
-    "faced": 83,
-    "record": null
-  },
-  {
-    "id": 8478406,
-    "name": "Mackenzie Blackwood",
-    "team": "COL",
-    "stopped": 49,
-    "faced": 88,
-    "record": null
-  },
-  {
-    "id": 8478435,
-    "name": "Dan Vladar",
-    "team": "PHI",
-    "stopped": 38,
-    "faced": 51,
-    "record": null
-  },
-  {
-    "id": 8478470,
-    "name": "Samuel Montembeault",
-    "team": "MTL",
-    "stopped": 46,
-    "faced": 73,
-    "record": null
-  },
-  {
-    "id": 8478492,
-    "name": "Ilya Samsonov",
-    "team": "",
-    "stopped": 30,
-    "faced": 47,
-    "record": null
-  },
-  {
-    "id": 8478499,
-    "name": "Adin Hill",
-    "team": "VGK",
-    "stopped": 32,
-    "faced": 51,
-    "record": null
-  },
-  {
-    "id": 8478872,
-    "name": "Karel Vejmelka",
-    "team": "UTA",
-    "stopped": 15,
-    "faced": 22,
-    "record": null
-  },
-  {
-    "id": 8478902,
-    "name": "Erik Kallgren",
-    "team": "",
-    "stopped": 6,
-    "faced": 7,
-    "record": null
-  },
-  {
-    "id": 8478905,
-    "name": "Ivan Fedotov",
-    "team": "",
-    "stopped": 7,
-    "faced": 10,
-    "record": null
-  },
-  {
-    "id": 8478916,
-    "name": "Joey Daccord",
-    "team": "SEA",
-    "stopped": 24,
-    "faced": 41,
-    "record": null
-  },
-  {
-    "id": 8478971,
-    "name": "Connor Ingram",
-    "team": "",
-    "stopped": 16,
-    "faced": 28,
-    "record": null
-  },
-  {
-    "id": 8479193,
-    "name": "Casey DeSmith",
-    "team": "DAL",
-    "stopped": 27,
-    "faced": 45,
-    "record": null
-  },
-  {
-    "id": 8479292,
-    "name": "Charlie Lindgren",
-    "team": "WSH",
-    "stopped": 37,
-    "faced": 56,
-    "record": null
-  },
-  {
-    "id": 8479312,
-    "name": "Alex Lyon",
-    "team": "BUF",
-    "stopped": 13,
-    "faced": 16,
-    "record": null
-  },
-  {
-    "id": 8479361,
-    "name": "Joseph Woll",
-    "team": "PHI",
-    "stopped": 16,
-    "faced": 23,
-    "record": null
-  },
-  {
-    "id": 8479394,
-    "name": "Carter Hart",
-    "team": "VGK",
-    "stopped": 50,
-    "faced": 76,
-    "record": null
-  },
-  {
-    "id": 8479406,
-    "name": "Filip Gustavsson",
-    "team": "MIN",
-    "stopped": 43,
-    "faced": 65,
-    "record": null
-  },
-  {
-    "id": 8479496,
-    "name": "David Rittich",
-    "team": "NJD",
-    "stopped": 45,
-    "faced": 69,
-    "record": null
-  },
-  {
-    "id": 8479973,
-    "name": "Stuart Skinner",
-    "team": "WPG",
-    "stopped": 21,
-    "faced": 39,
+    "id": 8476904,
+    "name": "Chris Driedger",
+    "team": "FLA",
+    "stopped": 3,
+    "faced": 4,
     "record": null
   },
   {
     "id": 8479979,
     "name": "Jake Oettinger",
     "team": "DAL",
-    "stopped": 69,
-    "faced": 96,
+    "stopped": 70,
+    "faced": 97,
+    "record": null
+  },
+  {
+    "id": 8475920,
+    "name": "Michael Houser",
+    "team": "BUF",
+    "stopped": 3,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8475809,
+    "name": "Scott Wedgewood",
+    "team": "COL",
+    "stopped": 42,
+    "faced": 68,
+    "record": null
+  },
+  {
+    "id": 8480280,
+    "name": "Jeremy Swayman",
+    "team": "BOS",
+    "stopped": 62,
+    "faced": 77,
+    "record": null
+  },
+  {
+    "id": 8477968,
+    "name": "Alex Nedeljkovic",
+    "team": "SJS",
+    "stopped": 36,
+    "faced": 56,
+    "record": null
+  },
+  {
+    "id": 8479406,
+    "name": "Filip Gustavsson",
+    "team": "MIN",
+    "stopped": 45,
+    "faced": 67,
+    "record": null
+  },
+  {
+    "id": 8478048,
+    "name": "Igor Shesterkin",
+    "team": "NYR",
+    "stopped": 62,
+    "faced": 84,
+    "record": null
+  },
+  {
+    "id": 8477970,
+    "name": "Vitek Vanecek",
+    "team": "SJS,FLA",
+    "stopped": 31,
+    "faced": 41,
+    "record": null
+  },
+  {
+    "id": 8480947,
+    "name": "Kevin Lankinen",
+    "team": "VAN",
+    "stopped": 53,
+    "faced": 60,
     "record": null
   },
   {
@@ -1792,35 +1712,107 @@
     "record": null
   },
   {
+    "id": 8480420,
+    "name": "Collin Delia",
+    "team": "VAN",
+    "stopped": 7,
+    "faced": 9,
+    "record": null
+  },
+  {
+    "id": 8478872,
+    "name": "Karel Vejmelka",
+    "team": "UTA",
+    "stopped": 15,
+    "faced": 22,
+    "record": null
+  },
+  {
+    "id": 8482076,
+    "name": "Nico Daws",
+    "team": "NJD",
+    "stopped": 8,
+    "faced": 12,
+    "record": null
+  },
+  {
     "id": 8480051,
     "name": "Cayden Primeau",
-    "team": "",
+    "team": "MTL",
     "stopped": 26,
     "faced": 37,
     "record": null
   },
   {
-    "id": 8480193,
-    "name": "Daniil Tarasov",
-    "team": "DET",
-    "stopped": 14,
-    "faced": 21,
+    "id": 8478902,
+    "name": "Erik Kallgren",
+    "team": "TOR",
+    "stopped": 6,
+    "faced": 7,
     "record": null
   },
   {
-    "id": 8480238,
-    "name": "Jiri Patera",
-    "team": "",
-    "stopped": 2,
-    "faced": 2,
+    "id": 8477484,
+    "name": "Spencer Martin",
+    "team": "CAR",
+    "stopped": 16,
+    "faced": 22,
     "record": null
   },
   {
-    "id": 8480280,
-    "name": "Jeremy Swayman",
-    "team": "BOS",
-    "stopped": 60,
-    "faced": 75,
+    "id": 8480843,
+    "name": "Lukas Dostal",
+    "team": "ANA",
+    "stopped": 27,
+    "faced": 34,
+    "record": null
+  },
+  {
+    "id": 8478024,
+    "name": "Ville Husso",
+    "team": "ANA",
+    "stopped": 20,
+    "faced": 29,
+    "record": null
+  },
+  {
+    "id": 8477457,
+    "name": "Zach Fucale",
+    "team": "WSH",
+    "stopped": 1,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8479973,
+    "name": "Stuart Skinner",
+    "team": "EDM,PIT",
+    "stopped": 21,
+    "faced": 39,
+    "record": null
+  },
+  {
+    "id": 8478435,
+    "name": "Dan Vladar",
+    "team": "PHI",
+    "stopped": 38,
+    "faced": 51,
+    "record": null
+  },
+  {
+    "id": 8481031,
+    "name": "Ivan Prosvetov",
+    "team": "COL",
+    "stopped": 3,
+    "faced": 5,
+    "record": null
+  },
+  {
+    "id": 8477480,
+    "name": "Eric Comrie",
+    "team": "WPG",
+    "stopped": 15,
+    "faced": 20,
     "record": null
   },
   {
@@ -1832,94 +1824,6 @@
     "record": null
   },
   {
-    "id": 8480382,
-    "name": "Alexandar Georgiev",
-    "team": "",
-    "stopped": 53,
-    "faced": 76,
-    "record": null
-  },
-  {
-    "id": 8480420,
-    "name": "Collin Delia",
-    "team": "",
-    "stopped": 7,
-    "faced": 9,
-    "record": null
-  },
-  {
-    "id": 8480843,
-    "name": "Lukas Dostal",
-    "team": "ANA",
-    "stopped": 27,
-    "faced": 35,
-    "record": null
-  },
-  {
-    "id": 8480867,
-    "name": "Kevin Mandolese",
-    "team": "",
-    "stopped": 2,
-    "faced": 2,
-    "record": null
-  },
-  {
-    "id": 8480925,
-    "name": "Pavel Francouz",
-    "team": "",
-    "stopped": 9,
-    "faced": 9,
-    "record": null
-  },
-  {
-    "id": 8480947,
-    "name": "Kevin Lankinen",
-    "team": "VAN",
-    "stopped": 52,
-    "faced": 59,
-    "record": null
-  },
-  {
-    "id": 8480981,
-    "name": "Joel Hofer",
-    "team": "STL",
-    "stopped": 10,
-    "faced": 16,
-    "record": null
-  },
-  {
-    "id": 8480992,
-    "name": "Magnus Chrona",
-    "team": "",
-    "stopped": 5,
-    "faced": 7,
-    "record": null
-  },
-  {
-    "id": 8481031,
-    "name": "Ivan Prosvetov",
-    "team": "",
-    "stopped": 3,
-    "faced": 5,
-    "record": null
-  },
-  {
-    "id": 8481033,
-    "name": "Akira Schmid",
-    "team": "FLA",
-    "stopped": 12,
-    "faced": 19,
-    "record": null
-  },
-  {
-    "id": 8481035,
-    "name": "Samuel Ersson",
-    "team": "OTT",
-    "stopped": 47,
-    "faced": 61,
-    "record": null
-  },
-  {
     "id": 8481519,
     "name": "Spencer Knight",
     "team": "CHI",
@@ -1928,27 +1832,43 @@
     "record": null
   },
   {
-    "id": 8481529,
-    "name": "Trent Miner",
-    "team": "",
-    "stopped": 2,
-    "faced": 3,
+    "id": 8482821,
+    "name": "Arvid Soderblom",
+    "team": "CHI",
+    "stopped": 16,
+    "faced": 31,
     "record": null
   },
   {
-    "id": 8481544,
-    "name": "Mads Sogaard",
-    "team": "",
-    "stopped": 5,
-    "faced": 9,
+    "id": 8480981,
+    "name": "Joel Hofer",
+    "team": "STL",
+    "stopped": 7,
+    "faced": 13,
     "record": null
   },
   {
-    "id": 8481551,
-    "name": "Colten Ellis",
+    "id": 8482221,
+    "name": "Devon Levi",
     "team": "BUF",
-    "stopped": 3,
-    "faced": 8,
+    "stopped": 7,
+    "faced": 12,
+    "record": null
+  },
+  {
+    "id": 8480193,
+    "name": "Daniil Tarasov",
+    "team": "FLA",
+    "stopped": 15,
+    "faced": 22,
+    "record": null
+  },
+  {
+    "id": 8476433,
+    "name": "Magnus Hellberg",
+    "team": "OTT,DET",
+    "stopped": 4,
+    "faced": 6,
     "record": null
   },
   {
@@ -1960,6 +1880,14 @@
     "record": null
   },
   {
+    "id": 8481033,
+    "name": "Akira Schmid",
+    "team": "VGK",
+    "stopped": 10,
+    "faced": 16,
+    "record": null
+  },
+  {
     "id": 8481668,
     "name": "Arturs Silovs",
     "team": "PIT",
@@ -1968,19 +1896,67 @@
     "record": null
   },
   {
-    "id": 8481692,
-    "name": "Dustin Wolf",
-    "team": "CGY",
-    "stopped": 23,
-    "faced": 30,
+    "id": 8480867,
+    "name": "Kevin Mandolese",
+    "team": "OTT",
+    "stopped": 2,
+    "faced": 2,
     "record": null
   },
   {
-    "id": 8482076,
-    "name": "Nico Daws",
-    "team": "",
-    "stopped": 13,
-    "faced": 19,
+    "id": 8478916,
+    "name": "Joey Daccord",
+    "team": "SEA",
+    "stopped": 26,
+    "faced": 43,
+    "record": null
+  },
+  {
+    "id": 8481544,
+    "name": "Mads Sogaard",
+    "team": "OTT",
+    "stopped": 5,
+    "faced": 9,
+    "record": null
+  },
+  {
+    "id": 8478971,
+    "name": "Connor Ingram",
+    "team": "EDM",
+    "stopped": 17,
+    "faced": 29,
+    "record": null
+  },
+  {
+    "id": 8480238,
+    "name": "Jiri Patera",
+    "team": "VGK",
+    "stopped": 2,
+    "faced": 2,
+    "record": null
+  },
+  {
+    "id": 8479361,
+    "name": "Joseph Woll",
+    "team": "TOR",
+    "stopped": 16,
+    "faced": 23,
+    "record": null
+  },
+  {
+    "id": 8477035,
+    "name": "Matt Tomkins",
+    "team": "TBL",
+    "stopped": 1,
+    "faced": 2,
+    "record": null
+  },
+  {
+    "id": 8481035,
+    "name": "Samuel Ersson",
+    "team": "PHI",
+    "stopped": 47,
+    "faced": 61,
     "record": null
   },
   {
@@ -1992,83 +1968,51 @@
     "record": null
   },
   {
-    "id": 8482193,
-    "name": "Dylan Garand",
-    "team": "NYR",
-    "stopped": 0,
-    "faced": 2,
-    "record": null
-  },
-  {
-    "id": 8482221,
-    "name": "Devon Levi",
-    "team": "EDM",
-    "stopped": 7,
-    "faced": 12,
+    "id": 8480992,
+    "name": "Magnus Chrona",
+    "team": "SJS",
+    "stopped": 5,
+    "faced": 7,
     "record": null
   },
   {
     "id": 8482411,
     "name": "Hunter Shepard",
-    "team": "",
+    "team": "WSH",
     "stopped": 0,
     "faced": 2,
-    "record": null
-  },
-  {
-    "id": 8482445,
-    "name": "Devin Cooley",
-    "team": "CGY",
-    "stopped": 6,
-    "faced": 11,
-    "record": null
-  },
-  {
-    "id": 8482447,
-    "name": "Leevi Meril\u00e4inen",
-    "team": "OTT",
-    "stopped": 3,
-    "faced": 3,
     "record": null
   },
   {
     "id": 8482487,
     "name": "Jakub Dobes",
     "team": "MTL",
-    "stopped": 13,
-    "faced": 20,
+    "stopped": 14,
+    "faced": 21,
+    "record": null
+  },
+  {
+    "id": 8481692,
+    "name": "Dustin Wolf",
+    "team": "CGY",
+    "stopped": 23,
+    "faced": 30,
+    "record": null
+  },
+  {
+    "id": 8478905,
+    "name": "Ivan Fedotov",
+    "team": "PHI",
+    "stopped": 7,
+    "faced": 10,
     "record": null
   },
   {
     "id": 8482657,
     "name": "Sebastian Cossa",
-    "team": "",
+    "team": "DET",
     "stopped": 2,
     "faced": 3,
-    "record": null
-  },
-  {
-    "id": 8482661,
-    "name": "Jesper Wallstedt",
-    "team": "MIN",
-    "stopped": 17,
-    "faced": 25,
-    "record": null
-  },
-  {
-    "id": 8482821,
-    "name": "Arvid Soderblom",
-    "team": "CHI",
-    "stopped": 15,
-    "faced": 30,
-    "record": null
-  },
-  {
-    "id": 8482982,
-    "name": "Jet Greaves",
-    "team": "CBJ",
-    "stopped": 13,
-    "faced": 21,
     "record": null
   },
   {
@@ -2080,6 +2024,22 @@
     "record": null
   },
   {
+    "id": 8482447,
+    "name": "Leevi Meril\u00e4inen",
+    "team": "OTT",
+    "stopped": 3,
+    "faced": 3,
+    "record": null
+  },
+  {
+    "id": 8483710,
+    "name": "Dennis Hildeby",
+    "team": "TOR",
+    "stopped": 0,
+    "faced": 2,
+    "record": null
+  },
+  {
     "id": 8483548,
     "name": "Brandon Bussi",
     "team": "CAR",
@@ -2088,19 +2048,27 @@
     "record": null
   },
   {
-    "id": 8483710,
-    "name": "Dennis Hildeby",
-    "team": "",
-    "stopped": 0,
-    "faced": 2,
+    "id": 8482982,
+    "name": "Jet Greaves",
+    "team": "CBJ",
+    "stopped": 13,
+    "faced": 21,
     "record": null
   },
   {
-    "id": 8484170,
-    "name": "Jacob Fowler",
-    "team": "MTL",
-    "stopped": 0,
-    "faced": 2,
+    "id": 8481551,
+    "name": "Colten Ellis",
+    "team": "BUF",
+    "stopped": 3,
+    "faced": 8,
+    "record": null
+  },
+  {
+    "id": 8481529,
+    "name": "Trent Miner",
+    "team": "COL",
+    "stopped": 2,
+    "faced": 3,
     "record": null
   },
   {
@@ -2109,6 +2077,38 @@
     "team": "VAN",
     "stopped": 3,
     "faced": 5,
+    "record": null
+  },
+  {
+    "id": 8482445,
+    "name": "Devin Cooley",
+    "team": "CGY",
+    "stopped": 6,
+    "faced": 11,
+    "record": null
+  },
+  {
+    "id": 8482193,
+    "name": "Dylan Garand",
+    "team": "NYR",
+    "stopped": 0,
+    "faced": 2,
+    "record": null
+  },
+  {
+    "id": 8482661,
+    "name": "Jesper Wallstedt",
+    "team": "MIN",
+    "stopped": 19,
+    "faced": 27,
+    "record": null
+  },
+  {
+    "id": 8484170,
+    "name": "Jacob Fowler",
+    "team": "MTL",
+    "stopped": 0,
+    "faced": 2,
     "record": null
   }
 ]

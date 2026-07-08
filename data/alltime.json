@@ -1,442 +1,301 @@
 {
   "top_goals": [
     {
-      "shooter_id": 8474141,
+      "player_id": 8474141,
       "name": "Patrick Kane",
-      "team": "\u2014",
+      "team": "CHI",
       "goals": 55,
-      "att": 122
+      "att": 0
     },
     {
-      "shooter_id": 8473604,
+      "player_id": 8473604,
       "name": "Jonathan Toews",
-      "team": "\u2014",
+      "team": "CHI",
       "goals": 52,
-      "att": 104
+      "att": 0
     },
     {
-      "shooter_id": 8470144,
-      "name": "Frans Nielsen",
-      "team": "\u2014",
+      "player_id": 8471698,
+      "name": "T.J. Oshie",
+      "team": "STL",
+      "goals": 49,
+      "att": 0
+    },
+    {
+      "player_id": 8470794,
+      "name": "Joe Pavelski",
+      "team": "SJS",
       "goals": 47,
-      "att": 93
+      "att": 0
     },
     {
-      "shooter_id": 8471675,
+      "player_id": 8471675,
       "name": "Sidney Crosby",
       "team": "PIT",
       "goals": 47,
-      "att": 122
+      "att": 0
     },
     {
-      "shooter_id": 8471698,
-      "name": "T.J. Oshie",
-      "team": "\u2014",
-      "goals": 47,
-      "att": 91
-    },
-    {
-      "shooter_id": 8470794,
-      "name": "Joe Pavelski",
-      "team": "\u2014",
-      "goals": 46,
-      "att": 116
-    },
-    {
-      "shooter_id": 8468085,
-      "name": "Radim Vrbata",
-      "team": "\u2014",
-      "goals": 45,
-      "att": 91
-    },
-    {
-      "shooter_id": 8470610,
-      "name": "Zach Parise",
-      "team": "\u2014",
+      "player_id": 8470144,
+      "name": "Frans Nielsen",
+      "team": "NYI",
       "goals": 44,
-      "att": 103
+      "att": 0
     },
     {
-      "shooter_id": 8471685,
+      "player_id": 8471685,
       "name": "Anze Kopitar",
-      "team": "\u2014",
-      "goals": 43,
-      "att": 110
-    },
-    {
-      "shooter_id": 8469459,
-      "name": "Mikko Koivu",
-      "team": "\u2014",
-      "goals": 42,
-      "att": 92
-    },
-    {
-      "shooter_id": 8467514,
-      "name": "Pavel Datsyuk",
-      "team": "\u2014",
-      "goals": 40,
-      "att": 82
-    },
-    {
-      "shooter_id": 8475692,
-      "name": "Mats Zuccarello",
       "team": "LAK",
+      "goals": 43,
+      "att": 0
+    },
+    {
+      "player_id": 8469459,
+      "name": "Mikko Koivu",
+      "team": "MIN",
+      "goals": 42,
+      "att": 0
+    },
+    {
+      "player_id": 8475692,
+      "name": "Mats Zuccarello",
+      "team": "NYR",
       "goals": 40,
-      "att": 86
+      "att": 0
     },
     {
-      "shooter_id": 8468504,
+      "player_id": 8468504,
       "name": "Brad Boyes",
-      "team": "\u2014",
+      "team": "BOS",
       "goals": 39,
-      "att": 81
+      "att": 0
     },
     {
-      "shooter_id": 8471214,
+      "player_id": 8467514,
+      "name": "Pavel Datsyuk",
+      "team": "DET",
+      "goals": 38,
+      "att": 0
+    },
+    {
+      "player_id": 8469638,
+      "name": "Jussi Jokinen",
+      "team": "DAL",
+      "goals": 37,
+      "att": 0
+    },
+    {
+      "player_id": 8471214,
       "name": "Alex Ovechkin",
       "team": "WSH",
       "goals": 37,
-      "att": 119
+      "att": 0
     },
     {
-      "shooter_id": 8469638,
-      "name": "Jussi Jokinen",
-      "team": "\u2014",
-      "goals": 36,
-      "att": 85
-    },
-    {
-      "shooter_id": 8475168,
-      "name": "Matt Duchene",
-      "team": "DAL",
-      "goals": 35,
-      "att": 81
-    },
-    {
-      "shooter_id": 8470621,
-      "name": "Corey Perry",
-      "team": "LAK",
-      "goals": 34,
-      "att": 96
-    },
-    {
-      "shooter_id": 8474053,
-      "name": "Logan Couture",
-      "team": "\u2014",
-      "goals": 33,
-      "att": 76
-    },
-    {
-      "shooter_id": 8477493,
-      "name": "Aleksander Barkov",
-      "team": "FLA",
-      "goals": 33,
-      "att": 59
-    },
-    {
-      "shooter_id": 8470041,
-      "name": "Rick Nash",
-      "team": "\u2014",
-      "goals": 32,
-      "att": 76
-    },
-    {
-      "shooter_id": 8475794,
-      "name": "Tyler Seguin",
-      "team": "DAL",
-      "goals": 32,
-      "att": 64
-    },
-    {
-      "shooter_id": 8467389,
-      "name": "Brad Richards",
-      "team": "\u2014",
-      "goals": 31,
-      "att": 76
-    },
-    {
-      "shooter_id": 8473512,
-      "name": "Claude Giroux",
-      "team": "\u2014",
-      "goals": 31,
-      "att": 90
-    },
-    {
-      "shooter_id": 8476459,
-      "name": "Mika Zibanejad",
-      "team": "NYR",
-      "goals": 31,
-      "att": 69
-    },
-    {
-      "shooter_id": 8469454,
-      "name": "Ilya Kovalchuk",
-      "team": "\u2014",
-      "goals": 30,
-      "att": 63
-    }
-  ],
-  "top_shooting_pct": [
-    {
-      "shooter_id": 8482097,
-      "name": "Jack Quinn",
-      "team": "BUF",
-      "goals": 10,
-      "att": 15
-    },
-    {
-      "shooter_id": 8475185,
-      "name": "Jacob Josefson",
-      "team": "\u2014",
-      "goals": 13,
-      "att": 21
-    },
-    {
-      "shooter_id": 8471390,
-      "name": "Mike Santorelli",
-      "team": "\u2014",
-      "goals": 16,
-      "att": 26
-    },
-    {
-      "shooter_id": 8480893,
-      "name": "Kirill Marchenko",
-      "team": "CBJ",
-      "goals": 10,
-      "att": 17
-    },
-    {
-      "shooter_id": 8481533,
-      "name": "Trevor Zegras",
-      "team": "PHI",
-      "goals": 20,
-      "att": 34
-    },
-    {
-      "shooter_id": 8482660,
-      "name": "Kent Johnson",
-      "team": "CBJ",
-      "goals": 10,
-      "att": 17
-    },
-    {
-      "shooter_id": 8456887,
-      "name": "Vyacheslav Kozlov",
-      "team": "\u2014",
-      "goals": 26,
-      "att": 45
-    },
-    {
-      "shooter_id": 8478402,
-      "name": "Connor McDavid",
-      "team": "EDM",
-      "goals": 16,
-      "att": 28
-    },
-    {
-      "shooter_id": 8470299,
-      "name": "Erik Christensen",
-      "team": "\u2014",
-      "goals": 29,
-      "att": 51
-    },
-    {
-      "shooter_id": 8478550,
-      "name": "Artemi Panarin",
-      "team": "LAK",
-      "goals": 29,
-      "att": 51
-    },
-    {
-      "shooter_id": 8480027,
-      "name": "Jason Robertson",
-      "team": "DAL",
-      "goals": 22,
-      "att": 39
-    },
-    {
-      "shooter_id": 8470373,
-      "name": "Jeff Hamilton",
-      "team": "\u2014",
-      "goals": 9,
-      "att": 16
-    },
-    {
-      "shooter_id": 8476462,
-      "name": "Dougie Hamilton",
+      "player_id": 8470610,
+      "name": "Zach Parise",
       "team": "NJD",
-      "goals": 9,
-      "att": 16
+      "goals": 36,
+      "att": 0
     },
     {
-      "shooter_id": 8477493,
+      "player_id": 8475168,
+      "name": "Matt Duchene",
+      "team": "COL",
+      "goals": 35,
+      "att": 0
+    },
+    {
+      "player_id": 8470621,
+      "name": "Corey Perry",
+      "team": "ANA",
+      "goals": 34,
+      "att": 0
+    },
+    {
+      "player_id": 8468085,
+      "name": "Radim Vrbata",
+      "team": "CAR,CHI",
+      "goals": 33,
+      "att": 0
+    },
+    {
+      "player_id": 8474053,
+      "name": "Logan Couture",
+      "team": "SJS",
+      "goals": 33,
+      "att": 0
+    },
+    {
+      "player_id": 8477493,
       "name": "Aleksander Barkov",
       "team": "FLA",
       "goals": 33,
-      "att": 59
+      "att": 0
     },
     {
-      "shooter_id": 8475164,
-      "name": "Jakob Silfverberg",
-      "team": "\u2014",
-      "goals": 21,
-      "att": 38
+      "player_id": 8476459,
+      "name": "Mika Zibanejad",
+      "team": "OTT",
+      "goals": 31,
+      "att": 0
     },
     {
-      "shooter_id": 8475204,
-      "name": "Brandon Pirri",
-      "team": "\u2014",
-      "goals": 11,
-      "att": 20
+      "player_id": 8469454,
+      "name": "Ilya Kovalchuk",
+      "team": "ATL",
+      "goals": 30,
+      "att": 0
     },
     {
-      "shooter_id": 8481557,
-      "name": "Matt Boldy",
-      "team": "MIN",
-      "goals": 13,
-      "att": 24
+      "player_id": 8469455,
+      "name": "Jason Spezza",
+      "team": "OTT",
+      "goals": 30,
+      "att": 0
     },
     {
-      "shooter_id": 8474577,
-      "name": "Joe Colborne",
-      "team": "\u2014",
-      "goals": 8,
-      "att": 15
+      "player_id": 8474068,
+      "name": "Kyle Turris",
+      "team": "PHX",
+      "goals": 30,
+      "att": 0
     },
     {
-      "shooter_id": 8467502,
-      "name": "Ales Kotalik",
-      "team": "\u2014",
-      "goals": 22,
-      "att": 42
-    },
-    {
-      "shooter_id": 8468526,
-      "name": "Jarret Stoll",
-      "team": "\u2014",
-      "goals": 15,
-      "att": 29
-    },
-    {
-      "shooter_id": 8471698,
-      "name": "T.J. Oshie",
-      "team": "\u2014",
-      "goals": 47,
-      "att": 91
-    },
-    {
-      "shooter_id": 8475744,
-      "name": "Evgeny Kuznetsov",
-      "team": "\u2014",
+      "player_id": 8470041,
+      "name": "Rick Nash",
+      "team": "CBJ",
       "goals": 29,
-      "att": 57
+      "att": 0
     },
     {
-      "shooter_id": 8470144,
-      "name": "Frans Nielsen",
-      "team": "\u2014",
-      "goals": 47,
-      "att": 93
-    },
-    {
-      "shooter_id": 8462129,
-      "name": "Michal Handzus",
-      "team": "\u2014",
-      "goals": 19,
-      "att": 38
-    },
-    {
-      "shooter_id": 8467423,
-      "name": "Shawn Horcoff",
-      "team": "\u2014",
-      "goals": 11,
-      "att": 22
+      "player_id": 8470299,
+      "name": "Erik Christensen",
+      "team": "PIT",
+      "goals": 29,
+      "att": 0
     }
   ],
+  "top_shooting_pct": [],
   "top_goalie_save_pct": [
+    {
+      "goalie_id": 8476876,
+      "name": "Malcolm Subban",
+      "team": "VGK",
+      "stopped": 21,
+      "faced": 22
+    },
     {
       "goalie_id": 8480947,
       "name": "Kevin Lankinen",
-      "team": "VAN",
-      "stopped": 52,
-      "faced": 59
+      "team": "CHI",
+      "stopped": 53,
+      "faced": 60
     },
     {
       "goalie_id": 8466303,
       "name": "Johan Holmqvist",
-      "team": "\u2014",
+      "team": "TBL",
       "stopped": 32,
       "faced": 37
     },
     {
       "goalie_id": 8462055,
       "name": "Marc Denis",
-      "team": "\u2014",
+      "team": "CBJ",
       "stopped": 35,
       "faced": 41
+    },
+    {
+      "goalie_id": 8475156,
+      "name": "Mikko Koskinen",
+      "team": "NYI",
+      "stopped": 34,
+      "faced": 41
+    },
+    {
+      "goalie_id": 8475839,
+      "name": "Louis Domingue",
+      "team": "ARI",
+      "stopped": 28,
+      "faced": 34
     },
     {
       "goalie_id": 8480280,
       "name": "Jeremy Swayman",
       "team": "BOS",
-      "stopped": 60,
-      "faced": 75
-    },
-    {
-      "goalie_id": 8470584,
-      "name": "Wade Dubielewicz",
-      "team": "\u2014",
-      "stopped": 19,
-      "faced": 24
+      "stopped": 62,
+      "faced": 77
     },
     {
       "goalie_id": 8477967,
       "name": "Thatcher Demko",
       "team": "VAN",
-      "stopped": 41,
-      "faced": 52
+      "stopped": 45,
+      "faced": 56
     },
     {
       "goalie_id": 8476999,
       "name": "Linus Ullmark",
-      "team": "OTT",
-      "stopped": 61,
-      "faced": 78
+      "team": "BUF",
+      "stopped": 64,
+      "faced": 80
     },
     {
-      "goalie_id": 8475839,
-      "name": "Louis Domingue",
-      "team": "\u2014",
-      "stopped": 21,
-      "faced": 27
-    },
-    {
-      "goalie_id": 8475156,
-      "name": "Mikko Koskinen",
-      "team": "\u2014",
-      "stopped": 24,
-      "faced": 31
+      "goalie_id": 8475663,
+      "name": "Eddie Lack",
+      "team": "VAN",
+      "stopped": 35,
+      "faced": 44
     },
     {
       "goalie_id": 8480843,
       "name": "Lukas Dostal",
       "team": "ANA",
       "stopped": 27,
-      "faced": 35
+      "faced": 34
+    },
+    {
+      "goalie_id": 8470584,
+      "name": "Wade Dubielewicz",
+      "team": "NYI",
+      "stopped": 19,
+      "faced": 24
+    },
+    {
+      "goalie_id": 8474765,
+      "name": "Anders Lindback",
+      "team": "NSH",
+      "stopped": 21,
+      "faced": 27
+    },
+    {
+      "goalie_id": 8475852,
+      "name": "Petr Mrazek",
+      "team": "DET",
+      "stopped": 90,
+      "faced": 116
+    },
+    {
+      "goalie_id": 8477424,
+      "name": "Juuse Saros",
+      "team": "NSH",
+      "stopped": 105,
+      "faced": 136
     },
     {
       "goalie_id": 8481035,
       "name": "Samuel Ersson",
-      "team": "OTT",
+      "team": "PHI",
       "stopped": 47,
       "faced": 61
     },
     {
-      "goalie_id": 8475663,
-      "name": "Eddie Lack",
-      "team": "\u2014",
-      "stopped": 30,
-      "faced": 39
+      "goalie_id": 8471418,
+      "name": "Anton Khudobin",
+      "team": "BOS",
+      "stopped": 60,
+      "faced": 78
     },
     {
       "goalie_id": 8481692,
@@ -446,265 +305,230 @@
       "faced": 30
     },
     {
-      "goalie_id": 8477424,
-      "name": "Juuse Saros",
-      "team": "NSH",
-      "stopped": 96,
-      "faced": 127
+      "goalie_id": 8462161,
+      "name": "Brent Johnson",
+      "team": "WSH",
+      "stopped": 42,
+      "faced": 55
     },
     {
-      "goalie_id": 8468550,
-      "name": "Mikael Tellqvist",
-      "team": "\u2014",
-      "stopped": 34,
-      "faced": 45
+      "goalie_id": 8474889,
+      "name": "Martin Jones",
+      "team": "LAK",
+      "stopped": 90,
+      "faced": 118
     },
     {
-      "goalie_id": 8467486,
-      "name": "Mike Morrison",
-      "team": "\u2014",
-      "stopped": 18,
-      "faced": 24
-    },
-    {
-      "goalie_id": 8477480,
-      "name": "Eric Comrie",
-      "team": "SJS",
-      "stopped": 15,
-      "faced": 20
-    },
-    {
-      "goalie_id": 8477970,
-      "name": "Vitek Vanecek",
-      "team": "NYI",
-      "stopped": 30,
-      "faced": 40
+      "goalie_id": 8475717,
+      "name": "Calvin Pickard",
+      "team": "COL",
+      "stopped": 19,
+      "faced": 25
     },
     {
       "goalie_id": 8476883,
       "name": "Andrei Vasilevskiy",
       "team": "TBL",
-      "stopped": 91,
-      "faced": 122
+      "stopped": 98,
+      "faced": 129
     },
     {
-      "goalie_id": 8478435,
-      "name": "Dan Vladar",
-      "team": "PHI",
-      "stopped": 38,
-      "faced": 51
+      "goalie_id": 8477970,
+      "name": "Vitek Vanecek",
+      "team": "WSH",
+      "stopped": 31,
+      "faced": 41
     },
     {
-      "goalie_id": 8448382,
-      "name": "Curtis Joseph",
-      "team": "\u2014",
-      "stopped": 32,
-      "faced": 43
+      "goalie_id": 8468550,
+      "name": "Mikael Tellqvist",
+      "team": "TOR",
+      "stopped": 34,
+      "faced": 45
     },
     {
-      "goalie_id": 8475717,
-      "name": "Calvin Pickard",
-      "team": "\u2014",
-      "stopped": 17,
-      "faced": 23
-    },
-    {
-      "goalie_id": 8474889,
-      "name": "Martin Jones",
-      "team": "\u2014",
-      "stopped": 78,
-      "faced": 106
-    },
-    {
-      "goalie_id": 8478007,
-      "name": "Elvis Merzlikins",
-      "team": "CBJ",
-      "stopped": 64,
-      "faced": 87
-    },
-    {
-      "goalie_id": 8478048,
-      "name": "Igor Shesterkin",
-      "team": "NYR",
-      "stopped": 61,
-      "faced": 83
+      "goalie_id": 8473523,
+      "name": "Jhonas Enroth",
+      "team": "BUF",
+      "stopped": 55,
+      "faced": 73
     }
   ],
   "most_shots_faced": [
     {
       "goalie_id": 8468685,
       "name": "Henrik Lundqvist",
-      "team": "\u2014",
-      "stopped": 258,
-      "faced": 370
+      "team": "NYR",
+      "stopped": 293,
+      "faced": 406
     },
     {
       "goalie_id": 8466141,
       "name": "Roberto Luongo",
-      "team": "\u2014",
-      "stopped": 231,
-      "faced": 364
-    },
-    {
-      "goalie_id": 8468011,
-      "name": "Ryan Miller",
-      "team": "\u2014",
-      "stopped": 218,
-      "faced": 320
+      "team": "FLA",
+      "stopped": 269,
+      "faced": 402
     },
     {
       "goalie_id": 8470594,
       "name": "Marc-Andre Fleury",
-      "team": "\u2014",
-      "stopped": 212,
-      "faced": 312
+      "team": "PIT",
+      "stopped": 262,
+      "faced": 362
+    },
+    {
+      "goalie_id": 8468011,
+      "name": "Ryan Miller",
+      "team": "BUF",
+      "stopped": 249,
+      "faced": 351
     },
     {
       "goalie_id": 8471734,
       "name": "Jonathan Quick",
-      "team": "\u2014",
-      "stopped": 175,
-      "faced": 284
+      "team": "LAK",
+      "stopped": 233,
+      "faced": 342
     },
     {
       "goalie_id": 8471469,
       "name": "Pekka Rinne",
-      "team": "\u2014",
-      "stopped": 165,
-      "faced": 244
+      "team": "NSH",
+      "stopped": 212,
+      "faced": 291
     },
     {
       "goalie_id": 8470140,
       "name": "Kari Lehtonen",
-      "team": "\u2014",
-      "stopped": 152,
-      "faced": 226
-    },
-    {
-      "goalie_id": 8455710,
-      "name": "Martin Brodeur",
-      "team": "\u2014",
-      "stopped": 146,
-      "faced": 221
-    },
-    {
-      "goalie_id": 8460703,
-      "name": "Tim Thomas",
-      "team": "\u2014",
-      "stopped": 155,
-      "faced": 219
-    },
-    {
-      "goalie_id": 8471695,
-      "name": "Tuukka Rask",
-      "team": "\u2014",
-      "stopped": 151,
-      "faced": 217
-    },
-    {
-      "goalie_id": 8471679,
-      "name": "Carey Price",
-      "team": "\u2014",
-      "stopped": 145,
-      "faced": 210
+      "team": "ATL",
+      "stopped": 180,
+      "faced": 254
     },
     {
       "goalie_id": 8470860,
       "name": "Jaroslav Halak",
-      "team": "\u2014",
-      "stopped": 128,
-      "faced": 204
-    },
-    {
-      "goalie_id": 8475683,
-      "name": "Sergei Bobrovsky",
-      "team": "TOR",
-      "stopped": 133,
-      "faced": 197
+      "team": "MTL",
+      "stopped": 168,
+      "faced": 245
     },
     {
       "goalie_id": 8474550,
       "name": "Antti Niemi",
-      "team": "\u2014",
-      "stopped": 129,
-      "faced": 196
+      "team": "CHI",
+      "stopped": 178,
+      "faced": 245
     },
     {
-      "goalie_id": 8460705,
-      "name": "Evgeni Nabokov",
-      "team": "\u2014",
-      "stopped": 114,
-      "faced": 191
+      "goalie_id": 8455710,
+      "name": "Martin Brodeur",
+      "team": "NJD",
+      "stopped": 169,
+      "faced": 244
+    },
+    {
+      "goalie_id": 8471695,
+      "name": "Tuukka Rask",
+      "team": "BOS",
+      "stopped": 172,
+      "faced": 238
+    },
+    {
+      "goalie_id": 8460703,
+      "name": "Tim Thomas",
+      "team": "BOS",
+      "stopped": 170,
+      "faced": 234
     },
     {
       "goalie_id": 8470657,
       "name": "Jimmy Howard",
-      "team": "\u2014",
-      "stopped": 121,
-      "faced": 190
-    },
-    {
-      "goalie_id": 8470880,
-      "name": "Brian Elliott",
-      "team": "\u2014",
-      "stopped": 119,
-      "faced": 190
-    },
-    {
-      "goalie_id": 8473461,
-      "name": "Steve Mason",
-      "team": "\u2014",
-      "stopped": 111,
-      "faced": 188
-    },
-    {
-      "goalie_id": 8460612,
-      "name": "Marty Turco",
-      "team": "\u2014",
-      "stopped": 126,
-      "faced": 187
+      "team": "DET",
+      "stopped": 163,
+      "faced": 234
     },
     {
       "goalie_id": 8467950,
       "name": "Craig Anderson",
-      "team": "\u2014",
-      "stopped": 111,
-      "faced": 187
+      "team": "CHI,CHI",
+      "stopped": 154,
+      "faced": 231
     },
     {
-      "goalie_id": 8473575,
-      "name": "Semyon Varlamov",
-      "team": "NYI",
-      "stopped": 128,
-      "faced": 185
+      "goalie_id": 8471679,
+      "name": "Carey Price",
+      "team": "MTL",
+      "stopped": 165,
+      "faced": 230
+    },
+    {
+      "goalie_id": 8473461,
+      "name": "Steve Mason",
+      "team": "CBJ",
+      "stopped": 150,
+      "faced": 229
+    },
+    {
+      "goalie_id": 8475683,
+      "name": "Sergei Bobrovsky",
+      "team": "PHI",
+      "stopped": 161,
+      "faced": 225
     },
     {
       "goalie_id": 8469608,
       "name": "Mike Smith",
-      "team": "\u2014",
-      "stopped": 100,
-      "faced": 184
+      "team": "DAL",
+      "stopped": 137,
+      "faced": 222
     },
     {
-      "goalie_id": 8468524,
-      "name": "Ilya Bryzgalov",
-      "team": "\u2014",
-      "stopped": 103,
-      "faced": 180
+      "goalie_id": 8460705,
+      "name": "Evgeni Nabokov",
+      "team": "SJS",
+      "stopped": 140,
+      "faced": 219
     },
     {
-      "goalie_id": 8473972,
-      "name": "Jonas Hiller",
-      "team": "\u2014",
-      "stopped": 114,
-      "faced": 178
+      "goalie_id": 8470880,
+      "name": "Brian Elliott",
+      "team": "OTT",
+      "stopped": 146,
+      "faced": 217
+    },
+    {
+      "goalie_id": 8473575,
+      "name": "Semyon Varlamov",
+      "team": "WSH",
+      "stopped": 156,
+      "faced": 214
     },
     {
       "goalie_id": 8473503,
       "name": "James Reimer",
-      "team": "\u2014",
-      "stopped": 113,
-      "faced": 177
+      "team": "TOR",
+      "stopped": 143,
+      "faced": 207
+    },
+    {
+      "goalie_id": 8468524,
+      "name": "Ilya Bryzgalov",
+      "team": "ANA",
+      "stopped": 126,
+      "faced": 204
+    },
+    {
+      "goalie_id": 8460612,
+      "name": "Marty Turco",
+      "team": "DAL",
+      "stopped": 138,
+      "faced": 202
+    },
+    {
+      "goalie_id": 8473972,
+      "name": "Jonas Hiller",
+      "team": "ANA",
+      "stopped": 137,
+      "faced": 201
     }
   ],
   "min_attempts_threshold": 15,
