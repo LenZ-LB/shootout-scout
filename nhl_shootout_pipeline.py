@@ -84,6 +84,17 @@ CREATE TABLE IF NOT EXISTS manual_attempts (
     logged_by   TEXT,
     notes       TEXT
 );
+
+-- current NHL rosters — rebuilt from scratch on every --update-rosters run
+-- only players in this table appear in team panels on the page
+-- everyone else is still in the db for search/history but has no team assignment
+CREATE TABLE IF NOT EXISTS active_rosters (
+    player_id   INTEGER PRIMARY KEY,
+    full_name   TEXT,
+    team_abbrev TEXT NOT NULL,
+    position    TEXT,
+    is_goalie   INTEGER DEFAULT 0
+);
 """
 
 SEASONS = [
@@ -107,7 +118,7 @@ def init_db():
             conn.execute(f"ALTER TABLE goalie_shootout ADD COLUMN {col} INTEGER DEFAULT 0")
             print(f"  Migrated: added {col} column to goalie_shootout")
         except sqlite3.OperationalError:
-            pass  # column already exists, fine
+            pass  # column already exists
     conn.commit()
     conn.close()
     print(f"Initialized {DB_PATH}")
@@ -248,9 +259,10 @@ def backfill(start_season, end_season, debug=False):
 
 def update_rosters():
     """
-    Update team assignments for active players — the stats API gives the team
-    they were on at end of season. For current-season accuracy (trades, call-ups)
-    this updates from the roster endpoint instead.
+    Rebuilds the active_rosters table from scratch using current NHL rosters.
+    Only players in active_rosters appear in team panels on the page —
+    retired/unsigned players are invisible in team views but still searchable
+    in all-time history.
     """
     BASE = "https://api-web.nhle.com/v1"
     TEAM_ABBREVS = [
@@ -259,6 +271,10 @@ def update_rosters():
         "PHI","PIT","SJS","SEA","STL","TBL","TOR","UTA","VAN","VGK","WSH","WPG",
     ]
     conn = get_conn()
+    # Wipe and rebuild — ensures departed players are immediately removed
+    conn.execute("DELETE FROM active_rosters")
+    conn.commit()
+
     current_season = SEASONS[-1]
     for team in TEAM_ABBREVS:
         url = f"{BASE}/roster/{team}/current"
@@ -269,24 +285,44 @@ def update_rosters():
         except Exception as e:
             print(f"  [warn] roster fetch failed for {team}: {e}")
             continue
-        for group in ("forwards", "defensemen"):
+
+        for group, is_goalie in (("forwards", 0), ("defensemen", 0), ("goalies", 1)):
             for p in data.get(group, []):
+                pid = p["id"]
+                name = f"{p['firstName']['default']} {p['lastName']['default']}"
+                pos = p.get("positionCode", "")
                 conn.execute("""
-                    UPDATE skater_shootout SET team_abbrev=? WHERE player_id=? AND season=?
-                """, (team, p["id"], current_season))
-        for g in data.get("goalies", []):
-            conn.execute("""
-                UPDATE goalie_shootout SET team_abbrev=? WHERE goalie_id=? AND season=?
-            """, (team, g["id"], current_season))
+                    INSERT OR REPLACE INTO active_rosters (player_id, full_name, team_abbrev, position, is_goalie)
+                    VALUES (?, ?, ?, ?, ?)
+                """, (pid, name, team, pos, is_goalie))
+                # Also keep current season stats row team current
+                table = "goalie_shootout" if is_goalie else "skater_shootout"
+                id_col = "goalie_id" if is_goalie else "player_id"
+                conn.execute(
+                    f"UPDATE {table} SET team_abbrev=? WHERE {id_col}=? AND season=?",
+                    (team, pid, current_season)
+                )
         conn.commit()
         time.sleep(0.3)
+        print(f"  {team} rostered")
+
+    total = conn.execute("SELECT COUNT(*) FROM active_rosters").fetchone()[0]
     conn.close()
-    print("Rosters updated.")
+    print(f"Rosters updated — {total} active players/goalies in db.")
 
 def export_json(out_dir="data"):
     os.makedirs(out_dir, exist_ok=True)
     conn = get_conn()
     conn.row_factory = sqlite3.Row
+
+    # Build active roster lookup: player_id -> {team, name, is_goalie}
+    active = {}
+    for row in conn.execute("SELECT player_id, full_name, team_abbrev, is_goalie FROM active_rosters"):
+        active[row["player_id"]] = {
+            "team": row["team_abbrev"],
+            "name": row["full_name"],
+            "is_goalie": row["is_goalie"],
+        }
 
     # --- Players ---
     players_map = {}
@@ -296,10 +332,13 @@ def export_json(out_dir="data"):
     """):
         pid = row["player_id"]
         if pid not in players_map:
+            # Use active_rosters name/team if available, else fall back to stats data
+            ar = active.get(pid)
             players_map[pid] = {
                 "id": pid,
-                "name": row["full_name"],
-                "team": "",
+                "name": ar["name"] if ar else row["full_name"],
+                "team": ar["team"] if ar else "",  # blank = not on current roster
+                "active": pid in active and not active[pid]["is_goalie"],
                 "career": [0, 0],
                 "seasons": {},
                 "vs_goalie": {},
@@ -308,9 +347,6 @@ def export_json(out_dir="data"):
         p["career"][0] += row["goals"]
         p["career"][1] += row["attempts"]
         p["seasons"][row["season"]] = [row["goals"], row["attempts"]]
-        # Keep most recent team — take first from comma-separated list (e.g. "BOS,MIN" -> "BOS")
-        if row["team_abbrev"]:
-            p["team"] = row["team_abbrev"].split(",")[0].strip()
 
     # attach vs_goalie splits
     for row in conn.execute("""
@@ -331,10 +367,12 @@ def export_json(out_dir="data"):
     """):
         gid = row["goalie_id"]
         if gid not in goalies_map:
+            ar = active.get(gid)
             goalies_map[gid] = {
                 "id": gid,
-                "name": row["full_name"],
-                "team": row["team_abbrev"] or "",
+                "name": ar["name"] if ar else row["full_name"],
+                "team": ar["team"] if ar else "",
+                "active": gid in active and active[gid]["is_goalie"],
                 "stopped": 0,
                 "faced": 0,
                 "wins": 0,
@@ -342,11 +380,9 @@ def export_json(out_dir="data"):
             }
         g = goalies_map[gid]
         g["stopped"] += row["saves"]
-        g["faced"] += row["shots_against"]
-        g["wins"]   += row["wins"]
-        g["losses"] += row["losses"]
-        if row["team_abbrev"]:
-            g["team"] = row["team_abbrev"].split(",")[0].strip()
+        g["faced"]   += row["shots_against"]
+        g["wins"]    += row["wins"]
+        g["losses"]  += row["losses"]
 
     for g in goalies_map.values():
         g["record"] = f"{g['wins']} W \u2013 {g['losses']} L in career shootouts"

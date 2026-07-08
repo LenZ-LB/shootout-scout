@@ -185,38 +185,38 @@ const TEAMS = [
 
 // ---- Fallback sample data (from your GM22 template) — used only if data/*.json isn't found yet ----
 const SAMPLE_PLAYERS = [
-  {name:"Ryan Nugent-Hopkins", team:"EDM", career:[15,45], seasons:{"20222023":[2,4],"20232024":[2,3],"20242025":[0,1],"20252026":[0,2]}, vs_goalie:{"Charlie Lindgren":[0,1]}},
-  {name:"Connor McDavid",      team:"EDM", career:[15,35], seasons:{"20222023":[1,4],"20232024":[2,3],"20242025":[0,1],"20252026":[0,2]}, vs_goalie:{}},
-  {name:"Leon Draisaitl",      team:"EDM", career:[12,32], seasons:{"20222023":[0,4],"20232024":[1,2],"20242025":[0,0],"20252026":[1,6]}, vs_goalie:{"Charlie Lindgren":[2,2]}},
-  {name:"Adam Henrique",       team:"EDM", career:[4,23],  seasons:{"20222023":[1,2],"20232024":[0,0],"20242025":[0,0],"20252026":[1,2]}, vs_goalie:{}},
-  {name:"Kasperi Kapanen",     team:"EDM", career:[0,6],   seasons:{}, vs_goalie:{"Charlie Lindgren":[0,1]}},
-  {name:"Andrew Mangiapane",   team:"EDM", career:[0,4],   seasons:{}, vs_goalie:{}},
-  {name:"Jack Roslovic",       team:"EDM", career:[0,3],   seasons:{}, vs_goalie:{}},
-  {name:"Mattias Janmark",     team:"EDM", career:[0,2],   seasons:{}, vs_goalie:{}},
-  {name:"Trent Frederic",      team:"EDM", career:[0,2],   seasons:{"20252026":[0,1]}, vs_goalie:{}},
-  {name:"Zach Hyman",          team:"EDM", career:[0,1],   seasons:{"20252026":[0,1]}, vs_goalie:{}},
-  {name:"Vasily Podkolzin",    team:"EDM", career:[0,1],   seasons:{}, vs_goalie:{}},
-  {name:"Evan Bouchard",       team:"EDM", career:[0,1],   seasons:{}, vs_goalie:{"Charlie Lindgren":[0,1]}},
-  {name:"Mattias Ekholm",      team:"EDM", career:[0,1],   seasons:{}, vs_goalie:{}},
-  {name:"Alex Ovechkin",       team:"WSH", career:[37,127], seasons:{"20222023":[0,3],"20232024":[0,7],"20242025":[0,1],"20252026":[0,11]}, vs_goalie:{"Stuart Skinner":[0,2]}},
-  {name:"Anthony Beauvillier", team:"WSH", career:[7,24],   seasons:{"20222023":[0,2],"20232024":[0,0],"20242025":[1,1],"20252026":[1,3]}, vs_goalie:{"Stuart Skinner":[0,2]}},
-  {name:"Pierre-Luc Dubois",   team:"WSH", career:[10,23],  seasons:{"20222023":[1,1],"20232024":[2,4],"20242025":[2,5],"20252026":[5,10]}, vs_goalie:{}},
-  {name:"Dylan Strome",        team:"WSH", career:[4,18],   seasons:{"20222023":[0,2],"20232024":[2,6],"20242025":[1,5],"20252026":[3,13]}, vs_goalie:{"Stuart Skinner":[1,2]}},
-  {name:"John Carlson",        team:"WSH", career:[4,15],   seasons:{"20222023":[0,1],"20232024":[1,3],"20242025":[0,3],"20252026":[1,7]}, vs_goalie:{}},
-  {name:"Sonny Milano",        team:"WSH", career:[1,7],    seasons:{"20232024":[1,3],"20242025":[0,0],"20252026":[1,3]}, vs_goalie:{}},
-  {name:"Connor McMichael",    team:"WSH", career:[0,5],    seasons:{"20232024":[0,3],"20252026":[0,3]}, vs_goalie:{"Stuart Skinner":[0,2]}},
-  {name:"Jakob Chychrun",      team:"WSH", career:[1,4],    seasons:{"20222023":[0,1],"20242025":[0,1],"20252026":[0,2]}, vs_goalie:{}},
-  {name:"Nic Dowd",            team:"WSH", career:[0,2],    seasons:{}, vs_goalie:{}},
-  {name:"Trevor van Riemsdyk", team:"WSH", career:[0,2],    seasons:{}, vs_goalie:{}},
-  {name:"Aliaksei Protas",     team:"WSH", career:[0,1],    seasons:{"20242025":[0,1],"20252026":[0,1]}, vs_goalie:{}},
-  {name:"Tom Wilson",          team:"WSH", career:[0,1],    seasons:{}, vs_goalie:{}},
-  {name:"Rasmus Sandin",       team:"WSH", career:[0,1],    seasons:{"20252026":[0,1]}, vs_goalie:{}},
+  {name:"Ryan Nugent-Hopkins", team:"EDM", active:true, career:[15,45], seasons:{"20222023":[2,4],"20232024":[2,3],"20242025":[0,1],"20252026":[0,2]}, vs_goalie:{"Charlie Lindgren":[0,1]}},
+  {name:"Connor McDavid",      team:"EDM", active:true, career:[15,35], seasons:{"20222023":[1,4],"20232024":[2,3],"20242025":[0,1],"20252026":[0,2]}, vs_goalie:{}},
+  {name:"Leon Draisaitl",      team:"EDM", active:true, career:[12,32], seasons:{"20222023":[0,4],"20232024":[1,2],"20242025":[0,0],"20252026":[1,6]}, vs_goalie:{"Charlie Lindgren":[2,2]}},
+  {name:"Adam Henrique",       team:"EDM", active:true, career:[4,23],  seasons:{"20222023":[1,2],"20232024":[0,0],"20242025":[0,0],"20252026":[1,2]}, vs_goalie:{}},
+  {name:"Kasperi Kapanen",     team:"EDM", active:true, career:[0,6],   seasons:{}, vs_goalie:{"Charlie Lindgren":[0,1]}},
+  {name:"Andrew Mangiapane",   team:"EDM", active:true, career:[0,4],   seasons:{}, vs_goalie:{}},
+  {name:"Jack Roslovic",       team:"EDM", active:true, career:[0,3],   seasons:{}, vs_goalie:{}},
+  {name:"Mattias Janmark",     team:"EDM", active:true, career:[0,2],   seasons:{}, vs_goalie:{}},
+  {name:"Trent Frederic",      team:"EDM", active:true, career:[0,2],   seasons:{"20252026":[0,1]}, vs_goalie:{}},
+  {name:"Zach Hyman",          team:"EDM", active:true, career:[0,1],   seasons:{"20252026":[0,1]}, vs_goalie:{}},
+  {name:"Vasily Podkolzin",    team:"EDM", active:true, career:[0,1],   seasons:{}, vs_goalie:{}},
+  {name:"Evan Bouchard",       team:"EDM", active:true, career:[0,1],   seasons:{}, vs_goalie:{"Charlie Lindgren":[0,1]}},
+  {name:"Mattias Ekholm",      team:"EDM", active:true, career:[0,1],   seasons:{}, vs_goalie:{}},
+  {name:"Alex Ovechkin",       team:"WSH", active:true, career:[37,127], seasons:{"20222023":[0,3],"20232024":[0,7],"20242025":[0,1],"20252026":[0,11]}, vs_goalie:{"Stuart Skinner":[0,2]}},
+  {name:"Anthony Beauvillier", team:"WSH", active:true, career:[7,24],   seasons:{"20222023":[0,2],"20232024":[0,0],"20242025":[1,1],"20252026":[1,3]}, vs_goalie:{"Stuart Skinner":[0,2]}},
+  {name:"Pierre-Luc Dubois",   team:"WSH", active:true, career:[10,23],  seasons:{"20222023":[1,1],"20232024":[2,4],"20242025":[2,5],"20252026":[5,10]}, vs_goalie:{}},
+  {name:"Dylan Strome",        team:"WSH", active:true, career:[4,18],   seasons:{"20222023":[0,2],"20232024":[2,6],"20242025":[1,5],"20252026":[3,13]}, vs_goalie:{"Stuart Skinner":[1,2]}},
+  {name:"John Carlson",        team:"WSH", active:true, career:[4,15],   seasons:{"20222023":[0,1],"20232024":[1,3],"20242025":[0,3],"20252026":[1,7]}, vs_goalie:{}},
+  {name:"Sonny Milano",        team:"WSH", active:true, career:[1,7],    seasons:{"20232024":[1,3],"20242025":[0,0],"20252026":[1,3]}, vs_goalie:{}},
+  {name:"Connor McMichael",    team:"WSH", active:true, career:[0,5],    seasons:{"20232024":[0,3],"20252026":[0,3]}, vs_goalie:{"Stuart Skinner":[0,2]}},
+  {name:"Jakob Chychrun",      team:"WSH", active:true, career:[1,4],    seasons:{"20222023":[0,1],"20242025":[0,1],"20252026":[0,2]}, vs_goalie:{}},
+  {name:"Nic Dowd",            team:"WSH", active:true, career:[0,2],    seasons:{}, vs_goalie:{}},
+  {name:"Trevor van Riemsdyk", team:"WSH", active:true, career:[0,2],    seasons:{}, vs_goalie:{}},
+  {name:"Aliaksei Protas",     team:"WSH", active:true, career:[0,1],    seasons:{"20242025":[0,1],"20252026":[0,1]}, vs_goalie:{}},
+  {name:"Tom Wilson",          team:"WSH", active:true, career:[0,1],    seasons:{}, vs_goalie:{}},
+  {name:"Rasmus Sandin",       team:"WSH", active:true, career:[0,1],    seasons:{"20252026":[0,1]}, vs_goalie:{}},
 ];
 const SAMPLE_GOALIES = [
-  {name:"Stuart Skinner", team:"EDM", stopped:16, faced:29, record:"3 W \u2013 6 L in career shootouts"},
-  {name:"Calvin Pickard", team:"EDM", stopped:19, faced:25, record:"6 W \u2013 2 L in career shootouts"},
-  {name:"Charlie Lindgren", team:"WSH", stopped:37, faced:54, record:"5 W \u2013 9 L in career shootouts"},
-  {name:"Logan Thompson",   team:"WSH", stopped:39, faced:52, record:"5 W \u2013 8 L in career shootouts"},
+  {name:"Stuart Skinner", team:"EDM", active:true, stopped:16, faced:29, record:"3 W \u2013 6 L in career shootouts"},
+  {name:"Calvin Pickard", team:"EDM", active:true, stopped:19, faced:25, record:"6 W \u2013 2 L in career shootouts"},
+  {name:"Charlie Lindgren", team:"WSH", active:true, stopped:37, faced:54, record:"5 W \u2013 9 L in career shootouts"},
+  {name:"Logan Thompson",   team:"WSH", active:true, stopped:39, faced:52, record:"5 W \u2013 8 L in career shootouts"},
 ];
 const SAMPLE_MINOR = [
   {name:"D. Tomasek", team:"AHL", career:[8,19], cur:[8,18]},
@@ -310,8 +310,8 @@ function renderPanels(teamA, teamB){
   const panelsEl = document.getElementById('panels');
   const pairs = [[teamA, teamB], [teamB, teamA]];
   panelsEl.innerHTML = pairs.map(([team, opp]) => {
-    const players = PLAYERS.filter(p => p.team === team);
-    const oppGoalies = GOALIES.filter(g => g.team === opp);
+    const players = PLAYERS.filter(p => p.team === team && p.active);
+    const oppGoalies = GOALIES.filter(g => g.team === opp && g.active);
     const oppLabel = oppGoalies.length ? oppGoalies.map(g => g.name.split(' ').pop()).join(' / ') : opp;
     if(!players.length){
       return `<div class="team-panel">
@@ -352,7 +352,7 @@ function renderPanels(teamA, teamB){
 
 function renderGoalies(teamA, teamB){
   const el = document.getElementById('goalieRow');
-  const list = GOALIES.filter(g => g.team === teamA || g.team === teamB);
+  const list = GOALIES.filter(g => (g.team === teamA || g.team === teamB) && g.active);
   if(!list.length){ el.innerHTML = '<div class="empty-panel">No goalie data loaded for these teams yet.</div>'; return; }
   el.innerHTML = list.map(g => {
     const svPct = g.faced ? ((g.stopped/g.faced)*100).toFixed(1) : '\u2014';
