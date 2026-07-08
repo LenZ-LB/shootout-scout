@@ -5,178 +5,354 @@
       "name": "Patrick Kane",
       "team": "CHI",
       "goals": 55,
-      "att": 0
+      "att": 133
     },
     {
       "player_id": 8473604,
       "name": "Jonathan Toews",
       "team": "CHI",
       "goals": 52,
-      "att": 0
+      "att": 112
     },
     {
       "player_id": 8470144,
       "name": "Frans Nielsen",
       "team": "NYI",
       "goals": 49,
-      "att": 0
+      "att": 106
     },
     {
       "player_id": 8471698,
       "name": "T.J. Oshie",
       "team": "STL",
       "goals": 49,
-      "att": 0
+      "att": 104
     },
     {
       "player_id": 8471675,
       "name": "Sidney Crosby",
       "team": "PIT",
       "goals": 48,
-      "att": 0
+      "att": 128
     },
     {
       "player_id": 8470794,
       "name": "Joe Pavelski",
       "team": "SJS",
       "goals": 47,
-      "att": 0
+      "att": 130
     },
     {
       "player_id": 8468085,
       "name": "Radim Vrbata",
       "team": "CAR,CHI",
       "goals": 45,
-      "att": 0
+      "att": 105
     },
     {
       "player_id": 8470610,
       "name": "Zach Parise",
       "team": "NJD",
       "goals": 44,
-      "att": 0
+      "att": 114
     },
     {
       "player_id": 8471685,
       "name": "Anze Kopitar",
       "team": "LAK",
       "goals": 43,
-      "att": 0
+      "att": 120
     },
     {
       "player_id": 8469459,
       "name": "Mikko Koivu",
       "team": "MIN",
       "goals": 42,
-      "att": 0
+      "att": 108
     },
     {
       "player_id": 8467514,
       "name": "Pavel Datsyuk",
       "team": "DET",
       "goals": 40,
-      "att": 0
+      "att": 76
     },
     {
       "player_id": 8475692,
       "name": "Mats Zuccarello",
       "team": "NYR",
       "goals": 40,
-      "att": 0
+      "att": 94
     },
     {
       "player_id": 8468504,
       "name": "Brad Boyes",
       "team": "BOS",
       "goals": 39,
-      "att": 0
+      "att": 88
     },
     {
       "player_id": 8469638,
       "name": "Jussi Jokinen",
       "team": "DAL",
       "goals": 37,
-      "att": 0
+      "att": 96
     },
     {
       "player_id": 8471214,
       "name": "Alex Ovechkin",
       "team": "WSH",
       "goals": 37,
-      "att": 0
+      "att": 128
     },
     {
       "player_id": 8475168,
       "name": "Matt Duchene",
       "team": "COL",
       "goals": 35,
-      "att": 0
+      "att": 87
     },
     {
       "player_id": 8470621,
       "name": "Corey Perry",
       "team": "ANA",
       "goals": 34,
-      "att": 0
+      "att": 102
     },
     {
       "player_id": 8474053,
       "name": "Logan Couture",
       "team": "SJS",
       "goals": 33,
-      "att": 0
+      "att": 80
     },
     {
       "player_id": 8477493,
       "name": "Aleksander Barkov",
       "team": "FLA",
       "goals": 33,
-      "att": 0
+      "att": 68
     },
     {
       "player_id": 8470041,
       "name": "Rick Nash",
       "team": "CBJ",
       "goals": 32,
-      "att": 0
+      "att": 86
     },
     {
       "player_id": 8475794,
       "name": "Tyler Seguin",
       "team": "BOS",
       "goals": 32,
-      "att": 0
+      "att": 71
     },
     {
       "player_id": 8467389,
       "name": "Brad Richards",
       "team": "TBL",
       "goals": 31,
-      "att": 0
+      "att": 83
     },
     {
       "player_id": 8473512,
       "name": "Claude Giroux",
       "team": "PHI",
       "goals": 31,
-      "att": 0
+      "att": 110
     },
     {
       "player_id": 8476459,
       "name": "Mika Zibanejad",
       "team": "OTT",
       "goals": 31,
-      "att": 0
+      "att": 69
     },
     {
       "player_id": 8469454,
       "name": "Ilya Kovalchuk",
       "team": "ATL",
       "goals": 30,
-      "att": 0
+      "att": 71
     }
   ],
-  "top_shooting_pct": [],
+  "top_shooting_pct": [
+    {
+      "player_id": 8475204,
+      "name": "Brandon Pirri",
+      "team": "CHI",
+      "goals": 11,
+      "att": 16
+    },
+    {
+      "player_id": 8482097,
+      "name": "Jack Quinn",
+      "team": "BUF",
+      "goals": 10,
+      "att": 15
+    },
+    {
+      "player_id": 8480027,
+      "name": "Jason Robertson",
+      "team": "DAL",
+      "goals": 22,
+      "att": 36
+    },
+    {
+      "player_id": 8471976,
+      "name": "David Desharnais",
+      "team": "MTL",
+      "goals": 17,
+      "att": 28
+    },
+    {
+      "player_id": 8481533,
+      "name": "Trevor Zegras",
+      "team": "ANA",
+      "goals": 20,
+      "att": 34
+    },
+    {
+      "player_id": 8456887,
+      "name": "Vyacheslav Kozlov",
+      "team": "ATL",
+      "goals": 27,
+      "att": 46
+    },
+    {
+      "player_id": 8470373,
+      "name": "Jeff Hamilton",
+      "team": "NYI",
+      "goals": 9,
+      "att": 16
+    },
+    {
+      "player_id": 8475820,
+      "name": "Joonas Donskoi",
+      "team": "SJS",
+      "goals": 9,
+      "att": 16
+    },
+    {
+      "player_id": 8478550,
+      "name": "Artemi Panarin",
+      "team": "CHI",
+      "goals": 29,
+      "att": 52
+    },
+    {
+      "player_id": 8475185,
+      "name": "Jacob Josefson",
+      "team": "NJD",
+      "goals": 13,
+      "att": 24
+    },
+    {
+      "player_id": 8471238,
+      "name": "Rob Schremp",
+      "team": "EDM",
+      "goals": 9,
+      "att": 17
+    },
+    {
+      "player_id": 8476483,
+      "name": "Rickard Rakell",
+      "team": "ANA",
+      "goals": 19,
+      "att": 36
+    },
+    {
+      "player_id": 8470299,
+      "name": "Erik Christensen",
+      "team": "PIT",
+      "goals": 29,
+      "att": 55
+    },
+    {
+      "player_id": 8467514,
+      "name": "Pavel Datsyuk",
+      "team": "DET",
+      "goals": 40,
+      "att": 76
+    },
+    {
+      "player_id": 8467502,
+      "name": "Ales Kotalik",
+      "team": "BUF",
+      "goals": 22,
+      "att": 42
+    },
+    {
+      "player_id": 8470741,
+      "name": "Nigel Dawes",
+      "team": "NYR",
+      "goals": 11,
+      "att": 21
+    },
+    {
+      "player_id": 8481557,
+      "name": "Matt Boldy",
+      "team": "MIN",
+      "goals": 13,
+      "att": 25
+    },
+    {
+      "player_id": 8470597,
+      "name": "Nikolay Zherdev",
+      "team": "CBJ",
+      "goals": 14,
+      "att": 27
+    },
+    {
+      "player_id": 8476462,
+      "name": "Dougie Hamilton",
+      "team": "BOS",
+      "goals": 9,
+      "att": 18
+    },
+    {
+      "player_id": 8482113,
+      "name": "Anton Lundell",
+      "team": "FLA",
+      "goals": 11,
+      "att": 22
+    },
+    {
+      "player_id": 8481540,
+      "name": "Cole Caufield",
+      "team": "MTL",
+      "goals": 17,
+      "att": 35
+    },
+    {
+      "player_id": 8477493,
+      "name": "Aleksander Barkov",
+      "team": "FLA",
+      "goals": 33,
+      "att": 68
+    },
+    {
+      "player_id": 8477447,
+      "name": "Shea Theodore",
+      "team": "ANA",
+      "goals": 12,
+      "att": 25
+    },
+    {
+      "player_id": 8467423,
+      "name": "Shawn Horcoff",
+      "team": "EDM",
+      "goals": 11,
+      "att": 23
+    },
+    {
+      "player_id": 8482116,
+      "name": "Tim St\u00fctzle",
+      "team": "OTT",
+      "goals": 10,
+      "att": 21
+    }
+  ],
   "top_goalie_save_pct": [
     {
       "goalie_id": 8476876,
