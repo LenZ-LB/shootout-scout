@@ -37,6 +37,9 @@ jobs:
       - name: Diagnose game-level API field names
         run: python diagnose_splits.py
 
+      - name: Diagnose game-level goalie API field names
+        run: python diagnose_splits2.py
+
       - name: Build vs-goalie splits ${{ github.event.inputs.start_season }} to ${{ github.event.inputs.end_season }}
         run: python nhl_shootout_pipeline.py --build-splits ${{ github.event.inputs.start_season }} ${{ github.event.inputs.end_season }} --debug
 
