@@ -102,6 +102,7 @@
   tbody td:first-child{text-align:left; white-space:normal;}
   tbody tr:hover{background:#131F38;}
   .player-name{font-weight:500;}
+  .player-num{color:var(--ink-dim); font-family:'IBM Plex Mono'; font-size:10px; font-weight:500;}
   .pct{font-family:'IBM Plex Mono'; font-weight:600;}
   .pct.hot{color:var(--hot);}
   .pct.cold{color:var(--ink-dim);}
@@ -219,7 +220,8 @@
     .pct.hot{ color:#8B6914 !important; font-weight:700 !important; }
     .pct.cold{ color:#999 !important; }
     .no-data{ color:#bbb !important; }
-    .player-name{ font-size:7px !important; display:block !important; overflow:hidden !important; text-overflow:ellipsis !important; }
+    .no-attempts{ display:none !important; }
+    .player-num{ color:#888 !important; font-size:6px !important; }
 
     /* Goalie cards - slim horizontal strips */
     .goalie-row{
@@ -565,8 +567,10 @@ function renderPanels(teamA, teamB){
                   return `<td class="vsg-col">${fmtGA(split)}</td>`;
                 }).join('')
               : `<td class="vsg-col"><span class="no-data">\u2014</span></td>`;
-            return `<tr>
-              <td><span class="player-name">${p.name}</span></td>
+            const numLabel = p.number ? `<span class="player-num">#${p.number}</span> ` : '';
+            const noAttempts = p.career[1] === 0 ? 'no-attempts' : '';
+            return `<tr class="${noAttempts}">
+              <td><span class="player-name">${numLabel}${p.name}</span></td>
               <td>${fmtGA(p.career)}</td>
               <td>${fmtPct(p.career)}</td>
               <td>${fmtGA(last3(p.seasons))}</td>

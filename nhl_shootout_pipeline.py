@@ -343,6 +343,7 @@ def export_json(out_dir="data"):
             "id": pid,
             "name": ar["name"],
             "team": ar["team"],
+            "number": ar.get("jersey_number"),
             "active": True,
             "career": [0, 0],
             "seasons": {},
