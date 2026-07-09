@@ -336,6 +336,9 @@ const SORT_STATE = {};
 function sortPlayers(players, col, dir, oppGoalies){
   const mult = dir === 'asc' ? 1 : -1;
   return [...players].sort((a, b) => {
+    // Always push zero-career-attempt players to the bottom
+    if(a.career[1] === 0 && b.career[1] > 0) return 1;
+    if(b.career[1] === 0 && a.career[1] > 0) return -1;
     let av, bv;
     if(col === 'career')    { av = a.career[1]; bv = b.career[1]; }
     else if(col === 'pct')  { av = a.career[1]>0 ? a.career[0]/a.career[1] : -1; bv = b.career[1]>0 ? b.career[0]/b.career[1] : -1; }
