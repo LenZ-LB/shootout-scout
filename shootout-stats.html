@@ -134,32 +134,117 @@
   .alltime-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
   @media (max-width:760px){ .alltime-grid{grid-template-columns:1fr;} }
   @media print {
-    body{ background:white !important; color:black !important; padding:0; }
+    * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+    body{ background:white !important; color:#111 !important; padding:0; margin:0; font-family:'Inter',sans-serif; }
+
+    /* Hide everything except the essentials */
     .status-banner, .selector-bar, .search-box, #printBtn,
-    .section-toggle, .legend { display:none !important; }
-    .scoreboard{ background:white !important; border:none !important;
-      border-bottom:2px solid #333 !important; padding:10px 0 !important; }
-    .matchup-title{ color:black !important; font-size:20px !important; }
-    .matchup-title .vs{ color:#555 !important; }
-    .game-meta{ color:#555 !important; }
-    .wrap{ max-width:100% !important; }
-    .panels{ grid-template-columns:1fr 1fr !important; gap:8px !important; }
-    .team-panel{ border:1px solid #ccc !important; background:white !important; }
-    .team-header{ background:#f0f0f0 !important; color:black !important; border-bottom:1px solid #ccc !important; }
-    thead th{ background:white !important; color:#333 !important; border-bottom:1px solid #ccc !important; }
-    tbody td{ color:black !important; border-bottom:1px solid #eee !important; }
+    .section-toggle, .legend, #searchResults { display:none !important; }
+
+    .wrap{ max-width:100% !important; padding:0 !important; }
+
+    /* Header */
+    .scoreboard{
+      background:white !important; border:none !important;
+      border-bottom:2.5px solid #111 !important;
+      padding:8px 0 6px !important;
+      display:flex !important; justify-content:space-between !important; align-items:flex-end !important;
+      margin-bottom:10px !important;
+    }
+    .matchup-title{ color:#111 !important; font-size:18px !important; letter-spacing:0.5px !important; }
+    .matchup-title .vs{ color:#444 !important; }
+    #gameMeta{ color:#444 !important; font-size:10px !important; margin-top:2px !important; }
+
+    /* Two panels side by side */
+    .panels{
+      display:grid !important;
+      grid-template-columns:1fr 1fr !important;
+      gap:10px !important;
+      margin-bottom:10px !important;
+    }
+
+    .team-panel{
+      border:1.5px solid #ccc !important;
+      background:white !important;
+      border-radius:0 !important;
+      page-break-inside:avoid;
+    }
+
+    .team-header{
+      background:#1a1a2e !important;
+      color:white !important;
+      padding:6px 10px !important;
+      font-size:11px !important;
+      letter-spacing:0.8px !important;
+      display:flex !important;
+      justify-content:space-between !important;
+    }
+    .opp-goalie{ color:#ccc !important; font-size:9px !important; }
+
+    table{ width:100% !important; border-collapse:collapse !important; font-size:8.5px !important; }
+    thead th{
+      background:#f0f0f0 !important; color:#333 !important;
+      border-bottom:1.5px solid #999 !important;
+      padding:4px 5px !important; font-size:8px !important;
+      letter-spacing:0.3px !important; white-space:nowrap !important;
+    }
+    thead th:first-child{ text-align:left !important; }
+    tbody td{
+      padding:4px 5px !important;
+      border-bottom:1px solid #e8e8e8 !important;
+      color:#111 !important; white-space:nowrap !important;
+    }
+    tbody td:first-child{ text-align:left !important; font-size:8px !important; }
+    tbody tr:nth-child(even){ background:#fafafa !important; }
     tbody tr:hover{ background:transparent !important; }
-    .vsg-col{ background:#f5f5f5 !important; }
-    .pct.hot{ color:#B8860B !important; }
+    .vsg-col{ background:#eef3ff !important; }
+    .pct.hot{ color:#8B6914 !important; font-weight:700 !important; }
     .pct.cold{ color:#999 !important; }
-    .no-data{ color:#999 !important; }
-    .goalie-row{ grid-template-columns:1fr 1fr !important; }
-    .goalie-card{ border:1px solid #ccc !important; background:white !important; }
-    .goalie-card h3{ color:black !important; }
-    .goalie-stat .big{ color:#1a5276 !important; }
-    .goalie-stat .lbl{ color:#555 !important; }
-    .record{ color:#555 !important; }
-    @page{ margin:1.5cm; size:landscape; }
+    .no-data{ color:#bbb !important; }
+    .player-name{ font-size:8px !important; }
+
+    /* Goalie cards - slim horizontal strips */
+    .goalie-row{
+      display:grid !important;
+      grid-template-columns:1fr 1fr !important;
+      gap:10px !important;
+      margin-top:8px !important;
+      page-break-inside:avoid;
+    }
+    .goalie-col{ display:flex !important; flex-direction:column !important; gap:5px !important; }
+    .goalie-card{
+      border:1.5px solid #ccc !important;
+      background:white !important;
+      border-radius:0 !important;
+      padding:6px 10px !important;
+      display:flex !important;
+      justify-content:space-between !important;
+      align-items:center !important;
+    }
+    .goalie-card h3{ color:#111 !important; font-size:9px !important; margin:0 0 1px !important; }
+    .goalie-card .record{ color:#555 !important; font-size:7.5px !important; }
+    .goalie-stat .big{ color:#1a3a6b !important; font-size:14px !important; font-weight:700 !important; }
+    .goalie-stat .lbl{ color:#555 !important; font-size:7.5px !important; }
+
+    /* Notes line at bottom */
+    .print-notes{
+      margin-top:12px;
+      border-top:1px solid #ccc;
+      padding-top:6px;
+    }
+    .print-notes-label{
+      font-size:8px; color:#777; text-transform:uppercase;
+      letter-spacing:0.5px; margin-bottom:20px;
+    }
+    .print-notes-line{
+      border-bottom:1px solid #ddd; margin-bottom:12px; height:1px;
+    }
+
+    /* Notes section - only visible in print */
+    .print-notes{ display:block !important; }
+
+    @page{ margin:1cm 1.2cm; size:letter portrait; }
   }
 </style>
 </head>
@@ -199,6 +284,13 @@
 
   <div class="panels" id="panels"></div>
   <div class="goalie-row" id="goalieRow"></div>
+
+  <div class="print-notes" style="display:none;" id="printNotes">
+    <div class="print-notes-label">Notes</div>
+    <div class="print-notes-line"></div>
+    <div class="print-notes-line"></div>
+    <div class="print-notes-line"></div>
+  </div>
 
   <details class="section-toggle">
     <summary>Junior / AHL shootout log (manually tracked)</summary>
