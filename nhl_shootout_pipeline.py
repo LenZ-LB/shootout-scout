@@ -93,7 +93,8 @@ CREATE TABLE IF NOT EXISTS active_rosters (
     full_name   TEXT,
     team_abbrev TEXT NOT NULL,
     position    TEXT,
-    is_goalie   INTEGER DEFAULT 0
+    is_goalie   INTEGER DEFAULT 0,
+    jersey_number INTEGER
 );
 """
 
@@ -119,6 +120,11 @@ def init_db():
             print(f"  Migrated: added {col} column to goalie_shootout")
         except sqlite3.OperationalError:
             pass  # column already exists
+    try:
+        conn.execute("ALTER TABLE active_rosters ADD COLUMN jersey_number INTEGER")
+        print("  Migrated: added jersey_number column to active_rosters")
+    except sqlite3.OperationalError:
+        pass
     conn.commit()
     conn.close()
     print(f"Initialized {DB_PATH}")
@@ -291,10 +297,11 @@ def update_rosters():
                 pid = p["id"]
                 name = f"{p['firstName']['default']} {p['lastName']['default']}"
                 pos = p.get("positionCode", "")
+                num = p.get("sweaterNumber")
                 conn.execute("""
-                    INSERT OR REPLACE INTO active_rosters (player_id, full_name, team_abbrev, position, is_goalie)
-                    VALUES (?, ?, ?, ?, ?)
-                """, (pid, name, team, pos, is_goalie))
+                    INSERT OR REPLACE INTO active_rosters (player_id, full_name, team_abbrev, position, is_goalie, jersey_number)
+                    VALUES (?, ?, ?, ?, ?, ?)
+                """, (pid, name, team, pos, is_goalie, num))
                 # Also keep current season stats row team current
                 table = "goalie_shootout" if is_goalie else "skater_shootout"
                 id_col = "goalie_id" if is_goalie else "player_id"
@@ -315,13 +322,14 @@ def export_json(out_dir="data"):
     conn = get_conn()
     conn.row_factory = sqlite3.Row
 
-    # Build active roster lookup: player_id -> {team, name, is_goalie}
+    # Build active roster lookup: player_id -> {team, name, is_goalie, jersey_number}
     active = {}
-    for row in conn.execute("SELECT player_id, full_name, team_abbrev, is_goalie FROM active_rosters"):
+    for row in conn.execute("SELECT player_id, full_name, team_abbrev, is_goalie, jersey_number FROM active_rosters"):
         active[row["player_id"]] = {
             "team": row["team_abbrev"],
             "name": row["full_name"],
             "is_goalie": row["is_goalie"],
+            "jersey_number": row["jersey_number"],
         }
 
     # --- Players ---
@@ -384,6 +392,7 @@ def export_json(out_dir="data"):
             "id": pid,
             "name": ar["name"],
             "team": ar["team"],
+            "number": ar.get("jersey_number"),
             "active": True,
             "stopped": 0,
             "faced": 0,
