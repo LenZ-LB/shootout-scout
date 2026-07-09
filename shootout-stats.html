@@ -91,8 +91,13 @@
     position:sticky; top:0; text-align:right; font-family:'IBM Plex Mono'; font-weight:600; font-size:10px;
     color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.3px;
     padding:7px 7px; border-bottom:1px solid var(--line); white-space:nowrap;
+    cursor:pointer; user-select:none;
   }
-  thead th:first-child{text-align:left;}
+  thead th:hover{color:var(--ink-muted);}
+  thead th.sort-asc::after{content:' ▲'; color:var(--save);}
+  thead th.sort-desc::after{content:' ▼'; color:var(--save);}
+  thead th:first-child{text-align:left; cursor:default;}
+  thead th:first-child::after{content:'';}
   tbody td{padding:7px 7px; border-bottom:1px solid #16223B; text-align:right; white-space:nowrap;}
   tbody td:first-child{text-align:left; white-space:normal;}
   tbody tr:hover{background:#131F38;}
@@ -325,14 +330,39 @@ function detectCurrentSeason(players){
 }
 let CURRENT_SEASON = null;
 
+// Sort state per panel: key = teamAbbrev, value = {col, dir}
+const SORT_STATE = {};
+
+function sortPlayers(players, col, dir, oppGoalies){
+  const mult = dir === 'asc' ? 1 : -1;
+  return [...players].sort((a, b) => {
+    let av, bv;
+    if(col === 'career')    { av = a.career[1]; bv = b.career[1]; }
+    else if(col === 'pct')  { av = a.career[1]>0 ? a.career[0]/a.career[1] : -1; bv = b.career[1]>0 ? b.career[0]/b.career[1] : -1; }
+    else if(col === 'l3')   { const al=last3(a.seasons), bl=last3(b.seasons); av=al?al[1]:-1; bv=bl?bl[1]:-1; }
+    else if(col === 'cur')  { const ak=CURRENT_SEASON?.key, ac=ak?(a.seasons[ak]||null):currentSeason(a.seasons), bc=ak?(b.seasons[ak]||null):currentSeason(b.seasons); av=ac?ac[1]:-1; bv=bc?bc[1]:-1; }
+    else if(col.startsWith('vsg:')){
+      const gname = col.slice(4);
+      const as = a.vs_goalie?.[gname]; const bs = b.vs_goalie?.[gname];
+      av = as ? as[1] : -1; bv = bs ? bs[1] : -1;
+    }
+    else { av = 0; bv = 0; }
+    return mult * (bv - av);
+  });
+}
+
 function renderPanels(teamA, teamB){
   const panelsEl = document.getElementById('panels');
   const pairs = [[teamA, teamB], [teamB, teamA]];
   panelsEl.innerHTML = pairs.map(([team, opp]) => {
-    const players = PLAYERS.filter(p => p.team === team && p.active);
+    if(!team || !opp) return '';
+    const sort = SORT_STATE[team] || {col:'career', dir:'desc'};
+    let players = PLAYERS.filter(p => p.team === team && p.active);
     const oppGoalies = GOALIES.filter(g => g.team === opp && g.active);
     const curLabel = CURRENT_SEASON ? CURRENT_SEASON.label : 'Current';
     const curKey   = CURRENT_SEASON ? CURRENT_SEASON.key   : null;
+
+    players = sortPlayers(players, sort.col, sort.dir, oppGoalies);
 
     if(!players.length){
       return `<div class="team-panel">
@@ -341,13 +371,21 @@ function renderPanels(teamA, teamB){
       </div>`;
     }
 
-    const goalieHeaders = oppGoalies.length
-      ? oppGoalies.map(g => `<th class="vsg-col">vs ${g.name.split(' ').pop()}</th>`).join('')
-      : `<th class="vsg-col">vs ${opp}</th>`;
-
     const oppLabel = oppGoalies.length
       ? oppGoalies.map(g => g.name.split(' ').pop()).join(' / ')
       : opp;
+
+    const thClass = (col) => {
+      if(sort.col !== col) return '';
+      return sort.dir === 'desc' ? 'sort-desc' : 'sort-asc';
+    };
+
+    const goalieHeaders = oppGoalies.length
+      ? oppGoalies.map(g => {
+          const col = 'vsg:' + g.name;
+          return `<th class="vsg-col ${thClass(col)}" data-team="${team}" data-col="${col}">vs ${g.name.split(' ').pop()}</th>`;
+        }).join('')
+      : `<th class="vsg-col">vs ${opp}</th>`;
 
     return `<div class="team-panel">
       <div class="team-header">
@@ -357,14 +395,17 @@ function renderPanels(teamA, teamB){
       <table>
         <thead>
           <tr>
-            <th>Player</th><th>Career</th><th>Pct</th><th>L3 Szn</th><th>${curLabel}</th>
+            <th>Player</th>
+            <th class="${thClass('career')}" data-team="${team}" data-col="career">Career</th>
+            <th class="${thClass('pct')}" data-team="${team}" data-col="pct">Pct</th>
+            <th class="${thClass('l3')}" data-team="${team}" data-col="l3">L3 Szn</th>
+            <th class="${thClass('cur')}" data-team="${team}" data-col="cur">${curLabel}</th>
             ${goalieHeaders}
           </tr>
         </thead>
         <tbody>
           ${players.map(p => {
             const curSzn = curKey ? (p.seasons[curKey] || null) : currentSeason(p.seasons);
-            // One cell per opposing goalie
             const goalieCells = oppGoalies.length
               ? oppGoalies.map(g => {
                   const split = (p.vs_goalie && p.vs_goalie[g.name]) ? p.vs_goalie[g.name] : null;
@@ -384,6 +425,20 @@ function renderPanels(teamA, teamB){
       </table>
     </div>`;
   }).join('');
+
+  // Wire up header clicks after render
+  panelsEl.querySelectorAll('thead th[data-col]').forEach(th => {
+    th.addEventListener('click', () => {
+      const team = th.dataset.team;
+      const col  = th.dataset.col;
+      const cur  = SORT_STATE[team] || {col:'career', dir:'desc'};
+      SORT_STATE[team] = {
+        col,
+        dir: cur.col === col && cur.dir === 'desc' ? 'asc' : 'desc'
+      };
+      renderPanels(teamA, teamB);
+    });
+  });
 }
 
 function renderGoalies(teamA, teamB){
