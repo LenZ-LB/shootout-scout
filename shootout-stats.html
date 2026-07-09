@@ -192,18 +192,25 @@
     }
     .opp-goalie{ color:#ccc !important; font-size:8px !important; text-align:right !important; white-space:normal !important; max-width:55% !important; line-height:1.4 !important; }
 
-    table{ width:100% !important; border-collapse:collapse !important; font-size:7px !important; table-layout:auto !important; }
+    table{ width:100% !important; border-collapse:collapse !important; font-size:7px !important; table-layout:fixed !important; }
     thead th{
       background:#f0f0f0 !important; color:#333 !important;
       border-bottom:1.5px solid #999 !important;
-      padding:3px 4px !important; font-size:6.5px !important;
+      padding:3px 3px !important; font-size:6.5px !important;
       letter-spacing:0.2px !important; white-space:nowrap !important;
+      overflow:hidden !important;
     }
-    thead th:first-child{ text-align:left !important; }
+    thead th:first-child{ text-align:left !important; width:24% !important; }
+    thead th:nth-child(2){ width:10% !important; }
+    thead th:nth-child(3){ width:7% !important; }
+    thead th:nth-child(4){ width:9% !important; }
+    thead th:nth-child(5){ width:9% !important; }
+    thead th.vsg-col{ width:8% !important; }
     tbody td{
-      padding:3px 4px !important;
+      padding:3px 3px !important;
       border-bottom:1px solid #e8e8e8 !important;
-      color:#111 !important; white-space:nowrap !important;
+      color:#111 !important; overflow:hidden !important;
+      text-overflow:ellipsis !important; white-space:nowrap !important;
     }
     tbody td:first-child{ text-align:left !important; font-size:7px !important; }
     tbody tr:nth-child(even){ background:#fafafa !important; }
@@ -212,7 +219,7 @@
     .pct.hot{ color:#8B6914 !important; font-weight:700 !important; }
     .pct.cold{ color:#999 !important; }
     .no-data{ color:#bbb !important; }
-    .player-name{ font-size:7px !important; }
+    .player-name{ font-size:7px !important; display:block !important; overflow:hidden !important; text-overflow:ellipsis !important; }
 
     /* Goalie cards - slim horizontal strips */
     .goalie-row{
