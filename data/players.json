@@ -864,6 +864,364 @@
     }
   },
   {
+    "id": 8473512,
+    "name": "Claude Giroux",
+    "team": "OTT",
+    "active": true,
+    "career": [
+      31,
+      110
+    ],
+    "seasons": {
+      "20072008": [
+        0,
+        1
+      ],
+      "20082009": [
+        0,
+        2
+      ],
+      "20092010": [
+        3,
+        5
+      ],
+      "20102011": [
+        2,
+        9
+      ],
+      "20112012": [
+        5,
+        9
+      ],
+      "20122013": [
+        2,
+        3
+      ],
+      "20132014": [
+        5,
+        11
+      ],
+      "20142015": [
+        1,
+        12
+      ],
+      "20152016": [
+        2,
+        9
+      ],
+      "20162017": [
+        4,
+        12
+      ],
+      "20172018": [
+        0,
+        6
+      ],
+      "20182019": [
+        1,
+        4
+      ],
+      "20192020": [
+        3,
+        10
+      ],
+      "20202021": [
+        2,
+        5
+      ],
+      "20212022": [
+        0,
+        5
+      ],
+      "20222023": [
+        0,
+        1
+      ],
+      "20232024": [
+        1,
+        4
+      ],
+      "20242025": [
+        0,
+        2
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {
+      "Ray Emery": [
+        0,
+        1
+      ],
+      "Jean-Sebastien Giguere": [
+        0,
+        1
+      ],
+      "Alex Auld": [
+        0,
+        1
+      ],
+      "Tuukka Rask": [
+        2,
+        4
+      ],
+      "Chris Mason": [
+        1,
+        1
+      ],
+      "Marc-Andre Fleury": [
+        0,
+        2
+      ],
+      "Pekka Rinne": [
+        0,
+        2
+      ],
+      "Henrik Lundqvist": [
+        2,
+        6
+      ],
+      "Michal Neuvirth": [
+        0,
+        3
+      ],
+      "Miikka Kiprusoff": [
+        2,
+        2
+      ],
+      "Johan Hedberg": [
+        1,
+        3
+      ],
+      "Antero Niittymaki": [
+        0,
+        1
+      ],
+      "Dwayne Roloson": [
+        0,
+        1
+      ],
+      "Kari Lehtonen": [
+        1,
+        1
+      ],
+      "Tim Thomas": [
+        2,
+        2
+      ],
+      "Scott Clemmensen": [
+        1,
+        1
+      ],
+      "Ondrej Pavelec": [
+        1,
+        2
+      ],
+      "Jonas Gustavsson": [
+        1,
+        1
+      ],
+      "Braden Holtby": [
+        1,
+        3
+      ],
+      "Craig Anderson": [
+        0,
+        6
+      ],
+      "Jose Theodore": [
+        0,
+        1
+      ],
+      "Evgeni Nabokov": [
+        1,
+        1
+      ],
+      "Marek Mazanec": [
+        0,
+        1
+      ],
+      "Philipp Grubauer": [
+        1,
+        1
+      ],
+      "Ilya Bryzgalov": [
+        1,
+        1
+      ],
+      "Eddie Lack": [
+        1,
+        2
+      ],
+      "Carter Hutton": [
+        0,
+        1
+      ],
+      "Anders Nilsson": [
+        2,
+        2
+      ],
+      "Ryan Miller": [
+        1,
+        2
+      ],
+      "Anton Khudobin": [
+        0,
+        1
+      ],
+      "Carey Price": [
+        0,
+        1
+      ],
+      "Frederik Andersen": [
+        2,
+        5
+      ],
+      "Jaroslav Halak": [
+        1,
+        6
+      ],
+      "Roberto Luongo": [
+        0,
+        1
+      ],
+      "Mike Smith": [
+        0,
+        1
+      ],
+      "Andrew Hammond": [
+        0,
+        1
+      ],
+      "Alex Stalock": [
+        0,
+        1
+      ],
+      "Cam Ward": [
+        0,
+        1
+      ],
+      "Jonathan Quick": [
+        1,
+        2
+      ],
+      "Joonas Korpisalo": [
+        0,
+        1
+      ],
+      "Petr Mrazek": [
+        1,
+        1
+      ],
+      "Mike Condon": [
+        0,
+        1
+      ],
+      "Sergei Bobrovsky": [
+        0,
+        2
+      ],
+      "Jimmy Howard": [
+        0,
+        1
+      ],
+      "John Gibson": [
+        0,
+        1
+      ],
+      "James Reimer": [
+        0,
+        1
+      ],
+      "Semyon Varlamov": [
+        0,
+        2
+      ],
+      "Connor Hellebuyck": [
+        0,
+        1
+      ],
+      "Antti Raanta": [
+        0,
+        1
+      ],
+      "Charlie Lindgren": [
+        0,
+        1
+      ],
+      "Michael Hutchinson": [
+        0,
+        1
+      ],
+      "Jacob Markstrom": [
+        1,
+        1
+      ],
+      "Mackenzie Blackwood": [
+        1,
+        2
+      ],
+      "Thomas Greiss": [
+        0,
+        1
+      ],
+      "David Rittich": [
+        0,
+        1
+      ],
+      "Marcus Hogberg": [
+        0,
+        1
+      ],
+      "Ilya Sorokin": [
+        0,
+        2
+      ],
+      "Tristan Jarry": [
+        1,
+        1
+      ],
+      "Thatcher Demko": [
+        0,
+        1
+      ],
+      "Andrei Vasilevskiy": [
+        0,
+        1
+      ],
+      "Cayden Primeau": [
+        0,
+        2
+      ],
+      "Anton Forsberg": [
+        0,
+        1
+      ],
+      "Matt Murray": [
+        0,
+        1
+      ],
+      "Logan Thompson": [
+        0,
+        2
+      ],
+      "Elvis Merzlikins": [
+        1,
+        1
+      ],
+      "Matt Tomkins": [
+        0,
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8470621,
     "name": "Corey Perry",
     "team": "LAK",
@@ -35048,36 +35406,6 @@
     }
   },
   {
-    "id": 8482758,
-    "name": "Ville Koivunen",
-    "team": "PIT",
-    "active": true,
-    "career": [
-      0,
-      2
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        2
-      ]
-    },
-    "vs_goalie": {
-      "Samuel Ersson": [
-        0,
-        1
-      ],
-      "Ville Husso": [
-        0,
-        1
-      ]
-    }
-  },
-  {
     "id": 8483500,
     "name": "Noah Ostlund",
     "team": "BUF",
@@ -44951,31 +45279,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8480842,
-    "name": "Filip Hallander",
-    "team": "PIT",
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8480855,
     "name": "Jack McBain",
     "team": "UTA",
@@ -45394,43 +45697,6 @@
         0
       ],
       "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8481019,
-    "name": "David Gustafsson",
-    "team": "PIT",
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
         0,
         0
       ]
@@ -47335,31 +47601,6 @@
     "id": 8482460,
     "name": "Matt Rempe",
     "team": "NYR",
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482470,
-    "name": "Ilya Solovyov",
-    "team": "PIT",
     "active": true,
     "career": [
       0,
@@ -49437,18 +49678,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484935,
-    "name": "Oliver Okuliar",
-    "team": "PIT",
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484938,
     "name": "Arttu Hyry",
     "team": "DAL",
@@ -49676,23 +49905,6 @@
     "id": 8486166,
     "name": "Viking Gustafsson Nyberg",
     "team": "MIN",
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486169,
-    "name": "Jake Livanavage",
-    "team": "PIT",
     "active": true,
     "career": [
       0,
@@ -51587,364 +51799,6 @@
         1
       ],
       "Arturs Silovs": [
-        0,
-        1
-      ]
-    }
-  },
-  {
-    "id": 8473512,
-    "name": "Claude Giroux",
-    "team": "",
-    "active": false,
-    "career": [
-      31,
-      110
-    ],
-    "seasons": {
-      "20072008": [
-        0,
-        1
-      ],
-      "20082009": [
-        0,
-        2
-      ],
-      "20092010": [
-        3,
-        5
-      ],
-      "20102011": [
-        2,
-        9
-      ],
-      "20112012": [
-        5,
-        9
-      ],
-      "20122013": [
-        2,
-        3
-      ],
-      "20132014": [
-        5,
-        11
-      ],
-      "20142015": [
-        1,
-        12
-      ],
-      "20152016": [
-        2,
-        9
-      ],
-      "20162017": [
-        4,
-        12
-      ],
-      "20172018": [
-        0,
-        6
-      ],
-      "20182019": [
-        1,
-        4
-      ],
-      "20192020": [
-        3,
-        10
-      ],
-      "20202021": [
-        2,
-        5
-      ],
-      "20212022": [
-        0,
-        5
-      ],
-      "20222023": [
-        0,
-        1
-      ],
-      "20232024": [
-        1,
-        4
-      ],
-      "20242025": [
-        0,
-        2
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {
-      "Ray Emery": [
-        0,
-        1
-      ],
-      "Jean-Sebastien Giguere": [
-        0,
-        1
-      ],
-      "Alex Auld": [
-        0,
-        1
-      ],
-      "Tuukka Rask": [
-        2,
-        4
-      ],
-      "Chris Mason": [
-        1,
-        1
-      ],
-      "Marc-Andre Fleury": [
-        0,
-        2
-      ],
-      "Pekka Rinne": [
-        0,
-        2
-      ],
-      "Henrik Lundqvist": [
-        2,
-        6
-      ],
-      "Michal Neuvirth": [
-        0,
-        3
-      ],
-      "Miikka Kiprusoff": [
-        2,
-        2
-      ],
-      "Johan Hedberg": [
-        1,
-        3
-      ],
-      "Antero Niittymaki": [
-        0,
-        1
-      ],
-      "Dwayne Roloson": [
-        0,
-        1
-      ],
-      "Kari Lehtonen": [
-        1,
-        1
-      ],
-      "Tim Thomas": [
-        2,
-        2
-      ],
-      "Scott Clemmensen": [
-        1,
-        1
-      ],
-      "Ondrej Pavelec": [
-        1,
-        2
-      ],
-      "Jonas Gustavsson": [
-        1,
-        1
-      ],
-      "Braden Holtby": [
-        1,
-        3
-      ],
-      "Craig Anderson": [
-        0,
-        6
-      ],
-      "Jose Theodore": [
-        0,
-        1
-      ],
-      "Evgeni Nabokov": [
-        1,
-        1
-      ],
-      "Marek Mazanec": [
-        0,
-        1
-      ],
-      "Philipp Grubauer": [
-        1,
-        1
-      ],
-      "Ilya Bryzgalov": [
-        1,
-        1
-      ],
-      "Eddie Lack": [
-        1,
-        2
-      ],
-      "Carter Hutton": [
-        0,
-        1
-      ],
-      "Anders Nilsson": [
-        2,
-        2
-      ],
-      "Ryan Miller": [
-        1,
-        2
-      ],
-      "Anton Khudobin": [
-        0,
-        1
-      ],
-      "Carey Price": [
-        0,
-        1
-      ],
-      "Frederik Andersen": [
-        2,
-        5
-      ],
-      "Jaroslav Halak": [
-        1,
-        6
-      ],
-      "Roberto Luongo": [
-        0,
-        1
-      ],
-      "Mike Smith": [
-        0,
-        1
-      ],
-      "Andrew Hammond": [
-        0,
-        1
-      ],
-      "Alex Stalock": [
-        0,
-        1
-      ],
-      "Cam Ward": [
-        0,
-        1
-      ],
-      "Jonathan Quick": [
-        1,
-        2
-      ],
-      "Joonas Korpisalo": [
-        0,
-        1
-      ],
-      "Petr Mrazek": [
-        1,
-        1
-      ],
-      "Mike Condon": [
-        0,
-        1
-      ],
-      "Sergei Bobrovsky": [
-        0,
-        2
-      ],
-      "Jimmy Howard": [
-        0,
-        1
-      ],
-      "John Gibson": [
-        0,
-        1
-      ],
-      "James Reimer": [
-        0,
-        1
-      ],
-      "Semyon Varlamov": [
-        0,
-        2
-      ],
-      "Connor Hellebuyck": [
-        0,
-        1
-      ],
-      "Antti Raanta": [
-        0,
-        1
-      ],
-      "Charlie Lindgren": [
-        0,
-        1
-      ],
-      "Michael Hutchinson": [
-        0,
-        1
-      ],
-      "Jacob Markstrom": [
-        1,
-        1
-      ],
-      "Mackenzie Blackwood": [
-        1,
-        2
-      ],
-      "Thomas Greiss": [
-        0,
-        1
-      ],
-      "David Rittich": [
-        0,
-        1
-      ],
-      "Marcus Hogberg": [
-        0,
-        1
-      ],
-      "Ilya Sorokin": [
-        0,
-        2
-      ],
-      "Tristan Jarry": [
-        1,
-        1
-      ],
-      "Thatcher Demko": [
-        0,
-        1
-      ],
-      "Andrei Vasilevskiy": [
-        0,
-        1
-      ],
-      "Cayden Primeau": [
-        0,
-        2
-      ],
-      "Anton Forsberg": [
-        0,
-        1
-      ],
-      "Matt Murray": [
-        0,
-        1
-      ],
-      "Logan Thompson": [
-        0,
-        2
-      ],
-      "Elvis Merzlikins": [
-        1,
-        1
-      ],
-      "Matt Tomkins": [
-        0,
-        1
-      ],
-      "Jeremy Swayman": [
         0,
         1
       ]
@@ -119609,6 +119463,36 @@
         1
       ],
       "Elvis Merzlikins": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": 8482758,
+    "name": "Ville Koivunen",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      2
+    ],
+    "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        2
+      ]
+    },
+    "vs_goalie": {
+      "Samuel Ersson": [
+        0,
+        1
+      ],
+      "Ville Husso": [
         0,
         1
       ]
