@@ -269,14 +269,15 @@ function populateTeamSelects(){
   const teamsWithData = new Set(PLAYERS.map(p => p.team).concat(GOALIES.map(g => g.team)));
   const aSel = document.getElementById('teamASelect');
   const bSel = document.getElementById('teamBSelect');
+  const blankOpt = `<option value="">— Select Team —</option>`;
   const opts = TEAMS.map(([abbr,name]) => {
     const has = teamsWithData.has(abbr);
-    return `<option value="${abbr}">${abbr} \u2013 ${name}${has ? '' : ' (no data yet)'}</option>`;
+    return `<option value="${abbr}">${abbr} – ${name}${has ? '' : ' (no data yet)'}</option>`;
   }).join('');
-  aSel.innerHTML = opts;
-  bSel.innerHTML = opts;
-  aSel.value = teamsWithData.has('EDM') ? 'EDM' : TEAMS[0][0];
-  bSel.value = teamsWithData.has('WSH') ? 'WSH' : TEAMS[1][0];
+  aSel.innerHTML = blankOpt + opts;
+  bSel.innerHTML = blankOpt + opts;
+  aSel.value = teamsWithData.has('EDM') ? 'EDM' : '';
+  bSel.value = '';
   aSel.addEventListener('change', renderAll);
   bSel.addEventListener('change', renderAll);
 }
@@ -474,6 +475,13 @@ function buildSearchIndex(){
 function renderAll(){
   const teamA = document.getElementById('teamASelect').value;
   const teamB = document.getElementById('teamBSelect').value;
+  if(!teamA || !teamB){
+    document.getElementById('panels').innerHTML = '<div class="empty-panel" style="grid-column:1/-1;padding:30px;text-align:center;color:var(--ink-muted);">Select an opponent above to load shootout data.</div>';
+    document.getElementById('goalieRow').innerHTML = '';
+    renderMinor();
+    window._searchIndex = buildSearchIndex();
+    return;
+  }
   renderPanels(teamA, teamB);
   renderGoalies(teamA, teamB);
   renderMinor();
