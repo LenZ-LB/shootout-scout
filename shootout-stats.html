@@ -350,7 +350,9 @@ function sortPlayers(players, col, dir, oppGoalies){
       av = as ? as[1] : -1; bv = bs ? bs[1] : -1;
     }
     else { av = 0; bv = 0; }
-    return mult * (bv - av);
+    // desc = highest first (bv > av means b comes first, so return positive)
+    // asc  = lowest first (av > bv means a comes first, so return negative)
+    return mult * (av - bv);
   });
 }
 
