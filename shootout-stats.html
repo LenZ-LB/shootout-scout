@@ -133,7 +133,34 @@
   .section-body{padding:14px 16px;}
   .alltime-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
   @media (max-width:760px){ .alltime-grid{grid-template-columns:1fr;} }
-  .note{color:var(--ink-muted); font-size:12px; padding:0 16px 14px;}
+  @media print {
+    body{ background:white !important; color:black !important; padding:0; }
+    .status-banner, .selector-bar, .search-box, #printBtn,
+    .section-toggle, .legend { display:none !important; }
+    .scoreboard{ background:white !important; border:none !important;
+      border-bottom:2px solid #333 !important; padding:10px 0 !important; }
+    .matchup-title{ color:black !important; font-size:20px !important; }
+    .matchup-title .vs{ color:#555 !important; }
+    .game-meta{ color:#555 !important; }
+    .wrap{ max-width:100% !important; }
+    .panels{ grid-template-columns:1fr 1fr !important; gap:8px !important; }
+    .team-panel{ border:1px solid #ccc !important; background:white !important; }
+    .team-header{ background:#f0f0f0 !important; color:black !important; border-bottom:1px solid #ccc !important; }
+    thead th{ background:white !important; color:#333 !important; border-bottom:1px solid #ccc !important; }
+    tbody td{ color:black !important; border-bottom:1px solid #eee !important; }
+    tbody tr:hover{ background:transparent !important; }
+    .vsg-col{ background:#f5f5f5 !important; }
+    .pct.hot{ color:#B8860B !important; }
+    .pct.cold{ color:#999 !important; }
+    .no-data{ color:#999 !important; }
+    .goalie-row{ grid-template-columns:1fr 1fr !important; }
+    .goalie-card{ border:1px solid #ccc !important; background:white !important; }
+    .goalie-card h3{ color:black !important; }
+    .goalie-stat .big{ color:#1a5276 !important; }
+    .goalie-stat .lbl{ color:#555 !important; }
+    .record{ color:#555 !important; }
+    @page{ margin:1.5cm; size:landscape; }
+  }
 </style>
 </head>
 <body>
@@ -142,10 +169,21 @@
   <div class="status-banner sample" id="statusBanner">Loading data…</div>
 
   <div class="scoreboard">
-    <div class="matchup-title">Edmonton Oilers <span class="vs">Shootout Scout</span></div>
-    <div class="search-box">
-      <input id="searchInput" type="text" placeholder="Search any player or goalie…" autocomplete="off">
-      <div class="search-results" id="searchResults"></div>
+    <div>
+      <div class="matchup-title" id="pageTitle">Edmonton Oilers <span class="vs">Shootout Scout</span></div>
+      <div class="game-meta" id="gameMeta" style="color:var(--ink-muted);font-size:12px;font-family:'IBM Plex Mono';margin-top:4px;"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <button id="printBtn" onclick="window.print()" style="
+        background:var(--panel-elev);border:1px solid var(--line);color:var(--ink-muted);
+        padding:9px 16px;border-radius:8px;font-family:'IBM Plex Mono';font-size:11px;
+        letter-spacing:0.4px;cursor:pointer;text-transform:uppercase;">
+        ⎙ Print / Export
+      </button>
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Search any player or goalie…" autocomplete="off">
+        <div class="search-results" id="searchResults"></div>
+      </div>
     </div>
   </div>
 
@@ -538,10 +576,19 @@ function renderAll(){
   if(!teamA || !teamB){
     document.getElementById('panels').innerHTML = '<div class="empty-panel" style="grid-column:1/-1;padding:30px;text-align:center;color:var(--ink-muted);">Select an opponent above to load shootout data.</div>';
     document.getElementById('goalieRow').innerHTML = '';
+    document.getElementById('gameMeta').textContent = '';
+    document.getElementById('pageTitle').innerHTML = 'Edmonton Oilers <span class="vs">Shootout Scout</span>';
+    document.title = 'Edmonton Oilers Shootout Scout';
     renderMinor();
     window._searchIndex = buildSearchIndex();
     return;
   }
+  // Update title with matchup
+  const teamAName = TEAMS.find(t => t[0] === teamA)?.[1] || teamA;
+  const teamBName = TEAMS.find(t => t[0] === teamB)?.[1] || teamB;
+  document.getElementById('pageTitle').innerHTML = `${teamA} <span class="vs">vs</span> ${teamB} <span class="vs" style="font-size:14px;">— Shootout Scout</span>`;
+  document.getElementById('gameMeta').textContent = `${teamAName} vs ${teamBName}`;
+  document.title = `${teamA} vs ${teamB} — Shootout Scout`;
   renderPanels(teamA, teamB);
   renderGoalies(teamA, teamB);
   renderMinor();
