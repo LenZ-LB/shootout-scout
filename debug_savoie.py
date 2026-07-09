@@ -95,3 +95,47 @@ for p in so_plays:
         print(f"  shooter={shooter} goalie={goalie} scored={1 if type_key=='goal' else 0}")
     else:
         print(f"  MISSING: shooter={shooter} goalie={goalie} type={type_key}")
+
+# Simulate new last-resort logic
+print("\n=== Simulating new last-resort logic ===")
+team_goalie2 = {52: 8469608}  # what we have after plays+rosterSpots fallback
+for missing_tid in [home_id, away_id]:
+    if missing_tid in team_goalie2:
+        continue
+    other_tid = away_id if missing_tid == home_id else home_id
+    # Try regulation plays
+    reg_goalie = None
+    for play in pbp.get("plays", []):
+        if play.get("periodDescriptor", {}).get("periodType") == "SO":
+            continue
+        d = play.get("details", {})
+        gid = d.get("goalieInNetId")
+        tid = d.get("eventOwnerTeamId")
+        if gid and tid and tid == missing_tid:
+            reg_goalie = gid
+            break
+    if reg_goalie:
+        print(f"  Found from regulation: team {missing_tid} faced goalie {reg_goalie}")
+        team_goalie2[missing_tid] = reg_goalie
+    else:
+        for spot in pbp.get("rosterSpots", []):
+            if spot.get("positionCode") == "G" and spot.get("teamId") == other_tid:
+                print(f"  Fallback rosterSpot: team {missing_tid} faced goalie {spot.get('playerId')}")
+                team_goalie2[missing_tid] = spot.get("playerId")
+                break
+print(f"Final map: {team_goalie2}")
+print(f"Hellebuyck (8476945) correctly mapped: {team_goalie2.get(22) == 8476945}")
+
+# Test the actual goalie stats API fallback for this game
+print("\n=== Testing goalie stats API fallback for game 2019020127 ===")
+base_stats = "https://api.nhle.com/stats/rest/en"
+g_url = (f"{base_stats}/goalie/shootout"
+         f"?isAggregate=false&isGame=true"
+         f"&cayenneExp=gameId=2019020127"
+         f"&start=0&limit=10")
+resp = requests.get(g_url, timeout=15)
+print(f"HTTP: {resp.status_code}")
+d = resp.json()
+print(f"Total rows: {d.get('total')}")
+for row in d.get("data", []):
+    print(f"  goalieId={row.get('playerId')} name={row.get('goalieFullName')} team={row.get('teamAbbrev')} wins={row.get('shootoutWins')} losses={row.get('shootoutLosses')} shotsAgainst={row.get('shootoutShotsAgainst')}")
