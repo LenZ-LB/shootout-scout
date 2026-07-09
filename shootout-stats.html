@@ -88,12 +88,12 @@
 
   table{width:100%; border-collapse:collapse; font-size:12.5px;}
   thead th{
-    position:sticky; top:0; text-align:right; font-family:'IBM Plex Mono'; font-weight:600; font-size:10.5px;
-    color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.4px;
-    padding:8px 10px; border-bottom:1px solid var(--line);
+    position:sticky; top:0; text-align:right; font-family:'IBM Plex Mono'; font-weight:600; font-size:10px;
+    color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.3px;
+    padding:7px 7px; border-bottom:1px solid var(--line); white-space:nowrap;
   }
   thead th:first-child{text-align:left;}
-  tbody td{padding:8px 10px; border-bottom:1px solid #16223B; text-align:right; white-space:nowrap;}
+  tbody td{padding:7px 7px; border-bottom:1px solid #16223B; text-align:right; white-space:nowrap;}
   tbody td:first-child{text-align:left; white-space:normal;}
   tbody tr:hover{background:#131F38;}
   .player-name{font-weight:500;}
@@ -340,10 +340,9 @@ function renderPanels(teamA, teamB){
       </div>`;
     }
 
-    // One column header per opposing goalie (last name only to keep it tight)
     const goalieHeaders = oppGoalies.length
       ? oppGoalies.map(g => `<th class="vsg-col">vs ${g.name.split(' ').pop()}</th>`).join('')
-      : `<th class="vsg-col">vs ${opp} G</th>`;
+      : `<th class="vsg-col">vs ${opp}</th>`;
 
     const oppLabel = oppGoalies.length
       ? oppGoalies.map(g => g.name.split(' ').pop()).join(' / ')
@@ -357,7 +356,7 @@ function renderPanels(teamA, teamB){
       <table>
         <thead>
           <tr>
-            <th>Player</th><th>Career</th><th>Career %</th><th>Last 3 Szn</th><th>${curLabel}</th>
+            <th>Player</th><th>Career</th><th>Pct</th><th>L3 Szn</th><th>${curLabel}</th>
             ${goalieHeaders}
           </tr>
         </thead>
