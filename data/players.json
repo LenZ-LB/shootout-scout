@@ -3,6 +3,7 @@
     "id": 8471214,
     "name": "Alex Ovechkin",
     "team": "WSH",
+    "number": 8,
     "active": true,
     "career": [
       37,
@@ -429,6 +430,7 @@
     "id": 8471675,
     "name": "Sidney Crosby",
     "team": "PIT",
+    "number": 87,
     "active": true,
     "career": [
       48,
@@ -867,6 +869,7 @@
     "id": 8473512,
     "name": "Claude Giroux",
     "team": "OTT",
+    "number": 28,
     "active": true,
     "career": [
       31,
@@ -1225,6 +1228,7 @@
     "id": 8470621,
     "name": "Corey Perry",
     "team": "LAK",
+    "number": null,
     "active": true,
     "career": [
       34,
@@ -1603,6 +1607,7 @@
     "id": 8475692,
     "name": "Mats Zuccarello",
     "team": "LAK",
+    "number": null,
     "active": true,
     "career": [
       40,
@@ -1925,6 +1930,7 @@
     "id": 8474586,
     "name": "Jordan Eberle",
     "team": "SEA",
+    "number": 7,
     "active": true,
     "career": [
       29,
@@ -2263,6 +2269,7 @@
     "id": 8471724,
     "name": "Kris Letang",
     "team": "PIT",
+    "number": 58,
     "active": true,
     "career": [
       27,
@@ -2609,6 +2616,7 @@
     "id": 8475168,
     "name": "Matt Duchene",
     "team": "DAL",
+    "number": 95,
     "active": true,
     "career": [
       35,
@@ -2943,6 +2951,7 @@
     "id": 8471215,
     "name": "Evgeni Malkin",
     "team": "PIT",
+    "number": 71,
     "active": true,
     "career": [
       26,
@@ -3249,6 +3258,7 @@
     "id": 8476456,
     "name": "Jonathan Huberdeau",
     "team": "CGY",
+    "number": 10,
     "active": true,
     "career": [
       23,
@@ -3555,6 +3565,7 @@
     "id": 8476459,
     "name": "Mika Zibanejad",
     "team": "NYR",
+    "number": 93,
     "active": true,
     "career": [
       31,
@@ -3849,6 +3860,7 @@
     "id": 8475794,
     "name": "Tyler Seguin",
     "team": "DAL",
+    "number": 91,
     "active": true,
     "career": [
       32,
@@ -4131,6 +4143,7 @@
     "id": 8474564,
     "name": "Steven Stamkos",
     "team": "NSH",
+    "number": 91,
     "active": true,
     "career": [
       23,
@@ -4417,6 +4430,7 @@
     "id": 8477493,
     "name": "Aleksander Barkov",
     "team": "FLA",
+    "number": 16,
     "active": true,
     "career": [
       33,
@@ -4683,6 +4697,7 @@
     "id": 8475158,
     "name": "Ryan O'Reilly",
     "team": "NSH",
+    "number": 90,
     "active": true,
     "career": [
       25,
@@ -4953,6 +4968,7 @@
     "id": 8475166,
     "name": "John Tavares",
     "team": "TOR",
+    "number": 91,
     "active": true,
     "career": [
       16,
@@ -5223,6 +5239,7 @@
     "id": 8476389,
     "name": "Vincent Trocheck",
     "team": "UTA",
+    "number": null,
     "active": true,
     "career": [
       23,
@@ -5457,6 +5474,7 @@
     "id": 8475745,
     "name": "Charlie Coyle",
     "team": "CBJ",
+    "number": 3,
     "active": true,
     "career": [
       24,
@@ -5699,6 +5717,7 @@
     "id": 8476887,
     "name": "Filip Forsberg",
     "team": "NSH",
+    "number": 9,
     "active": true,
     "career": [
       19,
@@ -5945,6 +5964,7 @@
     "id": 8473419,
     "name": "Brad Marchand",
     "team": "FLA",
+    "number": 63,
     "active": true,
     "career": [
       13,
@@ -6191,6 +6211,7 @@
     "id": 8477492,
     "name": "Nathan MacKinnon",
     "team": "COL",
+    "number": 29,
     "active": true,
     "career": [
       18,
@@ -6425,6 +6446,7 @@
     "id": 8477497,
     "name": "Sean Monahan",
     "team": "CBJ",
+    "number": 23,
     "active": true,
     "career": [
       20,
@@ -6655,6 +6677,7 @@
     "id": 8476453,
     "name": "Nikita Kucherov",
     "team": "TBL",
+    "number": 86,
     "active": true,
     "career": [
       15,
@@ -6885,6 +6908,7 @@
     "id": 8478550,
     "name": "Artemi Panarin",
     "team": "LAK",
+    "number": 10,
     "active": true,
     "career": [
       29,
@@ -7095,6 +7119,7 @@
     "id": 8473994,
     "name": "Jamie Benn",
     "team": "DAL",
+    "number": 14,
     "active": true,
     "career": [
       15,
@@ -7313,6 +7338,7 @@
     "id": 8476461,
     "name": "Sean Couturier",
     "team": "PHI",
+    "number": 14,
     "active": true,
     "career": [
       14,
@@ -7515,6 +7541,7 @@
     "id": 8477960,
     "name": "Adrian Kempe",
     "team": "LAK",
+    "number": 9,
     "active": true,
     "career": [
       22,
@@ -7725,6 +7752,7 @@
     "id": 8476483,
     "name": "Rickard Rakell",
     "team": "PIT",
+    "number": 67,
     "active": true,
     "career": [
       19,
@@ -7943,6 +7971,7 @@
     "id": 8478403,
     "name": "Jack Eichel",
     "team": "VGK",
+    "number": 9,
     "active": true,
     "career": [
       13,
@@ -8157,6 +8186,7 @@
     "id": 8476454,
     "name": "Ryan Nugent-Hopkins",
     "team": "EDM",
+    "number": 93,
     "active": true,
     "career": [
       16,
@@ -8399,6 +8429,7 @@
     "id": 8477942,
     "name": "Kevin Fiala",
     "team": "LAK",
+    "number": 22,
     "active": true,
     "career": [
       13,
@@ -8609,6 +8640,7 @@
     "id": 8478010,
     "name": "Brayden Point",
     "team": "TBL",
+    "number": 21,
     "active": true,
     "career": [
       21,
@@ -8815,6 +8847,7 @@
     "id": 8478445,
     "name": "Mathew Barzal",
     "team": "NYI",
+    "number": 13,
     "active": true,
     "career": [
       10,
@@ -8997,6 +9030,7 @@
     "id": 8475151,
     "name": "Kyle Palmieri",
     "team": "NYI",
+    "number": 21,
     "active": true,
     "career": [
       10,
@@ -9219,6 +9253,7 @@
     "id": 8475760,
     "name": "Nick Bjugstad",
     "team": "NJD",
+    "number": 72,
     "active": true,
     "career": [
       17,
@@ -9429,6 +9464,7 @@
     "id": 8477500,
     "name": "Bo Horvat",
     "team": "NYI",
+    "number": 14,
     "active": true,
     "career": [
       14,
@@ -9631,6 +9667,7 @@
     "id": 8477956,
     "name": "David Pastrnak",
     "team": "BOS",
+    "number": 88,
     "active": true,
     "career": [
       10,
@@ -9813,6 +9850,7 @@
     "id": 8479318,
     "name": "Auston Matthews",
     "team": "TOR",
+    "number": 34,
     "active": true,
     "career": [
       16,
@@ -10007,6 +10045,7 @@
     "id": 8480012,
     "name": "Elias Pettersson",
     "team": "VAN",
+    "number": 40,
     "active": true,
     "career": [
       13,
@@ -10173,6 +10212,7 @@
     "id": 8475170,
     "name": "Brayden Schenn",
     "team": "NYI",
+    "number": 10,
     "active": true,
     "career": [
       12,
@@ -10407,6 +10447,7 @@
     "id": 8475172,
     "name": "Nazem Kadri",
     "team": "COL",
+    "number": 91,
     "active": true,
     "career": [
       10,
@@ -10625,6 +10666,7 @@
     "id": 8470613,
     "name": "Brent Burns",
     "team": "COL",
+    "number": 84,
     "active": true,
     "career": [
       12,
@@ -10871,6 +10913,7 @@
     "id": 8477933,
     "name": "Sam Reinhart",
     "team": "FLA",
+    "number": 13,
     "active": true,
     "career": [
       17,
@@ -11073,6 +11116,7 @@
     "id": 8478483,
     "name": "Mitch Marner",
     "team": "VGK",
+    "number": 93,
     "active": true,
     "career": [
       13,
@@ -11267,6 +11311,7 @@
     "id": 8478498,
     "name": "Jake DeBrusk",
     "team": "VAN",
+    "number": 74,
     "active": true,
     "career": [
       15,
@@ -11453,6 +11498,7 @@
     "id": 8480027,
     "name": "Jason Robertson",
     "team": "DAL",
+    "number": 21,
     "active": true,
     "career": [
       22,
@@ -11619,6 +11665,7 @@
     "id": 8475167,
     "name": "Victor Hedman",
     "team": "TBL",
+    "number": 77,
     "active": true,
     "career": [
       11,
@@ -11833,6 +11880,7 @@
     "id": 8475791,
     "name": "Taylor Hall",
     "team": "CAR",
+    "number": 71,
     "active": true,
     "career": [
       9,
@@ -12047,6 +12095,7 @@
     "id": 8476468,
     "name": "J.T. Miller",
     "team": "NYR",
+    "number": 8,
     "active": true,
     "career": [
       13,
@@ -12225,6 +12274,7 @@
     "id": 8476539,
     "name": "Jonathan Marchessault",
     "team": "NSH",
+    "number": 81,
     "active": true,
     "career": [
       10,
@@ -12415,6 +12465,7 @@
     "id": 8477946,
     "name": "Dylan Larkin",
     "team": "DET",
+    "number": 71,
     "active": true,
     "career": [
       10,
@@ -12597,6 +12648,7 @@
     "id": 8478402,
     "name": "Connor McDavid",
     "team": "EDM",
+    "number": 97,
     "active": true,
     "career": [
       16,
@@ -12787,6 +12839,7 @@
     "id": 8480018,
     "name": "Nick Suzuki",
     "team": "MTL",
+    "number": 14,
     "active": true,
     "career": [
       11,
@@ -12957,6 +13010,7 @@
     "id": 8477939,
     "name": "William Nylander",
     "team": "TOR",
+    "number": 88,
     "active": true,
     "career": [
       9,
@@ -13139,6 +13193,7 @@
     "id": 8476460,
     "name": "Mark Scheifele",
     "team": "WPG",
+    "number": 55,
     "active": true,
     "career": [
       12,
@@ -13333,6 +13388,7 @@
     "id": 8477951,
     "name": "Nick Schmaltz",
     "team": "UTA",
+    "number": 8,
     "active": true,
     "career": [
       13,
@@ -13503,6 +13559,7 @@
     "id": 8478420,
     "name": "Mikko Rantanen",
     "team": "DAL",
+    "number": 96,
     "active": true,
     "career": [
       11,
@@ -13673,6 +13730,7 @@
     "id": 8479407,
     "name": "Jesper Bratt",
     "team": "NJD",
+    "number": 63,
     "active": true,
     "career": [
       14,
@@ -13843,6 +13901,7 @@
     "id": 8481540,
     "name": "Cole Caufield",
     "team": "MTL",
+    "number": 13,
     "active": true,
     "career": [
       17,
@@ -14001,6 +14060,7 @@
     "id": 8477987,
     "name": "Ryan Donato",
     "team": "CHI",
+    "number": 8,
     "active": true,
     "career": [
       11,
@@ -14159,6 +14219,7 @@
     "id": 8478439,
     "name": "Travis Konecny",
     "team": "PHI",
+    "number": 11,
     "active": true,
     "career": [
       7,
@@ -14337,6 +14398,7 @@
     "id": 8480830,
     "name": "Andrei Svechnikov",
     "team": "CAR",
+    "number": 37,
     "active": true,
     "career": [
       14,
@@ -14495,6 +14557,7 @@
     "id": 8481533,
     "name": "Trevor Zegras",
     "team": "PHI",
+    "number": 46,
     "active": true,
     "career": [
       20,
@@ -14645,6 +14708,7 @@
     "id": 8477934,
     "name": "Leon Draisaitl",
     "team": "EDM",
+    "number": 29,
     "active": true,
     "career": [
       12,
@@ -14819,6 +14883,7 @@
     "id": 8478864,
     "name": "Kirill Kaprizov",
     "team": "MIN",
+    "number": 97,
     "active": true,
     "career": [
       9,
@@ -14965,6 +15030,7 @@
     "id": 8475754,
     "name": "Brock Nelson",
     "team": "COL",
+    "number": 11,
     "active": true,
     "career": [
       8,
@@ -15135,6 +15201,7 @@
     "id": 8477404,
     "name": "Jake Guentzel",
     "team": "TBL",
+    "number": 59,
     "active": true,
     "career": [
       11,
@@ -15301,6 +15368,7 @@
     "id": 8477949,
     "name": "Alex Tuch",
     "team": "WSH",
+    "number": 89,
     "active": true,
     "career": [
       13,
@@ -15475,6 +15543,7 @@
     "id": 8476882,
     "name": "Teuvo Teravainen",
     "team": "CHI",
+    "number": 86,
     "active": true,
     "career": [
       10,
@@ -15641,6 +15710,7 @@
     "id": 8477447,
     "name": "Shea Theodore",
     "team": "VGK",
+    "number": 27,
     "active": true,
     "career": [
       12,
@@ -15799,6 +15869,7 @@
     "id": 8478463,
     "name": "Anthony Beauvillier",
     "team": "WSH",
+    "number": 72,
     "active": true,
     "career": [
       9,
@@ -15949,6 +16020,7 @@
     "id": 8479343,
     "name": "Clayton Keller",
     "team": "UTA",
+    "number": 9,
     "active": true,
     "career": [
       5,
@@ -16107,6 +16179,7 @@
     "id": 8479420,
     "name": "Tage Thompson",
     "team": "BUF",
+    "number": 72,
     "active": true,
     "career": [
       10,
@@ -16261,6 +16334,7 @@
     "id": 8478873,
     "name": "Troy Terry",
     "team": "ANA",
+    "number": 19,
     "active": true,
     "career": [
       10,
@@ -16399,6 +16473,7 @@
     "id": 8479314,
     "name": "Matthew Tkachuk",
     "team": "FLA",
+    "number": 19,
     "active": true,
     "career": [
       9,
@@ -16549,6 +16624,7 @@
     "id": 8478427,
     "name": "Sebastian Aho",
     "team": "CAR",
+    "number": 20,
     "active": true,
     "career": [
       6,
@@ -16699,6 +16775,7 @@
     "id": 8478444,
     "name": "Brock Boeser",
     "team": "VAN",
+    "number": 6,
     "active": true,
     "career": [
       6,
@@ -16825,6 +16902,7 @@
     "id": 8474578,
     "name": "Erik Karlsson",
     "team": "PIT",
+    "number": 65,
     "active": true,
     "career": [
       6,
@@ -16995,6 +17073,7 @@
     "id": 8478398,
     "name": "Kyle Connor",
     "team": "WPG",
+    "number": 81,
     "active": true,
     "career": [
       9,
@@ -17145,6 +17224,7 @@
     "id": 8478856,
     "name": "Conor Garland",
     "team": "CBJ",
+    "number": 83,
     "active": true,
     "career": [
       9,
@@ -17283,6 +17363,7 @@
     "id": 8477505,
     "name": "Alexander Wennberg",
     "team": "SJS",
+    "number": 21,
     "active": true,
     "career": [
       6,
@@ -17429,6 +17510,7 @@
     "id": 8477919,
     "name": "Frederick Gaudreau",
     "team": "SEA",
+    "number": 89,
     "active": true,
     "career": [
       11,
@@ -17567,6 +17649,7 @@
     "id": 8479400,
     "name": "Pierre-Luc Dubois",
     "team": "WSH",
+    "number": 80,
     "active": true,
     "career": [
       10,
@@ -17713,6 +17796,7 @@
     "id": 8479999,
     "name": "Casey Mittelstadt",
     "team": "BOS",
+    "number": 11,
     "active": true,
     "career": [
       6,
@@ -17847,6 +17931,7 @@
     "id": 8481557,
     "name": "Matt Boldy",
     "team": "MIN",
+    "number": 12,
     "active": true,
     "career": [
       13,
@@ -17961,6 +18046,7 @@
     "id": 8474600,
     "name": "Roman Josi",
     "team": "NSH",
+    "number": 59,
     "active": true,
     "career": [
       7,
@@ -18119,6 +18205,7 @@
     "id": 8476393,
     "name": "Nick Cousins",
     "team": "OTT",
+    "number": 21,
     "active": true,
     "career": [
       7,
@@ -18269,6 +18356,7 @@
     "id": 8477416,
     "name": "Oliver Bjorkstrand",
     "team": "NYR",
+    "number": null,
     "active": true,
     "career": [
       6,
@@ -18411,6 +18499,7 @@
     "id": 8478440,
     "name": "Dylan Strome",
     "team": "WSH",
+    "number": 17,
     "active": true,
     "career": [
       7,
@@ -18545,6 +18634,7 @@
     "id": 8479337,
     "name": "Alex DeBrincat",
     "team": "DET",
+    "number": 93,
     "active": true,
     "career": [
       10,
@@ -18675,6 +18765,7 @@
     "id": 8479385,
     "name": "Jordan Kyrou",
     "team": "WSH",
+    "number": 25,
     "active": true,
     "career": [
       5,
@@ -18809,6 +18900,7 @@
     "id": 8479675,
     "name": "Trevor Moore",
     "team": "LAK",
+    "number": 12,
     "active": true,
     "career": [
       10,
@@ -18939,6 +19031,7 @@
     "id": 8475798,
     "name": "Mikael Granlund",
     "team": "ANA",
+    "number": 64,
     "active": true,
     "career": [
       7,
@@ -19081,6 +19174,7 @@
     "id": 8477407,
     "name": "Anthony Duclair",
     "team": "NYI",
+    "number": 11,
     "active": true,
     "career": [
       4,
@@ -19227,6 +19321,7 @@
     "id": 8482078,
     "name": "Lucas Raymond",
     "team": "DET",
+    "number": 23,
     "active": true,
     "career": [
       10,
@@ -19349,6 +19444,7 @@
     "id": 8482113,
     "name": "Anton Lundell",
     "team": "FLA",
+    "number": 15,
     "active": true,
     "career": [
       11,
@@ -19459,6 +19555,7 @@
     "id": 8474189,
     "name": "Lars Eller",
     "team": "FLA",
+    "number": 20,
     "active": true,
     "career": [
       7,
@@ -19613,6 +19710,7 @@
     "id": 8476455,
     "name": "Gabriel Landeskog",
     "team": "COL",
+    "number": 92,
     "active": true,
     "career": [
       6,
@@ -19739,6 +19837,7 @@
     "id": 8476881,
     "name": "Tomas Hertl",
     "team": "VGK",
+    "number": 48,
     "active": true,
     "career": [
       3,
@@ -19885,6 +19984,7 @@
     "id": 8482116,
     "name": "Tim St\u00fctzle",
     "team": "OTT",
+    "number": 18,
     "active": true,
     "career": [
       10,
@@ -19991,6 +20091,7 @@
     "id": 8475171,
     "name": "Oliver Ekman-Larsson",
     "team": "TOR",
+    "number": 95,
     "active": true,
     "career": [
       4,
@@ -20145,6 +20246,7 @@
     "id": 8475726,
     "name": "Tyler Toffoli",
     "team": "SJS",
+    "number": 73,
     "active": true,
     "career": [
       3,
@@ -20287,6 +20389,7 @@
     "id": 8480039,
     "name": "Martin Necas",
     "team": "COL",
+    "number": 88,
     "active": true,
     "career": [
       6,
@@ -20401,6 +20504,7 @@
     "id": 8481554,
     "name": "Kaapo Kakko",
     "team": "SEA",
+    "number": 84,
     "active": true,
     "career": [
       6,
@@ -20519,6 +20623,7 @@
     "id": 8484387,
     "name": "Matvei Michkov",
     "team": "PHI",
+    "number": 39,
     "active": true,
     "career": [
       7,
@@ -20617,6 +20722,7 @@
     "id": 8475913,
     "name": "Mark Stone",
     "team": "VGK",
+    "number": 61,
     "active": true,
     "career": [
       4,
@@ -20755,6 +20861,7 @@
     "id": 8480014,
     "name": "Gabriel Vilardi",
     "team": "WPG",
+    "number": 13,
     "active": true,
     "career": [
       6,
@@ -20869,6 +20976,7 @@
     "id": 8480028,
     "name": "Morgan Frost",
     "team": "CGY",
+    "number": 16,
     "active": true,
     "career": [
       7,
@@ -20979,6 +21087,7 @@
     "id": 8480208,
     "name": "Drake Batherson",
     "team": "OTT",
+    "number": 19,
     "active": true,
     "career": [
       7,
@@ -21085,6 +21194,7 @@
     "id": 8481559,
     "name": "Jack Hughes",
     "team": "NJD",
+    "number": 86,
     "active": true,
     "career": [
       4,
@@ -21203,6 +21313,7 @@
     "id": 8475810,
     "name": "Bryan Rust",
     "team": "PIT",
+    "number": 17,
     "active": true,
     "career": [
       7,
@@ -21317,6 +21428,7 @@
     "id": 8476462,
     "name": "Dougie Hamilton",
     "team": "NJD",
+    "number": 7,
     "active": true,
     "career": [
       9,
@@ -21459,6 +21571,7 @@
     "id": 8481068,
     "name": "Yegor Sharangovich",
     "team": "CGY",
+    "number": 17,
     "active": true,
     "career": [
       8,
@@ -21561,6 +21674,7 @@
     "id": 8476958,
     "name": "Jaccob Slavin",
     "team": "CAR",
+    "number": 74,
     "active": true,
     "career": [
       4,
@@ -21679,6 +21793,7 @@
     "id": 8480893,
     "name": "Kirill Marchenko",
     "team": "CBJ",
+    "number": 86,
     "active": true,
     "career": [
       10,
@@ -21769,6 +21884,7 @@
     "id": 8481604,
     "name": "Pavel Dorofeyev",
     "team": "NYR",
+    "number": null,
     "active": true,
     "career": [
       3,
@@ -21863,6 +21979,7 @@
     "id": 8482660,
     "name": "Kent Johnson",
     "team": "CBJ",
+    "number": 91,
     "active": true,
     "career": [
       10,
@@ -21957,6 +22074,7 @@
     "id": 8477989,
     "name": "Christian Dvorak",
     "team": "PHI",
+    "number": 22,
     "active": true,
     "career": [
       6,
@@ -22071,6 +22189,7 @@
     "id": 8484166,
     "name": "Adam Fantilli",
     "team": "CBJ",
+    "number": 19,
     "active": true,
     "career": [
       3,
@@ -22153,6 +22272,7 @@
     "id": 8474590,
     "name": "John Carlson",
     "team": "TBL",
+    "number": 74,
     "active": true,
     "career": [
       4,
@@ -22283,6 +22403,7 @@
     "id": 8477496,
     "name": "Elias Lindholm",
     "team": "BOS",
+    "number": 28,
     "active": true,
     "career": [
       2,
@@ -22409,6 +22530,7 @@
     "id": 8477955,
     "name": "Jared McCann",
     "team": "SEA",
+    "number": 19,
     "active": true,
     "career": [
       3,
@@ -22527,6 +22649,7 @@
     "id": 8478109,
     "name": "Victor Olofsson",
     "team": "VGK",
+    "number": 95,
     "active": true,
     "career": [
       4,
@@ -22629,6 +22752,7 @@
     "id": 8480023,
     "name": "Robert Thomas",
     "team": "STL",
+    "number": 18,
     "active": true,
     "career": [
       4,
@@ -22731,6 +22855,7 @@
     "id": 8481032,
     "name": "Paul Cotter",
     "team": "VAN",
+    "number": null,
     "active": true,
     "career": [
       6,
@@ -22821,6 +22946,7 @@
     "id": 8482097,
     "name": "Jack Quinn",
     "team": "BUF",
+    "number": 22,
     "active": true,
     "career": [
       10,
@@ -22911,6 +23037,7 @@
     "id": 8483808,
     "name": "Andrei Kuzmenko",
     "team": "PIT",
+    "number": null,
     "active": true,
     "career": [
       5,
@@ -22985,6 +23112,7 @@
     "id": 8473422,
     "name": "Nick Foligno",
     "team": "MIN",
+    "number": 71,
     "active": true,
     "career": [
       1,
@@ -23127,6 +23255,7 @@
     "id": 8476458,
     "name": "Ryan Strome",
     "team": "CGY",
+    "number": 22,
     "active": true,
     "career": [
       3,
@@ -23241,6 +23370,7 @@
     "id": 8476878,
     "name": "Zemgus Girgensons",
     "team": "TBL",
+    "number": 28,
     "active": true,
     "career": [
       4,
@@ -23347,6 +23477,7 @@
     "id": 8477501,
     "name": "Valeri Nichushkin",
     "team": "CBJ",
+    "number": 43,
     "active": true,
     "career": [
       7,
@@ -23449,6 +23580,7 @@
     "id": 8477503,
     "name": "Max Domi",
     "team": "TOR",
+    "number": 11,
     "active": true,
     "career": [
       2,
@@ -23559,6 +23691,7 @@
     "id": 8478542,
     "name": "Evan Rodrigues",
     "team": "NJD",
+    "number": null,
     "active": true,
     "career": [
       4,
@@ -23673,6 +23806,7 @@
     "id": 8481601,
     "name": "Simon Holmstrom",
     "team": "NYI",
+    "number": 92,
     "active": true,
     "career": [
       4,
@@ -23751,6 +23885,7 @@
     "id": 8482745,
     "name": "Mason McTavish",
     "team": "STL",
+    "number": null,
     "active": true,
     "career": [
       9,
@@ -23833,6 +23968,7 @@
     "id": 8474150,
     "name": "Mikael Backlund",
     "team": "CGY",
+    "number": 11,
     "active": true,
     "career": [
       1,
@@ -23967,6 +24103,7 @@
     "id": 8476923,
     "name": "Damon Severson",
     "team": "CBJ",
+    "number": 78,
     "active": true,
     "career": [
       4,
@@ -24077,6 +24214,7 @@
     "id": 8477402,
     "name": "Pavel Buchnevich",
     "team": "STL",
+    "number": 89,
     "active": true,
     "career": [
       3,
@@ -24179,6 +24317,7 @@
     "id": 8478449,
     "name": "Roope Hintz",
     "team": "DAL",
+    "number": 24,
     "active": true,
     "career": [
       2,
@@ -24269,6 +24408,7 @@
     "id": 8478462,
     "name": "Nicolas Roy",
     "team": "COL",
+    "number": 10,
     "active": true,
     "career": [
       3,
@@ -24367,6 +24507,7 @@
     "id": 8482093,
     "name": "Seth Jarvis",
     "team": "CAR",
+    "number": 24,
     "active": true,
     "career": [
       2,
@@ -24453,6 +24594,7 @@
     "id": 8475799,
     "name": "Nino Niederreiter",
     "team": "WPG",
+    "number": 62,
     "active": true,
     "career": [
       2,
@@ -24571,6 +24713,7 @@
     "id": 8478042,
     "name": "Viktor Arvidsson",
     "team": "DET",
+    "number": null,
     "active": true,
     "career": [
       4,
@@ -24681,6 +24824,7 @@
     "id": 8482475,
     "name": "Egor Chinakhov",
     "team": "PIT",
+    "number": 59,
     "active": true,
     "career": [
       5,
@@ -24763,6 +24907,7 @@
     "id": 8482665,
     "name": "Matty Beniers",
     "team": "SEA",
+    "number": 10,
     "active": true,
     "career": [
       3,
@@ -24837,6 +24982,7 @@
     "id": 8484153,
     "name": "Leo Carlsson",
     "team": "ANA",
+    "number": 91,
     "active": true,
     "career": [
       5,
@@ -24907,6 +25053,7 @@
     "id": 8475848,
     "name": "Brendan Gallagher",
     "team": "VAN",
+    "number": null,
     "active": true,
     "career": [
       2,
@@ -25017,6 +25164,7 @@
     "id": 8477950,
     "name": "Tony DeAngelo",
     "team": "NYI",
+    "number": 77,
     "active": true,
     "career": [
       3,
@@ -25115,6 +25263,7 @@
     "id": 8478397,
     "name": "Rasmus Andersson",
     "team": "VGK",
+    "number": 4,
     "active": true,
     "career": [
       4,
@@ -25209,6 +25358,7 @@
     "id": 8478414,
     "name": "Timo Meier",
     "team": "NJD",
+    "number": 28,
     "active": true,
     "career": [
       3,
@@ -25303,6 +25453,7 @@
     "id": 8479525,
     "name": "Ross Colton",
     "team": "NSH",
+    "number": null,
     "active": true,
     "career": [
       5,
@@ -25385,6 +25536,7 @@
     "id": 8480064,
     "name": "Josh Norris",
     "team": "BUF",
+    "number": 9,
     "active": true,
     "career": [
       5,
@@ -25467,6 +25619,7 @@
     "id": 8482089,
     "name": "Jake Neighbours",
     "team": "STL",
+    "number": 63,
     "active": true,
     "career": [
       6,
@@ -25541,6 +25694,7 @@
     "id": 8482740,
     "name": "Wyatt Johnston",
     "team": "DAL",
+    "number": 53,
     "active": true,
     "career": [
       4,
@@ -25615,6 +25769,7 @@
     "id": 8484144,
     "name": "Connor Bedard",
     "team": "CHI",
+    "number": 98,
     "active": true,
     "career": [
       5,
@@ -25681,6 +25836,7 @@
     "id": 8474563,
     "name": "Drew Doughty",
     "team": "LAK",
+    "number": 8,
     "active": true,
     "career": [
       2,
@@ -25807,6 +25963,7 @@
     "id": 8475287,
     "name": "Erik Haula",
     "team": "LAK",
+    "number": null,
     "active": true,
     "career": [
       3,
@@ -25909,6 +26066,7 @@
     "id": 8476432,
     "name": "Boone Jenner",
     "team": "WSH",
+    "number": 22,
     "active": true,
     "career": [
       2,
@@ -26011,6 +26169,7 @@
     "id": 8476448,
     "name": "William Karlsson",
     "team": "VGK",
+    "number": 71,
     "active": true,
     "career": [
       3,
@@ -26109,6 +26268,7 @@
     "id": 8478366,
     "name": "Frank Vatrano",
     "team": "ANA",
+    "number": 77,
     "active": true,
     "career": [
       1,
@@ -26207,6 +26367,7 @@
     "id": 8478401,
     "name": "Pavel Zacha",
     "team": "BOS",
+    "number": 18,
     "active": true,
     "career": [
       1,
@@ -26305,6 +26466,7 @@
     "id": 8479325,
     "name": "Charlie McAvoy",
     "team": "BOS",
+    "number": 73,
     "active": true,
     "career": [
       3,
@@ -26395,6 +26557,7 @@
     "id": 8480015,
     "name": "Owen Tippett",
     "team": "PHI",
+    "number": 74,
     "active": true,
     "career": [
       3,
@@ -26477,6 +26640,7 @@
     "id": 8480074,
     "name": "Alexandre Texier",
     "team": "MTL",
+    "number": 85,
     "active": true,
     "career": [
       6,
@@ -26559,6 +26723,7 @@
     "id": 8481553,
     "name": "Bobby Brink",
     "team": "MIN",
+    "number": 10,
     "active": true,
     "career": [
       3,
@@ -26629,6 +26794,7 @@
     "id": 8484801,
     "name": "Macklin Celebrini",
     "team": "SJS",
+    "number": 71,
     "active": true,
     "career": [
       3,
@@ -26691,6 +26857,7 @@
     "id": 8475764,
     "name": "Cam Fowler",
     "team": "STL",
+    "number": 17,
     "active": true,
     "career": [
       3,
@@ -26801,6 +26968,7 @@
     "id": 8476469,
     "name": "Joel Armia",
     "team": "LAK",
+    "number": 40,
     "active": true,
     "career": [
       1,
@@ -26895,6 +27063,7 @@
     "id": 8480002,
     "name": "Nico Hischier",
     "team": "NJD",
+    "number": 13,
     "active": true,
     "career": [
       0,
@@ -26977,6 +27146,7 @@
     "id": 8482109,
     "name": "Alexis Lafreni\u00e8re",
     "team": "NYR",
+    "number": 13,
     "active": true,
     "career": [
       3,
@@ -27051,6 +27221,7 @@
     "id": 8482159,
     "name": "Tyson Foerster",
     "team": "PHI",
+    "number": 71,
     "active": true,
     "career": [
       2,
@@ -27117,6 +27288,7 @@
     "id": 8482809,
     "name": "Jackson Blake",
     "team": "CAR",
+    "number": 53,
     "active": true,
     "career": [
       3,
@@ -27175,6 +27347,7 @@
     "id": 8484227,
     "name": "Will Smith",
     "team": "SJS",
+    "number": 2,
     "active": true,
     "career": [
       1,
@@ -27233,6 +27406,7 @@
     "id": 8473986,
     "name": "Alex Killorn",
     "team": "ANA",
+    "number": 17,
     "active": true,
     "career": [
       3,
@@ -27335,6 +27509,7 @@
     "id": 8475179,
     "name": "Dmitry Kulikov",
     "team": "FLA",
+    "number": 7,
     "active": true,
     "career": [
       2,
@@ -27449,6 +27624,7 @@
     "id": 8476292,
     "name": "Ondrej Palat",
     "team": "NYI",
+    "number": 81,
     "active": true,
     "career": [
       1,
@@ -27547,6 +27723,7 @@
     "id": 8476905,
     "name": "Chandler Stephenson",
     "team": "SEA",
+    "number": 9,
     "active": true,
     "career": [
       2,
@@ -27633,6 +27810,7 @@
     "id": 8476994,
     "name": "Vinnie Hinostroza",
     "team": "COL",
+    "number": null,
     "active": true,
     "career": [
       3,
@@ -27719,6 +27897,7 @@
     "id": 8480797,
     "name": "Joel Farabee",
     "team": "CGY",
+    "number": 86,
     "active": true,
     "career": [
       2,
@@ -27789,6 +27968,7 @@
     "id": 8480801,
     "name": "Brady Tkachuk",
     "team": "FLA",
+    "number": 8,
     "active": true,
     "career": [
       1,
@@ -27867,6 +28047,7 @@
     "id": 8482667,
     "name": "William Eklund",
     "team": "OTT",
+    "number": null,
     "active": true,
     "career": [
       3,
@@ -27933,6 +28114,7 @@
     "id": 8476906,
     "name": "Shayne Gostisbehere",
     "team": "CAR",
+    "number": 4,
     "active": true,
     "career": [
       1,
@@ -28023,6 +28205,7 @@
     "id": 8480003,
     "name": "Jesper Boqvist",
     "team": "NJD",
+    "number": 70,
     "active": true,
     "career": [
       2,
@@ -28093,6 +28276,7 @@
     "id": 8480078,
     "name": "Filip Chytil",
     "team": "VAN",
+    "number": 72,
     "active": true,
     "career": [
       0,
@@ -28171,6 +28355,7 @@
     "id": 8481523,
     "name": "Kirby Dach",
     "team": "MTL",
+    "number": 77,
     "active": true,
     "career": [
       4,
@@ -28237,6 +28422,7 @@
     "id": 8481580,
     "name": "Connor McMichael",
     "team": "STL",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -28299,6 +28485,7 @@
     "id": 8482175,
     "name": "JJ Peterka",
     "team": "BOS",
+    "number": null,
     "active": true,
     "career": [
       2,
@@ -28361,6 +28548,7 @@
     "id": 8482201,
     "name": "Gage Goncalves",
     "team": "TBL",
+    "number": 93,
     "active": true,
     "career": [
       4,
@@ -28415,6 +28603,7 @@
     "id": 8483493,
     "name": "Frank Nazar",
     "team": "CHI",
+    "number": 91,
     "active": true,
     "career": [
       2,
@@ -28469,6 +28658,7 @@
     "id": 8475722,
     "name": "Jason Zucker",
     "team": "BUF",
+    "number": 17,
     "active": true,
     "career": [
       1,
@@ -28567,6 +28757,7 @@
     "id": 8477935,
     "name": "Sam Bennett",
     "team": "FLA",
+    "number": 9,
     "active": true,
     "career": [
       0,
@@ -28653,6 +28844,7 @@
     "id": 8477940,
     "name": "Nikolaj Ehlers",
     "team": "CAR",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -28735,6 +28927,7 @@
     "id": 8477953,
     "name": "Kasperi Kapanen",
     "team": "EDM",
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -28817,6 +29010,7 @@
     "id": 8478493,
     "name": "Joel Eriksson Ek",
     "team": "MIN",
+    "number": 14,
     "active": true,
     "career": [
       1,
@@ -28895,6 +29089,7 @@
     "id": 8479345,
     "name": "Jakob Chychrun",
     "team": "WSH",
+    "number": 6,
     "active": true,
     "career": [
       1,
@@ -28973,6 +29168,7 @@
     "id": 8479977,
     "name": "Kailer Yamamoto",
     "team": "UTA",
+    "number": 56,
     "active": true,
     "career": [
       3,
@@ -29047,6 +29243,7 @@
     "id": 8480113,
     "name": "Alex Iafallo",
     "team": "WPG",
+    "number": 9,
     "active": true,
     "career": [
       1,
@@ -29121,6 +29318,7 @@
     "id": 8480459,
     "name": "Pius Suter",
     "team": "STL",
+    "number": 22,
     "active": true,
     "career": [
       2,
@@ -29183,6 +29381,7 @@
     "id": 8482124,
     "name": "Quinton Byfield",
     "team": "LAK",
+    "number": 55,
     "active": true,
     "career": [
       1,
@@ -29241,6 +29440,7 @@
     "id": 8482146,
     "name": "Luke Evangelista",
     "team": "NSH",
+    "number": 77,
     "active": true,
     "career": [
       1,
@@ -29291,6 +29491,7 @@
     "id": 8482730,
     "name": "Brandt Clarke",
     "team": "LAK",
+    "number": 92,
     "active": true,
     "career": [
       2,
@@ -29345,6 +29546,7 @@
     "id": 8483515,
     "name": "Juraj Slafkovsk\u00fd",
     "team": "MTL",
+    "number": 20,
     "active": true,
     "career": [
       1,
@@ -29399,6 +29601,7 @@
     "id": 8475184,
     "name": "Chris Kreider",
     "team": "ANA",
+    "number": 20,
     "active": true,
     "career": [
       1,
@@ -29489,6 +29692,7 @@
     "id": 8475314,
     "name": "Anders Lee",
     "team": "UTA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -29579,6 +29783,7 @@
     "id": 8476480,
     "name": "Vladislav Namestnikov",
     "team": "WPG",
+    "number": 7,
     "active": true,
     "career": [
       1,
@@ -29665,6 +29870,7 @@
     "id": 8477444,
     "name": "Andre Burakovsky",
     "team": "OTT",
+    "number": null,
     "active": true,
     "career": [
       1,
@@ -29747,6 +29953,7 @@
     "id": 8477451,
     "name": "Ryan Hartman",
     "team": "MIN",
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -29829,6 +30036,7 @@
     "id": 8477479,
     "name": "Tyler Bertuzzi",
     "team": "CHI",
+    "number": 59,
     "active": true,
     "career": [
       0,
@@ -29899,6 +30107,7 @@
     "id": 8478874,
     "name": "Adam Gaudette",
     "team": "SJS",
+    "number": 81,
     "active": true,
     "career": [
       2,
@@ -29965,6 +30174,7 @@
     "id": 8480036,
     "name": "Miro Heiskanen",
     "team": "DAL",
+    "number": 4,
     "active": true,
     "career": [
       1,
@@ -30031,6 +30241,7 @@
     "id": 8480069,
     "name": "Cale Makar",
     "team": "COL",
+    "number": 8,
     "active": true,
     "career": [
       1,
@@ -30093,6 +30304,7 @@
     "id": 8480188,
     "name": "Fabian Zetterlund",
     "team": "OTT",
+    "number": 20,
     "active": true,
     "career": [
       2,
@@ -30147,6 +30359,7 @@
     "id": 8482476,
     "name": "Emil Heineman",
     "team": "NYI",
+    "number": 51,
     "active": true,
     "career": [
       3,
@@ -30193,6 +30406,7 @@
     "id": 8483499,
     "name": "Liam Ohgren",
     "team": "VAN",
+    "number": 92,
     "active": true,
     "career": [
       2,
@@ -30235,6 +30449,7 @@
     "id": 8483516,
     "name": "Jimmy Snuggerud",
     "team": "STL",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -30277,6 +30492,7 @@
     "id": 8484185,
     "name": "Nick Lardis",
     "team": "CHI",
+    "number": 76,
     "active": true,
     "career": [
       2,
@@ -30315,6 +30531,7 @@
     "id": 8484186,
     "name": "Ryan Leonard",
     "team": "WSH",
+    "number": 9,
     "active": true,
     "career": [
       1,
@@ -30357,6 +30574,7 @@
     "id": 8484984,
     "name": "Ivan Demidov",
     "team": "MTL",
+    "number": 93,
     "active": true,
     "career": [
       2,
@@ -30399,6 +30617,7 @@
     "id": 8474574,
     "name": "Tyler Myers",
     "team": "DAL",
+    "number": 57,
     "active": true,
     "career": [
       1,
@@ -30497,6 +30716,7 @@
     "id": 8475220,
     "name": "Marcus Foligno",
     "team": "MIN",
+    "number": 17,
     "active": true,
     "career": [
       0,
@@ -30587,6 +30807,7 @@
     "id": 8476399,
     "name": "Blake Coleman",
     "team": "MIN",
+    "number": 20,
     "active": true,
     "career": [
       1,
@@ -30657,6 +30878,7 @@
     "id": 8476419,
     "name": "Jean-Gabriel Pageau",
     "team": "NYI",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -30743,6 +30965,7 @@
     "id": 8476872,
     "name": "Scott Laughton",
     "team": "LAK",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -30825,6 +31048,7 @@
     "id": 8476875,
     "name": "Mike Matheson",
     "team": "MTL",
+    "number": 8,
     "active": true,
     "career": [
       1,
@@ -30899,6 +31123,7 @@
     "id": 8477476,
     "name": "Artturi Lehkonen",
     "team": "COL",
+    "number": 62,
     "active": true,
     "career": [
       1,
@@ -30969,6 +31194,7 @@
     "id": 8477839,
     "name": "Conor Sheary",
     "team": "BUF",
+    "number": 43,
     "active": true,
     "career": [
       1,
@@ -31043,6 +31269,7 @@
     "id": 8477986,
     "name": "Brandon Montour",
     "team": "SEA",
+    "number": 62,
     "active": true,
     "career": [
       2,
@@ -31109,6 +31336,7 @@
     "id": 8478233,
     "name": "Andrew Mangiapane",
     "team": "CHI",
+    "number": 26,
     "active": true,
     "career": [
       0,
@@ -31175,6 +31403,7 @@
     "id": 8478438,
     "name": "Tommy Novak",
     "team": "PIT",
+    "number": 18,
     "active": true,
     "career": [
       1,
@@ -31225,6 +31454,7 @@
     "id": 8478458,
     "name": "Jack Roslovic",
     "team": "TOR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -31295,6 +31525,7 @@
     "id": 8478460,
     "name": "Zach Werenski",
     "team": "CBJ",
+    "number": 8,
     "active": true,
     "career": [
       1,
@@ -31365,6 +31596,7 @@
     "id": 8479323,
     "name": "Adam Fox",
     "team": "NYR",
+    "number": 23,
     "active": true,
     "career": [
       1,
@@ -31423,6 +31655,7 @@
     "id": 8479336,
     "name": "Carl Grundstrom",
     "team": "PHI",
+    "number": 91,
     "active": true,
     "career": [
       1,
@@ -31485,6 +31718,7 @@
     "id": 8479351,
     "name": "Sam Steel",
     "team": "DAL",
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -31547,6 +31781,7 @@
     "id": 8479987,
     "name": "Morgan Geekie",
     "team": "BOS",
+    "number": 39,
     "active": true,
     "career": [
       0,
@@ -31605,6 +31840,7 @@
     "id": 8479996,
     "name": "Cody Glass",
     "team": "NJD",
+    "number": 12,
     "active": true,
     "career": [
       2,
@@ -31663,6 +31899,7 @@
     "id": 8480839,
     "name": "Rasmus Dahlin",
     "team": "BUF",
+    "number": 26,
     "active": true,
     "career": [
       1,
@@ -31725,6 +31962,7 @@
     "id": 8480865,
     "name": "Noah Dobson",
     "team": "MTL",
+    "number": 53,
     "active": true,
     "career": [
       1,
@@ -31783,6 +32021,7 @@
     "id": 8481596,
     "name": "Shane Pinto",
     "team": "OTT",
+    "number": 12,
     "active": true,
     "career": [
       2,
@@ -31837,6 +32076,7 @@
     "id": 8482074,
     "name": "Connor Zary",
     "team": "CGY",
+    "number": 47,
     "active": true,
     "career": [
       0,
@@ -31879,6 +32119,7 @@
     "id": 8482671,
     "name": "Owen Power",
     "team": "BUF",
+    "number": 25,
     "active": true,
     "career": [
       2,
@@ -31929,6 +32170,7 @@
     "id": 8482679,
     "name": "Matt Coronato",
     "team": "CGY",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -31975,6 +32217,7 @@
     "id": 8484762,
     "name": "Beckett Sennecke",
     "team": "ANA",
+    "number": 45,
     "active": true,
     "career": [
       1,
@@ -32009,6 +32252,7 @@
     "id": 8484860,
     "name": "Matvei Gridin",
     "team": "CGY",
+    "number": 92,
     "active": true,
     "career": [
       1,
@@ -32043,6 +32287,7 @@
     "id": 8475200,
     "name": "Dmitry Orlov",
     "team": "SJS",
+    "number": 9,
     "active": true,
     "career": [
       0,
@@ -32125,6 +32370,7 @@
     "id": 8475231,
     "name": "Casey Cizikas",
     "team": "NYI",
+    "number": 53,
     "active": true,
     "career": [
       1,
@@ -32211,6 +32457,7 @@
     "id": 8475343,
     "name": "Nic Dowd",
     "team": "VGK",
+    "number": 26,
     "active": true,
     "career": [
       1,
@@ -32281,6 +32528,7 @@
     "id": 8475768,
     "name": "Jaden Schwartz",
     "team": "COL",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -32367,6 +32615,7 @@
     "id": 8476479,
     "name": "Phillip Danault",
     "team": "MTL",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -32441,6 +32690,7 @@
     "id": 8476826,
     "name": "Yanni Gourde",
     "team": "TBL",
+    "number": 37,
     "active": true,
     "career": [
       1,
@@ -32511,6 +32761,7 @@
     "id": 8476873,
     "name": "Mark Jankowski",
     "team": "CAR",
+    "number": 77,
     "active": true,
     "career": [
       0,
@@ -32577,6 +32828,7 @@
     "id": 8476889,
     "name": "Radek Faksa",
     "team": "DAL",
+    "number": 12,
     "active": true,
     "career": [
       1,
@@ -32647,6 +32899,7 @@
     "id": 8476981,
     "name": "Josh Anderson",
     "team": "MTL",
+    "number": 17,
     "active": true,
     "career": [
       1,
@@ -32721,6 +32974,7 @@
     "id": 8477021,
     "name": "Alexander Kerfoot",
     "team": "NSH",
+    "number": null,
     "active": true,
     "career": [
       2,
@@ -32783,6 +33037,7 @@
     "id": 8477456,
     "name": "J.T. Compher",
     "team": "DET",
+    "number": 37,
     "active": true,
     "career": [
       0,
@@ -32849,6 +33104,7 @@
     "id": 8478020,
     "name": "Michael Amadio",
     "team": "OTT",
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -32911,6 +33167,7 @@
     "id": 8478396,
     "name": "Noah Hanifin",
     "team": "VGK",
+    "number": 15,
     "active": true,
     "career": [
       1,
@@ -32981,6 +33238,7 @@
     "id": 8478469,
     "name": "Thomas Chabot",
     "team": "OTT",
+    "number": 72,
     "active": true,
     "career": [
       0,
@@ -33047,6 +33305,7 @@
     "id": 8478500,
     "name": "Ivan Provorov",
     "team": "CBJ",
+    "number": 9,
     "active": true,
     "career": [
       0,
@@ -33113,6 +33372,7 @@
     "id": 8479410,
     "name": "Mikhail Sergachev",
     "team": "UTA",
+    "number": 98,
     "active": true,
     "career": [
       1,
@@ -33179,6 +33439,7 @@
     "id": 8479425,
     "name": "Filip Hronek",
     "team": "VAN",
+    "number": 17,
     "active": true,
     "career": [
       0,
@@ -33237,6 +33498,7 @@
     "id": 8479542,
     "name": "Brandon Hagel",
     "team": "TBL",
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -33291,6 +33553,7 @@
     "id": 8479591,
     "name": "Michael Eyssimont",
     "team": "BOS",
+    "number": 81,
     "active": true,
     "career": [
       0,
@@ -33337,6 +33600,7 @@
     "id": 8480800,
     "name": "Quinn Hughes",
     "team": "MIN",
+    "number": 43,
     "active": true,
     "career": [
       0,
@@ -33395,6 +33659,7 @@
     "id": 8480817,
     "name": "K'Andre Miller",
     "team": "CAR",
+    "number": 19,
     "active": true,
     "career": [
       1,
@@ -33445,6 +33710,7 @@
     "id": 8480829,
     "name": "Jesperi Kotkaniemi",
     "team": "CAR",
+    "number": 82,
     "active": true,
     "career": [
       1,
@@ -33503,6 +33769,7 @@
     "id": 8481528,
     "name": "Dylan Cozens",
     "team": "OTT",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -33549,6 +33816,7 @@
     "id": 8481624,
     "name": "Ilya Mikheyev",
     "team": "TBL",
+    "number": 95,
     "active": true,
     "career": [
       0,
@@ -33603,6 +33871,7 @@
     "id": 8482077,
     "name": "Dylan Holloway",
     "team": "STL",
+    "number": 81,
     "active": true,
     "career": [
       0,
@@ -33645,6 +33914,7 @@
     "id": 8482079,
     "name": "Marco Rossi",
     "team": "VAN",
+    "number": 93,
     "active": true,
     "career": [
       1,
@@ -33687,6 +33957,7 @@
     "id": 8482110,
     "name": "Dawson Mercer",
     "team": "NJD",
+    "number": 91,
     "active": true,
     "career": [
       0,
@@ -33733,6 +34004,7 @@
     "id": 8482125,
     "name": "Alexander Holtz",
     "team": "VGK",
+    "number": 11,
     "active": true,
     "career": [
       0,
@@ -33779,6 +34051,7 @@
     "id": 8482155,
     "name": "Alex Laferriere",
     "team": "LAK",
+    "number": 14,
     "active": true,
     "career": [
       0,
@@ -33817,6 +34090,7 @@
     "id": 8482177,
     "name": "Marat Khusnutdinov",
     "team": "BOS",
+    "number": 92,
     "active": true,
     "career": [
       1,
@@ -33855,6 +34129,7 @@
     "id": 8482775,
     "name": "Oliver Kapanen",
     "team": "MTL",
+    "number": 91,
     "active": true,
     "career": [
       2,
@@ -33889,6 +34164,7 @@
     "id": 8483445,
     "name": "Cutter Gauthier",
     "team": "ANA",
+    "number": 61,
     "active": true,
     "career": [
       2,
@@ -33927,6 +34203,7 @@
     "id": 8483457,
     "name": "Lane Hutson",
     "team": "MTL",
+    "number": 48,
     "active": true,
     "career": [
       0,
@@ -33965,6 +34242,7 @@
     "id": 8483489,
     "name": "Fraser Minten",
     "team": "BOS",
+    "number": 93,
     "active": true,
     "career": [
       2,
@@ -34003,6 +34281,7 @@
     "id": 8484197,
     "name": "Oliver Moore",
     "team": "CHI",
+    "number": 11,
     "active": true,
     "career": [
       1,
@@ -34037,6 +34316,7 @@
     "id": 8474716,
     "name": "Jared Spurgeon",
     "team": "MIN",
+    "number": 46,
     "active": true,
     "career": [
       0,
@@ -34123,6 +34403,7 @@
     "id": 8476474,
     "name": "Stefan Noesen",
     "team": "NJD",
+    "number": 11,
     "active": true,
     "career": [
       0,
@@ -34193,6 +34474,7 @@
     "id": 8476624,
     "name": "Barclay Goodrow",
     "team": "SJS",
+    "number": 23,
     "active": true,
     "career": [
       0,
@@ -34263,6 +34545,7 @@
     "id": 8476853,
     "name": "Morgan Rielly",
     "team": "TOR",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -34337,6 +34620,7 @@
     "id": 8476921,
     "name": "Jordan Martinook",
     "team": "CAR",
+    "number": 48,
     "active": true,
     "career": [
       1,
@@ -34407,6 +34691,7 @@
     "id": 8477406,
     "name": "Mattias Janmark",
     "team": "EDM",
+    "number": 13,
     "active": true,
     "career": [
       0,
@@ -34469,6 +34754,7 @@
     "id": 8477845,
     "name": "Trevor van Riemsdyk",
     "team": "PIT",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -34539,6 +34825,7 @@
     "id": 8477932,
     "name": "Aaron Ekblad",
     "team": "FLA",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -34609,6 +34896,7 @@
     "id": 8478519,
     "name": "Anthony Cirelli",
     "team": "TBL",
+    "number": 71,
     "active": true,
     "career": [
       0,
@@ -34667,6 +34955,7 @@
     "id": 8478831,
     "name": "Kevin Stenlund",
     "team": "UTA",
+    "number": 82,
     "active": true,
     "career": [
       0,
@@ -34721,6 +35010,7 @@
     "id": 8478975,
     "name": "Mason Marchment",
     "team": "SJS",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -34771,6 +35061,7 @@
     "id": 8479365,
     "name": "Trent Frederic",
     "team": "EDM",
+    "number": 10,
     "active": true,
     "career": [
       0,
@@ -34825,6 +35116,7 @@
     "id": 8479390,
     "name": "Taylor Raddysh",
     "team": "NYR",
+    "number": 14,
     "active": true,
     "career": [
       0,
@@ -34867,6 +35159,7 @@
     "id": 8480185,
     "name": "Eetu Luostarinen",
     "team": "FLA",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -34917,6 +35210,7 @@
     "id": 8480748,
     "name": "Kiefer Sherwood",
     "team": "SJS",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -34971,6 +35265,7 @@
     "id": 8480849,
     "name": "Barrett Hayton",
     "team": "UTA",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -35021,6 +35316,7 @@
     "id": 8481024,
     "name": "Linus Karlsson",
     "team": "VAN",
+    "number": 94,
     "active": true,
     "career": [
       1,
@@ -35055,6 +35351,7 @@
     "id": 8481582,
     "name": "Nicholas Robertson",
     "team": "PIT",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -35101,6 +35398,7 @@
     "id": 8481618,
     "name": "Alex Newhook",
     "team": "MTL",
+    "number": 15,
     "active": true,
     "career": [
       0,
@@ -35147,6 +35445,7 @@
     "id": 8481656,
     "name": "Aliaksei Protas",
     "team": "WSH",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -35189,6 +35488,7 @@
     "id": 8481711,
     "name": "Matias Maccelli",
     "team": "NYI",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -35231,6 +35531,7 @@
     "id": 8481806,
     "name": "Louis Crevier",
     "team": "BUF",
+    "number": null,
     "active": true,
     "career": [
       1,
@@ -35265,6 +35566,7 @@
     "id": 8482259,
     "name": "Bobby McMann",
     "team": "SEA",
+    "number": 74,
     "active": true,
     "career": [
       0,
@@ -35303,6 +35605,7 @@
     "id": 8482684,
     "name": "Luke Hughes",
     "team": "NJD",
+    "number": 43,
     "active": true,
     "career": [
       0,
@@ -35341,6 +35644,7 @@
     "id": 8482702,
     "name": "Logan Stankoven",
     "team": "CAR",
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -35375,6 +35679,7 @@
     "id": 8482737,
     "name": "Zachary Bolduc",
     "team": "MTL",
+    "number": 76,
     "active": true,
     "career": [
       0,
@@ -35409,6 +35714,7 @@
     "id": 8483500,
     "name": "Noah Ostlund",
     "team": "BUF",
+    "number": 86,
     "active": true,
     "career": [
       1,
@@ -35439,6 +35745,7 @@
     "id": 8483524,
     "name": "Shane Wright",
     "team": "SEA",
+    "number": 51,
     "active": true,
     "career": [
       0,
@@ -35477,6 +35784,7 @@
     "id": 8483573,
     "name": "Ethen Frank",
     "team": "WSH",
+    "number": 53,
     "active": true,
     "career": [
       0,
@@ -35507,6 +35815,7 @@
     "id": 8484911,
     "name": "Collin Graf",
     "team": "SJS",
+    "number": 51,
     "active": true,
     "career": [
       0,
@@ -35541,6 +35850,7 @@
     "id": 8484958,
     "name": "Maxim Tsyplakov",
     "team": "CGY",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -35571,6 +35881,7 @@
     "id": 8485414,
     "name": "Ben Kindel",
     "team": "PIT",
+    "number": 81,
     "active": true,
     "career": [
       2,
@@ -35597,6 +35908,7 @@
     "id": 8474567,
     "name": "Zach Bogosian",
     "team": "MIN",
+    "number": 24,
     "active": true,
     "career": [
       1,
@@ -35687,6 +35999,7 @@
     "id": 8475218,
     "name": "Mattias Ekholm",
     "team": "EDM",
+    "number": 14,
     "active": true,
     "career": [
       0,
@@ -35765,6 +36078,7 @@
     "id": 8475753,
     "name": "Justin Faulk",
     "team": "DET",
+    "number": 72,
     "active": true,
     "career": [
       0,
@@ -35843,6 +36157,7 @@
     "id": 8475786,
     "name": "Zach Hyman",
     "team": "EDM",
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -35905,6 +36220,7 @@
     "id": 8475790,
     "name": "Erik Gudbranson",
     "team": "CBJ",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -35983,6 +36299,7 @@
     "id": 8476312,
     "name": "Josh Manson",
     "team": "COL",
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -36049,6 +36366,7 @@
     "id": 8476457,
     "name": "Adam Larsson",
     "team": "SEA",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -36127,6 +36445,7 @@
     "id": 8476854,
     "name": "Hampus Lindholm",
     "team": "BOS",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -36197,6 +36516,7 @@
     "id": 8476869,
     "name": "Brady Skjei",
     "team": "NSH",
+    "number": 76,
     "active": true,
     "career": [
       0,
@@ -36259,6 +36579,7 @@
     "id": 8476879,
     "name": "Cody Ceci",
     "team": "LAK",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -36329,6 +36650,7 @@
     "id": 8476880,
     "name": "Tom Wilson",
     "team": "WSH",
+    "number": 43,
     "active": true,
     "career": [
       0,
@@ -36399,6 +36721,7 @@
     "id": 8476927,
     "name": "Teddy Blueger",
     "team": "TOR",
+    "number": null,
     "active": true,
     "career": [
       1,
@@ -36449,6 +36772,7 @@
     "id": 8476931,
     "name": "Jake McCabe",
     "team": "TOR",
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -36519,6 +36843,7 @@
     "id": 8477015,
     "name": "Connor Brown",
     "team": "NJD",
+    "number": 16,
     "active": true,
     "career": [
       0,
@@ -36581,6 +36906,7 @@
     "id": 8477220,
     "name": "Nate Schmidt",
     "team": "UTA",
+    "number": 88,
     "active": true,
     "career": [
       0,
@@ -36651,6 +36977,7 @@
     "id": 8477409,
     "name": "Carter Verhaeghe",
     "team": "FLA",
+    "number": 23,
     "active": true,
     "career": [
       0,
@@ -36697,6 +37024,7 @@
     "id": 8477426,
     "name": "Nick Paul",
     "team": "TOR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -36759,6 +37087,7 @@
     "id": 8477450,
     "name": "Jason Dickinson",
     "team": "EDM",
+    "number": 16,
     "active": true,
     "career": [
       0,
@@ -36821,6 +37150,7 @@
     "id": 8477495,
     "name": "Seth Jones",
     "team": "FLA",
+    "number": 3,
     "active": true,
     "career": [
       0,
@@ -36891,6 +37221,7 @@
     "id": 8477499,
     "name": "Rasmus Ristolainen",
     "team": "PHI",
+    "number": 55,
     "active": true,
     "career": [
       1,
@@ -36961,6 +37292,7 @@
     "id": 8477573,
     "name": "Nathan Walker",
     "team": "STL",
+    "number": 26,
     "active": true,
     "career": [
       0,
@@ -37015,6 +37347,7 @@
     "id": 8477998,
     "name": "Warren Foegele",
     "team": "OTT",
+    "number": 37,
     "active": true,
     "career": [
       0,
@@ -37069,6 +37402,7 @@
     "id": 8478038,
     "name": "Devon Toews",
     "team": "COL",
+    "number": 7,
     "active": true,
     "career": [
       0,
@@ -37119,6 +37453,7 @@
     "id": 8478133,
     "name": "Jake Evans",
     "team": "MTL",
+    "number": 71,
     "active": true,
     "career": [
       0,
@@ -37165,6 +37500,7 @@
     "id": 8478424,
     "name": "Jansen Harkins",
     "team": "TBL",
+    "number": null,
     "active": true,
     "career": [
       1,
@@ -37211,6 +37547,7 @@
     "id": 8478472,
     "name": "Mathieu Joseph",
     "team": "EDM",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -37261,6 +37598,7 @@
     "id": 8478474,
     "name": "Lawson Crouse",
     "team": "UTA",
+    "number": 67,
     "active": true,
     "career": [
       0,
@@ -37319,6 +37657,7 @@
     "id": 8479369,
     "name": "Andrew Peeke",
     "team": "UTA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -37365,6 +37704,7 @@
     "id": 8479992,
     "name": "Michael Rasmussen",
     "team": "DET",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -37411,6 +37751,7 @@
     "id": 8480068,
     "name": "Ryan Poehling",
     "team": "ANA",
+    "number": 25,
     "active": true,
     "career": [
       1,
@@ -37457,6 +37798,7 @@
     "id": 8480192,
     "name": "Johnathan Kovacevic",
     "team": "NJD",
+    "number": 8,
     "active": true,
     "career": [
       0,
@@ -37495,6 +37837,7 @@
     "id": 8480336,
     "name": "Sean Walker",
     "team": "CAR",
+    "number": 26,
     "active": true,
     "career": [
       0,
@@ -37545,6 +37888,7 @@
     "id": 8480426,
     "name": "Charle-Edouard D'Astous",
     "team": "TBL",
+    "number": 51,
     "active": true,
     "career": [
       0,
@@ -37567,6 +37911,7 @@
     "id": 8480803,
     "name": "Evan Bouchard",
     "team": "EDM",
+    "number": 2,
     "active": true,
     "career": [
       0,
@@ -37613,6 +37958,7 @@
     "id": 8480813,
     "name": "Joe Veleno",
     "team": "NYR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -37655,6 +38001,7 @@
     "id": 8480848,
     "name": "Ty Dellandrea",
     "team": "SJS",
+    "number": 10,
     "active": true,
     "career": [
       0,
@@ -37697,6 +38044,7 @@
     "id": 8480873,
     "name": "Rasmus Sandin",
     "team": "WSH",
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -37743,6 +38091,7 @@
     "id": 8481014,
     "name": "Alexander Romanov",
     "team": "NYI",
+    "number": 28,
     "active": true,
     "career": [
       0,
@@ -37785,6 +38134,7 @@
     "id": 8481524,
     "name": "Bowen Byram",
     "team": "CHI",
+    "number": null,
     "active": true,
     "career": [
       1,
@@ -37827,6 +38177,7 @@
     "id": 8481535,
     "name": "Nils Hoglander",
     "team": "NSH",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -37869,6 +38220,7 @@
     "id": 8481542,
     "name": "Moritz Seider",
     "team": "DET",
+    "number": 53,
     "active": true,
     "career": [
       0,
@@ -37907,6 +38259,7 @@
     "id": 8481581,
     "name": "Thomas Harley",
     "team": "DAL",
+    "number": 55,
     "active": true,
     "career": [
       0,
@@ -37945,6 +38298,7 @@
     "id": 8481617,
     "name": "Vasily Podkolzin",
     "team": "EDM",
+    "number": 92,
     "active": true,
     "career": [
       0,
@@ -37983,6 +38337,7 @@
     "id": 8481721,
     "name": "Arseny Gritsyuk",
     "team": "NJD",
+    "number": 81,
     "active": true,
     "career": [
       0,
@@ -38005,6 +38360,7 @@
     "id": 8482100,
     "name": "Alexander Nikishin",
     "team": "CAR",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -38027,6 +38383,7 @@
     "id": 8482103,
     "name": "Ozzy Wiesblatt",
     "team": "NSH",
+    "number": 89,
     "active": true,
     "career": [
       1,
@@ -38053,6 +38410,7 @@
     "id": 8482149,
     "name": "Cole Perfetti",
     "team": "WPG",
+    "number": 91,
     "active": true,
     "career": [
       1,
@@ -38091,6 +38449,7 @@
     "id": 8482511,
     "name": "Mason Lohrei",
     "team": "BOS",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -38121,6 +38480,7 @@
     "id": 8482659,
     "name": "Josh Doan",
     "team": "BUF",
+    "number": 91,
     "active": true,
     "career": [
       0,
@@ -38151,6 +38511,7 @@
     "id": 8482699,
     "name": "Dylan Guenther",
     "team": "UTA",
+    "number": 11,
     "active": true,
     "career": [
       0,
@@ -38185,6 +38546,7 @@
     "id": 8482705,
     "name": "Cole Sillinger",
     "team": "CBJ",
+    "number": 4,
     "active": true,
     "career": [
       0,
@@ -38223,6 +38585,7 @@
     "id": 8482713,
     "name": "Mackie Samoskevich",
     "team": "SEA",
+    "number": 11,
     "active": true,
     "career": [
       0,
@@ -38253,6 +38616,7 @@
     "id": 8482733,
     "name": "Logan Mailloux",
     "team": "STL",
+    "number": 23,
     "active": true,
     "career": [
       0,
@@ -38283,6 +38647,7 @@
     "id": 8483431,
     "name": "Logan Cooley",
     "team": "UTA",
+    "number": 92,
     "active": true,
     "career": [
       0,
@@ -38313,6 +38678,7 @@
     "id": 8483495,
     "name": "Simon Nemec",
     "team": "CGY",
+    "number": 71,
     "active": true,
     "career": [
       1,
@@ -38343,6 +38709,7 @@
     "id": 8483512,
     "name": "Matt Savoie",
     "team": "EDM",
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -38373,6 +38740,7 @@
     "id": 8483752,
     "name": "Dominic James",
     "team": "TBL",
+    "number": 17,
     "active": true,
     "career": [
       1,
@@ -38395,6 +38763,7 @@
     "id": 8484164,
     "name": "Dalibor Dvorsky",
     "team": "STL",
+    "number": 54,
     "active": true,
     "career": [
       1,
@@ -38421,6 +38790,7 @@
     "id": 8484241,
     "name": "Matthew Wood",
     "team": "NSH",
+    "number": 71,
     "active": true,
     "career": [
       0,
@@ -38447,6 +38817,7 @@
     "id": 8484800,
     "name": "Berkly Catton",
     "team": "SEA",
+    "number": 27,
     "active": true,
     "career": [
       1,
@@ -38469,6 +38840,7 @@
     "id": 8473533,
     "name": "Jordan Staal",
     "team": "CAR",
+    "number": 11,
     "active": true,
     "career": [
       0,
@@ -38562,6 +38934,7 @@
     "id": 8474013,
     "name": "Ian Cole",
     "team": "CHI",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -38639,6 +39012,7 @@
     "id": 8474151,
     "name": "Ryan McDonagh",
     "team": "TBL",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -38716,6 +39090,7 @@
     "id": 8474568,
     "name": "Luke Schenn",
     "team": "VAN",
+    "number": 2,
     "active": true,
     "career": [
       0,
@@ -38801,6 +39176,7 @@
     "id": 8475188,
     "name": "Brayden McNabb",
     "team": "VGK",
+    "number": 3,
     "active": true,
     "career": [
       0,
@@ -38870,6 +39246,7 @@
     "id": 8475208,
     "name": "Brian Dumoulin",
     "team": "LAK",
+    "number": 2,
     "active": true,
     "career": [
       0,
@@ -38935,6 +39312,7 @@
     "id": 8475235,
     "name": "Nicolas Deslauriers",
     "team": "CAR",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -39000,6 +39378,7 @@
     "id": 8475279,
     "name": "Ben Chiarot",
     "team": "DET",
+    "number": 8,
     "active": true,
     "career": [
       0,
@@ -39065,6 +39444,7 @@
     "id": 8475324,
     "name": "Nick Jensen",
     "team": "ANA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -39118,6 +39498,7 @@
     "id": 8475455,
     "name": "Brenden Dillon",
     "team": "NJD",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -39191,6 +39572,7 @@
     "id": 8475462,
     "name": "Radko Gudas",
     "team": "FLA",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -39260,6 +39642,7 @@
     "id": 8475690,
     "name": "Chris Tanev",
     "team": "TOR",
+    "number": 8,
     "active": true,
     "career": [
       0,
@@ -39337,6 +39720,7 @@
     "id": 8475755,
     "name": "Alexander Petrovic",
     "team": "FLA",
+    "number": 36,
     "active": true,
     "career": [
       0,
@@ -39390,6 +39774,7 @@
     "id": 8475795,
     "name": "Dylan McIlrath",
     "team": "WSH",
+    "number": 52,
     "active": true,
     "career": [
       0,
@@ -39443,6 +39828,7 @@
     "id": 8475842,
     "name": "Sam Carrick",
     "team": "BUF",
+    "number": 10,
     "active": true,
     "career": [
       0,
@@ -39496,6 +39882,7 @@
     "id": 8476278,
     "name": "Colin Blackwell",
     "team": "DAL",
+    "number": 15,
     "active": true,
     "career": [
       0,
@@ -39541,6 +39928,7 @@
     "id": 8476331,
     "name": "Dylan DeMelo",
     "team": "WPG",
+    "number": 2,
     "active": true,
     "career": [
       0,
@@ -39598,6 +39986,7 @@
     "id": 8476372,
     "name": "Nick Seeler",
     "team": "PHI",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -39643,6 +40032,7 @@
     "id": 8476374,
     "name": "Sean Kuraly",
     "team": "BOS",
+    "number": 52,
     "active": true,
     "career": [
       0,
@@ -39696,6 +40086,7 @@
     "id": 8476392,
     "name": "Adam Lowry",
     "team": "WPG",
+    "number": 17,
     "active": true,
     "career": [
       0,
@@ -39757,6 +40148,7 @@
     "id": 8476429,
     "name": "Scott Mayfield",
     "team": "NYI",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -39818,6 +40210,7 @@
     "id": 8476441,
     "name": "Joel Edmundson",
     "team": "LAK",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -39875,6 +40268,7 @@
     "id": 8476463,
     "name": "Jonas Brodin",
     "team": "MIN",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -39944,6 +40338,7 @@
     "id": 8476467,
     "name": "Jamie Oleksiak",
     "team": "VAN",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -40013,6 +40408,7 @@
     "id": 8476473,
     "name": "Connor Murphy",
     "team": "EDM",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -40078,6 +40474,7 @@
     "id": 8476874,
     "name": "Olli Maatta",
     "team": "MIN",
+    "number": 3,
     "active": true,
     "career": [
       0,
@@ -40143,6 +40540,7 @@
     "id": 8476885,
     "name": "Jacob Trouba",
     "team": "SJS",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -40208,6 +40606,7 @@
     "id": 8476892,
     "name": "Colton Parayko",
     "team": "STL",
+    "number": 55,
     "active": true,
     "career": [
       0,
@@ -40265,6 +40664,7 @@
     "id": 8476902,
     "name": "Esa Lindell",
     "team": "DAL",
+    "number": 23,
     "active": true,
     "career": [
       0,
@@ -40322,6 +40722,7 @@
     "id": 8476917,
     "name": "Adam Pelech",
     "team": "NYI",
+    "number": 3,
     "active": true,
     "career": [
       0,
@@ -40379,6 +40780,7 @@
     "id": 8476925,
     "name": "Colton Sissons",
     "team": "TOR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -40440,6 +40842,7 @@
     "id": 8476952,
     "name": "Dominic Toninato",
     "team": "CHI",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -40489,6 +40892,7 @@
     "id": 8476967,
     "name": "Brett Kulak",
     "team": "COL",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -40550,6 +40954,7 @@
     "id": 8476979,
     "name": "Erik Gustafsson",
     "team": "LAK",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -40603,6 +41008,7 @@
     "id": 8477034,
     "name": "Jaycob Megna",
     "team": "VGK",
+    "number": 88,
     "active": true,
     "career": [
       0,
@@ -40648,6 +41054,7 @@
     "id": 8477070,
     "name": "Liam O'Brien",
     "team": "UTA",
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -40697,6 +41104,7 @@
     "id": 8477073,
     "name": "Kurtis MacDermid",
     "team": "OTT",
+    "number": 23,
     "active": true,
     "career": [
       0,
@@ -40746,6 +41154,7 @@
     "id": 8477149,
     "name": "Scott Sabourin",
     "team": "TBL",
+    "number": 46,
     "active": true,
     "career": [
       0,
@@ -40783,6 +41192,7 @@
     "id": 8477346,
     "name": "MacKenzie Weegar",
     "team": "UTA",
+    "number": 52,
     "active": true,
     "career": [
       0,
@@ -40836,6 +41246,7 @@
     "id": 8477365,
     "name": "Connor Clifton",
     "team": "BOS",
+    "number": 75,
     "active": true,
     "career": [
       0,
@@ -40881,6 +41292,7 @@
     "id": 8477425,
     "name": "Miles Wood",
     "team": "CBJ",
+    "number": 11,
     "active": true,
     "career": [
       0,
@@ -40938,6 +41350,7 @@
     "id": 8477429,
     "name": "Andrew Copp",
     "team": "DET",
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -40999,6 +41412,7 @@
     "id": 8477435,
     "name": "Ryan Graves",
     "team": "PIT",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -41044,6 +41458,7 @@
     "id": 8477446,
     "name": "Michael McCarron",
     "team": "MIN",
+    "number": 47,
     "active": true,
     "career": [
       0,
@@ -41093,6 +41508,7 @@
     "id": 8477478,
     "name": "William Carrier",
     "team": "CAR",
+    "number": 28,
     "active": true,
     "career": [
       0,
@@ -41146,6 +41562,7 @@
     "id": 8477488,
     "name": "Brett Pesce",
     "team": "NJD",
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -41203,6 +41620,7 @@
     "id": 8477498,
     "name": "Darnell Nurse",
     "team": "SJS",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -41264,6 +41682,7 @@
     "id": 8477504,
     "name": "Josh Morrissey",
     "team": "WPG",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -41321,6 +41740,7 @@
     "id": 8477506,
     "name": "Ryan Pulock",
     "team": "NYI",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -41378,6 +41798,7 @@
     "id": 8477507,
     "name": "Nikita Zadorov",
     "team": "BOS",
+    "number": 91,
     "active": true,
     "career": [
       0,
@@ -41443,6 +41864,7 @@
     "id": 8477527,
     "name": "Ross Johnston",
     "team": "STL",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -41496,6 +41918,7 @@
     "id": 8477810,
     "name": "Joel Hanley",
     "team": "CGY",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -41553,6 +41976,7 @@
     "id": 8477903,
     "name": "Garnet Hathaway",
     "team": "FLA",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -41610,6 +42034,7 @@
     "id": 8477938,
     "name": "Haydn Fleury",
     "team": "WPG",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -41659,6 +42084,7 @@
     "id": 8477948,
     "name": "Travis Sanheim",
     "team": "PHI",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -41708,6 +42134,7 @@
     "id": 8477964,
     "name": "Ivan Barbashev",
     "team": "VGK",
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -41761,6 +42188,7 @@
     "id": 8477969,
     "name": "Marcus Pettersson",
     "team": "NYR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -41810,6 +42238,7 @@
     "id": 8478013,
     "name": "Jake Walman",
     "team": "EDM",
+    "number": 96,
     "active": true,
     "career": [
       0,
@@ -41851,6 +42280,7 @@
     "id": 8478043,
     "name": "Sam Lafferty",
     "team": "FLA",
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -41892,6 +42322,7 @@
     "id": 8478055,
     "name": "Gustav Forsling",
     "team": "FLA",
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -41941,6 +42372,7 @@
     "id": 8478057,
     "name": "Dakota Joshua",
     "team": "TOR",
+    "number": 81,
     "active": true,
     "career": [
       0,
@@ -41978,6 +42410,7 @@
     "id": 8478136,
     "name": "Jake Middleton",
     "team": "CGY",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42023,6 +42456,7 @@
     "id": 8478173,
     "name": "Hayden Hodgson",
     "team": "OTT",
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -42052,6 +42486,7 @@
     "id": 8478178,
     "name": "Darren Raddysh",
     "team": "TOR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42085,6 +42520,7 @@
     "id": 8478399,
     "name": "Jonas Siegenthaler",
     "team": "NJD",
+    "number": 71,
     "active": true,
     "career": [
       0,
@@ -42130,6 +42566,7 @@
     "id": 8478407,
     "name": "Vince Dunn",
     "team": "SEA",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -42179,6 +42616,7 @@
     "id": 8478413,
     "name": "Jordan Greenway",
     "team": "CHI",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42228,6 +42666,7 @@
     "id": 8478416,
     "name": "Erik Cernak",
     "team": "TBL",
+    "number": 81,
     "active": true,
     "career": [
       0,
@@ -42273,6 +42712,7 @@
     "id": 8478421,
     "name": "A.J. Greer",
     "team": "ANA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42322,6 +42762,7 @@
     "id": 8478434,
     "name": "Keegan Kolesar",
     "team": "DET",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42363,6 +42804,7 @@
     "id": 8478443,
     "name": "Brandon Carlo",
     "team": "STL",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42416,6 +42858,7 @@
     "id": 8478450,
     "name": "Parker Wotherspoon",
     "team": "VGK",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42445,6 +42888,7 @@
     "id": 8478454,
     "name": "Noah Juulsen",
     "team": "COL",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42490,6 +42934,7 @@
     "id": 8478468,
     "name": "Jeremy Lauzon",
     "team": "VGK",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -42535,6 +42980,7 @@
     "id": 8478476,
     "name": "Kyle Capobianco",
     "team": "DAL",
+    "number": 20,
     "active": true,
     "career": [
       0,
@@ -42580,6 +43026,7 @@
     "id": 8478502,
     "name": "Dennis Gilbert",
     "team": "BUF",
+    "number": 8,
     "active": true,
     "career": [
       0,
@@ -42621,6 +43068,7 @@
     "id": 8478507,
     "name": "John Marino",
     "team": "UTA",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -42662,6 +43110,7 @@
     "id": 8478508,
     "name": "Yakov Trenin",
     "team": "MIN",
+    "number": 13,
     "active": true,
     "career": [
       0,
@@ -42703,6 +43152,7 @@
     "id": 8478569,
     "name": "Noel Acciari",
     "team": "PHI",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42760,6 +43210,7 @@
     "id": 8478840,
     "name": "Will Borgen",
     "team": "BOS",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -42801,6 +43252,7 @@
     "id": 8478851,
     "name": "Alexandre Carrier",
     "team": "MTL",
+    "number": 45,
     "active": true,
     "career": [
       0,
@@ -42846,6 +43298,7 @@
     "id": 8478854,
     "name": "Ryan Shea",
     "team": "EDM",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -42871,6 +43324,7 @@
     "id": 8478859,
     "name": "Niko Mikkola",
     "team": "FLA",
+    "number": 77,
     "active": true,
     "career": [
       0,
@@ -42912,6 +43366,7 @@
     "id": 8478882,
     "name": "Vladislav Gavrikov",
     "team": "NYR",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -42953,6 +43408,7 @@
     "id": 8478891,
     "name": "Mason Appleton",
     "team": "DET",
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -42998,6 +43454,7 @@
     "id": 8478904,
     "name": "Steven Lorentz",
     "team": "TOR",
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -43035,6 +43492,7 @@
     "id": 8478911,
     "name": "Matt Roy",
     "team": "WSH",
+    "number": 3,
     "active": true,
     "career": [
       0,
@@ -43080,6 +43538,7 @@
     "id": 8478970,
     "name": "Jalen Chatfield",
     "team": "CAR",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -43117,6 +43576,7 @@
     "id": 8479026,
     "name": "Philippe Myers",
     "team": "TOR",
+    "number": 51,
     "active": true,
     "career": [
       0,
@@ -43162,6 +43622,7 @@
     "id": 8479066,
     "name": "Ryan Lomberg",
     "team": "CBJ",
+    "number": 94,
     "active": true,
     "career": [
       0,
@@ -43207,6 +43668,7 @@
     "id": 8479293,
     "name": "Brandon Tanev",
     "team": "UTA",
+    "number": 13,
     "active": true,
     "career": [
       0,
@@ -43264,6 +43726,7 @@
     "id": 8479324,
     "name": "Ryan Lindgren",
     "team": "SEA",
+    "number": 55,
     "active": true,
     "career": [
       0,
@@ -43309,6 +43772,7 @@
     "id": 8479353,
     "name": "Brett Howden",
     "team": "VGK",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -43354,6 +43818,7 @@
     "id": 8479359,
     "name": "Beck Malenstyn",
     "team": "BUF",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -43391,6 +43856,7 @@
     "id": 8479368,
     "name": "Max Jones",
     "team": "EDM",
+    "number": 46,
     "active": true,
     "career": [
       0,
@@ -43436,6 +43902,7 @@
     "id": 8479371,
     "name": "Dante Fabbro",
     "team": "CBJ",
+    "number": 15,
     "active": true,
     "career": [
       0,
@@ -43481,6 +43948,7 @@
     "id": 8479372,
     "name": "Joshua Mahura",
     "team": "SEA",
+    "number": 28,
     "active": true,
     "career": [
       0,
@@ -43526,6 +43994,7 @@
     "id": 8479395,
     "name": "Dennis Cholowski",
     "team": "NYR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -43567,6 +44036,7 @@
     "id": 8479398,
     "name": "Samuel Girard",
     "team": "PIT",
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -43616,6 +44086,7 @@
     "id": 8479442,
     "name": "Troy Stecher",
     "team": "TOR",
+    "number": 28,
     "active": true,
     "career": [
       0,
@@ -43669,6 +44140,7 @@
     "id": 8479520,
     "name": "Brandon Duhaime",
     "team": "TOR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -43702,6 +44174,7 @@
     "id": 8479550,
     "name": "Tanner Laczynski",
     "team": "VGK",
+    "number": 28,
     "active": true,
     "career": [
       0,
@@ -43735,6 +44208,7 @@
     "id": 8479576,
     "name": "Vincent Desharnais",
     "team": "WSH",
+    "number": 73,
     "active": true,
     "career": [
       0,
@@ -43764,6 +44238,7 @@
     "id": 8479602,
     "name": "Jeremy Davies",
     "team": "VGK",
+    "number": 84,
     "active": true,
     "career": [
       0,
@@ -43789,6 +44264,7 @@
     "id": 8479619,
     "name": "Michael Carcone",
     "team": "UTA",
+    "number": 53,
     "active": true,
     "career": [
       0,
@@ -43822,6 +44298,7 @@
     "id": 8479638,
     "name": "Justin Brazeau",
     "team": "PIT",
+    "number": 16,
     "active": true,
     "career": [
       0,
@@ -43847,6 +44324,7 @@
     "id": 8479639,
     "name": "Dylan Coghlan",
     "team": "VGK",
+    "number": 52,
     "active": true,
     "career": [
       0,
@@ -43884,6 +44362,7 @@
     "id": 8479656,
     "name": "Cam Hebig",
     "team": "UTA",
+    "number": 78,
     "active": true,
     "career": [
       0,
@@ -43896,6 +44375,7 @@
     "id": 8479661,
     "name": "Tanner Jeannot",
     "team": "BOS",
+    "number": 84,
     "active": true,
     "career": [
       0,
@@ -43933,6 +44413,7 @@
     "id": 8479671,
     "name": "Mathieu Olivier",
     "team": "CBJ",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -43974,6 +44455,7 @@
     "id": 8479705,
     "name": "Jeffrey Viel",
     "team": "TBL",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -44007,6 +44489,7 @@
     "id": 8479772,
     "name": "Zack MacEwen",
     "team": "TOR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -44052,6 +44535,7 @@
     "id": 8479941,
     "name": "Justin Danforth",
     "team": "BUF",
+    "number": 15,
     "active": true,
     "career": [
       0,
@@ -44085,6 +44569,7 @@
     "id": 8479980,
     "name": "Nicolas Hague",
     "team": "NSH",
+    "number": 41,
     "active": true,
     "career": [
       0,
@@ -44126,6 +44611,7 @@
     "id": 8479981,
     "name": "Jonah Gadjovich",
     "team": "FLA",
+    "number": 12,
     "active": true,
     "career": [
       0,
@@ -44163,6 +44649,7 @@
     "id": 8479982,
     "name": "Conor Timmins",
     "team": "BUF",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -44204,6 +44691,7 @@
     "id": 8479983,
     "name": "Mario Ferraro",
     "team": "WPG",
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -44245,6 +44733,7 @@
     "id": 8479985,
     "name": "Cale Fleury",
     "team": "SEA",
+    "number": 8,
     "active": true,
     "career": [
       0,
@@ -44282,6 +44771,7 @@
     "id": 8479998,
     "name": "Mikey Anderson",
     "team": "LAK",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -44323,6 +44813,7 @@
     "id": 8480001,
     "name": "Urho Vaakanainen",
     "team": "NYR",
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -44368,6 +44859,7 @@
     "id": 8480007,
     "name": "Jonas Rondbjerg",
     "team": "VGK",
+    "number": 46,
     "active": true,
     "career": [
       0,
@@ -44401,6 +44893,7 @@
     "id": 8480035,
     "name": "Henri Jokiharju",
     "team": "BOS",
+    "number": 20,
     "active": true,
     "career": [
       0,
@@ -44446,6 +44939,7 @@
     "id": 8480043,
     "name": "Timothy Liljegren",
     "team": "WSH",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -44487,6 +44981,7 @@
     "id": 8480049,
     "name": "Dylan Samberg",
     "team": "WPG",
+    "number": 54,
     "active": true,
     "career": [
       0,
@@ -44520,6 +45015,7 @@
     "id": 8480075,
     "name": "Cameron Crotty",
     "team": "OTT",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -44545,6 +45041,7 @@
     "id": 8480084,
     "name": "Nick DeSimone",
     "team": "UTA",
+    "number": 57,
     "active": true,
     "career": [
       0,
@@ -44574,6 +45071,7 @@
     "id": 8480145,
     "name": "Neal Pionk",
     "team": "WPG",
+    "number": 4,
     "active": true,
     "career": [
       0,
@@ -44623,6 +45121,7 @@
     "id": 8480196,
     "name": "Jacob Bryson",
     "team": "DET",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -44660,6 +45159,7 @@
     "id": 8480220,
     "name": "Noah Cates",
     "team": "PHI",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -44693,6 +45193,7 @@
     "id": 8480246,
     "name": "Nick Perbix",
     "team": "NSH",
+    "number": 48,
     "active": true,
     "career": [
       0,
@@ -44722,6 +45223,7 @@
     "id": 8480259,
     "name": "Ben Jones",
     "team": "CGY",
+    "number": 64,
     "active": true,
     "career": [
       0,
@@ -44747,6 +45249,7 @@
     "id": 8480281,
     "name": "Alexey Toropchenko",
     "team": "STL",
+    "number": 13,
     "active": true,
     "career": [
       0,
@@ -44780,6 +45283,7 @@
     "id": 8480289,
     "name": "Morgan Barron",
     "team": "WPG",
+    "number": 36,
     "active": true,
     "career": [
       0,
@@ -44817,6 +45321,7 @@
     "id": 8480355,
     "name": "Mark Kastelic",
     "team": "BOS",
+    "number": 47,
     "active": true,
     "career": [
       0,
@@ -44850,6 +45355,7 @@
     "id": 8480434,
     "name": "Sean Durzi",
     "team": "NYR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -44883,6 +45389,7 @@
     "id": 8480448,
     "name": "Parker Kelly",
     "team": "COL",
+    "number": 17,
     "active": true,
     "career": [
       0,
@@ -44920,6 +45427,7 @@
     "id": 8480468,
     "name": "James Hamblin",
     "team": "ANA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -44941,6 +45449,7 @@
     "id": 8480727,
     "name": "Zach Whitecloud",
     "team": "CGY",
+    "number": 28,
     "active": true,
     "career": [
       0,
@@ -44986,6 +45495,7 @@
     "id": 8480762,
     "name": "Eric Robinson",
     "team": "CAR",
+    "number": 50,
     "active": true,
     "career": [
       0,
@@ -45035,6 +45545,7 @@
     "id": 8480796,
     "name": "Martin Feh\u00e9rv\u00e1ry",
     "team": "WSH",
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -45072,6 +45583,7 @@
     "id": 8480802,
     "name": "Ryan McLeod",
     "team": "BUF",
+    "number": 71,
     "active": true,
     "career": [
       0,
@@ -45109,6 +45621,7 @@
     "id": 8480806,
     "name": "Isac Lundestr\u00f6m",
     "team": "CBJ",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -45154,6 +45667,7 @@
     "id": 8480807,
     "name": "Mattias Samuelsson",
     "team": "BUF",
+    "number": 23,
     "active": true,
     "career": [
       0,
@@ -45191,6 +45705,7 @@
     "id": 8480808,
     "name": "Jett Woo",
     "team": "ANA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -45203,6 +45718,7 @@
     "id": 8480834,
     "name": "Ty Emberson",
     "team": "EDM",
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -45228,6 +45744,7 @@
     "id": 8480835,
     "name": "Jack Drury",
     "team": "NSH",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -45261,6 +45778,7 @@
     "id": 8480840,
     "name": "Oskar B\u00e4ck",
     "team": "DAL",
+    "number": 10,
     "active": true,
     "career": [
       0,
@@ -45282,6 +45800,7 @@
     "id": 8480855,
     "name": "Jack McBain",
     "team": "UTA",
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -45315,6 +45834,7 @@
     "id": 8480860,
     "name": "Kevin Bahl",
     "team": "CGY",
+    "number": 7,
     "active": true,
     "career": [
       0,
@@ -45352,6 +45872,7 @@
     "id": 8480870,
     "name": "Bo Groulx",
     "team": "TOR",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -45381,6 +45902,7 @@
     "id": 8480878,
     "name": "Nils Lundkvist",
     "team": "DAL",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -45414,6 +45936,7 @@
     "id": 8480879,
     "name": "Jacob Bernard-Docker",
     "team": "DET",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -45451,6 +45974,7 @@
     "id": 8480887,
     "name": "Jordan Harris",
     "team": "BOS",
+    "number": 43,
     "active": true,
     "career": [
       0,
@@ -45484,6 +46008,7 @@
     "id": 8480891,
     "name": "Michael Kesselring",
     "team": "SJS",
+    "number": 7,
     "active": true,
     "career": [
       0,
@@ -45513,6 +46038,7 @@
     "id": 8480950,
     "name": "Ilya Lyubushkin",
     "team": "NSH",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -45558,6 +46084,7 @@
     "id": 8480980,
     "name": "Connor Dewar",
     "team": "PIT",
+    "number": 19,
     "active": true,
     "career": [
       0,
@@ -45591,6 +46118,7 @@
     "id": 8480990,
     "name": "Declan Chisholm",
     "team": "NJD",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -45620,6 +46148,7 @@
     "id": 8480995,
     "name": "Pontus Holmberg",
     "team": "TBL",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -45649,6 +46178,7 @@
     "id": 8481006,
     "name": "Tyler Tucker",
     "team": "STL",
+    "number": 75,
     "active": true,
     "career": [
       0,
@@ -45678,6 +46208,7 @@
     "id": 8481013,
     "name": "Jonatan Berggren",
     "team": "STL",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -45707,6 +46238,7 @@
     "id": 8481028,
     "name": "Martin Pospisil",
     "team": "CGY",
+    "number": 76,
     "active": true,
     "career": [
       0,
@@ -45732,6 +46264,7 @@
     "id": 8481030,
     "name": "John St. Ivany",
     "team": "WPG",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -45757,6 +46290,7 @@
     "id": 8481043,
     "name": "Cole Koepke",
     "team": "WPG",
+    "number": 45,
     "active": true,
     "career": [
       0,
@@ -45786,6 +46320,7 @@
     "id": 8481059,
     "name": "Scott Perunovich",
     "team": "LAK",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -45811,6 +46346,7 @@
     "id": 8481122,
     "name": "Simon Benoit",
     "team": "PHI",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -45848,6 +46384,7 @@
     "id": 8481133,
     "name": "Cole Reinhardt",
     "team": "FLA",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -45873,6 +46410,7 @@
     "id": 8481161,
     "name": "Jake Christiansen",
     "team": "CBJ",
+    "number": 2,
     "active": true,
     "career": [
       0,
@@ -45906,6 +46444,7 @@
     "id": 8481167,
     "name": "Brayden Pachal",
     "team": "CGY",
+    "number": 94,
     "active": true,
     "career": [
       0,
@@ -45939,6 +46478,7 @@
     "id": 8481186,
     "name": "Logan O'Connor",
     "team": "COL",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -45984,6 +46524,7 @@
     "id": 8481219,
     "name": "Jonathan Aspirot",
     "team": "BOS",
+    "number": 45,
     "active": true,
     "career": [
       0,
@@ -46001,6 +46542,7 @@
     "id": 8481237,
     "name": "Kyle MacLean",
     "team": "NYI",
+    "number": 32,
     "active": true,
     "career": [
       0,
@@ -46026,6 +46568,7 @@
     "id": 8481461,
     "name": "Corey Schueneman",
     "team": "ANA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -46051,6 +46594,7 @@
     "id": 8481477,
     "name": "Nico Sturm",
     "team": "MIN",
+    "number": 78,
     "active": true,
     "career": [
       0,
@@ -46096,6 +46640,7 @@
     "id": 8481481,
     "name": "Blake Lizotte",
     "team": "PIT",
+    "number": 46,
     "active": true,
     "career": [
       0,
@@ -46141,6 +46686,7 @@
     "id": 8481522,
     "name": "Peyton Krebs",
     "team": "BUF",
+    "number": 19,
     "active": true,
     "career": [
       0,
@@ -46178,6 +46724,7 @@
     "id": 8481525,
     "name": "Matthew Robertson",
     "team": "NYR",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -46199,6 +46746,7 @@
     "id": 8481527,
     "name": "Kaedan Korczak",
     "team": "PIT",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -46232,6 +46780,7 @@
     "id": 8481532,
     "name": "Alex Turcotte",
     "team": "LAK",
+    "number": 15,
     "active": true,
     "career": [
       0,
@@ -46265,6 +46814,7 @@
     "id": 8481534,
     "name": "Raphael Lavoie",
     "team": "VGK",
+    "number": 36,
     "active": true,
     "career": [
       0,
@@ -46290,6 +46840,7 @@
     "id": 8481538,
     "name": "Judd Caulfield",
     "team": "ANA",
+    "number": 75,
     "active": true,
     "career": [
       0,
@@ -46302,6 +46853,7 @@
     "id": 8481546,
     "name": "Cam York",
     "team": "PHI",
+    "number": 8,
     "active": true,
     "career": [
       0,
@@ -46339,6 +46891,7 @@
     "id": 8481556,
     "name": "John Beecher",
     "team": "FLA",
+    "number": 17,
     "active": true,
     "career": [
       0,
@@ -46364,6 +46917,7 @@
     "id": 8481563,
     "name": "Drew Helleson",
     "team": "ANA",
+    "number": 14,
     "active": true,
     "career": [
       0,
@@ -46389,6 +46943,7 @@
     "id": 8481564,
     "name": "Ryan Johnson",
     "team": "BUF",
+    "number": 33,
     "active": true,
     "career": [
       0,
@@ -46414,6 +46969,7 @@
     "id": 8481568,
     "name": "Alex Vlasic",
     "team": "CHI",
+    "number": 72,
     "active": true,
     "career": [
       0,
@@ -46447,6 +47003,7 @@
     "id": 8481572,
     "name": "Ville Heinola",
     "team": "VGK",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -46484,6 +47041,7 @@
     "id": 8481593,
     "name": "Jayden Struble",
     "team": "MTL",
+    "number": 47,
     "active": true,
     "career": [
       0,
@@ -46509,6 +47067,7 @@
     "id": 8481598,
     "name": "Philip Broberg",
     "team": "STL",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -46542,6 +47101,7 @@
     "id": 8481605,
     "name": "Jackson LaCombe",
     "team": "ANA",
+    "number": 2,
     "active": true,
     "career": [
       0,
@@ -46571,6 +47131,7 @@
     "id": 8481606,
     "name": "Jordan Spence",
     "team": "OTT",
+    "number": 10,
     "active": true,
     "career": [
       0,
@@ -46604,6 +47165,7 @@
     "id": 8481607,
     "name": "Albert Johansson",
     "team": "DET",
+    "number": 20,
     "active": true,
     "career": [
       0,
@@ -46625,6 +47187,7 @@
     "id": 8481641,
     "name": "Joel Kiviranta",
     "team": "DAL",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -46666,6 +47229,7 @@
     "id": 8481655,
     "name": "Cole Schwindt",
     "team": "FLA",
+    "number": 79,
     "active": true,
     "career": [
       0,
@@ -46695,6 +47259,7 @@
     "id": 8481716,
     "name": "Dmitri Voronkov",
     "team": "CBJ",
+    "number": 10,
     "active": true,
     "career": [
       0,
@@ -46720,6 +47285,7 @@
     "id": 8481719,
     "name": "Max Crozier",
     "team": "TBL",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -46745,6 +47311,7 @@
     "id": 8481725,
     "name": "Elmer Soderblom",
     "team": "PIT",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -46770,6 +47337,7 @@
     "id": 8481726,
     "name": "Adam Edstrom",
     "team": "NSH",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -46795,6 +47363,7 @@
     "id": 8481789,
     "name": "Tye Kartye",
     "team": "NYR",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -46820,6 +47389,7 @@
     "id": 8481827,
     "name": "Ben McCartney",
     "team": "UTA",
+    "number": 62,
     "active": true,
     "career": [
       0,
@@ -46837,6 +47407,7 @@
     "id": 8481848,
     "name": "Jacob Gaucher",
     "team": "PHI",
+    "number": 78,
     "active": true,
     "career": [
       0,
@@ -46858,6 +47429,7 @@
     "id": 8482055,
     "name": "Drew O'Connor",
     "team": "VAN",
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -46895,6 +47467,7 @@
     "id": 8482062,
     "name": "Cole Smith",
     "team": "CHI",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -46932,6 +47505,7 @@
     "id": 8482073,
     "name": "Braden Schneider",
     "team": "NYR",
+    "number": 4,
     "active": true,
     "career": [
       0,
@@ -46965,6 +47539,7 @@
     "id": 8482087,
     "name": "Kaiden Guhle",
     "team": "MTL",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -46994,6 +47569,7 @@
     "id": 8482088,
     "name": "Justin Sourdif",
     "team": "WSH",
+    "number": 34,
     "active": true,
     "career": [
       0,
@@ -47019,6 +47595,7 @@
     "id": 8482090,
     "name": "Jack Finley",
     "team": "STL",
+    "number": 37,
     "active": true,
     "career": [
       0,
@@ -47040,6 +47617,7 @@
     "id": 8482092,
     "name": "Ridly Greig",
     "team": "OTT",
+    "number": 71,
     "active": true,
     "career": [
       0,
@@ -47069,6 +47647,7 @@
     "id": 8482094,
     "name": "Daemon Hunt",
     "team": "MIN",
+    "number": 48,
     "active": true,
     "career": [
       0,
@@ -47094,6 +47673,7 @@
     "id": 8482095,
     "name": "Tyler Kleven",
     "team": "OTT",
+    "number": 43,
     "active": true,
     "career": [
       0,
@@ -47123,6 +47703,7 @@
     "id": 8482105,
     "name": "Jake Sanderson",
     "team": "OTT",
+    "number": 85,
     "active": true,
     "career": [
       0,
@@ -47152,6 +47733,7 @@
     "id": 8482111,
     "name": "Justin Barron",
     "team": "NSH",
+    "number": 20,
     "active": true,
     "career": [
       0,
@@ -47185,6 +47767,7 @@
     "id": 8482122,
     "name": "Brock Faber",
     "team": "MIN",
+    "number": 7,
     "active": true,
     "career": [
       0,
@@ -47214,6 +47797,7 @@
     "id": 8482126,
     "name": "Emil Andrae",
     "team": "TOR",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -47239,6 +47823,7 @@
     "id": 8482131,
     "name": "Donovan Sebrango",
     "team": "FLA",
+    "number": 73,
     "active": true,
     "career": [
       0,
@@ -47260,6 +47845,7 @@
     "id": 8482142,
     "name": "Jamie Drysdale",
     "team": "PHI",
+    "number": 9,
     "active": true,
     "career": [
       0,
@@ -47297,6 +47883,7 @@
     "id": 8482145,
     "name": "Mavrik Bourque",
     "team": "NSH",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -47322,6 +47909,7 @@
     "id": 8482148,
     "name": "Hendrix Lapierre",
     "team": "PIT",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -47351,6 +47939,7 @@
     "id": 8482157,
     "name": "Will Cuylle",
     "team": "NYR",
+    "number": 50,
     "active": true,
     "career": [
       0,
@@ -47380,6 +47969,7 @@
     "id": 8482165,
     "name": "Yan Kuznetsov",
     "team": "CGY",
+    "number": 37,
     "active": true,
     "career": [
       0,
@@ -47401,6 +47991,7 @@
     "id": 8482166,
     "name": "Shakir Mukhamadullin",
     "team": "EDM",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -47426,6 +48017,7 @@
     "id": 8482169,
     "name": "Helge Grans",
     "team": "PHI",
+    "number": 3,
     "active": true,
     "career": [
       0,
@@ -47443,6 +48035,7 @@
     "id": 8482172,
     "name": "Landon Slaggert",
     "team": "CHI",
+    "number": 84,
     "active": true,
     "career": [
       0,
@@ -47468,6 +48061,7 @@
     "id": 8482176,
     "name": "Wyatt Kaiser",
     "team": "CHI",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -47497,6 +48091,7 @@
     "id": 8482178,
     "name": "Ian Moore",
     "team": "ANA",
+    "number": 3,
     "active": true,
     "career": [
       0,
@@ -47518,6 +48113,7 @@
     "id": 8482209,
     "name": "Rory Kerins",
     "team": "CGY",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -47539,6 +48135,7 @@
     "id": 8482245,
     "name": "Artem Zub",
     "team": "OTT",
+    "number": 2,
     "active": true,
     "career": [
       0,
@@ -47576,6 +48173,7 @@
     "id": 8482408,
     "name": "Jeff Malott",
     "team": "ANA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -47601,6 +48199,7 @@
     "id": 8482460,
     "name": "Matt Rempe",
     "team": "NYR",
+    "number": 73,
     "active": true,
     "career": [
       0,
@@ -47626,6 +48225,7 @@
     "id": 8482482,
     "name": "Adam Wilsby",
     "team": "NSH",
+    "number": 83,
     "active": true,
     "career": [
       0,
@@ -47647,6 +48247,7 @@
     "id": 8482516,
     "name": "Matthew Kessel",
     "team": "NYI",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -47676,6 +48277,7 @@
     "id": 8482634,
     "name": "Alex Steeves",
     "team": "BOS",
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -47709,6 +48311,7 @@
     "id": 8482641,
     "name": "Matt Kiersted",
     "team": "MIN",
+    "number": 26,
     "active": true,
     "career": [
       0,
@@ -47742,6 +48345,7 @@
     "id": 8482655,
     "name": "J.J. Moser",
     "team": "TBL",
+    "number": 90,
     "active": true,
     "career": [
       0,
@@ -47775,6 +48379,7 @@
     "id": 8482674,
     "name": "Tyler Boucher",
     "team": "OTT",
+    "number": 54,
     "active": true,
     "career": [
       0,
@@ -47787,6 +48392,7 @@
     "id": 8482691,
     "name": "Aatu R\u00e4ty",
     "team": "VAN",
+    "number": 54,
     "active": true,
     "career": [
       0,
@@ -47812,6 +48418,7 @@
     "id": 8482703,
     "name": "Colton Dach",
     "team": "EDM",
+    "number": 34,
     "active": true,
     "career": [
       0,
@@ -47833,6 +48440,7 @@
     "id": 8482720,
     "name": "Matthew Knies",
     "team": "TOR",
+    "number": 23,
     "active": true,
     "career": [
       0,
@@ -47862,6 +48470,7 @@
     "id": 8482726,
     "name": "Samuel Helenius",
     "team": "LAK",
+    "number": 79,
     "active": true,
     "career": [
       0,
@@ -47883,6 +48492,7 @@
     "id": 8482731,
     "name": "Tyson Hinds",
     "team": "ANA",
+    "number": 60,
     "active": true,
     "career": [
       0,
@@ -47900,6 +48510,7 @@
     "id": 8482751,
     "name": "Ryan Winterton",
     "team": "SEA",
+    "number": 26,
     "active": true,
     "career": [
       0,
@@ -47925,6 +48536,7 @@
     "id": 8482762,
     "name": "Simon Edvinsson",
     "team": "DET",
+    "number": 77,
     "active": true,
     "career": [
       0,
@@ -47954,6 +48566,7 @@
     "id": 8482765,
     "name": "Isak Rosen",
     "team": "WPG",
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -47979,6 +48592,7 @@
     "id": 8482768,
     "name": "Fedor Svechkov",
     "team": "COL",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -48000,6 +48614,7 @@
     "id": 8482781,
     "name": "Carson Lambos",
     "team": "MIN",
+    "number": 28,
     "active": true,
     "career": [
       0,
@@ -48017,6 +48632,7 @@
     "id": 8482787,
     "name": "Nikita Chibrikov",
     "team": "WPG",
+    "number": 90,
     "active": true,
     "career": [
       0,
@@ -48042,6 +48658,7 @@
     "id": 8482803,
     "name": "Olen Zellweger",
     "team": "BUF",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -48067,6 +48684,7 @@
     "id": 8482807,
     "name": "Ethan Del Mastro",
     "team": "CHI",
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -48092,6 +48710,7 @@
     "id": 8482858,
     "name": "Ryker Evans",
     "team": "SEA",
+    "number": 41,
     "active": true,
     "career": [
       0,
@@ -48117,6 +48736,7 @@
     "id": 8482859,
     "name": "Zack Ostapchuk",
     "team": "SJS",
+    "number": 63,
     "active": true,
     "career": [
       0,
@@ -48142,6 +48762,7 @@
     "id": 8482861,
     "name": "Vincent Iorio",
     "team": "NYR",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -48167,6 +48788,7 @@
     "id": 8482877,
     "name": "Jaroslav Chmelar",
     "team": "NYR",
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -48184,6 +48806,7 @@
     "id": 8482896,
     "name": "Tyson Kozak",
     "team": "BUF",
+    "number": 48,
     "active": true,
     "career": [
       0,
@@ -48205,6 +48828,7 @@
     "id": 8482929,
     "name": "Emil Lilleberg",
     "team": "TBL",
+    "number": 78,
     "active": true,
     "career": [
       0,
@@ -48230,6 +48854,7 @@
     "id": 8482947,
     "name": "Zakhar Bardakov",
     "team": "COL",
+    "number": 93,
     "active": true,
     "career": [
       0,
@@ -48247,6 +48872,7 @@
     "id": 8482964,
     "name": "Arber Xhekaj",
     "team": "MTL",
+    "number": 72,
     "active": true,
     "career": [
       0,
@@ -48276,6 +48902,7 @@
     "id": 8483090,
     "name": "Riley Fiddler-Schultz",
     "team": "BUF",
+    "number": 45,
     "active": true,
     "career": [
       0,
@@ -48288,6 +48915,7 @@
     "id": 8483398,
     "name": "Declan Carlile",
     "team": "PIT",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -48313,6 +48941,7 @@
     "id": 8483406,
     "name": "Taylor Ward",
     "team": "LAK",
+    "number": 52,
     "active": true,
     "career": [
       0,
@@ -48334,6 +48963,7 @@
     "id": 8483424,
     "name": "Owen Beck",
     "team": "MTL",
+    "number": 62,
     "active": true,
     "career": [
       0,
@@ -48359,6 +48989,7 @@
     "id": 8483425,
     "name": "Lian Bichsel",
     "team": "DAL",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -48380,6 +49011,7 @@
     "id": 8483444,
     "name": "Nathan Gaucher",
     "team": "ANA",
+    "number": 41,
     "active": true,
     "career": [
       0,
@@ -48397,6 +49029,7 @@
     "id": 8483447,
     "name": "Conor Geekie",
     "team": "TBL",
+    "number": 14,
     "active": true,
     "career": [
       0,
@@ -48418,6 +49051,7 @@
     "id": 8483450,
     "name": "Ryan Greene",
     "team": "CHI",
+    "number": 20,
     "active": true,
     "career": [
       0,
@@ -48439,6 +49073,7 @@
     "id": 8483452,
     "name": "Hunter Haight",
     "team": "MIN",
+    "number": 37,
     "active": true,
     "career": [
       0,
@@ -48456,6 +49091,7 @@
     "id": 8483460,
     "name": "David Jiricek",
     "team": "PHI",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -48485,6 +49121,7 @@
     "id": 8483464,
     "name": "Marco Kasper",
     "team": "DET",
+    "number": 92,
     "active": true,
     "career": [
       0,
@@ -48510,6 +49147,7 @@
     "id": 8483466,
     "name": "Kevin Korchinski",
     "team": "CHI",
+    "number": 14,
     "active": true,
     "career": [
       0,
@@ -48535,6 +49173,7 @@
     "id": 8483468,
     "name": "Jiri Kulich",
     "team": "BUF",
+    "number": 20,
     "active": true,
     "career": [
       0,
@@ -48560,6 +49199,7 @@
     "id": 8483472,
     "name": "Maveric Lamoureux",
     "team": "UTA",
+    "number": 10,
     "active": true,
     "career": [
       0,
@@ -48581,6 +49221,7 @@
     "id": 8483485,
     "name": "Denton Mateychuk",
     "team": "CBJ",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -48602,6 +49243,7 @@
     "id": 8483490,
     "name": "Pavel Mintyukov",
     "team": "ANA",
+    "number": 98,
     "active": true,
     "career": [
       0,
@@ -48627,6 +49269,7 @@
     "id": 8483491,
     "name": "Ivan Miroshnichenko",
     "team": "WSH",
+    "number": 63,
     "active": true,
     "career": [
       0,
@@ -48652,6 +49295,7 @@
     "id": 8483506,
     "name": "Sam Rinzel",
     "team": "CHI",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -48673,6 +49317,7 @@
     "id": 8483521,
     "name": "Noah Warren",
     "team": "ANA",
+    "number": 47,
     "active": true,
     "career": [
       0,
@@ -48685,6 +49330,7 @@
     "id": 8483525,
     "name": "Danila Yurov",
     "team": "MIN",
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -48702,6 +49348,7 @@
     "id": 8483553,
     "name": "Marc Gatcomb",
     "team": "VGK",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -48723,6 +49370,7 @@
     "id": 8483570,
     "name": "Ben Meyers",
     "team": "SEA",
+    "number": 59,
     "active": true,
     "career": [
       0,
@@ -48756,6 +49404,7 @@
     "id": 8483609,
     "name": "Adam Klapka",
     "team": "CGY",
+    "number": 43,
     "active": true,
     "career": [
       0,
@@ -48781,6 +49430,7 @@
     "id": 8483669,
     "name": "Adam Sykora",
     "team": "NYR",
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -48798,6 +49448,7 @@
     "id": 8483673,
     "name": "Oskar Pettersson",
     "team": "OTT",
+    "number": 63,
     "active": true,
     "career": [
       0,
@@ -48810,6 +49461,7 @@
     "id": 8483676,
     "name": "Stephen Halliday",
     "team": "OTT",
+    "number": 83,
     "active": true,
     "career": [
       0,
@@ -48827,6 +49479,7 @@
     "id": 8483678,
     "name": "Elias Pettersson",
     "team": "VAN",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -48848,6 +49501,7 @@
     "id": 8483686,
     "name": "Adam Engstrom",
     "team": "MTL",
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -48865,6 +49519,7 @@
     "id": 8483690,
     "name": "Noah Laba",
     "team": "NYR",
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -48882,6 +49537,7 @@
     "id": 8483709,
     "name": "Abram Wiebe",
     "team": "CGY",
+    "number": 52,
     "active": true,
     "career": [
       0,
@@ -48899,6 +49555,7 @@
     "id": 8483731,
     "name": "Alex Bump",
     "team": "PHI",
+    "number": 20,
     "active": true,
     "career": [
       0,
@@ -48916,6 +49573,7 @@
     "id": 8483732,
     "name": "Vsevolod Komarov",
     "team": "BUF",
+    "number": 76,
     "active": true,
     "career": [
       0,
@@ -48928,6 +49586,7 @@
     "id": 8483733,
     "name": "Nikita Grebenkin",
     "team": "PHI",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -48949,6 +49608,7 @@
     "id": 8483760,
     "name": "Hunter McDonald",
     "team": "PHI",
+    "number": 75,
     "active": true,
     "career": [
       0,
@@ -48966,6 +49626,7 @@
     "id": 8483763,
     "name": "Maksymilian Szuber",
     "team": "MTL",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -48983,6 +49644,7 @@
     "id": 8483766,
     "name": "David Spacek",
     "team": "MIN",
+    "number": 82,
     "active": true,
     "career": [
       0,
@@ -49000,6 +49662,7 @@
     "id": 8483768,
     "name": "Victor Mancini",
     "team": "VAN",
+    "number": 90,
     "active": true,
     "career": [
       0,
@@ -49021,6 +49684,7 @@
     "id": 8483890,
     "name": "Braeden Bowman",
     "team": "VGK",
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -49038,6 +49702,7 @@
     "id": 8484136,
     "name": "Max Sasson",
     "team": "VAN",
+    "number": 63,
     "active": true,
     "career": [
       0,
@@ -49059,6 +49724,7 @@
     "id": 8484142,
     "name": "Denver Barkey",
     "team": "PHI",
+    "number": 52,
     "active": true,
     "career": [
       0,
@@ -49076,6 +49742,7 @@
     "id": 8484145,
     "name": "Zach Benson",
     "team": "BUF",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -49101,6 +49768,7 @@
     "id": 8484148,
     "name": "Oliver Bonk",
     "team": "PHI",
+    "number": 59,
     "active": true,
     "career": [
       0,
@@ -49118,6 +49786,7 @@
     "id": 8484150,
     "name": "Hunter Brzustewicz",
     "team": "CGY",
+    "number": 48,
     "active": true,
     "career": [
       0,
@@ -49139,6 +49808,7 @@
     "id": 8484169,
     "name": "Drew Fortescue",
     "team": "NYR",
+    "number": 45,
     "active": true,
     "career": [
       0,
@@ -49156,6 +49826,7 @@
     "id": 8484180,
     "name": "Samuel Honzek",
     "team": "CGY",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -49177,6 +49848,7 @@
     "id": 8484201,
     "name": "Nico Myatovic",
     "team": "ANA",
+    "number": 48,
     "active": true,
     "career": [
       0,
@@ -49189,6 +49861,7 @@
     "id": 8484210,
     "name": "Gabe Perreault",
     "team": "NYR",
+    "number": 94,
     "active": true,
     "career": [
       0,
@@ -49210,6 +49883,7 @@
     "id": 8484220,
     "name": "David Reinbacher",
     "team": "MTL",
+    "number": 64,
     "active": true,
     "career": [
       0,
@@ -49227,6 +49901,7 @@
     "id": 8484234,
     "name": "Aydar Suniev",
     "team": "CGY",
+    "number": 36,
     "active": true,
     "career": [
       0,
@@ -49248,6 +49923,7 @@
     "id": 8484238,
     "name": "Anton Wahlberg",
     "team": "ANA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -49260,6 +49936,7 @@
     "id": 8484240,
     "name": "Tom Willander",
     "team": "VAN",
+    "number": 5,
     "active": true,
     "career": [
       0,
@@ -49277,6 +49954,7 @@
     "id": 8484258,
     "name": "Sam Malinski",
     "team": "COL",
+    "number": 70,
     "active": true,
     "career": [
       0,
@@ -49302,6 +49980,7 @@
     "id": 8484262,
     "name": "Travis Mitchell",
     "team": "ANA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -49319,6 +49998,7 @@
     "id": 8484304,
     "name": "Uvis Balinskis",
     "team": "FLA",
+    "number": 26,
     "active": true,
     "career": [
       0,
@@ -49344,6 +50024,7 @@
     "id": 8484305,
     "name": "Zach Metsa",
     "team": "BUF",
+    "number": 73,
     "active": true,
     "career": [
       0,
@@ -49361,6 +50042,7 @@
     "id": 8484321,
     "name": "Nikolas Matinpalo",
     "team": "OTT",
+    "number": 33,
     "active": true,
     "career": [
       0,
@@ -49386,6 +50068,7 @@
     "id": 8484386,
     "name": "Dmitri Simashev",
     "team": "UTA",
+    "number": 26,
     "active": true,
     "career": [
       0,
@@ -49403,6 +50086,7 @@
     "id": 8484388,
     "name": "Daniil But",
     "team": "UTA",
+    "number": 19,
     "active": true,
     "career": [
       0,
@@ -49420,6 +50104,7 @@
     "id": 8484403,
     "name": "Florian Xhekaj",
     "team": "MTL",
+    "number": 63,
     "active": true,
     "career": [
       0,
@@ -49437,6 +50122,7 @@
     "id": 8484471,
     "name": "Emmitt Finnie",
     "team": "DET",
+    "number": 58,
     "active": true,
     "career": [
       0,
@@ -49454,6 +50140,7 @@
     "id": 8484494,
     "name": "Aiden Fink",
     "team": "NSH",
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -49466,6 +50153,7 @@
     "id": 8484509,
     "name": "Josh Samanski",
     "team": "EDM",
+    "number": 81,
     "active": true,
     "career": [
       0,
@@ -49483,6 +50171,7 @@
     "id": 8484759,
     "name": "Carter Yakemchuk",
     "team": "OTT",
+    "number": 58,
     "active": true,
     "career": [
       0,
@@ -49500,6 +50189,7 @@
     "id": 8484768,
     "name": "Zayne Parekh",
     "team": "CGY",
+    "number": 19,
     "active": true,
     "career": [
       0,
@@ -49521,6 +50211,7 @@
     "id": 8484779,
     "name": "Jett Luchanko",
     "team": "PHI",
+    "number": 17,
     "active": true,
     "career": [
       0,
@@ -49542,6 +50233,7 @@
     "id": 8484783,
     "name": "Artyom Levshunov",
     "team": "CHI",
+    "number": 55,
     "active": true,
     "career": [
       0,
@@ -49563,6 +50255,7 @@
     "id": 8484793,
     "name": "Sacha Boisvert",
     "team": "CHI",
+    "number": 12,
     "active": true,
     "career": [
       0,
@@ -49580,6 +50273,7 @@
     "id": 8484797,
     "name": "Konsta Helenius",
     "team": "BUF",
+    "number": 94,
     "active": true,
     "career": [
       0,
@@ -49597,6 +50291,7 @@
     "id": 8484798,
     "name": "Zeev Buium",
     "team": "VAN",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -49614,6 +50309,7 @@
     "id": 8484803,
     "name": "Trevor Connelly",
     "team": "VGK",
+    "number": 24,
     "active": true,
     "career": [
       0,
@@ -49626,6 +50322,7 @@
     "id": 8484806,
     "name": "Sam Dickinson",
     "team": "SJS",
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -49643,6 +50340,7 @@
     "id": 8484829,
     "name": "Justin Hryckowian",
     "team": "DAL",
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -49664,6 +50362,7 @@
     "id": 8484873,
     "name": "Cole Hutson",
     "team": "WSH",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -49681,6 +50380,7 @@
     "id": 8484938,
     "name": "Arttu Hyry",
     "team": "DAL",
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -49702,6 +50402,7 @@
     "id": 8484999,
     "name": "Ilya Protas",
     "team": "WSH",
+    "number": 62,
     "active": true,
     "career": [
       0,
@@ -49719,6 +50420,7 @@
     "id": 8485251,
     "name": "Kai Uchacz",
     "team": "VGK",
+    "number": 77,
     "active": true,
     "career": [
       0,
@@ -49736,6 +50438,7 @@
     "id": 8485366,
     "name": "Matthew Schaefer",
     "team": "NYI",
+    "number": 48,
     "active": true,
     "career": [
       0,
@@ -49753,6 +50456,7 @@
     "id": 8485391,
     "name": "Anton Frondell",
     "team": "CHI",
+    "number": 16,
     "active": true,
     "career": [
       0,
@@ -49770,6 +50474,7 @@
     "id": 8485395,
     "name": "James Hagens",
     "team": "BOS",
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -49787,6 +50492,7 @@
     "id": 8485402,
     "name": "Michael Misa",
     "team": "SJS",
+    "number": 77,
     "active": true,
     "career": [
       0,
@@ -49804,6 +50510,7 @@
     "id": 8485404,
     "name": "Radim Mrtka",
     "team": "BUF",
+    "number": 57,
     "active": true,
     "career": [
       0,
@@ -49816,6 +50523,7 @@
     "id": 8485406,
     "name": "Porter Martone",
     "team": "PHI",
+    "number": 94,
     "active": true,
     "career": [
       0,
@@ -49833,6 +50541,7 @@
     "id": 8485467,
     "name": "Luke Haymes",
     "team": "TOR",
+    "number": 43,
     "active": true,
     "career": [
       0,
@@ -49850,6 +50559,7 @@
     "id": 8485512,
     "name": "Tim Washe",
     "team": "ANA",
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -49871,6 +50581,7 @@
     "id": 8485702,
     "name": "Maksim Shabanov",
     "team": "MIN",
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -49888,6 +50599,7 @@
     "id": 8486056,
     "name": "Tyson Gross",
     "team": "CGY",
+    "number": 39,
     "active": true,
     "career": [
       0,
@@ -49905,6 +50617,7 @@
     "id": 8486166,
     "name": "Viking Gustafsson Nyberg",
     "team": "MIN",
+    "number": 6,
     "active": true,
     "career": [
       0,
