@@ -106,6 +106,7 @@
 
   .goalie-row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;}
   @media (max-width:860px){ .goalie-row{grid-template-columns:1fr;} }
+  .goalie-col{display:flex; flex-direction:column; gap:10px;}
   .goalie-card{
     background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
     padding:14px 18px; display:flex; justify-content:space-between; align-items:center; gap:12px;
@@ -329,7 +330,6 @@ function renderPanels(teamA, teamB){
   panelsEl.innerHTML = pairs.map(([team, opp]) => {
     const players = PLAYERS.filter(p => p.team === team && p.active);
     const oppGoalies = GOALIES.filter(g => g.team === opp && g.active);
-    console.log(`[debug] team=${team} opp=${opp} players=${players.length} oppGoalies=${oppGoalies.length}`, oppGoalies.map(g=>g.name+'/'+g.team));
     const curLabel = CURRENT_SEASON ? CURRENT_SEASON.label : 'Current';
     const curKey   = CURRENT_SEASON ? CURRENT_SEASON.key   : null;
 
@@ -388,18 +388,23 @@ function renderPanels(teamA, teamB){
 
 function renderGoalies(teamA, teamB){
   const el = document.getElementById('goalieRow');
-  const list = GOALIES.filter(g => (g.team === teamA || g.team === teamB) && g.active);
-  if(!list.length){ el.innerHTML = '<div class="empty-panel">No goalie data loaded for these teams yet.</div>'; return; }
-  el.innerHTML = list.map(g => {
-    const svPct = g.faced ? ((g.stopped/g.faced)*100).toFixed(1) : '\u2014';
-    return `<div class="goalie-card">
-      <div><h3>${g.name}</h3><div class="record">${g.record || ''}</div></div>
-      <div class="goalie-stat">
-        <div class="big">${svPct}%</div>
-        <div class="lbl">${g.stopped} of ${g.faced} SO shots stopped</div>
-      </div>
+  const render = (team) => {
+    const goalies = GOALIES.filter(g => g.team === team && g.active);
+    if(!goalies.length) return `<div class="goalie-col"><div class="empty-panel" style="font-size:12px;">No goalie data for ${team}</div></div>`;
+    return `<div class="goalie-col">
+      ${goalies.map(g => {
+        const svPct = g.faced ? ((g.stopped/g.faced)*100).toFixed(1) : '\u2014';
+        return `<div class="goalie-card">
+          <div><h3>${g.name}</h3><div class="record">${g.record || ''}</div></div>
+          <div class="goalie-stat">
+            <div class="big">${svPct}%</div>
+            <div class="lbl">${g.stopped} of ${g.faced} SO shots stopped</div>
+          </div>
+        </div>`;
+      }).join('')}
     </div>`;
-  }).join('');
+  };
+  el.innerHTML = render(teamA) + render(teamB);
 }
 
 function renderMinor(){
