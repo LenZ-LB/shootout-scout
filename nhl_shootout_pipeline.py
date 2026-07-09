@@ -578,22 +578,53 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
                 team_goalie[owner_tid] = goalie_id
 
         # If team_goalie is still incomplete, try rosterSpots as fallback
+        # A goalie on teamId=X faces shooters from the OTHER team
         if len(team_goalie) < 2:
-            team_abbrev = {
-                home_id: pbp.get("homeTeam", {}).get("abbrev", ""),
-                away_id: pbp.get("awayTeam", {}).get("abbrev", ""),
-            }
-            so_goalie_ids = {g for _, g, _, _ in so_plays if g}
             for spot in pbp.get("rosterSpots", []):
                 if spot.get("positionCode") != "G":
                     continue
                 pid = spot.get("playerId")
                 tid = spot.get("teamId")
-                if pid in so_goalie_ids:
-                    # This goalie faced shots — their opponents are the other team
-                    other_tid = away_id if tid == home_id else home_id
-                    if other_tid and other_tid not in team_goalie:
-                        team_goalie[other_tid] = pid
+                if pid not in so_goalie_ids:
+                    continue
+                # This goalie faced shots — shooting team is the OTHER team
+                other_tid = away_id if tid == home_id else home_id
+                if other_tid and other_tid not in team_goalie:
+                    team_goalie[other_tid] = pid
+
+        # Last resort: look up the game-level goalie stats which explicitly
+        # record shootoutWins/shootoutLosses per goalie per game.
+        # The winning goalie faced the losing team's shooters and vice versa.
+        if len(team_goalie) < 2:
+            try:
+                g_url = (f"{stats_base}/goalie/shootout"
+                         f"?isAggregate=false&isGame=true"
+                         f"&cayenneExp=gameId={game_id}"
+                         f"&start=0&limit=10")
+                g_resp = requests.get(g_url, timeout=15)
+                g_resp.raise_for_status()
+                g_data = g_resp.json()
+                for row in g_data.get("data", []):
+                    gid  = row.get("playerId")
+                    team = row.get("teamAbbrev", "")
+                    wins = row.get("shootoutWins", 0)
+                    loss = row.get("shootoutLosses", 0)
+                    if not gid or (wins == 0 and loss == 0):
+                        continue
+                    # Find this goalie's teamId from rosterSpots
+                    goalie_team_id = next(
+                        (s.get("teamId") for s in pbp.get("rosterSpots", [])
+                         if s.get("playerId") == gid and s.get("positionCode") == "G"),
+                        None
+                    )
+                    if goalie_team_id:
+                        # This goalie's OPPONENTS are the shooting team
+                        shooting_tid = away_id if goalie_team_id == home_id else home_id
+                        if shooting_tid and shooting_tid not in team_goalie:
+                            team_goalie[shooting_tid] = gid
+            except Exception as e:
+                if debug:
+                    print(f"    [warn] goalie stats fallback failed game {game_id}: {e}")
 
         # Second pass: build pairs, filling null goalies from team_goalie map
         pairs = []
