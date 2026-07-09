@@ -580,6 +580,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
         # If team_goalie is still incomplete, try rosterSpots as fallback
         # A goalie on teamId=X faces shooters from the OTHER team
         if len(team_goalie) < 2:
+            so_goalie_ids = {goalie_id for _, goalie_id, _, _ in so_plays if goalie_id}
             for spot in pbp.get("rosterSpots", []):
                 if spot.get("positionCode") != "G":
                     continue
