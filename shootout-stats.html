@@ -86,7 +86,7 @@
   }
   .team-header .opp-goalie{font-size:11px; font-family:'IBM Plex Mono'; color:var(--ink-muted); font-weight:400; letter-spacing:0; text-align:right; white-space:normal; max-width:60%;}
 
-  table{width:100%; border-collapse:collapse; font-size:12.5px;}
+  table{width:100%; border-collapse:collapse; font-size:12.5px; table-layout:auto;}
   thead th{
     position:sticky; top:0; text-align:right; font-family:'IBM Plex Mono'; font-weight:600; font-size:10px;
     color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.3px;
@@ -106,7 +106,16 @@
   .pct.hot{color:var(--hot);}
   .pct.cold{color:var(--ink-dim);}
   .no-data{color:var(--ink-dim); font-style:italic;}
-  .vsg-col{background:#1B2846;}
+  .vsg-col{background:#1B2846; width:40px; min-width:40px;}
+  thead th.vsg-col{
+    white-space:nowrap;
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    height:80px;
+    vertical-align:bottom;
+    padding:6px 8px;
+    text-align:left;
+  }
   .empty-panel{padding:26px 16px; color:var(--ink-muted); font-size:13px; text-align:center;}
 
   .goalie-row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;}
