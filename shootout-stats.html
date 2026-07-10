@@ -354,11 +354,6 @@
     <div class="section-body">
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap;">
         <select id="soOrderSeason" class="team-select" style="min-width:130px;font-size:13px;padding:8px 12px;"></select>
-        <label style="font-size:12px;color:var(--ink-muted);display:flex;align-items:center;gap:6px;">
-          Last <input id="soOrderGames" type="number" min="1" max="82" value="5"
-            style="width:50px;padding:6px;border-radius:6px;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-family:'IBM Plex Mono';font-size:12px;text-align:center;">
-          games
-        </label>
       </div>
       <div id="soOrderBody" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;"></div>
     </div>
@@ -991,28 +986,40 @@ function renderSoOrder(){
 
   if(seasonSel._bound !== true){
     seasonSel.addEventListener('change', renderSoOrderTable);
-    document.getElementById('soOrderGames').addEventListener('input', renderSoOrderTable);
     seasonSel._bound = true;
   }
   renderSoOrderTable();
 }
 
-function renderTeamSoOrder(team, season, limit){
+function renderTeamSoOrder(team, season){
   if(!SO_ORDER?.[team]?.[season]) return `<div class="no-data" style="padding:8px 0;">No data for ${team} this season.</div>`;
-  const games = SO_ORDER[team][season].slice(0, limit);
+  const games = [...SO_ORDER[team][season]].reverse(); // most recent first
   if(!games.length) return `<div class="no-data" style="padding:8px 0;">No shootout games found.</div>`;
 
   const gameCards = games.map((g, gi) => {
-    const attempts = g.attempts.sort((a,b)=>(a.round||99)-(b.round||99));
+    const attempts = [...g.attempts].sort((a,b)=>(a.round||99)-(b.round||99));
+    const opp = g.opponent || '?';
+    const outcome = g.outcome || '?';
+    const outcomeColor = outcome==='W' ? 'var(--save)' : outcome==='L' ? 'var(--goal)' : 'var(--ink-dim)';
+    const gameNum = games.length - gi;
+
     const chips = attempts.map(att => {
       const cls = att.result==='goal'?'goal':att.result==='save'?'save':'miss';
       const shot = att.shot_type && att.shot_type!=='unknown' ? ` · ${att.shot_type.charAt(0).toUpperCase()}` : '';
       const num = att.number ? `#${att.number} ` : '';
       const last = att.shooter.split(' ').pop();
-      return `<div style="margin:2px 0;"><span class="attempt-chip ${cls}" style="font-size:11px;">${num}${last}${shot}</span></div>`;
+      const resultLabel = att.result==='goal' ? 'SCORED' : att.result==='save' ? 'SAVED' : 'MISSED';
+      return `<div style="margin:2px 0;display:flex;align-items:center;gap:6px;">
+        <span class="attempt-chip ${cls}" style="font-size:11px;">${num}${last}${shot}</span>
+        <span style="font-size:9px;color:var(--ink-dim);font-family:'IBM Plex Mono';">${resultLabel}</span>
+      </div>`;
     }).join('');
-    return `<div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--line);">
-      <div style="font-family:'IBM Plex Mono';font-size:10px;color:var(--ink-dim);margin-bottom:4px;">Game ${games.length-gi}</div>
+
+    return `<div style="margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--line);">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px;">
+        <span style="font-family:'IBM Plex Mono';font-size:10px;color:var(--ink-dim);">Game ${gameNum} vs ${opp}</span>
+        <span style="font-family:'IBM Plex Mono';font-size:10px;font-weight:700;color:${outcomeColor};">${outcome}</span>
+      </div>
       ${chips}
     </div>`;
   }).join('');
@@ -1024,7 +1031,6 @@ function renderSoOrderTable(){
   const el = document.getElementById('soOrderBody');
   if(!el) return;
   const season = document.getElementById('soOrderSeason')?.value;
-  const limit = parseInt(document.getElementById('soOrderGames')?.value || 5);
   const teamA = document.getElementById('teamASelect').value;
   const teamB = document.getElementById('teamBSelect').value;
 
@@ -1034,10 +1040,14 @@ function renderSoOrderTable(){
   }
 
   const renderPanel = (team) => {
-    if(!team) return '';
+    if(!team) return '<div></div>';
+    const games = SO_ORDER?.[team]?.[season] || [];
+    const count = games.length;
     return `<div>
-      <div style="font-family:'Oswald';font-size:13px;letter-spacing:0.5px;color:var(--ink-muted);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--line);">${team} SHOOTOUT ORDER</div>
-      ${renderTeamSoOrder(team, season, limit)}
+      <div style="font-family:'Oswald';font-size:13px;letter-spacing:0.5px;color:var(--ink-muted);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--line);">
+        ${team} SHOOTOUT ORDER <span style="font-size:11px;font-family:'IBM Plex Mono';font-weight:400;">(${count} game${count!==1?'s':''})</span>
+      </div>
+      ${renderTeamSoOrder(team, season)}
     </div>`;
   };
 

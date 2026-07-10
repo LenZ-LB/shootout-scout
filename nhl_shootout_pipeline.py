@@ -556,53 +556,76 @@ def export_json(out_dir="data"):
 def export_so_order(out_dir="data", conn_override=None):
     """
     Export per-team shootout order history from so_attempts.
-    For each team, lists their shootout games chronologically with
-    round-by-round shooter, shot type, and result.
+    Includes opponent team, game outcome (W/L), and per-attempt detail.
     """
     import os, json
+    from collections import defaultdict
     os.makedirs(out_dir, exist_ok=True)
     conn = conn_override or get_conn()
     conn.row_factory = sqlite3.Row
 
-    # Get all attempts with player names, ordered by game/round
-    rows = conn.execute("""
+    # Get all skater team assignments per game from skater_shootout
+    # We use the team_abbrev stored at season level as proxy
+    # Build: game_id -> set of teams that had shooters
+    game_teams = defaultdict(set)
+    game_seasons = {}
+    for row in conn.execute("""
         SELECT sa.game_id, sa.season,
-               COALESCE(ss.team_abbrev, ar.team_abbrev) AS team,
-               COALESCE(p.full_name, ar.full_name, 'Player #'||sa.shooter_id) AS shooter_name,
-               COALESCE(ar.jersey_number, NULL) AS jersey_number,
-               sa.shooter_id, sa.goalie_id, sa.round_num,
-               sa.result, sa.shot_type, sa.miss_reason,
-               sk2.game_date
+               COALESCE(ss.team_abbrev, ar.team_abbrev) AS team
         FROM so_attempts sa
         LEFT JOIN skater_shootout ss ON ss.player_id=sa.shooter_id AND ss.season=sa.season
         LEFT JOIN active_rosters ar ON ar.player_id=sa.shooter_id
-        LEFT JOIN (SELECT player_id, full_name FROM skater_shootout GROUP BY player_id) p
-               ON p.player_id=sa.shooter_id
-        LEFT JOIN (SELECT player_id, MAX(game_date) game_date, season
-                   FROM (
-                       SELECT sa2.shooter_id player_id, sa2.season,
-                              substr(sa2.game_id,1,4)||'-'||
-                              CASE WHEN CAST(substr(sa2.game_id,5,2) AS INT) > 6
-                                   THEN substr(sa2.game_id,5,2)
-                                   ELSE substr(sa2.game_id,5,2) END game_date
-                       FROM so_attempts sa2
-                   ) GROUP BY player_id, season) sk2
-               ON sk2.player_id=sa.shooter_id AND sk2.season=sa.season
+    """):
+        if row["team"]:
+            game_teams[row["game_id"]].add(row["team"])
+            game_seasons[row["game_id"]] = row["season"]
+
+    # Determine game outcome per team: team wins if their opponent's last attempt was NOT a goal
+    # i.e. the goalie who won allowed fewest goals from last attempt perspective
+    # Simpler: a team WON the shootout if at least one of their shooters scored a game-deciding goal
+    # Use goalie_shootout wins/losses — but we don't have per-game there.
+    # Best available: look at the last shot in the game — if it's a goal, that team won
+    game_last_result = {}  # game_id -> (winning_team_set_clue, last_shooter_result)
+    for row in conn.execute("""
+        SELECT sa.game_id, sa.result,
+               COALESCE(ss.team_abbrev, ar.team_abbrev) AS team
+        FROM so_attempts sa
+        LEFT JOIN skater_shootout ss ON ss.player_id=sa.shooter_id AND ss.season=sa.season
+        LEFT JOIN active_rosters ar ON ar.player_id=sa.shooter_id
+        ORDER BY sa.game_id, sa.round_num
+    """):
+        game_last_result[row["game_id"]] = (row["team"], row["result"])
+
+    # game_id -> winning team (team whose shooter scored the last/deciding goal)
+    game_winner = {}
+    for gid, (team, result) in game_last_result.items():
+        if result == "goal":
+            game_winner[gid] = team
+
+    # Get all attempts with full player info
+    rows = conn.execute("""
+        SELECT sa.game_id, sa.season,
+               COALESCE(ss.team_abbrev, ar.team_abbrev) AS team,
+               COALESCE(
+                   (SELECT full_name FROM skater_shootout WHERE player_id=sa.shooter_id LIMIT 1),
+                   ar.full_name,
+                   'Player #'||sa.shooter_id
+               ) AS shooter_name,
+               ar.jersey_number,
+               sa.shooter_id, sa.round_num,
+               sa.result, sa.shot_type, sa.miss_reason
+        FROM so_attempts sa
+        LEFT JOIN skater_shootout ss ON ss.player_id=sa.shooter_id AND ss.season=sa.season
+        LEFT JOIN active_rosters ar ON ar.player_id=sa.shooter_id
         ORDER BY sa.season DESC, sa.game_id, sa.round_num
     """).fetchall()
 
-    # Group by team -> season -> game
-    from collections import defaultdict
+    # Group by team -> season -> game_id -> attempts
     team_data = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
-    game_dates = {}
-
     for r in rows:
         if not r["team"]:
             continue
-        team = r["team"]
-        season = r["season"]
-        gid = r["game_id"]
-        team_data[team][season][gid].append({
+        team_data[r["team"]][r["season"]][r["game_id"]].append({
             "round": r["round_num"],
             "shooter": r["shooter_name"],
             "shooter_id": r["shooter_id"],
@@ -612,28 +635,24 @@ def export_so_order(out_dir="data", conn_override=None):
             "miss_reason": r["miss_reason"],
         })
 
-    # Also get game dates from skater_shootout season data
-    # Use game_id to derive approximate date (game_id format: YYYYSSGGGG)
-    def game_id_to_date(gid):
-        s = str(gid)
-        if len(s) == 10:
-            year = int(s[:4])
-            # Regular season games: approximate by game number within season
-            return f"{year}-{s[4:6]}-{s[6:8]}"
-        return str(gid)
-
-    # Build output: {team: {season: [{game_id, date, attempts:[]}]}}
+    # Build output
     out = {}
     for team, seasons in team_data.items():
         out[team] = {}
         for season, games in seasons.items():
             game_list = []
-            for gid, attempts in sorted(games.items(), reverse=True):
+            for gid, attempts in sorted(games.items()):  # oldest first
+                teams_in_game = game_teams.get(gid, set())
+                opponent = next((t for t in teams_in_game if t != team), None)
+                winner = game_winner.get(gid)
+                outcome = "W" if winner == team else ("L" if winner else "?")
                 game_list.append({
                     "game_id": gid,
+                    "opponent": opponent or "?",
+                    "outcome": outcome,
                     "attempts": sorted(attempts, key=lambda x: x["round"] or 99),
                 })
-            out[team][season] = game_list
+            out[team][season] = game_list  # oldest first, page reverses for display
 
     with open(os.path.join(out_dir, "so_order.json"), "w") as f:
         json.dump(out, f, indent=2)
