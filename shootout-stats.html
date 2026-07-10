@@ -150,6 +150,24 @@
   .goalie-stat .lbl{font-size:10.5px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.4px;}
 
   .section-toggle{margin-top:20px; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;}
+  .so-order-table th{
+    font-family:'IBM Plex Mono';font-size:10px;color:var(--ink-dim);
+    text-transform:uppercase;letter-spacing:0.4px;padding:6px 10px;
+    border-bottom:1px solid var(--line);text-align:left;
+  }
+  .so-order-table td{padding:6px 10px;border-bottom:1px solid #16223B;vertical-align:top;}
+  .so-order-table tr:hover{background:#131F38;}
+  .attempt-chip{
+    display:inline-flex;align-items:center;gap:4px;
+    padding:3px 8px;border-radius:4px;font-size:11px;margin:1px 2px;
+    font-family:'IBM Plex Mono';
+  }
+  .attempt-chip.goal{background:#2A1A1A;border:1px solid var(--goal);color:var(--goal);}
+  .attempt-chip.save{background:#1A2030;border:1px solid var(--save);color:var(--save);}
+  .attempt-chip.miss{background:#1A1F2A;border:1px solid var(--ink-dim);color:var(--ink-dim);}
+  /* Hot/cold streak in detail dropdown */
+  .streak-hot{color:var(--hot);font-size:11px;font-family:'IBM Plex Mono';}
+  .streak-cold{color:var(--ink-dim);font-size:11px;font-family:'IBM Plex Mono';}
   .section-toggle summary{
     padding:12px 16px; cursor:pointer; font-family:'Oswald'; font-size:14px; letter-spacing:0.4px;
     display:flex; justify-content:space-between; align-items:center; list-style:none; background:var(--panel-elev);
@@ -239,6 +257,8 @@
     .pct.cold{ color:#999 !important; }
     .no-data{ color:#bbb !important; }
     .no-attempts{ display:none !important; }
+    .detail-row{ display:none !important; }
+    .player-name{ color:#111 !important; cursor:default !important; }
     .player-num{ color:#888 !important; font-size:6px !important; }
 
     /* Goalie cards - slim horizontal strips */
@@ -329,6 +349,22 @@
     <div class="print-notes-line"></div>
   </div>
 
+  <details class="section-toggle" id="soOrderToggle">
+    <summary>Shootout Order — Season History</summary>
+    <div class="section-body">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap;">
+        <select id="soOrderTeam" class="team-select" style="min-width:180px;font-size:13px;padding:8px 12px;"></select>
+        <select id="soOrderSeason" class="team-select" style="min-width:130px;font-size:13px;padding:8px 12px;"></select>
+        <label style="font-size:12px;color:var(--ink-muted);display:flex;align-items:center;gap:6px;">
+          Last <input id="soOrderGames" type="number" min="1" max="82" value="10"
+            style="width:50px;padding:6px;border-radius:6px;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-family:'IBM Plex Mono';font-size:12px;text-align:center;">
+          games
+        </label>
+      </div>
+      <div id="soOrderBody"></div>
+    </div>
+  </details>
+
   <details class="section-toggle">
     <summary>Junior / AHL shootout log (manually tracked)</summary>
     <div class="section-body"><table id="minorTable"></table></div>
@@ -400,6 +436,7 @@ const SAMPLE_MINOR = [
 
 let PLAYERS = SAMPLE_PLAYERS, GOALIES = SAMPLE_GOALIES, MINOR = SAMPLE_MINOR;
 let ALLTIME = null;
+let SO_ORDER = null;
 let usingLive = false;
 
 async function loadData(){
@@ -417,6 +454,10 @@ async function loadData(){
         const aRes = await fetch('data/alltime.json');
         if(aRes.ok) ALLTIME = await aRes.json();
       }catch(e){}
+      try{
+        const oRes = await fetch('data/so_order.json');
+        if(oRes.ok) SO_ORDER = await oRes.json();
+      }catch(e){}
     }
   }catch(e){ /* fall back to sample */ }
   updateBanner();
@@ -424,6 +465,7 @@ async function loadData(){
   CURRENT_SEASON = detectCurrentSeason(PLAYERS);
   renderAll();
   renderAllTime();
+  renderSoOrder();
 }
 
 function updateBanner(){
@@ -709,6 +751,12 @@ function fmtMissReason(r){ return r ? r.replace(/-/g,' ').replace(/\b\w/g,c=>c.t
 function buildDetailPanel(p, oppGoalies){
   const maxAtt = Math.max(1, ...Object.values(p.shot_types||{}).map(v=>v[1]));
 
+  // Hot/cold streak from last attempts
+  const streak = getStreak(p);
+  const streakHtml = streak
+    ? `<span class="streak-${streak.type}" style="margin-left:8px;">${streak.type==='hot'?'🔥':'❄️'} ${streak.label}</span>`
+    : '';
+
   // Shot type breakdown
   const shotRows = Object.entries(p.shot_types||{})
     .sort((a,b)=>b[1][1]-a[1][1])
@@ -738,7 +786,7 @@ function buildDetailPanel(p, oppGoalies){
     .map(([r,n])=>`<tr><td>${fmtMissReason(r)}</td><td colspan="2">${n}x</td></tr>`)
     .join('');
 
-  // vs matchup goalies — skip 0/0, add shot type and round breakdowns vs that goalie
+  // vs matchup goalies — skip 0/0, add actual shot type breakdown vs that goalie
   const vsRows = oppGoalies.map(g=>{
     const split = p.vs_goalie?.[g.name];
     if(!split || split[1]===0) return ''; // skip goalies with no attempts
@@ -746,15 +794,17 @@ function buildDetailPanel(p, oppGoalies){
     const pct = Math.round(split[0]/split[1]*100);
     const goalieLabel = `${g.number?'#'+g.number+' ':''}${g.name.split(' ').pop()}`;
 
-    // Shot types vs this specific goalie from so_attempts — approximate from career data
-    // (we don't have per-goalie shot type breakdown yet, so show career shot type hint)
-    const topShot = Object.entries(p.shot_types||{})
-      .filter(([st])=>st!=='unknown')
-      .sort((a,b)=>b[1][1]-a[1][1])[0];
-    const shotHint = topShot ? `<span style="color:var(--ink-dim);font-size:10px;"> · ${fmtShotType(topShot[0])}</span>` : '';
+    // Actual shot types used vs this specific goalie
+    const vsShots = p.vs_goalie_shots?.[g.name] || {};
+    const shotBreakdown = Object.entries(vsShots)
+      .sort((a,b)=>b[1][1]-a[1][1])
+      .map(([st,[sg,sa]])=>{
+        const label = st==='unknown'?'Not Recorded':fmtShotType(st);
+        return `${label} ${sg}/${sa}`;
+      }).join(' · ');
 
     return `<tr style="border-top:1px solid var(--line);">
-      <td><strong>${goalieLabel}</strong>${shotHint}</td>
+      <td><strong>${goalieLabel}</strong>${shotBreakdown?`<br><span style="color:var(--ink-dim);font-size:10px;">${shotBreakdown}</span>`:''}</td>
       <td>${split[0]}/${split[1]}</td>
       <td>${pct}%</td>
     </tr>`;
@@ -763,7 +813,7 @@ function buildDetailPanel(p, oppGoalies){
   return `<div class="detail-panel">
     <div>
       <div class="detail-section">
-        <h4>Shot Type</h4>
+        <h4>Shot Type ${streakHtml}</h4>
         <table class="detail-table">
           <tr style="color:var(--ink-dim);font-size:10px;"><td>Type</td><td>G/Att</td><td>Pct</td></tr>
           ${shotRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No data</td></tr>'}
@@ -908,6 +958,91 @@ function renderAll(){
   window._searchIndex = buildSearchIndex();
 }
 
+function getStreak(p){
+  // Get last 10 attempts in chronological order
+  const attempts = [];
+  Object.entries(p.by_round || {}).forEach(([r, [g, a]]) => {
+    for(let i=0;i<a;i++) attempts.push(i<g?1:0);
+  });
+  if(attempts.length < 3) return null;
+  const last5 = attempts.slice(-5);
+  const goals = last5.filter(x=>x).length;
+  if(goals === 0 && last5.length >= 3) return {type:'cold', label:`${goals}/${last5.length} last ${last5.length}`};
+  if(goals >= 3) return {type:'hot', label:`${goals}/${last5.length} last ${last5.length}`};
+  return null;
+}
+
+function renderSoOrder(){
+  const teamSel = document.getElementById('soOrderTeam');
+  const seasonSel = document.getElementById('soOrderSeason');
+  if(!teamSel) return;
+
+  // Populate team dropdown from SO_ORDER keys or TEAMS list
+  const availTeams = SO_ORDER ? Object.keys(SO_ORDER).sort() : TEAMS.map(t=>t[0]);
+  const teamA = document.getElementById('teamASelect').value;
+  if(teamSel.options.length === 0){
+    availTeams.forEach(t => {
+      const opt = document.createElement('option');
+      opt.value = t; opt.textContent = t;
+      teamSel.appendChild(opt);
+    });
+    if(teamA && availTeams.includes(teamA)) teamSel.value = teamA;
+    teamSel.addEventListener('change', () => { populateSoSeasons(); renderSoOrderTable(); });
+    document.getElementById('soOrderGames').addEventListener('input', renderSoOrderTable);
+  }
+  populateSoSeasons();
+  renderSoOrderTable();
+}
+
+function populateSoSeasons(){
+  const teamSel = document.getElementById('soOrderTeam');
+  const seasonSel = document.getElementById('soOrderSeason');
+  const team = teamSel.value;
+  const seasons = SO_ORDER?.[team] ? Object.keys(SO_ORDER[team]).sort().reverse() : [];
+  seasonSel.innerHTML = seasons.map(s => `<option value="${s}">${s.slice(0,4)}-${s.slice(6)}</option>`).join('');
+  seasonSel.removeEventListener('change', renderSoOrderTable);
+  seasonSel.addEventListener('change', renderSoOrderTable);
+}
+
+function renderSoOrderTable(){
+  const el = document.getElementById('soOrderBody');
+  if(!el) return;
+  const team = document.getElementById('soOrderTeam')?.value;
+  const season = document.getElementById('soOrderSeason')?.value;
+  const limit = parseInt(document.getElementById('soOrderGames')?.value || 10);
+
+  if(!SO_ORDER || !team || !season || !SO_ORDER[team]?.[season]){
+    el.innerHTML = `<div class="no-data" style="padding:12px;">No shootout order data loaded yet — run the Build vs-Goalie Splits workflow first.</div>`;
+    return;
+  }
+
+  const games = SO_ORDER[team][season].slice(0, limit);
+  if(!games.length){ el.innerHTML = `<div class="no-data" style="padding:12px;">No shootout games found.</div>`; return; }
+
+  // Find max rounds across all games
+  const maxRound = Math.max(...games.map(g => g.attempts.length));
+
+  const roundHeaders = Array.from({length:maxRound}, (_,i)=>`<th>Round ${i+1}</th>`).join('');
+
+  const rows = games.map((g, gi) => {
+    const roundCells = Array.from({length:maxRound}, (_,i) => {
+      const att = g.attempts.find(a => a.round === i+1);
+      if(!att) return '<td></td>';
+      const cls = att.result === 'goal' ? 'goal' : att.result === 'save' ? 'save' : 'miss';
+      const shotLabel = att.shot_type && att.shot_type !== 'unknown' ? att.shot_type.charAt(0).toUpperCase() : '';
+      const numLabel = att.number ? `#${att.number} ` : '';
+      const lastName = att.shooter.split(' ').pop();
+      return `<td><span class="attempt-chip ${cls}">${numLabel}${lastName}${shotLabel?' · '+shotLabel:''}</span></td>`;
+    }).join('');
+    return `<tr><td style="font-family:'IBM Plex Mono';font-size:10px;color:var(--ink-muted);white-space:nowrap;">Game ${games.length - gi}</td>${roundCells}</tr>`;
+  }).join('');
+
+  el.innerHTML = `<table class="so-order-table">
+    <thead><tr><th>Game</th>${roundHeaders}</tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
 const input = document.getElementById('searchInput');
 const results = document.getElementById('searchResults');
 input.addEventListener('input', () => {
@@ -915,12 +1050,65 @@ input.addEventListener('input', () => {
   if(!q){ results.classList.remove('show'); return; }
   const matches = (window._searchIndex || []).filter(x => x.name.toLowerCase().includes(q)).slice(0,8);
   results.innerHTML = matches.length
-    ? matches.map(m => `<div class="search-result-row">
+    ? matches.map(m => `<div class="search-result-row" data-name="${m.name}" data-team="${m.team}" data-goalie="${m.goalie||false}">
         <span>${m.name}${m.goalie ? ' (G)' : ''}</span>
         <span class="team-tag">${m.team}${m.pct!==null ? ' \u00b7 '+(m.pct*100).toFixed(0)+'%' : ''}</span>
       </div>`).join('')
     : `<div class="search-result-row"><span class="no-data">No matches loaded</span></div>`;
   results.classList.add('show');
+
+  // Wire up click on each result row
+  results.querySelectorAll('.search-result-row[data-name]').forEach(row => {
+    row.addEventListener('click', () => {
+      const name = row.dataset.name;
+      const team = row.dataset.team;
+      const isGoalie = row.dataset.goalie === 'true';
+      results.classList.remove('show');
+      input.value = '';
+
+      if(isGoalie){
+        // Open goalie detail
+        const g = GOALIES.find(g => g.name === name);
+        if(g){
+          const key = `goalie-${g.id}`;
+          openDetails.add(key);
+          // Switch to team if needed
+          const teamA = document.getElementById('teamASelect').value;
+          const teamB = document.getElementById('teamBSelect').value;
+          if(team !== teamA && team !== teamB){
+            document.getElementById('teamBSelect').value = team;
+          }
+          renderAll();
+          setTimeout(()=>{
+            const card = document.querySelector(`[data-goalieid="${g.id}"]`);
+            if(card) card.scrollIntoView({behavior:'smooth', block:'center'});
+          }, 100);
+        }
+      } else {
+        // Open player detail
+        const p = PLAYERS.find(p => p.name === name);
+        if(p){
+          const key = `player-${p.id}-${team}`;
+          openDetails.add(key);
+          // Switch to team if needed
+          const teamA = document.getElementById('teamASelect').value;
+          const teamB = document.getElementById('teamBSelect').value;
+          if(team !== teamA && team !== teamB){
+            if(document.getElementById('teamASelect').value === 'EDM' || teamA === team){
+              // keep teamA, set teamB to whatever the opponent is
+            } else {
+              document.getElementById('teamBSelect').value = team;
+            }
+          }
+          renderAll();
+          setTimeout(()=>{
+            const el = document.querySelector(`[data-playerid="${p.id}"]`);
+            if(el){ el.closest('tr').scrollIntoView({behavior:'smooth', block:'center'}); }
+          }, 100);
+        }
+      }
+    });
+  });
 });
 document.addEventListener('click', (e) => { if(!e.target.closest('.search-box')) results.classList.remove('show'); });
 

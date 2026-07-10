@@ -392,13 +392,33 @@ def export_json(out_dir="data"):
         p["career"][1] += row["attempts"]
         p["seasons"][row["season"]] = [row["goals"], row["attempts"]]
 
-    # attach vs_goalie splits
+    # attach vs_goalie splits with shot type breakdown per goalie
     for row in conn.execute("""
         SELECT player_id, goalie_name, goals, attempts FROM vs_goalie_splits
     """):
         pid = row["player_id"]
         if pid in players_map:
             players_map[pid]["vs_goalie"][row["goalie_name"]] = [row["goals"], row["attempts"]]
+
+    # per-goalie shot type breakdown from so_attempts
+    for row in conn.execute("""
+        SELECT sa.shooter_id, gs.goalie_name, sa.shot_type,
+               SUM(CASE WHEN sa.result='goal' THEN 1 ELSE 0 END) goals,
+               COUNT(*) attempts
+        FROM so_attempts sa
+        LEFT JOIN vs_goalie_splits gs ON gs.player_id=sa.shooter_id AND gs.goalie_id=sa.goalie_id
+        GROUP BY sa.shooter_id, sa.goalie_id, sa.shot_type
+    """):
+        pid = row["shooter_id"]
+        gname = row["goalie_name"]
+        if pid not in players_map or not gname:
+            continue
+        if "vs_goalie_shots" not in players_map[pid]:
+            players_map[pid]["vs_goalie_shots"] = {}
+        if gname not in players_map[pid]["vs_goalie_shots"]:
+            players_map[pid]["vs_goalie_shots"][gname] = {}
+        st = row["shot_type"] or "unknown"
+        players_map[pid]["vs_goalie_shots"][gname][st] = [row["goals"], row["attempts"]]
 
     # attach shot type breakdown and round performance from so_attempts
     for row in conn.execute("""
@@ -529,7 +549,97 @@ def export_json(out_dir="data"):
 
     print(f"Exported {len(players_out)} players, {len(goalies_out)} goalies to {out_dir}/")
     export_alltime(out_dir=out_dir, conn_override=conn)
+    export_so_order(out_dir=out_dir, conn_override=conn)
     conn.close()
+
+
+def export_so_order(out_dir="data", conn_override=None):
+    """
+    Export per-team shootout order history from so_attempts.
+    For each team, lists their shootout games chronologically with
+    round-by-round shooter, shot type, and result.
+    """
+    import os, json
+    os.makedirs(out_dir, exist_ok=True)
+    conn = conn_override or get_conn()
+    conn.row_factory = sqlite3.Row
+
+    # Get all attempts with player names, ordered by game/round
+    rows = conn.execute("""
+        SELECT sa.game_id, sa.season,
+               COALESCE(ss.team_abbrev, ar.team_abbrev) AS team,
+               COALESCE(p.full_name, ar.full_name, 'Player #'||sa.shooter_id) AS shooter_name,
+               COALESCE(ar.jersey_number, NULL) AS jersey_number,
+               sa.shooter_id, sa.goalie_id, sa.round_num,
+               sa.result, sa.shot_type, sa.miss_reason,
+               sk2.game_date
+        FROM so_attempts sa
+        LEFT JOIN skater_shootout ss ON ss.player_id=sa.shooter_id AND ss.season=sa.season
+        LEFT JOIN active_rosters ar ON ar.player_id=sa.shooter_id
+        LEFT JOIN (SELECT player_id, full_name FROM skater_shootout GROUP BY player_id) p
+               ON p.player_id=sa.shooter_id
+        LEFT JOIN (SELECT player_id, MAX(game_date) game_date, season
+                   FROM (
+                       SELECT sa2.shooter_id player_id, sa2.season,
+                              substr(sa2.game_id,1,4)||'-'||
+                              CASE WHEN CAST(substr(sa2.game_id,5,2) AS INT) > 6
+                                   THEN substr(sa2.game_id,5,2)
+                                   ELSE substr(sa2.game_id,5,2) END game_date
+                       FROM so_attempts sa2
+                   ) GROUP BY player_id, season) sk2
+               ON sk2.player_id=sa.shooter_id AND sk2.season=sa.season
+        ORDER BY sa.season DESC, sa.game_id, sa.round_num
+    """).fetchall()
+
+    # Group by team -> season -> game
+    from collections import defaultdict
+    team_data = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+    game_dates = {}
+
+    for r in rows:
+        if not r["team"]:
+            continue
+        team = r["team"]
+        season = r["season"]
+        gid = r["game_id"]
+        team_data[team][season][gid].append({
+            "round": r["round_num"],
+            "shooter": r["shooter_name"],
+            "shooter_id": r["shooter_id"],
+            "number": r["jersey_number"],
+            "result": r["result"],
+            "shot_type": r["shot_type"] or "unknown",
+            "miss_reason": r["miss_reason"],
+        })
+
+    # Also get game dates from skater_shootout season data
+    # Use game_id to derive approximate date (game_id format: YYYYSSGGGG)
+    def game_id_to_date(gid):
+        s = str(gid)
+        if len(s) == 10:
+            year = int(s[:4])
+            # Regular season games: approximate by game number within season
+            return f"{year}-{s[4:6]}-{s[6:8]}"
+        return str(gid)
+
+    # Build output: {team: {season: [{game_id, date, attempts:[]}]}}
+    out = {}
+    for team, seasons in team_data.items():
+        out[team] = {}
+        for season, games in seasons.items():
+            game_list = []
+            for gid, attempts in sorted(games.items(), reverse=True):
+                game_list.append({
+                    "game_id": gid,
+                    "attempts": sorted(attempts, key=lambda x: x["round"] or 99),
+                })
+            out[team][season] = game_list
+
+    with open(os.path.join(out_dir, "so_order.json"), "w") as f:
+        json.dump(out, f, indent=2)
+    if not conn_override:
+        conn.close()
+    print(f"Exported shootout order to {out_dir}/so_order.json")
 
 def export_alltime(out_dir="data", top_n=25, min_attempts=15, min_faced=20, conn_override=None):
     os.makedirs(out_dir, exist_ok=True)
