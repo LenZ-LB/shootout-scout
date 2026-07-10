@@ -353,15 +353,14 @@
     <summary>Shootout Order — Season History</summary>
     <div class="section-body">
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap;">
-        <select id="soOrderTeam" class="team-select" style="min-width:180px;font-size:13px;padding:8px 12px;"></select>
         <select id="soOrderSeason" class="team-select" style="min-width:130px;font-size:13px;padding:8px 12px;"></select>
         <label style="font-size:12px;color:var(--ink-muted);display:flex;align-items:center;gap:6px;">
-          Last <input id="soOrderGames" type="number" min="1" max="82" value="10"
+          Last <input id="soOrderGames" type="number" min="1" max="82" value="5"
             style="width:50px;padding:6px;border-radius:6px;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-family:'IBM Plex Mono';font-size:12px;text-align:center;">
           games
         </label>
       </div>
-      <div id="soOrderBody"></div>
+      <div id="soOrderBody" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;"></div>
     </div>
   </details>
 
@@ -973,74 +972,76 @@ function getStreak(p){
 }
 
 function renderSoOrder(){
-  const teamSel = document.getElementById('soOrderTeam');
   const seasonSel = document.getElementById('soOrderSeason');
-  if(!teamSel) return;
+  if(!seasonSel) return;
 
-  // Populate team dropdown from SO_ORDER keys or TEAMS list
-  const availTeams = SO_ORDER ? Object.keys(SO_ORDER).sort() : TEAMS.map(t=>t[0]);
+  // Populate season from both selected teams
   const teamA = document.getElementById('teamASelect').value;
-  if(teamSel.options.length === 0){
-    availTeams.forEach(t => {
-      const opt = document.createElement('option');
-      opt.value = t; opt.textContent = t;
-      teamSel.appendChild(opt);
-    });
-    if(teamA && availTeams.includes(teamA)) teamSel.value = teamA;
-    teamSel.addEventListener('change', () => { populateSoSeasons(); renderSoOrderTable(); });
+  const teamB = document.getElementById('teamBSelect').value;
+  const teams = [teamA, teamB].filter(Boolean);
+  const allSeasons = new Set();
+  teams.forEach(t => {
+    if(SO_ORDER?.[t]) Object.keys(SO_ORDER[t]).forEach(s => allSeasons.add(s));
+  });
+  const seasons = [...allSeasons].sort().reverse();
+
+  const curSeason = seasonSel.value;
+  seasonSel.innerHTML = seasons.map(s => `<option value="${s}">${s.slice(0,4)}-${s.slice(6)}</option>`).join('');
+  if(curSeason && seasons.includes(curSeason)) seasonSel.value = curSeason;
+
+  if(seasonSel._bound !== true){
+    seasonSel.addEventListener('change', renderSoOrderTable);
     document.getElementById('soOrderGames').addEventListener('input', renderSoOrderTable);
+    seasonSel._bound = true;
   }
-  populateSoSeasons();
   renderSoOrderTable();
 }
 
-function populateSoSeasons(){
-  const teamSel = document.getElementById('soOrderTeam');
-  const seasonSel = document.getElementById('soOrderSeason');
-  const team = teamSel.value;
-  const seasons = SO_ORDER?.[team] ? Object.keys(SO_ORDER[team]).sort().reverse() : [];
-  seasonSel.innerHTML = seasons.map(s => `<option value="${s}">${s.slice(0,4)}-${s.slice(6)}</option>`).join('');
-  seasonSel.removeEventListener('change', renderSoOrderTable);
-  seasonSel.addEventListener('change', renderSoOrderTable);
+function renderTeamSoOrder(team, season, limit){
+  if(!SO_ORDER?.[team]?.[season]) return `<div class="no-data" style="padding:8px 0;">No data for ${team} this season.</div>`;
+  const games = SO_ORDER[team][season].slice(0, limit);
+  if(!games.length) return `<div class="no-data" style="padding:8px 0;">No shootout games found.</div>`;
+
+  const gameCards = games.map((g, gi) => {
+    const attempts = g.attempts.sort((a,b)=>(a.round||99)-(b.round||99));
+    const chips = attempts.map(att => {
+      const cls = att.result==='goal'?'goal':att.result==='save'?'save':'miss';
+      const shot = att.shot_type && att.shot_type!=='unknown' ? ` · ${att.shot_type.charAt(0).toUpperCase()}` : '';
+      const num = att.number ? `#${att.number} ` : '';
+      const last = att.shooter.split(' ').pop();
+      return `<div style="margin:2px 0;"><span class="attempt-chip ${cls}" style="font-size:11px;">${num}${last}${shot}</span></div>`;
+    }).join('');
+    return `<div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--line);">
+      <div style="font-family:'IBM Plex Mono';font-size:10px;color:var(--ink-dim);margin-bottom:4px;">Game ${games.length-gi}</div>
+      ${chips}
+    </div>`;
+  }).join('');
+
+  return gameCards;
 }
 
 function renderSoOrderTable(){
   const el = document.getElementById('soOrderBody');
   if(!el) return;
-  const team = document.getElementById('soOrderTeam')?.value;
   const season = document.getElementById('soOrderSeason')?.value;
-  const limit = parseInt(document.getElementById('soOrderGames')?.value || 10);
+  const limit = parseInt(document.getElementById('soOrderGames')?.value || 5);
+  const teamA = document.getElementById('teamASelect').value;
+  const teamB = document.getElementById('teamBSelect').value;
 
-  if(!SO_ORDER || !team || !season || !SO_ORDER[team]?.[season]){
-    el.innerHTML = `<div class="no-data" style="padding:12px;">No shootout order data loaded yet — run the Build vs-Goalie Splits workflow first.</div>`;
+  if(!SO_ORDER || !season){
+    el.innerHTML = `<div style="grid-column:1/-1;" class="no-data">No shootout order data — run the Build vs-Goalie Splits workflow first.</div>`;
     return;
   }
 
-  const games = SO_ORDER[team][season].slice(0, limit);
-  if(!games.length){ el.innerHTML = `<div class="no-data" style="padding:12px;">No shootout games found.</div>`; return; }
+  const renderPanel = (team) => {
+    if(!team) return '';
+    return `<div>
+      <div style="font-family:'Oswald';font-size:13px;letter-spacing:0.5px;color:var(--ink-muted);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--line);">${team} SHOOTOUT ORDER</div>
+      ${renderTeamSoOrder(team, season, limit)}
+    </div>`;
+  };
 
-  // Find max rounds across all games
-  const maxRound = Math.max(...games.map(g => g.attempts.length));
-
-  const roundHeaders = Array.from({length:maxRound}, (_,i)=>`<th>Round ${i+1}</th>`).join('');
-
-  const rows = games.map((g, gi) => {
-    const roundCells = Array.from({length:maxRound}, (_,i) => {
-      const att = g.attempts.find(a => a.round === i+1);
-      if(!att) return '<td></td>';
-      const cls = att.result === 'goal' ? 'goal' : att.result === 'save' ? 'save' : 'miss';
-      const shotLabel = att.shot_type && att.shot_type !== 'unknown' ? att.shot_type.charAt(0).toUpperCase() : '';
-      const numLabel = att.number ? `#${att.number} ` : '';
-      const lastName = att.shooter.split(' ').pop();
-      return `<td><span class="attempt-chip ${cls}">${numLabel}${lastName}${shotLabel?' · '+shotLabel:''}</span></td>`;
-    }).join('');
-    return `<tr><td style="font-family:'IBM Plex Mono';font-size:10px;color:var(--ink-muted);white-space:nowrap;">Game ${games.length - gi}</td>${roundCells}</tr>`;
-  }).join('');
-
-  el.innerHTML = `<table class="so-order-table">
-    <thead><tr><th>Game</th>${roundHeaders}</tr></thead>
-    <tbody>${rows}</tbody>
-  </table>`;
+  el.innerHTML = renderPanel(teamA) + renderPanel(teamB);
 }
 
 const input = document.getElementById('searchInput');
