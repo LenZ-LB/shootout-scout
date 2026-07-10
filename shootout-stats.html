@@ -589,7 +589,7 @@ function renderPanels(teamA, teamB){
             const noAttempts = p.career[1] === 0 ? 'no-attempts' : '';
             const isOpen = openDetails.has(`player-${p.id}-${team}`);
             return `<tr class="${noAttempts}">
-              <td><span class="player-name${isOpen?' open':''}" data-playerid="${p.id}" data-team="${team}" onclick="togglePlayerDetail(this, event)">${numLabel}${p.name} <span style="font-size:9px;color:var(--ink-dim);">▶</span></span></td>
+              <td><span class="player-name${isOpen?' open':''}" data-playerid="${p.id}" data-team="${team}" onclick="togglePlayerDetail(this, event)">${numLabel}${p.name}</span></td>
               <td>${fmtGA(p.career)}</td>
               <td>${fmtPct(p.career)}</td>
               <td>${fmtGA(last3(p.seasons))}</td>
@@ -630,7 +630,7 @@ function renderGoalies(teamA, teamB){
         const isOpen = openDetails.has(`goalie-${g.id}`);
         return `<div class="goalie-card" style="flex-direction:column;align-items:stretch;padding:0;cursor:pointer;" data-goalieid="${g.id}" onclick="toggleGoalieDetail(this, event)">
           <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;">
-            <div><h3>${numLabel}${g.name} <span style="font-size:9px;color:var(--ink-dim);">▶</span></h3><div class="record">${g.record || ''}</div></div>
+            <div><h3>${numLabel}${g.name}</h3><div class="record">${g.record || ''}</div></div>
             <div class="goalie-stat">
               <div class="big">${svPct}%</div>
               <div class="lbl">${g.stopped} of ${g.faced} SO shots stopped</div>
@@ -715,8 +715,9 @@ function buildDetailPanel(p, oppGoalies){
     .map(([st,[g,a]])=>{
       const pct = a>0 ? Math.round(g/a*100) : 0;
       const barW = Math.round(a/maxAtt*80);
+      const label = st==='unknown' ? 'Not Recorded' : fmtShotType(st);
       return `<tr>
-        <td>${fmtShotType(st)}</td>
+        <td>${label}</td>
         <td>${g}/${a} <span class="shot-bar" style="width:${barW}px;opacity:0.6;"></span></td>
         <td>${pct}%</td>
       </tr>`;
@@ -737,32 +738,47 @@ function buildDetailPanel(p, oppGoalies){
     .map(([r,n])=>`<tr><td>${fmtMissReason(r)}</td><td colspan="2">${n}x</td></tr>`)
     .join('');
 
-  // vs matchup goalies detail
+  // vs matchup goalies — skip 0/0, add shot type and round breakdowns vs that goalie
   const vsRows = oppGoalies.map(g=>{
-    const split = p.vs_goalie?.[g.name] || [0,0];
-    const pct = split[1]>0 ? Math.round(split[0]/split[1]*100) : 0;
-    return `<tr><td>${g.number?'#'+g.number+' ':''}${g.name.split(' ').pop()}</td><td>${split[0]}/${split[1]}</td><td>${pct}%</td></tr>`;
-  }).join('');
+    const split = p.vs_goalie?.[g.name];
+    if(!split || split[1]===0) return ''; // skip goalies with no attempts
+
+    const pct = Math.round(split[0]/split[1]*100);
+    const goalieLabel = `${g.number?'#'+g.number+' ':''}${g.name.split(' ').pop()}`;
+
+    // Shot types vs this specific goalie from so_attempts — approximate from career data
+    // (we don't have per-goalie shot type breakdown yet, so show career shot type hint)
+    const topShot = Object.entries(p.shot_types||{})
+      .filter(([st])=>st!=='unknown')
+      .sort((a,b)=>b[1][1]-a[1][1])[0];
+    const shotHint = topShot ? `<span style="color:var(--ink-dim);font-size:10px;"> · ${fmtShotType(topShot[0])}</span>` : '';
+
+    return `<tr style="border-top:1px solid var(--line);">
+      <td><strong>${goalieLabel}</strong>${shotHint}</td>
+      <td>${split[0]}/${split[1]}</td>
+      <td>${pct}%</td>
+    </tr>`;
+  }).filter(Boolean).join('');
 
   return `<div class="detail-panel">
     <div>
       <div class="detail-section">
-        <h4>Shot Type (Career)</h4>
+        <h4>Shot Type</h4>
         <table class="detail-table">
           <tr style="color:var(--ink-dim);font-size:10px;"><td>Type</td><td>G/Att</td><td>Pct</td></tr>
           ${shotRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No data</td></tr>'}
         </table>
       </div>
       <div class="detail-section" style="margin-top:12px;">
-        <h4>Miss Reasons (Career)</h4>
+        <h4>Miss Reasons</h4>
         <table class="detail-table">
-          ${missRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No misses recorded</td></tr>'}
+          ${missRows || '<tr><td colspan="3" style="color:var(--ink-dim)">None recorded</td></tr>'}
         </table>
       </div>
     </div>
     <div>
       <div class="detail-section">
-        <h4>By Round (Career)</h4>
+        <h4>By Round</h4>
         <table class="detail-table">
           <tr style="color:var(--ink-dim);font-size:10px;"><td>Round</td><td>G/Att</td><td>Pct</td></tr>
           ${roundRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No data</td></tr>'}
@@ -772,7 +788,7 @@ function buildDetailPanel(p, oppGoalies){
         <h4>vs This Matchup</h4>
         <table class="detail-table">
           <tr style="color:var(--ink-dim);font-size:10px;"><td>Goalie</td><td>G/Att</td><td>Pct</td></tr>
-          ${vsRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No splits</td></tr>'}
+          ${vsRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No attempts vs these goalies</td></tr>'}
         </table>
       </div>
     </div>
@@ -787,8 +803,9 @@ function buildGoalieDetailPanel(g){
     .map(([st,[sv,faced]])=>{
       const pct = faced>0 ? Math.round(sv/faced*100) : 0;
       const barW = Math.round(faced/maxFaced*80);
+      const label = st==='unknown' ? 'Not Recorded' : fmtShotType(st);
       return `<tr>
-        <td>${fmtShotType(st)}</td>
+        <td>${label}</td>
         <td>${sv}/${faced} <span class="shot-bar" style="width:${barW}px;opacity:0.6;"></span></td>
         <td>${pct}%</td>
       </tr>`;
@@ -810,7 +827,7 @@ function buildGoalieDetailPanel(g){
   return `<div class="detail-panel">
     <div>
       <div class="detail-section">
-        <h4>Save % by Shot Type (Career)</h4>
+        <h4>Save % by Shot Type</h4>
         <table class="detail-table">
           <tr style="color:var(--ink-dim);font-size:10px;"><td>Type</td><td>Sv/Faced</td><td>Sv%</td></tr>
           ${shotRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No data</td></tr>'}
@@ -819,14 +836,14 @@ function buildGoalieDetailPanel(g){
     </div>
     <div>
       <div class="detail-section">
-        <h4>Save % by Round (Career)</h4>
+        <h4>Save % by Round</h4>
         <table class="detail-table">
           <tr style="color:var(--ink-dim);font-size:10px;"><td>Round</td><td>Sv/Faced</td><td>Sv%</td></tr>
           ${roundRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No data</td></tr>'}
         </table>
       </div>
       <div class="detail-section" style="margin-top:12px;">
-        <h4>Missed Net Against (Career)</h4>
+        <h4>Missed Net Against</h4>
         <table class="detail-table">
           ${missRows || '<tr><td colspan="3" style="color:var(--ink-dim)">None recorded</td></tr>'}
         </table>
