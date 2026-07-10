@@ -85,6 +85,25 @@ CREATE TABLE IF NOT EXISTS manual_attempts (
     notes       TEXT
 );
 
+-- Individual shootout attempts with full detail — source of truth for
+-- shot type breakdowns, round performance, and goalie tendency analysis.
+-- Rebuilt by --build-splits. Each row = one attempt in one game.
+CREATE TABLE IF NOT EXISTS so_attempts (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    game_id     INTEGER NOT NULL,
+    season      TEXT NOT NULL,
+    round_num   INTEGER,
+    shooter_id  INTEGER NOT NULL,
+    goalie_id   INTEGER NOT NULL,
+    result      TEXT NOT NULL,   -- 'goal', 'save', 'miss'
+    shot_type   TEXT,            -- 'wrist', 'snap', 'backhand', 'slap', etc.
+    miss_reason TEXT,            -- 'hit-crossbar', 'above-crossbar', etc. (null if save or goal)
+    UNIQUE(game_id, shooter_id, round_num)
+);
+CREATE INDEX IF NOT EXISTS idx_soa_shooter ON so_attempts(shooter_id);
+CREATE INDEX IF NOT EXISTS idx_soa_goalie  ON so_attempts(goalie_id);
+CREATE INDEX IF NOT EXISTS idx_soa_season  ON so_attempts(season);
+
 -- current NHL rosters — rebuilt from scratch on every --update-rosters run
 -- only players in this table appear in team panels on the page
 -- everyone else is still in the db for search/history but has no team assignment
@@ -125,6 +144,7 @@ def init_db():
         print("  Migrated: added jersey_number column to active_rosters")
     except sqlite3.OperationalError:
         pass
+    # so_attempts created by CREATE TABLE IF NOT EXISTS — no migration needed
     conn.commit()
     conn.close()
     print(f"Initialized {DB_PATH}")
@@ -380,6 +400,43 @@ def export_json(out_dir="data"):
         if pid in players_map:
             players_map[pid]["vs_goalie"][row["goalie_name"]] = [row["goals"], row["attempts"]]
 
+    # attach shot type breakdown and round performance from so_attempts
+    for row in conn.execute("""
+        SELECT shooter_id, shot_type, result, round_num, miss_reason
+        FROM so_attempts
+    """):
+        pid = row["shooter_id"]
+        if pid not in players_map:
+            continue
+        p = players_map[pid]
+
+        # shot_types: {wrist: [goals, att], snap: [...], ...}
+        if "shot_types" not in p:
+            p["shot_types"] = {}
+        st = row["shot_type"] or "unknown"
+        if st not in p["shot_types"]:
+            p["shot_types"][st] = [0, 0]
+        if row["result"] == "goal":
+            p["shot_types"][st][0] += 1
+        p["shot_types"][st][1] += 1
+
+        # by_round: {1: [goals, att], 2: [...], ...}
+        if "by_round" not in p:
+            p["by_round"] = {}
+        rn = str(row["round_num"] or "?")
+        if rn not in p["by_round"]:
+            p["by_round"][rn] = [0, 0]
+        if row["result"] == "goal":
+            p["by_round"][rn][0] += 1
+        p["by_round"][rn][1] += 1
+
+        # miss_reasons: {above-crossbar: 3, hit-post: 1, ...}
+        if row["result"] == "miss" and row["miss_reason"]:
+            if "miss_reasons" not in p:
+                p["miss_reasons"] = {}
+            mr = row["miss_reason"]
+            p["miss_reasons"][mr] = p["miss_reasons"].get(mr, 0) + 1
+
     players_out = [p for p in players_map.values() if p["active"] or p["career"][1] > 0]
     players_out.sort(key=lambda p: (not p["active"], -p["career"][1]))
 
@@ -425,6 +482,43 @@ def export_json(out_dir="data"):
 
     for g in goalies_map.values():
         g["record"] = f"{g['wins']} W \u2013 {g['losses']} L in career shootouts"
+
+    # attach goalie detail from so_attempts
+    for row in conn.execute("""
+        SELECT goalie_id, shot_type, result, round_num, miss_reason
+        FROM so_attempts
+    """):
+        gid = row["goalie_id"]
+        if gid not in goalies_map:
+            continue
+        g = goalies_map[gid]
+
+        # shots_faced_by_type: {wrist: [saves, faced], ...}
+        if "shots_by_type" not in g:
+            g["shots_by_type"] = {}
+        st = row["shot_type"] or "unknown"
+        if st not in g["shots_by_type"]:
+            g["shots_by_type"][st] = [0, 0]
+        if row["result"] != "goal":
+            g["shots_by_type"][st][0] += 1  # save or miss
+        g["shots_by_type"][st][1] += 1
+
+        # by_round
+        if "by_round" not in g:
+            g["by_round"] = {}
+        rn = str(row["round_num"] or "?")
+        if rn not in g["by_round"]:
+            g["by_round"][rn] = [0, 0]
+        if row["result"] != "goal":
+            g["by_round"][rn][0] += 1
+        g["by_round"][rn][1] += 1
+
+        # how shots missed (miss_reasons — shots that missed without goalie making save)
+        if row["result"] == "miss" and row["miss_reason"]:
+            if "miss_reasons" not in g:
+                g["miss_reasons"] = {}
+            mr = row["miss_reason"]
+            g["miss_reasons"][mr] = g["miss_reasons"].get(mr, 0) + 1
 
     goalies_out = [g for g in goalies_map.values() if g["active"] or g["faced"] > 0]
 
@@ -574,15 +668,17 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
             if play.get("periodDescriptor", {}).get("periodType") != "SO":
                 continue
             d = play.get("details", {})
-            type_key   = play.get("typeDescKey", "")
-            shooter_id = d.get("shootingPlayerId") or d.get("scoringPlayerId")
-            goalie_id  = d.get("goalieInNetId")
-            owner_tid  = d.get("eventOwnerTeamId")
+            type_key    = play.get("typeDescKey", "")
+            shooter_id  = d.get("shootingPlayerId") or d.get("scoringPlayerId")
+            goalie_id   = d.get("goalieInNetId")
+            owner_tid   = d.get("eventOwnerTeamId")
+            shot_type   = d.get("shotType")
+            miss_reason = d.get("reason")  # only on missed-shot
             if type_key not in ("shot-on-goal", "goal", "missed-shot", "failed-shot-attempt"):
                 continue
             if not shooter_id:
                 continue
-            so_plays.append((shooter_id, goalie_id, type_key, owner_tid))
+            so_plays.append((shooter_id, goalie_id, type_key, owner_tid, shot_type, miss_reason))
             # If goalie is known, record which goalie this team faces
             if goalie_id and owner_tid:
                 team_goalie[owner_tid] = goalie_id
@@ -590,7 +686,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
         # If team_goalie is still incomplete, try rosterSpots as fallback
         # A goalie on teamId=X faces shooters from the OTHER team
         if len(team_goalie) < 2:
-            so_goalie_ids = {goalie_id for _, goalie_id, _, _ in so_plays if goalie_id}
+            so_goalie_ids = {goalie_id for _, goalie_id, _, _, _, _ in so_plays if goalie_id}
             for spot in pbp.get("rosterSpots", []):
                 if spot.get("positionCode") != "G":
                     continue
@@ -637,14 +733,21 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
                 if debug:
                     print(f"    [warn] goalie stats fallback failed game {game_id}: {e}")
 
-        # Second pass: build pairs, filling null goalies from team_goalie map
+        # Second pass: build pairs with full detail, filling null goalies from team_goalie map
         pairs = []
-        for shooter_id, goalie_id, type_key, owner_tid in so_plays:
+        round_counter = {}  # team_id -> round number
+        for shooter_id, goalie_id, type_key, owner_tid, shot_type, miss_reason in so_plays:
             if not goalie_id and owner_tid:
                 goalie_id = team_goalie.get(owner_tid)
-            if shooter_id and goalie_id:
-                scored = 1 if type_key == "goal" else 0
-                pairs.append((shooter_id, goalie_id, scored))
+            if not shooter_id or not goalie_id:
+                continue
+            # Derive round number per team
+            if owner_tid not in round_counter:
+                round_counter[owner_tid] = 0
+            round_counter[owner_tid] += 1
+            round_num = round_counter[owner_tid]
+            result = "goal" if type_key == "goal" else ("miss" if type_key in ("missed-shot","failed-shot-attempt") else "save")
+            pairs.append((shooter_id, goalie_id, result, shot_type, miss_reason, round_num))
         return pairs
 
     # Build goalie name lookup
@@ -663,14 +766,23 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
 
         for game_id in sorted(game_ids):
             pairs = get_splits_from_pbp(game_id)
-            for shooter_id, goalie_id, scored in pairs:
+            for shooter_id, goalie_id, result, shot_type, miss_reason, round_num in pairs:
                 gname = goalie_names.get(goalie_id, f"Goalie #{goalie_id}")
                 key = (shooter_id, goalie_id)
                 if key not in all_splits:
                     all_splits[key] = [0, 0, gname]
-                all_splits[key][0] += scored
+                if result == "goal":
+                    all_splits[key][0] += 1
                 all_splits[key][1] += 1
+
+                # Store individual attempt detail
+                conn.execute("""
+                    INSERT OR IGNORE INTO so_attempts
+                        (game_id, season, round_num, shooter_id, goalie_id, result, shot_type, miss_reason)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """, (game_id, season, round_num, shooter_id, goalie_id, result, shot_type, miss_reason))
             time.sleep(0.15)
+        conn.commit()
 
         if debug:
             print(f"    Running total: {len(all_splits)} shooter-goalie pairs so far")
@@ -681,14 +793,15 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
             VALUES (?, ?, ?, ?, ?)
             ON CONFLICT(player_id, goalie_id) DO UPDATE SET
                 goalie_name=excluded.goalie_name,
-                goals=goals+excluded.goals,
-                attempts=attempts+excluded.attempts
+                goals=excluded.goals,
+                attempts=excluded.attempts
         """, (sid, gid, gname, goals, att))
     conn.commit()
 
     total = conn.execute("SELECT COUNT(*) FROM vs_goalie_splits").fetchone()[0]
+    atts = conn.execute("SELECT COUNT(*) FROM so_attempts").fetchone()[0]
     conn.close()
-    print(f"vs-goalie splits complete — {total} total shooter-goalie pairs.")
+    print(f"vs-goalie splits complete — {total} pairs, {atts} individual attempts stored.")
 
 
 

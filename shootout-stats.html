@@ -101,7 +101,25 @@
   tbody td{padding:7px 7px; border-bottom:1px solid #16223B; text-align:right; white-space:nowrap;}
   tbody td:first-child{text-align:left; white-space:normal;}
   tbody tr:hover{background:#131F38;}
-  .player-name{font-weight:500;}
+  .detail-row td{ padding:0 !important; border-bottom:2px solid var(--line) !important; }
+  .detail-panel{
+    background:#0D1828; padding:14px 16px; display:grid;
+    grid-template-columns:1fr 1fr; gap:16px;
+  }
+  .detail-section h4{
+    font-family:'Oswald'; font-size:12px; letter-spacing:0.5px;
+    color:var(--ink-muted); margin:0 0 8px; text-transform:uppercase;
+  }
+  .detail-table{ width:100%; font-size:11px; border-collapse:collapse; }
+  .detail-table td{ padding:3px 8px; border-bottom:1px solid #1A2A45; }
+  .detail-table td:last-child{ text-align:right; font-family:'IBM Plex Mono'; }
+  .detail-table tr:last-child td{ border-bottom:none; }
+  .shot-bar{
+    display:inline-block; height:6px; background:var(--save);
+    border-radius:3px; vertical-align:middle; margin-left:6px;
+  }
+  .player-name{font-weight:500; cursor:pointer;}
+  .player-name:hover{ color:var(--save); }
   .player-num{color:var(--ink-dim); font-family:'IBM Plex Mono'; font-size:10px; font-weight:500;}
   .pct{font-family:'IBM Plex Mono'; font-weight:600;}
   .pct.hot{color:var(--hot);}
@@ -569,14 +587,16 @@ function renderPanels(teamA, teamB){
               : `<td class="vsg-col"><span class="no-data">\u2014</span></td>`;
             const numLabel = p.number ? `<span class="player-num">#${p.number}</span> ` : '';
             const noAttempts = p.career[1] === 0 ? 'no-attempts' : '';
+            const isOpen = openDetails.has(`player-${p.id}-${team}`);
             return `<tr class="${noAttempts}">
-              <td><span class="player-name">${numLabel}${p.name}</span></td>
+              <td><span class="player-name${isOpen?' open':''}" data-playerid="${p.id}" data-team="${team}" onclick="togglePlayerDetail(this, event)">${numLabel}${p.name} <span style="font-size:9px;color:var(--ink-dim);">▶</span></span></td>
               <td>${fmtGA(p.career)}</td>
               <td>${fmtPct(p.career)}</td>
               <td>${fmtGA(last3(p.seasons))}</td>
               <td>${fmtGA(curSzn)}</td>
               ${goalieCells}
-            </tr>`;
+            </tr>
+            ${isOpen ? `<tr class="detail-row"><td colspan="${5 + oppGoalies.length}">${buildDetailPanel(p, oppGoalies)}</td></tr>` : ''}`;
           }).join('')}
         </tbody>
       </table>
@@ -607,12 +627,16 @@ function renderGoalies(teamA, teamB){
       ${goalies.map(g => {
         const svPct = g.faced ? ((g.stopped/g.faced)*100).toFixed(1) : '\u2014';
         const numLabel = g.number ? `<span style="color:var(--ink-dim);font-family:'IBM Plex Mono';font-size:11px;">#${g.number}</span> ` : '';
-        return `<div class="goalie-card">
-          <div><h3>${numLabel}${g.name}</h3><div class="record">${g.record || ''}</div></div>
-          <div class="goalie-stat">
-            <div class="big">${svPct}%</div>
-            <div class="lbl">${g.stopped} of ${g.faced} SO shots stopped</div>
+        const isOpen = openDetails.has(`goalie-${g.id}`);
+        return `<div class="goalie-card" style="flex-direction:column;align-items:stretch;padding:0;cursor:pointer;" data-goalieid="${g.id}" onclick="toggleGoalieDetail(this, event)">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;">
+            <div><h3>${numLabel}${g.name} <span style="font-size:9px;color:var(--ink-dim);">▶</span></h3><div class="record">${g.record || ''}</div></div>
+            <div class="goalie-stat">
+              <div class="big">${svPct}%</div>
+              <div class="lbl">${g.stopped} of ${g.faced} SO shots stopped</div>
+            </div>
           </div>
+          ${isOpen ? buildGoalieDetailPanel(g) : ''}
         </div>`;
       }).join('')}
     </div>`;
@@ -677,6 +701,163 @@ function renderAllTime(){
     </div>
     <p class="note" style="padding:12px 0 0;">Spans every season loaded via the backfill workflow so far \u2014 not limited to the two teams selected above.</p>
   `;
+}
+
+function fmtShotType(st){ return st ? st.charAt(0).toUpperCase()+st.slice(1) : 'Unknown'; }
+function fmtMissReason(r){ return r ? r.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase()) : r; }
+
+function buildDetailPanel(p, oppGoalies){
+  const maxAtt = Math.max(1, ...Object.values(p.shot_types||{}).map(v=>v[1]));
+
+  // Shot type breakdown
+  const shotRows = Object.entries(p.shot_types||{})
+    .sort((a,b)=>b[1][1]-a[1][1])
+    .map(([st,[g,a]])=>{
+      const pct = a>0 ? Math.round(g/a*100) : 0;
+      const barW = Math.round(a/maxAtt*80);
+      return `<tr>
+        <td>${fmtShotType(st)}</td>
+        <td>${g}/${a} <span class="shot-bar" style="width:${barW}px;opacity:0.6;"></span></td>
+        <td>${pct}%</td>
+      </tr>`;
+    }).join('');
+
+  // Round performance
+  const roundRows = Object.entries(p.by_round||{})
+    .filter(([r])=>r!=='?')
+    .sort((a,b)=>+a[0]-+b[0])
+    .map(([r,[g,a]])=>{
+      const pct = a>0 ? Math.round(g/a*100) : 0;
+      return `<tr><td>Round ${r}</td><td>${g}/${a}</td><td>${pct}%</td></tr>`;
+    }).join('');
+
+  // Miss reasons
+  const missRows = Object.entries(p.miss_reasons||{})
+    .sort((a,b)=>b[1]-a[1])
+    .map(([r,n])=>`<tr><td>${fmtMissReason(r)}</td><td colspan="2">${n}x</td></tr>`)
+    .join('');
+
+  // vs matchup goalies detail
+  const vsRows = oppGoalies.map(g=>{
+    const split = p.vs_goalie?.[g.name] || [0,0];
+    const pct = split[1]>0 ? Math.round(split[0]/split[1]*100) : 0;
+    return `<tr><td>${g.number?'#'+g.number+' ':''}${g.name.split(' ').pop()}</td><td>${split[0]}/${split[1]}</td><td>${pct}%</td></tr>`;
+  }).join('');
+
+  return `<div class="detail-panel">
+    <div>
+      <div class="detail-section">
+        <h4>Shot Type (Career)</h4>
+        <table class="detail-table">
+          <tr style="color:var(--ink-dim);font-size:10px;"><td>Type</td><td>G/Att</td><td>Pct</td></tr>
+          ${shotRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No data</td></tr>'}
+        </table>
+      </div>
+      <div class="detail-section" style="margin-top:12px;">
+        <h4>Miss Reasons (Career)</h4>
+        <table class="detail-table">
+          ${missRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No misses recorded</td></tr>'}
+        </table>
+      </div>
+    </div>
+    <div>
+      <div class="detail-section">
+        <h4>By Round (Career)</h4>
+        <table class="detail-table">
+          <tr style="color:var(--ink-dim);font-size:10px;"><td>Round</td><td>G/Att</td><td>Pct</td></tr>
+          ${roundRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No data</td></tr>'}
+        </table>
+      </div>
+      <div class="detail-section" style="margin-top:12px;">
+        <h4>vs This Matchup</h4>
+        <table class="detail-table">
+          <tr style="color:var(--ink-dim);font-size:10px;"><td>Goalie</td><td>G/Att</td><td>Pct</td></tr>
+          ${vsRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No splits</td></tr>'}
+        </table>
+      </div>
+    </div>
+  </div>`;
+}
+
+function buildGoalieDetailPanel(g){
+  const maxFaced = Math.max(1, ...Object.values(g.shots_by_type||{}).map(v=>v[1]));
+
+  const shotRows = Object.entries(g.shots_by_type||{})
+    .sort((a,b)=>b[1][1]-a[1][1])
+    .map(([st,[sv,faced]])=>{
+      const pct = faced>0 ? Math.round(sv/faced*100) : 0;
+      const barW = Math.round(faced/maxFaced*80);
+      return `<tr>
+        <td>${fmtShotType(st)}</td>
+        <td>${sv}/${faced} <span class="shot-bar" style="width:${barW}px;opacity:0.6;"></span></td>
+        <td>${pct}%</td>
+      </tr>`;
+    }).join('');
+
+  const roundRows = Object.entries(g.by_round||{})
+    .filter(([r])=>r!=='?')
+    .sort((a,b)=>+a[0]-+b[0])
+    .map(([r,[sv,faced]])=>{
+      const pct = faced>0 ? Math.round(sv/faced*100) : 0;
+      return `<tr><td>Round ${r}</td><td>${sv}/${faced}</td><td>${pct}%</td></tr>`;
+    }).join('');
+
+  const missRows = Object.entries(g.miss_reasons||{})
+    .sort((a,b)=>b[1]-a[1])
+    .map(([r,n])=>`<tr><td>${fmtMissReason(r)}</td><td colspan="2">${n}x (missed net)</td></tr>`)
+    .join('');
+
+  return `<div class="detail-panel">
+    <div>
+      <div class="detail-section">
+        <h4>Save % by Shot Type (Career)</h4>
+        <table class="detail-table">
+          <tr style="color:var(--ink-dim);font-size:10px;"><td>Type</td><td>Sv/Faced</td><td>Sv%</td></tr>
+          ${shotRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No data</td></tr>'}
+        </table>
+      </div>
+    </div>
+    <div>
+      <div class="detail-section">
+        <h4>Save % by Round (Career)</h4>
+        <table class="detail-table">
+          <tr style="color:var(--ink-dim);font-size:10px;"><td>Round</td><td>Sv/Faced</td><td>Sv%</td></tr>
+          ${roundRows || '<tr><td colspan="3" style="color:var(--ink-dim)">No data</td></tr>'}
+        </table>
+      </div>
+      <div class="detail-section" style="margin-top:12px;">
+        <h4>Missed Net Against (Career)</h4>
+        <table class="detail-table">
+          ${missRows || '<tr><td colspan="3" style="color:var(--ink-dim)">None recorded</td></tr>'}
+        </table>
+      </div>
+    </div>
+  </div>`;
+}
+
+const openDetails = new Set(); // track which player/goalie IDs have open detail rows
+
+function togglePlayerDetail(el, event){
+  event.stopPropagation();
+  const pid = el.dataset.playerid;
+  const team = el.dataset.team;
+  const key = `player-${pid}-${team}`;
+  if(openDetails.has(key)) openDetails.delete(key);
+  else openDetails.add(key);
+  const teamA = document.getElementById('teamASelect').value;
+  const teamB = document.getElementById('teamBSelect').value;
+  renderPanels(teamA, teamB);
+}
+
+function toggleGoalieDetail(el, event){
+  event.stopPropagation();
+  const gid = el.dataset.goalieid;
+  const key = `goalie-${gid}`;
+  if(openDetails.has(key)) openDetails.delete(key);
+  else openDetails.add(key);
+  const teamA = document.getElementById('teamASelect').value;
+  const teamB = document.getElementById('teamBSelect').value;
+  renderGoalies(teamA, teamB);
 }
 
 function buildSearchIndex(){
