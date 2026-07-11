@@ -100021,10 +100021,6 @@
         0,
         1
       ],
-      "Kari Lehtonen": [
-        0,
-        1
-      ],
       "Alex Auld": [
         0,
         1
@@ -100374,12 +100370,6 @@
         ]
       },
       "Mike Smith": {
-        "backhand": [
-          0,
-          1
-        ]
-      },
-      "Kari Lehtonen": {
         "backhand": [
           0,
           1
@@ -106068,7 +106058,7 @@
       ],
       "Rick DiPietro": [
         0,
-        2
+        1
       ],
       "Tim Thomas": [
         1,
@@ -121057,10 +121047,6 @@
         0,
         1
       ],
-      "Rick DiPietro": [
-        1,
-        1
-      ],
       "Cam Ward": [
         0,
         1
@@ -121188,12 +121174,6 @@
         ],
         "wrist": [
           0,
-          1
-        ]
-      },
-      "Rick DiPietro": {
-        "wrist": [
-          1,
           1
         ]
       },
@@ -132974,10 +132954,6 @@
         0,
         2
       ],
-      "Rick DiPietro": [
-        0,
-        2
-      ],
       "Mathieu Garon": [
         0,
         1
@@ -132996,6 +132972,10 @@
       ],
       "Devan Dubnyk": [
         1,
+        1
+      ],
+      "Rick DiPietro": [
+        0,
         1
       ],
       "Cam Ward": [
@@ -142327,10 +142307,6 @@
         1,
         1
       ],
-      "Kari Lehtonen": [
-        0,
-        1
-      ],
       "Antero Niittymaki": [
         0,
         1
@@ -142542,12 +142518,6 @@
       "Mike Smith": {
         "wrist": [
           1,
-          1
-        ]
-      },
-      "Kari Lehtonen": {
-        "wrist": [
-          0,
           1
         ]
       },
@@ -150015,10 +149985,6 @@
         1,
         1
       ],
-      "Kari Lehtonen": [
-        0,
-        1
-      ],
       "Martin Brodeur": [
         1,
         2
@@ -150168,12 +150134,6 @@
       "Peter Budaj": {
         "wrist": [
           1,
-          1
-        ]
-      },
-      "Kari Lehtonen": {
-        "wrist": [
-          0,
           1
         ]
       },
