@@ -92,12 +92,13 @@ CREATE TABLE IF NOT EXISTS so_attempts (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
     game_id     INTEGER NOT NULL,
     season      TEXT NOT NULL,
+    game_date   TEXT,
     round_num   INTEGER,
     shooter_id  INTEGER NOT NULL,
     goalie_id   INTEGER NOT NULL,
     result      TEXT NOT NULL,   -- 'goal', 'save', 'miss'
-    shot_type   TEXT,            -- 'wrist', 'snap', 'backhand', 'slap', etc.
-    miss_reason TEXT,            -- 'hit-crossbar', 'above-crossbar', etc. (null if save or goal)
+    shot_type   TEXT,
+    miss_reason TEXT,
     UNIQUE(game_id, shooter_id, round_num)
 );
 CREATE INDEX IF NOT EXISTS idx_soa_shooter ON so_attempts(shooter_id);
@@ -145,6 +146,11 @@ def init_db():
     except sqlite3.OperationalError:
         pass
     # so_attempts created by CREATE TABLE IF NOT EXISTS — no migration needed
+    try:
+        conn.execute("ALTER TABLE so_attempts ADD COLUMN game_date TEXT")
+        print("  Migrated: added game_date column to so_attempts")
+    except sqlite3.OperationalError:
+        pass
     conn.commit()
     conn.close()
     print(f"Initialized {DB_PATH}")
@@ -564,47 +570,9 @@ def export_so_order(out_dir="data", conn_override=None):
     conn = conn_override or get_conn()
     conn.row_factory = sqlite3.Row
 
-    # Get all skater team assignments per game from skater_shootout
-    # We use the team_abbrev stored at season level as proxy
-    # Build: game_id -> set of teams that had shooters
-    game_teams = defaultdict(set)
-    game_seasons = {}
-    for row in conn.execute("""
-        SELECT sa.game_id, sa.season,
-               COALESCE(ss.team_abbrev, ar.team_abbrev) AS team
-        FROM so_attempts sa
-        LEFT JOIN skater_shootout ss ON ss.player_id=sa.shooter_id AND ss.season=sa.season
-        LEFT JOIN active_rosters ar ON ar.player_id=sa.shooter_id
-    """):
-        if row["team"]:
-            game_teams[row["game_id"]].add(row["team"])
-            game_seasons[row["game_id"]] = row["season"]
-
-    # Determine game outcome per team: team wins if their opponent's last attempt was NOT a goal
-    # i.e. the goalie who won allowed fewest goals from last attempt perspective
-    # Simpler: a team WON the shootout if at least one of their shooters scored a game-deciding goal
-    # Use goalie_shootout wins/losses — but we don't have per-game there.
-    # Best available: look at the last shot in the game — if it's a goal, that team won
-    game_last_result = {}  # game_id -> (winning_team_set_clue, last_shooter_result)
-    for row in conn.execute("""
-        SELECT sa.game_id, sa.result,
-               COALESCE(ss.team_abbrev, ar.team_abbrev) AS team
-        FROM so_attempts sa
-        LEFT JOIN skater_shootout ss ON ss.player_id=sa.shooter_id AND ss.season=sa.season
-        LEFT JOIN active_rosters ar ON ar.player_id=sa.shooter_id
-        ORDER BY sa.game_id, sa.round_num
-    """):
-        game_last_result[row["game_id"]] = (row["team"], row["result"])
-
-    # game_id -> winning team (team whose shooter scored the last/deciding goal)
-    game_winner = {}
-    for gid, (team, result) in game_last_result.items():
-        if result == "goal":
-            game_winner[gid] = team
-
-    # Get all attempts with full player info
+    # Get all attempts with full player info and game metadata and game metadata
     rows = conn.execute("""
-        SELECT sa.game_id, sa.season,
+        SELECT sa.game_id, sa.season, sa.game_date,
                COALESCE(ss.team_abbrev, ar.team_abbrev) AS team,
                COALESCE(
                    (SELECT full_name FROM skater_shootout WHERE player_id=sa.shooter_id LIMIT 1),
@@ -622,6 +590,8 @@ def export_so_order(out_dir="data", conn_override=None):
 
     # Group by team -> season -> game_id -> attempts
     team_data = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+    game_meta = {}  # game_id -> {date, teams: set()}
+
     for r in rows:
         if not r["team"]:
             continue
@@ -634,6 +604,28 @@ def export_so_order(out_dir="data", conn_override=None):
             "shot_type": r["shot_type"] or "unknown",
             "miss_reason": r["miss_reason"],
         })
+        gid = r["game_id"]
+        if gid not in game_meta:
+            game_meta[gid] = {"date": r["game_date"], "teams": set()}
+        if r["team"]:
+            game_meta[gid]["teams"].add(r["team"])
+
+    # Determine outcome per game per team
+    # The team that scored the deciding goal (last goal) wins
+    # Find the last 'goal' result per game and which team's shooter scored it
+    game_winner = {}
+    for row in conn.execute("""
+        SELECT sa.game_id, sa.result,
+               COALESCE(ss.team_abbrev, ar.team_abbrev) AS team
+        FROM so_attempts sa
+        LEFT JOIN skater_shootout ss ON ss.player_id=sa.shooter_id AND ss.season=sa.season
+        LEFT JOIN active_rosters ar ON ar.player_id=sa.shooter_id
+        WHERE sa.result='goal'
+        ORDER BY sa.game_id, sa.round_num DESC
+    """):
+        # Last goal per game = deciding goal
+        if row["game_id"] not in game_winner and row["team"]:
+            game_winner[row["game_id"]] = row["team"]
 
     # Build output
     out = {}
@@ -641,18 +633,19 @@ def export_so_order(out_dir="data", conn_override=None):
         out[team] = {}
         for season, games in seasons.items():
             game_list = []
-            for gid, attempts in sorted(games.items()):  # oldest first
-                teams_in_game = game_teams.get(gid, set())
-                opponent = next((t for t in teams_in_game if t != team), None)
+            for gid, attempts in sorted(games.items()):
+                meta = game_meta.get(gid, {})
+                opponent = next((t for t in meta.get("teams", set()) if t != team), None)
                 winner = game_winner.get(gid)
-                outcome = "W" if winner == team else ("L" if winner else "?")
+                outcome = "W" if winner == team else ("L" if winner and winner != team else "?")
                 game_list.append({
                     "game_id": gid,
+                    "date": meta.get("date"),
                     "opponent": opponent or "?",
                     "outcome": outcome,
                     "attempts": sorted(attempts, key=lambda x: x["round"] or 99),
                 })
-            out[team][season] = game_list  # oldest first, page reverses for display
+            out[team][season] = game_list
 
     with open(os.path.join(out_dir, "so_order.json"), "w") as f:
         json.dump(out, f, indent=2)
@@ -777,6 +770,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
         Pure shootingPlayerId -> goalieInNetId mapping. No team logic.
         For older seasons where goalieInNetId is null on missed-shots,
         infers the goalie from other plays in the same game for that team.
+        Returns (pairs, game_date, home_abbrev, away_abbrev)
         """
         try:
             resp = requests.get(f"{pbp_base}/gamecenter/{game_id}/play-by-play", timeout=15)
@@ -785,8 +779,11 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
         except Exception as e:
             if debug:
                 print(f"    [warn] PBP failed game {game_id}: {e}")
-            return []
+            return [], None, None, None
 
+        game_date = pbp.get("gameDate")
+        home_abbrev = pbp.get("homeTeam", {}).get("abbrev")
+        away_abbrev = pbp.get("awayTeam", {}).get("abbrev")
         home_id = pbp.get("homeTeam", {}).get("id")
         away_id = pbp.get("awayTeam", {}).get("id")
 
@@ -877,7 +874,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
             round_num = round_counter[owner_tid]
             result = "goal" if type_key == "goal" else ("miss" if type_key in ("missed-shot","failed-shot-attempt") else "save")
             pairs.append((shooter_id, goalie_id, result, shot_type, miss_reason, round_num))
-        return pairs
+        return pairs, game_date, home_abbrev, away_abbrev
 
     # Build goalie name lookup
     goalie_names = {}
@@ -894,7 +891,7 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
         print(f"    {len(game_ids)} shootout games found")
 
         for game_id in sorted(game_ids):
-            pairs = get_splits_from_pbp(game_id)
+            pairs, game_date, home_abbrev, away_abbrev = get_splits_from_pbp(game_id)
             for shooter_id, goalie_id, result, shot_type, miss_reason, round_num in pairs:
                 gname = goalie_names.get(goalie_id, f"Goalie #{goalie_id}")
                 key = (shooter_id, goalie_id)
@@ -907,9 +904,9 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
                 # Store individual attempt detail
                 conn.execute("""
                     INSERT OR IGNORE INTO so_attempts
-                        (game_id, season, round_num, shooter_id, goalie_id, result, shot_type, miss_reason)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                """, (game_id, season, round_num, shooter_id, goalie_id, result, shot_type, miss_reason))
+                        (game_id, season, game_date, round_num, shooter_id, goalie_id, result, shot_type, miss_reason)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (game_id, season, game_date, round_num, shooter_id, goalie_id, result, shot_type, miss_reason))
             time.sleep(0.15)
         conn.commit()
 

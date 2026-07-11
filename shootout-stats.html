@@ -355,7 +355,7 @@
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap;">
         <select id="soOrderSeason" class="team-select" style="min-width:130px;font-size:13px;padding:8px 12px;"></select>
       </div>
-      <div id="soOrderBody" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;"></div>
+      <div id="soOrderBody" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;min-height:20px;"></div>
     </div>
   </details>
 
@@ -488,6 +488,9 @@ function populateTeamSelects(){
   bSel.value = '';
   aSel.addEventListener('change', renderAll);
   bSel.addEventListener('change', renderAll);
+  // Also update SO order when teams change
+  aSel.addEventListener('change', () => { renderSoOrder(); });
+  bSel.addEventListener('change', () => { renderSoOrder(); });
 }
 
 function pct(pair){
@@ -1001,7 +1004,7 @@ function renderTeamSoOrder(team, season){
     const opp = g.opponent || '?';
     const outcome = g.outcome || '?';
     const outcomeColor = outcome==='W' ? 'var(--save)' : outcome==='L' ? 'var(--goal)' : 'var(--ink-dim)';
-    const gameNum = games.length - gi;
+    const dateLabel = g.date ? g.date : `#${games.length - gi}`;
 
     const chips = attempts.map(att => {
       const cls = att.result==='goal'?'goal':att.result==='save'?'save':'miss';
@@ -1017,8 +1020,8 @@ function renderTeamSoOrder(team, season){
 
     return `<div style="margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--line);">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px;">
-        <span style="font-family:'IBM Plex Mono';font-size:10px;color:var(--ink-dim);">Game ${gameNum} vs ${opp}</span>
-        <span style="font-family:'IBM Plex Mono';font-size:10px;font-weight:700;color:${outcomeColor};">${outcome}</span>
+        <span style="font-family:'IBM Plex Mono';font-size:10px;color:var(--ink-dim);">${dateLabel} vs ${opp}</span>
+        <span style="font-family:'IBM Plex Mono';font-size:10px;font-weight:700;color:${outcomeColor};">${outcome === '?' ? '' : outcome}</span>
       </div>
       ${chips}
     </div>`;
