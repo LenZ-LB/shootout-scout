@@ -258,6 +258,7 @@
     .no-data{ color:#bbb !important; }
     .no-attempts{ display:none !important; }
     .detail-row{ display:none !important; }
+    #searchModal{ display:none !important; }
     .player-name{ color:#111 !important; cursor:default !important; }
     .player-num{ color:#888 !important; font-size:6px !important; }
 
@@ -1071,60 +1072,77 @@ input.addEventListener('input', () => {
     : `<div class="search-result-row"><span class="no-data">No matches loaded</span></div>`;
   results.classList.add('show');
 
-  // Wire up click on each result row
+  // Wire up click — show stats in modal
   results.querySelectorAll('.search-result-row[data-name]').forEach(row => {
     row.addEventListener('click', () => {
       const name = row.dataset.name;
-      const team = row.dataset.team;
       const isGoalie = row.dataset.goalie === 'true';
       results.classList.remove('show');
       input.value = '';
-
       if(isGoalie){
-        // Open goalie detail
         const g = GOALIES.find(g => g.name === name);
-        if(g){
-          const key = `goalie-${g.id}`;
-          openDetails.add(key);
-          // Switch to team if needed
-          const teamA = document.getElementById('teamASelect').value;
-          const teamB = document.getElementById('teamBSelect').value;
-          if(team !== teamA && team !== teamB){
-            document.getElementById('teamBSelect').value = team;
-          }
-          renderAll();
-          setTimeout(()=>{
-            const card = document.querySelector(`[data-goalieid="${g.id}"]`);
-            if(card) card.scrollIntoView({behavior:'smooth', block:'center'});
-          }, 100);
-        }
+        if(g) showSearchModal(null, g);
       } else {
-        // Open player detail
         const p = PLAYERS.find(p => p.name === name);
-        if(p){
-          const key = `player-${p.id}-${team}`;
-          openDetails.add(key);
-          // Switch to team if needed
-          const teamA = document.getElementById('teamASelect').value;
-          const teamB = document.getElementById('teamBSelect').value;
-          if(team !== teamA && team !== teamB){
-            if(document.getElementById('teamASelect').value === 'EDM' || teamA === team){
-              // keep teamA, set teamB to whatever the opponent is
-            } else {
-              document.getElementById('teamBSelect').value = team;
-            }
-          }
-          renderAll();
-          setTimeout(()=>{
-            const el = document.querySelector(`[data-playerid="${p.id}"]`);
-            if(el){ el.closest('tr').scrollIntoView({behavior:'smooth', block:'center'}); }
-          }, 100);
-        }
+        if(p) showSearchModal(p, null);
       }
     });
   });
 });
-document.addEventListener('click', (e) => { if(!e.target.closest('.search-box')) results.classList.remove('show'); });
+document.addEventListener('click', (e) => { if(!e.target.closest('.search-box') && !e.target.closest('#searchModal')) results.classList.remove('show'); });
+
+function showSearchModal(p, g){
+  let existing = document.getElementById('searchModal');
+  if(existing) existing.remove();
+
+  let content, title;
+  if(g){
+    const svPct = g.faced ? ((g.stopped/g.faced)*100).toFixed(1) : '—';
+    const numLabel = g.number ? `#${g.number} ` : '';
+    title = `${numLabel}${g.name} (G) — ${g.team}`;
+    content = `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line);">
+        <div>
+          <div style="font-size:13px;color:var(--ink-muted);">${g.record||''}</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-family:'IBM Plex Mono';font-size:28px;font-weight:700;color:var(--save);">${svPct}%</div>
+          <div style="font-size:11px;color:var(--ink-dim);">${g.stopped} of ${g.faced} stopped</div>
+        </div>
+      </div>
+      ${buildGoalieDetailPanel(g)}`;
+  } else {
+    const numLabel = p.number ? `#${p.number} ` : '';
+    title = `${numLabel}${p.name} — ${p.team||'Retired/UFA'}`;
+    // Show career summary + full detail panel (no opp goalies context)
+    const pctVal = p.career[1]>0 ? ((p.career[0]/p.career[1])*100).toFixed(0)+'%' : '—';
+    const pctColor = p.career[1]>0 && p.career[0]/p.career[1]>=0.40 ? 'var(--hot)' : 'var(--ink)';
+    content = `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line);">
+        <div style="font-size:13px;color:var(--ink-muted);">Career: ${p.career[0]}/${p.career[1]} attempts</div>
+        <div style="font-family:'IBM Plex Mono';font-size:28px;font-weight:700;color:${pctColor};">${pctVal}</div>
+      </div>
+      ${buildDetailPanel(p, [])}`;
+  }
+
+  const modal = document.createElement('div');
+  modal.id = 'searchModal';
+  modal.style.cssText = `
+    position:fixed;top:0;left:0;right:0;bottom:0;z-index:1000;
+    background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;padding:20px;`;
+  modal.innerHTML = `
+    <div style="background:var(--panel);border:1px solid var(--line);border-radius:12px;
+      width:100%;max-width:700px;max-height:90vh;overflow-y:auto;padding:24px;position:relative;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;">
+        <div style="font-family:'Oswald';font-size:20px;font-weight:600;letter-spacing:0.5px;">${title}</div>
+        <button onclick="document.getElementById('searchModal').remove()"
+          style="background:none;border:none;color:var(--ink-muted);font-size:20px;cursor:pointer;padding:0 4px;line-height:1;">&times;</button>
+      </div>
+      ${content}
+    </div>`;
+  modal.addEventListener('click', (e) => { if(e.target === modal) modal.remove(); });
+  document.body.appendChild(modal);
+}
 
 loadData();
 </script>
