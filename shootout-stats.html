@@ -1005,7 +1005,20 @@ function renderTeamSoOrder(team, season){
     const opp = g.opponent || '?';
     const outcome = g.outcome || '?';
     const outcomeColor = outcome==='W' ? 'var(--save)' : outcome==='L' ? 'var(--goal)' : 'var(--ink-dim)';
-    const dateLabel = g.date ? g.date : `#${games.length - gi}`;
+    const gid = String(g.game_id);
+    let dateLabel;
+    if(g.date){
+      // Format 2025-10-08 -> Oct 8 2025
+      const parts = g.date.split('-');
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      dateLabel = `${months[parseInt(parts[1])-1]} ${parseInt(parts[2])}, ${parts[0]}`;
+    } else if(gid.length >= 10){
+      // Derive approximate date context from game_id (YYYYSSGGGG format)
+      const gameNum = parseInt(gid.slice(6));
+      dateLabel = `Game ${gameNum}`;
+    } else {
+      dateLabel = `Game ${games.length - gi}`;
+    }
 
     const chips = attempts.map(att => {
       const cls = att.result==='goal'?'goal':att.result==='save'?'save':'miss';
