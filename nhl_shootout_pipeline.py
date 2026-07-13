@@ -611,20 +611,24 @@ def export_so_order(out_dir="data", conn_override=None):
             game_meta[gid]["teams"].add(r["team"])
 
     # Determine outcome per game per team
-    # The team that scored the deciding goal (last goal) wins
-    # Find the last 'goal' result per game and which team's shooter scored it
+    # The deciding goal is the very last goal in the shootout sequence.
+    # We use the attempt id (autoincrement) as the true ordering since
+    # round_num alone doesn't distinguish which team shot last within a round.
     game_winner = {}
     for row in conn.execute("""
-        SELECT sa.game_id, sa.result,
+        SELECT sa.game_id,
                COALESCE(ss.team_abbrev, ar.team_abbrev) AS team
         FROM so_attempts sa
         LEFT JOIN skater_shootout ss ON ss.player_id=sa.shooter_id AND ss.season=sa.season
         LEFT JOIN active_rosters ar ON ar.player_id=sa.shooter_id
-        WHERE sa.result='goal'
-        ORDER BY sa.game_id, sa.round_num DESC
+        WHERE sa.id IN (
+            SELECT MAX(id) FROM so_attempts
+            WHERE result='goal'
+            GROUP BY game_id
+        )
+        AND sa.result='goal'
     """):
-        # Last goal per game = deciding goal
-        if row["game_id"] not in game_winner and row["team"]:
+        if row["team"]:
             game_winner[row["game_id"]] = row["team"]
 
     # Build output
