@@ -1,0 +1,38 @@
+name: Export JSON Only
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install requests
+
+      - name: Init database (migrates schema if needed)
+        run: python nhl_shootout_pipeline.py --init-db
+
+      - name: Export JSON for the page
+        run: python nhl_shootout_pipeline.py --export-json
+
+      - name: Show so_order.json preview
+        run: |
+          echo "--- so_order.json team count ---"
+          python3 -c "import json; d=json.load(open('data/so_order.json')); print(len(d), 'teams'); edm=d.get('EDM',{}); print('EDM seasons:', list(edm.keys())); print('EDM 20252026 games:', len(edm.get('20252026',[])));  print('First game:', edm.get('20252026',[{}])[0] if edm.get('20252026') else 'none')"
+
+      - name: Commit updated data
+        run: |
+          git config user.name "shootout-scout-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A data
+          git diff --cached --quiet || git commit -m "Re-export JSON data"
+          git push

@@ -569,8 +569,9 @@ def export_json(out_dir="data"):
 
 def export_so_order(out_dir="data", conn_override=None):
     """
-    Export per-team shootout order history using stored home_team/away_team
-    for accurate opponent, outcome, and shooter attribution.
+    Export per-team shootout order history.
+    Uses home_team/away_team when available (populated by build-splits).
+    Falls back to skater_shootout team_abbrev for older data.
     """
     import os, json
     from collections import defaultdict
@@ -578,96 +579,95 @@ def export_so_order(out_dir="data", conn_override=None):
     conn = conn_override or get_conn()
     conn.row_factory = sqlite3.Row
 
-    # Game metadata from stored home/away teams
+    # Build game info from stored home/away where available
     game_info = {}
-    for row in conn.execute(
-        "SELECT DISTINCT game_id, game_date, home_team, away_team FROM so_attempts WHERE home_team IS NOT NULL"
-    ):
+    for row in conn.execute("""
+        SELECT DISTINCT game_id, game_date, home_team, away_team
+        FROM so_attempts WHERE home_team IS NOT NULL AND away_team IS NOT NULL
+    """):
         game_info[row["game_id"]] = {
             "date": row["game_date"],
             "home": row["home_team"],
             "away": row["away_team"],
         }
 
-    # Winner = team whose shooter scored the final (deciding) goal
-    # Identified by goalie_shootout wins per game via the goalie stats API
-    # Since we stored home/away, we can match the deciding shooter to their team
-    game_winner = {}
-    for row in conn.execute("""
-        SELECT sa.game_id, sa.shooter_id, sa.home_team, sa.away_team,
-               g.team_abbrev AS goalie_team
-        FROM so_attempts sa
-        JOIN (SELECT game_id, MAX(id) max_id FROM so_attempts WHERE result='goal' GROUP BY game_id) mx
-             ON mx.game_id=sa.game_id AND mx.max_id=sa.id
-        LEFT JOIN active_rosters g ON g.player_id=sa.goalie_id AND g.is_goalie=1
-        WHERE sa.result='goal' AND sa.home_team IS NOT NULL
-    """):
-        h = row["home_team"]
-        aw = row["away_team"]
-        gt = row["goalie_team"]
-        # Shooter is on the team that is NOT the goalie's team
-        if gt == h:
-            game_winner[row["game_id"]] = aw
-        elif gt == aw:
-            game_winner[row["game_id"]] = h
-
-    # Shooter-to-team mapping using goalie context (most reliable)
-    shooter_team_by_game = defaultdict(dict)
-    for row in conn.execute("""
-        SELECT sa.game_id, sa.shooter_id, sa.home_team, sa.away_team,
-               g.team_abbrev AS goalie_team
-        FROM so_attempts sa
-        LEFT JOIN active_rosters g ON g.player_id=sa.goalie_id AND g.is_goalie=1
-        WHERE sa.home_team IS NOT NULL
-    """):
-        h = row["home_team"]
-        aw = row["away_team"]
-        gt = row["goalie_team"]
-        if gt == h:
-            shooter_team_by_game[row["game_id"]][row["shooter_id"]] = aw
-        elif gt == aw:
-            shooter_team_by_game[row["game_id"]][row["shooter_id"]] = h
-
-    # Get all attempts with player names
+    # Get all attempts with player names and team info
     rows = conn.execute("""
-        SELECT sa.game_id, sa.season, sa.home_team, sa.away_team,
+        SELECT sa.game_id, sa.season, sa.game_date, sa.home_team, sa.away_team,
+               COALESCE(ss.team_abbrev, ar.team_abbrev) AS fallback_team,
                COALESCE(
                    (SELECT sk.full_name FROM skater_shootout sk WHERE sk.player_id=sa.shooter_id LIMIT 1),
                    ar.full_name, 'Player #'||sa.shooter_id
                ) AS shooter_name,
                ar.jersey_number,
-               sa.shooter_id, sa.round_num,
+               sa.shooter_id, sa.goalie_id, sa.round_num,
                sa.result, sa.shot_type, sa.miss_reason
         FROM so_attempts sa
+        LEFT JOIN skater_shootout ss ON ss.player_id=sa.shooter_id AND ss.season=sa.season
         LEFT JOIN active_rosters ar ON ar.player_id=sa.shooter_id
-        WHERE sa.home_team IS NOT NULL
         ORDER BY sa.season DESC, sa.game_id, sa.round_num
     """).fetchall()
 
-    # Build output grouped by team
-    out = defaultdict(lambda: defaultdict(list))
+    # Build goalie->team lookup from active_rosters
+    goalie_teams = {}
+    for row in conn.execute("SELECT player_id, team_abbrev FROM active_rosters WHERE is_goalie=1"):
+        goalie_teams[row["player_id"]] = row["team_abbrev"]
+    # Also from goalie_shootout for historical goalies
+    for row in conn.execute("SELECT goalie_id, team_abbrev FROM goalie_shootout GROUP BY goalie_id"):
+        if row["goalie_id"] not in goalie_teams:
+            goalie_teams[row["goalie_id"]] = row["team_abbrev"]
+
+    # Group attempts by game
     game_attempts = defaultdict(list)
     for r in rows:
         game_attempts[r["game_id"]].append(r)
 
+    # Build per-team output
+    out = defaultdict(lambda: defaultdict(list))
+
     for gid, attempts in game_attempts.items():
-        info = game_info.get(gid, {})
-        home = info.get("home", "")
-        away = info.get("away", "")
-        winner = game_winner.get(gid)
-        if not home or not away:
-            continue
+        info = game_info.get(gid)
+        has_home_away = info and info.get("home") and info.get("away")
         season = attempts[0]["season"]
 
-        for team in (home, away):
-            opponent = away if team == home else home
+        if has_home_away:
+            home, away = info["home"], info["away"]
+            teams = {home, away}
+            date = info.get("date")
+        else:
+            # Fallback: derive teams from fallback_team field
+            teams = {r["fallback_team"] for r in attempts if r["fallback_team"]}
+            home, away = None, None
+            date = None
+
+        if len(teams) < 2:
+            continue
+
+        # Assign each shooter to a team
+        shooter_teams = {}
+        for r in attempts:
+            sid = r["shooter_id"]
+            if has_home_away:
+                # Use goalie context: shooter is on the team NOT matching goalie's team
+                gt = goalie_teams.get(r["goalie_id"])
+                if gt == home:
+                    shooter_teams[sid] = away
+                elif gt == away:
+                    shooter_teams[sid] = home
+                else:
+                    shooter_teams[sid] = r["fallback_team"]
+            else:
+                shooter_teams[sid] = r["fallback_team"]
+
+        # Determine winner from last goal's shooter team
+        goals = [r for r in attempts if r["result"] == "goal"]
+        winner = shooter_teams.get(goals[-1]["shooter_id"]) if goals else None
+
+        for team in teams:
+            opponent = next((t for t in teams if t != team), "?")
             outcome = "W" if winner == team else ("L" if winner else "?")
-            team_attempts = []
-            for r in attempts:
-                shooter_team = shooter_team_by_game.get(gid, {}).get(r["shooter_id"])
-                if shooter_team != team:
-                    continue
-                team_attempts.append({
+            team_attempts = [
+                {
                     "round": r["round_num"],
                     "shooter": r["shooter_name"],
                     "shooter_id": r["shooter_id"],
@@ -675,11 +675,14 @@ def export_so_order(out_dir="data", conn_override=None):
                     "result": r["result"],
                     "shot_type": r["shot_type"] or "unknown",
                     "miss_reason": r["miss_reason"],
-                })
+                }
+                for r in attempts
+                if shooter_teams.get(r["shooter_id"]) == team
+            ]
             if team_attempts:
                 out[team][season].append({
                     "game_id": gid,
-                    "date": info.get("date"),
+                    "date": date,
                     "opponent": opponent,
                     "outcome": outcome,
                     "attempts": sorted(team_attempts, key=lambda x: x["round"] or 99),
@@ -696,7 +699,8 @@ def export_so_order(out_dir="data", conn_override=None):
         json.dump(final_out, f, indent=2)
     if not conn_override:
         conn.close()
-    print(f"Exported shootout order to {out_dir}/so_order.json")
+    print(f"Exported shootout order to {out_dir}/so_order.json ({len(final_out)} teams)")
+
 
 def export_alltime(out_dir="data", top_n=25, min_attempts=15, min_faced=20, conn_override=None):
     os.makedirs(out_dir, exist_ok=True)
