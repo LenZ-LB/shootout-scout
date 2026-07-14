@@ -608,14 +608,7 @@ def export_so_order(out_dir="data", conn_override=None):
         ORDER BY sa.season DESC, sa.game_id, sa.round_num
     """).fetchall()
 
-    # Build goalie->team lookup from active_rosters
-    goalie_teams = {}
-    for row in conn.execute("SELECT player_id, team_abbrev FROM active_rosters WHERE is_goalie=1"):
-        goalie_teams[row["player_id"]] = row["team_abbrev"]
-    # Also from goalie_shootout for historical goalies
-    for row in conn.execute("SELECT goalie_id, team_abbrev FROM goalie_shootout GROUP BY goalie_id"):
-        if row["goalie_id"] not in goalie_teams:
-            goalie_teams[row["goalie_id"]] = row["team_abbrev"]
+    # No goalie team lookup needed - we use majority-vote approach below
 
     # Group attempts by game
     game_attempts = defaultdict(list)
@@ -643,29 +636,36 @@ def export_so_order(out_dir="data", conn_override=None):
         if len(teams) < 2:
             continue
 
-        # Assign each shooter to a team
-        # Priority: fallback_team (from skater_shootout, recorded at game time) is most accurate
-        # for historical data. Goalie context is used only when fallback_team doesn't match
-        # either home or away team (e.g. traded players showing current team).
+        # Assign shooters to teams using majority-vote goalie approach:
+        # Group shooters by the goalie they faced. For each goalie,
+        # the majority of their shooters' fallback_team tells us which
+        # team those shooters were on — reliable even for traded players.
         shooter_teams = {}
-        for r in attempts:
-            sid = r["shooter_id"]
-            ft = r["fallback_team"]
-            if has_home_away:
-                if ft in (home, away):
-                    # skater_shootout team is valid for this game
-                    shooter_teams[sid] = ft
+        if has_home_away:
+            goalie_to_rows = defaultdict(list)
+            for r in attempts:
+                goalie_to_rows[r["goalie_id"]].append(r)
+
+            goalie_team_in_game = {}
+            if len(goalie_to_rows) == 2:
+                for goalie_id, g_rows in goalie_to_rows.items():
+                    home_count = sum(1 for r in g_rows if r["fallback_team"] == home)
+                    away_count = sum(1 for r in g_rows if r["fallback_team"] == away)
+                    if home_count > away_count:
+                        goalie_team_in_game[goalie_id] = away  # home shooters face away goalie
+                    elif away_count > home_count:
+                        goalie_team_in_game[goalie_id] = home
+
+            for r in attempts:
+                goalie_team = goalie_team_in_game.get(r["goalie_id"])
+                if goalie_team:
+                    shooter_teams[r["shooter_id"]] = away if goalie_team == home else home
                 else:
-                    # fallback_team doesn't match either team — use goalie context
-                    gt = goalie_teams.get(r["goalie_id"])
-                    if gt == home:
-                        shooter_teams[sid] = away
-                    elif gt == away:
-                        shooter_teams[sid] = home
-                    else:
-                        shooter_teams[sid] = ft  # last resort
-            else:
-                shooter_teams[sid] = ft
+                    ft = r["fallback_team"]
+                    shooter_teams[r["shooter_id"]] = ft if ft in (home, away) else None
+        else:
+            for r in attempts:
+                shooter_teams[r["shooter_id"]] = r["fallback_team"]
 
         # Determine winner from last goal's shooter team
         goals = [r for r in attempts if r["result"] == "goal"]
