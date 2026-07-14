@@ -644,20 +644,28 @@ def export_so_order(out_dir="data", conn_override=None):
             continue
 
         # Assign each shooter to a team
+        # Priority: fallback_team (from skater_shootout, recorded at game time) is most accurate
+        # for historical data. Goalie context is used only when fallback_team doesn't match
+        # either home or away team (e.g. traded players showing current team).
         shooter_teams = {}
         for r in attempts:
             sid = r["shooter_id"]
+            ft = r["fallback_team"]
             if has_home_away:
-                # Use goalie context: shooter is on the team NOT matching goalie's team
-                gt = goalie_teams.get(r["goalie_id"])
-                if gt == home:
-                    shooter_teams[sid] = away
-                elif gt == away:
-                    shooter_teams[sid] = home
+                if ft in (home, away):
+                    # skater_shootout team is valid for this game
+                    shooter_teams[sid] = ft
                 else:
-                    shooter_teams[sid] = r["fallback_team"]
+                    # fallback_team doesn't match either team — use goalie context
+                    gt = goalie_teams.get(r["goalie_id"])
+                    if gt == home:
+                        shooter_teams[sid] = away
+                    elif gt == away:
+                        shooter_teams[sid] = home
+                    else:
+                        shooter_teams[sid] = ft  # last resort
             else:
-                shooter_teams[sid] = r["fallback_team"]
+                shooter_teams[sid] = ft
 
         # Determine winner from last goal's shooter team
         goals = [r for r in attempts if r["result"] == "goal"]
