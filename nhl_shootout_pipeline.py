@@ -980,6 +980,51 @@ def build_vs_goalie_splits(start_season, end_season, debug=False):
 
 
 
+def backfill_game_dates(debug=False):
+    """
+    Update NULL game_date, home_team, away_team on existing so_attempts rows.
+    Fetches PBP for each unique game_id that is missing this data.
+    Much faster than a full --build-splits rerun.
+    """
+    conn = get_conn()
+    pbp_base = "https://api-web.nhle.com/v1"
+
+    # Find all game_ids that need updating
+    missing = conn.execute("""
+        SELECT DISTINCT game_id FROM so_attempts
+        WHERE game_date IS NULL OR home_team IS NULL
+        ORDER BY game_id
+    """).fetchall()
+    game_ids = [r[0] for r in missing]
+    print(f"Backfilling dates/teams for {len(game_ids)} games...")
+
+    updated = 0
+    for i, game_id in enumerate(game_ids):
+        try:
+            resp = requests.get(f"{pbp_base}/gamecenter/{game_id}/play-by-play", timeout=15)
+            resp.raise_for_status()
+            pbp = resp.json()
+            game_date  = pbp.get("gameDate")
+            home_abbrev = pbp.get("homeTeam", {}).get("abbrev")
+            away_abbrev = pbp.get("awayTeam", {}).get("abbrev")
+            conn.execute("""
+                UPDATE so_attempts
+                SET game_date=?, home_team=?, away_team=?
+                WHERE game_id=? AND (game_date IS NULL OR home_team IS NULL)
+            """, (game_date, home_abbrev, away_abbrev, game_id))
+            updated += 1
+            if debug and i % 50 == 0:
+                print(f"  {i}/{len(game_ids)} done...")
+        except Exception as e:
+            if debug:
+                print(f"  [warn] game {game_id}: {e}")
+        time.sleep(0.15)
+
+    conn.commit()
+    conn.close()
+    print(f"Done — updated {updated} games.")
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="NHL Shootout Stats Pipeline v2")
     ap.add_argument("--init-db", action="store_true")
@@ -987,6 +1032,8 @@ if __name__ == "__main__":
                     help="e.g. --backfill 20052006 20252026")
     ap.add_argument("--build-splits", nargs=2, metavar=("START_SEASON", "END_SEASON"),
                     help="Build vs-goalie splits e.g. --build-splits 20052006 20252026")
+    ap.add_argument("--backfill-dates", action="store_true",
+                    help="Fill in NULL game_date/home_team/away_team on existing so_attempts rows")
     ap.add_argument("--update-rosters", action="store_true")
     ap.add_argument("--export-json", action="store_true")
     ap.add_argument("--debug", action="store_true")
@@ -998,9 +1045,12 @@ if __name__ == "__main__":
         backfill(args.backfill[0], args.backfill[1], debug=args.debug)
     if args.build_splits:
         build_vs_goalie_splits(args.build_splits[0], args.build_splits[1], debug=args.debug)
+    if args.backfill_dates:
+        backfill_game_dates(debug=args.debug)
     if args.update_rosters:
         update_rosters()
     if args.export_json:
         export_json()
-    if not any([args.init_db, args.backfill, args.build_splits, args.update_rosters, args.export_json]):
+    if not any([args.init_db, args.backfill, args.build_splits, args.backfill_dates,
+                args.update_rosters, args.export_json]):
         print(__doc__)

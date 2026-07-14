@@ -21,6 +21,9 @@ jobs:
       - name: Init database (migrates schema if needed)
         run: python nhl_shootout_pipeline.py --init-db
 
+      - name: Backfill missing game dates and home/away teams
+        run: python nhl_shootout_pipeline.py --backfill-dates --debug
+
       - name: Export JSON for the page
         run: python nhl_shootout_pipeline.py --export-json
 
