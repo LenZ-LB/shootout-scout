@@ -1,6 +1,8 @@
 name: Update Shootout Data
 
 on:
+  schedule:
+    - cron: '0 10 * * *'  # 10am UTC = 3am MT, runs every morning after overnight games
   workflow_dispatch:
     inputs:
       run_full_update:
@@ -32,19 +34,15 @@ jobs:
       - name: Update vs-goalie splits and attempt detail (current season)
         run: python nhl_shootout_pipeline.py --build-splits 20252026 20252026 --debug
 
+      - name: Backfill any missing game dates
+        run: python nhl_shootout_pipeline.py --backfill-dates
+
       - name: Refresh rosters
-        if: ${{ github.event.inputs.run_full_update == 'true' }}
+        if: ${{ github.event.inputs.run_full_update == 'true' || github.event_name == 'schedule' }}
         run: python nhl_shootout_pipeline.py --update-rosters
 
       - name: Export JSON for the page
         run: python nhl_shootout_pipeline.py --export-json
-
-      - name: Show what was generated (debug)
-        run: |
-          echo "--- data/ ---"
-          ls -la data/ 2>&1 || echo "data/ missing"
-          echo "--- players.json preview ---"
-          head -c 800 data/players.json 2>&1 || echo "players.json missing"
 
       - name: Commit updated data
         run: |
