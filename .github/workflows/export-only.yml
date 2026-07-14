@@ -36,6 +36,6 @@ jobs:
         run: |
           git config user.name "shootout-scout-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A data
+          git add -A data shootout.db
           git diff --cached --quiet || git commit -m "Re-export JSON data"
           git push
