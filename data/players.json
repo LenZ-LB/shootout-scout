@@ -45566,6 +45566,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8480876,
+    "name": "Curtis Douglas",
+    "team": "SEA",
+    "number": 42,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8480878,
     "name": "Nils Lundkvist",
     "team": "DAL",
