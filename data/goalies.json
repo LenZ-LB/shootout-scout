@@ -3600,7 +3600,7 @@
     "id": 8481035,
     "name": "Samuel Ersson",
     "team": "OTT",
-    "number": null,
+    "number": 30,
     "active": true,
     "stopped": 47,
     "faced": 61,
@@ -3926,6 +3926,66 @@
       "hit-left-post": 1,
       "wide-right": 1,
       "hit-crossbar": 2
+    }
+  },
+  {
+    "id": 8482076,
+    "name": "Nico Daws",
+    "team": "NJD",
+    "number": 50,
+    "active": true,
+    "stopped": 8,
+    "faced": 12,
+    "wins": 2,
+    "losses": 1,
+    "record": "2 W \u2013 1 L in career shootouts",
+    "shots_by_type": {
+      "snap": [
+        1,
+        2
+      ],
+      "backhand": [
+        5,
+        7
+      ],
+      "wrist": [
+        7,
+        10
+      ]
+    },
+    "by_round": {
+      "1": [
+        1,
+        4
+      ],
+      "2": [
+        3,
+        4
+      ],
+      "3": [
+        3,
+        3
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        2,
+        2
+      ],
+      "6": [
+        1,
+        2
+      ],
+      "7": [
+        2,
+        2
+      ]
+    },
+    "miss_reasons": {
+      "over-net": 1,
+      "goalpost": 2
     }
   },
   {
@@ -15425,65 +15485,6 @@
       "wide-of-net": 1,
       "over-net": 1,
       "hit-crossbar": 2
-    }
-  },
-  {
-    "id": 8482076,
-    "name": "Nico Daws",
-    "team": "",
-    "active": false,
-    "stopped": 8,
-    "faced": 12,
-    "wins": 2,
-    "losses": 1,
-    "record": "2 W \u2013 1 L in career shootouts",
-    "shots_by_type": {
-      "snap": [
-        1,
-        2
-      ],
-      "backhand": [
-        5,
-        7
-      ],
-      "wrist": [
-        7,
-        10
-      ]
-    },
-    "by_round": {
-      "1": [
-        1,
-        4
-      ],
-      "2": [
-        3,
-        4
-      ],
-      "3": [
-        3,
-        3
-      ],
-      "4": [
-        1,
-        2
-      ],
-      "5": [
-        2,
-        2
-      ],
-      "6": [
-        1,
-        2
-      ],
-      "7": [
-        2,
-        2
-      ]
-    },
-    "miss_reasons": {
-      "over-net": 1,
-      "goalpost": 2
     }
   },
   {

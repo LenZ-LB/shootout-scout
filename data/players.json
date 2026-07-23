@@ -1,5 +1,171 @@
 [
   {
+    "id": 8474141,
+    "name": "Patrick Kane",
+    "team": "CHI",
+    "number": 88,
+    "active": true,
+    "career": [
+      55,
+      135
+    ],
+    "seasons": {
+      "20072008": [
+        7,
+        9
+      ],
+      "20082009": [
+        3,
+        9
+      ],
+      "20092010": [
+        4,
+        15
+      ],
+      "20102011": [
+        3,
+        10
+      ],
+      "20112012": [
+        6,
+        12
+      ],
+      "20122013": [
+        6,
+        11
+      ],
+      "20132014": [
+        1,
+        11
+      ],
+      "20142015": [
+        6,
+        10
+      ],
+      "20152016": [
+        1,
+        3
+      ],
+      "20162017": [
+        1,
+        5
+      ],
+      "20172018": [
+        1,
+        3
+      ],
+      "20182019": [
+        2,
+        4
+      ],
+      "20192020": [
+        6,
+        8
+      ],
+      "20202021": [
+        0,
+        4
+      ],
+      "20212022": [
+        2,
+        8
+      ],
+      "20222023": [
+        0,
+        4
+      ],
+      "20232024": [
+        3,
+        4
+      ],
+      "20242025": [
+        1,
+        2
+      ],
+      "20252026": [
+        2,
+        3
+      ]
+    },
+    "vs_goalie": {
+      "Jeremy Swayman": [
+        0,
+        1
+      ],
+      "Charlie Lindgren": [
+        1,
+        1
+      ],
+      "Jet Greaves": [
+        1,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Charlie Lindgren": {
+        "snap": [
+          1,
+          1
+        ]
+      },
+      "Jeremy Swayman": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Jet Greaves": {
+        "backhand": [
+          1,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "backhand": [
+        25,
+        63
+      ],
+      "unknown": [
+        7,
+        15
+      ],
+      "snap": [
+        2,
+        5
+      ],
+      "wrist": [
+        21,
+        51
+      ],
+      "slap": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        12,
+        27
+      ],
+      "2": [
+        36,
+        89
+      ],
+      "3": [
+        7,
+        19
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 9,
+      "goalpost": 2,
+      "hit-crossbar": 3,
+      "over-net": 1,
+      "wide-right": 1
+    }
+  },
+  {
     "id": 8471214,
     "name": "Alex Ovechkin",
     "team": "WSH",
@@ -18334,7 +18500,7 @@
     "id": 8483808,
     "name": "Andrei Kuzmenko",
     "team": "PIT",
-    "number": null,
+    "number": 10,
     "active": true,
     "career": [
       5,
@@ -19061,7 +19227,7 @@
     "id": 8478542,
     "name": "Evan Rodrigues",
     "team": "NJD",
-    "number": null,
+    "number": 17,
     "active": true,
     "career": [
       4,
@@ -19326,7 +19492,7 @@
     "id": 8482745,
     "name": "Mason McTavish",
     "team": "STL",
-    "number": null,
+    "number": 83,
     "active": true,
     "career": [
       9,
@@ -22080,7 +22246,7 @@
     "id": 8477511,
     "name": "Anthony Mantha",
     "team": "NJD",
-    "number": null,
+    "number": 39,
     "active": true,
     "career": [
       2,
@@ -24357,7 +24523,7 @@
     "id": 8482667,
     "name": "William Eklund",
     "team": "OTT",
-    "number": null,
+    "number": 27,
     "active": true,
     "career": [
       3,
@@ -24784,7 +24950,7 @@
     "id": 8481580,
     "name": "Connor McMichael",
     "team": "STL",
-    "number": null,
+    "number": 77,
     "active": true,
     "career": [
       0,
@@ -26700,7 +26866,7 @@
     "id": 8477444,
     "name": "Andre Burakovsky",
     "team": "OTT",
-    "number": null,
+    "number": 95,
     "active": true,
     "career": [
       1,
@@ -27001,6 +27167,84 @@
     "miss_reasons": {
       "over-net": 1,
       "wide-right": 1
+    }
+  },
+  {
+    "id": 8478046,
+    "name": "Danton Heinen",
+    "team": "CBJ",
+    "number": 43,
+    "active": true,
+    "career": [
+      0,
+      5
+    ],
+    "seasons": {
+      "20162017": [
+        0,
+        0
+      ],
+      "20172018": [
+        0,
+        2
+      ],
+      "20182019": [
+        0,
+        3
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "wrist": [
+        0,
+        5
+      ]
+    },
+    "by_round": {
+      "8": [
+        0,
+        1
+      ],
+      "4": [
+        0,
+        2
+      ],
+      "6": [
+        0,
+        2
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 2,
+      "goalpost": 1
     }
   },
   {
@@ -33279,7 +33523,7 @@
     "id": 8477845,
     "name": "Trevor van Riemsdyk",
     "team": "PIT",
-    "number": null,
+    "number": 57,
     "active": true,
     "career": [
       0,
@@ -34056,7 +34300,7 @@
     "id": 8481582,
     "name": "Nicholas Robertson",
     "team": "PIT",
-    "number": null,
+    "number": 14,
     "active": true,
     "career": [
       0,
@@ -38398,6 +38642,49 @@
     }
   },
   {
+    "id": 8484177,
+    "name": "Lenni Hameenaho",
+    "team": "NJD",
+    "number": 29,
+    "active": true,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Jakub Dobes": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Jakub Dobes": {
+        "wrist": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "4": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8484241,
     "name": "Matthew Wood",
     "team": "NSH",
@@ -41573,7 +41860,7 @@
     "id": 8477527,
     "name": "Ross Johnston",
     "team": "STL",
-    "number": null,
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -42513,7 +42800,7 @@
     "id": 8478443,
     "name": "Brandon Carlo",
     "team": "STL",
-    "number": null,
+    "number": 25,
     "active": true,
     "career": [
       0,
@@ -45803,7 +46090,7 @@
     "id": 8480990,
     "name": "Declan Chisholm",
     "team": "NJD",
-    "number": null,
+    "number": 47,
     "active": true,
     "career": [
       0,
@@ -45947,7 +46234,7 @@
   },
   {
     "id": 8481030,
-    "name": "John St. Ivany",
+    "name": "Jack St. Ivany",
     "team": "WPG",
     "number": 6,
     "active": true,
@@ -46431,7 +46718,7 @@
     "id": 8481527,
     "name": "Kaedan Korczak",
     "team": "PIT",
-    "number": null,
+    "number": 6,
     "active": true,
     "career": [
       0,
@@ -47594,7 +47881,7 @@
     "id": 8482148,
     "name": "Hendrix Lapierre",
     "team": "PIT",
-    "number": null,
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -48600,7 +48887,7 @@
     "id": 8483398,
     "name": "Declan Carlile",
     "team": "PIT",
-    "number": null,
+    "number": 72,
     "active": true,
     "career": [
       0,
@@ -49146,7 +49433,7 @@
     "id": 8483676,
     "name": "Stephen Halliday",
     "team": "OTT",
-    "number": 83,
+    "number": 34,
     "active": true,
     "career": [
       0,
@@ -49856,7 +50143,7 @@
     "id": 8484759,
     "name": "Carter Yakemchuk",
     "team": "OTT",
-    "number": 58,
+    "number": 26,
     "active": true,
     "career": [
       0,
@@ -50264,7 +50551,7 @@
   },
   {
     "id": 8485702,
-    "name": "Maksim Shabanov",
+    "name": "Maxim Shabanov",
     "team": "MIN",
     "number": 49,
     "active": true,
@@ -50315,171 +50602,6 @@
       ]
     },
     "vs_goalie": {}
-  },
-  {
-    "id": 8474141,
-    "name": "Patrick Kane",
-    "team": "",
-    "active": false,
-    "career": [
-      55,
-      135
-    ],
-    "seasons": {
-      "20072008": [
-        7,
-        9
-      ],
-      "20082009": [
-        3,
-        9
-      ],
-      "20092010": [
-        4,
-        15
-      ],
-      "20102011": [
-        3,
-        10
-      ],
-      "20112012": [
-        6,
-        12
-      ],
-      "20122013": [
-        6,
-        11
-      ],
-      "20132014": [
-        1,
-        11
-      ],
-      "20142015": [
-        6,
-        10
-      ],
-      "20152016": [
-        1,
-        3
-      ],
-      "20162017": [
-        1,
-        5
-      ],
-      "20172018": [
-        1,
-        3
-      ],
-      "20182019": [
-        2,
-        4
-      ],
-      "20192020": [
-        6,
-        8
-      ],
-      "20202021": [
-        0,
-        4
-      ],
-      "20212022": [
-        2,
-        8
-      ],
-      "20222023": [
-        0,
-        4
-      ],
-      "20232024": [
-        3,
-        4
-      ],
-      "20242025": [
-        1,
-        2
-      ],
-      "20252026": [
-        2,
-        3
-      ]
-    },
-    "vs_goalie": {
-      "Jeremy Swayman": [
-        0,
-        1
-      ],
-      "Charlie Lindgren": [
-        1,
-        1
-      ],
-      "Jet Greaves": [
-        1,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Charlie Lindgren": {
-        "snap": [
-          1,
-          1
-        ]
-      },
-      "Jeremy Swayman": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Jet Greaves": {
-        "backhand": [
-          1,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "backhand": [
-        25,
-        63
-      ],
-      "unknown": [
-        7,
-        15
-      ],
-      "snap": [
-        2,
-        5
-      ],
-      "wrist": [
-        21,
-        51
-      ],
-      "slap": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        12,
-        27
-      ],
-      "2": [
-        36,
-        89
-      ],
-      "3": [
-        7,
-        19
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 9,
-      "goalpost": 2,
-      "hit-crossbar": 3,
-      "over-net": 1,
-      "wide-right": 1
-    }
   },
   {
     "id": 8470794,
@@ -90702,83 +90824,6 @@
     }
   },
   {
-    "id": 8478046,
-    "name": "Danton Heinen",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      5
-    ],
-    "seasons": {
-      "20162017": [
-        0,
-        0
-      ],
-      "20172018": [
-        0,
-        2
-      ],
-      "20182019": [
-        0,
-        3
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        0,
-        5
-      ]
-    },
-    "by_round": {
-      "8": [
-        0,
-        1
-      ],
-      "4": [
-        0,
-        2
-      ],
-      "6": [
-        0,
-        2
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 2,
-      "goalpost": 1
-    }
-  },
-  {
     "id": 8480821,
     "name": "Filip Zadina",
     "team": "",
@@ -116695,48 +116740,6 @@
     },
     "shot_types": {
       "backhand": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "4": [
-        0,
-        1
-      ]
-    }
-  },
-  {
-    "id": 8484177,
-    "name": "Lenni Hameenaho",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Jakub Dobes": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Jakub Dobes": {
-        "wrist": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
         0,
         1
       ]
