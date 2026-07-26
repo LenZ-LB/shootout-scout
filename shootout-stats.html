@@ -312,12 +312,36 @@ thead th.vsg-col{background:#d8e3f0;}
 .streak-hot{color:var(--hot);font-size:11px;font-family:'DM Mono',monospace;}
 .streak-cold{color:var(--text3);font-size:11px;font-family:'DM Mono',monospace;}
 
+/* ---- Upcoming games bar ---- */
+.upcoming-bar{
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--radius); padding:10px 14px; margin-bottom:14px;
+  overflow-x:auto;
+}
+.upcoming-bar-label{
+  font-size:10px; font-weight:700; text-transform:uppercase;
+  letter-spacing:0.06em; color:var(--text3);
+  margin-bottom:8px; font-family:'DM Mono',monospace;
+}
+.upcoming-games{display:flex; gap:8px; flex-wrap:nowrap; padding-bottom:2px;}
+.upcoming-game{
+  display:flex; flex-direction:column; align-items:center;
+  padding:7px 12px; border-radius:8px; cursor:pointer;
+  border:1.5px solid var(--border); background:var(--surface);
+  transition:all 0.15s; white-space:nowrap; min-width:72px; flex-shrink:0;
+}
+.upcoming-game:hover{ border-color:var(--oilers-orange); background:var(--surface2); }
+.upcoming-game.selected{ border-color:var(--navy); background:var(--accent-light); }
+.upcoming-game .ug-date{ font-size:10px; color:var(--text3); font-family:'DM Mono',monospace; }
+.upcoming-game .ug-opp{ font-size:14px; font-weight:700; color:var(--navy); font-family:'Rift','Rubik',sans-serif; font-style:italic; text-transform:uppercase; letter-spacing:0.3px; }
+.upcoming-game .ug-loc{ font-size:9px; color:var(--text3); text-transform:uppercase; letter-spacing:0.04em; }
+
 /* ---- Print styles ---- */
 @media print {
   * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
   body{ background:white !important; color:#111 !important; padding:0; margin:0; font-family:'Rubik',sans-serif; }
   .status-banner, .selector-bar, .search-box, #printBtn,
-  .section-toggle, .legend, #searchResults { display:none !important; }
+  .section-toggle, .legend, #searchResults, .upcoming-bar { display:none !important; }
   header{ position:static !important; background:var(--navy) !important; padding:8px 16px !important; margin-bottom:10px !important; }
   .wrap{ padding:0 !important; }
   .scoreboard{ background:white !important; border:none !important; border-bottom:2px solid #111 !important; padding:6px 0 !important; margin-bottom:8px !important; }
@@ -385,6 +409,13 @@ thead th.vsg-col{background:#d8e3f0;}
 <div class="status-banner sample" id="statusBanner">Loading data…</div>
 
 <div class="wrap">
+
+  <div class="upcoming-bar" id="upcomingBar">
+    <div class="upcoming-bar-label" id="upcomingLabel">EDM — Next 10 Games</div>
+    <div class="upcoming-games" id="upcomingGames">
+      <div class="upcoming-game" style="opacity:0.5;pointer-events:none;"><span class="ug-opp">···</span></div>
+    </div>
+  </div>
 
   <div class="scoreboard">
     <div>
@@ -497,6 +528,62 @@ let ALLTIME = null;
 let SO_ORDER = null;
 let usingLive = false;
 
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+async function loadUpcomingGames(){
+  const teamA = document.getElementById('teamASelect').value || 'EDM';
+  const label = document.getElementById('upcomingLabel');
+  const container = document.getElementById('upcomingGames');
+  if(label) label.textContent = `${teamA} — Next 10 Games`;
+  if(!container) return;
+
+  // Try current season first, then next
+  const trySeasons = ['20262027','20252026'];
+  let upcoming = [];
+  for(const season of trySeasons){
+    try{
+      const resp = await fetch(`https://api-web.nhle.com/v1/club-schedule-season/${teamA}/${season}`);
+      if(!resp.ok) continue;
+      const data = await resp.json();
+      const now = new Date();
+      now.setHours(0,0,0,0);
+      upcoming = (data.games || [])
+        .filter(g => g.gameType === 2 && new Date(g.gameDate) >= now)
+        .slice(0, 10);
+      if(upcoming.length) break;
+    }catch(e){}
+  }
+
+  if(!upcoming.length){
+    container.innerHTML = '<div class="upcoming-game" style="opacity:0.5;pointer-events:none;"><span class="ug-date">Off-season</span></div>';
+    return;
+  }
+
+  const selectedB = document.getElementById('teamBSelect').value;
+  container.innerHTML = upcoming.map(g => {
+    const d = new Date(g.gameDate + 'T12:00:00');
+    const dateStr = `${MONTHS[d.getMonth()]} ${d.getDate()}`;
+    const isHome = g.homeTeam?.abbrev === teamA;
+    const opp = isHome ? g.awayTeam?.abbrev : g.homeTeam?.abbrev;
+    const loc = isHome ? 'HOME' : 'AWAY';
+    const sel = opp === selectedB ? ' selected' : '';
+    return `<div class="upcoming-game${sel}" onclick="selectMatchup('${teamA}','${opp}',this)">
+      <span class="ug-date">${dateStr}</span>
+      <span class="ug-opp">${opp}</span>
+      <span class="ug-loc">${loc}</span>
+    </div>`;
+  }).join('');
+}
+
+function selectMatchup(teamA, teamB, el){
+  document.getElementById('teamASelect').value = teamA;
+  document.getElementById('teamBSelect').value = teamB;
+  document.querySelectorAll('.upcoming-game').forEach(e => e.classList.remove('selected'));
+  if(el) el.classList.add('selected');
+  renderAll();
+  renderSoOrder();
+}
+
 async function loadData(){
   try{
     const [pRes, gRes] = await Promise.all([fetch('data/players.json'), fetch('data/goalies.json')]);
@@ -531,6 +618,8 @@ async function loadData(){
   renderAll();
   renderAllTime();
   renderSoOrder();
+  loadUpcomingGames();
+  document.getElementById('teamASelect').addEventListener('change', loadUpcomingGames);
 }
 
 function updateBanner(){
