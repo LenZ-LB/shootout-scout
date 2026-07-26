@@ -504,6 +504,13 @@ async function loadData(){
       PLAYERS = await pRes.json();
       GOALIES = await gRes.json();
       usingLive = true;
+      // Get last updated time from response headers
+      const lastMod = pRes.headers.get('last-modified');
+      if(lastMod){
+        const d = new Date(lastMod);
+        const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        window._lastUpdated = `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()} at ${d.getHours().toString().padStart(2,'0')}:${d.getMinutes().toString().padStart(2,'0')} UTC`;
+      }
       try{
         const mRes = await fetch('data/minor.json');
         if(mRes.ok) MINOR = await mRes.json();
@@ -530,10 +537,11 @@ function updateBanner(){
   const el = document.getElementById('statusBanner');
   if(usingLive){
     el.className = 'status-banner live';
-    el.textContent = 'Live data \u2014 reading from data/players.json and data/goalies.json';
+    const ts = window._lastUpdated ? ` — Last updated: ${window._lastUpdated}` : '';
+    el.textContent = `Live data${ts}`;
   } else {
     el.className = 'status-banner sample';
-    el.textContent = '\u26A0 No live data found yet \u2014 showing sample data (EDM vs WSH from your template). Run the pipeline export to populate data/*.json.';
+    el.textContent = '\u26A0 No live data found yet \u2014 showing sample data. Run the pipeline export to populate data/*.json.';
   }
 }
 
