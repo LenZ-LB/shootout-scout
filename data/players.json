@@ -46323,6 +46323,36 @@
     "vs_goalie": {}
   },
   {
+    "id": 8481056,
+    "name": "Spencer Stastney",
+    "team": "EDM",
+    "number": 24,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8481059,
     "name": "Scott Perunovich",
     "team": "LAK",
