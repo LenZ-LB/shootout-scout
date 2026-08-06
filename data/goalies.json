@@ -4267,6 +4267,42 @@
     }
   },
   {
+    "id": 8482657,
+    "name": "Sebastian Cossa",
+    "team": "UTA",
+    "number": null,
+    "active": true,
+    "stopped": 2,
+    "faced": 3,
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts",
+    "shots_by_type": {
+      "backhand": [
+        2,
+        2
+      ],
+      "wrist": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        1,
+        1
+      ],
+      "2": [
+        1,
+        1
+      ],
+      "3": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8482661,
     "name": "Jesper Wallstedt",
     "team": "MIN",
@@ -4465,42 +4501,6 @@
     },
     "miss_reasons": {
       "wide-left": 1
-    }
-  },
-  {
-    "id": 8483530,
-    "name": "Jaxson Stauber",
-    "team": "UTA",
-    "number": 33,
-    "active": true,
-    "stopped": 2,
-    "faced": 3,
-    "wins": 0,
-    "losses": 1,
-    "record": "0 W \u2013 1 L in career shootouts",
-    "shots_by_type": {
-      "snap": [
-        1,
-        2
-      ],
-      "wrist": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        1,
-        1
-      ],
-      "2": [
-        1,
-        1
-      ],
-      "3": [
-        0,
-        1
-      ]
     }
   },
   {
@@ -16134,22 +16134,22 @@
     }
   },
   {
-    "id": 8482657,
-    "name": "Sebastian Cossa",
+    "id": 8483530,
+    "name": "Jaxson Stauber",
     "team": "",
     "active": false,
     "stopped": 2,
     "faced": 3,
-    "wins": 1,
-    "losses": 0,
-    "record": "1 W \u2013 0 L in career shootouts",
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts",
     "shots_by_type": {
-      "backhand": [
-        2,
+      "snap": [
+        1,
         2
       ],
       "wrist": [
-        0,
+        1,
         1
       ]
     },

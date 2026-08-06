@@ -44347,19 +44347,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8479656,
-    "name": "Cam Hebig",
-    "team": "UTA",
-    "number": 78,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8479661,
     "name": "Tanner Jeannot",
     "team": "BOS",
@@ -47415,24 +47402,6 @@
         0
       ],
       "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8481827,
-    "name": "Ben McCartney",
-    "team": "UTA",
-    "number": 62,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20212022": [
         0,
         0
       ]
