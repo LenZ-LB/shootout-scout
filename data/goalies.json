@@ -1539,6 +1539,125 @@
     }
   },
   {
+    "id": 8477484,
+    "name": "Spencer Martin",
+    "team": "NYR",
+    "number": 41,
+    "active": true,
+    "stopped": 16,
+    "faced": 22,
+    "wins": 2,
+    "losses": 4,
+    "record": "2 W \u2013 4 L in career shootouts",
+    "shots_by_type": {
+      "backhand": [
+        8,
+        10
+      ],
+      "wrist": [
+        8,
+        12
+      ]
+    },
+    "by_round": {
+      "1": [
+        5,
+        6
+      ],
+      "2": [
+        5,
+        6
+      ],
+      "3": [
+        4,
+        6
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        1
+      ],
+      "6": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 6,
+      "wide-right": 1,
+      "above-crossbar": 1
+    }
+  },
+  {
+    "id": 8477831,
+    "name": "Pheonix Copley",
+    "team": "CBJ",
+    "number": 29,
+    "active": true,
+    "stopped": 27,
+    "faced": 39,
+    "wins": 6,
+    "losses": 3,
+    "record": "6 W \u2013 3 L in career shootouts",
+    "shots_by_type": {
+      "backhand": [
+        5,
+        9
+      ],
+      "wrist": [
+        22,
+        30
+      ]
+    },
+    "by_round": {
+      "1": [
+        6,
+        9
+      ],
+      "2": [
+        7,
+        9
+      ],
+      "3": [
+        3,
+        7
+      ],
+      "4": [
+        5,
+        6
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        2,
+        2
+      ],
+      "7": [
+        2,
+        2
+      ],
+      "8": [
+        1,
+        1
+      ],
+      "9": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "over-net": 1,
+      "goalpost": 2,
+      "wide-of-net": 1,
+      "wide-right": 1
+    }
+  },
+  {
     "id": 8477967,
     "name": "Thatcher Demko",
     "team": "VAN",
@@ -1750,6 +1869,18 @@
       "over-net": 1,
       "high-and-wide-right": 1
     }
+  },
+  {
+    "id": 8477990,
+    "name": "Brandon Halverson",
+    "team": "DAL",
+    "number": 33,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8477992,
@@ -2655,6 +2786,18 @@
     }
   },
   {
+    "id": 8479313,
+    "name": "Zach Sawchenko",
+    "team": "CAR",
+    "number": 36,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8479361,
     "name": "Joseph Woll",
     "team": "PHI",
@@ -3064,6 +3207,18 @@
     }
   },
   {
+    "id": 8480022,
+    "name": "Michael DiPietro",
+    "team": "BOS",
+    "number": 80,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8480045,
     "name": "Ukko-Pekka Luukkonen",
     "team": "BUF",
@@ -3200,6 +3355,38 @@
       "wide-left": 1,
       "hit-left-post": 1,
       "wide-right": 1
+    }
+  },
+  {
+    "id": 8480238,
+    "name": "Jiri Patera",
+    "team": "BOS",
+    "number": null,
+    "active": true,
+    "stopped": 2,
+    "faced": 2,
+    "wins": 1,
+    "losses": 0,
+    "record": "1 W \u2013 0 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        1,
+        1
+      ],
+      "backhand": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        1,
+        1
+      ],
+      "2": [
+        1,
+        1
+      ]
     }
   },
   {
@@ -3351,6 +3538,18 @@
     }
   },
   {
+    "id": 8480356,
+    "name": "Kyle Keyser",
+    "team": "SJS",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8480843,
     "name": "Lukas Dostal",
     "team": "ANA",
@@ -3413,6 +3612,18 @@
       "hit-left-post": 2,
       "wide-right": 1
     }
+  },
+  {
+    "id": 8480885,
+    "name": "Olivier Rodrigue",
+    "team": "TBL",
+    "number": 32,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8480947,
@@ -3712,6 +3923,101 @@
     }
   },
   {
+    "id": 8481529,
+    "name": "Trent Miner",
+    "team": "COL",
+    "number": 50,
+    "active": true,
+    "stopped": 2,
+    "faced": 3,
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        2,
+        3
+      ]
+    },
+    "by_round": {
+      "1": [
+        0,
+        1
+      ],
+      "2": [
+        1,
+        1
+      ],
+      "3": [
+        1,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-left": 1
+    }
+  },
+  {
+    "id": 8481544,
+    "name": "Mads Sogaard",
+    "team": "TBL",
+    "number": null,
+    "active": true,
+    "stopped": 5,
+    "faced": 9,
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts",
+    "shots_by_type": {
+      "backhand": [
+        0,
+        3
+      ],
+      "wrist": [
+        5,
+        6
+      ]
+    },
+    "by_round": {
+      "1": [
+        0,
+        1
+      ],
+      "2": [
+        0,
+        1
+      ],
+      "3": [
+        1,
+        1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "5": [
+        1,
+        1
+      ],
+      "6": [
+        1,
+        1
+      ],
+      "7": [
+        0,
+        1
+      ],
+      "8": [
+        1,
+        1
+      ],
+      "9": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8481551,
     "name": "Colten Ellis",
     "team": "BUF",
@@ -3929,6 +4235,30 @@
     }
   },
   {
+    "id": 8481707,
+    "name": "Erik Portillo",
+    "team": "LAK",
+    "number": 1,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8481757,
+    "name": "Carter Gylander",
+    "team": "DET",
+    "number": 31,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8482076,
     "name": "Nico Daws",
     "team": "NJD",
@@ -3987,6 +4317,30 @@
       "over-net": 1,
       "goalpost": 2
     }
+  },
+  {
+    "id": 8482085,
+    "name": "Samuel Hlavaj",
+    "team": "TOR",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8482123,
+    "name": "Drew Commesso",
+    "team": "CHI",
+    "number": 33,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8482137,
@@ -4211,6 +4565,30 @@
     }
   },
   {
+    "id": 8482465,
+    "name": "R\u00e9mi Poirier",
+    "team": "DAL",
+    "number": 31,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8482472,
+    "name": "Henrik Tikkanen",
+    "team": "NYI",
+    "number": 70,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8482487,
     "name": "Jakub Dobes",
     "team": "MTL",
@@ -4265,6 +4643,18 @@
       "hit-right-post": 1,
       "wide-right": 1
     }
+  },
+  {
+    "id": 8482515,
+    "name": "Artur Akhtyamov",
+    "team": "TOR",
+    "number": 70,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8482657,
@@ -4453,6 +4843,54 @@
     }
   },
   {
+    "id": 8482867,
+    "name": "Jakub Malek",
+    "team": "NJD",
+    "number": 85,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8482875,
+    "name": "Aku Koskenvuo",
+    "team": "VAN",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8482914,
+    "name": "Kirill Gerasimyuk",
+    "team": "FLA",
+    "number": 80,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8482949,
+    "name": "Arsenii Sergeev",
+    "team": "CGY",
+    "number": 40,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8482982,
     "name": "Jet Greaves",
     "team": "CBJ",
@@ -4502,6 +4940,42 @@
     "miss_reasons": {
       "wide-left": 1
     }
+  },
+  {
+    "id": 8483114,
+    "name": "Thomas Milic",
+    "team": "WPG",
+    "number": 32,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483475,
+    "name": "Topias Leinonen",
+    "team": "BUF",
+    "number": 50,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483523,
+    "name": "Cameron Whitehead",
+    "team": "VGK",
+    "number": 39,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8483532,
@@ -4564,6 +5038,42 @@
     }
   },
   {
+    "id": 8483575,
+    "name": "Matt Murray",
+    "team": "NSH",
+    "number": 32,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483654,
+    "name": "Luke Cavallin",
+    "team": "BOS",
+    "number": 60,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483659,
+    "name": "Isaac Poulter",
+    "team": "WPG",
+    "number": 30,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8483703,
     "name": "Sergei Murashov",
     "team": "PIT",
@@ -4608,10 +5118,82 @@
     }
   },
   {
-    "id": 8483746,
-    "name": "Vyacheslav Buteyets",
+    "id": 8483711,
+    "name": "Domenic DiVincentiis",
+    "team": "WPG",
+    "number": 50,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483736,
+    "name": "Tyler Muszelik",
+    "team": "FLA",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483751,
+    "name": "Ty Young",
+    "team": "VAN",
+    "number": 85,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483762,
+    "name": "Kevin Reidler",
+    "team": "OTT",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483769,
+    "name": "Samuel Jonsson",
+    "team": "EDM",
+    "number": 34,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483869,
+    "name": "Nolan Lalonde",
+    "team": "CBJ",
+    "number": 31,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8483898,
+    "name": "Tomas Suchanek",
     "team": "ANA",
-    "number": 32,
+    "number": 78,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -4624,6 +5206,18 @@
     "name": "Riley Mercer",
     "team": "MIN",
     "number": 50,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484141,
+    "name": "Trey Augustine",
+    "team": "DET",
+    "number": null,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -4676,6 +5270,42 @@
     }
   },
   {
+    "id": 8484171,
+    "name": "Adam Gajan",
+    "team": "CHI",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484181,
+    "name": "Michael Hrabal",
+    "team": "UTA",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484218,
+    "name": "Scott Ratzlaff",
+    "team": "BUF",
+    "number": 34,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8484268,
     "name": "Nikita Tolopilo",
     "team": "VAN",
@@ -4716,10 +5346,298 @@
     }
   },
   {
+    "id": 8484391,
+    "name": "Damian Clara",
+    "team": "ANA",
+    "number": 68,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484417,
+    "name": "Hampton Slukynsky",
+    "team": "LAK",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484440,
+    "name": "Ruslan Khazheyev",
+    "team": "CAR",
+    "number": 80,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484442,
+    "name": "Arno Tiefensee",
+    "team": "DAL",
+    "number": 50,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484455,
+    "name": "Nathaniel Day",
+    "team": "EDM",
+    "number": 40,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484900,
+    "name": "Cooper Black",
+    "team": "FLA",
+    "number": 31,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484996,
+    "name": "Ilya Nabokov",
+    "team": "COL",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8484997,
+    "name": "Evan Gardner",
+    "team": "CBJ",
+    "number": 35,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485002,
+    "name": "Pavel Moysevich",
+    "team": "VGK",
+    "number": 83,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485003,
+    "name": "Kim Saarinen",
+    "team": "SEA",
+    "number": 45,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485012,
+    "name": "Kirill Zarubin",
+    "team": "CGY",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8485037,
     "name": "Chase Wutzke",
     "team": "MIN",
     "number": 95,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485142,
+    "name": "Jackson Parsons",
+    "team": "OTT",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485401,
+    "name": "Aleksei Medvedev",
+    "team": "VAN",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485473,
+    "name": "Isak Posch",
+    "team": "NSH",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485489,
+    "name": "Callum Tung",
+    "team": "NYR",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485538,
+    "name": "Simon Zajicek",
+    "team": "BOS",
+    "number": 85,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485545,
+    "name": "Michal Postava",
+    "team": "DET",
+    "number": 35,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485569,
+    "name": "Gabriel D'Aigle",
+    "team": "PIT",
+    "number": 35,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485580,
+    "name": "Lucas Beckman",
+    "team": "OTT",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8485729,
+    "name": "Stanislav Berezhnoy",
+    "team": "CHI",
+    "number": 31,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8486136,
+    "name": "Joshua Kotai",
+    "team": "NYI",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8486148,
+    "name": "Max Lundgren",
+    "team": "BOS",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8486206,
+    "name": "Nikita Novosyolov",
+    "team": "COL",
+    "number": null,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
+    "id": 8486275,
+    "name": "Filip Ruzicka",
+    "team": "MIN",
+    "number": null,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -14983,71 +15901,6 @@
     }
   },
   {
-    "id": 8477831,
-    "name": "Pheonix Copley",
-    "team": "",
-    "active": false,
-    "stopped": 27,
-    "faced": 39,
-    "wins": 6,
-    "losses": 3,
-    "record": "6 W \u2013 3 L in career shootouts",
-    "shots_by_type": {
-      "backhand": [
-        5,
-        9
-      ],
-      "wrist": [
-        22,
-        30
-      ]
-    },
-    "by_round": {
-      "1": [
-        6,
-        9
-      ],
-      "2": [
-        7,
-        9
-      ],
-      "3": [
-        3,
-        7
-      ],
-      "4": [
-        5,
-        6
-      ],
-      "5": [
-        1,
-        2
-      ],
-      "6": [
-        2,
-        2
-      ],
-      "7": [
-        2,
-        2
-      ],
-      "8": [
-        1,
-        1
-      ],
-      "9": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "over-net": 1,
-      "goalpost": 2,
-      "wide-of-net": 1,
-      "wide-right": 1
-    }
-  },
-  {
     "id": 8477361,
     "name": "Calvin Petersen",
     "team": "",
@@ -15627,58 +16480,6 @@
     }
   },
   {
-    "id": 8477484,
-    "name": "Spencer Martin",
-    "team": "",
-    "active": false,
-    "stopped": 16,
-    "faced": 22,
-    "wins": 2,
-    "losses": 4,
-    "record": "2 W \u2013 4 L in career shootouts",
-    "shots_by_type": {
-      "backhand": [
-        8,
-        10
-      ],
-      "wrist": [
-        8,
-        12
-      ]
-    },
-    "by_round": {
-      "1": [
-        5,
-        6
-      ],
-      "2": [
-        5,
-        6
-      ],
-      "3": [
-        4,
-        6
-      ],
-      "4": [
-        1,
-        2
-      ],
-      "5": [
-        1,
-        1
-      ],
-      "6": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 6,
-      "wide-right": 1,
-      "above-crossbar": 1
-    }
-  },
-  {
     "id": 8477457,
     "name": "Zach Fucale",
     "team": "",
@@ -15821,65 +16622,6 @@
     }
   },
   {
-    "id": 8481544,
-    "name": "Mads Sogaard",
-    "team": "",
-    "active": false,
-    "stopped": 5,
-    "faced": 9,
-    "wins": 0,
-    "losses": 1,
-    "record": "0 W \u2013 1 L in career shootouts",
-    "shots_by_type": {
-      "backhand": [
-        0,
-        3
-      ],
-      "wrist": [
-        5,
-        6
-      ]
-    },
-    "by_round": {
-      "1": [
-        0,
-        1
-      ],
-      "2": [
-        0,
-        1
-      ],
-      "3": [
-        1,
-        1
-      ],
-      "4": [
-        1,
-        1
-      ],
-      "5": [
-        1,
-        1
-      ],
-      "6": [
-        1,
-        1
-      ],
-      "7": [
-        0,
-        1
-      ],
-      "8": [
-        1,
-        1
-      ],
-      "9": [
-        0,
-        1
-      ]
-    }
-  },
-  {
     "id": 8478971,
     "name": "Connor Ingram",
     "team": "",
@@ -15941,37 +16683,6 @@
       "wide-of-net": 1,
       "over-net": 1,
       "wide-right": 1
-    }
-  },
-  {
-    "id": 8480238,
-    "name": "Jiri Patera",
-    "team": "",
-    "active": false,
-    "stopped": 2,
-    "faced": 2,
-    "wins": 1,
-    "losses": 0,
-    "record": "1 W \u2013 0 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        1,
-        1
-      ],
-      "backhand": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        1,
-        1
-      ],
-      "2": [
-        1,
-        1
-      ]
     }
   },
   {
@@ -16166,40 +16877,6 @@
         0,
         1
       ]
-    }
-  },
-  {
-    "id": 8481529,
-    "name": "Trent Miner",
-    "team": "",
-    "active": false,
-    "stopped": 2,
-    "faced": 3,
-    "wins": 0,
-    "losses": 1,
-    "record": "0 W \u2013 1 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        2,
-        3
-      ]
-    },
-    "by_round": {
-      "1": [
-        0,
-        1
-      ],
-      "2": [
-        1,
-        1
-      ],
-      "3": [
-        1,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-left": 1
     }
   }
 ]
