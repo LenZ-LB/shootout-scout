@@ -32551,7 +32551,7 @@
     "id": 8482117,
     "name": "Lukas Reichel",
     "team": "BOS",
-    "number": 75,
+    "number": 76,
     "active": true,
     "career": [
       0,
@@ -34851,6 +34851,48 @@
       "5": [
         0,
         2
+      ]
+    }
+  },
+  {
+    "id": 8482737,
+    "name": "Zachary Bolduc",
+    "team": "MTL",
+    "number": 76,
+    "active": true,
+    "career": [
+      0,
+      2
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        2
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "wrist": [
+        0,
+        2
+      ]
+    },
+    "by_round": {
+      "7": [
+        0,
+        1
+      ],
+      "4": [
+        0,
+        1
       ]
     }
   },
@@ -38662,48 +38704,6 @@
     }
   },
   {
-    "id": 8481704,
-    "name": "Juuso Parssinen",
-    "team": "NYR",
-    "number": 71,
-    "active": true,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20222023": [
-        0,
-        1
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "6": [
-        0,
-        1
-      ]
-    }
-  },
-  {
     "id": 8481721,
     "name": "Arseny Gritsyuk",
     "team": "NJD",
@@ -40350,52 +40350,6 @@
         0
       ],
       "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8475413,
-    "name": "Justin Dowling",
-    "team": "NYR",
-    "number": 37,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20162017": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
         0,
         0
       ],
@@ -44268,36 +44222,6 @@
         0
       ],
       "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8478446,
-    "name": "Glenn Gawdin",
-    "team": "NYR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
         0,
         0
       ]
@@ -50407,28 +50331,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8481743,
-    "name": "Marc Del Gaizo",
-    "team": "NYR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8481754,
     "name": "Nikita Nesterenko",
     "team": "ANA",
@@ -52130,32 +52032,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482666,
-    "name": "Scott Morrow",
-    "team": "NYR",
-    "number": 60,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482674,
     "name": "Tyler Boucher",
     "team": "OTT",
@@ -52760,19 +52636,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482806,
-    "name": "William Trudeau",
-    "team": "NYR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482839,
     "name": "Cole Clayton",
     "team": "VAN",
@@ -52848,6 +52711,32 @@
       0
     ],
     "seasons": {},
+    "vs_goalie": {}
+  },
+  {
+    "id": 8482861,
+    "name": "Vincent Iorio",
+    "team": "NYR",
+    "number": 6,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
     "vs_goalie": {}
   },
   {
@@ -53057,19 +52946,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482928,
-    "name": "Brody Lamb",
-    "team": "NYR",
-    "number": 46,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482929,
     "name": "Emil Lilleberg",
     "team": "TBL",
@@ -53184,10 +53060,40 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482964,
+    "name": "Arber Xhekaj",
+    "team": "MTL",
+    "number": 72,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8483017,
     "name": "Frederic Brunet",
     "team": "BOS",
-    "number": 59,
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -53962,6 +53868,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483479,
+    "name": "Cruz Lucius",
+    "team": "ANA",
+    "number": null,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8483480,
     "name": "Paul Ludwinski",
     "team": "CHI",
@@ -54038,19 +53957,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483486,
-    "name": "Bryce McConnell-Barker",
-    "team": "NYR",
-    "number": 47,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -54689,19 +54595,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483685,
-    "name": "Aidan Thompson",
-    "team": "NYR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483686,
     "name": "Adam Engstrom",
     "team": "MTL",
@@ -55016,19 +54909,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483750,
-    "name": "Jackson Dorrington",
-    "team": "NYR",
-    "number": 83,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483755,
     "name": "Jake Richard",
     "team": "BUF",
@@ -55297,7 +55177,7 @@
     "id": 8483930,
     "name": "Ivan Ivan",
     "team": "BOS",
-    "number": null,
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -56065,19 +55945,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484236,
-    "name": "Carey Terrance",
-    "team": "NYR",
-    "number": 62,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484238,
     "name": "Anton Wahlberg",
     "team": "ANA",
@@ -56618,19 +56485,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484461,
-    "name": "Dylan Roobroeck",
-    "team": "NYR",
-    "number": 54,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484464,
     "name": "Noah Chadwick",
     "team": "TOR",
@@ -57091,32 +56945,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484785,
-    "name": "Jacob Battaglia",
-    "team": "NYR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484786,
-    "name": "Cole Beaudoin",
-    "team": "NYR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -57790,19 +57618,6 @@
     "name": "Chase Pietila",
     "team": "PIT",
     "number": 44,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485039,
-    "name": "Nathan Aspinall",
-    "team": "NYR",
-    "number": 95,
     "active": true,
     "career": [
       0,
@@ -58594,19 +58409,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485957,
-    "name": "Alberts Smits",
-    "team": "NYR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -112941,47 +112743,6 @@
     }
   },
   {
-    "id": 8482737,
-    "name": "Zachary Bolduc",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      2
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        2
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        0,
-        2
-      ]
-    },
-    "by_round": {
-      "7": [
-        0,
-        1
-      ],
-      "4": [
-        0,
-        1
-      ]
-    }
-  },
-  {
     "id": 8460555,
     "name": "Jason Strudwick",
     "team": "",
@@ -124160,6 +123921,47 @@
     },
     "miss_reasons": {
       "wide-left": 1
+    }
+  },
+  {
+    "id": 8481704,
+    "name": "Juuso Parssinen",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        1
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "wrist": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "6": [
+        0,
+        1
+      ]
     }
   },
   {
