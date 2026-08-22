@@ -5101,18 +5101,6 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8483762,
-    "name": "Kevin Reidler",
-    "team": "OTT",
-    "number": null,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8483769,
     "name": "Samuel Jonsson",
     "team": "EDM",
@@ -5437,18 +5425,6 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8485142,
-    "name": "Jackson Parsons",
-    "team": "OTT",
-    "number": null,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8485401,
     "name": "Aleksei Medvedev",
     "team": "VAN",
@@ -5489,30 +5465,6 @@
     "name": "Michal Postava",
     "team": "DET",
     "number": 35,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8485569,
-    "name": "Gabriel D'Aigle",
-    "team": "PIT",
-    "number": 35,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8485580,
-    "name": "Lucas Beckman",
-    "team": "OTT",
-    "number": null,
     "active": true,
     "stopped": 0,
     "faced": 0,
