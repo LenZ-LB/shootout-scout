@@ -44766,19 +44766,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8478867,
-    "name": "Spencer Smallman",
-    "team": "WSH",
-    "number": 81,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8478882,
     "name": "Vladislav Gavrikov",
     "team": "NYR",
@@ -50870,19 +50857,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482140,
-    "name": "Theodor Niederbach",
-    "team": "WSH",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482141,
     "name": "Lukas Cormier",
     "team": "VGK",
@@ -55283,7 +55257,7 @@
     "id": 8484174,
     "name": "Andrew Gibson",
     "team": "NSH",
-    "number": 53,
+    "number": 92,
     "active": true,
     "career": [
       0,
@@ -57189,7 +57163,7 @@
     "id": 8485004,
     "name": "Matvei Shuravin",
     "team": "FLA",
-    "number": null,
+    "number": 76,
     "active": true,
     "career": [
       0,
@@ -57202,7 +57176,7 @@
     "id": 8485005,
     "name": "Hiroki Gojsic",
     "team": "NSH",
-    "number": 92,
+    "number": 53,
     "active": true,
     "career": [
       0,
@@ -57332,19 +57306,6 @@
     "id": 8485074,
     "name": "Stevie Leskovar",
     "team": "MIN",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485080,
-    "name": "Petr Sikora",
-    "team": "WSH",
     "number": null,
     "active": true,
     "career": [
@@ -57789,19 +57750,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485470,
-    "name": "Tyler Kopff",
-    "team": "WSH",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
