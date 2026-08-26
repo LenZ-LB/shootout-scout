@@ -45658,40 +45658,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8479439,
-    "name": "Jacob MacDonald",
-    "team": "WSH",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20182019": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8479442,
     "name": "Troy Stecher",
     "team": "TOR",
@@ -49938,7 +49904,7 @@
     "id": 8481679,
     "name": "Maxence Guenette",
     "team": "BOS",
-    "number": null,
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -50214,7 +50180,7 @@
     "id": 8481817,
     "name": "Navrin Mutter",
     "team": "BOS",
-    "number": null,
+    "number": 74,
     "active": true,
     "career": [
       0,
@@ -52541,7 +52507,7 @@
     "id": 8482868,
     "name": "Kalle Vaisanen",
     "team": "BOS",
-    "number": null,
+    "number": 79,
     "active": true,
     "career": [
       0,
@@ -53967,7 +53933,7 @@
     "id": 8483531,
     "name": "Brian Halonen",
     "team": "BOS",
-    "number": null,
+    "number": 48,
     "active": true,
     "career": [
       0,
@@ -56361,7 +56327,7 @@
     "id": 8484583,
     "name": "Attilio Biasca",
     "team": "BOS",
-    "number": null,
+    "number": 71,
     "active": true,
     "career": [
       0,
