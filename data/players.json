@@ -20229,7 +20229,7 @@
     "id": 8478042,
     "name": "Viktor Arvidsson",
     "team": "DET",
-    "number": null,
+    "number": 33,
     "active": true,
     "career": [
       4,
@@ -31520,67 +31520,6 @@
         0,
         1
       ]
-    }
-  },
-  {
-    "id": 8479346,
-    "name": "Dillon Dube",
-    "team": "STL",
-    "number": null,
-    "active": true,
-    "career": [
-      1,
-      3
-    ],
-    "seasons": {
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        1,
-        1
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        1
-      ],
-      "20232024": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "backhand": [
-        1,
-        3
-      ]
-    },
-    "by_round": {
-      "7": [
-        1,
-        1
-      ],
-      "2": [
-        0,
-        1
-      ],
-      "5": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 1
     }
   },
   {
@@ -44017,7 +43956,7 @@
     "id": 8478434,
     "name": "Keegan Kolesar",
     "team": "DET",
-    "number": null,
+    "number": 55,
     "active": true,
     "career": [
       0,
@@ -44479,7 +44418,7 @@
     "id": 8478569,
     "name": "Noel Acciari",
     "team": "PHI",
-    "number": null,
+    "number": 52,
     "active": true,
     "career": [
       0,
@@ -47089,7 +47028,7 @@
     "id": 8480196,
     "name": "Jacob Bryson",
     "team": "DET",
-    "number": null,
+    "number": 78,
     "active": true,
     "career": [
       0,
@@ -48624,7 +48563,7 @@
     "id": 8481122,
     "name": "Simon Benoit",
     "team": "PHI",
-    "number": null,
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -49088,7 +49027,7 @@
     "id": 8481521,
     "name": "Ronnie Attard",
     "team": "DET",
-    "number": null,
+    "number": 56,
     "active": true,
     "career": [
       0,
@@ -51209,7 +51148,7 @@
     "id": 8482184,
     "name": "Theo Rochette",
     "team": "DET",
-    "number": null,
+    "number": 48,
     "active": true,
     "career": [
       0,
@@ -51969,7 +51908,7 @@
     "id": 8482714,
     "name": "Chase Stillman",
     "team": "DET",
-    "number": null,
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -52267,7 +52206,7 @@
     "id": 8482777,
     "name": "Shai Buium",
     "team": "DET",
-    "number": 22,
+    "number": 17,
     "active": true,
     "career": [
       0,
@@ -52849,7 +52788,7 @@
     "id": 8483045,
     "name": "Cameron Butler",
     "team": "DET",
-    "number": 58,
+    "number": 47,
     "active": true,
     "career": [
       0,
@@ -53360,7 +53299,7 @@
     "id": 8483459,
     "name": "Dylan James",
     "team": "DET",
-    "number": null,
+    "number": 70,
     "active": true,
     "career": [
       0,
@@ -54266,7 +54205,7 @@
     "id": 8483679,
     "name": "Anton Johansson",
     "team": "DET",
-    "number": null,
+    "number": 42,
     "active": true,
     "career": [
       0,
@@ -54418,19 +54357,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483705,
-    "name": "Arseni Koromyslov",
-    "team": "STL",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483709,
     "name": "Abram Wiebe",
     "team": "CGY",
@@ -54532,7 +54458,7 @@
     "id": 8483733,
     "name": "Nikita Grebenkin",
     "team": "PHI",
-    "number": 29,
+    "number": 17,
     "active": true,
     "career": [
       0,
@@ -54942,7 +54868,7 @@
     "id": 8484142,
     "name": "Denver Barkey",
     "team": "PHI",
-    "number": 52,
+    "number": 86,
     "active": true,
     "career": [
       0,
@@ -55153,7 +55079,7 @@
     "id": 8484161,
     "name": "Noah Dower Nilsson",
     "team": "DET",
-    "number": null,
+    "number": 74,
     "active": true,
     "career": [
       0,
@@ -55271,7 +55197,7 @@
     "id": 8484183,
     "name": "Jesse Kiiskinen",
     "team": "DET",
-    "number": null,
+    "number": 79,
     "active": true,
     "career": [
       0,
@@ -55875,7 +55801,7 @@
     "id": 8484380,
     "name": "Wilmer Skoog",
     "team": "DET",
-    "number": null,
+    "number": 73,
     "active": true,
     "career": [
       0,
@@ -56497,7 +56423,7 @@
     "id": 8484779,
     "name": "Jett Luchanko",
     "team": "PHI",
-    "number": 17,
+    "number": 77,
     "active": true,
     "career": [
       0,
@@ -56805,7 +56731,7 @@
     "id": 8484836,
     "name": "Ondrej Becher",
     "team": "DET",
-    "number": null,
+    "number": 57,
     "active": true,
     "career": [
       0,
@@ -56910,19 +56836,6 @@
     "name": "Kevin He",
     "team": "WPG",
     "number": 46,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484865,
-    "name": "Colin Ralph",
-    "team": "STL",
-    "number": null,
     "active": true,
     "career": [
       0,
@@ -57425,7 +57338,7 @@
     "id": 8485362,
     "name": "Carter Bear",
     "team": "DET",
-    "number": null,
+    "number": 41,
     "active": true,
     "career": [
       0,
@@ -106258,6 +106171,66 @@
     },
     "miss_reasons": {
       "goalpost": 1
+    }
+  },
+  {
+    "id": 8479346,
+    "name": "Dillon Dube",
+    "team": "",
+    "active": false,
+    "career": [
+      1,
+      3
+    ],
+    "seasons": {
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        1,
+        1
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        1
+      ],
+      "20232024": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "backhand": [
+        1,
+        3
+      ]
+    },
+    "by_round": {
+      "7": [
+        1,
+        1
+      ],
+      "2": [
+        0,
+        1
+      ],
+      "5": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 1
     }
   },
   {
