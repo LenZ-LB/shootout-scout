@@ -53405,6 +53405,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483466,
+    "name": "Kevin Korchinski",
+    "team": "CHI",
+    "number": 14,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8483467,
     "name": "Kirill Kudryavtsev",
     "team": "VAN",
