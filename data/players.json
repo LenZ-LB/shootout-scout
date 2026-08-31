@@ -47730,6 +47730,36 @@
     "vs_goalie": {}
   },
   {
+    "id": 8480831,
+    "name": "Alec Regula",
+    "team": "EDM",
+    "number": 75,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8480834,
     "name": "Ty Emberson",
     "team": "EDM",
@@ -49883,7 +49913,7 @@
     "id": 8481699,
     "name": "Aku Raty",
     "team": "EDM",
-    "number": null,
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -51567,7 +51597,7 @@
     "id": 8482631,
     "name": "Eduards Tralmaks",
     "team": "EDM",
-    "number": null,
+    "number": 36,
     "active": true,
     "career": [
       0,
@@ -57294,7 +57324,7 @@
     "id": 8485163,
     "name": "Tomas Cibulka",
     "team": "EDM",
-    "number": null,
+    "number": 78,
     "active": true,
     "career": [
       0,
@@ -58118,7 +58148,7 @@
     "id": 8486161,
     "name": "Owen Michaels",
     "team": "EDM",
-    "number": 27,
+    "number": 43,
     "active": true,
     "career": [
       0,

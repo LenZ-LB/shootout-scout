@@ -1335,6 +1335,41 @@
     }
   },
   {
+    "id": 8477035,
+    "name": "Matt Tomkins",
+    "team": "EDM",
+    "number": 90,
+    "active": true,
+    "stopped": 1,
+    "faced": 2,
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts",
+    "shots_by_type": {
+      "backhand": [
+        0,
+        1
+      ],
+      "wrist": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        0,
+        1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-right": 1
+    }
+  },
+  {
     "id": 8477424,
     "name": "Juuse Saros",
     "team": "NSH",
@@ -16645,40 +16680,6 @@
     "miss_reasons": {
       "wide-of-net": 1,
       "over-net": 1,
-      "wide-right": 1
-    }
-  },
-  {
-    "id": 8477035,
-    "name": "Matt Tomkins",
-    "team": "",
-    "active": false,
-    "stopped": 1,
-    "faced": 2,
-    "wins": 0,
-    "losses": 1,
-    "record": "0 W \u2013 1 L in career shootouts",
-    "shots_by_type": {
-      "backhand": [
-        0,
-        1
-      ],
-      "wrist": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        0,
-        1
-      ],
-      "2": [
-        1,
-        1
-      ]
-    },
-    "miss_reasons": {
       "wide-right": 1
     }
   },
