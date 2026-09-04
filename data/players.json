@@ -21131,7 +21131,7 @@
     "id": 8479525,
     "name": "Ross Colton",
     "team": "NSH",
-    "number": null,
+    "number": 79,
     "active": true,
     "career": [
       5,
@@ -31200,7 +31200,7 @@
     "id": 8477021,
     "name": "Alexander Kerfoot",
     "team": "NSH",
-    "number": null,
+    "number": 14,
     "active": true,
     "career": [
       2,
@@ -38419,7 +38419,7 @@
     "id": 8481535,
     "name": "Nils Hoglander",
     "team": "NSH",
-    "number": null,
+    "number": 21,
     "active": true,
     "career": [
       0,
@@ -47917,7 +47917,7 @@
     "id": 8480835,
     "name": "Jack Drury",
     "team": "NSH",
-    "number": null,
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -48357,7 +48357,7 @@
     "id": 8480950,
     "name": "Ilya Lyubushkin",
     "team": "NSH",
-    "number": null,
+    "number": 46,
     "active": true,
     "career": [
       0,
@@ -50177,7 +50177,7 @@
     "id": 8481726,
     "name": "Adam Edstrom",
     "team": "NSH",
-    "number": null,
+    "number": 84,
     "active": true,
     "career": [
       0,
@@ -51001,7 +51001,7 @@
     "id": 8482145,
     "name": "Mavrik Bourque",
     "team": "NSH",
-    "number": null,
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -51611,7 +51611,7 @@
     "id": 8482482,
     "name": "Adam Wilsby",
     "team": "NSH",
-    "number": 83,
+    "number": 2,
     "active": true,
     "career": [
       0,
@@ -51645,19 +51645,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482512,
-    "name": "Jackson Hallum",
-    "team": "VGK",
-    "number": 59,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -52079,7 +52066,7 @@
     "id": 8482715,
     "name": "Ryan Ufko",
     "team": "NSH",
-    "number": 85,
+    "number": 12,
     "active": true,
     "career": [
       0,
@@ -53410,19 +53397,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483451,
-    "name": "Jordan Gustafson",
-    "team": "VGK",
-    "number": 38,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483452,
     "name": "Hunter Haight",
     "team": "MIN",
@@ -54687,19 +54661,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483748,
-    "name": "Ben Hemmerling",
-    "team": "VGK",
-    "number": 63,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483755,
     "name": "Jake Richard",
     "team": "BUF",
@@ -54842,19 +54803,6 @@
     "name": "Riley Bezeau",
     "team": "CBJ",
     "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483829,
-    "name": "Joe Fleming",
-    "team": "VGK",
-    "number": 50,
     "active": true,
     "career": [
       0,
@@ -55207,19 +55155,6 @@
     "name": "Jonathan Castagna",
     "team": "CGY",
     "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484155,
-    "name": "Mathieu Cataford",
-    "team": "VGK",
-    "number": 8,
     "active": true,
     "career": [
       0,
@@ -56237,19 +56172,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484466,
-    "name": "Tuomas Uronen",
-    "team": "VGK",
-    "number": 37,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484468,
     "name": "Angus MacDonell",
     "team": "DAL",
@@ -56310,7 +56232,7 @@
     "id": 8484494,
     "name": "Aiden Fink",
     "team": "NSH",
-    "number": 18,
+    "number": 11,
     "active": true,
     "career": [
       0,
@@ -56379,19 +56301,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484532,
-    "name": "Bronson Ride",
-    "team": "VGK",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -57213,7 +57122,7 @@
     "id": 8485000,
     "name": "Viggo Gustafsson",
     "team": "NSH",
-    "number": 46,
+    "number": 40,
     "active": true,
     "career": [
       0,
@@ -57292,19 +57201,6 @@
     "name": "Miroslav Holinka",
     "team": "TOR",
     "number": 98,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485057,
-    "name": "Trent Swick",
-    "team": "VGK",
-    "number": 76,
     "active": true,
     "career": [
       0,
@@ -57427,19 +57323,6 @@
     "name": "Borya Valis",
     "team": "TOR",
     "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485138,
-    "name": "Viliam Kmec",
-    "team": "VGK",
-    "number": 79,
     "active": true,
     "career": [
       0,
@@ -57967,20 +57850,7 @@
     "id": 8485636,
     "name": "Daniel Nieminen",
     "team": "NSH",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485661,
-    "name": "Alexander Weiermair",
-    "team": "VGK",
-    "number": 18,
+    "number": 54,
     "active": true,
     "career": [
       0,
@@ -58372,7 +58242,7 @@
     "id": 8486189,
     "name": "Vitali Pinchuk",
     "team": "NSH",
-    "number": null,
+    "number": 51,
     "active": true,
     "career": [
       0,
