@@ -2403,6 +2403,60 @@
     }
   },
   {
+    "id": 8478492,
+    "name": "Ilya Samsonov",
+    "team": "SJS",
+    "number": null,
+    "active": true,
+    "stopped": 30,
+    "faced": 47,
+    "wins": 8,
+    "losses": 7,
+    "record": "8 W \u2013 7 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        21,
+        33
+      ],
+      "backhand": [
+        6,
+        10
+      ],
+      "snap": [
+        3,
+        4
+      ]
+    },
+    "by_round": {
+      "1": [
+        11,
+        15
+      ],
+      "2": [
+        8,
+        15
+      ],
+      "3": [
+        9,
+        12
+      ],
+      "4": [
+        1,
+        4
+      ],
+      "5": [
+        1,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 4,
+      "wide-right": 2,
+      "hit-right-post": 2,
+      "hit-left-post": 2
+    }
+  },
+  {
     "id": 8478499,
     "name": "Adin Hill",
     "team": "VGK",
@@ -4405,6 +4459,18 @@
     }
   },
   {
+    "id": 8482205,
+    "name": "Will Cranley",
+    "team": "STL",
+    "number": 31,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8482221,
     "name": "Devon Levi",
     "team": "EDM",
@@ -5302,6 +5368,18 @@
       "above-crossbar": 1,
       "wide-right": 1
     }
+  },
+  {
+    "id": 8484312,
+    "name": "Georgii Romanov",
+    "team": "STL",
+    "number": 35,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8484391,
@@ -15961,59 +16039,6 @@
         0,
         1
       ]
-    }
-  },
-  {
-    "id": 8478492,
-    "name": "Ilya Samsonov",
-    "team": "",
-    "active": false,
-    "stopped": 30,
-    "faced": 47,
-    "wins": 8,
-    "losses": 7,
-    "record": "8 W \u2013 7 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        21,
-        33
-      ],
-      "backhand": [
-        6,
-        10
-      ],
-      "snap": [
-        3,
-        4
-      ]
-    },
-    "by_round": {
-      "1": [
-        11,
-        15
-      ],
-      "2": [
-        8,
-        15
-      ],
-      "3": [
-        9,
-        12
-      ],
-      "4": [
-        1,
-        4
-      ],
-      "5": [
-        1,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 4,
-      "wide-right": 2,
-      "hit-right-post": 2,
-      "hit-left-post": 2
     }
   },
   {
