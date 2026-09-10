@@ -44481,7 +44481,7 @@
     "id": 8478502,
     "name": "Dennis Gilbert",
     "team": "BUF",
-    "number": 8,
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -46942,6 +46942,36 @@
     "vs_goalie": {}
   },
   {
+    "id": 8480029,
+    "name": "Alex Formenton",
+    "team": "EDM",
+    "number": null,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8480035,
     "name": "Henri Jokiharju",
     "team": "BOS",
@@ -47478,6 +47508,28 @@
         0,
         0
       ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8480291,
+    "name": "Skyler Brind'Amour",
+    "team": "CAR",
+    "number": 76,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
       "20242025": [
         0,
         0
@@ -50196,7 +50248,7 @@
     "id": 8481715,
     "name": "Hunter Skinner",
     "team": "NSH",
-    "number": null,
+    "number": 57,
     "active": true,
     "career": [
       0,
@@ -50593,7 +50645,7 @@
     "id": 8482072,
     "name": "Jack Ahcan",
     "team": "NSH",
-    "number": null,
+    "number": 47,
     "active": true,
     "career": [
       0,
@@ -51809,7 +51861,7 @@
     "id": 8482507,
     "name": "Chase Bradley",
     "team": "NSH",
-    "number": null,
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -52586,6 +52638,28 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482785,
+    "name": "Justin Robidas",
+    "team": "CAR",
+    "number": 46,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482787,
     "name": "Nikita Chibrikov",
     "team": "WPG",
@@ -52637,7 +52711,7 @@
     "id": 8482803,
     "name": "Olen Zellweger",
     "team": "BUF",
-    "number": null,
+    "number": 8,
     "active": true,
     "career": [
       0,
@@ -57290,6 +57364,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8484855,
+    "name": "Tomas Galvas",
+    "team": "PIT",
+    "number": 32,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8484858,
     "name": "Anthony (AJ) Spellacy",
     "team": "CHI",
@@ -57480,7 +57567,7 @@
   },
   {
     "id": 8484987,
-    "name": "Anton Silayev",
+    "name": "Anton Silaev",
     "team": "NJD",
     "number": 52,
     "active": true,
@@ -58229,6 +58316,19 @@
     "name": "Tinus Luc Koblar",
     "team": "TOR",
     "number": null,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
+    "id": 8485587,
+    "name": "Benjamin Rautiainen",
+    "team": "TBL",
+    "number": 41,
     "active": true,
     "career": [
       0,

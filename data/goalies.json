@@ -3315,6 +3315,80 @@
     }
   },
   {
+    "id": 8480051,
+    "name": "Cayden Primeau",
+    "team": "CAR",
+    "number": 55,
+    "active": true,
+    "stopped": 26,
+    "faced": 37,
+    "wins": 3,
+    "losses": 5,
+    "record": "3 W \u2013 5 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        16,
+        26
+      ],
+      "slap": [
+        2,
+        2
+      ],
+      "backhand": [
+        6,
+        6
+      ],
+      "snap": [
+        2,
+        3
+      ]
+    },
+    "by_round": {
+      "1": [
+        6,
+        8
+      ],
+      "2": [
+        6,
+        8
+      ],
+      "3": [
+        5,
+        8
+      ],
+      "4": [
+        3,
+        4
+      ],
+      "5": [
+        2,
+        3
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        1,
+        1
+      ],
+      "8": [
+        1,
+        1
+      ],
+      "9": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "hit-left-post": 2,
+      "wide-left": 1,
+      "hit-right-post": 1,
+      "wide-right": 1
+    }
+  },
+  {
     "id": 8480191,
     "name": "Matt Villalta",
     "team": "BUF",
@@ -16297,79 +16371,6 @@
       "wide-of-net": 1,
       "over-net": 1,
       "hit-crossbar": 2
-    }
-  },
-  {
-    "id": 8480051,
-    "name": "Cayden Primeau",
-    "team": "",
-    "active": false,
-    "stopped": 26,
-    "faced": 37,
-    "wins": 3,
-    "losses": 5,
-    "record": "3 W \u2013 5 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        16,
-        26
-      ],
-      "slap": [
-        2,
-        2
-      ],
-      "backhand": [
-        6,
-        6
-      ],
-      "snap": [
-        2,
-        3
-      ]
-    },
-    "by_round": {
-      "1": [
-        6,
-        8
-      ],
-      "2": [
-        6,
-        8
-      ],
-      "3": [
-        5,
-        8
-      ],
-      "4": [
-        3,
-        4
-      ],
-      "5": [
-        2,
-        3
-      ],
-      "6": [
-        2,
-        3
-      ],
-      "7": [
-        1,
-        1
-      ],
-      "8": [
-        1,
-        1
-      ],
-      "9": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "hit-left-post": 2,
-      "wide-left": 1,
-      "hit-right-post": 1,
-      "wide-right": 1
     }
   },
   {
