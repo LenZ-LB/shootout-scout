@@ -329,6 +329,85 @@
     }
   },
   {
+    "id": 8475660,
+    "name": "Cam Talbot",
+    "team": "CBJ",
+    "number": null,
+    "active": true,
+    "stopped": 87,
+    "faced": 135,
+    "wins": 25,
+    "losses": 16,
+    "record": "25 W \u2013 16 L in career shootouts",
+    "shots_by_type": {
+      "snap": [
+        8,
+        17
+      ],
+      "wrist": [
+        58,
+        87
+      ],
+      "backhand": [
+        18,
+        27
+      ],
+      "slap": [
+        1,
+        2
+      ],
+      "unknown": [
+        2,
+        2
+      ]
+    },
+    "by_round": {
+      "1": [
+        26,
+        41
+      ],
+      "2": [
+        25,
+        41
+      ],
+      "3": [
+        22,
+        31
+      ],
+      "4": [
+        7,
+        8
+      ],
+      "5": [
+        3,
+        4
+      ],
+      "6": [
+        2,
+        4
+      ],
+      "7": [
+        1,
+        3
+      ],
+      "8": [
+        0,
+        2
+      ],
+      "9": [
+        1,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "goalpost": 5,
+      "hit-crossbar": 3,
+      "wide-of-net": 14,
+      "over-net": 2,
+      "wide-left": 1
+    }
+  },
+  {
     "id": 8475683,
     "name": "Sergei Bobrovsky",
     "team": "TOR",
@@ -14690,84 +14769,6 @@
         1,
         3
       ]
-    }
-  },
-  {
-    "id": 8475660,
-    "name": "Cam Talbot",
-    "team": "",
-    "active": false,
-    "stopped": 87,
-    "faced": 135,
-    "wins": 25,
-    "losses": 16,
-    "record": "25 W \u2013 16 L in career shootouts",
-    "shots_by_type": {
-      "snap": [
-        8,
-        17
-      ],
-      "wrist": [
-        58,
-        87
-      ],
-      "backhand": [
-        18,
-        27
-      ],
-      "slap": [
-        1,
-        2
-      ],
-      "unknown": [
-        2,
-        2
-      ]
-    },
-    "by_round": {
-      "1": [
-        26,
-        41
-      ],
-      "2": [
-        25,
-        41
-      ],
-      "3": [
-        22,
-        31
-      ],
-      "4": [
-        7,
-        8
-      ],
-      "5": [
-        3,
-        4
-      ],
-      "6": [
-        2,
-        4
-      ],
-      "7": [
-        1,
-        3
-      ],
-      "8": [
-        0,
-        2
-      ],
-      "9": [
-        1,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "goalpost": 5,
-      "hit-crossbar": 3,
-      "wide-of-net": 14,
-      "over-net": 2,
-      "wide-left": 1
     }
   },
   {

@@ -58630,6 +58630,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8486083,
+    "name": "Juho Piiparinen",
+    "team": "VGK",
+    "number": null,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8486103,
     "name": "Ivar Stenberg",
     "team": "SJS",
