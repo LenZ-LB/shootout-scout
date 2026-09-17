@@ -721,7 +721,7 @@
     "id": 8470621,
     "name": "Corey Perry",
     "team": "LAK",
-    "number": null,
+    "number": 90,
     "active": true,
     "career": [
       34,
@@ -906,7 +906,7 @@
     "id": 8475692,
     "name": "Mats Zuccarello",
     "team": "LAK",
-    "number": null,
+    "number": 36,
     "active": true,
     "career": [
       40,
@@ -21770,7 +21770,7 @@
     "id": 8475287,
     "name": "Erik Haula",
     "team": "LAK",
-    "number": null,
+    "number": 56,
     "active": true,
     "career": [
       3,
@@ -37383,6 +37383,56 @@
     }
   },
   {
+    "id": 8478115,
+    "name": "Pierre Engvall",
+    "team": "NYI",
+    "number": 18,
+    "active": true,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        1
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "wrist": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "6": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8478133,
     "name": "Jake Evans",
     "team": "MTL",
@@ -42191,7 +42241,7 @@
     "id": 8476979,
     "name": "Erik Gustafsson",
     "team": "LAK",
-    "number": null,
+    "number": 64,
     "active": true,
     "career": [
       0,
@@ -45241,7 +45291,7 @@
     "id": 8478967,
     "name": "Lane Pederson",
     "team": "LAK",
-    "number": null,
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -46661,7 +46711,7 @@
     "id": 8479976,
     "name": "Juuso V\u00e4lim\u00e4ki",
     "team": "CAR",
-    "number": null,
+    "number": 8,
     "active": true,
     "career": [
       0,
@@ -47287,7 +47337,7 @@
     "id": 8480058,
     "name": "Pierre-Olivier Joseph",
     "team": "CAR",
-    "number": null,
+    "number": 7,
     "active": true,
     "career": [
       0,
@@ -48628,7 +48678,7 @@
     "id": 8480890,
     "name": "Jan Jenik",
     "team": "LAK",
-    "number": null,
+    "number": 73,
     "active": true,
     "career": [
       0,
@@ -49004,7 +49054,7 @@
     "id": 8481059,
     "name": "Scott Perunovich",
     "team": "LAK",
-    "number": null,
+    "number": 7,
     "active": true,
     "career": [
       0,
@@ -50523,6 +50573,28 @@
         0,
         0
       ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8481732,
+    "name": "Andre Lee",
+    "team": "LAK",
+    "number": 47,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
       "20242025": [
         0,
         0
@@ -52898,6 +52970,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482807,
+    "name": "Ethan Del Mastro",
+    "team": "CHI",
+    "number": 38,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482839,
     "name": "Cole Clayton",
     "team": "VAN",
@@ -53253,19 +53351,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482933,
-    "name": "Jakub Demek",
-    "team": "VGK",
-    "number": 13,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -54312,7 +54397,7 @@
     "id": 8483496,
     "name": "Viktor Neuchev",
     "team": "CAR",
-    "number": null,
+    "number": 79,
     "active": true,
     "career": [
       0,
@@ -54332,6 +54417,32 @@
       0
     ],
     "seasons": {},
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483505,
+    "name": "Matthew Poitras",
+    "team": "BOS",
+    "number": 51,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
     "vs_goalie": {}
   },
   {
@@ -56717,7 +56828,7 @@
     "id": 8484425,
     "name": "Sutter Muzzatti",
     "team": "DET",
-    "number": null,
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -57755,7 +57866,7 @@
     "id": 8484998,
     "name": "Noel Frans\u00e9n",
     "team": "CAR",
-    "number": null,
+    "number": 75,
     "active": true,
     "career": [
       0,
@@ -58113,7 +58224,7 @@
     "id": 8485381,
     "name": "Henry Brzustewicz",
     "team": "LAK",
-    "number": null,
+    "number": 68,
     "active": true,
     "career": [
       0,
@@ -58139,7 +58250,7 @@
     "id": 8485384,
     "name": "Vojtech Cihar",
     "team": "LAK",
-    "number": null,
+    "number": 87,
     "active": true,
     "career": [
       0,
@@ -58311,6 +58422,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8485429,
+    "name": "Jan Chovan",
+    "team": "LAK",
+    "number": 76,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -58514,7 +58638,7 @@
     "id": 8485602,
     "name": "Jimmy Lombardi",
     "team": "LAK",
-    "number": null,
+    "number": 54,
     "active": true,
     "career": [
       0,
@@ -58620,6 +58744,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8486039,
+    "name": "Adam Goljer",
+    "team": "LAK",
+    "number": 41,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8486043,
     "name": "William Hakansson",
     "team": "CAR",
@@ -58664,6 +58801,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8486060,
+    "name": "Liam Lefebvre",
+    "team": "LAK",
+    "number": 95,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8486067,
     "name": "Gavin McKenna",
     "team": "TOR",
@@ -58703,10 +58853,10 @@
     "vs_goalie": {}
   },
   {
-    "id": 8486083,
-    "name": "Juho Piiparinen",
-    "team": "VGK",
-    "number": null,
+    "id": 8486081,
+    "name": "Giorgos Pantelas",
+    "team": "LAK",
+    "number": 84,
     "active": true,
     "career": [
       0,
@@ -58862,7 +59012,7 @@
     "id": 8486160,
     "name": "Grant Slukynsky",
     "team": "LAK",
-    "number": null,
+    "number": 86,
     "active": true,
     "career": [
       0,
@@ -58998,6 +59148,19 @@
     "name": "Tomas Kralovic",
     "team": "TBL",
     "number": 82,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
+    "id": 8486350,
+    "name": "Lucas Ambrosio",
+    "team": "LAK",
+    "number": 98,
     "active": true,
     "career": [
       0,
@@ -123549,55 +123712,6 @@
     },
     "miss_reasons": {
       "wide-of-net": 1
-    }
-  },
-  {
-    "id": 8478115,
-    "name": "Pierre Engvall",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        1
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "6": [
-        0,
-        1
-      ]
     }
   },
   {
