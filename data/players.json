@@ -18961,116 +18961,6 @@
     }
   },
   {
-    "id": 8477503,
-    "name": "Max Domi",
-    "team": "TOR",
-    "number": 11,
-    "active": true,
-    "career": [
-      2,
-      14
-    ],
-    "seasons": {
-      "20152016": [
-        0,
-        1
-      ],
-      "20162017": [
-        0,
-        1
-      ],
-      "20172018": [
-        0,
-        1
-      ],
-      "20182019": [
-        0,
-        1
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        4
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        1
-      ],
-      "20232024": [
-        2,
-        4
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Dan Vladar": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Dan Vladar": {
-        "wrist": [
-          1,
-          2
-        ]
-      }
-    },
-    "shot_types": {
-      "backhand": [
-        0,
-        7
-      ],
-      "wrist": [
-        2,
-        7
-      ]
-    },
-    "by_round": {
-      "2": [
-        0,
-        3
-      ],
-      "3": [
-        0,
-        6
-      ],
-      "7": [
-        0,
-        1
-      ],
-      "4": [
-        1,
-        3
-      ],
-      "5": [
-        1,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 1,
-      "hit-crossbar": 1,
-      "over-net": 2,
-      "goalpost": 1,
-      "hit-right-post": 1
-    }
-  },
-  {
     "id": 8478542,
     "name": "Evan Rodrigues",
     "team": "NJD",
@@ -26614,7 +26504,7 @@
     "id": 8475184,
     "name": "Chris Kreider",
     "team": "MTL",
-    "number": null,
+    "number": 22,
     "active": true,
     "career": [
       1,
@@ -34774,7 +34664,7 @@
     "id": 8481806,
     "name": "Louis Crevier",
     "team": "BUF",
-    "number": null,
+    "number": 46,
     "active": true,
     "career": [
       1,
@@ -42441,7 +42331,7 @@
     "id": 8477149,
     "name": "Scott Sabourin",
     "team": "TBL",
-    "number": 46,
+    "number": 49,
     "active": true,
     "career": [
       0,
@@ -47293,7 +47183,7 @@
     "id": 8480054,
     "name": "Reilly Walsh",
     "team": "MTL",
-    "number": null,
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -48224,7 +48114,7 @@
     "id": 8480828,
     "name": "Michael Callahan",
     "team": "TBL",
-    "number": null,
+    "number": 79,
     "active": true,
     "career": [
       0,
@@ -49994,19 +49884,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8481570,
-    "name": "Cade Webber",
-    "team": "TOR",
-    "number": 52,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8481572,
     "name": "Ville Heinola",
     "team": "VGK",
@@ -50061,7 +49938,7 @@
     "id": 8481591,
     "name": "Samuel Poulin",
     "team": "MTL",
-    "number": null,
+    "number": 88,
     "active": true,
     "career": [
       0,
@@ -50091,7 +49968,7 @@
     "id": 8481592,
     "name": "Jakob Pelletier",
     "team": "TBL",
-    "number": 11,
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -50408,7 +50285,7 @@
     "id": 8481683,
     "name": "Aidan McDonough",
     "team": "BUF",
-    "number": null,
+    "number": 27,
     "active": true,
     "career": [
       0,
@@ -51308,7 +51185,7 @@
     "id": 8482132,
     "name": "Brett Berard",
     "team": "MTL",
-    "number": null,
+    "number": 37,
     "active": true,
     "career": [
       0,
@@ -51671,24 +51548,6 @@
         0,
         0
       ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482174,
-    "name": "William Villeneuve",
-    "team": "TOR",
-    "number": 76,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20252026": [
         0,
         0
@@ -52355,7 +52214,7 @@
     "id": 8482682,
     "name": "Sasha Pastujov",
     "team": "MTL",
-    "number": null,
+    "number": 40,
     "active": true,
     "career": [
       0,
@@ -52381,7 +52240,7 @@
     "id": 8482687,
     "name": "Luke Mittelstadt",
     "team": "MTL",
-    "number": null,
+    "number": 65,
     "active": true,
     "career": [
       0,
@@ -53213,7 +53072,7 @@
     "id": 8482890,
     "name": "Ethan Samson",
     "team": "MTL",
-    "number": null,
+    "number": 74,
     "active": true,
     "career": [
       0,
@@ -55268,7 +55127,7 @@
     "id": 8483755,
     "name": "Jake Richard",
     "team": "BUF",
-    "number": null,
+    "number": 70,
     "active": true,
     "career": [
       0,
@@ -55317,7 +55176,7 @@
     "id": 8483763,
     "name": "Maksymilian Szuber",
     "team": "MTL",
-    "number": null,
+    "number": 79,
     "active": true,
     "career": [
       0,
@@ -55542,7 +55401,7 @@
     "id": 8484125,
     "name": "Hunter McKown",
     "team": "MTL",
-    "number": null,
+    "number": 41,
     "active": true,
     "career": [
       0,
@@ -56003,7 +55862,7 @@
     "id": 8484192,
     "name": "Gavin McCarthy",
     "team": "BUF",
-    "number": null,
+    "number": 62,
     "active": true,
     "career": [
       0,
@@ -56292,7 +56151,7 @@
     "id": 8484233,
     "name": "Maxim Strbak",
     "team": "BUF",
-    "number": null,
+    "number": 64,
     "active": true,
     "career": [
       0,
@@ -56402,7 +56261,7 @@
     "id": 8484255,
     "name": "Jason Polin",
     "team": "BUF",
-    "number": null,
+    "number": 41,
     "active": true,
     "career": [
       0,
@@ -57043,7 +56902,7 @@
     "id": 8484533,
     "name": "Tyler Thorpe",
     "team": "MTL",
-    "number": 24,
+    "number": 54,
     "active": true,
     "career": [
       0,
@@ -57108,7 +56967,7 @@
     "id": 8484757,
     "name": "Zac Funk",
     "team": "BUF",
-    "number": null,
+    "number": 54,
     "active": true,
     "career": [
       0,
@@ -58136,7 +57995,7 @@
     "id": 8485218,
     "name": "Bryce Pickford",
     "team": "MTL",
-    "number": null,
+    "number": 94,
     "active": true,
     "career": [
       0,
@@ -58748,19 +58607,6 @@
     "name": "Adam Goljer",
     "team": "LAK",
     "number": 41,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486043,
-    "name": "William Hakansson",
-    "team": "CAR",
-    "number": null,
     "active": true,
     "career": [
       0,
@@ -84798,6 +84644,115 @@
         0,
         1
       ]
+    }
+  },
+  {
+    "id": 8477503,
+    "name": "Max Domi",
+    "team": "",
+    "active": false,
+    "career": [
+      2,
+      14
+    ],
+    "seasons": {
+      "20152016": [
+        0,
+        1
+      ],
+      "20162017": [
+        0,
+        1
+      ],
+      "20172018": [
+        0,
+        1
+      ],
+      "20182019": [
+        0,
+        1
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        4
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        1
+      ],
+      "20232024": [
+        2,
+        4
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Dan Vladar": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Dan Vladar": {
+        "wrist": [
+          1,
+          2
+        ]
+      }
+    },
+    "shot_types": {
+      "backhand": [
+        0,
+        7
+      ],
+      "wrist": [
+        2,
+        7
+      ]
+    },
+    "by_round": {
+      "2": [
+        0,
+        3
+      ],
+      "3": [
+        0,
+        6
+      ],
+      "7": [
+        0,
+        1
+      ],
+      "4": [
+        1,
+        3
+      ],
+      "5": [
+        1,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 1,
+      "hit-crossbar": 1,
+      "over-net": 2,
+      "goalpost": 1,
+      "hit-right-post": 1
     }
   },
   {
