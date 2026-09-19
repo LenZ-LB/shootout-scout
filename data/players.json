@@ -52517,6 +52517,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482747,
+    "name": "Brennan Othmann",
+    "team": "CGY",
+    "number": 78,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482748,
     "name": "Francesco Pinelli",
     "team": "LAK",
@@ -56718,7 +56744,7 @@
     "id": 8484429,
     "name": "Matthew Andonovski",
     "team": "OTT",
-    "number": null,
+    "number": 82,
     "active": true,
     "career": [
       0,
@@ -58376,6 +58402,19 @@
     "name": "Cooper Gay",
     "team": "COL",
     "number": null,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
+    "id": 8485484,
+    "name": "Damien Carfagna",
+    "team": "EDM",
+    "number": 73,
     "active": true,
     "career": [
       0,
