@@ -8720,6 +8720,160 @@
     }
   },
   {
+    "id": 8476460,
+    "name": "Mark Scheifele",
+    "team": "WPG",
+    "number": 55,
+    "active": true,
+    "career": [
+      12,
+      35
+    ],
+    "seasons": {
+      "20112012": [
+        0,
+        0
+      ],
+      "20122013": [
+        0,
+        0
+      ],
+      "20132014": [
+        0,
+        1
+      ],
+      "20142015": [
+        0,
+        2
+      ],
+      "20152016": [
+        2,
+        3
+      ],
+      "20162017": [
+        1,
+        3
+      ],
+      "20172018": [
+        3,
+        4
+      ],
+      "20182019": [
+        1,
+        2
+      ],
+      "20192020": [
+        2,
+        3
+      ],
+      "20202021": [
+        0,
+        2
+      ],
+      "20212022": [
+        2,
+        6
+      ],
+      "20222023": [
+        1,
+        2
+      ],
+      "20232024": [
+        0,
+        1
+      ],
+      "20242025": [
+        0,
+        3
+      ],
+      "20252026": [
+        0,
+        3
+      ]
+    },
+    "vs_goalie": {
+      "Jakub Dobes": [
+        0,
+        1
+      ],
+      "Daniil Tarasov": [
+        0,
+        1
+      ],
+      "Juuse Saros": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Juuse Saros": {
+        "wrist": [
+          1,
+          2
+        ]
+      },
+      "Daniil Tarasov": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Jakub Dobes": {
+        "snap": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        9,
+        28
+      ],
+      "snap": [
+        1,
+        5
+      ],
+      "backhand": [
+        2,
+        2
+      ]
+    },
+    "by_round": {
+      "6": [
+        0,
+        2
+      ],
+      "5": [
+        0,
+        1
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "3": [
+        5,
+        10
+      ],
+      "2": [
+        4,
+        10
+      ],
+      "1": [
+        2,
+        11
+      ]
+    },
+    "miss_reasons": {
+      "goalpost": 1,
+      "wide-of-net": 2,
+      "hit-crossbar": 1,
+      "hit-left-post": 1,
+      "wide-right": 2
+    }
+  },
+  {
     "id": 8477951,
     "name": "Nick Schmaltz",
     "team": "UTA",
@@ -12056,6 +12210,150 @@
       "over-net": 1,
       "wide-of-net": 1,
       "goalpost": 2
+    }
+  },
+  {
+    "id": 8478398,
+    "name": "Kyle Connor",
+    "team": "WPG",
+    "number": 81,
+    "active": true,
+    "career": [
+      9,
+      26
+    ],
+    "seasons": {
+      "20162017": [
+        0,
+        0
+      ],
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        2,
+        3
+      ],
+      "20192020": [
+        2,
+        5
+      ],
+      "20202021": [
+        1,
+        2
+      ],
+      "20212022": [
+        1,
+        5
+      ],
+      "20222023": [
+        0,
+        2
+      ],
+      "20232024": [
+        0,
+        1
+      ],
+      "20242025": [
+        2,
+        3
+      ],
+      "20252026": [
+        1,
+        5
+      ]
+    },
+    "vs_goalie": {
+      "Dustin Wolf": [
+        0,
+        1
+      ],
+      "Jakub Dobes": [
+        0,
+        1
+      ],
+      "Daniil Tarasov": [
+        0,
+        1
+      ],
+      "Juuse Saros": [
+        0,
+        1
+      ],
+      "Dylan Garand": [
+        1,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Juuse Saros": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Daniil Tarasov": {
+        "backhand": [
+          0,
+          1
+        ]
+      },
+      "Dustin Wolf": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Dylan Garand": {
+        "snap": [
+          1,
+          1
+        ]
+      },
+      "Jakub Dobes": {
+        "snap": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        6,
+        17
+      ],
+      "backhand": [
+        2,
+        7
+      ],
+      "snap": [
+        1,
+        2
+      ]
+    },
+    "by_round": {
+      "5": [
+        1,
+        1
+      ],
+      "1": [
+        5,
+        17
+      ],
+      "2": [
+        3,
+        7
+      ],
+      "3": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "goalpost": 1,
+      "wide-right": 1,
+      "hit-left-post": 1
     }
   },
   {
@@ -15656,6 +15954,128 @@
     "miss_reasons": {
       "wide-of-net": 1,
       "goalpost": 1
+    }
+  },
+  {
+    "id": 8480014,
+    "name": "Gabriel Vilardi",
+    "team": "WPG",
+    "number": 13,
+    "active": true,
+    "career": [
+      6,
+      19
+    ],
+    "seasons": {
+      "20192020": [
+        0,
+        1
+      ],
+      "20202021": [
+        1,
+        2
+      ],
+      "20212022": [
+        0,
+        2
+      ],
+      "20222023": [
+        3,
+        9
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        1
+      ],
+      "20252026": [
+        2,
+        4
+      ]
+    },
+    "vs_goalie": {
+      "Dustin Wolf": [
+        1,
+        1
+      ],
+      "Jakub Dobes": [
+        0,
+        1
+      ],
+      "Juuse Saros": [
+        0,
+        1
+      ],
+      "Dylan Garand": [
+        1,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Juuse Saros": {
+        "wrist": [
+          1,
+          2
+        ]
+      },
+      "Dustin Wolf": {
+        "wrist": [
+          1,
+          1
+        ]
+      },
+      "Dylan Garand": {
+        "snap": [
+          1,
+          1
+        ]
+      },
+      "Jakub Dobes": {
+        "snap": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "backhand": [
+        0,
+        1
+      ],
+      "wrist": [
+        5,
+        16
+      ],
+      "snap": [
+        1,
+        2
+      ]
+    },
+    "by_round": {
+      "3": [
+        1,
+        5
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        2,
+        10
+      ],
+      "2": [
+        2,
+        3
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 5,
+      "hit-crossbar": 1,
+      "hit-right-post": 1
     }
   },
   {
@@ -19583,6 +20003,116 @@
       "above-crossbar": 1,
       "wide-left": 1,
       "wide-right": 1
+    }
+  },
+  {
+    "id": 8475799,
+    "name": "Nino Niederreiter",
+    "team": "WPG",
+    "number": 62,
+    "active": true,
+    "career": [
+      2,
+      12
+    ],
+    "seasons": {
+      "20102011": [
+        0,
+        0
+      ],
+      "20112012": [
+        0,
+        1
+      ],
+      "20132014": [
+        1,
+        2
+      ],
+      "20142015": [
+        0,
+        2
+      ],
+      "20152016": [
+        0,
+        0
+      ],
+      "20162017": [
+        0,
+        1
+      ],
+      "20172018": [
+        1,
+        2
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        2
+      ],
+      "20202021": [
+        0,
+        2
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "wrist": [
+        2,
+        9
+      ],
+      "snap": [
+        0,
+        3
+      ]
+    },
+    "by_round": {
+      "2": [
+        0,
+        2
+      ],
+      "4": [
+        2,
+        4
+      ],
+      "5": [
+        0,
+        2
+      ],
+      "1": [
+        0,
+        2
+      ],
+      "7": [
+        0,
+        2
+      ]
+    },
+    "miss_reasons": {
+      "goalpost": 1,
+      "wide-of-net": 2
     }
   },
   {
@@ -25445,6 +25975,88 @@
     }
   },
   {
+    "id": 8480113,
+    "name": "Alex Iafallo",
+    "team": "WPG",
+    "number": 9,
+    "active": true,
+    "career": [
+      1,
+      6
+    ],
+    "seasons": {
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        3
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        1,
+        3
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "snap": [
+        0,
+        2
+      ],
+      "wrist": [
+        1,
+        4
+      ]
+    },
+    "by_round": {
+      "5": [
+        0,
+        1
+      ],
+      "3": [
+        1,
+        2
+      ],
+      "4": [
+        0,
+        2
+      ],
+      "2": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "goalpost": 1,
+      "over-net": 1
+    }
+  },
+  {
     "id": 8480459,
     "name": "Pius Suter",
     "team": "STL",
@@ -26098,6 +26710,100 @@
       "4": [
         0,
         1
+      ]
+    }
+  },
+  {
+    "id": 8476480,
+    "name": "Vladislav Namestnikov",
+    "team": "WPG",
+    "number": 7,
+    "active": true,
+    "career": [
+      1,
+      5
+    ],
+    "seasons": {
+      "20132014": [
+        0,
+        0
+      ],
+      "20142015": [
+        0,
+        0
+      ],
+      "20152016": [
+        0,
+        0
+      ],
+      "20162017": [
+        0,
+        1
+      ],
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        1,
+        2
+      ],
+      "20202021": [
+        0,
+        1
+      ],
+      "20212022": [
+        0,
+        1
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "backhand": [
+        0,
+        2
+      ],
+      "wrist": [
+        1,
+        3
+      ]
+    },
+    "by_round": {
+      "10": [
+        0,
+        1
+      ],
+      "2": [
+        1,
+        1
+      ],
+      "3": [
+        0,
+        1
+      ],
+      "6": [
+        0,
+        2
       ]
     }
   },
@@ -37043,6 +37749,60 @@
     }
   },
   {
+    "id": 8479393,
+    "name": "Noah Gregor",
+    "team": "WPG",
+    "number": 73,
+    "active": true,
+    "career": [
+      1,
+      1
+    ],
+    "seasons": {
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        1,
+        1
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "wrist": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "6": [
+        1,
+        1
+      ]
+    }
+  },
+  {
     "id": 8479718,
     "name": "Alex Barr\u00e9-Boulet",
     "team": "SJS",
@@ -37488,7 +38248,7 @@
   },
   {
     "id": 8480813,
-    "name": "Joe Veleno",
+    "name": "Joseph Veleno",
     "team": "NYR",
     "number": 90,
     "active": true,
@@ -37905,6 +38665,48 @@
     }
   },
   {
+    "id": 8481567,
+    "name": "Henry Thrun",
+    "team": "WPG",
+    "number": 8,
+    "active": true,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        1
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "unknown": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "7": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8481581,
     "name": "Thomas Harley",
     "team": "DAL",
@@ -38081,6 +38883,52 @@
     },
     "by_round": {
       "9": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": 8482149,
+    "name": "Cole Perfetti",
+    "team": "WPG",
+    "number": 91,
+    "active": true,
+    "career": [
+      1,
+      1
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        1,
+        1
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "wrist": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "3": [
         1,
         1
       ]
@@ -40053,6 +40901,64 @@
     "vs_goalie": {}
   },
   {
+    "id": 8476331,
+    "name": "Dylan DeMelo",
+    "team": "WPG",
+    "number": 2,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20152016": [
+        0,
+        0
+      ],
+      "20162017": [
+        0,
+        0
+      ],
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8476372,
     "name": "Nick Seeler",
     "team": "PHI",
@@ -40109,6 +41015,68 @@
       0
     ],
     "seasons": {
+      "20162017": [
+        0,
+        0
+      ],
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8476392,
+    "name": "Adam Lowry",
+    "team": "WPG",
+    "number": 17,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20142015": [
+        0,
+        0
+      ],
+      "20152016": [
+        0,
+        0
+      ],
       "20162017": [
         0,
         0
@@ -41939,6 +42907,64 @@
     "vs_goalie": {}
   },
   {
+    "id": 8477504,
+    "name": "Josh Morrissey",
+    "team": "WPG",
+    "number": 44,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20152016": [
+        0,
+        0
+      ],
+      "20162017": [
+        0,
+        0
+      ],
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8477506,
     "name": "Ryan Pulock",
     "team": "NYI",
@@ -42283,6 +43309,56 @@
     "vs_goalie": {}
   },
   {
+    "id": 8477938,
+    "name": "Haydn Fleury",
+    "team": "WPG",
+    "number": 24,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8477948,
     "name": "Travis Sanheim",
     "team": "PHI",
@@ -42440,7 +43516,7 @@
     "id": 8477971,
     "name": "Andreas Englund",
     "team": "CGY",
-    "number": null,
+    "number": 8,
     "active": true,
     "career": [
       0,
@@ -44582,7 +45658,7 @@
   },
   {
     "id": 8479372,
-    "name": "Joshua Mahura",
+    "name": "Josh Mahura",
     "team": "SEA",
     "number": 28,
     "active": true,
@@ -45631,6 +46707,48 @@
     "vs_goalie": {}
   },
   {
+    "id": 8479983,
+    "name": "Mario Ferraro",
+    "team": "WPG",
+    "number": 38,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8479985,
     "name": "Cale Fleury",
     "team": "SEA",
@@ -45977,6 +47095,40 @@
     "vs_goalie": {}
   },
   {
+    "id": 8480049,
+    "name": "Dylan Samberg",
+    "team": "WPG",
+    "number": 54,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8480054,
     "name": "Reilly Walsh",
     "team": "MTL",
@@ -46095,6 +47247,56 @@
       0
     ],
     "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8480145,
+    "name": "Neal Pionk",
+    "team": "WPG",
+    "number": 4,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
       "20222023": [
         0,
         0
@@ -46291,6 +47493,44 @@
       0
     ],
     "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8480289,
+    "name": "Morgan Barron",
+    "team": "WPG",
+    "number": 36,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20202021": [
+        0,
+        0
+      ],
       "20212022": [
         0,
         0
@@ -47548,6 +48788,62 @@
       0
     ],
     "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8481030,
+    "name": "Jack St. Ivany",
+    "team": "WPG",
+    "number": 6,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8481043,
+    "name": "Cole Koepke",
+    "team": "WPG",
+    "number": 45,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
       "20232024": [
         0,
         0
@@ -49669,7 +50965,7 @@
     "id": 8482107,
     "name": "Mike Benning",
     "team": "CGY",
-    "number": null,
+    "number": 20,
     "active": true,
     "career": [
       0,
@@ -50292,6 +51588,40 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482192,
+    "name": "Isaak Phillips",
+    "team": "WPG",
+    "number": 3,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482194,
     "name": "Ethan Edwards",
     "team": "NJD",
@@ -50459,6 +51789,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8482459,
+    "name": "Tyrel Bauer",
+    "team": "WPG",
+    "number": 77,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -50686,6 +52029,40 @@
         0
       ],
       "20222023": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8482652,
+    "name": "Walker Duehr",
+    "team": "WPG",
+    "number": 71,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
         0,
         0
       ],
@@ -50962,19 +52339,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482716,
-    "name": "Simon Robertsson",
-    "team": "STL",
-    "number": 80,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482720,
     "name": "Matthew Knies",
     "team": "TOR",
@@ -51198,6 +52562,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482765,
+    "name": "Isak Rosen",
+    "team": "WPG",
+    "number": 27,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482766,
     "name": "William Stromgren",
     "team": "CGY",
@@ -51310,6 +52700,32 @@
       0
     ],
     "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8482787,
+    "name": "Nikita Chibrikov",
+    "team": "WPG",
+    "number": 90,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
       "20242025": [
         0,
         0
@@ -52147,19 +53563,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483427,
-    "name": "Michael Buchinger",
-    "team": "STL",
-    "number": 62,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483428,
     "name": "Filip Bystedt",
     "team": "SJS",
@@ -52563,6 +53966,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483471,
+    "name": "Brad Lambert",
+    "team": "WPG",
+    "number": 93,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8483472,
     "name": "Maveric Lamoureux",
     "team": "UTA",
@@ -52842,6 +54271,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483510,
+    "name": "Elias Salomonsson",
+    "team": "WPG",
+    "number": 57,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8483511,
     "name": "Matyas Sapovaliv",
     "team": "VGK",
@@ -52899,6 +54346,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483520,
+    "name": "Fabian Wagner",
+    "team": "WPG",
+    "number": 58,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8483521,
     "name": "Noah Warren",
     "team": "ANA",
@@ -52916,6 +54376,24 @@
     "name": "Danila Yurov",
     "team": "MIN",
     "number": 22,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483526,
+    "name": "Danil Zhilkin",
+    "team": "WPG",
+    "number": 53,
     "active": true,
     "career": [
       0,
@@ -53151,7 +54629,7 @@
     "id": 8483666,
     "name": "Mattias Havelid",
     "team": "SJS",
-    "number": 25,
+    "number": 22,
     "active": true,
     "career": [
       0,
@@ -53176,6 +54654,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483672,
+    "name": "Garrett Brown",
+    "team": "WPG",
+    "number": null,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -53631,19 +55122,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483764,
-    "name": "Marc-Andre Gaudet",
-    "team": "STL",
-    "number": 45,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483766,
     "name": "David Spacek",
     "team": "MIN",
@@ -53856,6 +55334,28 @@
     "vs_goalie": {}
   },
   {
+    "id": 8484135,
+    "name": "Parker Ford",
+    "team": "WPG",
+    "number": 25,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8484136,
     "name": "Max Sasson",
     "team": "VAN",
@@ -53906,6 +55406,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484143,
+    "name": "Colby Barlow",
+    "team": "WPG",
+    "number": 39,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -54048,7 +55561,7 @@
     "id": 8484154,
     "name": "Jonathan Castagna",
     "team": "CGY",
-    "number": null,
+    "number": 38,
     "active": true,
     "career": [
       0,
@@ -54496,19 +56009,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484229,
-    "name": "Jakub Stancl",
-    "team": "STL",
-    "number": 93,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484230,
     "name": "Otto Stenberg",
     "team": "STL",
@@ -54556,7 +56056,7 @@
     "id": 8484234,
     "name": "Aydar Suniev",
     "team": "CGY",
-    "number": 36,
+    "number": 61,
     "active": true,
     "career": [
       0,
@@ -54592,6 +56092,24 @@
     "name": "Tom Willander",
     "team": "VAN",
     "number": 5,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484242,
+    "name": "Brayden Yager",
+    "team": "WPG",
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -54661,7 +56179,7 @@
     "id": 8484256,
     "name": "Jake Livingstone",
     "team": "CGY",
-    "number": null,
+    "number": 41,
     "active": true,
     "career": [
       0,
@@ -54914,19 +56432,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484393,
-    "name": "Juraj Pekarcik",
-    "team": "STL",
-    "number": 85,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484395,
     "name": "Konnor Smith",
     "team": "ANA",
@@ -55102,6 +56607,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8484430,
+    "name": "Jacob Julien",
+    "team": "WPG",
+    "number": 67,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8484464,
     "name": "Noah Chadwick",
     "team": "TOR",
@@ -55175,7 +56693,7 @@
     "id": 8484481,
     "name": "Axel Hurtig",
     "team": "CGY",
-    "number": null,
+    "number": 67,
     "active": true,
     "career": [
       0,
@@ -55370,7 +56888,7 @@
   },
   {
     "id": 8484763,
-    "name": "Leo Sahlin Wallenius",
+    "name": "Leo Sahlin-Wallenius",
     "team": "SJS",
     "number": 72,
     "active": true,
@@ -55720,19 +57238,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484810,
-    "name": "Lukas Fischer",
-    "team": "STL",
-    "number": 94,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484821,
     "name": "Sam Morton",
     "team": "CGY",
@@ -55868,6 +57373,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8484854,
+    "name": "Alfons Freij",
+    "team": "WPG",
+    "number": 48,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8484858,
     "name": "Anthony (AJ) Spellacy",
     "team": "CHI",
@@ -55885,6 +57403,19 @@
     "name": "Stian Solberg",
     "team": "ANA",
     "number": 50,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484864,
+    "name": "Kevin He",
+    "team": "WPG",
+    "number": 46,
     "active": true,
     "career": [
       0,
@@ -56179,6 +57710,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8485070,
+    "name": "Kieron Walton",
+    "team": "WPG",
+    "number": 76,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8485071,
     "name": "Hunter St. Martin",
     "team": "FLA",
@@ -56443,19 +57987,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485386,
-    "name": "Ethan Czata",
-    "team": "TBL",
-    "number": 45,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -56899,10 +58430,10 @@
     "vs_goalie": {}
   },
   {
-    "id": 8486033,
-    "name": "Maddox Dagenais",
-    "team": "STL",
-    "number": 82,
+    "id": 8486025,
+    "name": "Viggo Bj\u00f6rck",
+    "team": "WPG",
+    "number": 61,
     "active": true,
     "career": [
       0,
@@ -57115,6 +58646,19 @@
     "id": 8486135,
     "name": "Riley Thompson",
     "team": "PHI",
+    "number": null,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
+    "id": 8486141,
+    "name": "Lucas Wahlin",
+    "team": "WPG",
     "number": null,
     "active": true,
     "career": [
@@ -70258,159 +71802,6 @@
     }
   },
   {
-    "id": 8476460,
-    "name": "Mark Scheifele",
-    "team": "",
-    "active": false,
-    "career": [
-      12,
-      35
-    ],
-    "seasons": {
-      "20112012": [
-        0,
-        0
-      ],
-      "20122013": [
-        0,
-        0
-      ],
-      "20132014": [
-        0,
-        1
-      ],
-      "20142015": [
-        0,
-        2
-      ],
-      "20152016": [
-        2,
-        3
-      ],
-      "20162017": [
-        1,
-        3
-      ],
-      "20172018": [
-        3,
-        4
-      ],
-      "20182019": [
-        1,
-        2
-      ],
-      "20192020": [
-        2,
-        3
-      ],
-      "20202021": [
-        0,
-        2
-      ],
-      "20212022": [
-        2,
-        6
-      ],
-      "20222023": [
-        1,
-        2
-      ],
-      "20232024": [
-        0,
-        1
-      ],
-      "20242025": [
-        0,
-        3
-      ],
-      "20252026": [
-        0,
-        3
-      ]
-    },
-    "vs_goalie": {
-      "Jakub Dobes": [
-        0,
-        1
-      ],
-      "Daniil Tarasov": [
-        0,
-        1
-      ],
-      "Juuse Saros": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Juuse Saros": {
-        "wrist": [
-          1,
-          2
-        ]
-      },
-      "Daniil Tarasov": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Jakub Dobes": {
-        "snap": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        9,
-        28
-      ],
-      "snap": [
-        1,
-        5
-      ],
-      "backhand": [
-        2,
-        2
-      ]
-    },
-    "by_round": {
-      "6": [
-        0,
-        2
-      ],
-      "5": [
-        0,
-        1
-      ],
-      "4": [
-        1,
-        1
-      ],
-      "3": [
-        5,
-        10
-      ],
-      "2": [
-        4,
-        10
-      ],
-      "1": [
-        2,
-        11
-      ]
-    },
-    "miss_reasons": {
-      "goalpost": 1,
-      "wide-of-net": 2,
-      "hit-crossbar": 1,
-      "hit-left-post": 1,
-      "wide-right": 2
-    }
-  },
-  {
     "id": 8470047,
     "name": "Valtteri Filppula",
     "team": "",
@@ -75472,149 +76863,6 @@
     }
   },
   {
-    "id": 8478398,
-    "name": "Kyle Connor",
-    "team": "",
-    "active": false,
-    "career": [
-      9,
-      26
-    ],
-    "seasons": {
-      "20162017": [
-        0,
-        0
-      ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        2,
-        3
-      ],
-      "20192020": [
-        2,
-        5
-      ],
-      "20202021": [
-        1,
-        2
-      ],
-      "20212022": [
-        1,
-        5
-      ],
-      "20222023": [
-        0,
-        2
-      ],
-      "20232024": [
-        0,
-        1
-      ],
-      "20242025": [
-        2,
-        3
-      ],
-      "20252026": [
-        1,
-        5
-      ]
-    },
-    "vs_goalie": {
-      "Dustin Wolf": [
-        0,
-        1
-      ],
-      "Jakub Dobes": [
-        0,
-        1
-      ],
-      "Daniil Tarasov": [
-        0,
-        1
-      ],
-      "Juuse Saros": [
-        0,
-        1
-      ],
-      "Dylan Garand": [
-        1,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Juuse Saros": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Daniil Tarasov": {
-        "backhand": [
-          0,
-          1
-        ]
-      },
-      "Dustin Wolf": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Dylan Garand": {
-        "snap": [
-          1,
-          1
-        ]
-      },
-      "Jakub Dobes": {
-        "snap": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        6,
-        17
-      ],
-      "backhand": [
-        2,
-        7
-      ],
-      "snap": [
-        1,
-        2
-      ]
-    },
-    "by_round": {
-      "5": [
-        1,
-        1
-      ],
-      "1": [
-        5,
-        17
-      ],
-      "2": [
-        3,
-        7
-      ],
-      "3": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "goalpost": 1,
-      "wide-right": 1,
-      "hit-left-post": 1
-    }
-  },
-  {
     "id": 8451302,
     "name": "Brendan Shanahan",
     "team": "",
@@ -78925,127 +80173,6 @@
     "miss_reasons": {
       "goalpost": 1,
       "wide-of-net": 5
-    }
-  },
-  {
-    "id": 8480014,
-    "name": "Gabriel Vilardi",
-    "team": "",
-    "active": false,
-    "career": [
-      6,
-      19
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        1
-      ],
-      "20202021": [
-        1,
-        2
-      ],
-      "20212022": [
-        0,
-        2
-      ],
-      "20222023": [
-        3,
-        9
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        1
-      ],
-      "20252026": [
-        2,
-        4
-      ]
-    },
-    "vs_goalie": {
-      "Dustin Wolf": [
-        1,
-        1
-      ],
-      "Jakub Dobes": [
-        0,
-        1
-      ],
-      "Juuse Saros": [
-        0,
-        1
-      ],
-      "Dylan Garand": [
-        1,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Juuse Saros": {
-        "wrist": [
-          1,
-          2
-        ]
-      },
-      "Dustin Wolf": {
-        "wrist": [
-          1,
-          1
-        ]
-      },
-      "Dylan Garand": {
-        "snap": [
-          1,
-          1
-        ]
-      },
-      "Jakub Dobes": {
-        "snap": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "backhand": [
-        0,
-        1
-      ],
-      "wrist": [
-        5,
-        16
-      ],
-      "snap": [
-        1,
-        2
-      ]
-    },
-    "by_round": {
-      "3": [
-        1,
-        5
-      ],
-      "4": [
-        1,
-        1
-      ],
-      "1": [
-        2,
-        10
-      ],
-      "2": [
-        2,
-        3
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 5,
-      "hit-crossbar": 1,
-      "hit-right-post": 1
     }
   },
   {
@@ -85791,115 +86918,6 @@
     },
     "miss_reasons": {
       "wide-of-net": 1
-    }
-  },
-  {
-    "id": 8475799,
-    "name": "Nino Niederreiter",
-    "team": "",
-    "active": false,
-    "career": [
-      2,
-      12
-    ],
-    "seasons": {
-      "20102011": [
-        0,
-        0
-      ],
-      "20112012": [
-        0,
-        1
-      ],
-      "20132014": [
-        1,
-        2
-      ],
-      "20142015": [
-        0,
-        2
-      ],
-      "20152016": [
-        0,
-        0
-      ],
-      "20162017": [
-        0,
-        1
-      ],
-      "20172018": [
-        1,
-        2
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        2
-      ],
-      "20202021": [
-        0,
-        2
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        2,
-        9
-      ],
-      "snap": [
-        0,
-        3
-      ]
-    },
-    "by_round": {
-      "2": [
-        0,
-        2
-      ],
-      "4": [
-        2,
-        4
-      ],
-      "5": [
-        0,
-        2
-      ],
-      "1": [
-        0,
-        2
-      ],
-      "7": [
-        0,
-        2
-      ]
-    },
-    "miss_reasons": {
-      "goalpost": 1,
-      "wide-of-net": 2
     }
   },
   {
@@ -95459,87 +96477,6 @@
     }
   },
   {
-    "id": 8480113,
-    "name": "Alex Iafallo",
-    "team": "",
-    "active": false,
-    "career": [
-      1,
-      6
-    ],
-    "seasons": {
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        3
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        1,
-        3
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "snap": [
-        0,
-        2
-      ],
-      "wrist": [
-        1,
-        4
-      ]
-    },
-    "by_round": {
-      "5": [
-        0,
-        1
-      ],
-      "3": [
-        1,
-        2
-      ],
-      "4": [
-        0,
-        2
-      ],
-      "2": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "goalpost": 1,
-      "over-net": 1
-    }
-  },
-  {
     "id": 8465059,
     "name": "Matt Bradley",
     "team": "",
@@ -97820,99 +98757,6 @@
       "8": [
         0,
         1
-      ]
-    }
-  },
-  {
-    "id": 8476480,
-    "name": "Vladislav Namestnikov",
-    "team": "",
-    "active": false,
-    "career": [
-      1,
-      5
-    ],
-    "seasons": {
-      "20132014": [
-        0,
-        0
-      ],
-      "20142015": [
-        0,
-        0
-      ],
-      "20152016": [
-        0,
-        0
-      ],
-      "20162017": [
-        0,
-        1
-      ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        1,
-        2
-      ],
-      "20202021": [
-        0,
-        1
-      ],
-      "20212022": [
-        0,
-        1
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "backhand": [
-        0,
-        2
-      ],
-      "wrist": [
-        1,
-        3
-      ]
-    },
-    "by_round": {
-      "10": [
-        0,
-        1
-      ],
-      "2": [
-        1,
-        1
-      ],
-      "3": [
-        0,
-        1
-      ],
-      "6": [
-        0,
-        2
       ]
     }
   },
@@ -122666,59 +123510,6 @@
     }
   },
   {
-    "id": 8479393,
-    "name": "Noah Gregor",
-    "team": "",
-    "active": false,
-    "career": [
-      1,
-      1
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        1,
-        1
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "6": [
-        1,
-        1
-      ]
-    }
-  },
-  {
     "id": 8480205,
     "name": "Emil Bemstrom",
     "team": "",
@@ -123002,51 +123793,6 @@
     }
   },
   {
-    "id": 8482149,
-    "name": "Cole Perfetti",
-    "team": "",
-    "active": false,
-    "career": [
-      1,
-      1
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        1,
-        1
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "3": [
-        1,
-        1
-      ]
-    }
-  },
-  {
     "id": 8479383,
     "name": "Boris Katchouk",
     "team": "",
@@ -123125,47 +123871,6 @@
     },
     "miss_reasons": {
       "wide-left": 1
-    }
-  },
-  {
-    "id": 8481567,
-    "name": "Henry Thrun",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        1
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "unknown": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "7": [
-        0,
-        1
-      ]
     }
   },
   {
