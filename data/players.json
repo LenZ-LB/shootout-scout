@@ -50507,19 +50507,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8481817,
-    "name": "Navrin Mutter",
-    "team": "BOS",
-    "number": 74,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8481848,
     "name": "Jacob Gaucher",
     "team": "PHI",
@@ -51792,6 +51779,36 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482451,
+    "name": "Mikael Pyyhtia",
+    "team": "CBJ",
+    "number": 82,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482459,
     "name": "Tyrel Bauer",
     "team": "WPG",
@@ -52947,19 +52964,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482868,
-    "name": "Kalle Vaisanen",
-    "team": "BOS",
-    "number": 79,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482873,
     "name": "Topias Vilen",
     "team": "NJD",
@@ -53015,19 +53019,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482881,
-    "name": "Max McCue",
-    "team": "CBJ",
-    "number": 93,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -53140,19 +53131,6 @@
     "name": "Kirill Kirsanov",
     "team": "LAK",
     "number": 78,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482923,
-    "name": "Taige Harding",
-    "team": "CHI",
-    "number": 47,
     "active": true,
     "career": [
       0,
@@ -53316,19 +53294,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483052,
-    "name": "Kaleb Lawrence",
-    "team": "LAK",
-    "number": 88,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483085,
     "name": "Mikael Diotte",
     "team": "NJD",
@@ -53385,19 +53350,6 @@
     "name": "Daylan Kuefler",
     "team": "NYI",
     "number": 52,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483110,
-    "name": "Anri Ravinskis",
-    "team": "VAN",
-    "number": null,
     "active": true,
     "career": [
       0,
@@ -53770,19 +53722,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483453,
-    "name": "Gavin Hayes",
-    "team": "CHI",
-    "number": 92,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483459,
     "name": "Dylan James",
     "team": "DET",
@@ -54030,20 +53969,7 @@
     "id": 8483479,
     "name": "Cruz Lucius",
     "team": "ANA",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483480,
-    "name": "Paul Ludwinski",
-    "team": "CHI",
-    "number": 90,
+    "number": 75,
     "active": true,
     "career": [
       0,
@@ -54706,19 +54632,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483677,
-    "name": "Samuel Savoie",
-    "team": "CHI",
-    "number": 67,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483678,
     "name": "Elias Pettersson",
     "team": "VAN",
@@ -55032,19 +54945,6 @@
     "id": 8483741,
     "name": "Landon Sim",
     "team": "TOR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483745,
-    "name": "Jake Furlong",
-    "team": "CHI",
     "number": null,
     "active": true,
     "career": [
@@ -56524,19 +56424,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484408,
-    "name": "Vilmer Alriksson",
-    "team": "VAN",
-    "number": 46,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484412,
     "name": "Joey Willis",
     "team": "NSH",
@@ -56961,19 +56848,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484773,
-    "name": "Julius Miettinen",
-    "team": "SEA",
-    "number": 49,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484777,
     "name": "Luca Marrelli",
     "team": "CBJ",
@@ -57312,19 +57186,6 @@
     "name": "Ondrej Becher",
     "team": "DET",
     "number": 57,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484838,
-    "name": "Alexis Bernier",
-    "team": "SEA",
-    "number": 43,
     "active": true,
     "career": [
       0,
@@ -57736,19 +57597,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8485072,
-    "name": "Loke Johansson",
-    "team": "BOS",
-    "number": 86,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8485074,
     "name": "Stevie Leskovar",
     "team": "MIN",
@@ -57933,36 +57781,10 @@
     "vs_goalie": {}
   },
   {
-    "id": 8485381,
-    "name": "Henry Brzustewicz",
-    "team": "LAK",
-    "number": 68,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8485382,
     "name": "Justin Carbonneau",
     "team": "STL",
     "number": 68,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485384,
-    "name": "Vojtech Cihar",
-    "team": "LAK",
-    "number": 87,
     "active": true,
     "career": [
       0,
@@ -58347,32 +58169,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8485602,
-    "name": "Jimmy Lombardi",
-    "team": "LAK",
-    "number": 54,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485635,
-    "name": "Gabriel Chiarot",
-    "team": "VAN",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8485636,
     "name": "Daniel Nieminen",
     "team": "NSH",
@@ -58414,19 +58210,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486009,
-    "name": "Ryden Evers",
-    "team": "SEA",
-    "number": 91,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -58686,19 +58469,6 @@
     "name": "Matthew DiMarsico",
     "team": "COL",
     "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486160,
-    "name": "Grant Slukynsky",
-    "team": "LAK",
-    "number": 86,
     "active": true,
     "career": [
       0,

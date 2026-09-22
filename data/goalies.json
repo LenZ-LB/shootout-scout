@@ -4997,18 +4997,6 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8482875,
-    "name": "Aku Koskenvuo",
-    "team": "VAN",
-    "number": null,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8482914,
     "name": "Kirill Gerasimyuk",
     "team": "FLA",
@@ -5192,18 +5180,6 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8483654,
-    "name": "Luke Cavallin",
-    "team": "BOS",
-    "number": 60,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8483659,
     "name": "Isaac Poulter",
     "team": "WPG",
@@ -5284,34 +5260,10 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8483751,
-    "name": "Ty Young",
-    "team": "VAN",
-    "number": 85,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8483869,
     "name": "Nolan Lalonde",
     "team": "CBJ",
     "number": 31,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8483898,
-    "name": "Tomas Suchanek",
-    "team": "ANA",
-    "number": 78,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -5386,18 +5338,6 @@
         1
       ]
     }
-  },
-  {
-    "id": 8484171,
-    "name": "Adam Gajan",
-    "team": "CHI",
-    "number": null,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8484181,
@@ -5488,18 +5428,6 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8484417,
-    "name": "Hampton Slukynsky",
-    "team": "LAK",
-    "number": 50,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8484440,
     "name": "Ruslan Khazheyev",
     "team": "CAR",
@@ -5528,18 +5456,6 @@
     "name": "Harrison Meneghin",
     "team": "TBL",
     "number": 1,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8484857,
-    "name": "Carter George",
-    "team": "LAK",
-    "number": 40,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -5656,34 +5572,10 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8485729,
-    "name": "Stanislav Berezhnoy",
-    "team": "CHI",
-    "number": 31,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8486136,
     "name": "Joshua Kotai",
     "team": "NYI",
     "number": null,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8486148,
-    "name": "Max Lundgren",
-    "team": "BOS",
-    "number": 80,
     "active": true,
     "stopped": 0,
     "faced": 0,
