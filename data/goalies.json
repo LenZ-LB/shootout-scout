@@ -5440,18 +5440,6 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8484442,
-    "name": "Arno Tiefensee",
-    "team": "DAL",
-    "number": 50,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8484636,
     "name": "Harrison Meneghin",
     "team": "TBL",
@@ -5528,18 +5516,6 @@
     "name": "Aleksei Medvedev",
     "team": "VAN",
     "number": null,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8485473,
-    "name": "Isak Posch",
-    "team": "NSH",
-    "number": 30,
     "active": true,
     "stopped": 0,
     "faced": 0,

@@ -36373,68 +36373,6 @@
     }
   },
   {
-    "id": 8476884,
-    "name": "Derrick Pouliot",
-    "team": "CHI",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20142015": [
-        0,
-        1
-      ],
-      "20152016": [
-        0,
-        0
-      ],
-      "20162017": [
-        0,
-        0
-      ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "snap": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "6": [
-        0,
-        1
-      ]
-    }
-  },
-  {
     "id": 8476927,
     "name": "Teddy Blueger",
     "team": "TOR",
@@ -52216,19 +52154,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482690,
-    "name": "Ayrton Martino",
-    "team": "DAL",
-    "number": 60,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482691,
     "name": "Aatu R\u00e4ty",
     "team": "VAN",
@@ -52806,7 +52731,7 @@
     "id": 8482804,
     "name": "Ty Murchison",
     "team": "PHI",
-    "number": 96,
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -53105,19 +53030,6 @@
     "name": "Danila Klimovich",
     "team": "PHI",
     "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482919,
-    "name": "Justin Ertel",
-    "team": "DAL",
-    "number": 62,
     "active": true,
     "career": [
       0,
@@ -54123,19 +54035,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483498,
-    "name": "Calle Odelius",
-    "team": "NYI",
-    "number": 39,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483505,
     "name": "Matthew Poitras",
     "team": "BOS",
@@ -54989,7 +54888,7 @@
     "id": 8483760,
     "name": "Hunter McDonald",
     "team": "PHI",
-    "number": 75,
+    "number": 19,
     "active": true,
     "career": [
       0,
@@ -55121,19 +55020,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483844,
-    "name": "Austin Roest",
-    "team": "NSH",
-    "number": 93,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -55559,19 +55445,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484174,
-    "name": "Andrew Gibson",
-    "team": "NSH",
-    "number": 92,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484178,
     "name": "Riley Heidt",
     "team": "MIN",
@@ -55633,19 +55506,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484187,
-    "name": "Kalan Lind",
-    "team": "NSH",
-    "number": 45,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484188,
     "name": "Theo Lindstein",
     "team": "STL",
@@ -55668,19 +55528,6 @@
     "name": "Gavin McCarthy",
     "team": "BUF",
     "number": 62,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484194,
-    "name": "Aram Minnetian",
-    "team": "DAL",
-    "number": 44,
     "active": true,
     "career": [
       0,
@@ -55772,19 +55619,6 @@
     "name": "Felix Nilsson",
     "team": "NSH",
     "number": 62,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484208,
-    "name": "Jesse Nurmi",
-    "team": "NYI",
-    "number": 72,
     "active": true,
     "career": [
       0,
@@ -56424,19 +56258,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484412,
-    "name": "Joey Willis",
-    "team": "NSH",
-    "number": 61,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484421,
     "name": "Eric Pohlkamp",
     "team": "SJS",
@@ -56520,19 +56341,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484468,
-    "name": "Angus MacDonell",
-    "team": "DAL",
-    "number": 47,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484471,
     "name": "Emmitt Finnie",
     "team": "DET",
@@ -56581,19 +56389,6 @@
     "name": "Axel Hurtig",
     "team": "CGY",
     "number": 67,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484494,
-    "name": "Aiden Fink",
-    "team": "NSH",
-    "number": 11,
     "active": true,
     "career": [
       0,
@@ -56778,19 +56573,6 @@
     "name": "Leo Sahlin-Wallenius",
     "team": "SJS",
     "number": 72,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484766,
-    "name": "Jesse Pulkkinen",
-    "team": "NYI",
-    "number": 42,
     "active": true,
     "career": [
       0,
@@ -57480,19 +57262,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8485000,
-    "name": "Viggo Gustafsson",
-    "team": "NSH",
-    "number": 40,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8485004,
     "name": "Matvei Shuravin",
     "team": "FLA",
@@ -57506,36 +57275,10 @@
     "vs_goalie": {}
   },
   {
-    "id": 8485005,
-    "name": "Hiroki Gojsic",
-    "team": "NSH",
-    "number": 53,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8485008,
     "name": "Owen Protz",
     "team": "MTL",
     "number": 68,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485041,
-    "name": "Niilopekka Muhonen",
-    "team": "DAL",
-    "number": 41,
     "active": true,
     "career": [
       0,
@@ -57946,36 +57689,10 @@
     "vs_goalie": {}
   },
   {
-    "id": 8485429,
-    "name": "Jan Chovan",
-    "team": "LAK",
-    "number": 76,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8485448,
     "name": "Daniil Prokhorov",
     "team": "NYI",
     "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485462,
-    "name": "Gleb Veremyev",
-    "team": "NYI",
-    "number": 67,
     "active": true,
     "career": [
       0,
@@ -58051,19 +57768,6 @@
     "name": "Damien Carfagna",
     "team": "EDM",
     "number": 73,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485490,
-    "name": "Joey Larson",
-    "team": "NYI",
-    "number": 61,
     "active": true,
     "career": [
       0,
@@ -58226,19 +57930,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8486039,
-    "name": "Adam Goljer",
-    "team": "LAK",
-    "number": 41,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8486052,
     "name": "Nikita Klepov",
     "team": "ANA",
@@ -58313,19 +58004,6 @@
     "name": "Adam Novotny",
     "team": "VAN",
     "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486081,
-    "name": "Giorgos Pantelas",
-    "team": "LAK",
-    "number": 84,
     "active": true,
     "career": [
       0,
@@ -58535,19 +58213,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8486174,
-    "name": "Christian Fitzgerald",
-    "team": "DAL",
-    "number": 52,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8486177,
     "name": "Boston Buckberger",
     "team": "CBJ",
@@ -58604,19 +58269,6 @@
     "name": "Tomas Kralovic",
     "team": "TBL",
     "number": 82,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486350,
-    "name": "Lucas Ambrosio",
-    "team": "LAK",
-    "number": 98,
     "active": true,
     "career": [
       0,
@@ -121596,6 +121248,67 @@
     },
     "by_round": {
       "9": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": 8476884,
+    "name": "Derrick Pouliot",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20142015": [
+        0,
+        1
+      ],
+      "20152016": [
+        0,
+        0
+      ],
+      "20162017": [
+        0,
+        0
+      ],
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "snap": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "6": [
         0,
         1
       ]
