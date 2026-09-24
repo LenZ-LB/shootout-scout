@@ -1932,18 +1932,6 @@
     }
   },
   {
-    "id": 8477990,
-    "name": "Brandon Halverson",
-    "team": "DAL",
-    "number": 33,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8477992,
     "name": "Jonas Johansson",
     "team": "TBL",
@@ -4553,18 +4541,6 @@
     }
   },
   {
-    "id": 8482205,
-    "name": "Will Cranley",
-    "team": "STL",
-    "number": 31,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8482221,
     "name": "Devon Levi",
     "team": "EDM",
@@ -4719,18 +4695,6 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8482472,
-    "name": "Henrik Tikkanen",
-    "team": "NYI",
-    "number": 70,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8482487,
     "name": "Jakub Dobes",
     "team": "MTL",
@@ -4785,18 +4749,6 @@
       "hit-right-post": 1,
       "wide-right": 1
     }
-  },
-  {
-    "id": 8482515,
-    "name": "Artur Akhtyamov",
-    "team": "TOR",
-    "number": 70,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8482657,
@@ -4884,18 +4836,6 @@
     "miss_reasons": {
       "wide-left": 1
     }
-  },
-  {
-    "id": 8482761,
-    "name": "Carl Lindbom",
-    "team": "VGK",
-    "number": 30,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8482783,
@@ -5180,18 +5120,6 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8483659,
-    "name": "Isaac Poulter",
-    "team": "WPG",
-    "number": 30,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8483703,
     "name": "Sergei Murashov",
     "team": "PIT",
@@ -5288,18 +5216,6 @@
     "name": "Trey Augustine",
     "team": "DET",
     "number": 31,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8484147,
-    "name": "Carson Bjarnason",
-    "team": "PHI",
-    "number": 64,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -5440,6 +5356,18 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
+    "id": 8484442,
+    "name": "Arno Tiefensee",
+    "team": "DAL",
+    "number": 50,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8484636,
     "name": "Harrison Meneghin",
     "team": "TBL",
@@ -5476,46 +5404,10 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8484997,
-    "name": "Evan Gardner",
-    "team": "CBJ",
-    "number": 35,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8485012,
     "name": "Kirill Zarubin",
     "team": "CGY",
     "number": 40,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8485037,
-    "name": "Chase Wutzke",
-    "team": "MIN",
-    "number": 95,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8485401,
-    "name": "Aleksei Medvedev",
-    "team": "VAN",
-    "number": null,
     "active": true,
     "stopped": 0,
     "faced": 0,
