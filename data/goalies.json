@@ -1984,82 +1984,6 @@
     }
   },
   {
-    "id": 8478007,
-    "name": "Elvis Merzlikins",
-    "team": "CBJ",
-    "number": 90,
-    "active": true,
-    "stopped": 68,
-    "faced": 91,
-    "wins": 16,
-    "losses": 9,
-    "record": "16 W \u2013 9 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        40,
-        53
-      ],
-      "backhand": [
-        10,
-        15
-      ],
-      "snap": [
-        15,
-        19
-      ],
-      "slap": [
-        0,
-        1
-      ],
-      "unknown": [
-        3,
-        3
-      ]
-    },
-    "by_round": {
-      "1": [
-        20,
-        24
-      ],
-      "2": [
-        17,
-        25
-      ],
-      "3": [
-        14,
-        20
-      ],
-      "4": [
-        8,
-        10
-      ],
-      "5": [
-        5,
-        5
-      ],
-      "6": [
-        2,
-        3
-      ],
-      "7": [
-        2,
-        3
-      ],
-      "8": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "goalpost": 1,
-      "wide-of-net": 4,
-      "over-net": 2,
-      "hit-right-post": 1,
-      "wide-left": 2,
-      "high-and-wide-left": 1
-    }
-  },
-  {
     "id": 8478009,
     "name": "Ilya Sorokin",
     "team": "NYI",
@@ -4437,18 +4361,6 @@
     }
   },
   {
-    "id": 8482085,
-    "name": "Samuel Hlavaj",
-    "team": "TOR",
-    "number": null,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8482123,
     "name": "Drew Commesso",
     "team": "CHI",
@@ -4838,6 +4750,18 @@
     }
   },
   {
+    "id": 8482761,
+    "name": "Carl Lindbom",
+    "team": "VGK",
+    "number": 30,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8482783,
     "name": "Aleksei Kolosov",
     "team": "PHI",
@@ -5188,18 +5112,6 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8483869,
-    "name": "Nolan Lalonde",
-    "team": "CBJ",
-    "number": 31,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8483918,
     "name": "Riley Mercer",
     "team": "MIN",
@@ -5254,18 +5166,6 @@
         1
       ]
     }
-  },
-  {
-    "id": 8484181,
-    "name": "Michael Hrabal",
-    "team": "UTA",
-    "number": null,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8484218,
@@ -5332,34 +5232,10 @@
     "record": "0 W \u2013 0 L in career shootouts"
   },
   {
-    "id": 8484391,
-    "name": "Damian Clara",
-    "team": "ANA",
-    "number": 68,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
     "id": 8484440,
     "name": "Ruslan Khazheyev",
     "team": "CAR",
     "number": 80,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8484442,
-    "name": "Arno Tiefensee",
-    "team": "DAL",
-    "number": 50,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -5395,7 +5271,7 @@
     "id": 8484996,
     "name": "Ilya Nabokov",
     "team": "COL",
-    "number": null,
+    "number": 30,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -5408,18 +5284,6 @@
     "name": "Kirill Zarubin",
     "team": "CGY",
     "number": 40,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8485538,
-    "name": "Simon Zajicek",
-    "team": "BOS",
-    "number": 85,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -15920,6 +15784,81 @@
     "miss_reasons": {
       "wide-of-net": 2,
       "goalpost": 2
+    }
+  },
+  {
+    "id": 8478007,
+    "name": "Elvis Merzlikins",
+    "team": "",
+    "active": false,
+    "stopped": 68,
+    "faced": 91,
+    "wins": 16,
+    "losses": 9,
+    "record": "16 W \u2013 9 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        40,
+        53
+      ],
+      "backhand": [
+        10,
+        15
+      ],
+      "snap": [
+        15,
+        19
+      ],
+      "slap": [
+        0,
+        1
+      ],
+      "unknown": [
+        3,
+        3
+      ]
+    },
+    "by_round": {
+      "1": [
+        20,
+        24
+      ],
+      "2": [
+        17,
+        25
+      ],
+      "3": [
+        14,
+        20
+      ],
+      "4": [
+        8,
+        10
+      ],
+      "5": [
+        5,
+        5
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        2,
+        3
+      ],
+      "8": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "goalpost": 1,
+      "wide-of-net": 4,
+      "over-net": 2,
+      "hit-right-post": 1,
+      "wide-left": 2,
+      "high-and-wide-left": 1
     }
   },
   {

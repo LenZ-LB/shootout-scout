@@ -17519,6 +17519,159 @@
     }
   },
   {
+    "id": 8484166,
+    "name": "Adam Fantilli",
+    "team": "CBJ",
+    "number": 19,
+    "active": true,
+    "career": [
+      3,
+      16
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        2,
+        7
+      ],
+      "20252026": [
+        1,
+        9
+      ]
+    },
+    "vs_goalie": {
+      "Arturs Silovs": [
+        1,
+        2
+      ],
+      "Matt Murray": [
+        0,
+        1
+      ],
+      "Igor Shesterkin": [
+        0,
+        1
+      ],
+      "Jakub Dobes": [
+        0,
+        1
+      ],
+      "Cam Talbot": [
+        0,
+        1
+      ],
+      "Dan Vladar": [
+        0,
+        1
+      ],
+      "Jeremy Swayman": [
+        0,
+        1
+      ],
+      "John Gibson": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Cam Talbot": {
+        "backhand": [
+          0,
+          1
+        ]
+      },
+      "John Gibson": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Matt Murray": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Igor Shesterkin": {
+        "backhand": [
+          0,
+          1
+        ],
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Dan Vladar": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Jeremy Swayman": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Arturs Silovs": {
+        "wrist": [
+          1,
+          2
+        ]
+      },
+      "Jakub Dobes": {
+        "unknown": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "backhand": [
+        1,
+        4
+      ],
+      "wrist": [
+        2,
+        9
+      ],
+      "snap": [
+        0,
+        2
+      ],
+      "unknown": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "3": [
+        0,
+        1
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "2": [
+        2,
+        11
+      ],
+      "1": [
+        0,
+        2
+      ]
+    },
+    "miss_reasons": {
+      "above-crossbar": 1,
+      "hit-right-post": 1
+    }
+  },
+  {
     "id": 8474590,
     "name": "John Carlson",
     "team": "TBL",
@@ -38080,44 +38233,6 @@
     }
   },
   {
-    "id": 8480441,
-    "name": "Trey Fix-Wolansky",
-    "team": "VAN",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        1
-      ],
-      "20232024": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "snap": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "7": [
-        0,
-        1
-      ]
-    }
-  },
-  {
     "id": 8480803,
     "name": "Evan Bouchard",
     "team": "EDM",
@@ -38279,60 +38394,6 @@
     },
     "by_round": {
       "2": [
-        0,
-        1
-      ]
-    }
-  },
-  {
-    "id": 8480873,
-    "name": "Rasmus Sandin",
-    "team": "WSH",
-    "number": 38,
-    "active": true,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        1
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "4": [
         0,
         1
       ]
@@ -38775,53 +38836,6 @@
     "by_round": {
       "3": [
         0,
-        1
-      ]
-    }
-  },
-  {
-    "id": 8482103,
-    "name": "Ozzy Wiesblatt",
-    "team": "NSH",
-    "number": 89,
-    "active": true,
-    "career": [
-      1,
-      1
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        1,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Darcy Kuemper": [
-        1,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Darcy Kuemper": {
-        "wrist": [
-          1,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "9": [
-        1,
         1
       ]
     }
@@ -41622,6 +41636,60 @@
     "vs_goalie": {}
   },
   {
+    "id": 8476891,
+    "name": "Matt Grzelcyk",
+    "team": "BUF",
+    "number": null,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20162017": [
+        0,
+        0
+      ],
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8476892,
     "name": "Colton Parayko",
     "team": "STL",
@@ -42055,52 +42123,6 @@
         0
       ],
       "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8477034,
-    "name": "Jaycob Megna",
-    "team": "VGK",
-    "number": 88,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20162017": [
-        0,
-        0
-      ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
         0,
         0
       ],
@@ -43054,56 +43076,6 @@
         0,
         0
       ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8477541,
-    "name": "Dakota Mermis",
-    "team": "TOR",
-    "number": 36,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20172018": [
         0,
         0
@@ -44690,44 +44662,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8478846,
-    "name": "Christian Wolanin",
-    "team": "COL",
-    "number": 86,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8478851,
     "name": "Alexandre Carrier",
     "team": "MTL",
@@ -45297,62 +45231,6 @@
         0
       ],
       "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8479333,
-    "name": "Libor Hajek",
-    "team": "SJS",
-    "number": 24,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8479341,
-    "name": "Cam Dineen",
-    "team": "PHI",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        0
-      ],
-      "20242025": [
         0,
         0
       ]
@@ -45946,32 +45824,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8479602,
-    "name": "Jeremy Davies",
-    "team": "VGK",
-    "number": 84,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8479619,
     "name": "Michael Carcone",
     "team": "UTA",
@@ -46222,24 +46074,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8479746,
-    "name": "Tye Felhaber",
-    "team": "SJS",
-    "number": 28,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8479772,
     "name": "Zack MacEwen",
     "team": "TOR",
@@ -46330,56 +46164,6 @@
       0
     ],
     "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8479944,
-    "name": "Zachary Aston-Reese",
-    "team": "PHI",
-    "number": 21,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
       "20242025": [
         0,
         0
@@ -46811,44 +46595,6 @@
         0
       ],
       "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8480021,
-    "name": "Jack Studnicka",
-    "team": "PHI",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
         0,
         0
       ],
@@ -47854,52 +47600,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8480806,
-    "name": "Isac Lundestr\u00f6m",
-    "team": "CBJ",
-    "number": 21,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8480807,
     "name": "Mattias Samuelsson",
     "team": "BUF",
@@ -48240,36 +47940,6 @@
         0
       ],
       "20232024": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8480874,
-    "name": "Adam Ginning",
-    "team": "VGK",
-    "number": 73,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
         0,
         0
       ],
@@ -49186,44 +48856,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8481518,
-    "name": "Nolan Foote",
-    "team": "PHI",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8481521,
     "name": "Ronnie Attard",
     "team": "DET",
@@ -49513,28 +49145,6 @@
         0,
         0
       ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8481562,
-    "name": "Domenick Fensore",
-    "team": "COL",
-    "number": 3,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20242025": [
         0,
         0
@@ -50024,28 +49634,6 @@
       0
     ],
     "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8481679,
-    "name": "Maxence Guenette",
-    "team": "BOS",
-    "number": 38,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ]
-    },
     "vs_goalie": {}
   },
   {
@@ -50845,19 +50433,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482121,
-    "name": "Dylan Peterson",
-    "team": "STL",
-    "number": 32,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482122,
     "name": "Brock Faber",
     "team": "MIN",
@@ -50955,19 +50530,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482134,
-    "name": "Luke Tuch",
-    "team": "CBJ",
-    "number": 71,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -51400,28 +50962,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482206,
-    "name": "Ethan Cardwell",
-    "team": "SJS",
-    "number": 56,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482209,
     "name": "Rory Kerins",
     "team": "CGY",
@@ -51459,19 +50999,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482214,
-    "name": "Artem Shlaine",
-    "team": "DAL",
-    "number": 67,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -51623,19 +51150,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482466,
-    "name": "Aatu Jamsen",
-    "team": "LAK",
-    "number": 74,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -51821,40 +51335,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482652,
-    "name": "Walker Duehr",
-    "team": "WPG",
-    "number": 71,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482655,
     "name": "J.J. Moser",
     "team": "TBL",
@@ -51986,19 +51466,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482692,
-    "name": "Guillaume Richard",
-    "team": "CBJ",
-    "number": 84,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -52182,28 +51649,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482744,
-    "name": "James Malatesta",
-    "team": "CBJ",
-    "number": 67,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482747,
     "name": "Brennan Othmann",
     "team": "CGY",
@@ -52379,6 +51824,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482776,
+    "name": "Andre Gasseau",
+    "team": "SJS",
+    "number": 26,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8482777,
     "name": "Shai Buium",
     "team": "DET",
@@ -52550,19 +52008,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482839,
-    "name": "Cole Clayton",
-    "team": "VAN",
-    "number": 34,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482858,
     "name": "Ryker Evans",
     "team": "SEA",
@@ -52725,19 +52170,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482888,
-    "name": "Bryce Montgomery",
-    "team": "CAR",
-    "number": 72,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482890,
     "name": "Ethan Samson",
     "team": "MTL",
@@ -52788,32 +52220,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482918,
-    "name": "Danila Klimovich",
-    "team": "PHI",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482922,
-    "name": "Kirill Kirsanov",
-    "team": "LAK",
-    "number": 78,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -53381,24 +52787,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483452,
-    "name": "Hunter Haight",
-    "team": "MIN",
-    "number": 37,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483459,
     "name": "Dylan James",
     "team": "DET",
@@ -53434,24 +52822,6 @@
         0,
         0
       ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483463,
-    "name": "Aleksanteri Kaskimaki",
-    "team": "STL",
-    "number": 41,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20252026": [
         0,
         0
@@ -53583,19 +52953,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483478,
-    "name": "Rieger Lorenz",
-    "team": "MIN",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -53817,24 +53174,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483510,
-    "name": "Elias Salomonsson",
-    "team": "WPG",
-    "number": 57,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483513,
     "name": "Reid Schaefer",
     "team": "NSH",
@@ -53857,19 +53196,6 @@
     "name": "Matthew Seminoff",
     "team": "DAL",
     "number": 43,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483519,
-    "name": "Gleb Trikozov",
-    "team": "CAR",
-    "number": 73,
     "active": true,
     "career": [
       0,
@@ -53947,24 +53273,6 @@
         0
       ],
       "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483538,
-    "name": "Owen Sillinger",
-    "team": "CBJ",
-    "number": 12,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
         0,
         0
       ]
@@ -54177,19 +53485,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483672,
-    "name": "Garrett Brown",
-    "team": "WPG",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483675,
     "name": "Kenny Connors",
     "team": "LAK",
@@ -54359,24 +53654,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483699,
-    "name": "Angus Booth",
-    "team": "LAK",
-    "number": 81,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483704,
     "name": "Dans Locmelis",
     "team": "BOS",
@@ -54507,19 +53784,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483741,
-    "name": "Landon Sim",
-    "team": "TOR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -55040,19 +54304,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484184,
-    "name": "Rasmus Kumpulainen",
-    "team": "MIN",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484188,
     "name": "Theo Lindstein",
     "team": "STL",
@@ -55184,19 +54435,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484216,
-    "name": "Coulson Pitre",
-    "team": "ANA",
-    "number": 60,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484220,
     "name": "David Reinbacher",
     "team": "MTL",
@@ -55243,24 +54481,6 @@
       0
     ],
     "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484230,
-    "name": "Otto Stenberg",
-    "team": "STL",
-    "number": 28,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
     "vs_goalie": {}
   },
   {
@@ -55361,19 +54581,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484243,
-    "name": "Koehn Ziemmer",
-    "team": "LAK",
-    "number": 89,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484255,
     "name": "Jason Polin",
     "team": "BUF",
@@ -55454,32 +54661,6 @@
       0
     ],
     "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484287,
-    "name": "Cole McWard",
-    "team": "TOR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
       "20252026": [
         0,
         0
@@ -55656,32 +54837,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484395,
-    "name": "Konnor Smith",
-    "team": "ANA",
-    "number": 63,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484396,
-    "name": "Yegor Sidorov",
-    "team": "ANA",
-    "number": 57,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484400,
     "name": "Jiri Felcman",
     "team": "CHI",
@@ -55783,19 +54938,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484464,
-    "name": "Noah Chadwick",
-    "team": "TOR",
-    "number": 58,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484471,
     "name": "Emmitt Finnie",
     "team": "DET",
@@ -55811,19 +54953,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484472,
-    "name": "Oiva Keskinen",
-    "team": "CBJ",
-    "number": 20,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -55902,32 +55031,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484540,
-    "name": "Blake Smith",
-    "team": "TOR",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484556,
-    "name": "Saige Weinstein",
-    "team": "COL",
-    "number": 89,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484583,
     "name": "Attilio Biasca",
     "team": "BOS",
@@ -55982,6 +55085,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484763,
+    "name": "Leo Sahlin-Wallenius",
+    "team": "SJS",
+    "number": 72,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -56103,19 +55219,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484790,
-    "name": "Adam Jiricek",
-    "team": "STL",
-    "number": 36,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484793,
     "name": "Sacha Boisvert",
     "team": "CHI",
@@ -56149,19 +55252,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484796,
-    "name": "Emil Hemming",
-    "team": "DAL",
-    "number": 39,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -56214,19 +55304,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484805,
-    "name": "Ben Danford",
-    "team": "TOR",
-    "number": 38,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484806,
     "name": "Sam Dickinson",
     "team": "SJS",
@@ -56249,19 +55326,6 @@
     "name": "Cole Eiserman",
     "team": "NYI",
     "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484808,
-    "name": "Charlie Elick",
-    "team": "CBJ",
-    "number": 57,
     "active": true,
     "career": [
       0,
@@ -56354,62 +55418,10 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484844,
-    "name": "Jared Woolley",
-    "team": "LAK",
-    "number": 80,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484853,
-    "name": "Herman Traff",
-    "team": "ANA",
-    "number": 87,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484858,
-    "name": "Anthony (AJ) Spellacy",
-    "team": "CHI",
-    "number": 79,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8484859,
     "name": "Stian Solberg",
     "team": "ANA",
     "number": 50,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484867,
-    "name": "Ethan Procyszyn",
-    "team": "ANA",
-    "number": 58,
     "active": true,
     "career": [
       0,
@@ -56429,28 +55441,6 @@
       0
     ],
     "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484901,
-    "name": "Jacob Quillan",
-    "team": "TOR",
-    "number": 26,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
       "20252026": [
         0,
         0
@@ -56587,19 +55577,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8485049,
-    "name": "Miroslav Holinka",
-    "team": "TOR",
-    "number": 98,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8485071,
     "name": "Hunter St. Martin",
     "team": "FLA",
@@ -56643,19 +55620,6 @@
     "name": "Tomas Cibulka",
     "team": "EDM",
     "number": 78,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485166,
-    "name": "Connor Mylymok",
-    "team": "CHI",
-    "number": null,
     "active": true,
     "career": [
       0,
@@ -56719,19 +55683,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8485368,
-    "name": "Ivan Ryabkin",
-    "team": "CAR",
-    "number": 49,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -57162,33 +56113,7 @@
     "id": 8486118,
     "name": "Gustav Stjernberg",
     "team": "COL",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486126,
-    "name": "Jack Anderson",
-    "team": "DAL",
-    "number": 40,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486130,
-    "name": "Dylan Hryckowian",
-    "team": "DAL",
-    "number": 46,
+    "number": 44,
     "active": true,
     "career": [
       0,
@@ -57201,7 +56126,7 @@
     "id": 8486151,
     "name": "Matthew DiMarsico",
     "team": "COL",
-    "number": null,
+    "number": 14,
     "active": true,
     "career": [
       0,
@@ -57245,20 +56170,7 @@
     "id": 8486171,
     "name": "T.J. Hughes",
     "team": "COL",
-    "number": null,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486182,
-    "name": "Ben Dexheimer",
-    "team": "MIN",
-    "number": null,
+    "number": 13,
     "active": true,
     "career": [
       0,
@@ -80385,158 +79297,6 @@
     },
     "miss_reasons": {
       "wide-of-net": 1
-    }
-  },
-  {
-    "id": 8484166,
-    "name": "Adam Fantilli",
-    "team": "",
-    "active": false,
-    "career": [
-      3,
-      16
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        2,
-        7
-      ],
-      "20252026": [
-        1,
-        9
-      ]
-    },
-    "vs_goalie": {
-      "Arturs Silovs": [
-        1,
-        2
-      ],
-      "Matt Murray": [
-        0,
-        1
-      ],
-      "Igor Shesterkin": [
-        0,
-        1
-      ],
-      "Jakub Dobes": [
-        0,
-        1
-      ],
-      "Cam Talbot": [
-        0,
-        1
-      ],
-      "Dan Vladar": [
-        0,
-        1
-      ],
-      "Jeremy Swayman": [
-        0,
-        1
-      ],
-      "John Gibson": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Cam Talbot": {
-        "backhand": [
-          0,
-          1
-        ]
-      },
-      "John Gibson": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Matt Murray": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Igor Shesterkin": {
-        "backhand": [
-          0,
-          1
-        ],
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Dan Vladar": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Jeremy Swayman": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Arturs Silovs": {
-        "wrist": [
-          1,
-          2
-        ]
-      },
-      "Jakub Dobes": {
-        "unknown": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "backhand": [
-        1,
-        4
-      ],
-      "wrist": [
-        2,
-        9
-      ],
-      "snap": [
-        0,
-        2
-      ],
-      "unknown": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "3": [
-        0,
-        1
-      ],
-      "4": [
-        1,
-        2
-      ],
-      "2": [
-        2,
-        11
-      ],
-      "1": [
-        0,
-        2
-      ]
-    },
-    "miss_reasons": {
-      "above-crossbar": 1,
-      "hit-right-post": 1
     }
   },
   {
@@ -122009,6 +120769,59 @@
     }
   },
   {
+    "id": 8480873,
+    "name": "Rasmus Sandin",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        1
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "wrist": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "4": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8480205,
     "name": "Emil Bemstrom",
     "team": "",
@@ -122292,6 +121105,43 @@
     }
   },
   {
+    "id": 8480441,
+    "name": "Trey Fix-Wolansky",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        1
+      ],
+      "20232024": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "snap": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "7": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8479383,
     "name": "Boris Katchouk",
     "team": "",
@@ -122446,6 +121296,52 @@
     "by_round": {
       "6": [
         0,
+        1
+      ]
+    }
+  },
+  {
+    "id": 8482103,
+    "name": "Ozzy Wiesblatt",
+    "team": "",
+    "active": false,
+    "career": [
+      1,
+      1
+    ],
+    "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        1,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Darcy Kuemper": [
+        1,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Darcy Kuemper": {
+        "wrist": [
+          1,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "9": [
+        1,
         1
       ]
     }
