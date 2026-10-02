@@ -20877,6 +20877,112 @@
     }
   },
   {
+    "id": 8484144,
+    "name": "Connor Bedard",
+    "team": "CHI",
+    "number": 98,
+    "active": true,
+    "career": [
+      5,
+      11
+    ],
+    "seasons": {
+      "20232024": [
+        1,
+        1
+      ],
+      "20242025": [
+        2,
+        5
+      ],
+      "20252026": [
+        2,
+        5
+      ]
+    },
+    "vs_goalie": {
+      "Kevin Lankinen": [
+        0,
+        1
+      ],
+      "Carter Hart": [
+        1,
+        1
+      ],
+      "Frederik Andersen": [
+        1,
+        1
+      ],
+      "Andrei Vasilevskiy": [
+        0,
+        1
+      ],
+      "Jesper Wallstedt": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Frederik Andersen": {
+        "snap": [
+          1,
+          1
+        ]
+      },
+      "Andrei Vasilevskiy": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Carter Hart": {
+        "wrist": [
+          1,
+          1
+        ]
+      },
+      "Kevin Lankinen": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Jesper Wallstedt": {
+        "unknown": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        4,
+        9
+      ],
+      "snap": [
+        1,
+        1
+      ],
+      "unknown": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        2,
+        3
+      ],
+      "2": [
+        3,
+        8
+      ]
+    },
+    "miss_reasons": {
+      "hit-right-post": 1
+    }
+  },
+  {
     "id": 8474563,
     "name": "Drew Doughty",
     "team": "LAK",
@@ -35641,6 +35747,81 @@
     }
   },
   {
+    "id": 8477998,
+    "name": "Warren Foegele",
+    "team": "OTT",
+    "number": 37,
+    "active": true,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Juuse Saros": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Juuse Saros": {
+        "wrist": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "8": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8478038,
     "name": "Devon Toews",
     "team": "COL",
@@ -39636,56 +39817,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8476952,
-    "name": "Dominic Toninato",
-    "team": "CHI",
-    "number": 25,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8476967,
     "name": "Brett Kulak",
     "team": "COL",
@@ -41673,48 +41804,6 @@
         0
       ],
       "20222023": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8478502,
-    "name": "Dennis Gilbert",
-    "team": "BUF",
-    "number": 44,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
         0,
         0
       ],
@@ -46301,28 +46390,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482209,
-    "name": "Rory Kerins",
-    "team": "CGY",
-    "number": 6,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482408,
     "name": "Jeff Malott",
     "team": "ANA",
@@ -46574,28 +46641,6 @@
     "name": "Colton Dach",
     "team": "EDM",
     "number": 34,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482715,
-    "name": "Ryan Ufko",
-    "team": "NSH",
-    "number": 12,
     "active": true,
     "career": [
       0,
@@ -47491,28 +47536,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483487,
-    "name": "Rutger McGroarty",
-    "team": "PIT",
-    "number": 2,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483490,
     "name": "Pavel Mintyukov",
     "team": "ANA",
@@ -47872,24 +47895,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483709,
-    "name": "Abram Wiebe",
-    "team": "CGY",
-    "number": 52,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483731,
     "name": "Alex Bump",
     "team": "PHI",
@@ -48072,28 +48077,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484150,
-    "name": "Hunter Brzustewicz",
-    "team": "CGY",
-    "number": 48,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8484152,
     "name": "Luca Cagnoni",
     "team": "SJS",
@@ -48113,19 +48096,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484154,
-    "name": "Jonathan Castagna",
-    "team": "CGY",
-    "number": 38,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -48219,28 +48189,6 @@
       0
     ],
     "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484234,
-    "name": "Aydar Suniev",
-    "team": "CGY",
-    "number": 61,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
       "20252026": [
         0,
         0
@@ -48556,24 +48504,6 @@
       0
     ],
     "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484793,
-    "name": "Sacha Boisvert",
-    "team": "CHI",
-    "number": 90,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
     "vs_goalie": {}
   },
   {
@@ -78770,111 +78700,6 @@
     },
     "miss_reasons": {
       "wide-of-net": 1
-    }
-  },
-  {
-    "id": 8484144,
-    "name": "Connor Bedard",
-    "team": "",
-    "active": false,
-    "career": [
-      5,
-      11
-    ],
-    "seasons": {
-      "20232024": [
-        1,
-        1
-      ],
-      "20242025": [
-        2,
-        5
-      ],
-      "20252026": [
-        2,
-        5
-      ]
-    },
-    "vs_goalie": {
-      "Kevin Lankinen": [
-        0,
-        1
-      ],
-      "Carter Hart": [
-        1,
-        1
-      ],
-      "Frederik Andersen": [
-        1,
-        1
-      ],
-      "Andrei Vasilevskiy": [
-        0,
-        1
-      ],
-      "Jesper Wallstedt": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Frederik Andersen": {
-        "snap": [
-          1,
-          1
-        ]
-      },
-      "Andrei Vasilevskiy": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Carter Hart": {
-        "wrist": [
-          1,
-          1
-        ]
-      },
-      "Kevin Lankinen": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Jesper Wallstedt": {
-        "unknown": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        4,
-        9
-      ],
-      "snap": [
-        1,
-        1
-      ],
-      "unknown": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        2,
-        3
-      ],
-      "2": [
-        3,
-        8
-      ]
-    },
-    "miss_reasons": {
-      "hit-right-post": 1
     }
   },
   {
@@ -114937,80 +114762,6 @@
       ]
     },
     "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "8": [
-        0,
-        1
-      ]
-    }
-  },
-  {
-    "id": 8477998,
-    "name": "Warren Foegele",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Juuse Saros": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Juuse Saros": {
-        "wrist": [
-          0,
-          1
-        ]
-      }
-    },
     "shot_types": {
       "wrist": [
         0,

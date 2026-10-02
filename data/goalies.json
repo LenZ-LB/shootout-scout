@@ -2831,80 +2831,6 @@
     }
   },
   {
-    "id": 8480051,
-    "name": "Cayden Primeau",
-    "team": "CAR",
-    "number": 55,
-    "active": true,
-    "stopped": 26,
-    "faced": 37,
-    "wins": 3,
-    "losses": 5,
-    "record": "3 W \u2013 5 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        16,
-        26
-      ],
-      "slap": [
-        2,
-        2
-      ],
-      "backhand": [
-        6,
-        6
-      ],
-      "snap": [
-        2,
-        3
-      ]
-    },
-    "by_round": {
-      "1": [
-        6,
-        8
-      ],
-      "2": [
-        6,
-        8
-      ],
-      "3": [
-        5,
-        8
-      ],
-      "4": [
-        3,
-        4
-      ],
-      "5": [
-        2,
-        3
-      ],
-      "6": [
-        2,
-        3
-      ],
-      "7": [
-        1,
-        1
-      ],
-      "8": [
-        1,
-        1
-      ],
-      "9": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "hit-left-post": 2,
-      "wide-left": 1,
-      "hit-right-post": 1,
-      "wide-right": 1
-    }
-  },
-  {
     "id": 8480193,
     "name": "Daniil Tarasov",
     "team": "DET",
@@ -3810,6 +3736,34 @@
     }
   },
   {
+    "id": 8482193,
+    "name": "Dylan Garand",
+    "team": "NYR",
+    "number": 33,
+    "active": true,
+    "stopped": 0,
+    "faced": 2,
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts",
+    "shots_by_type": {
+      "snap": [
+        0,
+        2
+      ]
+    },
+    "by_round": {
+      "1": [
+        0,
+        1
+      ],
+      "2": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8482221,
     "name": "Devon Levi",
     "team": "EDM",
@@ -4236,7 +4190,7 @@
     "id": 8483532,
     "name": "Clay Stevenson",
     "team": "WPG",
-    "number": null,
+    "number": 33,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -15353,6 +15307,79 @@
     }
   },
   {
+    "id": 8480051,
+    "name": "Cayden Primeau",
+    "team": "",
+    "active": false,
+    "stopped": 26,
+    "faced": 37,
+    "wins": 3,
+    "losses": 5,
+    "record": "3 W \u2013 5 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        16,
+        26
+      ],
+      "slap": [
+        2,
+        2
+      ],
+      "backhand": [
+        6,
+        6
+      ],
+      "snap": [
+        2,
+        3
+      ]
+    },
+    "by_round": {
+      "1": [
+        6,
+        8
+      ],
+      "2": [
+        6,
+        8
+      ],
+      "3": [
+        5,
+        8
+      ],
+      "4": [
+        3,
+        4
+      ],
+      "5": [
+        2,
+        3
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        1,
+        1
+      ],
+      "8": [
+        1,
+        1
+      ],
+      "9": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "hit-left-post": 2,
+      "wide-left": 1,
+      "hit-right-post": 1,
+      "wide-right": 1
+    }
+  },
+  {
     "id": 8478902,
     "name": "Erik Kallgren",
     "team": "",
@@ -16075,33 +16102,6 @@
     "miss_reasons": {
       "above-crossbar": 1,
       "wide-right": 1
-    }
-  },
-  {
-    "id": 8482193,
-    "name": "Dylan Garand",
-    "team": "",
-    "active": false,
-    "stopped": 0,
-    "faced": 2,
-    "wins": 0,
-    "losses": 1,
-    "record": "0 W \u2013 1 L in career shootouts",
-    "shots_by_type": {
-      "snap": [
-        0,
-        2
-      ]
-    },
-    "by_round": {
-      "1": [
-        0,
-        1
-      ],
-      "2": [
-        0,
-        1
-      ]
     }
   },
   {
