@@ -16518,7 +16518,7 @@
     "id": 8480893,
     "name": "Kirill Marchenko",
     "team": "TOR",
-    "number": null,
+    "number": 86,
     "active": true,
     "career": [
       10,
@@ -38649,64 +38649,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8475752,
-    "name": "Tyler Pitlick",
-    "team": "MIN",
-    "number": 19,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20132014": [
-        0,
-        0
-      ],
-      "20142015": [
-        0,
-        0
-      ],
-      "20162017": [
-        0,
-        0
-      ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8475795,
     "name": "Dylan McIlrath",
     "team": "WSH",
@@ -40213,6 +40155,64 @@
     "vs_goalie": {}
   },
   {
+    "id": 8477425,
+    "name": "Miles Wood",
+    "team": "TOR",
+    "number": 18,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20152016": [
+        0,
+        0
+      ],
+      "20162017": [
+        0,
+        0
+      ],
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8477429,
     "name": "Andrew Copp",
     "team": "DET",
@@ -41105,6 +41105,48 @@
     "name": "Jake Walman",
     "team": "EDM",
     "number": 96,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8478043,
+    "name": "Sam Lafferty",
+    "team": "FLA",
+    "number": 18,
     "active": true,
     "career": [
       0,
@@ -47449,6 +47491,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483478,
+    "name": "Rieger Lorenz",
+    "team": "MIN",
+    "number": 61,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8483482,
     "name": "Tristan Luneau",
     "team": "ANA",
@@ -48810,24 +48865,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8485467,
-    "name": "Luke Haymes",
-    "team": "TOR",
-    "number": 43,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8485512,
     "name": "Tim Washe",
     "team": "ANA",
@@ -48943,24 +48980,6 @@
       0
     ],
     "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486166,
-    "name": "Viking Gustafsson Nyberg",
-    "team": "MIN",
-    "number": 6,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
     "vs_goalie": {}
   },
   {

@@ -2551,6 +2551,65 @@
     }
   },
   {
+    "id": 8479406,
+    "name": "Filip Gustavsson",
+    "team": "MIN",
+    "number": 32,
+    "active": true,
+    "stopped": 45,
+    "faced": 67,
+    "wins": 10,
+    "losses": 9,
+    "record": "10 W \u2013 9 L in career shootouts",
+    "shots_by_type": {
+      "snap": [
+        9,
+        10
+      ],
+      "backhand": [
+        9,
+        15
+      ],
+      "wrist": [
+        25,
+        40
+      ],
+      "unknown": [
+        2,
+        2
+      ]
+    },
+    "by_round": {
+      "1": [
+        12,
+        19
+      ],
+      "2": [
+        15,
+        19
+      ],
+      "3": [
+        11,
+        15
+      ],
+      "4": [
+        6,
+        10
+      ],
+      "5": [
+        1,
+        4
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 3,
+      "wide-left": 2,
+      "high-and-wide-left": 1,
+      "hit-right-post": 1,
+      "wide-right": 2
+    }
+  },
+  {
     "id": 8479973,
     "name": "Stuart Skinner",
     "team": "WPG",
@@ -15180,64 +15239,6 @@
         1,
         1
       ]
-    }
-  },
-  {
-    "id": 8479406,
-    "name": "Filip Gustavsson",
-    "team": "",
-    "active": false,
-    "stopped": 45,
-    "faced": 67,
-    "wins": 10,
-    "losses": 9,
-    "record": "10 W \u2013 9 L in career shootouts",
-    "shots_by_type": {
-      "snap": [
-        9,
-        10
-      ],
-      "backhand": [
-        9,
-        15
-      ],
-      "wrist": [
-        25,
-        40
-      ],
-      "unknown": [
-        2,
-        2
-      ]
-    },
-    "by_round": {
-      "1": [
-        12,
-        19
-      ],
-      "2": [
-        15,
-        19
-      ],
-      "3": [
-        11,
-        15
-      ],
-      "4": [
-        6,
-        10
-      ],
-      "5": [
-        1,
-        4
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 3,
-      "wide-left": 2,
-      "high-and-wide-left": 1,
-      "hit-right-post": 1,
-      "wide-right": 2
     }
   },
   {
