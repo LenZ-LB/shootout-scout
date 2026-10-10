@@ -45111,40 +45111,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8481517,
-    "name": "Brett Leason",
-    "team": "SJS",
-    "number": 17,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8481522,
     "name": "Peyton Krebs",
     "team": "BUF",
@@ -45390,8 +45356,8 @@
   {
     "id": 8481593,
     "name": "Jayden Struble",
-    "team": "MTL",
-    "number": 47,
+    "team": "NSH",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -45898,6 +45864,36 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482087,
+    "name": "Kaiden Guhle",
+    "team": "MTL",
+    "number": 21,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482088,
     "name": "Justin Sourdif",
     "team": "WSH",
@@ -46328,6 +46324,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482169,
+    "name": "Helge Grans",
+    "team": "PHI",
+    "number": 3,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20242025": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482171,
     "name": "William Wallinder",
     "team": "DET",
@@ -46521,6 +46535,40 @@
         0
       ],
       "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8482641,
+    "name": "Matt Kiersted",
+    "team": "MIN",
+    "number": 26,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
         0,
         0
       ],
@@ -47951,6 +47999,24 @@
         0,
         0
       ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483756,
+    "name": "Jared Wright",
+    "team": "LAK",
+    "number": 25,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
       "20252026": [
         0,
         0
