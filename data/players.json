@@ -24868,6 +24868,86 @@
     }
   },
   {
+    "id": 8477993,
+    "name": "Justin Kirkland",
+    "team": "MIN",
+    "number": 28,
+    "active": true,
+    "career": [
+      3,
+      6
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        3,
+        4
+      ],
+      "20252026": [
+        0,
+        2
+      ]
+    },
+    "vs_goalie": {
+      "Stuart Skinner": [
+        0,
+        1
+      ],
+      "Linus Ullmark": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Linus Ullmark": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Stuart Skinner": {
+        "snap": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        3,
+        5
+      ],
+      "snap": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "6": [
+        1,
+        1
+      ],
+      "3": [
+        2,
+        3
+      ],
+      "1": [
+        0,
+        2
+      ]
+    },
+    "miss_reasons": {
+      "hit-right-post": 1
+    }
+  },
+  {
     "id": 8478493,
     "name": "Joel Eriksson Ek",
     "team": "MIN",
@@ -26955,104 +27035,6 @@
     },
     "miss_reasons": {
       "wide-left": 1
-    }
-  },
-  {
-    "id": 8484185,
-    "name": "Nick Lardis",
-    "team": "CHI",
-    "number": 76,
-    "active": true,
-    "career": [
-      2,
-      5
-    ],
-    "seasons": {
-      "20252026": [
-        2,
-        5
-      ]
-    },
-    "vs_goalie": {
-      "Jake Oettinger": [
-        1,
-        1
-      ],
-      "David Rittich": [
-        0,
-        1
-      ],
-      "Logan Thompson": [
-        1,
-        1
-      ],
-      "Frederik Andersen": [
-        0,
-        1
-      ],
-      "Andrei Vasilevskiy": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Frederik Andersen": {
-        "snap": [
-          0,
-          1
-        ]
-      },
-      "Andrei Vasilevskiy": {
-        "backhand": [
-          0,
-          1
-        ]
-      },
-      "David Rittich": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Jake Oettinger": {
-        "wrist": [
-          1,
-          1
-        ]
-      },
-      "Logan Thompson": {
-        "snap": [
-          1,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        1,
-        2
-      ],
-      "snap": [
-        1,
-        2
-      ],
-      "backhand": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "4": [
-        1,
-        1
-      ],
-      "1": [
-        1,
-        4
-      ]
-    },
-    "miss_reasons": {
-      "high-and-wide-right": 1
     }
   },
   {
@@ -38622,6 +38604,64 @@
     "vs_goalie": {}
   },
   {
+    "id": 8475752,
+    "name": "Tyler Pitlick",
+    "team": "MIN",
+    "number": 19,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20132014": [
+        0,
+        0
+      ],
+      "20142015": [
+        0,
+        0
+      ],
+      "20162017": [
+        0,
+        0
+      ],
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8475795,
     "name": "Dylan McIlrath",
     "team": "WSH",
@@ -41892,6 +41932,48 @@
     "vs_goalie": {}
   },
   {
+    "id": 8478502,
+    "name": "Dennis Gilbert",
+    "team": "BUF",
+    "number": 44,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8478507,
     "name": "John Marino",
     "team": "UTA",
@@ -43445,6 +43527,44 @@
         0
       ],
       "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8480021,
+    "name": "Jack Studnicka",
+    "team": "PHI",
+    "number": 23,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
         0,
         0
       ],
@@ -45278,6 +45398,32 @@
     ],
     "seasons": {
       "20222023": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8481564,
+    "name": "Ryan Johnson",
+    "team": "PIT",
+    "number": 3,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
         0,
         0
       ],
@@ -47289,6 +47435,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483424,
+    "name": "Owen Beck",
+    "team": "MTL",
+    "number": 62,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8483425,
     "name": "Lian Bichsel",
     "team": "DAL",
@@ -48019,24 +48191,6 @@
         0,
         0
       ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483756,
-    "name": "Jared Wright",
-    "team": "LAK",
-    "number": 25,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20252026": [
         0,
         0
@@ -87476,85 +87630,6 @@
     }
   },
   {
-    "id": 8477993,
-    "name": "Justin Kirkland",
-    "team": "",
-    "active": false,
-    "career": [
-      3,
-      6
-    ],
-    "seasons": {
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        3,
-        4
-      ],
-      "20252026": [
-        0,
-        2
-      ]
-    },
-    "vs_goalie": {
-      "Stuart Skinner": [
-        0,
-        1
-      ],
-      "Linus Ullmark": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Linus Ullmark": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Stuart Skinner": {
-        "snap": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        3,
-        5
-      ],
-      "snap": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "6": [
-        1,
-        1
-      ],
-      "3": [
-        2,
-        3
-      ],
-      "1": [
-        0,
-        2
-      ]
-    },
-    "miss_reasons": {
-      "hit-right-post": 1
-    }
-  },
-  {
     "id": 8465059,
     "name": "Matt Bradley",
     "team": "",
@@ -90411,6 +90486,103 @@
         0,
         1
       ]
+    }
+  },
+  {
+    "id": 8484185,
+    "name": "Nick Lardis",
+    "team": "",
+    "active": false,
+    "career": [
+      2,
+      5
+    ],
+    "seasons": {
+      "20252026": [
+        2,
+        5
+      ]
+    },
+    "vs_goalie": {
+      "Jake Oettinger": [
+        1,
+        1
+      ],
+      "David Rittich": [
+        0,
+        1
+      ],
+      "Logan Thompson": [
+        1,
+        1
+      ],
+      "Frederik Andersen": [
+        0,
+        1
+      ],
+      "Andrei Vasilevskiy": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Frederik Andersen": {
+        "snap": [
+          0,
+          1
+        ]
+      },
+      "Andrei Vasilevskiy": {
+        "backhand": [
+          0,
+          1
+        ]
+      },
+      "David Rittich": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Jake Oettinger": {
+        "wrist": [
+          1,
+          1
+        ]
+      },
+      "Logan Thompson": {
+        "snap": [
+          1,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        1,
+        2
+      ],
+      "snap": [
+        1,
+        2
+      ],
+      "backhand": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "4": [
+        1,
+        1
+      ],
+      "1": [
+        1,
+        4
+      ]
+    },
+    "miss_reasons": {
+      "high-and-wide-right": 1
     }
   },
   {
