@@ -1497,6 +1497,59 @@
     }
   },
   {
+    "id": 8477484,
+    "name": "Spencer Martin",
+    "team": "NYR",
+    "number": 41,
+    "active": true,
+    "stopped": 16,
+    "faced": 22,
+    "wins": 2,
+    "losses": 4,
+    "record": "2 W \u2013 4 L in career shootouts",
+    "shots_by_type": {
+      "backhand": [
+        8,
+        10
+      ],
+      "wrist": [
+        8,
+        12
+      ]
+    },
+    "by_round": {
+      "1": [
+        5,
+        6
+      ],
+      "2": [
+        5,
+        6
+      ],
+      "3": [
+        4,
+        6
+      ],
+      "4": [
+        1,
+        2
+      ],
+      "5": [
+        1,
+        1
+      ],
+      "6": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 6,
+      "wide-right": 1,
+      "above-crossbar": 1
+    }
+  },
+  {
     "id": 8477967,
     "name": "Thatcher Demko",
     "team": "VAN",
@@ -15547,58 +15600,6 @@
     },
     "miss_reasons": {
       "wide-of-net": 2
-    }
-  },
-  {
-    "id": 8477484,
-    "name": "Spencer Martin",
-    "team": "",
-    "active": false,
-    "stopped": 16,
-    "faced": 22,
-    "wins": 2,
-    "losses": 4,
-    "record": "2 W \u2013 4 L in career shootouts",
-    "shots_by_type": {
-      "backhand": [
-        8,
-        10
-      ],
-      "wrist": [
-        8,
-        12
-      ]
-    },
-    "by_round": {
-      "1": [
-        5,
-        6
-      ],
-      "2": [
-        5,
-        6
-      ],
-      "3": [
-        4,
-        6
-      ],
-      "4": [
-        1,
-        2
-      ],
-      "5": [
-        1,
-        1
-      ],
-      "6": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 6,
-      "wide-right": 1,
-      "above-crossbar": 1
     }
   },
   {
