@@ -37510,6 +37510,57 @@
     }
   },
   {
+    "id": 8484203,
+    "name": "Bradly Nadeau",
+    "team": "CAR",
+    "number": 29,
+    "active": true,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Dan Vladar": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Dan Vladar": {
+        "snap": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "snap": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "2": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8484221,
     "name": "Calum Ritchie",
     "team": "NYI",
@@ -38363,6 +38414,52 @@
         0
       ],
       "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8475413,
+    "name": "Justin Dowling",
+    "team": "NYR",
+    "number": 37,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20162017": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
         0,
         0
       ],
@@ -45523,44 +45620,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8481572,
-    "name": "Ville Heinola",
-    "team": "VGK",
-    "number": 14,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8481593,
     "name": "Jayden Struble",
     "team": "NSH",
@@ -47253,32 +47312,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482861,
-    "name": "Vincent Iorio",
-    "team": "NYR",
-    "number": 6,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482866,
     "name": "Ville Ottavainen",
     "team": "SEA",
@@ -48409,6 +48442,28 @@
     "vs_goalie": {}
   },
   {
+    "id": 8484149,
+    "name": "Gavin Brindley",
+    "team": "COL",
+    "number": 54,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8484152,
     "name": "Luca Cagnoni",
     "team": "SJS",
@@ -48516,6 +48571,24 @@
         0,
         0
       ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484220,
+    "name": "David Reinbacher",
+    "team": "MTL",
+    "number": 64,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
       "20252026": [
         0,
         0
@@ -48858,19 +48931,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484786,
-    "name": "Cole Beaudoin",
-    "team": "NYR",
-    "number": 53,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -116318,56 +116378,6 @@
     },
     "by_round": {
       "6": [
-        0,
-        1
-      ]
-    }
-  },
-  {
-    "id": 8484203,
-    "name": "Bradly Nadeau",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Dan Vladar": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Dan Vladar": {
-        "snap": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "snap": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "2": [
         0,
         1
       ]
