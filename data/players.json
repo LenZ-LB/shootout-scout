@@ -31676,6 +31676,76 @@
     }
   },
   {
+    "id": 8482125,
+    "name": "Alexander Holtz",
+    "team": "VGK",
+    "number": 10,
+    "active": true,
+    "career": [
+      0,
+      3
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        1
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        1
+      ],
+      "20252026": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Scott Wedgewood": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Scott Wedgewood": {
+        "wrist": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        0,
+        3
+      ]
+    },
+    "by_round": {
+      "2": [
+        0,
+        1
+      ],
+      "5": [
+        0,
+        1
+      ],
+      "4": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-right": 1
+    }
+  },
+  {
     "id": 8482155,
     "name": "Alex Laferriere",
     "team": "LAK",
@@ -41610,48 +41680,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8478043,
-    "name": "Sam Lafferty",
-    "team": "FLA",
-    "number": 18,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8478055,
     "name": "Gustav Forsling",
     "team": "FLA",
@@ -44468,44 +44496,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8480326,
-    "name": "Sheldon Dries",
-    "team": "DET",
-    "number": 15,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8480355,
     "name": "Mark Kastelic",
     "team": "BOS",
@@ -45494,6 +45484,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8481133,
+    "name": "Cole Reinhardt",
+    "team": "FLA",
+    "number": 29,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8481161,
     "name": "Jake Christiansen",
     "team": "CBJ",
@@ -45953,6 +45969,44 @@
     "vs_goalie": {}
   },
   {
+    "id": 8481572,
+    "name": "Ville Heinola",
+    "team": "VGK",
+    "number": 14,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8481593,
     "name": "Jayden Struble",
     "team": "NSH",
@@ -46122,6 +46176,36 @@
         0
       ],
       "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8481655,
+    "name": "Cole Schwindt",
+    "team": "FLA",
+    "number": 79,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20212022": [
         0,
         0
       ],
@@ -47547,24 +47631,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482781,
-    "name": "Carson Lambos",
-    "team": "MIN",
-    "number": 55,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482784,
     "name": "Zach Dean",
     "team": "STL",
@@ -47920,6 +47986,32 @@
       0
     ],
     "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483424,
+    "name": "Owen Beck",
+    "team": "MTL",
+    "number": 62,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
       "20242025": [
         0,
         0
@@ -48950,28 +49042,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484149,
-    "name": "Gavin Brindley",
-    "team": "COL",
-    "number": 54,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8484152,
     "name": "Luca Cagnoni",
     "team": "SJS",
@@ -49039,24 +49109,6 @@
         0,
         0
       ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484188,
-    "name": "Theo Lindstein",
-    "team": "STL",
-    "number": 4,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20252026": [
         0,
         0
@@ -49199,24 +49251,6 @@
         0,
         0
       ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484262,
-    "name": "Travis Mitchell",
-    "team": "ANA",
-    "number": 34,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20252026": [
         0,
         0
@@ -98659,75 +98693,6 @@
     },
     "miss_reasons": {
       "goalpost": 1
-    }
-  },
-  {
-    "id": 8482125,
-    "name": "Alexander Holtz",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      3
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        1
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        1
-      ],
-      "20252026": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Scott Wedgewood": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Scott Wedgewood": {
-        "wrist": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        0,
-        3
-      ]
-    },
-    "by_round": {
-      "2": [
-        0,
-        1
-      ],
-      "5": [
-        0,
-        1
-      ],
-      "4": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-right": 1
     }
   },
   {
