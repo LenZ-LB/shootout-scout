@@ -1225,7 +1225,7 @@
   {
     "id": 8476945,
     "name": "Connor Hellebuyck",
-    "team": "WPG",
+    "team": "NJD",
     "number": 37,
     "active": true,
     "stopped": 61,
@@ -1347,6 +1347,41 @@
       "over-net": 1,
       "hit-right-post": 1,
       "wide-left": 1
+    }
+  },
+  {
+    "id": 8477035,
+    "name": "Matt Tomkins",
+    "team": "EDM",
+    "number": 90,
+    "active": true,
+    "stopped": 1,
+    "faced": 2,
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts",
+    "shots_by_type": {
+      "backhand": [
+        0,
+        1
+      ],
+      "wrist": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        0,
+        1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-right": 1
     }
   },
   {
@@ -3726,8 +3761,8 @@
   {
     "id": 8482076,
     "name": "Nico Daws",
-    "team": "NJD",
-    "number": 50,
+    "team": "WPG",
+    "number": null,
     "active": true,
     "stopped": 8,
     "faced": 12,
@@ -15893,40 +15928,6 @@
         1,
         1
       ]
-    }
-  },
-  {
-    "id": 8477035,
-    "name": "Matt Tomkins",
-    "team": "",
-    "active": false,
-    "stopped": 1,
-    "faced": 2,
-    "wins": 0,
-    "losses": 1,
-    "record": "0 W \u2013 1 L in career shootouts",
-    "shots_by_type": {
-      "backhand": [
-        0,
-        1
-      ],
-      "wrist": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        0,
-        1
-      ],
-      "2": [
-        1,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-right": 1
     }
   },
   {
