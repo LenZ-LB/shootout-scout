@@ -31744,7 +31744,7 @@
     "id": 8482110,
     "name": "Dawson Mercer",
     "team": "WPG",
-    "number": null,
+    "number": 19,
     "active": true,
     "career": [
       0,
@@ -38771,40 +38771,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8475253,
-    "name": "Garrett Wilson",
-    "team": "PHI",
-    "number": 10,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20132014": [
-        0,
-        0
-      ],
-      "20142015": [
-        0,
-        0
-      ],
-      "20152016": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8475279,
     "name": "Ben Chiarot",
     "team": "DET",
@@ -43965,6 +43931,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8479972,
+    "name": "Mason Shaw",
+    "team": "MIN",
+    "number": 18,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8479976,
     "name": "Juuso V\u00e4lim\u00e4ki",
     "team": "CAR",
@@ -45546,9 +45538,9 @@
   },
   {
     "id": 8481030,
-    "name": "Jack St. Ivany",
-    "team": "WPG",
-    "number": 6,
+    "name": "John St. Ivany",
+    "team": "WSH",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -46742,36 +46734,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482072,
-    "name": "Jack Ahcan",
-    "team": "NSH",
-    "number": 47,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482073,
     "name": "Braden Schneider",
     "team": "NYR",
@@ -46894,8 +46856,8 @@
   {
     "id": 8482094,
     "name": "Daemon Hunt",
-    "team": "MIN",
-    "number": 48,
+    "team": "NSH",
+    "number": 52,
     "active": true,
     "career": [
       0,
@@ -48113,6 +48075,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482993,
+    "name": "Avery Hayes",
+    "team": "PIT",
+    "number": 85,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8483017,
     "name": "Frederic Brunet",
     "team": "BOS",
@@ -48632,6 +48612,28 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483497,
+    "name": "Jani Nyman",
+    "team": "SEA",
+    "number": 38,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8483505,
     "name": "Matthew Poitras",
     "team": "BOS",
@@ -48672,6 +48674,24 @@
         0,
         0
       ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483510,
+    "name": "Elias Salomonsson",
+    "team": "WPG",
+    "number": 57,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
       "20252026": [
         0,
         0
@@ -49590,24 +49610,6 @@
       0
     ],
     "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484392,
-    "name": "Felix Unger S\u00f6rum",
-    "team": "CAR",
-    "number": 36,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
     "vs_goalie": {}
   },
   {
