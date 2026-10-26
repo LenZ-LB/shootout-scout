@@ -40613,40 +40613,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8477335,
-    "name": "Kyle Burroughs",
-    "team": "DAL",
-    "number": 28,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8477346,
     "name": "MacKenzie Weegar",
     "team": "UTA",
@@ -45941,28 +45907,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8481525,
-    "name": "Matthew Robertson",
-    "team": "NYR",
-    "number": 29,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8481527,
     "name": "Kaedan Korczak",
     "team": "PIT",
@@ -46594,28 +46538,6 @@
         0,
         0
       ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8481848,
-    "name": "Jacob Gaucher",
-    "team": "PHI",
-    "number": 78,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20242025": [
         0,
         0
@@ -48027,24 +47949,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482953,
-    "name": "Taylor Makar",
-    "team": "COL",
-    "number": 16,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482964,
     "name": "Arber Xhekaj",
     "team": "MTL",
@@ -48715,6 +48619,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483514,
+    "name": "Matthew Seminoff",
+    "team": "DAL",
+    "number": 43,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -50119,6 +50036,19 @@
     "name": "Ivar Stenberg",
     "team": "SJS",
     "number": 41,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
+    "id": 8486130,
+    "name": "Dylan Hryckowian",
+    "team": "DAL",
+    "number": 46,
     "active": true,
     "career": [
       0,
