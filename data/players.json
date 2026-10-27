@@ -31791,76 +31791,6 @@
     }
   },
   {
-    "id": 8482125,
-    "name": "Alexander Holtz",
-    "team": "VGK",
-    "number": 10,
-    "active": true,
-    "career": [
-      0,
-      3
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        1
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        1
-      ],
-      "20252026": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Scott Wedgewood": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Scott Wedgewood": {
-        "wrist": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        0,
-        3
-      ]
-    },
-    "by_round": {
-      "2": [
-        0,
-        1
-      ],
-      "5": [
-        0,
-        1
-      ],
-      "4": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-right": 1
-    }
-  },
-  {
     "id": 8482155,
     "name": "Alex Laferriere",
     "team": "LAK",
@@ -37404,6 +37334,49 @@
     },
     "by_round": {
       "3": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": 8482100,
+    "name": "Alexander Nikishin",
+    "team": "CAR",
+    "number": 21,
+    "active": true,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Dan Vladar": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Dan Vladar": {
+        "snap": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "snap": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "4": [
         0,
         1
       ]
@@ -44205,6 +44178,40 @@
     "vs_goalie": {}
   },
   {
+    "id": 8480007,
+    "name": "Jonas Rondbjerg",
+    "team": "VGK",
+    "number": 46,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8480021,
     "name": "Jack Studnicka",
     "team": "PHI",
@@ -44605,28 +44612,6 @@
         0,
         0
       ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8480291,
-    "name": "Skyler Brind'Amour",
-    "team": "CAR",
-    "number": 76,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20242025": [
         0,
         0
@@ -45504,9 +45489,9 @@
   },
   {
     "id": 8481030,
-    "name": "John St. Ivany",
+    "name": "Jack St. Ivany",
     "team": "WSH",
-    "number": null,
+    "number": 29,
     "active": true,
     "career": [
       0,
@@ -46538,6 +46523,28 @@
         0,
         0
       ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8481848,
+    "name": "Jacob Gaucher",
+    "team": "PHI",
+    "number": 78,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
       "20242025": [
         0,
         0
@@ -98729,6 +98736,75 @@
     }
   },
   {
+    "id": 8482125,
+    "name": "Alexander Holtz",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      3
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        1
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        1
+      ],
+      "20252026": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Scott Wedgewood": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Scott Wedgewood": {
+        "wrist": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        0,
+        3
+      ]
+    },
+    "by_round": {
+      "2": [
+        0,
+        1
+      ],
+      "5": [
+        0,
+        1
+      ],
+      "4": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-right": 1
+    }
+  },
+  {
     "id": 8481577,
     "name": "Philip Tomasino",
     "team": "",
@@ -116771,48 +116847,6 @@
     },
     "shot_types": {
       "wrist": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "4": [
-        0,
-        1
-      ]
-    }
-  },
-  {
-    "id": 8482100,
-    "name": "Alexander Nikishin",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Dan Vladar": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Dan Vladar": {
-        "snap": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "snap": [
         0,
         1
       ]
