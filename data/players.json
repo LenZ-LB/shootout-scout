@@ -41820,6 +41820,44 @@
     "vs_goalie": {}
   },
   {
+    "id": 8478057,
+    "name": "Dakota Joshua",
+    "team": "TOR",
+    "number": 81,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8478136,
     "name": "Jake Middleton",
     "team": "CGY",
@@ -43101,6 +43139,40 @@
         0
       ],
       "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8479333,
+    "name": "Libor Hajek",
+    "team": "SJS",
+    "number": 24,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
         0,
         0
       ]
@@ -46501,28 +46573,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8481848,
-    "name": "Jacob Gaucher",
-    "team": "PHI",
-    "number": 78,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8482055,
     "name": "Drew O'Connor",
     "team": "VAN",
@@ -47695,6 +47745,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482781,
+    "name": "Carson Lambos",
+    "team": "MIN",
+    "number": 55,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482802,
     "name": "Carter Mazur",
     "team": "DET",
@@ -47952,24 +48020,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482993,
-    "name": "Avery Hayes",
-    "team": "PIT",
-    "number": 85,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483017,
     "name": "Frederic Brunet",
     "team": "BOS",
@@ -48107,6 +48157,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483428,
+    "name": "Filip Bystedt",
+    "team": "SJS",
+    "number": 18,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -49159,28 +49222,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484152,
-    "name": "Luca Cagnoni",
-    "team": "SJS",
-    "number": 42,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8484154,
     "name": "Jonathan Castagna",
     "team": "CGY",
@@ -49779,19 +49820,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8485019,
-    "name": "Chase Pietila",
-    "team": "PIT",
-    "number": 44,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8485366,
     "name": "Matthew Schaefer",
     "team": "NYI",
@@ -50009,19 +50037,6 @@
     "name": "Ivar Stenberg",
     "team": "SJS",
     "number": 41,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486130,
-    "name": "Dylan Hryckowian",
-    "team": "DAL",
-    "number": 46,
     "active": true,
     "career": [
       0,
