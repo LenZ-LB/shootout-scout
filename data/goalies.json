@@ -4298,6 +4298,18 @@
     }
   },
   {
+    "id": 8482949,
+    "name": "Arsenii Sergeev",
+    "team": "CGY",
+    "number": 35,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8482982,
     "name": "Jet Greaves",
     "team": "CBJ",
@@ -4501,18 +4513,6 @@
     "name": "Cooper Black",
     "team": "FLA",
     "number": 31,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8485545,
-    "name": "Michal Postava",
-    "team": "DET",
-    "number": 35,
     "active": true,
     "stopped": 0,
     "faced": 0,

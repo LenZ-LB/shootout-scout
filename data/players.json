@@ -7982,143 +7982,6 @@
     }
   },
   {
-    "id": 8477946,
-    "name": "Dylan Larkin",
-    "team": "DET",
-    "number": 71,
-    "active": true,
-    "career": [
-      10,
-      37
-    ],
-    "seasons": {
-      "20152016": [
-        0,
-        2
-      ],
-      "20162017": [
-        0,
-        2
-      ],
-      "20172018": [
-        0,
-        3
-      ],
-      "20182019": [
-        1,
-        4
-      ],
-      "20192020": [
-        3,
-        5
-      ],
-      "20202021": [
-        2,
-        3
-      ],
-      "20212022": [
-        1,
-        4
-      ],
-      "20222023": [
-        1,
-        7
-      ],
-      "20232024": [
-        0,
-        2
-      ],
-      "20242025": [
-        2,
-        2
-      ],
-      "20252026": [
-        0,
-        3
-      ]
-    },
-    "vs_goalie": {
-      "Alex Nedeljkovic": [
-        0,
-        1
-      ],
-      "Charlie Lindgren": [
-        0,
-        1
-      ],
-      "Jet Greaves": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Alex Nedeljkovic": {
-        "wrist": [
-          0,
-          1
-        ]
-      },
-      "Charlie Lindgren": {
-        "backhand": [
-          0,
-          1
-        ]
-      },
-      "Jet Greaves": {
-        "snap": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "backhand": [
-        2,
-        8
-      ],
-      "wrist": [
-        3,
-        21
-      ],
-      "snap": [
-        5,
-        8
-      ]
-    },
-    "by_round": {
-      "5": [
-        0,
-        2
-      ],
-      "1": [
-        4,
-        9
-      ],
-      "3": [
-        2,
-        14
-      ],
-      "6": [
-        0,
-        2
-      ],
-      "4": [
-        0,
-        2
-      ],
-      "2": [
-        4,
-        8
-      ]
-    },
-    "miss_reasons": {
-      "goalpost": 4,
-      "wide-of-net": 3,
-      "wide-left": 2,
-      "hit-crossbar": 1
-    }
-  },
-  {
     "id": 8478402,
     "name": "Connor McDavid",
     "team": "EDM",
@@ -11405,6 +11268,148 @@
       "wide-of-net": 1,
       "hit-right-post": 2,
       "wide-right": 2
+    }
+  },
+  {
+    "id": 8478873,
+    "name": "Troy Terry",
+    "team": "ANA",
+    "number": 19,
+    "active": true,
+    "career": [
+      10,
+      28
+    ],
+    "seasons": {
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        1,
+        3
+      ],
+      "20192020": [
+        0,
+        1
+      ],
+      "20202021": [
+        2,
+        2
+      ],
+      "20212022": [
+        1,
+        8
+      ],
+      "20222023": [
+        2,
+        5
+      ],
+      "20232024": [
+        0,
+        1
+      ],
+      "20242025": [
+        1,
+        4
+      ],
+      "20252026": [
+        3,
+        4
+      ]
+    },
+    "vs_goalie": {
+      "Daniil Tarasov": [
+        1,
+        1
+      ],
+      "Darcy Kuemper": [
+        1,
+        1
+      ],
+      "Logan Thompson": [
+        1,
+        1
+      ],
+      "Arturs Silovs": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Darcy Kuemper": {
+        "backhand": [
+          0,
+          1
+        ],
+        "wrist": [
+          1,
+          1
+        ]
+      },
+      "Daniil Tarasov": {
+        "snap": [
+          1,
+          1
+        ]
+      },
+      "Logan Thompson": {
+        "backhand": [
+          1,
+          1
+        ],
+        "wrist": [
+          1,
+          1
+        ]
+      },
+      "Arturs Silovs": {
+        "wrist": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        4,
+        14
+      ],
+      "backhand": [
+        5,
+        11
+      ],
+      "unknown": [
+        0,
+        1
+      ],
+      "snap": [
+        1,
+        2
+      ]
+    },
+    "by_round": {
+      "2": [
+        8,
+        17
+      ],
+      "1": [
+        2,
+        8
+      ],
+      "4": [
+        0,
+        1
+      ],
+      "3": [
+        0,
+        2
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 1,
+      "wide-left": 2,
+      "wide-right": 1
     }
   },
   {
@@ -40686,52 +40691,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8477369,
-    "name": "Carson Soucy",
-    "team": "CBJ",
-    "number": 7,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20172018": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8477425,
     "name": "Miles Wood",
     "team": "TOR",
@@ -43942,32 +43901,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8479972,
-    "name": "Mason Shaw",
-    "team": "MIN",
-    "number": 18,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8479976,
     "name": "Juuso V\u00e4lim\u00e4ki",
     "team": "CAR",
@@ -44396,8 +44329,8 @@
   {
     "id": 8480075,
     "name": "Cameron Crotty",
-    "team": "OTT",
-    "number": 5,
+    "team": "MIN",
+    "number": 34,
     "active": true,
     "career": [
       0,
@@ -44651,6 +44584,44 @@
         0
       ],
       "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8480326,
+    "name": "Sheldon Dries",
+    "team": "DET",
+    "number": 15,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
         0,
         0
       ],
@@ -47125,6 +47096,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482160,
+    "name": "Martin Chromiak",
+    "team": "LAK",
+    "number": 42,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8482165,
     "name": "Yan Kuznetsov",
     "team": "CGY",
@@ -47723,6 +47707,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482766,
+    "name": "William Stromgren",
+    "team": "CGY",
+    "number": 65,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482768,
     "name": "Fedor Svechkov",
     "team": "COL",
@@ -47737,24 +47739,6 @@
         0,
         0
       ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8482781,
-    "name": "Carson Lambos",
-    "team": "MIN",
-    "number": 55,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20252026": [
         0,
         0
@@ -48658,19 +48642,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483514,
-    "name": "Matthew Seminoff",
-    "team": "DAL",
-    "number": 43,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483521,
     "name": "Noah Warren",
     "team": "ANA",
@@ -49000,24 +48971,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483756,
-    "name": "Jared Wright",
-    "team": "LAK",
-    "number": 25,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483760,
     "name": "Hunter McDonald",
     "team": "PHI",
@@ -49315,24 +49268,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484230,
-    "name": "Otto Stenberg",
-    "team": "STL",
-    "number": 28,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8484234,
     "name": "Aydar Suniev",
     "team": "CGY",
@@ -49391,6 +49326,24 @@
         0,
         0
       ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484262,
+    "name": "Travis Mitchell",
+    "team": "ANA",
+    "number": 34,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
       "20252026": [
         0,
         0
@@ -49902,6 +49855,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8485400,
+    "name": "Roger McQueen",
+    "team": "ANA",
+    "number": 95,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -62070,6 +62036,142 @@
     }
   },
   {
+    "id": 8477946,
+    "name": "Dylan Larkin",
+    "team": "",
+    "active": false,
+    "career": [
+      10,
+      37
+    ],
+    "seasons": {
+      "20152016": [
+        0,
+        2
+      ],
+      "20162017": [
+        0,
+        2
+      ],
+      "20172018": [
+        0,
+        3
+      ],
+      "20182019": [
+        1,
+        4
+      ],
+      "20192020": [
+        3,
+        5
+      ],
+      "20202021": [
+        2,
+        3
+      ],
+      "20212022": [
+        1,
+        4
+      ],
+      "20222023": [
+        1,
+        7
+      ],
+      "20232024": [
+        0,
+        2
+      ],
+      "20242025": [
+        2,
+        2
+      ],
+      "20252026": [
+        0,
+        3
+      ]
+    },
+    "vs_goalie": {
+      "Alex Nedeljkovic": [
+        0,
+        1
+      ],
+      "Charlie Lindgren": [
+        0,
+        1
+      ],
+      "Jet Greaves": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Alex Nedeljkovic": {
+        "wrist": [
+          0,
+          1
+        ]
+      },
+      "Charlie Lindgren": {
+        "backhand": [
+          0,
+          1
+        ]
+      },
+      "Jet Greaves": {
+        "snap": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "backhand": [
+        2,
+        8
+      ],
+      "wrist": [
+        3,
+        21
+      ],
+      "snap": [
+        5,
+        8
+      ]
+    },
+    "by_round": {
+      "5": [
+        0,
+        2
+      ],
+      "1": [
+        4,
+        9
+      ],
+      "3": [
+        2,
+        14
+      ],
+      "6": [
+        0,
+        2
+      ],
+      "4": [
+        0,
+        2
+      ],
+      "2": [
+        4,
+        8
+      ]
+    },
+    "miss_reasons": {
+      "goalpost": 4,
+      "wide-of-net": 3,
+      "wide-left": 2,
+      "hit-crossbar": 1
+    }
+  },
+  {
     "id": 8459534,
     "name": "Miroslav Satan",
     "team": "",
@@ -66447,147 +66549,6 @@
     "miss_reasons": {
       "wide-of-net": 6,
       "goalpost": 1
-    }
-  },
-  {
-    "id": 8478873,
-    "name": "Troy Terry",
-    "team": "",
-    "active": false,
-    "career": [
-      10,
-      28
-    ],
-    "seasons": {
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        1,
-        3
-      ],
-      "20192020": [
-        0,
-        1
-      ],
-      "20202021": [
-        2,
-        2
-      ],
-      "20212022": [
-        1,
-        8
-      ],
-      "20222023": [
-        2,
-        5
-      ],
-      "20232024": [
-        0,
-        1
-      ],
-      "20242025": [
-        1,
-        4
-      ],
-      "20252026": [
-        3,
-        4
-      ]
-    },
-    "vs_goalie": {
-      "Daniil Tarasov": [
-        1,
-        1
-      ],
-      "Darcy Kuemper": [
-        1,
-        1
-      ],
-      "Logan Thompson": [
-        1,
-        1
-      ],
-      "Arturs Silovs": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Darcy Kuemper": {
-        "backhand": [
-          0,
-          1
-        ],
-        "wrist": [
-          1,
-          1
-        ]
-      },
-      "Daniil Tarasov": {
-        "snap": [
-          1,
-          1
-        ]
-      },
-      "Logan Thompson": {
-        "backhand": [
-          1,
-          1
-        ],
-        "wrist": [
-          1,
-          1
-        ]
-      },
-      "Arturs Silovs": {
-        "wrist": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        4,
-        14
-      ],
-      "backhand": [
-        5,
-        11
-      ],
-      "unknown": [
-        0,
-        1
-      ],
-      "snap": [
-        1,
-        2
-      ]
-    },
-    "by_round": {
-      "2": [
-        8,
-        17
-      ],
-      "1": [
-        2,
-        8
-      ],
-      "4": [
-        0,
-        1
-      ],
-      "3": [
-        0,
-        2
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 1,
-      "wide-left": 2,
-      "wide-right": 1
     }
   },
   {
