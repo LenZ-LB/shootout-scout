@@ -44183,6 +44183,40 @@
     "vs_goalie": {}
   },
   {
+    "id": 8480007,
+    "name": "Jonas Rondbjerg",
+    "team": "VGK",
+    "number": 46,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8480021,
     "name": "Jack Studnicka",
     "team": "PHI",
@@ -45217,6 +45251,44 @@
       0
     ],
     "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8480879,
+    "name": "Jacob Bernard-Docker",
+    "team": "DET",
+    "number": 25,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20202021": [
+        0,
+        0
+      ],
       "20212022": [
         0,
         0
@@ -48205,6 +48277,28 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483448,
+    "name": "Isaiah George",
+    "team": "NYI",
+    "number": 36,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8483450,
     "name": "Ryan Greene",
     "team": "CHI",
@@ -49162,6 +49256,28 @@
     "vs_goalie": {}
   },
   {
+    "id": 8484149,
+    "name": "Gavin Brindley",
+    "team": "COL",
+    "number": 54,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8484151,
     "name": "Quinton Burns",
     "team": "STL",
@@ -49228,6 +49344,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8484188,
+    "name": "Theo Lindstein",
+    "team": "STL",
+    "number": 4,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8484210,
     "name": "Gabe Perreault",
     "team": "NYR",
@@ -49242,24 +49376,6 @@
         0,
         0
       ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484223,
-    "name": "Axel Sandin-Pellikka",
-    "team": "DET",
-    "number": 44,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20252026": [
         0,
         0
@@ -49452,24 +49568,6 @@
     "name": "Dmitri Simashev",
     "team": "UTA",
     "number": 26,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484388,
-    "name": "Daniil But",
-    "team": "UTA",
-    "number": 50,
     "active": true,
     "career": [
       0,
@@ -49725,6 +49823,28 @@
       0
     ],
     "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484901,
+    "name": "Jacob Quillan",
+    "team": "VAN",
+    "number": 62,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
       "20252026": [
         0,
         0
