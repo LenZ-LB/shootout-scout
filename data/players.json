@@ -37045,6 +37045,55 @@
     }
   },
   {
+    "id": 8481077,
+    "name": "John Leonard",
+    "team": "DET",
+    "number": 43,
+    "active": true,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20202021": [
+        0,
+        1
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "snap": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "7": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "hit-crossbar": 1
+    }
+  },
+  {
     "id": 8481524,
     "name": "Bowen Byram",
     "team": "CHI",
@@ -42501,48 +42550,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8478502,
-    "name": "Dennis Gilbert",
-    "team": "BUF",
-    "number": 44,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8478507,
     "name": "John Marino",
     "team": "UTA",
@@ -43894,6 +43901,32 @@
         0
       ],
       "20242025": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8479972,
+    "name": "Mason Shaw",
+    "team": "MIN",
+    "number": 18,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
         0,
         0
       ]
@@ -45961,6 +45994,28 @@
         0,
         0
       ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8481525,
+    "name": "Matthew Robertson",
+    "team": "NYR",
+    "number": 29,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
       "20242025": [
         0,
         0
@@ -48277,28 +48332,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483448,
-    "name": "Isaiah George",
-    "team": "NYI",
-    "number": 36,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483450,
     "name": "Ryan Greene",
     "team": "CHI",
@@ -48538,28 +48571,6 @@
     "name": "Denton Mateychuk",
     "team": "CBJ",
     "number": 5,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483487,
-    "name": "Rutger McGroarty",
-    "team": "PIT",
-    "number": 2,
     "active": true,
     "career": [
       0,
@@ -49065,24 +49076,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483760,
-    "name": "Hunter McDonald",
-    "team": "PHI",
-    "number": 19,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483766,
     "name": "David Spacek",
     "team": "MIN",
@@ -49248,28 +49241,6 @@
       0
     ],
     "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484149,
-    "name": "Gavin Brindley",
-    "team": "COL",
-    "number": 54,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
       "20252026": [
         0,
         0
@@ -116244,54 +116215,6 @@
         1,
         1
       ]
-    }
-  },
-  {
-    "id": 8481077,
-    "name": "John Leonard",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20202021": [
-        0,
-        1
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "snap": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "7": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "hit-crossbar": 1
     }
   },
   {
