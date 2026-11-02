@@ -34251,8 +34251,8 @@
   {
     "id": 8483524,
     "name": "Shane Wright",
-    "team": "SEA",
-    "number": 51,
+    "team": "NSH",
+    "number": 15,
     "active": true,
     "career": [
       0,
@@ -38129,8 +38129,8 @@
   {
     "id": 8484241,
     "name": "Matthew Wood",
-    "team": "NSH",
-    "number": 71,
+    "team": "SEA",
+    "number": null,
     "active": true,
     "career": [
       0,
@@ -43406,6 +43406,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8479387,
+    "name": "Keaton Middleton",
+    "team": "COL",
+    "number": 67,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20202021": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8479398,
     "name": "Samuel Girard",
     "team": "PIT",
@@ -46233,44 +46259,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8481572,
-    "name": "Ville Heinola",
-    "team": "VGK",
-    "number": 14,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8481593,
     "name": "Jayden Struble",
     "team": "NSH",
@@ -48528,19 +48516,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483478,
-    "name": "Rieger Lorenz",
-    "team": "MIN",
-    "number": 61,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8483482,
     "name": "Tristan Luneau",
     "team": "ANA",
@@ -49036,24 +49011,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483731,
-    "name": "Alex Bump",
-    "team": "PHI",
-    "number": 20,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483733,
     "name": "Nikita Grebenkin",
     "team": "PHI",
@@ -49330,6 +49287,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484201,
+    "name": "Nico Myatovic",
+    "team": "ANA",
+    "number": 48,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
