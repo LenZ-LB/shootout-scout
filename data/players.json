@@ -33239,59 +33239,6 @@
     }
   },
   {
-    "id": 8479390,
-    "name": "Taylor Raddysh",
-    "team": "NYR",
-    "number": 14,
-    "active": true,
-    "career": [
-      0,
-      2
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        1
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        1
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "wrist": [
-        0,
-        2
-      ]
-    },
-    "by_round": {
-      "6": [
-        0,
-        1
-      ],
-      "7": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-left": 1
-    }
-  },
-  {
     "id": 8480185,
     "name": "Eetu Luostarinen",
     "team": "FLA",
@@ -37717,47 +37664,6 @@
     }
   },
   {
-    "id": 8482733,
-    "name": "Logan Mailloux",
-    "team": "STL",
-    "number": 23,
-    "active": true,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        1
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "backhand": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "9": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-left": 1
-    }
-  },
-  {
     "id": 8483431,
     "name": "Logan Cooley",
     "team": "UTA",
@@ -38130,7 +38036,7 @@
     "id": 8484241,
     "name": "Matthew Wood",
     "team": "SEA",
-    "number": null,
+    "number": 71,
     "active": true,
     "career": [
       0,
@@ -38820,60 +38726,6 @@
         0,
         0
       ],
-      "20162017": [
-        0,
-        0
-      ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8475324,
-    "name": "Nick Jensen",
-    "team": "ANA",
-    "number": 4,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20162017": [
         0,
         0
@@ -48041,6 +47893,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482877,
+    "name": "Jaroslav Chmelar",
+    "team": "NYR",
+    "number": 49,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482896,
     "name": "Tyson Kozak",
     "team": "BUF",
@@ -48177,28 +48047,6 @@
         0,
         0
       ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483406,
-    "name": "Taylor Ward",
-    "team": "LAK",
-    "number": 17,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20242025": [
         0,
         0
@@ -49990,6 +49838,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8485554,
+    "name": "Dillon Boucher",
+    "team": "CHI",
+    "number": null,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8485702,
     "name": "Maxim Shabanov",
     "team": "MIN",
@@ -50025,19 +49886,6 @@
     "name": "Viggo Bj\u00f6rck",
     "team": "WPG",
     "number": 61,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
-    "id": 8486052,
-    "name": "Nikita Klepov",
-    "team": "ANA",
-    "number": 40,
     "active": true,
     "career": [
       0,
@@ -50083,6 +49931,24 @@
       0
     ],
     "seasons": {},
+    "vs_goalie": {}
+  },
+  {
+    "id": 8486169,
+    "name": "Jake Livanavage",
+    "team": "PIT",
+    "number": 4,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
     "vs_goalie": {}
   },
   {
@@ -104799,6 +104665,58 @@
     }
   },
   {
+    "id": 8479390,
+    "name": "Taylor Raddysh",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      2
+    ],
+    "seasons": {
+      "20212022": [
+        0,
+        1
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        1
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "wrist": [
+        0,
+        2
+      ]
+    },
+    "by_round": {
+      "6": [
+        0,
+        1
+      ],
+      "7": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-left": 1
+    }
+  },
+  {
     "id": 8480216,
     "name": "Jacob Peterson",
     "team": "",
@@ -116681,6 +116599,46 @@
         0,
         1
       ]
+    }
+  },
+  {
+    "id": 8482733,
+    "name": "Logan Mailloux",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        1
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "backhand": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "9": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-left": 1
     }
   },
   {
