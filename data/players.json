@@ -39050,60 +39050,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8475795,
-    "name": "Dylan McIlrath",
-    "team": "WSH",
-    "number": 52,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20132014": [
-        0,
-        0
-      ],
-      "20142015": [
-        0,
-        0
-      ],
-      "20152016": [
-        0,
-        0
-      ],
-      "20162017": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8475842,
     "name": "Sam Carrick",
     "team": "BUF",
@@ -43258,32 +43204,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8479387,
-    "name": "Keaton Middleton",
-    "team": "COL",
-    "number": 67,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20202021": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8479398,
     "name": "Samuel Girard",
     "team": "PIT",
@@ -43786,32 +43706,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8479972,
-    "name": "Mason Shaw",
-    "team": "MIN",
-    "number": 18,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8479976,
     "name": "Juuso V\u00e4lim\u00e4ki",
     "team": "CAR",
@@ -44117,44 +44011,6 @@
         0
       ],
       "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8480021,
-    "name": "Jack Studnicka",
-    "team": "PHI",
-    "number": 23,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
         0,
         0
       ],
@@ -48757,6 +48613,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483675,
+    "name": "Kenny Connors",
+    "team": "LAK",
+    "number": 34,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8483676,
     "name": "Stephen Halliday",
     "team": "OTT",
@@ -49402,6 +49276,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8484421,
+    "name": "Eric Pohlkamp",
+    "team": "SJS",
+    "number": 48,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8484471,
     "name": "Emmitt Finnie",
     "team": "DET",
@@ -49841,7 +49728,7 @@
     "id": 8485554,
     "name": "Dillon Boucher",
     "team": "CHI",
-    "number": null,
+    "number": 36,
     "active": true,
     "career": [
       0,
