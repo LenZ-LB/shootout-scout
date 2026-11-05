@@ -42910,40 +42910,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8479333,
-    "name": "Libor Hajek",
-    "team": "SJS",
-    "number": 24,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8479353,
     "name": "Brett Howden",
     "team": "VGK",
@@ -43964,40 +43930,6 @@
         0,
         0
       ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8480007,
-    "name": "Jonas Rondbjerg",
-    "team": "VGK",
-    "number": 46,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20212022": [
         0,
         0
@@ -48172,32 +48104,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483471,
-    "name": "Brad Lambert",
-    "team": "WPG",
-    "number": 93,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483472,
     "name": "Maveric Lamoureux",
     "team": "UTA",
@@ -49073,6 +48979,24 @@
     "name": "Tom Willander",
     "team": "VAN",
     "number": 5,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484242,
+    "name": "Brayden Yager",
+    "team": "WPG",
+    "number": 29,
     "active": true,
     "career": [
       0,
