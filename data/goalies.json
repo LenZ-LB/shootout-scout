@@ -1414,41 +1414,6 @@
     }
   },
   {
-    "id": 8477035,
-    "name": "Matt Tomkins",
-    "team": "EDM",
-    "number": 90,
-    "active": true,
-    "stopped": 1,
-    "faced": 2,
-    "wins": 0,
-    "losses": 1,
-    "record": "0 W \u2013 1 L in career shootouts",
-    "shots_by_type": {
-      "backhand": [
-        0,
-        1
-      ],
-      "wrist": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        0,
-        1
-      ],
-      "2": [
-        1,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-right": 1
-    }
-  },
-  {
     "id": 8477424,
     "name": "Juuse Saros",
     "team": "NSH",
@@ -3778,6 +3743,18 @@
     }
   },
   {
+    "id": 8482123,
+    "name": "Drew Commesso",
+    "team": "CHI",
+    "number": 33,
+    "active": true,
+    "stopped": 0,
+    "faced": 0,
+    "wins": 0,
+    "losses": 0,
+    "record": "0 W \u2013 0 L in career shootouts"
+  },
+  {
     "id": 8482137,
     "name": "Yaroslav Askarov",
     "team": "SJS",
@@ -4002,8 +3979,8 @@
   {
     "id": 8482465,
     "name": "R\u00e9mi Poirier",
-    "team": "WSH",
-    "number": 1,
+    "team": "DAL",
+    "number": 31,
     "active": true,
     "stopped": 0,
     "faced": 0,
@@ -4164,81 +4141,6 @@
     },
     "miss_reasons": {
       "wide-left": 1
-    }
-  },
-  {
-    "id": 8482821,
-    "name": "Arvid Soderblom",
-    "team": "CHI",
-    "number": 40,
-    "active": true,
-    "stopped": 16,
-    "faced": 31,
-    "wins": 2,
-    "losses": 5,
-    "record": "2 W \u2013 5 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        9,
-        18
-      ],
-      "backhand": [
-        4,
-        8
-      ],
-      "snap": [
-        2,
-        4
-      ],
-      "unknown": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        4,
-        7
-      ],
-      "2": [
-        2,
-        7
-      ],
-      "3": [
-        3,
-        7
-      ],
-      "4": [
-        2,
-        3
-      ],
-      "5": [
-        1,
-        2
-      ],
-      "6": [
-        1,
-        1
-      ],
-      "7": [
-        1,
-        1
-      ],
-      "8": [
-        1,
-        1
-      ],
-      "9": [
-        1,
-        1
-      ],
-      "10": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "high-and-wide-right": 1
     }
   },
   {
@@ -15691,6 +15593,80 @@
     }
   },
   {
+    "id": 8482821,
+    "name": "Arvid Soderblom",
+    "team": "",
+    "active": false,
+    "stopped": 16,
+    "faced": 31,
+    "wins": 2,
+    "losses": 5,
+    "record": "2 W \u2013 5 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        9,
+        18
+      ],
+      "backhand": [
+        4,
+        8
+      ],
+      "snap": [
+        2,
+        4
+      ],
+      "unknown": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        4,
+        7
+      ],
+      "2": [
+        2,
+        7
+      ],
+      "3": [
+        3,
+        7
+      ],
+      "4": [
+        2,
+        3
+      ],
+      "5": [
+        1,
+        2
+      ],
+      "6": [
+        1,
+        1
+      ],
+      "7": [
+        1,
+        1
+      ],
+      "8": [
+        1,
+        1
+      ],
+      "9": [
+        1,
+        1
+      ],
+      "10": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "high-and-wide-right": 1
+    }
+  },
+  {
     "id": 8476433,
     "name": "Magnus Hellberg",
     "team": "",
@@ -15915,6 +15891,40 @@
         1,
         1
       ]
+    }
+  },
+  {
+    "id": 8477035,
+    "name": "Matt Tomkins",
+    "team": "",
+    "active": false,
+    "stopped": 1,
+    "faced": 2,
+    "wins": 0,
+    "losses": 1,
+    "record": "0 W \u2013 1 L in career shootouts",
+    "shots_by_type": {
+      "backhand": [
+        0,
+        1
+      ],
+      "wrist": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        0,
+        1
+      ],
+      "2": [
+        1,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-right": 1
     }
   },
   {

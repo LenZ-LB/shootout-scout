@@ -39098,6 +39098,56 @@
     "vs_goalie": {}
   },
   {
+    "id": 8475718,
+    "name": "Justin Holl",
+    "team": "WSH",
+    "number": 4,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8475752,
     "name": "Tyler Pitlick",
     "team": "MIN",
@@ -44218,6 +44268,44 @@
     "vs_goalie": {}
   },
   {
+    "id": 8480157,
+    "name": "Calle Rosen",
+    "team": "STL",
+    "number": 43,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        0,
+        0
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8480220,
     "name": "Noah Cates",
     "team": "PHI",
@@ -46329,6 +46417,28 @@
     "vs_goalie": {}
   },
   {
+    "id": 8481743,
+    "name": "Marc Del Gaizo",
+    "team": "NYR",
+    "number": 27,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8481754,
     "name": "Nikita Nesterenko",
     "team": "ANA",
@@ -47794,6 +47904,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482942,
+    "name": "Alex Gagne",
+    "team": "COL",
+    "number": 45,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8482964,
     "name": "Arber Xhekaj",
     "team": "MTL",
@@ -47817,6 +47940,24 @@
         0
       ],
       "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483012,
+    "name": "Logan Morrison",
+    "team": "SEA",
+    "number": 96,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
         0,
         0
       ]
@@ -47939,19 +48080,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8483428,
-    "name": "Filip Bystedt",
-    "team": "SJS",
-    "number": 18,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -48234,6 +48362,28 @@
     "name": "Denton Mateychuk",
     "team": "CBJ",
     "number": 5,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8483487,
+    "name": "Rutger McGroarty",
+    "team": "PIT",
+    "number": 2,
     "active": true,
     "career": [
       0,
@@ -48929,24 +49079,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8484188,
-    "name": "Theo Lindstein",
-    "team": "STL",
-    "number": 4,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8484201,
     "name": "Nico Myatovic",
     "team": "ANA",
@@ -49319,19 +49451,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484790,
-    "name": "Adam Jiricek",
-    "team": "STL",
-    "number": 36,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
