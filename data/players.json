@@ -37229,48 +37229,6 @@
     }
   },
   {
-    "id": 8481567,
-    "name": "Henry Thrun",
-    "team": "WPG",
-    "number": 8,
-    "active": true,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        1
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "unknown": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "7": [
-        0,
-        1
-      ]
-    }
-  },
-  {
     "id": 8481581,
     "name": "Thomas Harley",
     "team": "DAL",
@@ -37951,49 +37909,6 @@
     "by_round": {
       "6": [
         0,
-        1
-      ]
-    }
-  },
-  {
-    "id": 8483752,
-    "name": "Dominic James",
-    "team": "TBL",
-    "number": 17,
-    "active": true,
-    "career": [
-      1,
-      1
-    ],
-    "seasons": {
-      "20252026": [
-        1,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Arvid Soderblom": [
-        1,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Arvid Soderblom": {
-        "wrist": [
-          1,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "5": [
-        1,
         1
       ]
     }
@@ -47315,6 +47230,24 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482525,
+    "name": "Ryan Tverberg",
+    "team": "TOR",
+    "number": 77,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482641,
     "name": "Matt Kiersted",
     "team": "MIN",
@@ -48889,28 +48822,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483768,
-    "name": "Victor Mancini",
-    "team": "VAN",
-    "number": 90,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483771,
     "name": "Sandis Vilmanis",
     "team": "FLA",
@@ -49429,6 +49340,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484770,
+    "name": "Sam O'Reilly",
+    "team": "TBL",
+    "number": 23,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -116349,6 +116273,47 @@
     }
   },
   {
+    "id": 8481567,
+    "name": "Henry Thrun",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        1
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "unknown": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "7": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8480252,
     "name": "Cole Guttman",
     "team": "",
@@ -116593,6 +116558,48 @@
     "by_round": {
       "4": [
         0,
+        1
+      ]
+    }
+  },
+  {
+    "id": 8483752,
+    "name": "Dominic James",
+    "team": "",
+    "active": false,
+    "career": [
+      1,
+      1
+    ],
+    "seasons": {
+      "20252026": [
+        1,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Arvid Soderblom": [
+        1,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Arvid Soderblom": {
+        "wrist": [
+          1,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "5": [
+        1,
         1
       ]
     }
