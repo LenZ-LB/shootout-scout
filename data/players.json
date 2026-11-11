@@ -39063,64 +39063,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8475752,
-    "name": "Tyler Pitlick",
-    "team": "MIN",
-    "number": 19,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20132014": [
-        0,
-        0
-      ],
-      "20142015": [
-        0,
-        0
-      ],
-      "20162017": [
-        0,
-        0
-      ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8475842,
     "name": "Sam Carrick",
     "team": "BUF",
@@ -42167,6 +42109,36 @@
     "vs_goalie": {}
   },
   {
+    "id": 8478446,
+    "name": "Glenn Gawdin",
+    "team": "NYR",
+    "number": 15,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8478450,
     "name": "Parker Wotherspoon",
     "team": "VGK",
@@ -44079,8 +44051,8 @@
   {
     "id": 8480075,
     "name": "Cameron Crotty",
-    "team": "MIN",
-    "number": 34,
+    "team": "VAN",
+    "number": 51,
     "active": true,
     "career": [
       0,
@@ -48987,19 +48959,6 @@
         0
       ]
     },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8484201,
-    "name": "Nico Myatovic",
-    "team": "ANA",
-    "number": 48,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
     "vs_goalie": {}
   },
   {
