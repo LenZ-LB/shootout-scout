@@ -38007,6 +38007,49 @@
     }
   },
   {
+    "id": 8484177,
+    "name": "Lenni Hameenaho",
+    "team": "NJD",
+    "number": 29,
+    "active": true,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Jakub Dobes": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Jakub Dobes": {
+        "wrist": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "4": [
+        0,
+        1
+      ]
+    }
+  },
+  {
     "id": 8484221,
     "name": "Calum Ritchie",
     "team": "NYI",
@@ -46878,6 +46921,32 @@
     "vs_goalie": {}
   },
   {
+    "id": 8482153,
+    "name": "Brendan Brisson",
+    "team": "TOR",
+    "number": 90,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20232024": [
+        0,
+        0
+      ],
+      "20242025": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
     "id": 8482157,
     "name": "Will Cuylle",
     "team": "NYR",
@@ -48634,24 +48703,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8483675,
-    "name": "Kenny Connors",
-    "team": "LAK",
-    "number": 34,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
     "id": 8483676,
     "name": "Stephen Halliday",
     "team": "OTT",
@@ -49186,6 +49237,24 @@
     "name": "Dmitri Simashev",
     "team": "UTA",
     "number": 26,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8484388,
+    "name": "Daniil But",
+    "team": "UTA",
+    "number": 50,
     "active": true,
     "career": [
       0,
@@ -116559,48 +116628,6 @@
     "by_round": {
       "5": [
         1,
-        1
-      ]
-    }
-  },
-  {
-    "id": 8484177,
-    "name": "Lenni Hameenaho",
-    "team": "",
-    "active": false,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Jakub Dobes": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Jakub Dobes": {
-        "wrist": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "4": [
-        0,
         1
       ]
     }
