@@ -539,91 +539,6 @@
     }
   },
   {
-    "id": 8475831,
-    "name": "Philipp Grubauer",
-    "team": "SEA",
-    "number": 31,
-    "active": true,
-    "stopped": 65,
-    "faced": 97,
-    "wins": 12,
-    "losses": 14,
-    "record": "12 W \u2013 14 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        51,
-        68
-      ],
-      "backhand": [
-        7,
-        11
-      ],
-      "slap": [
-        0,
-        1
-      ],
-      "snap": [
-        5,
-        15
-      ],
-      "unknown": [
-        2,
-        2
-      ]
-    },
-    "by_round": {
-      "1": [
-        19,
-        26
-      ],
-      "2": [
-        13,
-        26
-      ],
-      "3": [
-        13,
-        19
-      ],
-      "4": [
-        4,
-        7
-      ],
-      "5": [
-        6,
-        6
-      ],
-      "6": [
-        3,
-        5
-      ],
-      "7": [
-        4,
-        4
-      ],
-      "8": [
-        2,
-        2
-      ],
-      "9": [
-        1,
-        1
-      ],
-      "10": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 8,
-      "goalpost": 5,
-      "over-net": 3,
-      "hit-crossbar": 1,
-      "wide-left": 3,
-      "hit-left-post": 1,
-      "wide-right": 2
-    }
-  },
-  {
     "id": 8475883,
     "name": "Frederik Andersen",
     "team": "EDM",
@@ -837,86 +752,6 @@
       "wide-left": 1,
       "hit-crossbar": 1,
       "wide-right": 1
-    }
-  },
-  {
-    "id": 8476412,
-    "name": "Jordan Binnington",
-    "team": "STL",
-    "number": 50,
-    "active": true,
-    "stopped": 84,
-    "faced": 116,
-    "wins": 19,
-    "losses": 13,
-    "record": "19 W \u2013 13 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        62,
-        83
-      ],
-      "backhand": [
-        14,
-        22
-      ],
-      "snap": [
-        7,
-        10
-      ],
-      "poke": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        25,
-        32
-      ],
-      "2": [
-        23,
-        32
-      ],
-      "3": [
-        16,
-        26
-      ],
-      "4": [
-        8,
-        12
-      ],
-      "5": [
-        5,
-        5
-      ],
-      "6": [
-        3,
-        4
-      ],
-      "7": [
-        1,
-        2
-      ],
-      "8": [
-        1,
-        1
-      ],
-      "9": [
-        1,
-        1
-      ],
-      "10": [
-        1,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 8,
-      "goalpost": 4,
-      "wide-right": 5,
-      "wide-left": 2,
-      "above-crossbar": 1,
-      "hit-right-post": 2
     }
   },
   {
@@ -1335,92 +1170,6 @@
     }
   },
   {
-    "id": 8477968,
-    "name": "Alex Nedeljkovic",
-    "team": "SJS",
-    "number": 33,
-    "active": true,
-    "stopped": 36,
-    "faced": 56,
-    "wins": 4,
-    "losses": 8,
-    "record": "4 W \u2013 8 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        26,
-        38
-      ],
-      "snap": [
-        4,
-        8
-      ],
-      "backhand": [
-        5,
-        9
-      ],
-      "slap": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "1": [
-        8,
-        12
-      ],
-      "2": [
-        6,
-        12
-      ],
-      "3": [
-        8,
-        11
-      ],
-      "4": [
-        3,
-        6
-      ],
-      "5": [
-        4,
-        5
-      ],
-      "6": [
-        2,
-        3
-      ],
-      "7": [
-        0,
-        2
-      ],
-      "8": [
-        1,
-        1
-      ],
-      "9": [
-        1,
-        1
-      ],
-      "10": [
-        1,
-        1
-      ],
-      "11": [
-        1,
-        1
-      ],
-      "12": [
-        1,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 1,
-      "hit-right-post": 1,
-      "wide-right": 3,
-      "wide-left": 3
-    }
-  },
-  {
     "id": 8478009,
     "name": "Ilya Sorokin",
     "team": "NYI",
@@ -1828,80 +1577,6 @@
       "hit-left-post": 1,
       "wide-right": 2,
       "above-crossbar": 1
-    }
-  },
-  {
-    "id": 8478916,
-    "name": "Joey Daccord",
-    "team": "SEA",
-    "number": 35,
-    "active": true,
-    "stopped": 26,
-    "faced": 43,
-    "wins": 3,
-    "losses": 9,
-    "record": "3 W \u2013 9 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        13,
-        22
-      ],
-      "backhand": [
-        9,
-        15
-      ],
-      "unknown": [
-        2,
-        2
-      ],
-      "snap": [
-        2,
-        4
-      ]
-    },
-    "by_round": {
-      "1": [
-        8,
-        12
-      ],
-      "2": [
-        8,
-        12
-      ],
-      "3": [
-        5,
-        10
-      ],
-      "4": [
-        2,
-        3
-      ],
-      "5": [
-        2,
-        2
-      ],
-      "6": [
-        1,
-        1
-      ],
-      "7": [
-        0,
-        1
-      ],
-      "8": [
-        0,
-        1
-      ],
-      "9": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "hit-right-post": 1,
-      "high-and-wide-right": 1,
-      "hit-left-post": 1,
-      "wide-left": 1
     }
   },
   {
@@ -2495,56 +2170,6 @@
     }
   },
   {
-    "id": 8480981,
-    "name": "Joel Hofer",
-    "team": "STL",
-    "number": 30,
-    "active": true,
-    "stopped": 7,
-    "faced": 13,
-    "wins": 0,
-    "losses": 4,
-    "record": "0 W \u2013 4 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        8,
-        12
-      ],
-      "backhand": [
-        2,
-        2
-      ],
-      "snap": [
-        0,
-        2
-      ]
-    },
-    "by_round": {
-      "1": [
-        4,
-        5
-      ],
-      "2": [
-        3,
-        5
-      ],
-      "3": [
-        3,
-        4
-      ],
-      "4": [
-        0,
-        2
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 1,
-      "hit-crossbar": 1,
-      "hit-right-post": 1,
-      "wide-right": 1
-    }
-  },
-  {
     "id": 8481020,
     "name": "Justus Annunen",
     "team": "NSH",
@@ -2821,54 +2446,6 @@
     }
   },
   {
-    "id": 8481668,
-    "name": "Arturs Silovs",
-    "team": "PIT",
-    "number": 37,
-    "active": true,
-    "stopped": 12,
-    "faced": 25,
-    "wins": 3,
-    "losses": 6,
-    "record": "3 W \u2013 6 L in career shootouts",
-    "shots_by_type": {
-      "backhand": [
-        2,
-        6
-      ],
-      "poke": [
-        1,
-        1
-      ],
-      "wrist": [
-        9,
-        18
-      ]
-    },
-    "by_round": {
-      "1": [
-        4,
-        9
-      ],
-      "2": [
-        5,
-        9
-      ],
-      "3": [
-        3,
-        6
-      ],
-      "4": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-of-net": 1,
-      "wide-right": 1
-    }
-  },
-  {
     "id": 8481692,
     "name": "Dustin Wolf",
     "team": "CGY",
@@ -2947,58 +2524,6 @@
     "wins": 0,
     "losses": 0,
     "record": "0 W \u2013 0 L in career shootouts"
-  },
-  {
-    "id": 8482137,
-    "name": "Yaroslav Askarov",
-    "team": "SJS",
-    "number": 30,
-    "active": true,
-    "stopped": 13,
-    "faced": 16,
-    "wins": 3,
-    "losses": 2,
-    "record": "3 W \u2013 2 L in career shootouts",
-    "shots_by_type": {
-      "wrist": [
-        10,
-        13
-      ],
-      "backhand": [
-        3,
-        3
-      ]
-    },
-    "by_round": {
-      "1": [
-        5,
-        5
-      ],
-      "2": [
-        4,
-        5
-      ],
-      "3": [
-        2,
-        3
-      ],
-      "4": [
-        1,
-        1
-      ],
-      "5": [
-        1,
-        1
-      ],
-      "6": [
-        0,
-        1
-      ]
-    },
-    "miss_reasons": {
-      "wide-right": 1,
-      "above-crossbar": 1
-    }
   },
   {
     "id": 8482193,
@@ -3335,18 +2860,6 @@
       "hit-left-post": 1,
       "wide-right": 1
     }
-  },
-  {
-    "id": 8483703,
-    "name": "Sergei Murashov",
-    "team": "PIT",
-    "number": 1,
-    "active": true,
-    "stopped": 0,
-    "faced": 0,
-    "wins": 0,
-    "losses": 0,
-    "record": "0 W \u2013 0 L in career shootouts"
   },
   {
     "id": 8484170,
@@ -11905,6 +11418,90 @@
     }
   },
   {
+    "id": 8475831,
+    "name": "Philipp Grubauer",
+    "team": "",
+    "active": false,
+    "stopped": 65,
+    "faced": 97,
+    "wins": 12,
+    "losses": 14,
+    "record": "12 W \u2013 14 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        51,
+        68
+      ],
+      "backhand": [
+        7,
+        11
+      ],
+      "slap": [
+        0,
+        1
+      ],
+      "snap": [
+        5,
+        15
+      ],
+      "unknown": [
+        2,
+        2
+      ]
+    },
+    "by_round": {
+      "1": [
+        19,
+        26
+      ],
+      "2": [
+        13,
+        26
+      ],
+      "3": [
+        13,
+        19
+      ],
+      "4": [
+        4,
+        7
+      ],
+      "5": [
+        6,
+        6
+      ],
+      "6": [
+        3,
+        5
+      ],
+      "7": [
+        4,
+        4
+      ],
+      "8": [
+        2,
+        2
+      ],
+      "9": [
+        1,
+        1
+      ],
+      "10": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 8,
+      "goalpost": 5,
+      "over-net": 3,
+      "hit-crossbar": 1,
+      "wide-left": 3,
+      "hit-left-post": 1,
+      "wide-right": 2
+    }
+  },
+  {
     "id": 8475303,
     "name": "Connor Knapp",
     "team": "",
@@ -14159,6 +13756,85 @@
     }
   },
   {
+    "id": 8476412,
+    "name": "Jordan Binnington",
+    "team": "",
+    "active": false,
+    "stopped": 84,
+    "faced": 116,
+    "wins": 19,
+    "losses": 13,
+    "record": "19 W \u2013 13 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        62,
+        83
+      ],
+      "backhand": [
+        14,
+        22
+      ],
+      "snap": [
+        7,
+        10
+      ],
+      "poke": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        25,
+        32
+      ],
+      "2": [
+        23,
+        32
+      ],
+      "3": [
+        16,
+        26
+      ],
+      "4": [
+        8,
+        12
+      ],
+      "5": [
+        5,
+        5
+      ],
+      "6": [
+        3,
+        4
+      ],
+      "7": [
+        1,
+        2
+      ],
+      "8": [
+        1,
+        1
+      ],
+      "9": [
+        1,
+        1
+      ],
+      "10": [
+        1,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 8,
+      "goalpost": 4,
+      "wide-right": 5,
+      "wide-left": 2,
+      "above-crossbar": 1,
+      "hit-right-post": 2
+    }
+  },
+  {
     "id": 8480382,
     "name": "Alexandar Georgiev",
     "team": "",
@@ -14712,6 +14388,91 @@
         1,
         1
       ]
+    }
+  },
+  {
+    "id": 8477968,
+    "name": "Alex Nedeljkovic",
+    "team": "",
+    "active": false,
+    "stopped": 36,
+    "faced": 56,
+    "wins": 4,
+    "losses": 8,
+    "record": "4 W \u2013 8 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        26,
+        38
+      ],
+      "snap": [
+        4,
+        8
+      ],
+      "backhand": [
+        5,
+        9
+      ],
+      "slap": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "1": [
+        8,
+        12
+      ],
+      "2": [
+        6,
+        12
+      ],
+      "3": [
+        8,
+        11
+      ],
+      "4": [
+        3,
+        6
+      ],
+      "5": [
+        4,
+        5
+      ],
+      "6": [
+        2,
+        3
+      ],
+      "7": [
+        0,
+        2
+      ],
+      "8": [
+        1,
+        1
+      ],
+      "9": [
+        1,
+        1
+      ],
+      "10": [
+        1,
+        1
+      ],
+      "11": [
+        1,
+        1
+      ],
+      "12": [
+        1,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 1,
+      "hit-right-post": 1,
+      "wide-right": 3,
+      "wide-left": 3
     }
   },
   {
@@ -15511,6 +15272,55 @@
     }
   },
   {
+    "id": 8480981,
+    "name": "Joel Hofer",
+    "team": "",
+    "active": false,
+    "stopped": 7,
+    "faced": 13,
+    "wins": 0,
+    "losses": 4,
+    "record": "0 W \u2013 4 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        8,
+        12
+      ],
+      "backhand": [
+        2,
+        2
+      ],
+      "snap": [
+        0,
+        2
+      ]
+    },
+    "by_round": {
+      "1": [
+        4,
+        5
+      ],
+      "2": [
+        3,
+        5
+      ],
+      "3": [
+        3,
+        4
+      ],
+      "4": [
+        0,
+        2
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 1,
+      "hit-crossbar": 1,
+      "hit-right-post": 1,
+      "wide-right": 1
+    }
+  },
+  {
     "id": 8476433,
     "name": "Magnus Hellberg",
     "team": "",
@@ -15554,6 +15364,53 @@
     }
   },
   {
+    "id": 8481668,
+    "name": "Arturs Silovs",
+    "team": "",
+    "active": false,
+    "stopped": 12,
+    "faced": 25,
+    "wins": 3,
+    "losses": 6,
+    "record": "3 W \u2013 6 L in career shootouts",
+    "shots_by_type": {
+      "backhand": [
+        2,
+        6
+      ],
+      "poke": [
+        1,
+        1
+      ],
+      "wrist": [
+        9,
+        18
+      ]
+    },
+    "by_round": {
+      "1": [
+        4,
+        9
+      ],
+      "2": [
+        5,
+        9
+      ],
+      "3": [
+        3,
+        6
+      ],
+      "4": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-of-net": 1,
+      "wide-right": 1
+    }
+  },
+  {
     "id": 8480867,
     "name": "Kevin Mandolese",
     "team": "",
@@ -15581,6 +15438,79 @@
     },
     "miss_reasons": {
       "over-net": 1
+    }
+  },
+  {
+    "id": 8478916,
+    "name": "Joey Daccord",
+    "team": "",
+    "active": false,
+    "stopped": 26,
+    "faced": 43,
+    "wins": 3,
+    "losses": 9,
+    "record": "3 W \u2013 9 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        13,
+        22
+      ],
+      "backhand": [
+        9,
+        15
+      ],
+      "unknown": [
+        2,
+        2
+      ],
+      "snap": [
+        2,
+        4
+      ]
+    },
+    "by_round": {
+      "1": [
+        8,
+        12
+      ],
+      "2": [
+        8,
+        12
+      ],
+      "3": [
+        5,
+        10
+      ],
+      "4": [
+        2,
+        3
+      ],
+      "5": [
+        2,
+        2
+      ],
+      "6": [
+        1,
+        1
+      ],
+      "7": [
+        0,
+        1
+      ],
+      "8": [
+        0,
+        1
+      ],
+      "9": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "hit-right-post": 1,
+      "high-and-wide-right": 1,
+      "hit-left-post": 1,
+      "wide-left": 1
     }
   },
   {
@@ -15769,6 +15699,57 @@
     },
     "miss_reasons": {
       "wide-right": 1
+    }
+  },
+  {
+    "id": 8482137,
+    "name": "Yaroslav Askarov",
+    "team": "",
+    "active": false,
+    "stopped": 13,
+    "faced": 16,
+    "wins": 3,
+    "losses": 2,
+    "record": "3 W \u2013 2 L in career shootouts",
+    "shots_by_type": {
+      "wrist": [
+        10,
+        13
+      ],
+      "backhand": [
+        3,
+        3
+      ]
+    },
+    "by_round": {
+      "1": [
+        5,
+        5
+      ],
+      "2": [
+        4,
+        5
+      ],
+      "3": [
+        2,
+        3
+      ],
+      "4": [
+        1,
+        1
+      ],
+      "5": [
+        1,
+        1
+      ],
+      "6": [
+        0,
+        1
+      ]
+    },
+    "miss_reasons": {
+      "wide-right": 1,
+      "above-crossbar": 1
     }
   },
   {
