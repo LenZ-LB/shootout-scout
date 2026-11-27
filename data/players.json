@@ -36774,64 +36774,6 @@
     }
   },
   {
-    "id": 8478104,
-    "name": "Sammy Blais",
-    "team": "OTT",
-    "number": 79,
-    "active": true,
-    "career": [
-      1,
-      1
-    ],
-    "seasons": {
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        1,
-        1
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {},
-    "shot_types": {
-      "snap": [
-        1,
-        1
-      ]
-    },
-    "by_round": {
-      "6": [
-        1,
-        1
-      ]
-    }
-  },
-  {
     "id": 8478133,
     "name": "Jake Evans",
     "team": "MTL",
@@ -38584,49 +38526,6 @@
     }
   },
   {
-    "id": 8484177,
-    "name": "Lenni Hameenaho",
-    "team": "NJD",
-    "number": 29,
-    "active": true,
-    "career": [
-      0,
-      1
-    ],
-    "seasons": {
-      "20252026": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie": {
-      "Jakub Dobes": [
-        0,
-        1
-      ]
-    },
-    "vs_goalie_shots": {
-      "Jakub Dobes": {
-        "wrist": [
-          0,
-          1
-        ]
-      }
-    },
-    "shot_types": {
-      "wrist": [
-        0,
-        1
-      ]
-    },
-    "by_round": {
-      "4": [
-        0,
-        1
-      ]
-    }
-  },
-  {
     "id": 8484221,
     "name": "Calum Ritchie",
     "team": "NYI",
@@ -39593,56 +39492,6 @@
         0,
         0
       ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8475718,
-    "name": "Justin Holl",
-    "team": "WSH",
-    "number": 4,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20172018": [
         0,
         0
@@ -40777,56 +40626,6 @@
         0,
         0
       ],
-      "20172018": [
-        0,
-        0
-      ],
-      "20182019": [
-        0,
-        0
-      ],
-      "20192020": [
-        0,
-        0
-      ],
-      "20202021": [
-        0,
-        0
-      ],
-      "20212022": [
-        0,
-        0
-      ],
-      "20222023": [
-        0,
-        0
-      ],
-      "20232024": [
-        0,
-        0
-      ],
-      "20242025": [
-        0,
-        0
-      ],
-      "20252026": [
-        0,
-        0
-      ]
-    },
-    "vs_goalie": {}
-  },
-  {
-    "id": 8476952,
-    "name": "Dominic Toninato",
-    "team": "CHI",
-    "number": 25,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {
       "20172018": [
         0,
         0
@@ -47978,19 +47777,6 @@
     "vs_goalie": {}
   },
   {
-    "id": 8482674,
-    "name": "Tyler Boucher",
-    "team": "OTT",
-    "number": 54,
-    "active": true,
-    "career": [
-      0,
-      0
-    ],
-    "seasons": {},
-    "vs_goalie": {}
-  },
-  {
     "id": 8482691,
     "name": "Aatu R\u00e4ty",
     "team": "TOR",
@@ -49493,6 +49279,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8483833,
+    "name": "Atley Calvert",
+    "team": "PIT",
+    "number": 84,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8483890,
     "name": "Braeden Bowman",
     "team": "VGK",
@@ -50293,6 +50092,19 @@
     "vs_goalie": {}
   },
   {
+    "id": 8484987,
+    "name": "Anton Silaev",
+    "team": "NJD",
+    "number": 52,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
+    "vs_goalie": {}
+  },
+  {
     "id": 8484999,
     "name": "Ilya Protas",
     "team": "WSH",
@@ -50508,6 +50320,19 @@
         0
       ]
     },
+    "vs_goalie": {}
+  },
+  {
+    "id": 8485554,
+    "name": "Dillon Boucher",
+    "team": "CHI",
+    "number": 36,
+    "active": true,
+    "career": [
+      0,
+      0
+    ],
+    "seasons": {},
     "vs_goalie": {}
   },
   {
@@ -115315,6 +115140,63 @@
     }
   },
   {
+    "id": 8478104,
+    "name": "Samuel Blais",
+    "team": "",
+    "active": false,
+    "career": [
+      1,
+      1
+    ],
+    "seasons": {
+      "20172018": [
+        0,
+        0
+      ],
+      "20182019": [
+        1,
+        1
+      ],
+      "20192020": [
+        0,
+        0
+      ],
+      "20202021": [
+        0,
+        0
+      ],
+      "20212022": [
+        0,
+        0
+      ],
+      "20222023": [
+        0,
+        0
+      ],
+      "20232024": [
+        0,
+        0
+      ],
+      "20252026": [
+        0,
+        0
+      ]
+    },
+    "vs_goalie": {},
+    "shot_types": {
+      "snap": [
+        1,
+        1
+      ]
+    },
+    "by_round": {
+      "6": [
+        1,
+        1
+      ]
+    }
+  },
+  {
     "id": 8479366,
     "name": "Logan Brown",
     "team": "",
@@ -116789,6 +116671,48 @@
     "by_round": {
       "5": [
         1,
+        1
+      ]
+    }
+  },
+  {
+    "id": 8484177,
+    "name": "Lenni Hameenaho",
+    "team": "",
+    "active": false,
+    "career": [
+      0,
+      1
+    ],
+    "seasons": {
+      "20252026": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie": {
+      "Jakub Dobes": [
+        0,
+        1
+      ]
+    },
+    "vs_goalie_shots": {
+      "Jakub Dobes": {
+        "wrist": [
+          0,
+          1
+        ]
+      }
+    },
+    "shot_types": {
+      "wrist": [
+        0,
+        1
+      ]
+    },
+    "by_round": {
+      "4": [
+        0,
         1
       ]
     }
